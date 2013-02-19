@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/XilinxProjects/PhD/vhdl_libs/wishbone/prj/mst_slv_mem_io_test/tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb" />
+            <top_module name="wb_classic_interface" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="39" />
+   <wvobject fp_name="/tb/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/en_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_i</obj_property>
+      <obj_property name="ObjectShortName">en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/we_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_i</obj_property>
+      <obj_property name="ObjectShortName">we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/blk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">blk_i</obj_property>
+      <obj_property name="ObjectShortName">blk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/nxt_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_i</obj_property>
+      <obj_property name="ObjectShortName">nxt_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/adr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adr_i[5:0]</obj_property>
+      <obj_property name="ObjectShortName">adr_i[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dat_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dat_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dat_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/dat_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dat_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dat_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/done_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done_o</obj_property>
+      <obj_property name="ObjectShortName">done_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/err_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">err_o</obj_property>
+      <obj_property name="ObjectShortName">err_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/led_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led_o[6:0]</obj_property>
+      <obj_property name="ObjectShortName">led_o[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/clk_i_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i_period</obj_property>
+      <obj_property name="ObjectShortName">clk_i_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider14" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/wb_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_o</obj_property>
+      <obj_property name="ObjectShortName">wb_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/wb_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/en_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_i</obj_property>
+      <obj_property name="ObjectShortName">en_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/we_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_i</obj_property>
+      <obj_property name="ObjectShortName">we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/blk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">blk_i</obj_property>
+      <obj_property name="ObjectShortName">blk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/nxt_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nxt_i</obj_property>
+      <obj_property name="ObjectShortName">nxt_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/adr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adr_i[5:0]</obj_property>
+      <obj_property name="ObjectShortName">adr_i[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/dat_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dat_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dat_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/dat_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dat_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dat_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/done_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done_o</obj_property>
+      <obj_property name="ObjectShortName">done_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/err_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">err_o</obj_property>
+      <obj_property name="ObjectShortName">err_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/state_reg" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_reg</obj_property>
+      <obj_property name="ObjectShortName">state_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/state_nxt" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_nxt</obj_property>
+      <obj_property name="ObjectShortName">state_nxt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/we_i_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_i_reg</obj_property>
+      <obj_property name="ObjectShortName">we_i_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/we_i_nxt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_i_nxt</obj_property>
+      <obj_property name="ObjectShortName">we_i_nxt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/c_addr_width" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">c_addr_width</obj_property>
+      <obj_property name="ObjectShortName">c_addr_width</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mst_ctrl/c_data_width" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">c_data_width</obj_property>
+      <obj_property name="ObjectShortName">c_data_width</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider34" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mem_io/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mem_io/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mem_io/wb_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_i</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_i.cyc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.cyc</obj_property>
+         <obj_property name="ObjectShortName">wb_i.cyc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_i.stb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.stb</obj_property>
+         <obj_property name="ObjectShortName">wb_i.stb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_i.adr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.adr</obj_property>
+         <obj_property name="ObjectShortName">wb_i.adr</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_i.dat" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.dat</obj_property>
+         <obj_property name="ObjectShortName">wb_i.dat</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_i.we" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.we</obj_property>
+         <obj_property name="ObjectShortName">wb_i.we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_i.sgl" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.sgl</obj_property>
+         <obj_property name="ObjectShortName">wb_i.sgl</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_i.blk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.blk</obj_property>
+         <obj_property name="ObjectShortName">wb_i.blk</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mem_io/wb_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_o</obj_property>
+      <obj_property name="ObjectShortName">wb_o</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_o.dat" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.dat</obj_property>
+         <obj_property name="ObjectShortName">wb_o.dat</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_o.ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.ack</obj_property>
+         <obj_property name="ObjectShortName">wb_o.ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/uut/wb_mem_io/wb_o.err" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.err</obj_property>
+         <obj_property name="ObjectShortName">wb_o.err</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/wb_mem_io/led_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led_o[6:0]</obj_property>
+      <obj_property name="ObjectShortName">led_o[6:0]</obj_property>
+   </wvobject>
+</wave_config>

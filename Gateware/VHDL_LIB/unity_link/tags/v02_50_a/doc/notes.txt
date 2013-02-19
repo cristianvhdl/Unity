@@ -1,0 +1,77 @@
+
+
+•	Restructure the Unity-Link stack so the datalink layer becomes more general.
+•	Update Datalink layer rx-errors inputs to be a vector which size can be adjusted by a generic. 
+•	Reorder to datalink layer error code so rx-errors generates the higher errorcodes, in order to facilitate autogeneration of these.
+•	…
+
+Definition : BSP == Byte Stream Protocol
+current datalink+application layers support BSP in ASCII mode, but support could be added for BSP in Binary mode aswell….
+
+******************************************************************************************************************************
+NEW UNITY-LINK STRUCTURE
+
+UL_absp_wbm_uart
+
+physical_layer (UART, FIFO, ETHERNET-UDP, etc.)
+
+unity_link_bsp_wbm
+ |
+ |- unity_link_bsp							# defines the interface and protocol
+ |   |- unity_link_bsp_dl					# defines the interface and protocol
+ |   |   |_ unity_link_dl_absp			# implementation	(absp: ASCII Byte Stream Protocol)
+ |   |       |_ ...
+ |   |
+ |   |- unity_link_al						# defines the interface and protocol
+ |       |_ unity_link_al_fsm				# implementation
+ |           |_ unity_link_al_subgrp	# implementation
+ |           |_ unity_link_al_submngr	# implementation
+ |
+ |- BII<>WB-wrapper
+ |
+ |- WB-master
+
+******************************************************************************************************************************
+entity unity_link_dl is
+	generic (
+		C_FULL_DL					: integer range 0 to 1	:= 1;		-- 1 = Full Datalink Layer, 0 = Lite Datalink Layer (No FIFO's, Checksum or error detection)
+		C_PL_RX_ERR_WIDTH			: natural  := 3;						-- Number of rx error input lines from the physical layer
+		C_RXFIFO_ADDR_WIDTH 		: positive := 7;						-- Must be able hold the largest incoming request packet
+		C_TXFIFO_A_ADDR_WIDTH 	: positive := 8;						-- FIFO receiving response/publish data from the application layer
+		C_TXFIFO_B_ADDR_WIDTH 	: positive := 4;						-- FIFO receiving error data from the datalink layer RxFSM
+		C_UART_PARITY_EN			: natural 					:= 1;		-- uart parity enabled: 0 = DISABLED, >0 = ENABLED
+		C_CHECKSUM					: integer range 0 to 2  := 2		-- checksum mode: 0 = NONE, 1 = BYTE WISE XOR, 2 = CRC-8-CCIT						
+	);
+	port ( 
+		clk_i 						: in  std_logic;
+		reset_i 						: in  std_logic;
+		
+		-- Unity-link Physical Layer interface
+		
+			-- RxFIFO
+			rx_fifo_empty_i 		: in  std_logic;
+			rx_fifo_read_o 		: out std_logic;
+			rx_fifo_data_i 		: in  std_logic_vector (7 downto 0);
+			
+			rx_fifo_reset_o		: out std_logic;			
+			rx_err_i 				: in  std_logic_vector(C_PL_RX_ERR_WIDTH-1 downto 0);
+			rx_err_clr_o		 	: out std_logic;
+			
+			-- TxFIFO
+			tx_fifo_full_i 		: in  std_logic;
+			tx_fifo_write_o 		: out std_logic;
+			tx_fifo_data_o 		: out std_logic_vector (7 downto 0);
+		
+		-- Unity-link Application Layer interface
+		
+			-- RxFIFO
+			rx_fifo_empty_o			: out std_logic;
+			rx_fifo_rd_i				: in  std_logic;
+			rx_fifo_data_o				: out std_logic_vector(8 downto 0);
+			
+			-- TxFIFO
+			tx_fifo_full_o				: out std_logic;
+			tx_fifo_wr_i				: in  std_logic;
+			tx_fifo_data_i				: in  std_logic_vector(8 downto 0)
+		);
+end unity_link_dl;

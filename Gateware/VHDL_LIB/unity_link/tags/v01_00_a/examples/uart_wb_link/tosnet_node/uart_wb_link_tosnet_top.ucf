@@ -1,0 +1,48 @@
+##############################################################
+# DO NOT EDIT THE TIMING CONSTRAINTS BELOW
+##############################################################
+
+NET "clk_i" 	TNM_NET = clk_i;
+NET "clk_50M" TNM_NET = clk_50M;
+NET "clk_96M" TNM_NET = clk_96M;
+
+TIMESPEC TS_AsynchPath1 = FROM clk_96M TO clk_50M 5 ns DATAPATHONLY;
+TIMESPEC TS_AsynchPath2 = FROM clk_50M TO clk_96M 5 ns DATAPATHONLY;
+
+TIMESPEC TS_clk_user = PERIOD "clk_50M" 	 50 MHz HIGH 50%;
+TIMESPEC TS_clk_uart = PERIOD "clk_96M" 	 96 MHz HIGH 50%;
+
+##############################################################
+# ONLY EDIT THE TIMING CONSTRAINT BELOW TO MATCH THE CLOCK 
+# INPUT CLK FREQUENCY IN THE DESIGN
+##############################################################
+
+TIMESPEC TS_clk_i = PERIOD 	"clk_i" 		200 MHz HIGH 50%;
+
+##############################################################
+# ADD/REMOVE/CHANGE THE LOCATION CONSTRAINTS AS NEEDED
+##############################################################
+
+NET "clk_i" 					LOC = A11 |	IOSTANDARD = "LVCMOS33";
+
+NET "uart_rx_i"				LOC = A6  |	IOSTANDARD = "LVCMOS33";
+NET "uart_tx_o"				LOC = A7  |	IOSTANDARD = "LVCMOS33";
+
+#NET "uart_rx_i"				LOC = F19 |	IOSTANDARD = "LVCMOS33";	# External FTDI C232HM-DDHSL-0 USB UART (TX -> Orange)
+#NET "uart_tx_o"				LOC = H18 |	IOSTANDARD = "LVCMOS33";	# External FTDI C232HM-DDHSL-0 USB UART (RX -> Yellow)
+
+NET "tosnet_sig_in_i"		LOC = W1	 |	IOSTANDARD = "LVCMOS33";	# RX pin 1
+NET "tosnet_sig_out_o"		LOC = W3	 |	IOSTANDARD = "LVCMOS33";	# TX pin 2
+
+NET "tosnet_node_id_i<3>"	LOC = L19 |	IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "tosnet_node_id_i<2>"	LOC = K20 |	IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "tosnet_node_id_i<1>"	LOC = K19 |	IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "tosnet_node_id_i<0>"	LOC = J17 |	IOSTANDARD = "LVCMOS33" | PULLUP;
+
+NET "leds_o<6>"				LOC = D7  |	IOSTANDARD = "LVCMOS33";
+NET "leds_o<5>"				LOC = A4  |	IOSTANDARD = "LVCMOS33";
+NET "leds_o<4>"				LOC = C7  |	IOSTANDARD = "LVCMOS33";
+NET "leds_o<3>"				LOC = B8  |	IOSTANDARD = "LVCMOS33";
+NET "leds_o<2>"				LOC = A8  |	IOSTANDARD = "LVCMOS33";
+NET "leds_o<1>"				LOC = A5  |	IOSTANDARD = "LVCMOS33";
+NET "leds_o<0>"				LOC = B6  |	IOSTANDARD = "LVCMOS33";

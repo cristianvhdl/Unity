@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/XilinxProjects/PhD/vhdl_libs/double_buffered_memory/prj/wb_db_cwrm_mem/tb_wbdb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="db_mem" />
+            <top_module name="log_pkg" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_wbdb" />
+            <top_module name="wb_classic_interface" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/tb_wbdb/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wbdb/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wbdb/wb_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_i</obj_property>
+      <wvobject fp_name="/tb_wbdb/wb_i.cyc_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.cyc_i</obj_property>
+         <obj_property name="ObjectShortName">wb_i.cyc_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_i.stb_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.stb_i</obj_property>
+         <obj_property name="ObjectShortName">wb_i.stb_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_i.adr_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.adr_i</obj_property>
+         <obj_property name="ObjectShortName">wb_i.adr_i</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_i.dat_i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.dat_i</obj_property>
+         <obj_property name="ObjectShortName">wb_i.dat_i</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_i.we_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.we_i</obj_property>
+         <obj_property name="ObjectShortName">wb_i.we_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_i.sgl_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.sgl_i</obj_property>
+         <obj_property name="ObjectShortName">wb_i.sgl_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_i.blk_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.blk_i</obj_property>
+         <obj_property name="ObjectShortName">wb_i.blk_i</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_wbdb/db_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">db_i</obj_property>
+      <obj_property name="ObjectShortName">db_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wbdb/wb_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_o</obj_property>
+      <obj_property name="ObjectShortName">wb_o</obj_property>
+      <wvobject fp_name="/tb_wbdb/wb_o.dat_o" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.dat_o</obj_property>
+         <obj_property name="ObjectShortName">wb_o.dat_o</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_o.ack_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.ack_o</obj_property>
+         <obj_property name="ObjectShortName">wb_o.ack_o</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wbdb/wb_o.err_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.err_o</obj_property>
+         <obj_property name="ObjectShortName">wb_o.err_o</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_wbdb/db_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">db_o</obj_property>
+      <obj_property name="ObjectShortName">db_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wbdb/clk_i_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i_period</obj_property>
+      <obj_property name="ObjectShortName">clk_i_period</obj_property>
+   </wvobject>
+</wave_config>

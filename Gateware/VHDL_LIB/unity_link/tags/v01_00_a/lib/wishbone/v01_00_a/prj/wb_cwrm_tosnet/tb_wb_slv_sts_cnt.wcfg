@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/XilinxProjects/PhD/vhdl_libs/wishbone/prj/wb_cwrm_tosnet/tb_wb_slv_sts_cnt_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_wb_slv_sts_cnt" />
+            <top_module name="wb_classic_interface" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_i</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i.cyc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.cyc</obj_property>
+         <obj_property name="ObjectShortName">wb_i.cyc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i.stb" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.stb</obj_property>
+         <obj_property name="ObjectShortName">wb_i.stb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i.adr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.adr</obj_property>
+         <obj_property name="ObjectShortName">wb_i.adr</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i.dat" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.dat</obj_property>
+         <obj_property name="ObjectShortName">wb_i.dat</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i.we" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.we</obj_property>
+         <obj_property name="ObjectShortName">wb_i.we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i.sgl" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.sgl</obj_property>
+         <obj_property name="ObjectShortName">wb_i.sgl</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_i.blk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.blk</obj_property>
+         <obj_property name="ObjectShortName">wb_i.blk</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_o</obj_property>
+      <obj_property name="ObjectShortName">wb_o</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_o.dat" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">.dat</obj_property>
+         <obj_property name="ObjectShortName">wb_o.dat</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_o.ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.ack</obj_property>
+         <obj_property name="ObjectShortName">wb_o.ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_wb_slv_sts_cnt/wb_o.err" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">.err</obj_property>
+         <obj_property name="ObjectShortName">wb_o.err</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/status_register_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">status_register_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">status_register_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/packet_counter_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">packet_counter_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">packet_counter_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/reset_counter_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_counter_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reset_counter_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/error_counter_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">error_counter_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_counter_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg_data_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_r_ack_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_r_ack_i</obj_property>
+      <obj_property name="ObjectShortName">data_reg_r_ack_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_r_err_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_r_err_i</obj_property>
+      <obj_property name="ObjectShortName">data_reg_r_err_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_w_ack_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_w_ack_i</obj_property>
+      <obj_property name="ObjectShortName">data_reg_w_ack_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_w_err_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_w_err_i</obj_property>
+      <obj_property name="ObjectShortName">data_reg_w_err_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/netwrk_reg_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">netwrk_reg_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">netwrk_reg_data_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_tx_str_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">async_tx_str_i[6:0]</obj_property>
+      <obj_property name="ObjectShortName">async_tx_str_i[6:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_rx_str_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">async_rx_str_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">async_rx_str_i[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_rx_data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">async_rx_data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">async_rx_data_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_ctr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_ctr_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg_ctr_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_ctr_we_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_ctr_we_o</obj_property>
+      <obj_property name="ObjectShortName">data_reg_ctr_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_addr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_addr_o[9:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg_addr_o[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_data_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg_data_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_re_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_re_o</obj_property>
+      <obj_property name="ObjectShortName">data_reg_re_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/data_reg_we_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_reg_we_o</obj_property>
+      <obj_property name="ObjectShortName">data_reg_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/netwrk_reg_addr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">netwrk_reg_addr_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">netwrk_reg_addr_o[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_tx_ctr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">async_tx_ctr_o[5:0]</obj_property>
+      <obj_property name="ObjectShortName">async_tx_ctr_o[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_tx_ctr_we_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">async_tx_ctr_we_o</obj_property>
+      <obj_property name="ObjectShortName">async_tx_ctr_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_tx_data_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">async_tx_data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">async_tx_data_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_tx_data_we_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">async_tx_data_we_o</obj_property>
+      <obj_property name="ObjectShortName">async_tx_data_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/async_rx_data_re_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">async_rx_data_re_o</obj_property>
+      <obj_property name="ObjectShortName">async_rx_data_re_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_wb_slv_sts_cnt/clk_i_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i_period</obj_property>
+      <obj_property name="ObjectShortName">clk_i_period</obj_property>
+   </wvobject>
+</wave_config>

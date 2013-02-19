@@ -1,0 +1,89 @@
+*********************************************************
+96 MHz clock, 8 databit, 1 stopbit, no parity:
+
+Success:
+
+BAUD RATE = 3000000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 2
+
+BAUD RATE = 2000000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 3
+
+BAUD RATE = 1500000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 4
+
+*********************************************************
+96 MHz clock, 8 databit, 1 stopbit, odd parity:
+
+Success:
+
+BAUD RATE = 3000000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 2
+
+*********************************************************
+100 MHz clock, 8 databit, 1 stopbit, no parity:
+
+Success:
+
+BAUD RATE = 1250000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 5
+
+Fails instantly (framing error):
+
+BAUD RATE = 2083333
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 3
+
+BAUD RATE = 3125000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 2
+
+BAUD RATE = 3125000
+C_TICKS_PR_BIT = 32
+C_BAUD_RATE_DVSR = 1
+
+
+*********************************************************
+100 MHz clock, 8 databit, 1 stopbit, even parity:
+
+Success:
+
+BAUD RATE = 1250000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 5
+
+*********************************************************
+
+100 MHz clock, 8 databit, 1 stopbit, odd parity:
+
+Success:
+
+BAUD RATE = 115741
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 54
+
+Few parity errors:
+
+BAUD RATE = 1250000
+C_TICKS_PR_BIT = 16
+C_BAUD_RATE_DVSR = 5
+
+BAUD RATE = 1250000
+C_TICKS_PR_BIT = 8
+C_BAUD_RATE_DVSR = 10
+
+
+Fails instantly (parity + framing error):
+
+BAUD RATE = 2500000
+C_TICKS_PR_BIT = 8
+C_BAUD_RATE_DVSR = 5
+
+BAUD RATE = 1000000
+C_TICKS_PR_BIT = 4
+C_BAUD_RATE_DVSR = 25

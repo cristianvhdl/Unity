@@ -28,8 +28,11 @@ scripts, e.g. python-scripts.
 SOFTWARE:
 ------------
 The software part of the Unity-framework primarily contains drivers and communication 
-
 components for interfacing the Unity gateware framework to PC based tools or programming languages.
+
 Examples of tools can be ROS: a high-level software framework for robot control, or an engineering tool such as MatLab.
 
-SUpported Programming languges are currently: C, C++ and Python, but drivers for C# and JAVA are planned.
+Supported Programming languges are currently: C, C++ and Python, but drivers for C# and JAVA are planned.
+
+The software section also contains programs and scripts designed for making it easier for users use as well as 
+update/extend the VHDL library.

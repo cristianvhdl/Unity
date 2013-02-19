@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/XilinxProjects/PhD/vhdl_libs/double_buffered_memory/prj/db_cwrm_ctrl/db_cwrm_ctrl.xst" -ofn "C:/XilinxProjects/PhD/vhdl_libs/double_buffered_memory/prj/db_cwrm_ctrl/db_cwrm_ctrl.syr" 

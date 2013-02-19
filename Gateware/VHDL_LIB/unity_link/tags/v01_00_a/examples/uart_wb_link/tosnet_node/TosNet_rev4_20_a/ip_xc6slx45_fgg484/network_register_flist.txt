@@ -1,0 +1,14 @@
+# Output products list for <network_register>
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+network_register.asy
+network_register.gise
+network_register.ngc
+network_register.sym
+network_register.vhd
+network_register.vho
+network_register.xco
+network_register.xise
+network_register_flist.txt
+network_register_readme.txt
+network_register_xmdf.tcl

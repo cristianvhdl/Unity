@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/XilinxProjects/PhD/vhdl_libs/double_buffered_memory/prj/db_cwrm_mem/tb1_isim_beh.exe" -prj "C:/XilinxProjects/PhD/vhdl_libs/double_buffered_memory/prj/db_cwrm_mem/tb1_beh.prj" "work.tb1" 

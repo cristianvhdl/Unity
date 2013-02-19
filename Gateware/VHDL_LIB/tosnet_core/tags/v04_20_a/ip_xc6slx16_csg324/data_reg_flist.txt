@@ -1,0 +1,14 @@
+# Output products list for <data_reg>
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+data_reg.asy
+data_reg.gise
+data_reg.ngc
+data_reg.sym
+data_reg.v
+data_reg.veo
+data_reg.xco
+data_reg.xise
+data_reg_flist.txt
+data_reg_readme.txt
+data_reg_xmdf.tcl

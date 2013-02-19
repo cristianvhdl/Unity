@@ -1,0 +1,14 @@
+
+NET "clk_200M_i" TNM_NET = clk_200M_i;
+TIMESPEC TS_clk_200M_i = PERIOD "clk_200M_i" 200 MHz HIGH 50%;
+
+NET "clk_200M_i" 	LOC = A11 |	IOSTANDARD = "LVCMOS33";
+NET "rx_i"			LOC = A6  |	IOSTANDARD = "LVCMOS33";
+NET "tx_o"			LOC = A7  |	IOSTANDARD = "LVCMOS33";
+NET "led_o<6>"		LOC = D7  |	IOSTANDARD = "LVCMOS33";
+NET "led_o<5>"		LOC = A4  |	IOSTANDARD = "LVCMOS33";
+NET "led_o<4>"		LOC = C7  |	IOSTANDARD = "LVCMOS33";
+NET "led_o<3>"		LOC = B8  |	IOSTANDARD = "LVCMOS33";
+NET "led_o<2>"		LOC = A8  |	IOSTANDARD = "LVCMOS33";
+NET "led_o<1>"		LOC = A5  |	IOSTANDARD = "LVCMOS33";
+NET "led_o<0>"		LOC = B6  |	IOSTANDARD = "LVCMOS33";

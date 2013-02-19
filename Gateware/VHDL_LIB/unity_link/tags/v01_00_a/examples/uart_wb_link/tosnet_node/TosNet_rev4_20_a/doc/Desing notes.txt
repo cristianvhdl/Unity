@@ -1,0 +1,43 @@
+node 1 (master)
+node 2 (slave)
+node 3 (slave)
+
+------------------------------------
+slave Reads:
+node2 -> node 3 OUT	(RP)
+node2 -> node 1 OUT	(RP)
+node2 -> node 2 IN	(RP)
+node2 -> node 2 OUT 	(WP)
+
+slave writes:
+node2 -> node2 OUT	(WP)
+
+commit write (changes write pointer)
+Read multiple (block auto commit to read pointer)
+
+standard CWRM scheme perfect for slave nodes
+
+------------------------------------
+master Reads:
+node1 -> node2 OUT	(RP)
+node1 -> node3 OUT	(RP)
+node1 -> node1 OUT	(WP)
+node1 -> node2 IN	(WP)
+node1 -> node3 IN	(WP)
+
+node1 -> node1 IN	(RP) *
+
+master Writes:
+
+node1 -> node2 IN	(WP)
+node1 -> node3 IN	(WP)
+node1 -> node1 OUT	(WP)
+
+node1 -> node1 IN	(RP)
+
+
+*:potential issue with auto commit read,
+  but these registers are generally not used 
+  as the master is the only can read/write its own IN reg's
+
+standard CWRM scheme perfect for master nodes if one just takes the issue described above into account!
