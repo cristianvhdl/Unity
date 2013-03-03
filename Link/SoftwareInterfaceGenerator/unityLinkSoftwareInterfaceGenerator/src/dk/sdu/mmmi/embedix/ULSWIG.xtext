@@ -1,0 +1,9 @@
+grammar dk.sdu.mmmi.embedix.ULSWIG with org.eclipse.xtext.common.Terminals
+
+generate uLSWIG "http://www.sdu.dk/mmmi/embedix/ULSWIG"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
