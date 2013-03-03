@@ -11,6 +11,24 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.apache.commons.logging;bundle-version="1.0.4";resolution:=optional,
  org.eclipse.emf.codegen.ecore;resolution:=optional,
  org.eclipse.emf.mwe.utils;resolution:=optional,
- org.eclipse.emf.mwe2.launch;resolution:=optional
-Import-Package: org.apache.log4j
+ org.eclipse.emf.mwe2.launch;resolution:=optional,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types
+Import-Package: org.apache.log4j,
+ org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: dk.sdu.mmmi.embedix,
+ dk.sdu.mmmi.embedix.services,
+ dk.sdu.mmmi.embedix.ulswig,
+ dk.sdu.mmmi.embedix.ulswig.impl,
+ dk.sdu.mmmi.embedix.ulswig.util,
+ dk.sdu.mmmi.embedix.serializer,
+ dk.sdu.mmmi.embedix.parser.antlr,
+ dk.sdu.mmmi.embedix.parser.antlr.internal,
+ dk.sdu.mmmi.embedix.validation,
+ dk.sdu.mmmi.embedix.scoping,
+ dk.sdu.mmmi.embedix.generator,
+ dk.sdu.mmmi.embedix.formatting

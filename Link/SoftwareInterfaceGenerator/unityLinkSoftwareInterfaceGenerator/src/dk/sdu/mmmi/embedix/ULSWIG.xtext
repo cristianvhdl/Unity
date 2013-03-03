@@ -1,9 +1,76 @@
 grammar dk.sdu.mmmi.embedix.ULSWIG with org.eclipse.xtext.common.Terminals
 
-generate uLSWIG "http://www.sdu.dk/mmmi/embedix/ULSWIG"
+generate ulswig "http://www.sdu.dk/mmmi/embedix/ULSWIG"
 
-Model:
-	greetings+=Greeting*;
+Robot:
+	constructors+=Constructor*;
 	
-Greeting:
-	'Hello' name=ID '!';
+Constructor:
+	(isPublic?="public")? name=ID '(' (parameters+=ID (',' parameters += ID)*)? ')' 
+	(':' addresses+=Address (',' addresses+=Address)*)? '{' (members+=Member)* '}'
+;
+
+Address:
+	'@' name=ID |
+	'@' '(' elements+=ID (',' elements+=ID)* ')'
+;
+
+Member:
+	LinkBinding | Expansion | Instantiation
+;
+
+LinkBinding:
+	'TOSNET' '(' (properties+=LinkProperty (',' properties+=LinkProperty)) ')' ';'
+;
+
+LinkProperty:
+	'LINK' '=' linkName=ID |
+	'BASE' '=' baseValue=INT
+;
+
+Expansion:
+	identifier=ExpansionName ':' constructor=[Constructor] '(' (arguments+=Argument (',' arguments+=Argument)*)? ')'
+	(bindings+=AddressBinding (',' bindings+=AddressBinding)*)? ';'
+;
+
+ExpansionName:
+	SimpleExpansionName |
+	AddressExpansionName
+;
+
+AddressExpansionName:
+	'@' name=ID
+;
+
+
+SimpleExpansionName:
+	name=ID
+;
+
+
+AddressBinding:
+	'@' name=ID '=' '(' addresses+=HEX_NUM (',' addresses+=HEX_NUM)* ')'
+;
+
+terminal HEX_NUM : '0' 'x' ('0'..'9'|'a'..'f'|'A'..'F')+;
+
+Argument:
+	simple=ID |
+	lhs=ID '+' rhs=Argument |
+	text=STRING	
+;
+
+Instantiation:
+	'@' name=ID ':' kind=Kind '(' (properties+=InstantiationProperty (',' properties+=InstantiationProperty)*)? ')' ';'
+;
+
+Kind:
+	'READ' |
+	'WRITE'
+;
+
+
+InstantiationProperty:
+	{IDProperty} 'ID' '=' id=Argument |
+	{CRCProperty} 'CRC'
+;
