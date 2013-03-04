@@ -9,11 +9,17 @@ import dk.sdu.mmmi.embedix.ulswig.AddressExpansionName;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
+import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Expansion;
+import dk.sdu.mmmi.embedix.ulswig.GroupElement;
+import dk.sdu.mmmi.embedix.ulswig.Grouping;
 import dk.sdu.mmmi.embedix.ulswig.IDProperty;
 import dk.sdu.mmmi.embedix.ulswig.Instantiation;
 import dk.sdu.mmmi.embedix.ulswig.LinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
+import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.PathElement;
+import dk.sdu.mmmi.embedix.ulswig.PublishPoperty;
 import dk.sdu.mmmi.embedix.ulswig.Robot;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
@@ -74,10 +80,30 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 					return; 
 				}
 				else break;
+			case UlswigPackage.DIRECT_ADDRESS_SPEC:
+				if(context == grammarAccess.getAddressSpecRule() ||
+				   context == grammarAccess.getDirectAddressSpecRule()) {
+					sequence_DirectAddressSpec(context, (DirectAddressSpec) semanticObject); 
+					return; 
+				}
+				else break;
 			case UlswigPackage.EXPANSION:
 				if(context == grammarAccess.getExpansionRule() ||
 				   context == grammarAccess.getMemberRule()) {
 					sequence_Expansion(context, (Expansion) semanticObject); 
+					return; 
+				}
+				else break;
+			case UlswigPackage.GROUP_ELEMENT:
+				if(context == grammarAccess.getGroupElementRule()) {
+					sequence_GroupElement(context, (GroupElement) semanticObject); 
+					return; 
+				}
+				else break;
+			case UlswigPackage.GROUPING:
+				if(context == grammarAccess.getGroupingRule() ||
+				   context == grammarAccess.getMemberRule()) {
+					sequence_Grouping(context, (Grouping) semanticObject); 
 					return; 
 				}
 				else break;
@@ -104,6 +130,25 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 			case UlswigPackage.LINK_PROPERTY:
 				if(context == grammarAccess.getLinkPropertyRule()) {
 					sequence_LinkProperty(context, (LinkProperty) semanticObject); 
+					return; 
+				}
+				else break;
+			case UlswigPackage.NAMED_ADDRESS_SPEC:
+				if(context == grammarAccess.getAddressSpecRule() ||
+				   context == grammarAccess.getNamedAddressSpecRule()) {
+					sequence_NamedAddressSpec(context, (NamedAddressSpec) semanticObject); 
+					return; 
+				}
+				else break;
+			case UlswigPackage.PATH_ELEMENT:
+				if(context == grammarAccess.getPathElementRule()) {
+					sequence_PathElement(context, (PathElement) semanticObject); 
+					return; 
+				}
+				else break;
+			case UlswigPackage.PUBLISH_POPERTY:
+				if(context == grammarAccess.getInstantiationPropertyRule()) {
+					sequence_InstantiationProperty(context, (PublishPoperty) semanticObject); 
 					return; 
 				}
 				else break;
@@ -178,6 +223,25 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
+	 *     (name=ID address=HEX_NUM)
+	 */
+	protected void sequence_DirectAddressSpec(EObject context, DirectAddressSpec semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.ADDRESS_SPEC__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.ADDRESS_SPEC__NAME));
+			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.DIRECT_ADDRESS_SPEC__ADDRESS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.DIRECT_ADDRESS_SPEC__ADDRESS));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getDirectAddressSpecAccess().getNameIDTerminalRuleCall_0_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getDirectAddressSpecAccess().getAddressHEX_NUMTerminalRuleCall_2_0(), semanticObject.getAddress());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
 	 *     (
 	 *         identifier=ExpansionName 
 	 *         constructor=[Constructor|ID] 
@@ -186,6 +250,24 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     )
 	 */
 	protected void sequence_Expansion(EObject context, Expansion semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (path+=PathElement path+=PathElement*)
+	 */
+	protected void sequence_GroupElement(EObject context, GroupElement semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID elements+=GroupElement elements+=GroupElement*)
+	 */
+	protected void sequence_Grouping(EObject context, Grouping semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -217,7 +299,26 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (name=ID kind=Kind (properties+=InstantiationProperty properties+=InstantiationProperty*)?)
+	 *     (mode=INT rate=INT)
+	 */
+	protected void sequence_InstantiationProperty(EObject context, PublishPoperty semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__MODE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__MODE));
+			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__RATE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__RATE));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getInstantiationPropertyAccess().getModeINTTerminalRuleCall_2_3_0(), semanticObject.getMode());
+		feeder.accept(grammarAccess.getInstantiationPropertyAccess().getRateINTTerminalRuleCall_2_5_0(), semanticObject.getRate());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (address=AddressSpec kind=Kind (properties+=InstantiationProperty properties+=InstantiationProperty*)?)
 	 */
 	protected void sequence_Instantiation(EObject context, Instantiation semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -238,6 +339,31 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 *     (linkName=ID | baseValue=INT)
 	 */
 	protected void sequence_LinkProperty(EObject context, LinkProperty semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     name=ID
+	 */
+	protected void sequence_NamedAddressSpec(EObject context, NamedAddressSpec semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.ADDRESS_SPEC__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.ADDRESS_SPEC__NAME));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getNamedAddressSpecAccess().getNameIDTerminalRuleCall_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (simple=ID | type=[Constructor|ID])
+	 */
+	protected void sequence_PathElement(EObject context, PathElement semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

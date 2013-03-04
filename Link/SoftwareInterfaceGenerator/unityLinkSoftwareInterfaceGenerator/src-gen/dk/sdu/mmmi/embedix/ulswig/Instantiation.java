@@ -12,7 +12,7 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getName <em>Name</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getAddress <em>Address</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getKind <em>Kind</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getProperties <em>Properties</em>}</li>
  * </ul>
@@ -25,30 +25,30 @@ import org.eclipse.emf.common.util.EList;
 public interface Instantiation extends Member
 {
   /**
-   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * Returns the value of the '<em><b>Address</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Name</em>' attribute isn't clear,
+   * If the meaning of the '<em>Address</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
-   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getInstantiation_Name()
-   * @model
+   * @return the value of the '<em>Address</em>' containment reference.
+   * @see #setAddress(AddressSpec)
+   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getInstantiation_Address()
+   * @model containment="true"
    * @generated
    */
-  String getName();
+  AddressSpec getAddress();
 
   /**
-   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getName <em>Name</em>}' attribute.
+   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getAddress <em>Address</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' attribute.
-   * @see #getName()
+   * @param value the new value of the '<em>Address</em>' containment reference.
+   * @see #getAddress()
    * @generated
    */
-  void setName(String value);
+  void setAddress(AddressSpec value);
 
   /**
    * Returns the value of the '<em><b>Kind</b></em>' attribute.

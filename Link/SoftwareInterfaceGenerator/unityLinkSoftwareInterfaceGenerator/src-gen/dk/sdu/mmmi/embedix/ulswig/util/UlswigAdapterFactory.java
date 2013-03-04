@@ -115,19 +115,14 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
         return createExpansionNameAdapter();
       }
       @Override
-      public Adapter caseAddressExpansionName(AddressExpansionName object)
-      {
-        return createAddressExpansionNameAdapter();
-      }
-      @Override
       public Adapter caseSimpleExpansionName(SimpleExpansionName object)
       {
         return createSimpleExpansionNameAdapter();
       }
       @Override
-      public Adapter caseAddressBinding(AddressBinding object)
+      public Adapter caseAddressExpansionName(AddressExpansionName object)
       {
-        return createAddressBindingAdapter();
+        return createAddressExpansionNameAdapter();
       }
       @Override
       public Adapter caseArgument(Argument object)
@@ -135,14 +130,49 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
         return createArgumentAdapter();
       }
       @Override
+      public Adapter caseAddressBinding(AddressBinding object)
+      {
+        return createAddressBindingAdapter();
+      }
+      @Override
       public Adapter caseInstantiation(Instantiation object)
       {
         return createInstantiationAdapter();
       }
       @Override
+      public Adapter caseAddressSpec(AddressSpec object)
+      {
+        return createAddressSpecAdapter();
+      }
+      @Override
+      public Adapter caseDirectAddressSpec(DirectAddressSpec object)
+      {
+        return createDirectAddressSpecAdapter();
+      }
+      @Override
+      public Adapter caseNamedAddressSpec(NamedAddressSpec object)
+      {
+        return createNamedAddressSpecAdapter();
+      }
+      @Override
       public Adapter caseInstantiationProperty(InstantiationProperty object)
       {
         return createInstantiationPropertyAdapter();
+      }
+      @Override
+      public Adapter caseGrouping(Grouping object)
+      {
+        return createGroupingAdapter();
+      }
+      @Override
+      public Adapter caseGroupElement(GroupElement object)
+      {
+        return createGroupElementAdapter();
+      }
+      @Override
+      public Adapter casePathElement(PathElement object)
+      {
+        return createPathElementAdapter();
       }
       @Override
       public Adapter caseIDProperty(IDProperty object)
@@ -153,6 +183,11 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
       public Adapter caseCRCProperty(CRCProperty object)
       {
         return createCRCPropertyAdapter();
+      }
+      @Override
+      public Adapter casePublishPoperty(PublishPoperty object)
+      {
+        return createPublishPopertyAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -297,21 +332,6 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansionName <em>Address Expansion Name</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansionName
-   * @generated
-   */
-  public Adapter createAddressExpansionNameAdapter()
-  {
-    return null;
-  }
-
-  /**
    * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName <em>Simple Expansion Name</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -327,16 +347,16 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding <em>Address Binding</em>}'.
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansionName <em>Address Expansion Name</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansionName
    * @generated
    */
-  public Adapter createAddressBindingAdapter()
+  public Adapter createAddressExpansionNameAdapter()
   {
     return null;
   }
@@ -357,6 +377,21 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding <em>Address Binding</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding
+   * @generated
+   */
+  public Adapter createAddressBindingAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.Instantiation <em>Instantiation</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -372,6 +407,51 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressSpec <em>Address Spec</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressSpec
+   * @generated
+   */
+  public Adapter createAddressSpecAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec <em>Direct Address Spec</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec
+   * @generated
+   */
+  public Adapter createDirectAddressSpecAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec <em>Named Address Spec</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec
+   * @generated
+   */
+  public Adapter createNamedAddressSpecAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.InstantiationProperty <em>Instantiation Property</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -382,6 +462,51 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createInstantiationPropertyAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.Grouping <em>Grouping</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.Grouping
+   * @generated
+   */
+  public Adapter createGroupingAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.GroupElement <em>Group Element</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.GroupElement
+   * @generated
+   */
+  public Adapter createGroupElementAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.PathElement <em>Path Element</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.PathElement
+   * @generated
+   */
+  public Adapter createPathElementAdapter()
   {
     return null;
   }
@@ -412,6 +537,21 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createCRCPropertyAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty <em>Publish Poperty</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty
+   * @generated
+   */
+  public Adapter createPublishPopertyAdapter()
   {
     return null;
   }

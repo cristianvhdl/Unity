@@ -95,15 +95,6 @@ public interface UlswigFactory extends EFactory
   ExpansionName createExpansionName();
 
   /**
-   * Returns a new object of class '<em>Address Expansion Name</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Address Expansion Name</em>'.
-   * @generated
-   */
-  AddressExpansionName createAddressExpansionName();
-
-  /**
    * Returns a new object of class '<em>Simple Expansion Name</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -113,13 +104,13 @@ public interface UlswigFactory extends EFactory
   SimpleExpansionName createSimpleExpansionName();
 
   /**
-   * Returns a new object of class '<em>Address Binding</em>'.
+   * Returns a new object of class '<em>Address Expansion Name</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Address Binding</em>'.
+   * @return a new object of class '<em>Address Expansion Name</em>'.
    * @generated
    */
-  AddressBinding createAddressBinding();
+  AddressExpansionName createAddressExpansionName();
 
   /**
    * Returns a new object of class '<em>Argument</em>'.
@@ -131,6 +122,15 @@ public interface UlswigFactory extends EFactory
   Argument createArgument();
 
   /**
+   * Returns a new object of class '<em>Address Binding</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Address Binding</em>'.
+   * @generated
+   */
+  AddressBinding createAddressBinding();
+
+  /**
    * Returns a new object of class '<em>Instantiation</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -140,6 +140,33 @@ public interface UlswigFactory extends EFactory
   Instantiation createInstantiation();
 
   /**
+   * Returns a new object of class '<em>Address Spec</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Address Spec</em>'.
+   * @generated
+   */
+  AddressSpec createAddressSpec();
+
+  /**
+   * Returns a new object of class '<em>Direct Address Spec</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Direct Address Spec</em>'.
+   * @generated
+   */
+  DirectAddressSpec createDirectAddressSpec();
+
+  /**
+   * Returns a new object of class '<em>Named Address Spec</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Named Address Spec</em>'.
+   * @generated
+   */
+  NamedAddressSpec createNamedAddressSpec();
+
+  /**
    * Returns a new object of class '<em>Instantiation Property</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -147,6 +174,33 @@ public interface UlswigFactory extends EFactory
    * @generated
    */
   InstantiationProperty createInstantiationProperty();
+
+  /**
+   * Returns a new object of class '<em>Grouping</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Grouping</em>'.
+   * @generated
+   */
+  Grouping createGrouping();
+
+  /**
+   * Returns a new object of class '<em>Group Element</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Group Element</em>'.
+   * @generated
+   */
+  GroupElement createGroupElement();
+
+  /**
+   * Returns a new object of class '<em>Path Element</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Path Element</em>'.
+   * @generated
+   */
+  PathElement createPathElement();
 
   /**
    * Returns a new object of class '<em>ID Property</em>'.
@@ -165,6 +219,15 @@ public interface UlswigFactory extends EFactory
    * @generated
    */
   CRCProperty createCRCProperty();
+
+  /**
+   * Returns a new object of class '<em>Publish Poperty</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Publish Poperty</em>'.
+   * @generated
+   */
+  PublishPoperty createPublishPoperty();
 
   /**
    * Returns the package supported by this factory.

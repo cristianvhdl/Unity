@@ -5,17 +5,24 @@ package dk.sdu.mmmi.embedix.ulswig.impl;
 import dk.sdu.mmmi.embedix.ulswig.Address;
 import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
 import dk.sdu.mmmi.embedix.ulswig.AddressExpansionName;
+import dk.sdu.mmmi.embedix.ulswig.AddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
+import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Expansion;
 import dk.sdu.mmmi.embedix.ulswig.ExpansionName;
+import dk.sdu.mmmi.embedix.ulswig.GroupElement;
+import dk.sdu.mmmi.embedix.ulswig.Grouping;
 import dk.sdu.mmmi.embedix.ulswig.IDProperty;
 import dk.sdu.mmmi.embedix.ulswig.Instantiation;
 import dk.sdu.mmmi.embedix.ulswig.InstantiationProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
 import dk.sdu.mmmi.embedix.ulswig.Member;
+import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.PathElement;
+import dk.sdu.mmmi.embedix.ulswig.PublishPoperty;
 import dk.sdu.mmmi.embedix.ulswig.Robot;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName;
 import dk.sdu.mmmi.embedix.ulswig.UlswigFactory;
@@ -97,13 +104,6 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass addressExpansionNameEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   private EClass simpleExpansionNameEClass = null;
 
   /**
@@ -111,7 +111,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass addressBindingEClass = null;
+  private EClass addressExpansionNameEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -125,6 +125,13 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass addressBindingEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass instantiationEClass = null;
 
   /**
@@ -132,7 +139,49 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass addressSpecEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass directAddressSpecEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass namedAddressSpecEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass instantiationPropertyEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass groupingEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass groupElementEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass pathElementEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -147,6 +196,13 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * @generated
    */
   private EClass crcPropertyEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass publishPopertyEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -456,16 +512,6 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getAddressExpansionName()
-  {
-    return addressExpansionNameEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EClass getSimpleExpansionName()
   {
     return simpleExpansionNameEClass;
@@ -476,29 +522,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getAddressBinding()
+  public EClass getAddressExpansionName()
   {
-    return addressBindingEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getAddressBinding_Name()
-  {
-    return (EAttribute)addressBindingEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getAddressBinding_Addresses()
-  {
-    return (EAttribute)addressBindingEClass.getEStructuralFeatures().get(1);
+    return addressExpansionNameEClass;
   }
 
   /**
@@ -556,6 +582,36 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EClass getAddressBinding()
+  {
+    return addressBindingEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getAddressBinding_Name()
+  {
+    return (EAttribute)addressBindingEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getAddressBinding_Addresses()
+  {
+    return (EAttribute)addressBindingEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getInstantiation()
   {
     return instantiationEClass;
@@ -566,9 +622,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getInstantiation_Name()
+  public EReference getInstantiation_Address()
   {
-    return (EAttribute)instantiationEClass.getEStructuralFeatures().get(0);
+    return (EReference)instantiationEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -596,9 +652,139 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EClass getAddressSpec()
+  {
+    return addressSpecEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getAddressSpec_Name()
+  {
+    return (EAttribute)addressSpecEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getDirectAddressSpec()
+  {
+    return directAddressSpecEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getDirectAddressSpec_Address()
+  {
+    return (EAttribute)directAddressSpecEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getNamedAddressSpec()
+  {
+    return namedAddressSpecEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getInstantiationProperty()
   {
     return instantiationPropertyEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getGrouping()
+  {
+    return groupingEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getGrouping_Name()
+  {
+    return (EAttribute)groupingEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getGrouping_Elements()
+  {
+    return (EReference)groupingEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getGroupElement()
+  {
+    return groupElementEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getGroupElement_Path()
+  {
+    return (EReference)groupElementEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getPathElement()
+  {
+    return pathElementEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPathElement_Simple()
+  {
+    return (EAttribute)pathElementEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getPathElement_Type()
+  {
+    return (EReference)pathElementEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -629,6 +815,36 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
   public EClass getCRCProperty()
   {
     return crcPropertyEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getPublishPoperty()
+  {
+    return publishPopertyEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPublishPoperty_Mode()
+  {
+    return (EAttribute)publishPopertyEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getPublishPoperty_Rate()
+  {
+    return (EAttribute)publishPopertyEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -693,13 +909,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     expansionNameEClass = createEClass(EXPANSION_NAME);
     createEAttribute(expansionNameEClass, EXPANSION_NAME__NAME);
 
-    addressExpansionNameEClass = createEClass(ADDRESS_EXPANSION_NAME);
-
     simpleExpansionNameEClass = createEClass(SIMPLE_EXPANSION_NAME);
 
-    addressBindingEClass = createEClass(ADDRESS_BINDING);
-    createEAttribute(addressBindingEClass, ADDRESS_BINDING__NAME);
-    createEAttribute(addressBindingEClass, ADDRESS_BINDING__ADDRESSES);
+    addressExpansionNameEClass = createEClass(ADDRESS_EXPANSION_NAME);
 
     argumentEClass = createEClass(ARGUMENT);
     createEAttribute(argumentEClass, ARGUMENT__SIMPLE);
@@ -707,17 +919,44 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     createEReference(argumentEClass, ARGUMENT__RHS);
     createEAttribute(argumentEClass, ARGUMENT__TEXT);
 
+    addressBindingEClass = createEClass(ADDRESS_BINDING);
+    createEAttribute(addressBindingEClass, ADDRESS_BINDING__NAME);
+    createEAttribute(addressBindingEClass, ADDRESS_BINDING__ADDRESSES);
+
     instantiationEClass = createEClass(INSTANTIATION);
-    createEAttribute(instantiationEClass, INSTANTIATION__NAME);
+    createEReference(instantiationEClass, INSTANTIATION__ADDRESS);
     createEAttribute(instantiationEClass, INSTANTIATION__KIND);
     createEReference(instantiationEClass, INSTANTIATION__PROPERTIES);
 
+    addressSpecEClass = createEClass(ADDRESS_SPEC);
+    createEAttribute(addressSpecEClass, ADDRESS_SPEC__NAME);
+
+    directAddressSpecEClass = createEClass(DIRECT_ADDRESS_SPEC);
+    createEAttribute(directAddressSpecEClass, DIRECT_ADDRESS_SPEC__ADDRESS);
+
+    namedAddressSpecEClass = createEClass(NAMED_ADDRESS_SPEC);
+
     instantiationPropertyEClass = createEClass(INSTANTIATION_PROPERTY);
+
+    groupingEClass = createEClass(GROUPING);
+    createEAttribute(groupingEClass, GROUPING__NAME);
+    createEReference(groupingEClass, GROUPING__ELEMENTS);
+
+    groupElementEClass = createEClass(GROUP_ELEMENT);
+    createEReference(groupElementEClass, GROUP_ELEMENT__PATH);
+
+    pathElementEClass = createEClass(PATH_ELEMENT);
+    createEAttribute(pathElementEClass, PATH_ELEMENT__SIMPLE);
+    createEReference(pathElementEClass, PATH_ELEMENT__TYPE);
 
     idPropertyEClass = createEClass(ID_PROPERTY);
     createEReference(idPropertyEClass, ID_PROPERTY__ID);
 
     crcPropertyEClass = createEClass(CRC_PROPERTY);
+
+    publishPopertyEClass = createEClass(PUBLISH_POPERTY);
+    createEAttribute(publishPopertyEClass, PUBLISH_POPERTY__MODE);
+    createEAttribute(publishPopertyEClass, PUBLISH_POPERTY__RATE);
   }
 
   /**
@@ -751,11 +990,15 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     // Add supertypes to classes
     linkBindingEClass.getESuperTypes().add(this.getMember());
     expansionEClass.getESuperTypes().add(this.getMember());
-    addressExpansionNameEClass.getESuperTypes().add(this.getExpansionName());
     simpleExpansionNameEClass.getESuperTypes().add(this.getExpansionName());
+    addressExpansionNameEClass.getESuperTypes().add(this.getExpansionName());
     instantiationEClass.getESuperTypes().add(this.getMember());
+    directAddressSpecEClass.getESuperTypes().add(this.getAddressSpec());
+    namedAddressSpecEClass.getESuperTypes().add(this.getAddressSpec());
+    groupingEClass.getESuperTypes().add(this.getMember());
     idPropertyEClass.getESuperTypes().add(this.getInstantiationProperty());
     crcPropertyEClass.getESuperTypes().add(this.getInstantiationProperty());
+    publishPopertyEClass.getESuperTypes().add(this.getInstantiationProperty());
 
     // Initialize classes and features; add operations and parameters
     initEClass(robotEClass, Robot.class, "Robot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -790,13 +1033,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     initEClass(expansionNameEClass, ExpansionName.class, "ExpansionName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getExpansionName_Name(), ecorePackage.getEString(), "name", null, 0, 1, ExpansionName.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(addressExpansionNameEClass, AddressExpansionName.class, "AddressExpansionName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
     initEClass(simpleExpansionNameEClass, SimpleExpansionName.class, "SimpleExpansionName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(addressBindingEClass, AddressBinding.class, "AddressBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getAddressBinding_Name(), ecorePackage.getEString(), "name", null, 0, 1, AddressBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getAddressBinding_Addresses(), ecorePackage.getEString(), "addresses", null, 0, -1, AddressBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(addressExpansionNameEClass, AddressExpansionName.class, "AddressExpansionName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(argumentEClass, Argument.class, "Argument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getArgument_Simple(), ecorePackage.getEString(), "simple", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -804,17 +1043,44 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     initEReference(getArgument_Rhs(), this.getArgument(), null, "rhs", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getArgument_Text(), ecorePackage.getEString(), "text", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+    initEClass(addressBindingEClass, AddressBinding.class, "AddressBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getAddressBinding_Name(), ecorePackage.getEString(), "name", null, 0, 1, AddressBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getAddressBinding_Addresses(), ecorePackage.getEString(), "addresses", null, 0, -1, AddressBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
     initEClass(instantiationEClass, Instantiation.class, "Instantiation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getInstantiation_Name(), ecorePackage.getEString(), "name", null, 0, 1, Instantiation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getInstantiation_Address(), this.getAddressSpec(), null, "address", null, 0, 1, Instantiation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getInstantiation_Kind(), ecorePackage.getEString(), "kind", null, 0, 1, Instantiation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getInstantiation_Properties(), this.getInstantiationProperty(), null, "properties", null, 0, -1, Instantiation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+    initEClass(addressSpecEClass, AddressSpec.class, "AddressSpec", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getAddressSpec_Name(), ecorePackage.getEString(), "name", null, 0, 1, AddressSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(directAddressSpecEClass, DirectAddressSpec.class, "DirectAddressSpec", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getDirectAddressSpec_Address(), ecorePackage.getEString(), "address", null, 0, 1, DirectAddressSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(namedAddressSpecEClass, NamedAddressSpec.class, "NamedAddressSpec", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
     initEClass(instantiationPropertyEClass, InstantiationProperty.class, "InstantiationProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(groupingEClass, Grouping.class, "Grouping", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getGrouping_Name(), ecorePackage.getEString(), "name", null, 0, 1, Grouping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getGrouping_Elements(), this.getGroupElement(), null, "elements", null, 0, -1, Grouping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(groupElementEClass, GroupElement.class, "GroupElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getGroupElement_Path(), this.getPathElement(), null, "path", null, 0, -1, GroupElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(pathElementEClass, PathElement.class, "PathElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getPathElement_Simple(), ecorePackage.getEString(), "simple", null, 0, 1, PathElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getPathElement_Type(), this.getConstructor(), null, "type", null, 0, 1, PathElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(idPropertyEClass, IDProperty.class, "IDProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getIDProperty_Id(), this.getArgument(), null, "id", null, 0, 1, IDProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(crcPropertyEClass, CRCProperty.class, "CRCProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(publishPopertyEClass, PublishPoperty.class, "PublishPoperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getPublishPoperty_Mode(), ecorePackage.getEInt(), "mode", null, 0, 1, PublishPoperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPublishPoperty_Rate(), ecorePackage.getEInt(), "rate", null, 0, 1, PublishPoperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

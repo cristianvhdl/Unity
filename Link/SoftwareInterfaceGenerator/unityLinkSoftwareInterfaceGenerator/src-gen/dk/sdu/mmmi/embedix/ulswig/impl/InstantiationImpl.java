@@ -2,6 +2,7 @@
  */
 package dk.sdu.mmmi.embedix.ulswig.impl;
 
+import dk.sdu.mmmi.embedix.ulswig.AddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Instantiation;
 import dk.sdu.mmmi.embedix.ulswig.InstantiationProperty;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
@@ -28,7 +29,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationImpl#getName <em>Name</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationImpl#getAddress <em>Address</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationImpl#getKind <em>Kind</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationImpl#getProperties <em>Properties</em>}</li>
  * </ul>
@@ -39,24 +40,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class InstantiationImpl extends MemberImpl implements Instantiation
 {
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getAddress() <em>Address</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getAddress()
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected String name = NAME_EDEFAULT;
+  protected AddressSpec address;
 
   /**
    * The default value of the '{@link #getKind() <em>Kind</em>}' attribute.
@@ -114,9 +105,9 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getName()
+  public AddressSpec getAddress()
   {
-    return name;
+    return address;
   }
 
   /**
@@ -124,12 +115,37 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setName(String newName)
+  public NotificationChain basicSetAddress(AddressSpec newAddress, NotificationChain msgs)
   {
-    String oldName = name;
-    name = newName;
+    AddressSpec oldAddress = address;
+    address = newAddress;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.INSTANTIATION__NAME, oldName, name));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, UlswigPackage.INSTANTIATION__ADDRESS, oldAddress, newAddress);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setAddress(AddressSpec newAddress)
+  {
+    if (newAddress != address)
+    {
+      NotificationChain msgs = null;
+      if (address != null)
+        msgs = ((InternalEObject)address).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - UlswigPackage.INSTANTIATION__ADDRESS, null, msgs);
+      if (newAddress != null)
+        msgs = ((InternalEObject)newAddress).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - UlswigPackage.INSTANTIATION__ADDRESS, null, msgs);
+      msgs = basicSetAddress(newAddress, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.INSTANTIATION__ADDRESS, newAddress, newAddress));
   }
 
   /**
@@ -179,6 +195,8 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
   {
     switch (featureID)
     {
+      case UlswigPackage.INSTANTIATION__ADDRESS:
+        return basicSetAddress(null, msgs);
       case UlswigPackage.INSTANTIATION__PROPERTIES:
         return ((InternalEList<?>)getProperties()).basicRemove(otherEnd, msgs);
     }
@@ -195,8 +213,8 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
   {
     switch (featureID)
     {
-      case UlswigPackage.INSTANTIATION__NAME:
-        return getName();
+      case UlswigPackage.INSTANTIATION__ADDRESS:
+        return getAddress();
       case UlswigPackage.INSTANTIATION__KIND:
         return getKind();
       case UlswigPackage.INSTANTIATION__PROPERTIES:
@@ -216,8 +234,8 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
   {
     switch (featureID)
     {
-      case UlswigPackage.INSTANTIATION__NAME:
-        setName((String)newValue);
+      case UlswigPackage.INSTANTIATION__ADDRESS:
+        setAddress((AddressSpec)newValue);
         return;
       case UlswigPackage.INSTANTIATION__KIND:
         setKind((String)newValue);
@@ -240,8 +258,8 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
   {
     switch (featureID)
     {
-      case UlswigPackage.INSTANTIATION__NAME:
-        setName(NAME_EDEFAULT);
+      case UlswigPackage.INSTANTIATION__ADDRESS:
+        setAddress((AddressSpec)null);
         return;
       case UlswigPackage.INSTANTIATION__KIND:
         setKind(KIND_EDEFAULT);
@@ -263,8 +281,8 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
   {
     switch (featureID)
     {
-      case UlswigPackage.INSTANTIATION__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case UlswigPackage.INSTANTIATION__ADDRESS:
+        return address != null;
       case UlswigPackage.INSTANTIATION__KIND:
         return KIND_EDEFAULT == null ? kind != null : !KIND_EDEFAULT.equals(kind);
       case UlswigPackage.INSTANTIATION__PROPERTIES:
@@ -284,9 +302,7 @@ public class InstantiationImpl extends MemberImpl implements Instantiation
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(", kind: ");
+    result.append(" (kind: ");
     result.append(kind);
     result.append(')');
     return result.toString();

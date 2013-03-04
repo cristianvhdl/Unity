@@ -7,7 +7,7 @@ Robot:
 	
 Constructor:
 	(isPublic?="public")? name=ID '(' (parameters+=ID (',' parameters += ID)*)? ')' 
-	(':' addresses+=Address (',' addresses+=Address)*)? '{' (members+=Member)* '}'
+	(':' addresses+=Address (',' addresses+=Address)*)? '{' (members+=Member ';')* '}'
 ;
 
 Address:
@@ -16,11 +16,13 @@ Address:
 ;
 
 Member:
-	LinkBinding | Expansion | Instantiation
+	LinkBinding | Expansion | Instantiation | Grouping
 ;
 
+// Link binding
+
 LinkBinding:
-	'TOSNET' '(' (properties+=LinkProperty (',' properties+=LinkProperty)) ')' ';'
+	'TOSNET' '(' (properties+=LinkProperty (',' properties+=LinkProperty)) ')'
 ;
 
 LinkProperty:
@@ -28,31 +30,25 @@ LinkProperty:
 	'BASE' '=' baseValue=INT
 ;
 
+// Expansion (application of a constructor)
+
 Expansion:
 	identifier=ExpansionName ':' constructor=[Constructor] '(' (arguments+=Argument (',' arguments+=Argument)*)? ')'
-	(bindings+=AddressBinding (',' bindings+=AddressBinding)*)? ';'
+	(bindings+=AddressBinding (',' bindings+=AddressBinding)*)?
 ;
 
 ExpansionName:
 	SimpleExpansionName |
-	AddressExpansionName
+	AddressExpansionName 
 ;
-
-AddressExpansionName:
-	'@' name=ID
-;
-
 
 SimpleExpansionName:
 	name=ID
 ;
 
-
-AddressBinding:
-	'@' name=ID '=' '(' addresses+=HEX_NUM (',' addresses+=HEX_NUM)* ')'
+AddressExpansionName:
+	'@' name=ID
 ;
-
-terminal HEX_NUM : '0' 'x' ('0'..'9'|'a'..'f'|'A'..'F')+;
 
 Argument:
 	simple=ID |
@@ -60,8 +56,27 @@ Argument:
 	text=STRING	
 ;
 
+AddressBinding:
+	'@' name=ID '=' '(' addresses+=HEX_NUM (',' addresses+=HEX_NUM)* ')'
+;
+
+// Instantiation of proxy
+
 Instantiation:
-	'@' name=ID ':' kind=Kind '(' (properties+=InstantiationProperty (',' properties+=InstantiationProperty)*)? ')' ';'
+	'@' address=AddressSpec ':' kind=Kind '(' (properties+=InstantiationProperty (',' properties+=InstantiationProperty)*)? ')'
+;
+
+AddressSpec:
+	DirectAddressSpec |
+	NamedAddressSpec
+;
+
+DirectAddressSpec:
+	name=ID '=' address=HEX_NUM
+;
+
+NamedAddressSpec:
+	name=ID
 ;
 
 Kind:
@@ -69,8 +84,28 @@ Kind:
 	'WRITE'
 ;
 
-
 InstantiationProperty:
 	{IDProperty} 'ID' '=' id=Argument |
-	{CRCProperty} 'CRC'
+	{CRCProperty} 'CRC' |
+	{PublishPoperty} 'PUBLISH' '(' mode=INT ',' rate=INT ')'
 ;
+
+// Grouping of existing elements (alias)
+
+Grouping:
+	name=ID '=' elements+=GroupElement (',' elements+=GroupElement)*
+;
+
+GroupElement:
+	path+=PathElement ('.' path+=PathElement)*
+;
+
+PathElement:
+	simple=ID |
+	'ALL' '(' type=[Constructor] ')'	
+;
+
+// Hexadecimal numbers (lexer rule)
+
+terminal HEX_NUM : '0' 'x' ('0'..'9'|'a'..'f'|'A'..'F')+;
+

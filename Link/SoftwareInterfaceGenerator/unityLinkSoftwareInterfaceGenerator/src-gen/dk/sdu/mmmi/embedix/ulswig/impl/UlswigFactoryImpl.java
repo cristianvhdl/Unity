@@ -72,14 +72,21 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
       case UlswigPackage.LINK_PROPERTY: return createLinkProperty();
       case UlswigPackage.EXPANSION: return createExpansion();
       case UlswigPackage.EXPANSION_NAME: return createExpansionName();
-      case UlswigPackage.ADDRESS_EXPANSION_NAME: return createAddressExpansionName();
       case UlswigPackage.SIMPLE_EXPANSION_NAME: return createSimpleExpansionName();
-      case UlswigPackage.ADDRESS_BINDING: return createAddressBinding();
+      case UlswigPackage.ADDRESS_EXPANSION_NAME: return createAddressExpansionName();
       case UlswigPackage.ARGUMENT: return createArgument();
+      case UlswigPackage.ADDRESS_BINDING: return createAddressBinding();
       case UlswigPackage.INSTANTIATION: return createInstantiation();
+      case UlswigPackage.ADDRESS_SPEC: return createAddressSpec();
+      case UlswigPackage.DIRECT_ADDRESS_SPEC: return createDirectAddressSpec();
+      case UlswigPackage.NAMED_ADDRESS_SPEC: return createNamedAddressSpec();
       case UlswigPackage.INSTANTIATION_PROPERTY: return createInstantiationProperty();
+      case UlswigPackage.GROUPING: return createGrouping();
+      case UlswigPackage.GROUP_ELEMENT: return createGroupElement();
+      case UlswigPackage.PATH_ELEMENT: return createPathElement();
       case UlswigPackage.ID_PROPERTY: return createIDProperty();
       case UlswigPackage.CRC_PROPERTY: return createCRCProperty();
+      case UlswigPackage.PUBLISH_POPERTY: return createPublishPoperty();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -178,17 +185,6 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public AddressExpansionName createAddressExpansionName()
-  {
-    AddressExpansionNameImpl addressExpansionName = new AddressExpansionNameImpl();
-    return addressExpansionName;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public SimpleExpansionName createSimpleExpansionName()
   {
     SimpleExpansionNameImpl simpleExpansionName = new SimpleExpansionNameImpl();
@@ -200,10 +196,10 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public AddressBinding createAddressBinding()
+  public AddressExpansionName createAddressExpansionName()
   {
-    AddressBindingImpl addressBinding = new AddressBindingImpl();
-    return addressBinding;
+    AddressExpansionNameImpl addressExpansionName = new AddressExpansionNameImpl();
+    return addressExpansionName;
   }
 
   /**
@@ -222,6 +218,17 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  public AddressBinding createAddressBinding()
+  {
+    AddressBindingImpl addressBinding = new AddressBindingImpl();
+    return addressBinding;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public Instantiation createInstantiation()
   {
     InstantiationImpl instantiation = new InstantiationImpl();
@@ -233,10 +240,76 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  public AddressSpec createAddressSpec()
+  {
+    AddressSpecImpl addressSpec = new AddressSpecImpl();
+    return addressSpec;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public DirectAddressSpec createDirectAddressSpec()
+  {
+    DirectAddressSpecImpl directAddressSpec = new DirectAddressSpecImpl();
+    return directAddressSpec;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NamedAddressSpec createNamedAddressSpec()
+  {
+    NamedAddressSpecImpl namedAddressSpec = new NamedAddressSpecImpl();
+    return namedAddressSpec;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public InstantiationProperty createInstantiationProperty()
   {
     InstantiationPropertyImpl instantiationProperty = new InstantiationPropertyImpl();
     return instantiationProperty;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Grouping createGrouping()
+  {
+    GroupingImpl grouping = new GroupingImpl();
+    return grouping;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public GroupElement createGroupElement()
+  {
+    GroupElementImpl groupElement = new GroupElementImpl();
+    return groupElement;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PathElement createPathElement()
+  {
+    PathElementImpl pathElement = new PathElementImpl();
+    return pathElement;
   }
 
   /**
@@ -259,6 +332,17 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
   {
     CRCPropertyImpl crcProperty = new CRCPropertyImpl();
     return crcProperty;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PublishPoperty createPublishPoperty()
+  {
+    PublishPopertyImpl publishPoperty = new PublishPopertyImpl();
+    return publishPoperty;
   }
 
   /**

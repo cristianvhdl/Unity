@@ -353,34 +353,6 @@ public interface UlswigPackage extends EPackage
   int EXPANSION_NAME_FEATURE_COUNT = 1;
 
   /**
-   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl <em>Address Expansion Name</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansionName()
-   * @generated
-   */
-  int ADDRESS_EXPANSION_NAME = 8;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ADDRESS_EXPANSION_NAME__NAME = EXPANSION_NAME__NAME;
-
-  /**
-   * The number of structural features of the '<em>Address Expansion Name</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ADDRESS_EXPANSION_NAME_FEATURE_COUNT = EXPANSION_NAME_FEATURE_COUNT + 0;
-
-  /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionNameImpl <em>Simple Expansion Name</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -388,7 +360,7 @@ public interface UlswigPackage extends EPackage
    * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getSimpleExpansionName()
    * @generated
    */
-  int SIMPLE_EXPANSION_NAME = 9;
+  int SIMPLE_EXPANSION_NAME = 8;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -409,14 +381,14 @@ public interface UlswigPackage extends EPackage
   int SIMPLE_EXPANSION_NAME_FEATURE_COUNT = EXPANSION_NAME_FEATURE_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl <em>Address Binding</em>}' class.
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl <em>Address Expansion Name</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressBinding()
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansionName()
    * @generated
    */
-  int ADDRESS_BINDING = 10;
+  int ADDRESS_EXPANSION_NAME = 9;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -425,25 +397,16 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ADDRESS_BINDING__NAME = 0;
+  int ADDRESS_EXPANSION_NAME__NAME = EXPANSION_NAME__NAME;
 
   /**
-   * The feature id for the '<em><b>Addresses</b></em>' attribute list.
+   * The number of structural features of the '<em>Address Expansion Name</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ADDRESS_BINDING__ADDRESSES = 1;
-
-  /**
-   * The number of structural features of the '<em>Address Binding</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int ADDRESS_BINDING_FEATURE_COUNT = 2;
+  int ADDRESS_EXPANSION_NAME_FEATURE_COUNT = EXPANSION_NAME_FEATURE_COUNT + 0;
 
   /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ArgumentImpl <em>Argument</em>}' class.
@@ -453,7 +416,7 @@ public interface UlswigPackage extends EPackage
    * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getArgument()
    * @generated
    */
-  int ARGUMENT = 11;
+  int ARGUMENT = 10;
 
   /**
    * The feature id for the '<em><b>Simple</b></em>' attribute.
@@ -501,6 +464,43 @@ public interface UlswigPackage extends EPackage
   int ARGUMENT_FEATURE_COUNT = 4;
 
   /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl <em>Address Binding</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressBinding()
+   * @generated
+   */
+  int ADDRESS_BINDING = 11;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADDRESS_BINDING__NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Addresses</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADDRESS_BINDING__ADDRESSES = 1;
+
+  /**
+   * The number of structural features of the '<em>Address Binding</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADDRESS_BINDING_FEATURE_COUNT = 2;
+
+  /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationImpl <em>Instantiation</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -511,13 +511,13 @@ public interface UlswigPackage extends EPackage
   int INSTANTIATION = 12;
 
   /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * The feature id for the '<em><b>Address</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int INSTANTIATION__NAME = MEMBER_FEATURE_COUNT + 0;
+  int INSTANTIATION__ADDRESS = MEMBER_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Kind</b></em>' attribute.
@@ -547,6 +547,99 @@ public interface UlswigPackage extends EPackage
   int INSTANTIATION_FEATURE_COUNT = MEMBER_FEATURE_COUNT + 3;
 
   /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressSpecImpl <em>Address Spec</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressSpecImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressSpec()
+   * @generated
+   */
+  int ADDRESS_SPEC = 13;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADDRESS_SPEC__NAME = 0;
+
+  /**
+   * The number of structural features of the '<em>Address Spec</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADDRESS_SPEC_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.DirectAddressSpecImpl <em>Direct Address Spec</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.DirectAddressSpecImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getDirectAddressSpec()
+   * @generated
+   */
+  int DIRECT_ADDRESS_SPEC = 14;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DIRECT_ADDRESS_SPEC__NAME = ADDRESS_SPEC__NAME;
+
+  /**
+   * The feature id for the '<em><b>Address</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DIRECT_ADDRESS_SPEC__ADDRESS = ADDRESS_SPEC_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>Direct Address Spec</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DIRECT_ADDRESS_SPEC_FEATURE_COUNT = ADDRESS_SPEC_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.NamedAddressSpecImpl <em>Named Address Spec</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.NamedAddressSpecImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getNamedAddressSpec()
+   * @generated
+   */
+  int NAMED_ADDRESS_SPEC = 15;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NAMED_ADDRESS_SPEC__NAME = ADDRESS_SPEC__NAME;
+
+  /**
+   * The number of structural features of the '<em>Named Address Spec</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int NAMED_ADDRESS_SPEC_FEATURE_COUNT = ADDRESS_SPEC_FEATURE_COUNT + 0;
+
+  /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationPropertyImpl <em>Instantiation Property</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -554,7 +647,7 @@ public interface UlswigPackage extends EPackage
    * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getInstantiationProperty()
    * @generated
    */
-  int INSTANTIATION_PROPERTY = 13;
+  int INSTANTIATION_PROPERTY = 16;
 
   /**
    * The number of structural features of the '<em>Instantiation Property</em>' class.
@@ -566,6 +659,108 @@ public interface UlswigPackage extends EPackage
   int INSTANTIATION_PROPERTY_FEATURE_COUNT = 0;
 
   /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.GroupingImpl <em>Grouping</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.GroupingImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getGrouping()
+   * @generated
+   */
+  int GROUPING = 17;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GROUPING__NAME = MEMBER_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Elements</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GROUPING__ELEMENTS = MEMBER_FEATURE_COUNT + 1;
+
+  /**
+   * The number of structural features of the '<em>Grouping</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GROUPING_FEATURE_COUNT = MEMBER_FEATURE_COUNT + 2;
+
+  /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.GroupElementImpl <em>Group Element</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.GroupElementImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getGroupElement()
+   * @generated
+   */
+  int GROUP_ELEMENT = 18;
+
+  /**
+   * The feature id for the '<em><b>Path</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GROUP_ELEMENT__PATH = 0;
+
+  /**
+   * The number of structural features of the '<em>Group Element</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GROUP_ELEMENT_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PathElementImpl <em>Path Element</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.PathElementImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPathElement()
+   * @generated
+   */
+  int PATH_ELEMENT = 19;
+
+  /**
+   * The feature id for the '<em><b>Simple</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PATH_ELEMENT__SIMPLE = 0;
+
+  /**
+   * The feature id for the '<em><b>Type</b></em>' reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PATH_ELEMENT__TYPE = 1;
+
+  /**
+   * The number of structural features of the '<em>Path Element</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PATH_ELEMENT_FEATURE_COUNT = 2;
+
+  /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.IDPropertyImpl <em>ID Property</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -573,7 +768,7 @@ public interface UlswigPackage extends EPackage
    * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getIDProperty()
    * @generated
    */
-  int ID_PROPERTY = 14;
+  int ID_PROPERTY = 20;
 
   /**
    * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -601,7 +796,7 @@ public interface UlswigPackage extends EPackage
    * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getCRCProperty()
    * @generated
    */
-  int CRC_PROPERTY = 15;
+  int CRC_PROPERTY = 21;
 
   /**
    * The number of structural features of the '<em>CRC Property</em>' class.
@@ -611,6 +806,43 @@ public interface UlswigPackage extends EPackage
    * @ordered
    */
   int CRC_PROPERTY_FEATURE_COUNT = INSTANTIATION_PROPERTY_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl <em>Publish Poperty</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPublishPoperty()
+   * @generated
+   */
+  int PUBLISH_POPERTY = 22;
+
+  /**
+   * The feature id for the '<em><b>Mode</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PUBLISH_POPERTY__MODE = INSTANTIATION_PROPERTY_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Rate</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PUBLISH_POPERTY__RATE = INSTANTIATION_PROPERTY_FEATURE_COUNT + 1;
+
+  /**
+   * The number of structural features of the '<em>Publish Poperty</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PUBLISH_POPERTY_FEATURE_COUNT = INSTANTIATION_PROPERTY_FEATURE_COUNT + 2;
 
 
   /**
@@ -870,16 +1102,6 @@ public interface UlswigPackage extends EPackage
   EAttribute getExpansionName_Name();
 
   /**
-   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansionName <em>Address Expansion Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Address Expansion Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansionName
-   * @generated
-   */
-  EClass getAddressExpansionName();
-
-  /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName <em>Simple Expansion Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -890,36 +1112,14 @@ public interface UlswigPackage extends EPackage
   EClass getSimpleExpansionName();
 
   /**
-   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding <em>Address Binding</em>}'.
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansionName <em>Address Expansion Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Address Binding</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding
+   * @return the meta object for class '<em>Address Expansion Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansionName
    * @generated
    */
-  EClass getAddressBinding();
-
-  /**
-   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding#getName()
-   * @see #getAddressBinding()
-   * @generated
-   */
-  EAttribute getAddressBinding_Name();
-
-  /**
-   * Returns the meta object for the attribute list '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding#getAddresses <em>Addresses</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Addresses</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding#getAddresses()
-   * @see #getAddressBinding()
-   * @generated
-   */
-  EAttribute getAddressBinding_Addresses();
+  EClass getAddressExpansionName();
 
   /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.Argument <em>Argument</em>}'.
@@ -976,6 +1176,38 @@ public interface UlswigPackage extends EPackage
   EAttribute getArgument_Text();
 
   /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding <em>Address Binding</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Address Binding</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding
+   * @generated
+   */
+  EClass getAddressBinding();
+
+  /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding#getName()
+   * @see #getAddressBinding()
+   * @generated
+   */
+  EAttribute getAddressBinding_Name();
+
+  /**
+   * Returns the meta object for the attribute list '{@link dk.sdu.mmmi.embedix.ulswig.AddressBinding#getAddresses <em>Addresses</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute list '<em>Addresses</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressBinding#getAddresses()
+   * @see #getAddressBinding()
+   * @generated
+   */
+  EAttribute getAddressBinding_Addresses();
+
+  /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.Instantiation <em>Instantiation</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -986,15 +1218,15 @@ public interface UlswigPackage extends EPackage
   EClass getInstantiation();
 
   /**
-   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getName <em>Name</em>}'.
+   * Returns the meta object for the containment reference '{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getAddress <em>Address</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.Instantiation#getName()
+   * @return the meta object for the containment reference '<em>Address</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.Instantiation#getAddress()
    * @see #getInstantiation()
    * @generated
    */
-  EAttribute getInstantiation_Name();
+  EReference getInstantiation_Address();
 
   /**
    * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.Instantiation#getKind <em>Kind</em>}'.
@@ -1019,6 +1251,58 @@ public interface UlswigPackage extends EPackage
   EReference getInstantiation_Properties();
 
   /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.AddressSpec <em>Address Spec</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Address Spec</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressSpec
+   * @generated
+   */
+  EClass getAddressSpec();
+
+  /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.AddressSpec#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressSpec#getName()
+   * @see #getAddressSpec()
+   * @generated
+   */
+  EAttribute getAddressSpec_Name();
+
+  /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec <em>Direct Address Spec</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Direct Address Spec</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec
+   * @generated
+   */
+  EClass getDirectAddressSpec();
+
+  /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec#getAddress <em>Address</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Address</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec#getAddress()
+   * @see #getDirectAddressSpec()
+   * @generated
+   */
+  EAttribute getDirectAddressSpec_Address();
+
+  /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec <em>Named Address Spec</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Named Address Spec</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec
+   * @generated
+   */
+  EClass getNamedAddressSpec();
+
+  /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.InstantiationProperty <em>Instantiation Property</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1027,6 +1311,91 @@ public interface UlswigPackage extends EPackage
    * @generated
    */
   EClass getInstantiationProperty();
+
+  /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.Grouping <em>Grouping</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Grouping</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.Grouping
+   * @generated
+   */
+  EClass getGrouping();
+
+  /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.Grouping#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.Grouping#getName()
+   * @see #getGrouping()
+   * @generated
+   */
+  EAttribute getGrouping_Name();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.Grouping#getElements <em>Elements</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Elements</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.Grouping#getElements()
+   * @see #getGrouping()
+   * @generated
+   */
+  EReference getGrouping_Elements();
+
+  /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.GroupElement <em>Group Element</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Group Element</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.GroupElement
+   * @generated
+   */
+  EClass getGroupElement();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.GroupElement#getPath <em>Path</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Path</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.GroupElement#getPath()
+   * @see #getGroupElement()
+   * @generated
+   */
+  EReference getGroupElement_Path();
+
+  /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.PathElement <em>Path Element</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Path Element</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.PathElement
+   * @generated
+   */
+  EClass getPathElement();
+
+  /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.PathElement#getSimple <em>Simple</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Simple</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.PathElement#getSimple()
+   * @see #getPathElement()
+   * @generated
+   */
+  EAttribute getPathElement_Simple();
+
+  /**
+   * Returns the meta object for the reference '{@link dk.sdu.mmmi.embedix.ulswig.PathElement#getType <em>Type</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference '<em>Type</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.PathElement#getType()
+   * @see #getPathElement()
+   * @generated
+   */
+  EReference getPathElement_Type();
 
   /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.IDProperty <em>ID Property</em>}'.
@@ -1058,6 +1427,38 @@ public interface UlswigPackage extends EPackage
    * @generated
    */
   EClass getCRCProperty();
+
+  /**
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty <em>Publish Poperty</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Publish Poperty</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty
+   * @generated
+   */
+  EClass getPublishPoperty();
+
+  /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getMode <em>Mode</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Mode</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getMode()
+   * @see #getPublishPoperty()
+   * @generated
+   */
+  EAttribute getPublishPoperty_Mode();
+
+  /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getRate <em>Rate</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Rate</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getRate()
+   * @see #getPublishPoperty()
+   * @generated
+   */
+  EAttribute getPublishPoperty_Rate();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -1291,16 +1692,6 @@ public interface UlswigPackage extends EPackage
     EAttribute EXPANSION_NAME__NAME = eINSTANCE.getExpansionName_Name();
 
     /**
-     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl <em>Address Expansion Name</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansionName()
-     * @generated
-     */
-    EClass ADDRESS_EXPANSION_NAME = eINSTANCE.getAddressExpansionName();
-
-    /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionNameImpl <em>Simple Expansion Name</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1311,30 +1702,14 @@ public interface UlswigPackage extends EPackage
     EClass SIMPLE_EXPANSION_NAME = eINSTANCE.getSimpleExpansionName();
 
     /**
-     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl <em>Address Binding</em>}' class.
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl <em>Address Expansion Name</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressBinding()
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansionName()
      * @generated
      */
-    EClass ADDRESS_BINDING = eINSTANCE.getAddressBinding();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute ADDRESS_BINDING__NAME = eINSTANCE.getAddressBinding_Name();
-
-    /**
-     * The meta object literal for the '<em><b>Addresses</b></em>' attribute list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute ADDRESS_BINDING__ADDRESSES = eINSTANCE.getAddressBinding_Addresses();
+    EClass ADDRESS_EXPANSION_NAME = eINSTANCE.getAddressExpansionName();
 
     /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ArgumentImpl <em>Argument</em>}' class.
@@ -1379,6 +1754,32 @@ public interface UlswigPackage extends EPackage
     EAttribute ARGUMENT__TEXT = eINSTANCE.getArgument_Text();
 
     /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl <em>Address Binding</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressBindingImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressBinding()
+     * @generated
+     */
+    EClass ADDRESS_BINDING = eINSTANCE.getAddressBinding();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute ADDRESS_BINDING__NAME = eINSTANCE.getAddressBinding_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Addresses</b></em>' attribute list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute ADDRESS_BINDING__ADDRESSES = eINSTANCE.getAddressBinding_Addresses();
+
+    /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationImpl <em>Instantiation</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1389,12 +1790,12 @@ public interface UlswigPackage extends EPackage
     EClass INSTANTIATION = eINSTANCE.getInstantiation();
 
     /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Address</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute INSTANTIATION__NAME = eINSTANCE.getInstantiation_Name();
+    EReference INSTANTIATION__ADDRESS = eINSTANCE.getInstantiation_Address();
 
     /**
      * The meta object literal for the '<em><b>Kind</b></em>' attribute feature.
@@ -1413,6 +1814,52 @@ public interface UlswigPackage extends EPackage
     EReference INSTANTIATION__PROPERTIES = eINSTANCE.getInstantiation_Properties();
 
     /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressSpecImpl <em>Address Spec</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressSpecImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressSpec()
+     * @generated
+     */
+    EClass ADDRESS_SPEC = eINSTANCE.getAddressSpec();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute ADDRESS_SPEC__NAME = eINSTANCE.getAddressSpec_Name();
+
+    /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.DirectAddressSpecImpl <em>Direct Address Spec</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.DirectAddressSpecImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getDirectAddressSpec()
+     * @generated
+     */
+    EClass DIRECT_ADDRESS_SPEC = eINSTANCE.getDirectAddressSpec();
+
+    /**
+     * The meta object literal for the '<em><b>Address</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute DIRECT_ADDRESS_SPEC__ADDRESS = eINSTANCE.getDirectAddressSpec_Address();
+
+    /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.NamedAddressSpecImpl <em>Named Address Spec</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.NamedAddressSpecImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getNamedAddressSpec()
+     * @generated
+     */
+    EClass NAMED_ADDRESS_SPEC = eINSTANCE.getNamedAddressSpec();
+
+    /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.InstantiationPropertyImpl <em>Instantiation Property</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1421,6 +1868,76 @@ public interface UlswigPackage extends EPackage
      * @generated
      */
     EClass INSTANTIATION_PROPERTY = eINSTANCE.getInstantiationProperty();
+
+    /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.GroupingImpl <em>Grouping</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.GroupingImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getGrouping()
+     * @generated
+     */
+    EClass GROUPING = eINSTANCE.getGrouping();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute GROUPING__NAME = eINSTANCE.getGrouping_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Elements</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference GROUPING__ELEMENTS = eINSTANCE.getGrouping_Elements();
+
+    /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.GroupElementImpl <em>Group Element</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.GroupElementImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getGroupElement()
+     * @generated
+     */
+    EClass GROUP_ELEMENT = eINSTANCE.getGroupElement();
+
+    /**
+     * The meta object literal for the '<em><b>Path</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference GROUP_ELEMENT__PATH = eINSTANCE.getGroupElement_Path();
+
+    /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PathElementImpl <em>Path Element</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.PathElementImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPathElement()
+     * @generated
+     */
+    EClass PATH_ELEMENT = eINSTANCE.getPathElement();
+
+    /**
+     * The meta object literal for the '<em><b>Simple</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PATH_ELEMENT__SIMPLE = eINSTANCE.getPathElement_Simple();
+
+    /**
+     * The meta object literal for the '<em><b>Type</b></em>' reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PATH_ELEMENT__TYPE = eINSTANCE.getPathElement_Type();
 
     /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.IDPropertyImpl <em>ID Property</em>}' class.
@@ -1449,6 +1966,32 @@ public interface UlswigPackage extends EPackage
      * @generated
      */
     EClass CRC_PROPERTY = eINSTANCE.getCRCProperty();
+
+    /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl <em>Publish Poperty</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPublishPoperty()
+     * @generated
+     */
+    EClass PUBLISH_POPERTY = eINSTANCE.getPublishPoperty();
+
+    /**
+     * The meta object literal for the '<em><b>Mode</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PUBLISH_POPERTY__MODE = eINSTANCE.getPublishPoperty_Mode();
+
+    /**
+     * The meta object literal for the '<em><b>Rate</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute PUBLISH_POPERTY__RATE = eINSTANCE.getPublishPoperty_Rate();
 
   }
 

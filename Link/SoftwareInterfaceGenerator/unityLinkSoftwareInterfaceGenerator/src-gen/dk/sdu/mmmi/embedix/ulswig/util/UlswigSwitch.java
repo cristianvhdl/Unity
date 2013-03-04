@@ -130,14 +130,6 @@ public class UlswigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case UlswigPackage.ADDRESS_EXPANSION_NAME:
-      {
-        AddressExpansionName addressExpansionName = (AddressExpansionName)theEObject;
-        T result = caseAddressExpansionName(addressExpansionName);
-        if (result == null) result = caseExpansionName(addressExpansionName);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
       case UlswigPackage.SIMPLE_EXPANSION_NAME:
       {
         SimpleExpansionName simpleExpansionName = (SimpleExpansionName)theEObject;
@@ -146,10 +138,11 @@ public class UlswigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case UlswigPackage.ADDRESS_BINDING:
+      case UlswigPackage.ADDRESS_EXPANSION_NAME:
       {
-        AddressBinding addressBinding = (AddressBinding)theEObject;
-        T result = caseAddressBinding(addressBinding);
+        AddressExpansionName addressExpansionName = (AddressExpansionName)theEObject;
+        T result = caseAddressExpansionName(addressExpansionName);
+        if (result == null) result = caseExpansionName(addressExpansionName);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -157,6 +150,13 @@ public class UlswigSwitch<T> extends Switch<T>
       {
         Argument argument = (Argument)theEObject;
         T result = caseArgument(argument);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.ADDRESS_BINDING:
+      {
+        AddressBinding addressBinding = (AddressBinding)theEObject;
+        T result = caseAddressBinding(addressBinding);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -168,10 +168,55 @@ public class UlswigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case UlswigPackage.ADDRESS_SPEC:
+      {
+        AddressSpec addressSpec = (AddressSpec)theEObject;
+        T result = caseAddressSpec(addressSpec);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.DIRECT_ADDRESS_SPEC:
+      {
+        DirectAddressSpec directAddressSpec = (DirectAddressSpec)theEObject;
+        T result = caseDirectAddressSpec(directAddressSpec);
+        if (result == null) result = caseAddressSpec(directAddressSpec);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.NAMED_ADDRESS_SPEC:
+      {
+        NamedAddressSpec namedAddressSpec = (NamedAddressSpec)theEObject;
+        T result = caseNamedAddressSpec(namedAddressSpec);
+        if (result == null) result = caseAddressSpec(namedAddressSpec);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case UlswigPackage.INSTANTIATION_PROPERTY:
       {
         InstantiationProperty instantiationProperty = (InstantiationProperty)theEObject;
         T result = caseInstantiationProperty(instantiationProperty);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.GROUPING:
+      {
+        Grouping grouping = (Grouping)theEObject;
+        T result = caseGrouping(grouping);
+        if (result == null) result = caseMember(grouping);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.GROUP_ELEMENT:
+      {
+        GroupElement groupElement = (GroupElement)theEObject;
+        T result = caseGroupElement(groupElement);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.PATH_ELEMENT:
+      {
+        PathElement pathElement = (PathElement)theEObject;
+        T result = casePathElement(pathElement);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -188,6 +233,14 @@ public class UlswigSwitch<T> extends Switch<T>
         CRCProperty crcProperty = (CRCProperty)theEObject;
         T result = caseCRCProperty(crcProperty);
         if (result == null) result = caseInstantiationProperty(crcProperty);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.PUBLISH_POPERTY:
+      {
+        PublishPoperty publishPoperty = (PublishPoperty)theEObject;
+        T result = casePublishPoperty(publishPoperty);
+        if (result == null) result = caseInstantiationProperty(publishPoperty);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -324,22 +377,6 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Address Expansion Name</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Address Expansion Name</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseAddressExpansionName(AddressExpansionName object)
-  {
-    return null;
-  }
-
-  /**
    * Returns the result of interpreting the object as an instance of '<em>Simple Expansion Name</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -356,17 +393,17 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Address Binding</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Address Expansion Name</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Address Binding</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Address Expansion Name</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseAddressBinding(AddressBinding object)
+  public T caseAddressExpansionName(AddressExpansionName object)
   {
     return null;
   }
@@ -388,6 +425,22 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Address Binding</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Address Binding</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseAddressBinding(AddressBinding object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Instantiation</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -404,6 +457,54 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Address Spec</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Address Spec</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseAddressSpec(AddressSpec object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Direct Address Spec</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Direct Address Spec</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseDirectAddressSpec(DirectAddressSpec object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Named Address Spec</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Named Address Spec</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseNamedAddressSpec(NamedAddressSpec object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Instantiation Property</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -415,6 +516,54 @@ public class UlswigSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseInstantiationProperty(InstantiationProperty object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Grouping</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Grouping</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseGrouping(Grouping object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Group Element</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Group Element</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseGroupElement(GroupElement object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Path Element</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Path Element</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePathElement(PathElement object)
   {
     return null;
   }
@@ -447,6 +596,22 @@ public class UlswigSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseCRCProperty(CRCProperty object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Publish Poperty</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Publish Poperty</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePublishPoperty(PublishPoperty object)
   {
     return null;
   }
