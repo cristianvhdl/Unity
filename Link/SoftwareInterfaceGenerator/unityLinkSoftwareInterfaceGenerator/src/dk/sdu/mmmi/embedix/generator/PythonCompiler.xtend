@@ -97,7 +97,7 @@ class PythonCompiler {
 	def dispatch compileExpansionAddressBinding(AddressExpansion m) '''
 			self.«m.name».bind({
 				'_': ul_addresses['«m.name»']
-			}
+			})
 	'''
 
 	def compileArgument(Argument a) {

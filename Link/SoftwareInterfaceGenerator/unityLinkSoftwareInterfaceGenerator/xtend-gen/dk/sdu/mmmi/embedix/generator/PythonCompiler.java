@@ -299,7 +299,7 @@ public class PythonCompiler {
     _builder.append(_name_1, "	");
     _builder.append("\']");
     _builder.newLineIfNotEmpty();
-    _builder.append("}");
+    _builder.append("})");
     _builder.newLine();
     return _builder;
   }
