@@ -79,9 +79,9 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//IDProperty/id"/>
     </genClasses>
     <genClasses ecoreClass="ULSWIG.ecore#//CRCProperty"/>
-    <genClasses ecoreClass="ULSWIG.ecore#//PublishPoperty">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//PublishPoperty/mode"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//PublishPoperty/rate"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//PublishProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//PublishProperty/mode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//PublishProperty/rate"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -1022,24 +1022,24 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                 if ( (LA10_3==RULE_ID) ) {
                     int LA10_6 = input.LA(3);
 
-                    if ( (LA10_6==18) ) {
-                        int LA10_7 = input.LA(4);
+                    if ( (LA10_6==24) ) {
+                        alt10=3;
+                    }
+                    else if ( (LA10_6==18) ) {
+                        int LA10_8 = input.LA(4);
 
-                        if ( (LA10_7==RULE_ID) ) {
+                        if ( (LA10_8==RULE_ID) ) {
                             alt10=2;
                         }
-                        else if ( ((LA10_7>=28 && LA10_7<=29)) ) {
+                        else if ( ((LA10_8>=28 && LA10_8<=29)) ) {
                             alt10=3;
                         }
                         else {
                             NoViableAltException nvae =
-                                new NoViableAltException("", 10, 7, input);
+                                new NoViableAltException("", 10, 8, input);
 
                             throw nvae;
                         }
-                    }
-                    else if ( (LA10_6==24) ) {
-                        alt10=3;
                     }
                     else {
                         NoViableAltException nvae =
@@ -1272,7 +1272,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTosNetLinkBinding"
-    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:503:1: ruleTosNetLinkBinding returns [EObject current=null] : (otherlv_0= 'TOSNET' otherlv_1= '(' ( ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) ) ) otherlv_5= ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:503:1: ruleTosNetLinkBinding returns [EObject current=null] : (otherlv_0= 'TOSNET' otherlv_1= '(' ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )* otherlv_5= ')' ) ;
     public final EObject ruleTosNetLinkBinding() throws RecognitionException {
         EObject current = null;
 
@@ -1288,11 +1288,11 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:506:28: ( (otherlv_0= 'TOSNET' otherlv_1= '(' ( ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) ) ) otherlv_5= ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:507:1: (otherlv_0= 'TOSNET' otherlv_1= '(' ( ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) ) ) otherlv_5= ')' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:506:28: ( (otherlv_0= 'TOSNET' otherlv_1= '(' ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )* otherlv_5= ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:507:1: (otherlv_0= 'TOSNET' otherlv_1= '(' ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )* otherlv_5= ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:507:1: (otherlv_0= 'TOSNET' otherlv_1= '(' ( ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) ) ) otherlv_5= ')' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:507:3: otherlv_0= 'TOSNET' otherlv_1= '(' ( ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) ) ) otherlv_5= ')'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:507:1: (otherlv_0= 'TOSNET' otherlv_1= '(' ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )* otherlv_5= ')' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:507:3: otherlv_0= 'TOSNET' otherlv_1= '(' ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )* otherlv_5= ')'
             {
             otherlv_0=(Token)match(input,22,FOLLOW_22_in_ruleTosNetLinkBinding1077); 
 
@@ -1302,19 +1302,16 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_1, grammarAccess.getTosNetLinkBindingAccess().getLeftParenthesisKeyword_1());
                 
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:515:1: ( ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:515:2: ( (lv_properties_2_0= ruleLinkProperty ) ) (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )
-            {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:515:2: ( (lv_properties_2_0= ruleLinkProperty ) )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:515:1: ( (lv_properties_2_0= ruleLinkProperty ) )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:516:1: (lv_properties_2_0= ruleLinkProperty )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:516:1: (lv_properties_2_0= ruleLinkProperty )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:517:3: lv_properties_2_0= ruleLinkProperty
             {
              
-            	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0_0()); 
+            	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1111);
+            pushFollow(FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1110);
             lv_properties_2_0=ruleLinkProperty();
 
             state._fsp--;
@@ -1336,53 +1333,68 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:533:2: (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:533:4: otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) )
-            {
-            otherlv_3=(Token)match(input,16,FOLLOW_16_in_ruleTosNetLinkBinding1124); 
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:533:2: (otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) ) )*
+            loop11:
+            do {
+                int alt11=2;
+                int LA11_0 = input.LA(1);
 
-                	newLeafNode(otherlv_3, grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_2_1_0());
-                
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:537:1: ( (lv_properties_4_0= ruleLinkProperty ) )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:538:1: (lv_properties_4_0= ruleLinkProperty )
-            {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:538:1: (lv_properties_4_0= ruleLinkProperty )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:539:3: lv_properties_4_0= ruleLinkProperty
-            {
-             
-            	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_1_1_0()); 
-            	    
-            pushFollow(FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1145);
-            lv_properties_4_0=ruleLinkProperty();
-
-            state._fsp--;
+                if ( (LA11_0==16) ) {
+                    alt11=1;
+                }
 
 
-            	        if (current==null) {
-            	            current = createModelElementForParent(grammarAccess.getTosNetLinkBindingRule());
-            	        }
-                   		add(
-                   			current, 
-                   			"properties",
-                    		lv_properties_4_0, 
-                    		"LinkProperty");
-            	        afterParserOrEnumRuleCall();
-            	    
+                switch (alt11) {
+            	case 1 :
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:533:4: otherlv_3= ',' ( (lv_properties_4_0= ruleLinkProperty ) )
+            	    {
+            	    otherlv_3=(Token)match(input,16,FOLLOW_16_in_ruleTosNetLinkBinding1123); 
 
-            }
+            	        	newLeafNode(otherlv_3, grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_3_0());
+            	        
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:537:1: ( (lv_properties_4_0= ruleLinkProperty ) )
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:538:1: (lv_properties_4_0= ruleLinkProperty )
+            	    {
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:538:1: (lv_properties_4_0= ruleLinkProperty )
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:539:3: lv_properties_4_0= ruleLinkProperty
+            	    {
+            	     
+            	    	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_3_1_0()); 
+            	    	    
+            	    pushFollow(FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1144);
+            	    lv_properties_4_0=ruleLinkProperty();
+
+            	    state._fsp--;
 
 
-            }
+            	    	        if (current==null) {
+            	    	            current = createModelElementForParent(grammarAccess.getTosNetLinkBindingRule());
+            	    	        }
+            	           		add(
+            	           			current, 
+            	           			"properties",
+            	            		lv_properties_4_0, 
+            	            		"LinkProperty");
+            	    	        afterParserOrEnumRuleCall();
+            	    	    
+
+            	    }
 
 
-            }
+            	    }
 
 
-            }
+            	    }
+            	    break;
 
-            otherlv_5=(Token)match(input,17,FOLLOW_17_in_ruleTosNetLinkBinding1159); 
+            	default :
+            	    break loop11;
+                }
+            } while (true);
 
-                	newLeafNode(otherlv_5, grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_3());
+            otherlv_5=(Token)match(input,17,FOLLOW_17_in_ruleTosNetLinkBinding1158); 
+
+                	newLeafNode(otherlv_5, grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_4());
                 
 
             }
@@ -1417,13 +1429,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:569:2: iv_ruleLinkProperty= ruleLinkProperty EOF
             {
              newCompositeNode(grammarAccess.getLinkPropertyRule()); 
-            pushFollow(FOLLOW_ruleLinkProperty_in_entryRuleLinkProperty1195);
+            pushFollow(FOLLOW_ruleLinkProperty_in_entryRuleLinkProperty1194);
             iv_ruleLinkProperty=ruleLinkProperty();
 
             state._fsp--;
 
              current =iv_ruleLinkProperty; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleLinkProperty1205); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleLinkProperty1204); 
 
             }
 
@@ -1462,42 +1474,42 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:580:1: ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:580:1: ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) )
-            int alt11=3;
+            int alt12=3;
             switch ( input.LA(1) ) {
             case 23:
                 {
-                alt11=1;
+                alt12=1;
                 }
                 break;
             case 25:
                 {
-                alt11=2;
+                alt12=2;
                 }
                 break;
             case 26:
                 {
-                alt11=3;
+                alt12=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 11, 0, input);
+                    new NoViableAltException("", 12, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt11) {
+            switch (alt12) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:580:2: (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) )
                     {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:580:2: (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:580:4: otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) )
                     {
-                    otherlv_0=(Token)match(input,23,FOLLOW_23_in_ruleLinkProperty1243); 
+                    otherlv_0=(Token)match(input,23,FOLLOW_23_in_ruleLinkProperty1242); 
 
                         	newLeafNode(otherlv_0, grammarAccess.getLinkPropertyAccess().getCTRLKeyword_0_0());
                         
-                    otherlv_1=(Token)match(input,24,FOLLOW_24_in_ruleLinkProperty1255); 
+                    otherlv_1=(Token)match(input,24,FOLLOW_24_in_ruleLinkProperty1254); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_0_1());
                         
@@ -1507,7 +1519,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:589:1: (lv_ctrlName_2_0= RULE_ID )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:590:3: lv_ctrlName_2_0= RULE_ID
                     {
-                    lv_ctrlName_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleLinkProperty1272); 
+                    lv_ctrlName_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleLinkProperty1271); 
 
                     			newLeafNode(lv_ctrlName_2_0, grammarAccess.getLinkPropertyAccess().getCtrlNameIDTerminalRuleCall_0_2_0()); 
                     		
@@ -1539,11 +1551,11 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:607:6: (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:607:8: otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) )
                     {
-                    otherlv_3=(Token)match(input,25,FOLLOW_25_in_ruleLinkProperty1297); 
+                    otherlv_3=(Token)match(input,25,FOLLOW_25_in_ruleLinkProperty1296); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getLinkPropertyAccess().getBASEKeyword_1_0());
                         
-                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleLinkProperty1309); 
+                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleLinkProperty1308); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_1_1());
                         
@@ -1553,7 +1565,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:616:1: (lv_baseValue_5_0= RULE_INT )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:617:3: lv_baseValue_5_0= RULE_INT
                     {
-                    lv_baseValue_5_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleLinkProperty1326); 
+                    lv_baseValue_5_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleLinkProperty1325); 
 
                     			newLeafNode(lv_baseValue_5_0, grammarAccess.getLinkPropertyAccess().getBaseValueINTTerminalRuleCall_1_2_0()); 
                     		
@@ -1585,11 +1597,11 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:634:6: (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:634:8: otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) )
                     {
-                    otherlv_6=(Token)match(input,26,FOLLOW_26_in_ruleLinkProperty1351); 
+                    otherlv_6=(Token)match(input,26,FOLLOW_26_in_ruleLinkProperty1350); 
 
                         	newLeafNode(otherlv_6, grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0());
                         
-                    otherlv_7=(Token)match(input,24,FOLLOW_24_in_ruleLinkProperty1363); 
+                    otherlv_7=(Token)match(input,24,FOLLOW_24_in_ruleLinkProperty1362); 
 
                         	newLeafNode(otherlv_7, grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_2_1());
                         
@@ -1599,7 +1611,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:643:1: (lv_uartName_8_0= RULE_ID )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:644:3: lv_uartName_8_0= RULE_ID
                     {
-                    lv_uartName_8_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleLinkProperty1380); 
+                    lv_uartName_8_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleLinkProperty1379); 
 
                     			newLeafNode(lv_uartName_8_0, grammarAccess.getLinkPropertyAccess().getUartNameIDTerminalRuleCall_2_2_0()); 
                     		
@@ -1658,13 +1670,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:670:2: iv_ruleExpansion= ruleExpansion EOF
             {
              newCompositeNode(grammarAccess.getExpansionRule()); 
-            pushFollow(FOLLOW_ruleExpansion_in_entryRuleExpansion1422);
+            pushFollow(FOLLOW_ruleExpansion_in_entryRuleExpansion1421);
             iv_ruleExpansion=ruleExpansion();
 
             state._fsp--;
 
              current =iv_ruleExpansion; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleExpansion1432); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleExpansion1431); 
 
             }
 
@@ -1698,29 +1710,29 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:681:1: (this_SimpleExpansion_0= ruleSimpleExpansion | this_AddressExpansion_1= ruleAddressExpansion )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:681:1: (this_SimpleExpansion_0= ruleSimpleExpansion | this_AddressExpansion_1= ruleAddressExpansion )
-            int alt12=2;
-            int LA12_0 = input.LA(1);
+            int alt13=2;
+            int LA13_0 = input.LA(1);
 
-            if ( (LA12_0==RULE_ID) ) {
-                alt12=1;
+            if ( (LA13_0==RULE_ID) ) {
+                alt13=1;
             }
-            else if ( (LA12_0==21) ) {
-                alt12=2;
+            else if ( (LA13_0==21) ) {
+                alt13=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 12, 0, input);
+                    new NoViableAltException("", 13, 0, input);
 
                 throw nvae;
             }
-            switch (alt12) {
+            switch (alt13) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:682:5: this_SimpleExpansion_0= ruleSimpleExpansion
                     {
                      
                             newCompositeNode(grammarAccess.getExpansionAccess().getSimpleExpansionParserRuleCall_0()); 
                         
-                    pushFollow(FOLLOW_ruleSimpleExpansion_in_ruleExpansion1479);
+                    pushFollow(FOLLOW_ruleSimpleExpansion_in_ruleExpansion1478);
                     this_SimpleExpansion_0=ruleSimpleExpansion();
 
                     state._fsp--;
@@ -1738,7 +1750,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                             newCompositeNode(grammarAccess.getExpansionAccess().getAddressExpansionParserRuleCall_1()); 
                         
-                    pushFollow(FOLLOW_ruleAddressExpansion_in_ruleExpansion1506);
+                    pushFollow(FOLLOW_ruleAddressExpansion_in_ruleExpansion1505);
                     this_AddressExpansion_1=ruleAddressExpansion();
 
                     state._fsp--;
@@ -1783,13 +1795,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:710:2: iv_ruleSimpleExpansion= ruleSimpleExpansion EOF
             {
              newCompositeNode(grammarAccess.getSimpleExpansionRule()); 
-            pushFollow(FOLLOW_ruleSimpleExpansion_in_entryRuleSimpleExpansion1541);
+            pushFollow(FOLLOW_ruleSimpleExpansion_in_entryRuleSimpleExpansion1540);
             iv_ruleSimpleExpansion=ruleSimpleExpansion();
 
             state._fsp--;
 
              current =iv_ruleSimpleExpansion; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleSimpleExpansion1551); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleSimpleExpansion1550); 
 
             }
 
@@ -1842,7 +1854,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:722:1: (lv_name_0_0= RULE_ID )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:723:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleSimpleExpansion1593); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleSimpleExpansion1592); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getSimpleExpansionAccess().getNameIDTerminalRuleCall_0_0()); 
             		
@@ -1862,7 +1874,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,18,FOLLOW_18_in_ruleSimpleExpansion1610); 
+            otherlv_1=(Token)match(input,18,FOLLOW_18_in_ruleSimpleExpansion1609); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getSimpleExpansionAccess().getColonKeyword_1());
                 
@@ -1877,7 +1889,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	            current = createModelElement(grammarAccess.getSimpleExpansionRule());
             	        }
                     
-            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleSimpleExpansion1630); 
+            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleSimpleExpansion1629); 
 
             		newLeafNode(otherlv_2, grammarAccess.getSimpleExpansionAccess().getConstructorConstructorCrossReference_2_0()); 
             	
@@ -1887,18 +1899,18 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,15,FOLLOW_15_in_ruleSimpleExpansion1642); 
+            otherlv_3=(Token)match(input,15,FOLLOW_15_in_ruleSimpleExpansion1641); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getSimpleExpansionAccess().getLeftParenthesisKeyword_3());
                 
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:760:1: ( ( (lv_arguments_4_0= ruleArgument ) ) (otherlv_5= ',' ( (lv_arguments_6_0= ruleArgument ) ) )* )?
-            int alt14=2;
-            int LA14_0 = input.LA(1);
+            int alt15=2;
+            int LA15_0 = input.LA(1);
 
-            if ( (LA14_0==RULE_ID||LA14_0==RULE_STRING) ) {
-                alt14=1;
+            if ( (LA15_0==RULE_ID||LA15_0==RULE_STRING) ) {
+                alt15=1;
             }
-            switch (alt14) {
+            switch (alt15) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:760:2: ( (lv_arguments_4_0= ruleArgument ) ) (otherlv_5= ',' ( (lv_arguments_6_0= ruleArgument ) ) )*
                     {
@@ -1911,7 +1923,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getSimpleExpansionAccess().getArgumentsArgumentParserRuleCall_4_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleArgument_in_ruleSimpleExpansion1664);
+                    pushFollow(FOLLOW_ruleArgument_in_ruleSimpleExpansion1663);
                     lv_arguments_4_0=ruleArgument();
 
                     state._fsp--;
@@ -1934,21 +1946,21 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     }
 
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:778:2: (otherlv_5= ',' ( (lv_arguments_6_0= ruleArgument ) ) )*
-                    loop13:
+                    loop14:
                     do {
-                        int alt13=2;
-                        int LA13_0 = input.LA(1);
+                        int alt14=2;
+                        int LA14_0 = input.LA(1);
 
-                        if ( (LA13_0==16) ) {
-                            alt13=1;
+                        if ( (LA14_0==16) ) {
+                            alt14=1;
                         }
 
 
-                        switch (alt13) {
+                        switch (alt14) {
                     	case 1 :
                     	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:778:4: otherlv_5= ',' ( (lv_arguments_6_0= ruleArgument ) )
                     	    {
-                    	    otherlv_5=(Token)match(input,16,FOLLOW_16_in_ruleSimpleExpansion1677); 
+                    	    otherlv_5=(Token)match(input,16,FOLLOW_16_in_ruleSimpleExpansion1676); 
 
                     	        	newLeafNode(otherlv_5, grammarAccess.getSimpleExpansionAccess().getCommaKeyword_4_1_0());
                     	        
@@ -1961,7 +1973,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getSimpleExpansionAccess().getArgumentsArgumentParserRuleCall_4_1_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleArgument_in_ruleSimpleExpansion1698);
+                    	    pushFollow(FOLLOW_ruleArgument_in_ruleSimpleExpansion1697);
                     	    lv_arguments_6_0=ruleArgument();
 
                     	    state._fsp--;
@@ -1988,7 +2000,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop13;
+                    	    break loop14;
                         }
                     } while (true);
 
@@ -1998,18 +2010,18 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_7=(Token)match(input,17,FOLLOW_17_in_ruleSimpleExpansion1714); 
+            otherlv_7=(Token)match(input,17,FOLLOW_17_in_ruleSimpleExpansion1713); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getSimpleExpansionAccess().getRightParenthesisKeyword_5());
                 
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:804:1: ( ( (lv_bindings_8_0= ruleAddressBinding ) ) (otherlv_9= ',' ( (lv_bindings_10_0= ruleAddressBinding ) ) )* )?
-            int alt16=2;
-            int LA16_0 = input.LA(1);
+            int alt17=2;
+            int LA17_0 = input.LA(1);
 
-            if ( (LA16_0==21) ) {
-                alt16=1;
+            if ( (LA17_0==21) ) {
+                alt17=1;
             }
-            switch (alt16) {
+            switch (alt17) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:804:2: ( (lv_bindings_8_0= ruleAddressBinding ) ) (otherlv_9= ',' ( (lv_bindings_10_0= ruleAddressBinding ) ) )*
                     {
@@ -2022,7 +2034,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getSimpleExpansionAccess().getBindingsAddressBindingParserRuleCall_6_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1736);
+                    pushFollow(FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1735);
                     lv_bindings_8_0=ruleAddressBinding();
 
                     state._fsp--;
@@ -2045,21 +2057,21 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     }
 
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:822:2: (otherlv_9= ',' ( (lv_bindings_10_0= ruleAddressBinding ) ) )*
-                    loop15:
+                    loop16:
                     do {
-                        int alt15=2;
-                        int LA15_0 = input.LA(1);
+                        int alt16=2;
+                        int LA16_0 = input.LA(1);
 
-                        if ( (LA15_0==16) ) {
-                            alt15=1;
+                        if ( (LA16_0==16) ) {
+                            alt16=1;
                         }
 
 
-                        switch (alt15) {
+                        switch (alt16) {
                     	case 1 :
                     	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:822:4: otherlv_9= ',' ( (lv_bindings_10_0= ruleAddressBinding ) )
                     	    {
-                    	    otherlv_9=(Token)match(input,16,FOLLOW_16_in_ruleSimpleExpansion1749); 
+                    	    otherlv_9=(Token)match(input,16,FOLLOW_16_in_ruleSimpleExpansion1748); 
 
                     	        	newLeafNode(otherlv_9, grammarAccess.getSimpleExpansionAccess().getCommaKeyword_6_1_0());
                     	        
@@ -2072,7 +2084,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getSimpleExpansionAccess().getBindingsAddressBindingParserRuleCall_6_1_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1770);
+                    	    pushFollow(FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1769);
                     	    lv_bindings_10_0=ruleAddressBinding();
 
                     	    state._fsp--;
@@ -2099,7 +2111,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop15;
+                    	    break loop16;
                         }
                     } while (true);
 
@@ -2142,13 +2154,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:854:2: iv_ruleAddressExpansion= ruleAddressExpansion EOF
             {
              newCompositeNode(grammarAccess.getAddressExpansionRule()); 
-            pushFollow(FOLLOW_ruleAddressExpansion_in_entryRuleAddressExpansion1810);
+            pushFollow(FOLLOW_ruleAddressExpansion_in_entryRuleAddressExpansion1809);
             iv_ruleAddressExpansion=ruleAddressExpansion();
 
             state._fsp--;
 
              current =iv_ruleAddressExpansion; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAddressExpansion1820); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddressExpansion1819); 
 
             }
 
@@ -2191,7 +2203,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:865:1: (otherlv_0= '@' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '(' ( ( (lv_arguments_5_0= ruleArgument ) ) (otherlv_6= ',' ( (lv_arguments_7_0= ruleArgument ) ) )* )? otherlv_8= ')' )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:865:3: otherlv_0= '@' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '(' ( ( (lv_arguments_5_0= ruleArgument ) ) (otherlv_6= ',' ( (lv_arguments_7_0= ruleArgument ) ) )* )? otherlv_8= ')'
             {
-            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleAddressExpansion1857); 
+            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleAddressExpansion1856); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getAddressExpansionAccess().getCommercialAtKeyword_0());
                 
@@ -2201,7 +2213,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:870:1: (lv_name_1_0= RULE_ID )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:871:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddressExpansion1874); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddressExpansion1873); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getAddressExpansionAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -2221,7 +2233,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleAddressExpansion1891); 
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleAddressExpansion1890); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getAddressExpansionAccess().getColonKeyword_2());
                 
@@ -2236,7 +2248,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	            current = createModelElement(grammarAccess.getAddressExpansionRule());
             	        }
                     
-            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddressExpansion1911); 
+            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddressExpansion1910); 
 
             		newLeafNode(otherlv_3, grammarAccess.getAddressExpansionAccess().getConstructorConstructorCrossReference_3_0()); 
             	
@@ -2246,18 +2258,18 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleAddressExpansion1923); 
+            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleAddressExpansion1922); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getAddressExpansionAccess().getLeftParenthesisKeyword_4());
                 
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:908:1: ( ( (lv_arguments_5_0= ruleArgument ) ) (otherlv_6= ',' ( (lv_arguments_7_0= ruleArgument ) ) )* )?
-            int alt18=2;
-            int LA18_0 = input.LA(1);
+            int alt19=2;
+            int LA19_0 = input.LA(1);
 
-            if ( (LA18_0==RULE_ID||LA18_0==RULE_STRING) ) {
-                alt18=1;
+            if ( (LA19_0==RULE_ID||LA19_0==RULE_STRING) ) {
+                alt19=1;
             }
-            switch (alt18) {
+            switch (alt19) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:908:2: ( (lv_arguments_5_0= ruleArgument ) ) (otherlv_6= ',' ( (lv_arguments_7_0= ruleArgument ) ) )*
                     {
@@ -2270,7 +2282,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getAddressExpansionAccess().getArgumentsArgumentParserRuleCall_5_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleArgument_in_ruleAddressExpansion1945);
+                    pushFollow(FOLLOW_ruleArgument_in_ruleAddressExpansion1944);
                     lv_arguments_5_0=ruleArgument();
 
                     state._fsp--;
@@ -2293,21 +2305,21 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     }
 
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:926:2: (otherlv_6= ',' ( (lv_arguments_7_0= ruleArgument ) ) )*
-                    loop17:
+                    loop18:
                     do {
-                        int alt17=2;
-                        int LA17_0 = input.LA(1);
+                        int alt18=2;
+                        int LA18_0 = input.LA(1);
 
-                        if ( (LA17_0==16) ) {
-                            alt17=1;
+                        if ( (LA18_0==16) ) {
+                            alt18=1;
                         }
 
 
-                        switch (alt17) {
+                        switch (alt18) {
                     	case 1 :
                     	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:926:4: otherlv_6= ',' ( (lv_arguments_7_0= ruleArgument ) )
                     	    {
-                    	    otherlv_6=(Token)match(input,16,FOLLOW_16_in_ruleAddressExpansion1958); 
+                    	    otherlv_6=(Token)match(input,16,FOLLOW_16_in_ruleAddressExpansion1957); 
 
                     	        	newLeafNode(otherlv_6, grammarAccess.getAddressExpansionAccess().getCommaKeyword_5_1_0());
                     	        
@@ -2320,7 +2332,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getAddressExpansionAccess().getArgumentsArgumentParserRuleCall_5_1_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleArgument_in_ruleAddressExpansion1979);
+                    	    pushFollow(FOLLOW_ruleArgument_in_ruleAddressExpansion1978);
                     	    lv_arguments_7_0=ruleArgument();
 
                     	    state._fsp--;
@@ -2347,7 +2359,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop17;
+                    	    break loop18;
                         }
                     } while (true);
 
@@ -2357,7 +2369,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleAddressExpansion1995); 
+            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleAddressExpansion1994); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getAddressExpansionAccess().getRightParenthesisKeyword_6());
                 
@@ -2394,13 +2406,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:962:2: iv_ruleArgument= ruleArgument EOF
             {
              newCompositeNode(grammarAccess.getArgumentRule()); 
-            pushFollow(FOLLOW_ruleArgument_in_entryRuleArgument2031);
+            pushFollow(FOLLOW_ruleArgument_in_entryRuleArgument2030);
             iv_ruleArgument=ruleArgument();
 
             state._fsp--;
 
              current =iv_ruleArgument; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleArgument2041); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleArgument2040); 
 
             }
 
@@ -2436,35 +2448,35 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:973:1: ( ( (lv_simple_0_0= RULE_ID ) ) | ( ( (lv_lhs_1_0= RULE_ID ) ) otherlv_2= '+' ( (lv_rhs_3_0= ruleArgument ) ) ) | ( (lv_text_4_0= RULE_STRING ) ) )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:973:1: ( ( (lv_simple_0_0= RULE_ID ) ) | ( ( (lv_lhs_1_0= RULE_ID ) ) otherlv_2= '+' ( (lv_rhs_3_0= ruleArgument ) ) ) | ( (lv_text_4_0= RULE_STRING ) ) )
-            int alt19=3;
-            int LA19_0 = input.LA(1);
+            int alt20=3;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA19_0==RULE_ID) ) {
-                int LA19_1 = input.LA(2);
+            if ( (LA20_0==RULE_ID) ) {
+                int LA20_1 = input.LA(2);
 
-                if ( (LA19_1==EOF||(LA19_1>=16 && LA19_1<=17)) ) {
-                    alt19=1;
+                if ( (LA20_1==EOF||(LA20_1>=16 && LA20_1<=17)) ) {
+                    alt20=1;
                 }
-                else if ( (LA19_1==27) ) {
-                    alt19=2;
+                else if ( (LA20_1==27) ) {
+                    alt20=2;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 19, 1, input);
+                        new NoViableAltException("", 20, 1, input);
 
                     throw nvae;
                 }
             }
-            else if ( (LA19_0==RULE_STRING) ) {
-                alt19=3;
+            else if ( (LA20_0==RULE_STRING) ) {
+                alt20=3;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 19, 0, input);
+                    new NoViableAltException("", 20, 0, input);
 
                 throw nvae;
             }
-            switch (alt19) {
+            switch (alt20) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:973:2: ( (lv_simple_0_0= RULE_ID ) )
                     {
@@ -2474,7 +2486,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:974:1: (lv_simple_0_0= RULE_ID )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:975:3: lv_simple_0_0= RULE_ID
                     {
-                    lv_simple_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleArgument2083); 
+                    lv_simple_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleArgument2082); 
 
                     			newLeafNode(lv_simple_0_0, grammarAccess.getArgumentAccess().getSimpleIDTerminalRuleCall_0_0()); 
                     		
@@ -2509,7 +2521,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:993:1: (lv_lhs_1_0= RULE_ID )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:994:3: lv_lhs_1_0= RULE_ID
                     {
-                    lv_lhs_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleArgument2112); 
+                    lv_lhs_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleArgument2111); 
 
                     			newLeafNode(lv_lhs_1_0, grammarAccess.getArgumentAccess().getLhsIDTerminalRuleCall_1_0_0()); 
                     		
@@ -2529,7 +2541,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleArgument2129); 
+                    otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleArgument2128); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getArgumentAccess().getPlusSignKeyword_1_1());
                         
@@ -2542,7 +2554,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getArgumentAccess().getRhsArgumentParserRuleCall_1_2_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleArgument_in_ruleArgument2150);
+                    pushFollow(FOLLOW_ruleArgument_in_ruleArgument2149);
                     lv_rhs_3_0=ruleArgument();
 
                     state._fsp--;
@@ -2579,7 +2591,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1034:1: (lv_text_4_0= RULE_STRING )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1035:3: lv_text_4_0= RULE_STRING
                     {
-                    lv_text_4_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleArgument2174); 
+                    lv_text_4_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleArgument2173); 
 
                     			newLeafNode(lv_text_4_0, grammarAccess.getArgumentAccess().getTextSTRINGTerminalRuleCall_2_0()); 
                     		
@@ -2635,13 +2647,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1061:2: iv_ruleAddressBinding= ruleAddressBinding EOF
             {
              newCompositeNode(grammarAccess.getAddressBindingRule()); 
-            pushFollow(FOLLOW_ruleAddressBinding_in_entryRuleAddressBinding2215);
+            pushFollow(FOLLOW_ruleAddressBinding_in_entryRuleAddressBinding2214);
             iv_ruleAddressBinding=ruleAddressBinding();
 
             state._fsp--;
 
              current =iv_ruleAddressBinding; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAddressBinding2225); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddressBinding2224); 
 
             }
 
@@ -2681,7 +2693,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1072:1: (otherlv_0= '@' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '=' otherlv_3= '(' ( (lv_addresses_4_0= RULE_HEX_NUM ) ) (otherlv_5= ',' ( (lv_addresses_6_0= RULE_HEX_NUM ) ) )* otherlv_7= ')' )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1072:3: otherlv_0= '@' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '=' otherlv_3= '(' ( (lv_addresses_4_0= RULE_HEX_NUM ) ) (otherlv_5= ',' ( (lv_addresses_6_0= RULE_HEX_NUM ) ) )* otherlv_7= ')'
             {
-            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleAddressBinding2262); 
+            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleAddressBinding2261); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getAddressBindingAccess().getCommercialAtKeyword_0());
                 
@@ -2691,7 +2703,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1077:1: (lv_name_1_0= RULE_ID )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1078:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddressBinding2279); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddressBinding2278); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getAddressBindingAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -2711,11 +2723,11 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,24,FOLLOW_24_in_ruleAddressBinding2296); 
+            otherlv_2=(Token)match(input,24,FOLLOW_24_in_ruleAddressBinding2295); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getAddressBindingAccess().getEqualsSignKeyword_2());
                 
-            otherlv_3=(Token)match(input,15,FOLLOW_15_in_ruleAddressBinding2308); 
+            otherlv_3=(Token)match(input,15,FOLLOW_15_in_ruleAddressBinding2307); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getAddressBindingAccess().getLeftParenthesisKeyword_3());
                 
@@ -2725,7 +2737,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1103:1: (lv_addresses_4_0= RULE_HEX_NUM )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1104:3: lv_addresses_4_0= RULE_HEX_NUM
             {
-            lv_addresses_4_0=(Token)match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2325); 
+            lv_addresses_4_0=(Token)match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2324); 
 
             			newLeafNode(lv_addresses_4_0, grammarAccess.getAddressBindingAccess().getAddressesHEX_NUMTerminalRuleCall_4_0()); 
             		
@@ -2746,21 +2758,21 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             }
 
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1120:2: (otherlv_5= ',' ( (lv_addresses_6_0= RULE_HEX_NUM ) ) )*
-            loop20:
+            loop21:
             do {
-                int alt20=2;
-                int LA20_0 = input.LA(1);
+                int alt21=2;
+                int LA21_0 = input.LA(1);
 
-                if ( (LA20_0==16) ) {
-                    alt20=1;
+                if ( (LA21_0==16) ) {
+                    alt21=1;
                 }
 
 
-                switch (alt20) {
+                switch (alt21) {
             	case 1 :
             	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1120:4: otherlv_5= ',' ( (lv_addresses_6_0= RULE_HEX_NUM ) )
             	    {
-            	    otherlv_5=(Token)match(input,16,FOLLOW_16_in_ruleAddressBinding2343); 
+            	    otherlv_5=(Token)match(input,16,FOLLOW_16_in_ruleAddressBinding2342); 
 
             	        	newLeafNode(otherlv_5, grammarAccess.getAddressBindingAccess().getCommaKeyword_5_0());
             	        
@@ -2770,7 +2782,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1125:1: (lv_addresses_6_0= RULE_HEX_NUM )
             	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1126:3: lv_addresses_6_0= RULE_HEX_NUM
             	    {
-            	    lv_addresses_6_0=(Token)match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2360); 
+            	    lv_addresses_6_0=(Token)match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2359); 
 
             	    			newLeafNode(lv_addresses_6_0, grammarAccess.getAddressBindingAccess().getAddressesHEX_NUMTerminalRuleCall_5_1_0()); 
             	    		
@@ -2795,11 +2807,11 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop20;
+            	    break loop21;
                 }
             } while (true);
 
-            otherlv_7=(Token)match(input,17,FOLLOW_17_in_ruleAddressBinding2379); 
+            otherlv_7=(Token)match(input,17,FOLLOW_17_in_ruleAddressBinding2378); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getAddressBindingAccess().getRightParenthesisKeyword_6());
                 
@@ -2836,13 +2848,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1156:2: iv_ruleInstantiation= ruleInstantiation EOF
             {
              newCompositeNode(grammarAccess.getInstantiationRule()); 
-            pushFollow(FOLLOW_ruleInstantiation_in_entryRuleInstantiation2415);
+            pushFollow(FOLLOW_ruleInstantiation_in_entryRuleInstantiation2414);
             iv_ruleInstantiation=ruleInstantiation();
 
             state._fsp--;
 
              current =iv_ruleInstantiation; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleInstantiation2425); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleInstantiation2424); 
 
             }
 
@@ -2887,7 +2899,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1167:1: (otherlv_0= '@' ( (lv_address_1_0= ruleAddressSpec ) ) otherlv_2= ':' ( (lv_kind_3_0= ruleKind ) ) otherlv_4= '(' ( ( (lv_properties_5_0= ruleInstantiationProperty ) ) (otherlv_6= ',' ( (lv_properties_7_0= ruleInstantiationProperty ) ) )* )? otherlv_8= ')' )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1167:3: otherlv_0= '@' ( (lv_address_1_0= ruleAddressSpec ) ) otherlv_2= ':' ( (lv_kind_3_0= ruleKind ) ) otherlv_4= '(' ( ( (lv_properties_5_0= ruleInstantiationProperty ) ) (otherlv_6= ',' ( (lv_properties_7_0= ruleInstantiationProperty ) ) )* )? otherlv_8= ')'
             {
-            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleInstantiation2462); 
+            otherlv_0=(Token)match(input,21,FOLLOW_21_in_ruleInstantiation2461); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getInstantiationAccess().getCommercialAtKeyword_0());
                 
@@ -2900,7 +2912,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getInstantiationAccess().getAddressAddressSpecParserRuleCall_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleAddressSpec_in_ruleInstantiation2483);
+            pushFollow(FOLLOW_ruleAddressSpec_in_ruleInstantiation2482);
             lv_address_1_0=ruleAddressSpec();
 
             state._fsp--;
@@ -2922,7 +2934,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleInstantiation2495); 
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleInstantiation2494); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getInstantiationAccess().getColonKeyword_2());
                 
@@ -2935,7 +2947,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getInstantiationAccess().getKindKindParserRuleCall_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleKind_in_ruleInstantiation2516);
+            pushFollow(FOLLOW_ruleKind_in_ruleInstantiation2515);
             lv_kind_3_0=ruleKind();
 
             state._fsp--;
@@ -2957,18 +2969,18 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleInstantiation2528); 
+            otherlv_4=(Token)match(input,15,FOLLOW_15_in_ruleInstantiation2527); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getInstantiationAccess().getLeftParenthesisKeyword_4());
                 
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1215:1: ( ( (lv_properties_5_0= ruleInstantiationProperty ) ) (otherlv_6= ',' ( (lv_properties_7_0= ruleInstantiationProperty ) ) )* )?
-            int alt22=2;
-            int LA22_0 = input.LA(1);
+            int alt23=2;
+            int LA23_0 = input.LA(1);
 
-            if ( ((LA22_0>=30 && LA22_0<=32)) ) {
-                alt22=1;
+            if ( ((LA23_0>=30 && LA23_0<=32)) ) {
+                alt23=1;
             }
-            switch (alt22) {
+            switch (alt23) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1215:2: ( (lv_properties_5_0= ruleInstantiationProperty ) ) (otherlv_6= ',' ( (lv_properties_7_0= ruleInstantiationProperty ) ) )*
                     {
@@ -2981,7 +2993,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getInstantiationAccess().getPropertiesInstantiationPropertyParserRuleCall_5_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2550);
+                    pushFollow(FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2549);
                     lv_properties_5_0=ruleInstantiationProperty();
 
                     state._fsp--;
@@ -3004,21 +3016,21 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     }
 
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1233:2: (otherlv_6= ',' ( (lv_properties_7_0= ruleInstantiationProperty ) ) )*
-                    loop21:
+                    loop22:
                     do {
-                        int alt21=2;
-                        int LA21_0 = input.LA(1);
+                        int alt22=2;
+                        int LA22_0 = input.LA(1);
 
-                        if ( (LA21_0==16) ) {
-                            alt21=1;
+                        if ( (LA22_0==16) ) {
+                            alt22=1;
                         }
 
 
-                        switch (alt21) {
+                        switch (alt22) {
                     	case 1 :
                     	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1233:4: otherlv_6= ',' ( (lv_properties_7_0= ruleInstantiationProperty ) )
                     	    {
-                    	    otherlv_6=(Token)match(input,16,FOLLOW_16_in_ruleInstantiation2563); 
+                    	    otherlv_6=(Token)match(input,16,FOLLOW_16_in_ruleInstantiation2562); 
 
                     	        	newLeafNode(otherlv_6, grammarAccess.getInstantiationAccess().getCommaKeyword_5_1_0());
                     	        
@@ -3031,7 +3043,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getInstantiationAccess().getPropertiesInstantiationPropertyParserRuleCall_5_1_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2584);
+                    	    pushFollow(FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2583);
                     	    lv_properties_7_0=ruleInstantiationProperty();
 
                     	    state._fsp--;
@@ -3058,7 +3070,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop21;
+                    	    break loop22;
                         }
                     } while (true);
 
@@ -3068,7 +3080,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleInstantiation2600); 
+            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleInstantiation2599); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getInstantiationAccess().getRightParenthesisKeyword_6());
                 
@@ -3105,13 +3117,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1269:2: iv_ruleAddressSpec= ruleAddressSpec EOF
             {
              newCompositeNode(grammarAccess.getAddressSpecRule()); 
-            pushFollow(FOLLOW_ruleAddressSpec_in_entryRuleAddressSpec2636);
+            pushFollow(FOLLOW_ruleAddressSpec_in_entryRuleAddressSpec2635);
             iv_ruleAddressSpec=ruleAddressSpec();
 
             state._fsp--;
 
              current =iv_ruleAddressSpec; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAddressSpec2646); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddressSpec2645); 
 
             }
 
@@ -3145,39 +3157,39 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1280:1: (this_DirectAddressSpec_0= ruleDirectAddressSpec | this_NamedAddressSpec_1= ruleNamedAddressSpec )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1280:1: (this_DirectAddressSpec_0= ruleDirectAddressSpec | this_NamedAddressSpec_1= ruleNamedAddressSpec )
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA23_0==RULE_ID) ) {
-                int LA23_1 = input.LA(2);
+            if ( (LA24_0==RULE_ID) ) {
+                int LA24_1 = input.LA(2);
 
-                if ( (LA23_1==24) ) {
-                    alt23=1;
+                if ( (LA24_1==EOF||LA24_1==18) ) {
+                    alt24=2;
                 }
-                else if ( (LA23_1==EOF||LA23_1==18) ) {
-                    alt23=2;
+                else if ( (LA24_1==24) ) {
+                    alt24=1;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 23, 1, input);
+                        new NoViableAltException("", 24, 1, input);
 
                     throw nvae;
                 }
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 23, 0, input);
+                    new NoViableAltException("", 24, 0, input);
 
                 throw nvae;
             }
-            switch (alt23) {
+            switch (alt24) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1281:5: this_DirectAddressSpec_0= ruleDirectAddressSpec
                     {
                      
                             newCompositeNode(grammarAccess.getAddressSpecAccess().getDirectAddressSpecParserRuleCall_0()); 
                         
-                    pushFollow(FOLLOW_ruleDirectAddressSpec_in_ruleAddressSpec2693);
+                    pushFollow(FOLLOW_ruleDirectAddressSpec_in_ruleAddressSpec2692);
                     this_DirectAddressSpec_0=ruleDirectAddressSpec();
 
                     state._fsp--;
@@ -3195,7 +3207,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                             newCompositeNode(grammarAccess.getAddressSpecAccess().getNamedAddressSpecParserRuleCall_1()); 
                         
-                    pushFollow(FOLLOW_ruleNamedAddressSpec_in_ruleAddressSpec2720);
+                    pushFollow(FOLLOW_ruleNamedAddressSpec_in_ruleAddressSpec2719);
                     this_NamedAddressSpec_1=ruleNamedAddressSpec();
 
                     state._fsp--;
@@ -3240,13 +3252,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1309:2: iv_ruleDirectAddressSpec= ruleDirectAddressSpec EOF
             {
              newCompositeNode(grammarAccess.getDirectAddressSpecRule()); 
-            pushFollow(FOLLOW_ruleDirectAddressSpec_in_entryRuleDirectAddressSpec2755);
+            pushFollow(FOLLOW_ruleDirectAddressSpec_in_entryRuleDirectAddressSpec2754);
             iv_ruleDirectAddressSpec=ruleDirectAddressSpec();
 
             state._fsp--;
 
              current =iv_ruleDirectAddressSpec; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDirectAddressSpec2765); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDirectAddressSpec2764); 
 
             }
 
@@ -3287,7 +3299,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1321:1: (lv_name_0_0= RULE_ID )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1322:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDirectAddressSpec2807); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDirectAddressSpec2806); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getDirectAddressSpecAccess().getNameIDTerminalRuleCall_0_0()); 
             		
@@ -3307,7 +3319,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,24,FOLLOW_24_in_ruleDirectAddressSpec2824); 
+            otherlv_1=(Token)match(input,24,FOLLOW_24_in_ruleDirectAddressSpec2823); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getDirectAddressSpecAccess().getEqualsSignKeyword_1());
                 
@@ -3317,7 +3329,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1343:1: (lv_address_2_0= RULE_HEX_NUM )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1344:3: lv_address_2_0= RULE_HEX_NUM
             {
-            lv_address_2_0=(Token)match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_ruleDirectAddressSpec2841); 
+            lv_address_2_0=(Token)match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_ruleDirectAddressSpec2840); 
 
             			newLeafNode(lv_address_2_0, grammarAccess.getDirectAddressSpecAccess().getAddressHEX_NUMTerminalRuleCall_2_0()); 
             		
@@ -3370,13 +3382,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1370:2: iv_ruleNamedAddressSpec= ruleNamedAddressSpec EOF
             {
              newCompositeNode(grammarAccess.getNamedAddressSpecRule()); 
-            pushFollow(FOLLOW_ruleNamedAddressSpec_in_entryRuleNamedAddressSpec2882);
+            pushFollow(FOLLOW_ruleNamedAddressSpec_in_entryRuleNamedAddressSpec2881);
             iv_ruleNamedAddressSpec=ruleNamedAddressSpec();
 
             state._fsp--;
 
              current =iv_ruleNamedAddressSpec; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleNamedAddressSpec2892); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleNamedAddressSpec2891); 
 
             }
 
@@ -3412,7 +3424,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1382:1: (lv_name_0_0= RULE_ID )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1383:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleNamedAddressSpec2933); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleNamedAddressSpec2932); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getNamedAddressSpecAccess().getNameIDTerminalRuleCall_0()); 
             		
@@ -3462,13 +3474,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1409:2: iv_ruleKind= ruleKind EOF
             {
              newCompositeNode(grammarAccess.getKindRule()); 
-            pushFollow(FOLLOW_ruleKind_in_entryRuleKind2974);
+            pushFollow(FOLLOW_ruleKind_in_entryRuleKind2973);
             iv_ruleKind=ruleKind();
 
             state._fsp--;
 
              current =iv_ruleKind.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleKind2985); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleKind2984); 
 
             }
 
@@ -3499,26 +3511,26 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1420:1: (kw= 'READ' | kw= 'WRITE' )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1420:1: (kw= 'READ' | kw= 'WRITE' )
-            int alt24=2;
-            int LA24_0 = input.LA(1);
+            int alt25=2;
+            int LA25_0 = input.LA(1);
 
-            if ( (LA24_0==28) ) {
-                alt24=1;
+            if ( (LA25_0==28) ) {
+                alt25=1;
             }
-            else if ( (LA24_0==29) ) {
-                alt24=2;
+            else if ( (LA25_0==29) ) {
+                alt25=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 24, 0, input);
+                    new NoViableAltException("", 25, 0, input);
 
                 throw nvae;
             }
-            switch (alt24) {
+            switch (alt25) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1421:2: kw= 'READ'
                     {
-                    kw=(Token)match(input,28,FOLLOW_28_in_ruleKind3023); 
+                    kw=(Token)match(input,28,FOLLOW_28_in_ruleKind3022); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getKindAccess().getREADKeyword_0()); 
@@ -3529,7 +3541,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                 case 2 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1428:2: kw= 'WRITE'
                     {
-                    kw=(Token)match(input,29,FOLLOW_29_in_ruleKind3042); 
+                    kw=(Token)match(input,29,FOLLOW_29_in_ruleKind3041); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getKindAccess().getWRITEKeyword_1()); 
@@ -3570,13 +3582,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1443:2: iv_ruleInstantiationProperty= ruleInstantiationProperty EOF
             {
              newCompositeNode(grammarAccess.getInstantiationPropertyRule()); 
-            pushFollow(FOLLOW_ruleInstantiationProperty_in_entryRuleInstantiationProperty3082);
+            pushFollow(FOLLOW_ruleInstantiationProperty_in_entryRuleInstantiationProperty3081);
             iv_ruleInstantiationProperty=ruleInstantiationProperty();
 
             state._fsp--;
 
              current =iv_ruleInstantiationProperty; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleInstantiationProperty3092); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleInstantiationProperty3091); 
 
             }
 
@@ -3617,31 +3629,31 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1454:1: ( ( () otherlv_1= 'ID' otherlv_2= '=' ( (lv_id_3_0= ruleArgument ) ) ) | ( () otherlv_5= 'CRC' ) | ( () otherlv_7= 'PUBLISH' otherlv_8= '(' ( (lv_mode_9_0= RULE_INT ) ) otherlv_10= ',' ( (lv_rate_11_0= RULE_INT ) ) otherlv_12= ')' ) )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1454:1: ( ( () otherlv_1= 'ID' otherlv_2= '=' ( (lv_id_3_0= ruleArgument ) ) ) | ( () otherlv_5= 'CRC' ) | ( () otherlv_7= 'PUBLISH' otherlv_8= '(' ( (lv_mode_9_0= RULE_INT ) ) otherlv_10= ',' ( (lv_rate_11_0= RULE_INT ) ) otherlv_12= ')' ) )
-            int alt25=3;
+            int alt26=3;
             switch ( input.LA(1) ) {
             case 30:
                 {
-                alt25=1;
+                alt26=1;
                 }
                 break;
             case 31:
                 {
-                alt25=2;
+                alt26=2;
                 }
                 break;
             case 32:
                 {
-                alt25=3;
+                alt26=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 25, 0, input);
+                    new NoViableAltException("", 26, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt25) {
+            switch (alt26) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1454:2: ( () otherlv_1= 'ID' otherlv_2= '=' ( (lv_id_3_0= ruleArgument ) ) )
                     {
@@ -3659,11 +3671,11 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_1=(Token)match(input,30,FOLLOW_30_in_ruleInstantiationProperty3139); 
+                    otherlv_1=(Token)match(input,30,FOLLOW_30_in_ruleInstantiationProperty3138); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getInstantiationPropertyAccess().getIDKeyword_0_1());
                         
-                    otherlv_2=(Token)match(input,24,FOLLOW_24_in_ruleInstantiationProperty3151); 
+                    otherlv_2=(Token)match(input,24,FOLLOW_24_in_ruleInstantiationProperty3150); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getInstantiationPropertyAccess().getEqualsSignKeyword_0_2());
                         
@@ -3676,7 +3688,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getInstantiationPropertyAccess().getIdArgumentParserRuleCall_0_3_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleArgument_in_ruleInstantiationProperty3172);
+                    pushFollow(FOLLOW_ruleArgument_in_ruleInstantiationProperty3171);
                     lv_id_3_0=ruleArgument();
 
                     state._fsp--;
@@ -3721,7 +3733,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_5=(Token)match(input,31,FOLLOW_31_in_ruleInstantiationProperty3201); 
+                    otherlv_5=(Token)match(input,31,FOLLOW_31_in_ruleInstantiationProperty3200); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getInstantiationPropertyAccess().getCRCKeyword_1_1());
                         
@@ -3742,17 +3754,17 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     {
 
                             current = forceCreateModelElement(
-                                grammarAccess.getInstantiationPropertyAccess().getPublishPopertyAction_2_0(),
+                                grammarAccess.getInstantiationPropertyAccess().getPublishPropertyAction_2_0(),
                                 current);
                         
 
                     }
 
-                    otherlv_7=(Token)match(input,32,FOLLOW_32_in_ruleInstantiationProperty3230); 
+                    otherlv_7=(Token)match(input,32,FOLLOW_32_in_ruleInstantiationProperty3229); 
 
                         	newLeafNode(otherlv_7, grammarAccess.getInstantiationPropertyAccess().getPUBLISHKeyword_2_1());
                         
-                    otherlv_8=(Token)match(input,15,FOLLOW_15_in_ruleInstantiationProperty3242); 
+                    otherlv_8=(Token)match(input,15,FOLLOW_15_in_ruleInstantiationProperty3241); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getInstantiationPropertyAccess().getLeftParenthesisKeyword_2_2());
                         
@@ -3762,7 +3774,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1513:1: (lv_mode_9_0= RULE_INT )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1514:3: lv_mode_9_0= RULE_INT
                     {
-                    lv_mode_9_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleInstantiationProperty3259); 
+                    lv_mode_9_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleInstantiationProperty3258); 
 
                     			newLeafNode(lv_mode_9_0, grammarAccess.getInstantiationPropertyAccess().getModeINTTerminalRuleCall_2_3_0()); 
                     		
@@ -3782,7 +3794,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_10=(Token)match(input,16,FOLLOW_16_in_ruleInstantiationProperty3276); 
+                    otherlv_10=(Token)match(input,16,FOLLOW_16_in_ruleInstantiationProperty3275); 
 
                         	newLeafNode(otherlv_10, grammarAccess.getInstantiationPropertyAccess().getCommaKeyword_2_4());
                         
@@ -3792,7 +3804,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1535:1: (lv_rate_11_0= RULE_INT )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1536:3: lv_rate_11_0= RULE_INT
                     {
-                    lv_rate_11_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleInstantiationProperty3293); 
+                    lv_rate_11_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleInstantiationProperty3292); 
 
                     			newLeafNode(lv_rate_11_0, grammarAccess.getInstantiationPropertyAccess().getRateINTTerminalRuleCall_2_5_0()); 
                     		
@@ -3812,7 +3824,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_12=(Token)match(input,17,FOLLOW_17_in_ruleInstantiationProperty3310); 
+                    otherlv_12=(Token)match(input,17,FOLLOW_17_in_ruleInstantiationProperty3309); 
 
                         	newLeafNode(otherlv_12, grammarAccess.getInstantiationPropertyAccess().getRightParenthesisKeyword_2_6());
                         
@@ -3855,13 +3867,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1566:2: iv_ruleGrouping= ruleGrouping EOF
             {
              newCompositeNode(grammarAccess.getGroupingRule()); 
-            pushFollow(FOLLOW_ruleGrouping_in_entryRuleGrouping3347);
+            pushFollow(FOLLOW_ruleGrouping_in_entryRuleGrouping3346);
             iv_ruleGrouping=ruleGrouping();
 
             state._fsp--;
 
              current =iv_ruleGrouping; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleGrouping3357); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleGrouping3356); 
 
             }
 
@@ -3906,7 +3918,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1578:1: (lv_name_0_0= RULE_ID )
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1579:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleGrouping3399); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleGrouping3398); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getGroupingAccess().getNameIDTerminalRuleCall_0_0()); 
             		
@@ -3926,7 +3938,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,24,FOLLOW_24_in_ruleGrouping3416); 
+            otherlv_1=(Token)match(input,24,FOLLOW_24_in_ruleGrouping3415); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getGroupingAccess().getEqualsSignKeyword_1());
                 
@@ -3939,7 +3951,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getGroupingAccess().getElementsGroupElementParserRuleCall_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleGroupElement_in_ruleGrouping3437);
+            pushFollow(FOLLOW_ruleGroupElement_in_ruleGrouping3436);
             lv_elements_2_0=ruleGroupElement();
 
             state._fsp--;
@@ -3962,21 +3974,21 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             }
 
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1617:2: (otherlv_3= ',' ( (lv_elements_4_0= ruleGroupElement ) ) )*
-            loop26:
+            loop27:
             do {
-                int alt26=2;
-                int LA26_0 = input.LA(1);
+                int alt27=2;
+                int LA27_0 = input.LA(1);
 
-                if ( (LA26_0==16) ) {
-                    alt26=1;
+                if ( (LA27_0==16) ) {
+                    alt27=1;
                 }
 
 
-                switch (alt26) {
+                switch (alt27) {
             	case 1 :
             	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1617:4: otherlv_3= ',' ( (lv_elements_4_0= ruleGroupElement ) )
             	    {
-            	    otherlv_3=(Token)match(input,16,FOLLOW_16_in_ruleGrouping3450); 
+            	    otherlv_3=(Token)match(input,16,FOLLOW_16_in_ruleGrouping3449); 
 
             	        	newLeafNode(otherlv_3, grammarAccess.getGroupingAccess().getCommaKeyword_3_0());
             	        
@@ -3989,7 +4001,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	     
             	    	        newCompositeNode(grammarAccess.getGroupingAccess().getElementsGroupElementParserRuleCall_3_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleGroupElement_in_ruleGrouping3471);
+            	    pushFollow(FOLLOW_ruleGroupElement_in_ruleGrouping3470);
             	    lv_elements_4_0=ruleGroupElement();
 
             	    state._fsp--;
@@ -4016,7 +4028,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop27;
                 }
             } while (true);
 
@@ -4053,13 +4065,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1649:2: iv_ruleGroupElement= ruleGroupElement EOF
             {
              newCompositeNode(grammarAccess.getGroupElementRule()); 
-            pushFollow(FOLLOW_ruleGroupElement_in_entryRuleGroupElement3509);
+            pushFollow(FOLLOW_ruleGroupElement_in_entryRuleGroupElement3508);
             iv_ruleGroupElement=ruleGroupElement();
 
             state._fsp--;
 
              current =iv_ruleGroupElement; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleGroupElement3519); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleGroupElement3518); 
 
             }
 
@@ -4105,7 +4117,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
              
             	        newCompositeNode(grammarAccess.getGroupElementAccess().getPathPathElementParserRuleCall_0_0()); 
             	    
-            pushFollow(FOLLOW_rulePathElement_in_ruleGroupElement3565);
+            pushFollow(FOLLOW_rulePathElement_in_ruleGroupElement3564);
             lv_path_0_0=rulePathElement();
 
             state._fsp--;
@@ -4128,21 +4140,21 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             }
 
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1678:2: (otherlv_1= '.' ( (lv_path_2_0= rulePathElement ) ) )*
-            loop27:
+            loop28:
             do {
-                int alt27=2;
-                int LA27_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( (LA27_0==33) ) {
-                    alt27=1;
+                if ( (LA28_0==33) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt27) {
+                switch (alt28) {
             	case 1 :
             	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1678:4: otherlv_1= '.' ( (lv_path_2_0= rulePathElement ) )
             	    {
-            	    otherlv_1=(Token)match(input,33,FOLLOW_33_in_ruleGroupElement3578); 
+            	    otherlv_1=(Token)match(input,33,FOLLOW_33_in_ruleGroupElement3577); 
 
             	        	newLeafNode(otherlv_1, grammarAccess.getGroupElementAccess().getFullStopKeyword_1_0());
             	        
@@ -4155,7 +4167,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	     
             	    	        newCompositeNode(grammarAccess.getGroupElementAccess().getPathPathElementParserRuleCall_1_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_rulePathElement_in_ruleGroupElement3599);
+            	    pushFollow(FOLLOW_rulePathElement_in_ruleGroupElement3598);
             	    lv_path_2_0=rulePathElement();
 
             	    state._fsp--;
@@ -4182,7 +4194,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop27;
+            	    break loop28;
                 }
             } while (true);
 
@@ -4219,13 +4231,13 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1710:2: iv_rulePathElement= rulePathElement EOF
             {
              newCompositeNode(grammarAccess.getPathElementRule()); 
-            pushFollow(FOLLOW_rulePathElement_in_entryRulePathElement3637);
+            pushFollow(FOLLOW_rulePathElement_in_entryRulePathElement3636);
             iv_rulePathElement=rulePathElement();
 
             state._fsp--;
 
              current =iv_rulePathElement; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePathElement3647); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePathElement3646); 
 
             }
 
@@ -4260,22 +4272,22 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1721:1: ( ( (lv_simple_0_0= RULE_ID ) ) | (otherlv_1= 'ALL' otherlv_2= '(' ( (otherlv_3= RULE_ID ) ) otherlv_4= ')' ) )
             {
             // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1721:1: ( ( (lv_simple_0_0= RULE_ID ) ) | (otherlv_1= 'ALL' otherlv_2= '(' ( (otherlv_3= RULE_ID ) ) otherlv_4= ')' ) )
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA28_0==RULE_ID) ) {
-                alt28=1;
+            if ( (LA29_0==RULE_ID) ) {
+                alt29=1;
             }
-            else if ( (LA28_0==34) ) {
-                alt28=2;
+            else if ( (LA29_0==34) ) {
+                alt29=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 28, 0, input);
+                    new NoViableAltException("", 29, 0, input);
 
                 throw nvae;
             }
-            switch (alt28) {
+            switch (alt29) {
                 case 1 :
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1721:2: ( (lv_simple_0_0= RULE_ID ) )
                     {
@@ -4285,7 +4297,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1722:1: (lv_simple_0_0= RULE_ID )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1723:3: lv_simple_0_0= RULE_ID
                     {
-                    lv_simple_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePathElement3689); 
+                    lv_simple_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePathElement3688); 
 
                     			newLeafNode(lv_simple_0_0, grammarAccess.getPathElementAccess().getSimpleIDTerminalRuleCall_0_0()); 
                     		
@@ -4314,11 +4326,11 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1740:6: (otherlv_1= 'ALL' otherlv_2= '(' ( (otherlv_3= RULE_ID ) ) otherlv_4= ')' )
                     // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1740:8: otherlv_1= 'ALL' otherlv_2= '(' ( (otherlv_3= RULE_ID ) ) otherlv_4= ')'
                     {
-                    otherlv_1=(Token)match(input,34,FOLLOW_34_in_rulePathElement3713); 
+                    otherlv_1=(Token)match(input,34,FOLLOW_34_in_rulePathElement3712); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getPathElementAccess().getALLKeyword_1_0());
                         
-                    otherlv_2=(Token)match(input,15,FOLLOW_15_in_rulePathElement3725); 
+                    otherlv_2=(Token)match(input,15,FOLLOW_15_in_rulePathElement3724); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getPathElementAccess().getLeftParenthesisKeyword_1_1());
                         
@@ -4333,7 +4345,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     	            current = createModelElement(grammarAccess.getPathElementRule());
                     	        }
                             
-                    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePathElement3745); 
+                    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePathElement3744); 
 
                     		newLeafNode(otherlv_3, grammarAccess.getPathElementAccess().getTypeConstructorCrossReference_1_2_0()); 
                     	
@@ -4343,7 +4355,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_4=(Token)match(input,17,FOLLOW_17_in_rulePathElement3757); 
+                    otherlv_4=(Token)match(input,17,FOLLOW_17_in_rulePathElement3756); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getPathElementAccess().getRightParenthesisKeyword_1_3());
                         
@@ -4423,123 +4435,123 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_EOF_in_entryRuleTosNetLinkBinding1040 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_22_in_ruleTosNetLinkBinding1077 = new BitSet(new long[]{0x0000000000008000L});
     public static final BitSet FOLLOW_15_in_ruleTosNetLinkBinding1089 = new BitSet(new long[]{0x0000000006800000L});
-    public static final BitSet FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1111 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_ruleTosNetLinkBinding1124 = new BitSet(new long[]{0x0000000006800000L});
-    public static final BitSet FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1145 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleTosNetLinkBinding1159 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleLinkProperty_in_entryRuleLinkProperty1195 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleLinkProperty1205 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_ruleLinkProperty1243 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleLinkProperty1255 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleLinkProperty1272 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_ruleLinkProperty1297 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleLinkProperty1309 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleLinkProperty1326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_ruleLinkProperty1351 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleLinkProperty1363 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleLinkProperty1380 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleExpansion_in_entryRuleExpansion1422 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleExpansion1432 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSimpleExpansion_in_ruleExpansion1479 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddressExpansion_in_ruleExpansion1506 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleSimpleExpansion_in_entryRuleSimpleExpansion1541 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleSimpleExpansion1551 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleSimpleExpansion1593 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleSimpleExpansion1610 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleSimpleExpansion1630 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleSimpleExpansion1642 = new BitSet(new long[]{0x0000000000020050L});
-    public static final BitSet FOLLOW_ruleArgument_in_ruleSimpleExpansion1664 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_16_in_ruleSimpleExpansion1677 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_ruleArgument_in_ruleSimpleExpansion1698 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_17_in_ruleSimpleExpansion1714 = new BitSet(new long[]{0x0000000000200002L});
-    public static final BitSet FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1736 = new BitSet(new long[]{0x0000000000010002L});
-    public static final BitSet FOLLOW_16_in_ruleSimpleExpansion1749 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1770 = new BitSet(new long[]{0x0000000000010002L});
-    public static final BitSet FOLLOW_ruleAddressExpansion_in_entryRuleAddressExpansion1810 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAddressExpansion1820 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_ruleAddressExpansion1857 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAddressExpansion1874 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleAddressExpansion1891 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAddressExpansion1911 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleAddressExpansion1923 = new BitSet(new long[]{0x0000000000020050L});
-    public static final BitSet FOLLOW_ruleArgument_in_ruleAddressExpansion1945 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_16_in_ruleAddressExpansion1958 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_ruleArgument_in_ruleAddressExpansion1979 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_17_in_ruleAddressExpansion1995 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArgument_in_entryRuleArgument2031 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleArgument2041 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleArgument2083 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleArgument2112 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleArgument2129 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_ruleArgument_in_ruleArgument2150 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleArgument2174 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddressBinding_in_entryRuleAddressBinding2215 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAddressBinding2225 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_ruleAddressBinding2262 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAddressBinding2279 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleAddressBinding2296 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleAddressBinding2308 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2325 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_16_in_ruleAddressBinding2343 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2360 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_17_in_ruleAddressBinding2379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleInstantiation_in_entryRuleInstantiation2415 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleInstantiation2425 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_ruleInstantiation2462 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleAddressSpec_in_ruleInstantiation2483 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleInstantiation2495 = new BitSet(new long[]{0x0000000030000000L});
-    public static final BitSet FOLLOW_ruleKind_in_ruleInstantiation2516 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleInstantiation2528 = new BitSet(new long[]{0x00000001C0020000L});
-    public static final BitSet FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2550 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_16_in_ruleInstantiation2563 = new BitSet(new long[]{0x00000001C0000000L});
-    public static final BitSet FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2584 = new BitSet(new long[]{0x0000000000030000L});
-    public static final BitSet FOLLOW_17_in_ruleInstantiation2600 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddressSpec_in_entryRuleAddressSpec2636 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAddressSpec2646 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDirectAddressSpec_in_ruleAddressSpec2693 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNamedAddressSpec_in_ruleAddressSpec2720 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDirectAddressSpec_in_entryRuleDirectAddressSpec2755 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDirectAddressSpec2765 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDirectAddressSpec2807 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleDirectAddressSpec2824 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_RULE_HEX_NUM_in_ruleDirectAddressSpec2841 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleNamedAddressSpec_in_entryRuleNamedAddressSpec2882 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleNamedAddressSpec2892 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleNamedAddressSpec2933 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleKind_in_entryRuleKind2974 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleKind2985 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_ruleKind3023 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleKind3042 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleInstantiationProperty_in_entryRuleInstantiationProperty3082 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleInstantiationProperty3092 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleInstantiationProperty3139 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleInstantiationProperty3151 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_ruleArgument_in_ruleInstantiationProperty3172 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_ruleInstantiationProperty3201 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_ruleInstantiationProperty3230 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleInstantiationProperty3242 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleInstantiationProperty3259 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_ruleInstantiationProperty3276 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleInstantiationProperty3293 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleInstantiationProperty3310 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleGrouping_in_entryRuleGrouping3347 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleGrouping3357 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleGrouping3399 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleGrouping3416 = new BitSet(new long[]{0x0000000400000010L});
-    public static final BitSet FOLLOW_ruleGroupElement_in_ruleGrouping3437 = new BitSet(new long[]{0x0000000000010002L});
-    public static final BitSet FOLLOW_16_in_ruleGrouping3450 = new BitSet(new long[]{0x0000000400000010L});
-    public static final BitSet FOLLOW_ruleGroupElement_in_ruleGrouping3471 = new BitSet(new long[]{0x0000000000010002L});
-    public static final BitSet FOLLOW_ruleGroupElement_in_entryRuleGroupElement3509 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleGroupElement3519 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePathElement_in_ruleGroupElement3565 = new BitSet(new long[]{0x0000000200000002L});
-    public static final BitSet FOLLOW_33_in_ruleGroupElement3578 = new BitSet(new long[]{0x0000000400000010L});
-    public static final BitSet FOLLOW_rulePathElement_in_ruleGroupElement3599 = new BitSet(new long[]{0x0000000200000002L});
-    public static final BitSet FOLLOW_rulePathElement_in_entryRulePathElement3637 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePathElement3647 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePathElement3689 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rulePathElement3713 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_rulePathElement3725 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePathElement3745 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_rulePathElement3757 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1110 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_16_in_ruleTosNetLinkBinding1123 = new BitSet(new long[]{0x0000000006800000L});
+    public static final BitSet FOLLOW_ruleLinkProperty_in_ruleTosNetLinkBinding1144 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_17_in_ruleTosNetLinkBinding1158 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLinkProperty_in_entryRuleLinkProperty1194 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleLinkProperty1204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_ruleLinkProperty1242 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleLinkProperty1254 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleLinkProperty1271 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_ruleLinkProperty1296 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleLinkProperty1308 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleLinkProperty1325 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_ruleLinkProperty1350 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleLinkProperty1362 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleLinkProperty1379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleExpansion_in_entryRuleExpansion1421 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleExpansion1431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSimpleExpansion_in_ruleExpansion1478 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddressExpansion_in_ruleExpansion1505 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleSimpleExpansion_in_entryRuleSimpleExpansion1540 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleSimpleExpansion1550 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleSimpleExpansion1592 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleSimpleExpansion1609 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleSimpleExpansion1629 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleSimpleExpansion1641 = new BitSet(new long[]{0x0000000000020050L});
+    public static final BitSet FOLLOW_ruleArgument_in_ruleSimpleExpansion1663 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_16_in_ruleSimpleExpansion1676 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_ruleArgument_in_ruleSimpleExpansion1697 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_17_in_ruleSimpleExpansion1713 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1735 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_16_in_ruleSimpleExpansion1748 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_ruleAddressBinding_in_ruleSimpleExpansion1769 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_ruleAddressExpansion_in_entryRuleAddressExpansion1809 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddressExpansion1819 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_ruleAddressExpansion1856 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddressExpansion1873 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleAddressExpansion1890 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddressExpansion1910 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleAddressExpansion1922 = new BitSet(new long[]{0x0000000000020050L});
+    public static final BitSet FOLLOW_ruleArgument_in_ruleAddressExpansion1944 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_16_in_ruleAddressExpansion1957 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_ruleArgument_in_ruleAddressExpansion1978 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_17_in_ruleAddressExpansion1994 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArgument_in_entryRuleArgument2030 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleArgument2040 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleArgument2082 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleArgument2111 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_ruleArgument2128 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_ruleArgument_in_ruleArgument2149 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleArgument2173 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddressBinding_in_entryRuleAddressBinding2214 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddressBinding2224 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_ruleAddressBinding2261 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddressBinding2278 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleAddressBinding2295 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleAddressBinding2307 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2324 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_16_in_ruleAddressBinding2342 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_RULE_HEX_NUM_in_ruleAddressBinding2359 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_17_in_ruleAddressBinding2378 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleInstantiation_in_entryRuleInstantiation2414 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleInstantiation2424 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_ruleInstantiation2461 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleAddressSpec_in_ruleInstantiation2482 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleInstantiation2494 = new BitSet(new long[]{0x0000000030000000L});
+    public static final BitSet FOLLOW_ruleKind_in_ruleInstantiation2515 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleInstantiation2527 = new BitSet(new long[]{0x00000001C0020000L});
+    public static final BitSet FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2549 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_16_in_ruleInstantiation2562 = new BitSet(new long[]{0x00000001C0000000L});
+    public static final BitSet FOLLOW_ruleInstantiationProperty_in_ruleInstantiation2583 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_17_in_ruleInstantiation2599 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddressSpec_in_entryRuleAddressSpec2635 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddressSpec2645 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDirectAddressSpec_in_ruleAddressSpec2692 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNamedAddressSpec_in_ruleAddressSpec2719 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDirectAddressSpec_in_entryRuleDirectAddressSpec2754 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDirectAddressSpec2764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDirectAddressSpec2806 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleDirectAddressSpec2823 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_RULE_HEX_NUM_in_ruleDirectAddressSpec2840 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleNamedAddressSpec_in_entryRuleNamedAddressSpec2881 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleNamedAddressSpec2891 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleNamedAddressSpec2932 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleKind_in_entryRuleKind2973 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleKind2984 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_ruleKind3022 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleKind3041 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleInstantiationProperty_in_entryRuleInstantiationProperty3081 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleInstantiationProperty3091 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleInstantiationProperty3138 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleInstantiationProperty3150 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_ruleArgument_in_ruleInstantiationProperty3171 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_ruleInstantiationProperty3200 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_ruleInstantiationProperty3229 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleInstantiationProperty3241 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleInstantiationProperty3258 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_16_in_ruleInstantiationProperty3275 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleInstantiationProperty3292 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleInstantiationProperty3309 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleGrouping_in_entryRuleGrouping3346 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleGrouping3356 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleGrouping3398 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_24_in_ruleGrouping3415 = new BitSet(new long[]{0x0000000400000010L});
+    public static final BitSet FOLLOW_ruleGroupElement_in_ruleGrouping3436 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_16_in_ruleGrouping3449 = new BitSet(new long[]{0x0000000400000010L});
+    public static final BitSet FOLLOW_ruleGroupElement_in_ruleGrouping3470 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_ruleGroupElement_in_entryRuleGroupElement3508 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleGroupElement3518 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePathElement_in_ruleGroupElement3564 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_33_in_ruleGroupElement3577 = new BitSet(new long[]{0x0000000400000010L});
+    public static final BitSet FOLLOW_rulePathElement_in_ruleGroupElement3598 = new BitSet(new long[]{0x0000000200000002L});
+    public static final BitSet FOLLOW_rulePathElement_in_entryRulePathElement3636 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePathElement3646 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePathElement3688 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rulePathElement3712 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_rulePathElement3724 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePathElement3744 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_rulePathElement3756 = new BitSet(new long[]{0x0000000000000002L});
 
 }

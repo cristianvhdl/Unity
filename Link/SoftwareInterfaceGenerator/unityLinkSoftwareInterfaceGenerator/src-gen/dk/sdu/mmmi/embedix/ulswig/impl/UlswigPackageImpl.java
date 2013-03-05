@@ -22,7 +22,7 @@ import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.Member;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.PathElement;
-import dk.sdu.mmmi.embedix.ulswig.PublishPoperty;
+import dk.sdu.mmmi.embedix.ulswig.PublishProperty;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
 import dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.UlswigFactory;
@@ -202,7 +202,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass publishPopertyEClass = null;
+  private EClass publishPropertyEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -832,9 +832,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getPublishPoperty()
+  public EClass getPublishProperty()
   {
-    return publishPopertyEClass;
+    return publishPropertyEClass;
   }
 
   /**
@@ -842,9 +842,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getPublishPoperty_Mode()
+  public EAttribute getPublishProperty_Mode()
   {
-    return (EAttribute)publishPopertyEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)publishPropertyEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -852,9 +852,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getPublishPoperty_Rate()
+  public EAttribute getPublishProperty_Rate()
   {
-    return (EAttribute)publishPopertyEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)publishPropertyEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -965,9 +965,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
 
     crcPropertyEClass = createEClass(CRC_PROPERTY);
 
-    publishPopertyEClass = createEClass(PUBLISH_POPERTY);
-    createEAttribute(publishPopertyEClass, PUBLISH_POPERTY__MODE);
-    createEAttribute(publishPopertyEClass, PUBLISH_POPERTY__RATE);
+    publishPropertyEClass = createEClass(PUBLISH_PROPERTY);
+    createEAttribute(publishPropertyEClass, PUBLISH_PROPERTY__MODE);
+    createEAttribute(publishPropertyEClass, PUBLISH_PROPERTY__RATE);
   }
 
   /**
@@ -1010,7 +1010,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     groupingEClass.getESuperTypes().add(this.getMember());
     idPropertyEClass.getESuperTypes().add(this.getInstantiationProperty());
     crcPropertyEClass.getESuperTypes().add(this.getInstantiationProperty());
-    publishPopertyEClass.getESuperTypes().add(this.getInstantiationProperty());
+    publishPropertyEClass.getESuperTypes().add(this.getInstantiationProperty());
 
     // Initialize classes and features; add operations and parameters
     initEClass(linkSpecEClass, LinkSpec.class, "LinkSpec", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1091,9 +1091,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
 
     initEClass(crcPropertyEClass, CRCProperty.class, "CRCProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(publishPopertyEClass, PublishPoperty.class, "PublishPoperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getPublishPoperty_Mode(), ecorePackage.getEInt(), "mode", null, 0, 1, PublishPoperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getPublishPoperty_Rate(), ecorePackage.getEInt(), "rate", null, 0, 1, PublishPoperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(publishPropertyEClass, PublishProperty.class, "PublishProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getPublishProperty_Mode(), ecorePackage.getEInt(), "mode", null, 0, 1, PublishProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getPublishProperty_Rate(), ecorePackage.getEInt(), "rate", null, 0, 1, PublishProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

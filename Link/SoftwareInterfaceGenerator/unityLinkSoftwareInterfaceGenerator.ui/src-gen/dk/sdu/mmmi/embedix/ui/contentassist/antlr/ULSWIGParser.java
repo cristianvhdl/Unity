@@ -57,8 +57,7 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAddressAccess().getGroup_1(), "rule__Address__Group_1__0");
 					put(grammarAccess.getAddressAccess().getGroup_1_3(), "rule__Address__Group_1_3__0");
 					put(grammarAccess.getTosNetLinkBindingAccess().getGroup(), "rule__TosNetLinkBinding__Group__0");
-					put(grammarAccess.getTosNetLinkBindingAccess().getGroup_2(), "rule__TosNetLinkBinding__Group_2__0");
-					put(grammarAccess.getTosNetLinkBindingAccess().getGroup_2_1(), "rule__TosNetLinkBinding__Group_2_1__0");
+					put(grammarAccess.getTosNetLinkBindingAccess().getGroup_3(), "rule__TosNetLinkBinding__Group_3__0");
 					put(grammarAccess.getLinkPropertyAccess().getGroup_0(), "rule__LinkProperty__Group_0__0");
 					put(grammarAccess.getLinkPropertyAccess().getGroup_1(), "rule__LinkProperty__Group_1__0");
 					put(grammarAccess.getLinkPropertyAccess().getGroup_2(), "rule__LinkProperty__Group_2__0");
@@ -97,8 +96,8 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAddressAccess().getNameAssignment_0_1(), "rule__Address__NameAssignment_0_1");
 					put(grammarAccess.getAddressAccess().getElementsAssignment_1_2(), "rule__Address__ElementsAssignment_1_2");
 					put(grammarAccess.getAddressAccess().getElementsAssignment_1_3_1(), "rule__Address__ElementsAssignment_1_3_1");
-					put(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2_0(), "rule__TosNetLinkBinding__PropertiesAssignment_2_0");
-					put(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2_1_1(), "rule__TosNetLinkBinding__PropertiesAssignment_2_1_1");
+					put(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2(), "rule__TosNetLinkBinding__PropertiesAssignment_2");
+					put(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_3_1(), "rule__TosNetLinkBinding__PropertiesAssignment_3_1");
 					put(grammarAccess.getLinkPropertyAccess().getCtrlNameAssignment_0_2(), "rule__LinkProperty__CtrlNameAssignment_0_2");
 					put(grammarAccess.getLinkPropertyAccess().getBaseValueAssignment_1_2(), "rule__LinkProperty__BaseValueAssignment_1_2");
 					put(grammarAccess.getLinkPropertyAccess().getUartNameAssignment_2_2(), "rule__LinkProperty__UartNameAssignment_2_2");

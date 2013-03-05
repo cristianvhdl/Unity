@@ -221,13 +221,13 @@ public interface UlswigFactory extends EFactory
   CRCProperty createCRCProperty();
 
   /**
-   * Returns a new object of class '<em>Publish Poperty</em>'.
+   * Returns a new object of class '<em>Publish Property</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Publish Poperty</em>'.
+   * @return a new object of class '<em>Publish Property</em>'.
    * @generated
    */
-  PublishPoperty createPublishPoperty();
+  PublishProperty createPublishProperty();
 
   /**
    * Returns the package supported by this factory.

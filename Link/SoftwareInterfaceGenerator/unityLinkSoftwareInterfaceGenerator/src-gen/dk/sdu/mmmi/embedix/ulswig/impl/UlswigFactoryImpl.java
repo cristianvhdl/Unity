@@ -86,7 +86,7 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
       case UlswigPackage.PATH_ELEMENT: return createPathElement();
       case UlswigPackage.ID_PROPERTY: return createIDProperty();
       case UlswigPackage.CRC_PROPERTY: return createCRCProperty();
-      case UlswigPackage.PUBLISH_POPERTY: return createPublishPoperty();
+      case UlswigPackage.PUBLISH_PROPERTY: return createPublishProperty();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -339,10 +339,10 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public PublishPoperty createPublishPoperty()
+  public PublishProperty createPublishProperty()
   {
-    PublishPopertyImpl publishPoperty = new PublishPopertyImpl();
-    return publishPoperty;
+    PublishPropertyImpl publishProperty = new PublishPropertyImpl();
+    return publishProperty;
   }
 
   /**

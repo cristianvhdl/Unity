@@ -853,14 +853,14 @@ public interface UlswigPackage extends EPackage
   int CRC_PROPERTY_FEATURE_COUNT = INSTANTIATION_PROPERTY_FEATURE_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl <em>Publish Poperty</em>}' class.
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PublishPropertyImpl <em>Publish Property</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPublishPoperty()
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.PublishPropertyImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPublishProperty()
    * @generated
    */
-  int PUBLISH_POPERTY = 22;
+  int PUBLISH_PROPERTY = 22;
 
   /**
    * The feature id for the '<em><b>Mode</b></em>' attribute.
@@ -869,7 +869,7 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PUBLISH_POPERTY__MODE = INSTANTIATION_PROPERTY_FEATURE_COUNT + 0;
+  int PUBLISH_PROPERTY__MODE = INSTANTIATION_PROPERTY_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Rate</b></em>' attribute.
@@ -878,16 +878,16 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PUBLISH_POPERTY__RATE = INSTANTIATION_PROPERTY_FEATURE_COUNT + 1;
+  int PUBLISH_PROPERTY__RATE = INSTANTIATION_PROPERTY_FEATURE_COUNT + 1;
 
   /**
-   * The number of structural features of the '<em>Publish Poperty</em>' class.
+   * The number of structural features of the '<em>Publish Property</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PUBLISH_POPERTY_FEATURE_COUNT = INSTANTIATION_PROPERTY_FEATURE_COUNT + 2;
+  int PUBLISH_PROPERTY_FEATURE_COUNT = INSTANTIATION_PROPERTY_FEATURE_COUNT + 2;
 
 
   /**
@@ -1485,36 +1485,36 @@ public interface UlswigPackage extends EPackage
   EClass getCRCProperty();
 
   /**
-   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty <em>Publish Poperty</em>}'.
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.PublishProperty <em>Publish Property</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Publish Poperty</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty
+   * @return the meta object for class '<em>Publish Property</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishProperty
    * @generated
    */
-  EClass getPublishPoperty();
+  EClass getPublishProperty();
 
   /**
-   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getMode <em>Mode</em>}'.
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.PublishProperty#getMode <em>Mode</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Mode</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getMode()
-   * @see #getPublishPoperty()
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishProperty#getMode()
+   * @see #getPublishProperty()
    * @generated
    */
-  EAttribute getPublishPoperty_Mode();
+  EAttribute getPublishProperty_Mode();
 
   /**
-   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getRate <em>Rate</em>}'.
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.PublishProperty#getRate <em>Rate</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the attribute '<em>Rate</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty#getRate()
-   * @see #getPublishPoperty()
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishProperty#getRate()
+   * @see #getPublishProperty()
    * @generated
    */
-  EAttribute getPublishPoperty_Rate();
+  EAttribute getPublishProperty_Rate();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -2032,14 +2032,14 @@ public interface UlswigPackage extends EPackage
     EClass CRC_PROPERTY = eINSTANCE.getCRCProperty();
 
     /**
-     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl <em>Publish Poperty</em>}' class.
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.PublishPropertyImpl <em>Publish Property</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.PublishPopertyImpl
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPublishPoperty()
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.PublishPropertyImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getPublishProperty()
      * @generated
      */
-    EClass PUBLISH_POPERTY = eINSTANCE.getPublishPoperty();
+    EClass PUBLISH_PROPERTY = eINSTANCE.getPublishProperty();
 
     /**
      * The meta object literal for the '<em><b>Mode</b></em>' attribute feature.
@@ -2047,7 +2047,7 @@ public interface UlswigPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PUBLISH_POPERTY__MODE = eINSTANCE.getPublishPoperty_Mode();
+    EAttribute PUBLISH_PROPERTY__MODE = eINSTANCE.getPublishProperty_Mode();
 
     /**
      * The meta object literal for the '<em><b>Rate</b></em>' attribute feature.
@@ -2055,7 +2055,7 @@ public interface UlswigPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PUBLISH_POPERTY__RATE = eINSTANCE.getPublishPoperty_Rate();
+    EAttribute PUBLISH_PROPERTY__RATE = eINSTANCE.getPublishProperty_Rate();
 
   }
 

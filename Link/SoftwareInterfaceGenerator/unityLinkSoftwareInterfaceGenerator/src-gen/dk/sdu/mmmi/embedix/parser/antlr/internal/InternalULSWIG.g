@@ -512,10 +512,10 @@ ruleTosNetLinkBinding returns [EObject current=null]
     {
     	newLeafNode(otherlv_1, grammarAccess.getTosNetLinkBindingAccess().getLeftParenthesisKeyword_1());
     }
-((
+(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0_0()); 
+	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0()); 
 	    }
 		lv_properties_2_0=ruleLinkProperty		{
 	        if ($current==null) {
@@ -532,12 +532,12 @@ ruleTosNetLinkBinding returns [EObject current=null]
 )
 )(	otherlv_3=',' 
     {
-    	newLeafNode(otherlv_3, grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_2_1_0());
+    	newLeafNode(otherlv_3, grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_3_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_1_1_0()); 
+	        newCompositeNode(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_3_1_0()); 
 	    }
 		lv_properties_4_0=ruleLinkProperty		{
 	        if ($current==null) {
@@ -552,9 +552,9 @@ ruleTosNetLinkBinding returns [EObject current=null]
 	    }
 
 )
-)))	otherlv_5=')' 
+))*	otherlv_5=')' 
     {
-    	newLeafNode(otherlv_5, grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_3());
+    	newLeafNode(otherlv_5, grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_4());
     }
 )
 ;
@@ -1498,7 +1498,7 @@ ruleInstantiationProperty returns [EObject current=null]
     |((
     {
         $current = forceCreateModelElement(
-            grammarAccess.getInstantiationPropertyAccess().getPublishPopertyAction_2_0(),
+            grammarAccess.getInstantiationPropertyAccess().getPublishPropertyAction_2_0(),
             $current);
     }
 )	otherlv_7='PUBLISH' 

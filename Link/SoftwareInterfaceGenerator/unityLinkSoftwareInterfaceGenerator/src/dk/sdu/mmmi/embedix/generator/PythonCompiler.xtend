@@ -11,6 +11,13 @@ import dk.sdu.mmmi.embedix.ulswig.LinkProperty
 import dk.sdu.mmmi.embedix.ulswig.Argument
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion
 import dk.sdu.mmmi.embedix.ulswig.AddressExpansion
+import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec
+import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec
+import dk.sdu.mmmi.embedix.ulswig.InstantiationProperty
+import org.eclipse.emf.common.util.EList
+import dk.sdu.mmmi.embedix.ulswig.IDProperty
+import dk.sdu.mmmi.embedix.ulswig.CRCProperty
+import dk.sdu.mmmi.embedix.ulswig.PublishProperty
 
 class PythonCompiler {
 	def generate(LinkSpec link) '''
@@ -92,7 +99,34 @@ class PythonCompiler {
 	
 	def dispatch compileMember(Instantiation m) '''
 			# initialization for «m.address.name»
+			ul_address = «m.address.getAddressFromSpec»
+			self.«m.address.name» = ul_data_proxy(self.ul_hwp,ul_address, «m.properties.getInstantiationID», «m.kind.getKind», 0«FOR p:m.properties»«IF !(p instanceof IDProperty)»,«p.getNamedProperty»«ENDIF»«ENDFOR»)
 	'''
+
+	def dispatch getNamedProperty(CRCProperty p) {
+		"crc=True"
+	}
+
+	def dispatch getNamedProperty(PublishProperty p) {
+		"publish_config=["+p.mode+","+p.rate+"]"
+	}
+	
+	def getKind(String string) { 
+		if(string.equals("READ")) "ACCESS_RIGHT.R" else "ACCESS_RIGHT.W"
+	}
+
+	def getInstantiationID(EList<InstantiationProperty> list) { 
+		for(p: list) if(p instanceof IDProperty) return (p as IDProperty).id.compileArgument
+		return "(no name)"
+	}
+	
+	def dispatch getAddressFromSpec(DirectAddressSpec spec) {
+		spec.address
+	}
+
+	def dispatch getAddressFromSpec(NamedAddressSpec spec) {
+		"ul_addresses['"+spec.name+"']"
+	}
 	
 	def dispatch compileMember(Grouping m) '''
 			# initialization for «m.name»

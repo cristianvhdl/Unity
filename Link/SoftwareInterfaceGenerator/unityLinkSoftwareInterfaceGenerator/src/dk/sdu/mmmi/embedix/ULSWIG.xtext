@@ -87,7 +87,7 @@ Kind:
 InstantiationProperty:
 	{IDProperty} 'ID' '=' id=Argument |
 	{CRCProperty} 'CRC' |
-	{PublishPoperty} 'PUBLISH' '(' mode=INT ',' rate=INT ')'
+	{PublishProperty} 'PUBLISH' '(' mode=INT ',' rate=INT ')'
 ;
 
 // Grouping of existing elements (alias)

@@ -18,7 +18,7 @@ import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.PathElement;
-import dk.sdu.mmmi.embedix.ulswig.PublishPoperty;
+import dk.sdu.mmmi.embedix.ulswig.PublishProperty;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
 import dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
@@ -138,9 +138,9 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 					return; 
 				}
 				else break;
-			case UlswigPackage.PUBLISH_POPERTY:
+			case UlswigPackage.PUBLISH_PROPERTY:
 				if(context == grammarAccess.getInstantiationPropertyRule()) {
-					sequence_InstantiationProperty(context, (PublishPoperty) semanticObject); 
+					sequence_InstantiationProperty(context, (PublishProperty) semanticObject); 
 					return; 
 				}
 				else break;
@@ -275,12 +275,12 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	 * Constraint:
 	 *     (mode=INT rate=INT)
 	 */
-	protected void sequence_InstantiationProperty(EObject context, PublishPoperty semanticObject) {
+	protected void sequence_InstantiationProperty(EObject context, PublishProperty semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__MODE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__MODE));
-			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__RATE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.PUBLISH_POPERTY__RATE));
+			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.PUBLISH_PROPERTY__MODE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.PUBLISH_PROPERTY__MODE));
+			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.PUBLISH_PROPERTY__RATE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.PUBLISH_PROPERTY__RATE));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
@@ -353,7 +353,7 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (properties+=LinkProperty properties+=LinkProperty)
+	 *     (properties+=LinkProperty properties+=LinkProperty*)
 	 */
 	protected void sequence_TosNetLinkBinding(EObject context, TosNetLinkBinding semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

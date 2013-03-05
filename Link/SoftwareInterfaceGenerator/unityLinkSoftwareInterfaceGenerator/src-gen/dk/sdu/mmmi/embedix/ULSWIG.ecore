@@ -88,7 +88,7 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CRCProperty" eSuperTypes="#//InstantiationProperty"/>
-  <eClassifiers xsi:type="ecore:EClass" name="PublishPoperty" eSuperTypes="#//InstantiationProperty">
+  <eClassifiers xsi:type="ecore:EClass" name="PublishProperty" eSuperTypes="#//InstantiationProperty">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>

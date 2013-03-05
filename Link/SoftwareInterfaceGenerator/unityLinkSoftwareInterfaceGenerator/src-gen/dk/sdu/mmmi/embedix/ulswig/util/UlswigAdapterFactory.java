@@ -185,9 +185,9 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
         return createCRCPropertyAdapter();
       }
       @Override
-      public Adapter casePublishPoperty(PublishPoperty object)
+      public Adapter casePublishProperty(PublishProperty object)
       {
-        return createPublishPopertyAdapter();
+        return createPublishPropertyAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -542,16 +542,16 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.PublishPoperty <em>Publish Poperty</em>}'.
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.PublishProperty <em>Publish Property</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.PublishPoperty
+   * @see dk.sdu.mmmi.embedix.ulswig.PublishProperty
    * @generated
    */
-  public Adapter createPublishPopertyAdapter()
+  public Adapter createPublishPropertyAdapter()
   {
     return null;
   }

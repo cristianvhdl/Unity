@@ -240,11 +240,11 @@ public class UlswigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case UlswigPackage.PUBLISH_POPERTY:
+      case UlswigPackage.PUBLISH_PROPERTY:
       {
-        PublishPoperty publishPoperty = (PublishPoperty)theEObject;
-        T result = casePublishPoperty(publishPoperty);
-        if (result == null) result = caseInstantiationProperty(publishPoperty);
+        PublishProperty publishProperty = (PublishProperty)theEObject;
+        T result = casePublishProperty(publishProperty);
+        if (result == null) result = caseInstantiationProperty(publishProperty);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -605,17 +605,17 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Publish Poperty</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Publish Property</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Publish Poperty</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Publish Property</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T casePublishPoperty(PublishPoperty object)
+  public T casePublishProperty(PublishProperty object)
   {
     return null;
   }

@@ -2002,9 +2002,9 @@ rule__TosNetLinkBinding__Group__2__Impl
     }
 :
 (
-{ before(grammarAccess.getTosNetLinkBindingAccess().getGroup_2()); }
-(rule__TosNetLinkBinding__Group_2__0)
-{ after(grammarAccess.getTosNetLinkBindingAccess().getGroup_2()); }
+{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2()); }
+(rule__TosNetLinkBinding__PropertiesAssignment_2)
+{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2()); }
 )
 
 ;
@@ -2019,6 +2019,7 @@ rule__TosNetLinkBinding__Group__3
     }
 :
 	rule__TosNetLinkBinding__Group__3__Impl
+	rule__TosNetLinkBinding__Group__4
 ;
 finally {
 	restoreStackSize(stackSize);
@@ -2030,11 +2031,39 @@ rule__TosNetLinkBinding__Group__3__Impl
     }
 :
 (
-{ before(grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_3()); }
+{ before(grammarAccess.getTosNetLinkBindingAccess().getGroup_3()); }
+(rule__TosNetLinkBinding__Group_3__0)*
+{ after(grammarAccess.getTosNetLinkBindingAccess().getGroup_3()); }
+)
+
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
+rule__TosNetLinkBinding__Group__4
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+	rule__TosNetLinkBinding__Group__4__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__TosNetLinkBinding__Group__4__Impl
+    @init {
+		int stackSize = keepStackSize();
+    }
+:
+(
+{ before(grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_4()); }
 
 	')' 
 
-{ after(grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_3()); }
+{ after(grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_4()); }
 )
 
 ;
@@ -2051,90 +2080,31 @@ finally {
 
 
 
-rule__TosNetLinkBinding__Group_2__0
+
+
+rule__TosNetLinkBinding__Group_3__0
     @init {
 		int stackSize = keepStackSize();
     }
 :
-	rule__TosNetLinkBinding__Group_2__0__Impl
-	rule__TosNetLinkBinding__Group_2__1
+	rule__TosNetLinkBinding__Group_3__0__Impl
+	rule__TosNetLinkBinding__Group_3__1
 ;
 finally {
 	restoreStackSize(stackSize);
 }
 
-rule__TosNetLinkBinding__Group_2__0__Impl
+rule__TosNetLinkBinding__Group_3__0__Impl
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2_0()); }
-(rule__TosNetLinkBinding__PropertiesAssignment_2_0)
-{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2_0()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-
-rule__TosNetLinkBinding__Group_2__1
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-	rule__TosNetLinkBinding__Group_2__1__Impl
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__TosNetLinkBinding__Group_2__1__Impl
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getTosNetLinkBindingAccess().getGroup_2_1()); }
-(rule__TosNetLinkBinding__Group_2_1__0)
-{ after(grammarAccess.getTosNetLinkBindingAccess().getGroup_2_1()); }
-)
-
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-
-
-
-
-
-rule__TosNetLinkBinding__Group_2_1__0
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-	rule__TosNetLinkBinding__Group_2_1__0__Impl
-	rule__TosNetLinkBinding__Group_2_1__1
-;
-finally {
-	restoreStackSize(stackSize);
-}
-
-rule__TosNetLinkBinding__Group_2_1__0__Impl
-    @init {
-		int stackSize = keepStackSize();
-    }
-:
-(
-{ before(grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_2_1_0()); }
+{ before(grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_3_0()); }
 
 	',' 
 
-{ after(grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_2_1_0()); }
+{ after(grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_3_0()); }
 )
 
 ;
@@ -2143,26 +2113,26 @@ finally {
 }
 
 
-rule__TosNetLinkBinding__Group_2_1__1
+rule__TosNetLinkBinding__Group_3__1
     @init {
 		int stackSize = keepStackSize();
     }
 :
-	rule__TosNetLinkBinding__Group_2_1__1__Impl
+	rule__TosNetLinkBinding__Group_3__1__Impl
 ;
 finally {
 	restoreStackSize(stackSize);
 }
 
-rule__TosNetLinkBinding__Group_2_1__1__Impl
+rule__TosNetLinkBinding__Group_3__1__Impl
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2_1_1()); }
-(rule__TosNetLinkBinding__PropertiesAssignment_2_1_1)
-{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2_1_1()); }
+{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_3_1()); }
+(rule__TosNetLinkBinding__PropertiesAssignment_3_1)
+{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_3_1()); }
 )
 
 ;
@@ -4316,11 +4286,11 @@ rule__InstantiationProperty__Group_2__0__Impl
     }
 :
 (
-{ before(grammarAccess.getInstantiationPropertyAccess().getPublishPopertyAction_2_0()); }
+{ before(grammarAccess.getInstantiationPropertyAccess().getPublishPropertyAction_2_0()); }
 (
 
 )
-{ after(grammarAccess.getInstantiationPropertyAccess().getPublishPopertyAction_2_0()); }
+{ after(grammarAccess.getInstantiationPropertyAccess().getPublishPropertyAction_2_0()); }
 )
 
 ;
@@ -5154,14 +5124,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__TosNetLinkBinding__PropertiesAssignment_2_0
+rule__TosNetLinkBinding__PropertiesAssignment_2
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0_0()); }
-	ruleLinkProperty{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0_0()); }
+{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0()); }
+	ruleLinkProperty{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0()); }
 )
 
 ;
@@ -5169,14 +5139,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__TosNetLinkBinding__PropertiesAssignment_2_1_1
+rule__TosNetLinkBinding__PropertiesAssignment_3_1
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_1_1_0()); }
-	ruleLinkProperty{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_1_1_0()); }
+{ before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_3_1_0()); }
+	ruleLinkProperty{ after(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_3_1_0()); }
 )
 
 ;

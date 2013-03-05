@@ -291,20 +291,19 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTOSNETKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Assignment cPropertiesAssignment_2_0 = (Assignment)cGroup_2.eContents().get(0);
-		private final RuleCall cPropertiesLinkPropertyParserRuleCall_2_0_0 = (RuleCall)cPropertiesAssignment_2_0.eContents().get(0);
-		private final Group cGroup_2_1 = (Group)cGroup_2.eContents().get(1);
-		private final Keyword cCommaKeyword_2_1_0 = (Keyword)cGroup_2_1.eContents().get(0);
-		private final Assignment cPropertiesAssignment_2_1_1 = (Assignment)cGroup_2_1.eContents().get(1);
-		private final RuleCall cPropertiesLinkPropertyParserRuleCall_2_1_1_0 = (RuleCall)cPropertiesAssignment_2_1_1.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cPropertiesAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cPropertiesLinkPropertyParserRuleCall_2_0 = (RuleCall)cPropertiesAssignment_2.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cCommaKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cPropertiesAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cPropertiesLinkPropertyParserRuleCall_3_1_0 = (RuleCall)cPropertiesAssignment_3_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//TosNetLinkBinding:
-		//	"TOSNET" "(" (properties+=LinkProperty ("," properties+=LinkProperty)) ")";
+		//	"TOSNET" "(" properties+=LinkProperty ("," properties+=LinkProperty)* ")";
 		public ParserRule getRule() { return rule; }
 
-		//"TOSNET" "(" (properties+=LinkProperty ("," properties+=LinkProperty)) ")"
+		//"TOSNET" "(" properties+=LinkProperty ("," properties+=LinkProperty)* ")"
 		public Group getGroup() { return cGroup; }
 
 		//"TOSNET"
@@ -313,29 +312,26 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		//"("
 		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
 
-		//properties+=LinkProperty ("," properties+=LinkProperty)
-		public Group getGroup_2() { return cGroup_2; }
-
 		//properties+=LinkProperty
-		public Assignment getPropertiesAssignment_2_0() { return cPropertiesAssignment_2_0; }
+		public Assignment getPropertiesAssignment_2() { return cPropertiesAssignment_2; }
 
 		//LinkProperty
-		public RuleCall getPropertiesLinkPropertyParserRuleCall_2_0_0() { return cPropertiesLinkPropertyParserRuleCall_2_0_0; }
+		public RuleCall getPropertiesLinkPropertyParserRuleCall_2_0() { return cPropertiesLinkPropertyParserRuleCall_2_0; }
 
-		//"," properties+=LinkProperty
-		public Group getGroup_2_1() { return cGroup_2_1; }
+		//("," properties+=LinkProperty)*
+		public Group getGroup_3() { return cGroup_3; }
 
 		//","
-		public Keyword getCommaKeyword_2_1_0() { return cCommaKeyword_2_1_0; }
+		public Keyword getCommaKeyword_3_0() { return cCommaKeyword_3_0; }
 
 		//properties+=LinkProperty
-		public Assignment getPropertiesAssignment_2_1_1() { return cPropertiesAssignment_2_1_1; }
+		public Assignment getPropertiesAssignment_3_1() { return cPropertiesAssignment_3_1; }
 
 		//LinkProperty
-		public RuleCall getPropertiesLinkPropertyParserRuleCall_2_1_1_0() { return cPropertiesLinkPropertyParserRuleCall_2_1_1_0; }
+		public RuleCall getPropertiesLinkPropertyParserRuleCall_3_1_0() { return cPropertiesLinkPropertyParserRuleCall_3_1_0; }
 
 		//")"
-		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
+		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
 	}
 
 	public class LinkPropertyElements extends AbstractParserRuleElementFinder {
@@ -897,7 +893,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final Action cCRCPropertyAction_1_0 = (Action)cGroup_1.eContents().get(0);
 		private final Keyword cCRCKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
 		private final Group cGroup_2 = (Group)cAlternatives.eContents().get(2);
-		private final Action cPublishPopertyAction_2_0 = (Action)cGroup_2.eContents().get(0);
+		private final Action cPublishPropertyAction_2_0 = (Action)cGroup_2.eContents().get(0);
 		private final Keyword cPUBLISHKeyword_2_1 = (Keyword)cGroup_2.eContents().get(1);
 		private final Keyword cLeftParenthesisKeyword_2_2 = (Keyword)cGroup_2.eContents().get(2);
 		private final Assignment cModeAssignment_2_3 = (Assignment)cGroup_2.eContents().get(3);
@@ -908,10 +904,10 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightParenthesisKeyword_2_6 = (Keyword)cGroup_2.eContents().get(6);
 		
 		//InstantiationProperty:
-		//	{IDProperty} "ID" "=" id=Argument | {CRCProperty} "CRC" | {PublishPoperty} "PUBLISH" "(" mode=INT "," rate=INT ")";
+		//	{IDProperty} "ID" "=" id=Argument | {CRCProperty} "CRC" | {PublishProperty} "PUBLISH" "(" mode=INT "," rate=INT ")";
 		public ParserRule getRule() { return rule; }
 
-		//{IDProperty} "ID" "=" id=Argument | {CRCProperty} "CRC" | {PublishPoperty} "PUBLISH" "(" mode=INT "," rate=INT ")"
+		//{IDProperty} "ID" "=" id=Argument | {CRCProperty} "CRC" | {PublishProperty} "PUBLISH" "(" mode=INT "," rate=INT ")"
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//{IDProperty} "ID" "=" id=Argument
@@ -941,11 +937,11 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		//"CRC"
 		public Keyword getCRCKeyword_1_1() { return cCRCKeyword_1_1; }
 
-		//{PublishPoperty} "PUBLISH" "(" mode=INT "," rate=INT ")"
+		//{PublishProperty} "PUBLISH" "(" mode=INT "," rate=INT ")"
 		public Group getGroup_2() { return cGroup_2; }
 
-		//{PublishPoperty}
-		public Action getPublishPopertyAction_2_0() { return cPublishPopertyAction_2_0; }
+		//{PublishProperty}
+		public Action getPublishPropertyAction_2_0() { return cPublishPropertyAction_2_0; }
 
 		//"PUBLISH"
 		public Keyword getPUBLISHKeyword_2_1() { return cPUBLISHKeyword_2_1; }
@@ -1220,7 +1216,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//TosNetLinkBinding:
-	//	"TOSNET" "(" (properties+=LinkProperty ("," properties+=LinkProperty)) ")";
+	//	"TOSNET" "(" properties+=LinkProperty ("," properties+=LinkProperty)* ")";
 	public TosNetLinkBindingElements getTosNetLinkBindingAccess() {
 		return (pTosNetLinkBinding != null) ? pTosNetLinkBinding : (pTosNetLinkBinding = new TosNetLinkBindingElements());
 	}
@@ -1344,7 +1340,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//InstantiationProperty:
-	//	{IDProperty} "ID" "=" id=Argument | {CRCProperty} "CRC" | {PublishPoperty} "PUBLISH" "(" mode=INT "," rate=INT ")";
+	//	{IDProperty} "ID" "=" id=Argument | {CRCProperty} "CRC" | {PublishProperty} "PUBLISH" "(" mode=INT "," rate=INT ")";
 	public InstantiationPropertyElements getInstantiationPropertyAccess() {
 		return (pInstantiationProperty != null) ? pInstantiationProperty : (pInstantiationProperty = new InstantiationPropertyElements());
 	}
