@@ -21,6 +21,11 @@ import dk.sdu.mmmi.embedix.ulswig.PublishProperty
 import dk.sdu.mmmi.embedix.ulswig.AddressTuple
 
 class PythonCompiler {
+
+	/**
+	 * Header and overall file structure
+	 */
+
 	def generate(LinkSpec link) '''
 	# Automatically generated code
 	from unity_link import * #@UnusedWildImport
@@ -34,6 +39,10 @@ class PythonCompiler {
 
 	«ENDFOR»
 	'''
+
+	/**
+	 * Constructor
+	 */
 	
 	def compile(Constructor c) '''
 	class «c.name.constructorName(c)»:
@@ -55,8 +64,22 @@ class PythonCompiler {
 		"UL_"+if(constructor.isPublic) name else "private_"+name
 	}
 
+	/**
+	 * All member types, utilities
+	 */
+
+	def compileArgument(Argument a) {
+		return if(a.simple!=null) "self.ul_parameter_"+a.simple
+				else if(a.text!=null) "\""+a.text+"\""
+				else a.lhs+"+"+a.rhs.compileArgument
+	}
+	
+	/**
+	 * Link bindings
+	 */
+
 	def dispatch compileMember(LinkBinding m) {
-		return (m as TosNetLinkBinding).compileBinding // Rewrite for multidispatch
+		return (m as TosNetLinkBinding).compileBinding // TODO: rewrite for multidispatch
 	}
 	
 	def compileBinding(TosNetLinkBinding t) '''
@@ -74,6 +97,9 @@ class PythonCompiler {
 		else '''link_base = «property.baseValue»'''
 	}
 
+	/**
+	 * Expansion member
+	 */
 	
 	def dispatch compileMember(Expansion m) '''
 			# initialization for expansion «m.name»
@@ -100,12 +126,10 @@ class PythonCompiler {
 			})
 	'''
 
-	def compileArgument(Argument a) {
-		return if(a.simple!=null) "self.ul_parameter_"+a.simple
-				else if(a.text!=null) "\""+a.text+"\""
-				else a.lhs+"+"+a.rhs.compileArgument
-	}
-	
+	/**
+	 * Instantiation member
+	 */
+
 	def dispatch compileMember(Instantiation m) '''
 			# initialization for instantiation «m.address.name»
 			ul_address = «m.address.getAddressFromSpec»
@@ -136,6 +160,10 @@ class PythonCompiler {
 	def dispatch getAddressFromSpec(NamedAddressSpec spec) {
 		"ul_addresses['"+spec.name+"']"
 	}
+
+	/**
+	 * Grouping member
+	 */
 	
 	def dispatch compileMember(Grouping m) '''
 			# initialization for grouping a«m.name»

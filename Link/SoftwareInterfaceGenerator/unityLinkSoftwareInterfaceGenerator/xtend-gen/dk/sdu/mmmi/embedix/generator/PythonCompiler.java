@@ -29,6 +29,9 @@ import org.eclipse.xtend2.lib.StringConcatenation;
 
 @SuppressWarnings("all")
 public class PythonCompiler {
+  /**
+   * Header and overall file structure
+   */
   public CharSequence generate(final LinkSpec link) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("# Automatically generated code");
@@ -56,6 +59,9 @@ public class PythonCompiler {
     return _builder;
   }
   
+  /**
+   * Constructor
+   */
   public CharSequence compile(final Constructor c) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("class ");
@@ -140,6 +146,42 @@ public class PythonCompiler {
     return _plus_1;
   }
   
+  /**
+   * All member types, utilities
+   */
+  public String compileArgument(final Argument a) {
+    String _xifexpression = null;
+    String _simple = a.getSimple();
+    boolean _notEquals = (!Objects.equal(_simple, null));
+    if (_notEquals) {
+      String _simple_1 = a.getSimple();
+      String _plus = ("self.ul_parameter_" + _simple_1);
+      _xifexpression = _plus;
+    } else {
+      String _xifexpression_1 = null;
+      String _text = a.getText();
+      boolean _notEquals_1 = (!Objects.equal(_text, null));
+      if (_notEquals_1) {
+        String _text_1 = a.getText();
+        String _plus_1 = ("\"" + _text_1);
+        String _plus_2 = (_plus_1 + "\"");
+        _xifexpression_1 = _plus_2;
+      } else {
+        String _lhs = a.getLhs();
+        String _plus_3 = (_lhs + "+");
+        Argument _rhs = a.getRhs();
+        String _compileArgument = this.compileArgument(_rhs);
+        String _plus_4 = (_plus_3 + _compileArgument);
+        _xifexpression_1 = _plus_4;
+      }
+      _xifexpression = _xifexpression_1;
+    }
+    return _xifexpression;
+  }
+  
+  /**
+   * Link bindings
+   */
   protected CharSequence _compileMember(final LinkBinding m) {
     return this.compileBinding(((TosNetLinkBinding) m));
   }
@@ -195,6 +237,9 @@ public class PythonCompiler {
     return _xifexpression;
   }
   
+  /**
+   * Expansion member
+   */
   protected CharSequence _compileMember(final Expansion m) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("# initialization for expansion ");
@@ -304,36 +349,9 @@ public class PythonCompiler {
     return _builder;
   }
   
-  public String compileArgument(final Argument a) {
-    String _xifexpression = null;
-    String _simple = a.getSimple();
-    boolean _notEquals = (!Objects.equal(_simple, null));
-    if (_notEquals) {
-      String _simple_1 = a.getSimple();
-      String _plus = ("self.ul_parameter_" + _simple_1);
-      _xifexpression = _plus;
-    } else {
-      String _xifexpression_1 = null;
-      String _text = a.getText();
-      boolean _notEquals_1 = (!Objects.equal(_text, null));
-      if (_notEquals_1) {
-        String _text_1 = a.getText();
-        String _plus_1 = ("\"" + _text_1);
-        String _plus_2 = (_plus_1 + "\"");
-        _xifexpression_1 = _plus_2;
-      } else {
-        String _lhs = a.getLhs();
-        String _plus_3 = (_lhs + "+");
-        Argument _rhs = a.getRhs();
-        String _compileArgument = this.compileArgument(_rhs);
-        String _plus_4 = (_plus_3 + _compileArgument);
-        _xifexpression_1 = _plus_4;
-      }
-      _xifexpression = _xifexpression_1;
-    }
-    return _xifexpression;
-  }
-  
+  /**
+   * Instantiation member
+   */
   protected CharSequence _compileMember(final Instantiation m) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("# initialization for instantiation ");
@@ -424,6 +442,9 @@ public class PythonCompiler {
     return _plus_1;
   }
   
+  /**
+   * Grouping member
+   */
   protected CharSequence _compileMember(final Grouping m) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("# initialization for grouping a");
