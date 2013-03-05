@@ -41,13 +41,31 @@ public interface UlswigFactory extends EFactory
   Constructor createConstructor();
 
   /**
-   * Returns a new object of class '<em>Address</em>'.
+   * Returns a new object of class '<em>Constructor Address Parameters</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Address</em>'.
+   * @return a new object of class '<em>Constructor Address Parameters</em>'.
    * @generated
    */
-  Address createAddress();
+  ConstructorAddressParameters createConstructorAddressParameters();
+
+  /**
+   * Returns a new object of class '<em>Named Addresses</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Named Addresses</em>'.
+   * @generated
+   */
+  NamedAddresses createNamedAddresses();
+
+  /**
+   * Returns a new object of class '<em>Address Tuple</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Address Tuple</em>'.
+   * @generated
+   */
+  AddressTuple createAddressTuple();
 
   /**
    * Returns a new object of class '<em>Member</em>'.

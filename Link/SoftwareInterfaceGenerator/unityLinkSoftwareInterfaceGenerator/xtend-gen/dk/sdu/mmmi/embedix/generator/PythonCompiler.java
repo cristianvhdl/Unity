@@ -4,9 +4,11 @@ import com.google.common.base.Objects;
 import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
 import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
 import dk.sdu.mmmi.embedix.ulswig.AddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.AddressTuple;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
+import dk.sdu.mmmi.embedix.ulswig.ConstructorAddressParameters;
 import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Expansion;
 import dk.sdu.mmmi.embedix.ulswig.Grouping;
@@ -90,6 +92,30 @@ public class PythonCompiler {
     _builder.append("def bind(self,ul_addresses):");
     _builder.newLine();
     {
+      ConstructorAddressParameters _addresses = c.getAddresses();
+      if ((_addresses instanceof AddressTuple)) {
+        _builder.append("\t\t");
+        _builder.append("ul_addresses = dict(zip([");
+        {
+          ConstructorAddressParameters _addresses_1 = c.getAddresses();
+          EList<String> _elements = ((AddressTuple) _addresses_1).getElements();
+          boolean _hasElements = false;
+          for(final String n : _elements) {
+            if (!_hasElements) {
+              _hasElements = true;
+            } else {
+              _builder.appendImmediate(",", "		");
+            }
+            _builder.append("\'");
+            _builder.append(n, "		");
+            _builder.append("\'");
+          }
+        }
+        _builder.append("],ul_addresses[\"_\"]))");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    {
       EList<Member> _members = c.getMembers();
       for(final Member m : _members) {
         _builder.append("\t\t");
@@ -171,7 +197,7 @@ public class PythonCompiler {
   
   protected CharSequence _compileMember(final Expansion m) {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("# initialization for ");
+    _builder.append("# initialization for expansion ");
     String _name = m.getName();
     _builder.append(_name, "");
     _builder.newLineIfNotEmpty();
@@ -225,7 +251,8 @@ public class PythonCompiler {
         _builder.append("\t");
         _builder.append("\'");
         String _name_1 = b.getName();
-        _builder.append(_name_1, "	");
+        String _providedOrDefaultName = this.providedOrDefaultName(_name_1);
+        _builder.append(_providedOrDefaultName, "	");
         _builder.append("\': [");
         {
           EList<String> _addresses = b.getAddresses();
@@ -246,6 +273,17 @@ public class PythonCompiler {
     _builder.append("})");
     _builder.newLine();
     return _builder;
+  }
+  
+  public String providedOrDefaultName(final String name) {
+    String _xifexpression = null;
+    boolean _equals = Objects.equal(name, null);
+    if (_equals) {
+      _xifexpression = "_";
+    } else {
+      _xifexpression = name;
+    }
+    return _xifexpression;
   }
   
   protected CharSequence _compileExpansionAddressBinding(final AddressExpansion m) {
@@ -298,7 +336,7 @@ public class PythonCompiler {
   
   protected CharSequence _compileMember(final Instantiation m) {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("# initialization for ");
+    _builder.append("# initialization for instantiation ");
     AddressSpec _address = m.getAddress();
     String _name = _address.getName();
     _builder.append(_name, "");
@@ -388,7 +426,7 @@ public class PythonCompiler {
   
   protected CharSequence _compileMember(final Grouping m) {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("# initialization for ");
+    _builder.append("# initialization for grouping a");
     String _name = m.getName();
     _builder.append(_name, "");
     _builder.newLineIfNotEmpty();

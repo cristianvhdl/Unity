@@ -85,9 +85,19 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
         return createConstructorAdapter();
       }
       @Override
-      public Adapter caseAddress(Address object)
+      public Adapter caseConstructorAddressParameters(ConstructorAddressParameters object)
       {
-        return createAddressAdapter();
+        return createConstructorAddressParametersAdapter();
+      }
+      @Override
+      public Adapter caseNamedAddresses(NamedAddresses object)
+      {
+        return createNamedAddressesAdapter();
+      }
+      @Override
+      public Adapter caseAddressTuple(AddressTuple object)
+      {
+        return createAddressTupleAdapter();
       }
       @Override
       public Adapter caseMember(Member object)
@@ -242,16 +252,46 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.Address <em>Address</em>}'.
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.ConstructorAddressParameters <em>Constructor Address Parameters</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.Address
+   * @see dk.sdu.mmmi.embedix.ulswig.ConstructorAddressParameters
    * @generated
    */
-  public Adapter createAddressAdapter()
+  public Adapter createConstructorAddressParametersAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.NamedAddresses <em>Named Addresses</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.NamedAddresses
+   * @generated
+   */
+  public Adapter createNamedAddressesAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressTuple <em>Address Tuple</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressTuple
+   * @generated
+   */
+  public Adapter createAddressTupleAdapter()
   {
     return null;
   }

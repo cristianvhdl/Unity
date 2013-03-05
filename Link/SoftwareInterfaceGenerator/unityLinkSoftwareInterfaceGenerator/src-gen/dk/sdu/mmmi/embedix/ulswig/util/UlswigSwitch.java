@@ -86,10 +86,26 @@ public class UlswigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case UlswigPackage.ADDRESS:
+      case UlswigPackage.CONSTRUCTOR_ADDRESS_PARAMETERS:
       {
-        Address address = (Address)theEObject;
-        T result = caseAddress(address);
+        ConstructorAddressParameters constructorAddressParameters = (ConstructorAddressParameters)theEObject;
+        T result = caseConstructorAddressParameters(constructorAddressParameters);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.NAMED_ADDRESSES:
+      {
+        NamedAddresses namedAddresses = (NamedAddresses)theEObject;
+        T result = caseNamedAddresses(namedAddresses);
+        if (result == null) result = caseConstructorAddressParameters(namedAddresses);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case UlswigPackage.ADDRESS_TUPLE:
+      {
+        AddressTuple addressTuple = (AddressTuple)theEObject;
+        T result = caseAddressTuple(addressTuple);
+        if (result == null) result = caseConstructorAddressParameters(addressTuple);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -285,17 +301,49 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Address</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Constructor Address Parameters</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Address</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Constructor Address Parameters</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseAddress(Address object)
+  public T caseConstructorAddressParameters(ConstructorAddressParameters object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Named Addresses</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Named Addresses</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseNamedAddresses(NamedAddresses object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Address Tuple</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Address Tuple</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseAddressTuple(AddressTuple object)
   {
     return null;
   }

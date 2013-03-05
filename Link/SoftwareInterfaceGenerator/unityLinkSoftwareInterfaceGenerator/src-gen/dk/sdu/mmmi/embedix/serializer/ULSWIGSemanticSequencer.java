@@ -3,9 +3,9 @@ package dk.sdu.mmmi.embedix.serializer;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import dk.sdu.mmmi.embedix.services.ULSWIGGrammarAccess;
-import dk.sdu.mmmi.embedix.ulswig.Address;
 import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
 import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
+import dk.sdu.mmmi.embedix.ulswig.AddressTuple;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
@@ -17,6 +17,7 @@ import dk.sdu.mmmi.embedix.ulswig.Instantiation;
 import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.NamedAddresses;
 import dk.sdu.mmmi.embedix.ulswig.PathElement;
 import dk.sdu.mmmi.embedix.ulswig.PublishProperty;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
@@ -42,12 +43,6 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == UlswigPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
-			case UlswigPackage.ADDRESS:
-				if(context == grammarAccess.getAddressRule()) {
-					sequence_Address(context, (Address) semanticObject); 
-					return; 
-				}
-				else break;
 			case UlswigPackage.ADDRESS_BINDING:
 				if(context == grammarAccess.getAddressBindingRule()) {
 					sequence_AddressBinding(context, (AddressBinding) semanticObject); 
@@ -59,6 +54,13 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 				   context == grammarAccess.getExpansionRule() ||
 				   context == grammarAccess.getMemberRule()) {
 					sequence_AddressExpansion(context, (AddressExpansion) semanticObject); 
+					return; 
+				}
+				else break;
+			case UlswigPackage.ADDRESS_TUPLE:
+				if(context == grammarAccess.getAddressTupleRule() ||
+				   context == grammarAccess.getConstructorAddressParametersRule()) {
+					sequence_AddressTuple(context, (AddressTuple) semanticObject); 
 					return; 
 				}
 				else break;
@@ -132,6 +134,13 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 					return; 
 				}
 				else break;
+			case UlswigPackage.NAMED_ADDRESSES:
+				if(context == grammarAccess.getConstructorAddressParametersRule() ||
+				   context == grammarAccess.getNamedAddressesRule()) {
+					sequence_NamedAddresses(context, (NamedAddresses) semanticObject); 
+					return; 
+				}
+				else break;
 			case UlswigPackage.PATH_ELEMENT:
 				if(context == grammarAccess.getPathElementRule()) {
 					sequence_PathElement(context, (PathElement) semanticObject); 
@@ -166,7 +175,7 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (name=ID addresses+=HEX_NUM addresses+=HEX_NUM*)
+	 *     (name=ID? addresses+=HEX_NUM addresses+=HEX_NUM*)
 	 */
 	protected void sequence_AddressBinding(EObject context, AddressBinding semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -184,9 +193,9 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (name=ID | (elements+=ID elements+=ID*))
+	 *     (elements+=ID elements+=ID*)
 	 */
-	protected void sequence_Address(EObject context, Address semanticObject) {
+	protected void sequence_AddressTuple(EObject context, AddressTuple semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -202,7 +211,7 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (isPublic?='public'? name=ID (parameters+=ID parameters+=ID*)? (addresses+=Address addresses+=Address*)? members+=Member*)
+	 *     (isPublic?='public'? name=ID (parameters+=ID parameters+=ID*)? addresses=ConstructorAddressParameters? members+=Member*)
 	 */
 	protected void sequence_Constructor(EObject context, Constructor semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -330,6 +339,15 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getNamedAddressSpecAccess().getNameIDTerminalRuleCall_0(), semanticObject.getName());
 		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (addressNames+=ID addressNames+=ID*)
+	 */
+	protected void sequence_NamedAddresses(EObject context, NamedAddresses semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	

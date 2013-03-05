@@ -66,7 +66,9 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
     {
       case UlswigPackage.LINK_SPEC: return createLinkSpec();
       case UlswigPackage.CONSTRUCTOR: return createConstructor();
-      case UlswigPackage.ADDRESS: return createAddress();
+      case UlswigPackage.CONSTRUCTOR_ADDRESS_PARAMETERS: return createConstructorAddressParameters();
+      case UlswigPackage.NAMED_ADDRESSES: return createNamedAddresses();
+      case UlswigPackage.ADDRESS_TUPLE: return createAddressTuple();
       case UlswigPackage.MEMBER: return createMember();
       case UlswigPackage.LINK_BINDING: return createLinkBinding();
       case UlswigPackage.TOS_NET_LINK_BINDING: return createTosNetLinkBinding();
@@ -119,10 +121,32 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Address createAddress()
+  public ConstructorAddressParameters createConstructorAddressParameters()
   {
-    AddressImpl address = new AddressImpl();
-    return address;
+    ConstructorAddressParametersImpl constructorAddressParameters = new ConstructorAddressParametersImpl();
+    return constructorAddressParameters;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NamedAddresses createNamedAddresses()
+  {
+    NamedAddressesImpl namedAddresses = new NamedAddressesImpl();
+    return namedAddresses;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public AddressTuple createAddressTuple()
+  {
+    AddressTupleImpl addressTuple = new AddressTupleImpl();
+    return addressTuple;
   }
 
   /**

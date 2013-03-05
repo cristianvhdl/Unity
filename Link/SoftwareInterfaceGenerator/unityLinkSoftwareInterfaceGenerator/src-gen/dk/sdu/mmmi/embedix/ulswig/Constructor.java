@@ -97,20 +97,30 @@ public interface Constructor extends EObject
   EList<String> getParameters();
 
   /**
-   * Returns the value of the '<em><b>Addresses</b></em>' containment reference list.
-   * The list contents are of type {@link dk.sdu.mmmi.embedix.ulswig.Address}.
+   * Returns the value of the '<em><b>Addresses</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Addresses</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Addresses</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Addresses</em>' containment reference list.
+   * @return the value of the '<em>Addresses</em>' containment reference.
+   * @see #setAddresses(ConstructorAddressParameters)
    * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getConstructor_Addresses()
    * @model containment="true"
    * @generated
    */
-  EList<Address> getAddresses();
+  ConstructorAddressParameters getAddresses();
+
+  /**
+   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.Constructor#getAddresses <em>Addresses</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Addresses</em>' containment reference.
+   * @see #getAddresses()
+   * @generated
+   */
+  void setAddresses(ConstructorAddressParameters value);
 
   /**
    * Returns the value of the '<em><b>Members</b></em>' containment reference list.

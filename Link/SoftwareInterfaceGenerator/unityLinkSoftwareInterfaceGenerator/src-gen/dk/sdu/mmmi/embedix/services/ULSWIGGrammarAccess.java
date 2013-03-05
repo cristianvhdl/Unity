@@ -74,11 +74,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
 		private final Keyword cColonKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
 		private final Assignment cAddressesAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
-		private final RuleCall cAddressesAddressParserRuleCall_5_1_0 = (RuleCall)cAddressesAssignment_5_1.eContents().get(0);
-		private final Group cGroup_5_2 = (Group)cGroup_5.eContents().get(2);
-		private final Keyword cCommaKeyword_5_2_0 = (Keyword)cGroup_5_2.eContents().get(0);
-		private final Assignment cAddressesAssignment_5_2_1 = (Assignment)cGroup_5_2.eContents().get(1);
-		private final RuleCall cAddressesAddressParserRuleCall_5_2_1_0 = (RuleCall)cAddressesAssignment_5_2_1.eContents().get(0);
+		private final RuleCall cAddressesConstructorAddressParametersParserRuleCall_5_1_0 = (RuleCall)cAddressesAssignment_5_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
 		private final Assignment cMembersAssignment_7_0 = (Assignment)cGroup_7.eContents().get(0);
@@ -87,12 +83,12 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Constructor:
-		//	isPublic?="public"? name=ID "(" (parameters+=ID ("," parameters+=ID)*)? ")" (":" addresses+=Address (","
-		//	addresses+=Address)*)? "{" (members+=Member ";")* "}";
+		//	isPublic?="public"? name=ID "(" (parameters+=ID ("," parameters+=ID)*)? ")" (":"
+		//	addresses=ConstructorAddressParameters)? "{" (members+=Member ";")* "}";
 		public ParserRule getRule() { return rule; }
 
-		//isPublic?="public"? name=ID "(" (parameters+=ID ("," parameters+=ID)*)? ")" (":" addresses+=Address (","
-		//addresses+=Address)*)? "{" (members+=Member ";")* "}"
+		//isPublic?="public"? name=ID "(" (parameters+=ID ("," parameters+=ID)*)? ")" (":"
+		//addresses=ConstructorAddressParameters)? "{" (members+=Member ";")* "}"
 		public Group getGroup() { return cGroup; }
 
 		//isPublic?="public"?
@@ -134,29 +130,17 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		//")"
 		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
 
-		//(":" addresses+=Address ("," addresses+=Address)*)?
+		//(":" addresses=ConstructorAddressParameters)?
 		public Group getGroup_5() { return cGroup_5; }
 
 		//":"
 		public Keyword getColonKeyword_5_0() { return cColonKeyword_5_0; }
 
-		//addresses+=Address
+		//addresses=ConstructorAddressParameters
 		public Assignment getAddressesAssignment_5_1() { return cAddressesAssignment_5_1; }
 
-		//Address
-		public RuleCall getAddressesAddressParserRuleCall_5_1_0() { return cAddressesAddressParserRuleCall_5_1_0; }
-
-		//("," addresses+=Address)*
-		public Group getGroup_5_2() { return cGroup_5_2; }
-
-		//","
-		public Keyword getCommaKeyword_5_2_0() { return cCommaKeyword_5_2_0; }
-
-		//addresses+=Address
-		public Assignment getAddressesAssignment_5_2_1() { return cAddressesAssignment_5_2_1; }
-
-		//Address
-		public RuleCall getAddressesAddressParserRuleCall_5_2_1_0() { return cAddressesAddressParserRuleCall_5_2_1_0; }
+		//ConstructorAddressParameters
+		public RuleCall getAddressesConstructorAddressParametersParserRuleCall_5_1_0() { return cAddressesConstructorAddressParametersParserRuleCall_5_1_0; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_6() { return cLeftCurlyBracketKeyword_6; }
@@ -177,72 +161,116 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
 	}
 
-	public class AddressElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Address");
+	public class ConstructorAddressParametersElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ConstructorAddressParameters");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
-		private final Keyword cCommercialAtKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
-		private final Assignment cNameAssignment_0_1 = (Assignment)cGroup_0.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_0_1_0 = (RuleCall)cNameAssignment_0_1.eContents().get(0);
-		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
-		private final Keyword cCommercialAtKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
-		private final Keyword cLeftParenthesisKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
-		private final Assignment cElementsAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
-		private final RuleCall cElementsIDTerminalRuleCall_1_2_0 = (RuleCall)cElementsAssignment_1_2.eContents().get(0);
-		private final Group cGroup_1_3 = (Group)cGroup_1.eContents().get(3);
-		private final Keyword cCommaKeyword_1_3_0 = (Keyword)cGroup_1_3.eContents().get(0);
-		private final Assignment cElementsAssignment_1_3_1 = (Assignment)cGroup_1_3.eContents().get(1);
-		private final RuleCall cElementsIDTerminalRuleCall_1_3_1_0 = (RuleCall)cElementsAssignment_1_3_1.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_1_4 = (Keyword)cGroup_1.eContents().get(4);
+		private final RuleCall cNamedAddressesParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cAddressTupleParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
 		
-		//Address:
-		//	"@" name=ID | "@" "(" elements+=ID ("," elements+=ID)* ")";
+		//ConstructorAddressParameters:
+		//	NamedAddresses | AddressTuple;
 		public ParserRule getRule() { return rule; }
 
-		//"@" name=ID | "@" "(" elements+=ID ("," elements+=ID)* ")"
+		//NamedAddresses | AddressTuple
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//"@" name=ID
-		public Group getGroup_0() { return cGroup_0; }
+		//NamedAddresses
+		public RuleCall getNamedAddressesParserRuleCall_0() { return cNamedAddressesParserRuleCall_0; }
+
+		//AddressTuple
+		public RuleCall getAddressTupleParserRuleCall_1() { return cAddressTupleParserRuleCall_1; }
+	}
+
+	public class NamedAddressesElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "NamedAddresses");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cCommercialAtKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cAddressNamesAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cAddressNamesIDTerminalRuleCall_1_0 = (RuleCall)cAddressNamesAssignment_1.eContents().get(0);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cCommaKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Keyword cCommercialAtKeyword_2_1 = (Keyword)cGroup_2.eContents().get(1);
+		private final Assignment cAddressNamesAssignment_2_2 = (Assignment)cGroup_2.eContents().get(2);
+		private final RuleCall cAddressNamesIDTerminalRuleCall_2_2_0 = (RuleCall)cAddressNamesAssignment_2_2.eContents().get(0);
+		
+		//NamedAddresses:
+		//	"@" addressNames+=ID ("," "@" addressNames+=ID)*;
+		public ParserRule getRule() { return rule; }
+
+		//"@" addressNames+=ID ("," "@" addressNames+=ID)*
+		public Group getGroup() { return cGroup; }
 
 		//"@"
-		public Keyword getCommercialAtKeyword_0_0() { return cCommercialAtKeyword_0_0; }
+		public Keyword getCommercialAtKeyword_0() { return cCommercialAtKeyword_0; }
 
-		//name=ID
-		public Assignment getNameAssignment_0_1() { return cNameAssignment_0_1; }
-
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_0_1_0() { return cNameIDTerminalRuleCall_0_1_0; }
-
-		//"@" "(" elements+=ID ("," elements+=ID)* ")"
-		public Group getGroup_1() { return cGroup_1; }
-
-		//"@"
-		public Keyword getCommercialAtKeyword_1_0() { return cCommercialAtKeyword_1_0; }
-
-		//"("
-		public Keyword getLeftParenthesisKeyword_1_1() { return cLeftParenthesisKeyword_1_1; }
-
-		//elements+=ID
-		public Assignment getElementsAssignment_1_2() { return cElementsAssignment_1_2; }
+		//addressNames+=ID
+		public Assignment getAddressNamesAssignment_1() { return cAddressNamesAssignment_1; }
 
 		//ID
-		public RuleCall getElementsIDTerminalRuleCall_1_2_0() { return cElementsIDTerminalRuleCall_1_2_0; }
+		public RuleCall getAddressNamesIDTerminalRuleCall_1_0() { return cAddressNamesIDTerminalRuleCall_1_0; }
 
-		//("," elements+=ID)*
-		public Group getGroup_1_3() { return cGroup_1_3; }
+		//("," "@" addressNames+=ID)*
+		public Group getGroup_2() { return cGroup_2; }
 
 		//","
-		public Keyword getCommaKeyword_1_3_0() { return cCommaKeyword_1_3_0; }
+		public Keyword getCommaKeyword_2_0() { return cCommaKeyword_2_0; }
 
-		//elements+=ID
-		public Assignment getElementsAssignment_1_3_1() { return cElementsAssignment_1_3_1; }
+		//"@"
+		public Keyword getCommercialAtKeyword_2_1() { return cCommercialAtKeyword_2_1; }
+
+		//addressNames+=ID
+		public Assignment getAddressNamesAssignment_2_2() { return cAddressNamesAssignment_2_2; }
 
 		//ID
-		public RuleCall getElementsIDTerminalRuleCall_1_3_1_0() { return cElementsIDTerminalRuleCall_1_3_1_0; }
+		public RuleCall getAddressNamesIDTerminalRuleCall_2_2_0() { return cAddressNamesIDTerminalRuleCall_2_2_0; }
+	}
+
+	public class AddressTupleElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AddressTuple");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cCommercialAtKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cElementsAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cElementsIDTerminalRuleCall_2_0 = (RuleCall)cElementsAssignment_2.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cCommaKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cElementsAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final RuleCall cElementsIDTerminalRuleCall_3_1_0 = (RuleCall)cElementsAssignment_3_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		
+		//AddressTuple:
+		//	"@" "(" elements+=ID ("," elements+=ID)* ")";
+		public ParserRule getRule() { return rule; }
+
+		//"@" "(" elements+=ID ("," elements+=ID)* ")"
+		public Group getGroup() { return cGroup; }
+
+		//"@"
+		public Keyword getCommercialAtKeyword_0() { return cCommercialAtKeyword_0; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_1() { return cLeftParenthesisKeyword_1; }
+
+		//elements+=ID
+		public Assignment getElementsAssignment_2() { return cElementsAssignment_2; }
+
+		//ID
+		public RuleCall getElementsIDTerminalRuleCall_2_0() { return cElementsIDTerminalRuleCall_2_0; }
+
+		//("," elements+=ID)*
+		public Group getGroup_3() { return cGroup_3; }
+
+		//","
+		public Keyword getCommaKeyword_3_0() { return cCommaKeyword_3_0; }
+
+		//elements+=ID
+		public Assignment getElementsAssignment_3_1() { return cElementsAssignment_3_1; }
+
+		//ID
+		public RuleCall getElementsIDTerminalRuleCall_3_1_0() { return cElementsIDTerminalRuleCall_3_1_0; }
 
 		//")"
-		public Keyword getRightParenthesisKeyword_1_4() { return cRightParenthesisKeyword_1_4; }
+		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
 	}
 
 	public class MemberElements extends AbstractParserRuleElementFinder {
@@ -661,60 +689,64 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AddressBinding");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cCommercialAtKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Keyword cEqualsSignKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Keyword cLeftParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cAddressesAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cAddressesHEX_NUMTerminalRuleCall_4_0 = (RuleCall)cAddressesAssignment_4.eContents().get(0);
-		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
-		private final Keyword cCommaKeyword_5_0 = (Keyword)cGroup_5.eContents().get(0);
-		private final Assignment cAddressesAssignment_5_1 = (Assignment)cGroup_5.eContents().get(1);
-		private final RuleCall cAddressesHEX_NUMTerminalRuleCall_5_1_0 = (RuleCall)cAddressesAssignment_5_1.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Assignment cNameAssignment_1_0 = (Assignment)cGroup_1.eContents().get(0);
+		private final RuleCall cNameIDTerminalRuleCall_1_0_0 = (RuleCall)cNameAssignment_1_0.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
+		private final Keyword cLeftParenthesisKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cAddressesAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cAddressesHEX_NUMTerminalRuleCall_3_0 = (RuleCall)cAddressesAssignment_3.eContents().get(0);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cCommaKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cAddressesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final RuleCall cAddressesHEX_NUMTerminalRuleCall_4_1_0 = (RuleCall)cAddressesAssignment_4_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//AddressBinding:
-		//	"@" name=ID "=" "(" addresses+=HEX_NUM ("," addresses+=HEX_NUM)* ")";
+		//	"@" (name=ID "=")? "(" addresses+=HEX_NUM ("," addresses+=HEX_NUM)* ")";
 		public ParserRule getRule() { return rule; }
 
-		//"@" name=ID "=" "(" addresses+=HEX_NUM ("," addresses+=HEX_NUM)* ")"
+		//"@" (name=ID "=")? "(" addresses+=HEX_NUM ("," addresses+=HEX_NUM)* ")"
 		public Group getGroup() { return cGroup; }
 
 		//"@"
 		public Keyword getCommercialAtKeyword_0() { return cCommercialAtKeyword_0; }
 
+		//(name=ID "=")?
+		public Group getGroup_1() { return cGroup_1; }
+
 		//name=ID
-		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		public Assignment getNameAssignment_1_0() { return cNameAssignment_1_0; }
 
 		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		public RuleCall getNameIDTerminalRuleCall_1_0_0() { return cNameIDTerminalRuleCall_1_0_0; }
 
 		//"="
-		public Keyword getEqualsSignKeyword_2() { return cEqualsSignKeyword_2; }
+		public Keyword getEqualsSignKeyword_1_1() { return cEqualsSignKeyword_1_1; }
 
 		//"("
-		public Keyword getLeftParenthesisKeyword_3() { return cLeftParenthesisKeyword_3; }
+		public Keyword getLeftParenthesisKeyword_2() { return cLeftParenthesisKeyword_2; }
 
 		//addresses+=HEX_NUM
-		public Assignment getAddressesAssignment_4() { return cAddressesAssignment_4; }
+		public Assignment getAddressesAssignment_3() { return cAddressesAssignment_3; }
 
 		//HEX_NUM
-		public RuleCall getAddressesHEX_NUMTerminalRuleCall_4_0() { return cAddressesHEX_NUMTerminalRuleCall_4_0; }
+		public RuleCall getAddressesHEX_NUMTerminalRuleCall_3_0() { return cAddressesHEX_NUMTerminalRuleCall_3_0; }
 
 		//("," addresses+=HEX_NUM)*
-		public Group getGroup_5() { return cGroup_5; }
+		public Group getGroup_4() { return cGroup_4; }
 
 		//","
-		public Keyword getCommaKeyword_5_0() { return cCommaKeyword_5_0; }
+		public Keyword getCommaKeyword_4_0() { return cCommaKeyword_4_0; }
 
 		//addresses+=HEX_NUM
-		public Assignment getAddressesAssignment_5_1() { return cAddressesAssignment_5_1; }
+		public Assignment getAddressesAssignment_4_1() { return cAddressesAssignment_4_1; }
 
 		//HEX_NUM
-		public RuleCall getAddressesHEX_NUMTerminalRuleCall_5_1_0() { return cAddressesHEX_NUMTerminalRuleCall_5_1_0; }
+		public RuleCall getAddressesHEX_NUMTerminalRuleCall_4_1_0() { return cAddressesHEX_NUMTerminalRuleCall_4_1_0; }
 
 		//")"
-		public Keyword getRightParenthesisKeyword_6() { return cRightParenthesisKeyword_6; }
+		public Keyword getRightParenthesisKeyword_5() { return cRightParenthesisKeyword_5; }
 	}
 
 	public class InstantiationElements extends AbstractParserRuleElementFinder {
@@ -1104,7 +1136,9 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	
 	private LinkSpecElements pLinkSpec;
 	private ConstructorElements pConstructor;
-	private AddressElements pAddress;
+	private ConstructorAddressParametersElements pConstructorAddressParameters;
+	private NamedAddressesElements pNamedAddresses;
+	private AddressTupleElements pAddressTuple;
 	private MemberElements pMember;
 	private LinkBindingElements pLinkBinding;
 	private TosNetLinkBindingElements pTosNetLinkBinding;
@@ -1174,8 +1208,8 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Constructor:
-	//	isPublic?="public"? name=ID "(" (parameters+=ID ("," parameters+=ID)*)? ")" (":" addresses+=Address (","
-	//	addresses+=Address)*)? "{" (members+=Member ";")* "}";
+	//	isPublic?="public"? name=ID "(" (parameters+=ID ("," parameters+=ID)*)? ")" (":"
+	//	addresses=ConstructorAddressParameters)? "{" (members+=Member ";")* "}";
 	public ConstructorElements getConstructorAccess() {
 		return (pConstructor != null) ? pConstructor : (pConstructor = new ConstructorElements());
 	}
@@ -1184,14 +1218,34 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		return getConstructorAccess().getRule();
 	}
 
-	//Address:
-	//	"@" name=ID | "@" "(" elements+=ID ("," elements+=ID)* ")";
-	public AddressElements getAddressAccess() {
-		return (pAddress != null) ? pAddress : (pAddress = new AddressElements());
+	//ConstructorAddressParameters:
+	//	NamedAddresses | AddressTuple;
+	public ConstructorAddressParametersElements getConstructorAddressParametersAccess() {
+		return (pConstructorAddressParameters != null) ? pConstructorAddressParameters : (pConstructorAddressParameters = new ConstructorAddressParametersElements());
 	}
 	
-	public ParserRule getAddressRule() {
-		return getAddressAccess().getRule();
+	public ParserRule getConstructorAddressParametersRule() {
+		return getConstructorAddressParametersAccess().getRule();
+	}
+
+	//NamedAddresses:
+	//	"@" addressNames+=ID ("," "@" addressNames+=ID)*;
+	public NamedAddressesElements getNamedAddressesAccess() {
+		return (pNamedAddresses != null) ? pNamedAddresses : (pNamedAddresses = new NamedAddressesElements());
+	}
+	
+	public ParserRule getNamedAddressesRule() {
+		return getNamedAddressesAccess().getRule();
+	}
+
+	//AddressTuple:
+	//	"@" "(" elements+=ID ("," elements+=ID)* ")";
+	public AddressTupleElements getAddressTupleAccess() {
+		return (pAddressTuple != null) ? pAddressTuple : (pAddressTuple = new AddressTupleElements());
+	}
+	
+	public ParserRule getAddressTupleRule() {
+		return getAddressTupleAccess().getRule();
 	}
 
 	//Member:
@@ -1278,7 +1332,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//AddressBinding:
-	//	"@" name=ID "=" "(" addresses+=HEX_NUM ("," addresses+=HEX_NUM)* ")";
+	//	"@" (name=ID "=")? "(" addresses+=HEX_NUM ("," addresses+=HEX_NUM)* ")";
 	public AddressBindingElements getAddressBindingAccess() {
 		return (pAddressBinding != null) ? pAddressBinding : (pAddressBinding = new AddressBindingElements());
 	}

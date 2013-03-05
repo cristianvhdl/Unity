@@ -37,7 +37,7 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getAddressAccess().getAlternatives(), "rule__Address__Alternatives");
+					put(grammarAccess.getConstructorAddressParametersAccess().getAlternatives(), "rule__ConstructorAddressParameters__Alternatives");
 					put(grammarAccess.getMemberAccess().getAlternatives(), "rule__Member__Alternatives");
 					put(grammarAccess.getLinkPropertyAccess().getAlternatives(), "rule__LinkProperty__Alternatives");
 					put(grammarAccess.getExpansionAccess().getAlternatives(), "rule__Expansion__Alternatives");
@@ -51,11 +51,11 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getConstructorAccess().getGroup_3(), "rule__Constructor__Group_3__0");
 					put(grammarAccess.getConstructorAccess().getGroup_3_1(), "rule__Constructor__Group_3_1__0");
 					put(grammarAccess.getConstructorAccess().getGroup_5(), "rule__Constructor__Group_5__0");
-					put(grammarAccess.getConstructorAccess().getGroup_5_2(), "rule__Constructor__Group_5_2__0");
 					put(grammarAccess.getConstructorAccess().getGroup_7(), "rule__Constructor__Group_7__0");
-					put(grammarAccess.getAddressAccess().getGroup_0(), "rule__Address__Group_0__0");
-					put(grammarAccess.getAddressAccess().getGroup_1(), "rule__Address__Group_1__0");
-					put(grammarAccess.getAddressAccess().getGroup_1_3(), "rule__Address__Group_1_3__0");
+					put(grammarAccess.getNamedAddressesAccess().getGroup(), "rule__NamedAddresses__Group__0");
+					put(grammarAccess.getNamedAddressesAccess().getGroup_2(), "rule__NamedAddresses__Group_2__0");
+					put(grammarAccess.getAddressTupleAccess().getGroup(), "rule__AddressTuple__Group__0");
+					put(grammarAccess.getAddressTupleAccess().getGroup_3(), "rule__AddressTuple__Group_3__0");
 					put(grammarAccess.getTosNetLinkBindingAccess().getGroup(), "rule__TosNetLinkBinding__Group__0");
 					put(grammarAccess.getTosNetLinkBindingAccess().getGroup_3(), "rule__TosNetLinkBinding__Group_3__0");
 					put(grammarAccess.getLinkPropertyAccess().getGroup_0(), "rule__LinkProperty__Group_0__0");
@@ -71,7 +71,8 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAddressExpansionAccess().getGroup_5_1(), "rule__AddressExpansion__Group_5_1__0");
 					put(grammarAccess.getArgumentAccess().getGroup_1(), "rule__Argument__Group_1__0");
 					put(grammarAccess.getAddressBindingAccess().getGroup(), "rule__AddressBinding__Group__0");
-					put(grammarAccess.getAddressBindingAccess().getGroup_5(), "rule__AddressBinding__Group_5__0");
+					put(grammarAccess.getAddressBindingAccess().getGroup_1(), "rule__AddressBinding__Group_1__0");
+					put(grammarAccess.getAddressBindingAccess().getGroup_4(), "rule__AddressBinding__Group_4__0");
 					put(grammarAccess.getInstantiationAccess().getGroup(), "rule__Instantiation__Group__0");
 					put(grammarAccess.getInstantiationAccess().getGroup_5(), "rule__Instantiation__Group_5__0");
 					put(grammarAccess.getInstantiationAccess().getGroup_5_1(), "rule__Instantiation__Group_5_1__0");
@@ -91,11 +92,11 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getConstructorAccess().getParametersAssignment_3_0(), "rule__Constructor__ParametersAssignment_3_0");
 					put(grammarAccess.getConstructorAccess().getParametersAssignment_3_1_1(), "rule__Constructor__ParametersAssignment_3_1_1");
 					put(grammarAccess.getConstructorAccess().getAddressesAssignment_5_1(), "rule__Constructor__AddressesAssignment_5_1");
-					put(grammarAccess.getConstructorAccess().getAddressesAssignment_5_2_1(), "rule__Constructor__AddressesAssignment_5_2_1");
 					put(grammarAccess.getConstructorAccess().getMembersAssignment_7_0(), "rule__Constructor__MembersAssignment_7_0");
-					put(grammarAccess.getAddressAccess().getNameAssignment_0_1(), "rule__Address__NameAssignment_0_1");
-					put(grammarAccess.getAddressAccess().getElementsAssignment_1_2(), "rule__Address__ElementsAssignment_1_2");
-					put(grammarAccess.getAddressAccess().getElementsAssignment_1_3_1(), "rule__Address__ElementsAssignment_1_3_1");
+					put(grammarAccess.getNamedAddressesAccess().getAddressNamesAssignment_1(), "rule__NamedAddresses__AddressNamesAssignment_1");
+					put(grammarAccess.getNamedAddressesAccess().getAddressNamesAssignment_2_2(), "rule__NamedAddresses__AddressNamesAssignment_2_2");
+					put(grammarAccess.getAddressTupleAccess().getElementsAssignment_2(), "rule__AddressTuple__ElementsAssignment_2");
+					put(grammarAccess.getAddressTupleAccess().getElementsAssignment_3_1(), "rule__AddressTuple__ElementsAssignment_3_1");
 					put(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2(), "rule__TosNetLinkBinding__PropertiesAssignment_2");
 					put(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_3_1(), "rule__TosNetLinkBinding__PropertiesAssignment_3_1");
 					put(grammarAccess.getLinkPropertyAccess().getCtrlNameAssignment_0_2(), "rule__LinkProperty__CtrlNameAssignment_0_2");
@@ -115,9 +116,9 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getArgumentAccess().getLhsAssignment_1_0(), "rule__Argument__LhsAssignment_1_0");
 					put(grammarAccess.getArgumentAccess().getRhsAssignment_1_2(), "rule__Argument__RhsAssignment_1_2");
 					put(grammarAccess.getArgumentAccess().getTextAssignment_2(), "rule__Argument__TextAssignment_2");
-					put(grammarAccess.getAddressBindingAccess().getNameAssignment_1(), "rule__AddressBinding__NameAssignment_1");
-					put(grammarAccess.getAddressBindingAccess().getAddressesAssignment_4(), "rule__AddressBinding__AddressesAssignment_4");
-					put(grammarAccess.getAddressBindingAccess().getAddressesAssignment_5_1(), "rule__AddressBinding__AddressesAssignment_5_1");
+					put(grammarAccess.getAddressBindingAccess().getNameAssignment_1_0(), "rule__AddressBinding__NameAssignment_1_0");
+					put(grammarAccess.getAddressBindingAccess().getAddressesAssignment_3(), "rule__AddressBinding__AddressesAssignment_3");
+					put(grammarAccess.getAddressBindingAccess().getAddressesAssignment_4_1(), "rule__AddressBinding__AddressesAssignment_4_1");
 					put(grammarAccess.getInstantiationAccess().getAddressAssignment_1(), "rule__Instantiation__AddressAssignment_1");
 					put(grammarAccess.getInstantiationAccess().getKindAssignment_3(), "rule__Instantiation__KindAssignment_3");
 					put(grammarAccess.getInstantiationAccess().getPropertiesAssignment_5_0(), "rule__Instantiation__PropertiesAssignment_5_0");

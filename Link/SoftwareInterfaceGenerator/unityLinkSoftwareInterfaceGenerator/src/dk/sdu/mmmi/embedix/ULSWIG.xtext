@@ -7,11 +7,18 @@ LinkSpec:
 	
 Constructor:
 	(isPublic?="public")? name=ID '(' (parameters+=ID (',' parameters += ID)*)? ')' 
-	(':' addresses+=Address (',' addresses+=Address)*)? '{' (members+=Member ';')* '}'
+	(':' addresses=ConstructorAddressParameters)? '{' (members+=Member ';')* '}'
 ;
 
-Address:
-	'@' name=ID |
+ConstructorAddressParameters:
+	NamedAddresses | AddressTuple
+;
+
+NamedAddresses:
+	'@' addressNames+=ID (',' '@' addressNames+=ID)* 
+;
+
+AddressTuple:
 	'@' '(' elements+=ID (',' elements+=ID)* ')'
 ;
 
@@ -57,7 +64,7 @@ Argument:
 ;
 
 AddressBinding:
-	'@' name=ID '=' '(' addresses+=HEX_NUM (',' addresses+=HEX_NUM)* ')'
+	'@' (name=ID '=')? '(' addresses+=HEX_NUM (',' addresses+=HEX_NUM)* ')'
 ;
 
 // Instantiation of proxy

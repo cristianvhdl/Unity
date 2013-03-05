@@ -2,13 +2,14 @@
  */
 package dk.sdu.mmmi.embedix.ulswig.impl;
 
-import dk.sdu.mmmi.embedix.ulswig.Address;
 import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
 import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
 import dk.sdu.mmmi.embedix.ulswig.AddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.AddressTuple;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
+import dk.sdu.mmmi.embedix.ulswig.ConstructorAddressParameters;
 import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Expansion;
 import dk.sdu.mmmi.embedix.ulswig.GroupElement;
@@ -21,6 +22,7 @@ import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.Member;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.NamedAddresses;
 import dk.sdu.mmmi.embedix.ulswig.PathElement;
 import dk.sdu.mmmi.embedix.ulswig.PublishProperty;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
@@ -62,7 +64,21 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass addressEClass = null;
+  private EClass constructorAddressParametersEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass namedAddressesEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass addressTupleEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -362,9 +378,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getAddress()
+  public EClass getConstructorAddressParameters()
   {
-    return addressEClass;
+    return constructorAddressParametersEClass;
   }
 
   /**
@@ -372,9 +388,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getAddress_Name()
+  public EClass getNamedAddresses()
   {
-    return (EAttribute)addressEClass.getEStructuralFeatures().get(0);
+    return namedAddressesEClass;
   }
 
   /**
@@ -382,9 +398,29 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getAddress_Elements()
+  public EAttribute getNamedAddresses_AddressNames()
   {
-    return (EAttribute)addressEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)namedAddressesEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getAddressTuple()
+  {
+    return addressTupleEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getAddressTuple_Elements()
+  {
+    return (EAttribute)addressTupleEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -898,9 +934,13 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     createEReference(constructorEClass, CONSTRUCTOR__ADDRESSES);
     createEReference(constructorEClass, CONSTRUCTOR__MEMBERS);
 
-    addressEClass = createEClass(ADDRESS);
-    createEAttribute(addressEClass, ADDRESS__NAME);
-    createEAttribute(addressEClass, ADDRESS__ELEMENTS);
+    constructorAddressParametersEClass = createEClass(CONSTRUCTOR_ADDRESS_PARAMETERS);
+
+    namedAddressesEClass = createEClass(NAMED_ADDRESSES);
+    createEAttribute(namedAddressesEClass, NAMED_ADDRESSES__ADDRESS_NAMES);
+
+    addressTupleEClass = createEClass(ADDRESS_TUPLE);
+    createEAttribute(addressTupleEClass, ADDRESS_TUPLE__ELEMENTS);
 
     memberEClass = createEClass(MEMBER);
 
@@ -999,6 +1039,8 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    namedAddressesEClass.getESuperTypes().add(this.getConstructorAddressParameters());
+    addressTupleEClass.getESuperTypes().add(this.getConstructorAddressParameters());
     linkBindingEClass.getESuperTypes().add(this.getMember());
     tosNetLinkBindingEClass.getESuperTypes().add(this.getLinkBinding());
     expansionEClass.getESuperTypes().add(this.getMember());
@@ -1021,12 +1063,16 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     initEAttribute(getConstructor_IsPublic(), ecorePackage.getEBoolean(), "isPublic", null, 0, 1, Constructor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConstructor_Name(), ecorePackage.getEString(), "name", null, 0, 1, Constructor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getConstructor_Parameters(), ecorePackage.getEString(), "parameters", null, 0, -1, Constructor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getConstructor_Addresses(), this.getAddress(), null, "addresses", null, 0, -1, Constructor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getConstructor_Addresses(), this.getConstructorAddressParameters(), null, "addresses", null, 0, 1, Constructor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getConstructor_Members(), this.getMember(), null, "members", null, 0, -1, Constructor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(addressEClass, Address.class, "Address", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getAddress_Name(), ecorePackage.getEString(), "name", null, 0, 1, Address.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getAddress_Elements(), ecorePackage.getEString(), "elements", null, 0, -1, Address.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(constructorAddressParametersEClass, ConstructorAddressParameters.class, "ConstructorAddressParameters", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(namedAddressesEClass, NamedAddresses.class, "NamedAddresses", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getNamedAddresses_AddressNames(), ecorePackage.getEString(), "addressNames", null, 0, -1, NamedAddresses.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(addressTupleEClass, AddressTuple.class, "AddressTuple", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getAddressTuple_Elements(), ecorePackage.getEString(), "elements", null, 0, -1, AddressTuple.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(memberEClass, Member.class, "Member", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

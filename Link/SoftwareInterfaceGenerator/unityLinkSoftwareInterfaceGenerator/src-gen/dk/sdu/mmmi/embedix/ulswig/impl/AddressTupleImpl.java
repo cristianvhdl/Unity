@@ -2,58 +2,32 @@
  */
 package dk.sdu.mmmi.embedix.ulswig.impl;
 
-import dk.sdu.mmmi.embedix.ulswig.Address;
+import dk.sdu.mmmi.embedix.ulswig.AddressTuple;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
 
 import java.util.Collection;
-
-import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Address</b></em>'.
+ * An implementation of the model object '<em><b>Address Tuple</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressImpl#getName <em>Name</em>}</li>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressImpl#getElements <em>Elements</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressTupleImpl#getElements <em>Elements</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class AddressImpl extends MinimalEObjectImpl.Container implements Address
+public class AddressTupleImpl extends ConstructorAddressParametersImpl implements AddressTuple
 {
-  /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected static final String NAME_EDEFAULT = null;
-
-  /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
-  protected String name = NAME_EDEFAULT;
-
   /**
    * The cached value of the '{@link #getElements() <em>Elements</em>}' attribute list.
    * <!-- begin-user-doc -->
@@ -69,7 +43,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
    * <!-- end-user-doc -->
    * @generated
    */
-  protected AddressImpl()
+  protected AddressTupleImpl()
   {
     super();
   }
@@ -82,30 +56,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
   @Override
   protected EClass eStaticClass()
   {
-    return UlswigPackage.Literals.ADDRESS;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public String getName()
-  {
-    return name;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setName(String newName)
-  {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.ADDRESS__NAME, oldName, name));
+    return UlswigPackage.Literals.ADDRESS_TUPLE;
   }
 
   /**
@@ -117,7 +68,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
   {
     if (elements == null)
     {
-      elements = new EDataTypeEList<String>(String.class, this, UlswigPackage.ADDRESS__ELEMENTS);
+      elements = new EDataTypeEList<String>(String.class, this, UlswigPackage.ADDRESS_TUPLE__ELEMENTS);
     }
     return elements;
   }
@@ -132,9 +83,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
   {
     switch (featureID)
     {
-      case UlswigPackage.ADDRESS__NAME:
-        return getName();
-      case UlswigPackage.ADDRESS__ELEMENTS:
+      case UlswigPackage.ADDRESS_TUPLE__ELEMENTS:
         return getElements();
     }
     return super.eGet(featureID, resolve, coreType);
@@ -151,10 +100,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
   {
     switch (featureID)
     {
-      case UlswigPackage.ADDRESS__NAME:
-        setName((String)newValue);
-        return;
-      case UlswigPackage.ADDRESS__ELEMENTS:
+      case UlswigPackage.ADDRESS_TUPLE__ELEMENTS:
         getElements().clear();
         getElements().addAll((Collection<? extends String>)newValue);
         return;
@@ -172,10 +118,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
   {
     switch (featureID)
     {
-      case UlswigPackage.ADDRESS__NAME:
-        setName(NAME_EDEFAULT);
-        return;
-      case UlswigPackage.ADDRESS__ELEMENTS:
+      case UlswigPackage.ADDRESS_TUPLE__ELEMENTS:
         getElements().clear();
         return;
     }
@@ -192,9 +135,7 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
   {
     switch (featureID)
     {
-      case UlswigPackage.ADDRESS__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case UlswigPackage.ADDRESS__ELEMENTS:
+      case UlswigPackage.ADDRESS_TUPLE__ELEMENTS:
         return elements != null && !elements.isEmpty();
     }
     return super.eIsSet(featureID);
@@ -211,12 +152,10 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(", elements: ");
+    result.append(" (elements: ");
     result.append(elements);
     result.append(')');
     return result.toString();
   }
 
-} //AddressImpl
+} //AddressTupleImpl

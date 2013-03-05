@@ -2,8 +2,8 @@
  */
 package dk.sdu.mmmi.embedix.ulswig.impl;
 
-import dk.sdu.mmmi.embedix.ulswig.Address;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
+import dk.sdu.mmmi.embedix.ulswig.ConstructorAddressParameters;
 import dk.sdu.mmmi.embedix.ulswig.Member;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
 
@@ -94,14 +94,14 @@ public class ConstructorImpl extends MinimalEObjectImpl.Container implements Con
   protected EList<String> parameters;
 
   /**
-   * The cached value of the '{@link #getAddresses() <em>Addresses</em>}' containment reference list.
+   * The cached value of the '{@link #getAddresses() <em>Addresses</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getAddresses()
    * @generated
    * @ordered
    */
-  protected EList<Address> addresses;
+  protected ConstructorAddressParameters addresses;
 
   /**
    * The cached value of the '{@link #getMembers() <em>Members</em>}' containment reference list.
@@ -199,13 +199,47 @@ public class ConstructorImpl extends MinimalEObjectImpl.Container implements Con
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Address> getAddresses()
+  public ConstructorAddressParameters getAddresses()
   {
-    if (addresses == null)
-    {
-      addresses = new EObjectContainmentEList<Address>(Address.class, this, UlswigPackage.CONSTRUCTOR__ADDRESSES);
-    }
     return addresses;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetAddresses(ConstructorAddressParameters newAddresses, NotificationChain msgs)
+  {
+    ConstructorAddressParameters oldAddresses = addresses;
+    addresses = newAddresses;
+    if (eNotificationRequired())
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, UlswigPackage.CONSTRUCTOR__ADDRESSES, oldAddresses, newAddresses);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setAddresses(ConstructorAddressParameters newAddresses)
+  {
+    if (newAddresses != addresses)
+    {
+      NotificationChain msgs = null;
+      if (addresses != null)
+        msgs = ((InternalEObject)addresses).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - UlswigPackage.CONSTRUCTOR__ADDRESSES, null, msgs);
+      if (newAddresses != null)
+        msgs = ((InternalEObject)newAddresses).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - UlswigPackage.CONSTRUCTOR__ADDRESSES, null, msgs);
+      msgs = basicSetAddresses(newAddresses, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.CONSTRUCTOR__ADDRESSES, newAddresses, newAddresses));
   }
 
   /**
@@ -233,7 +267,7 @@ public class ConstructorImpl extends MinimalEObjectImpl.Container implements Con
     switch (featureID)
     {
       case UlswigPackage.CONSTRUCTOR__ADDRESSES:
-        return ((InternalEList<?>)getAddresses()).basicRemove(otherEnd, msgs);
+        return basicSetAddresses(null, msgs);
       case UlswigPackage.CONSTRUCTOR__MEMBERS:
         return ((InternalEList<?>)getMembers()).basicRemove(otherEnd, msgs);
     }
@@ -286,8 +320,7 @@ public class ConstructorImpl extends MinimalEObjectImpl.Container implements Con
         getParameters().addAll((Collection<? extends String>)newValue);
         return;
       case UlswigPackage.CONSTRUCTOR__ADDRESSES:
-        getAddresses().clear();
-        getAddresses().addAll((Collection<? extends Address>)newValue);
+        setAddresses((ConstructorAddressParameters)newValue);
         return;
       case UlswigPackage.CONSTRUCTOR__MEMBERS:
         getMembers().clear();
@@ -317,7 +350,7 @@ public class ConstructorImpl extends MinimalEObjectImpl.Container implements Con
         getParameters().clear();
         return;
       case UlswigPackage.CONSTRUCTOR__ADDRESSES:
-        getAddresses().clear();
+        setAddresses((ConstructorAddressParameters)null);
         return;
       case UlswigPackage.CONSTRUCTOR__MEMBERS:
         getMembers().clear();
@@ -343,7 +376,7 @@ public class ConstructorImpl extends MinimalEObjectImpl.Container implements Con
       case UlswigPackage.CONSTRUCTOR__PARAMETERS:
         return parameters != null && !parameters.isEmpty();
       case UlswigPackage.CONSTRUCTOR__ADDRESSES:
-        return addresses != null && !addresses.isEmpty();
+        return addresses != null;
       case UlswigPackage.CONSTRUCTOR__MEMBERS:
         return members != null && !members.isEmpty();
     }

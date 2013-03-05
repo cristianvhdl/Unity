@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.EList
 import dk.sdu.mmmi.embedix.ulswig.IDProperty
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty
 import dk.sdu.mmmi.embedix.ulswig.PublishProperty
+import dk.sdu.mmmi.embedix.ulswig.AddressTuple
 
 class PythonCompiler {
 	def generate(LinkSpec link) '''
@@ -42,6 +43,9 @@ class PythonCompiler {
 			«ENDFOR»
 		
 		def bind(self,ul_addresses):
+			«IF c.addresses instanceof AddressTuple»
+			ul_addresses = dict(zip([«FOR n:(c.addresses as AddressTuple).elements SEPARATOR ","»'«n»'«ENDFOR»],ul_addresses["_"]))
+			«ENDIF»
 			«FOR m: c.members»
 			«m.compileMember»
 			«ENDFOR»
@@ -72,7 +76,7 @@ class PythonCompiler {
 
 	
 	def dispatch compileMember(Expansion m) '''
-			# initialization for «m.name»
+			# initialization for expansion «m.name»
 			self.«m.name» = «m.constructor.name.constructorName(m.constructor)»(«FOR a:m.arguments SEPARATOR ","»«a.compileArgument»«ENDFOR»)
 			«m.compileExpansionAddressBinding»
 	'''
@@ -80,10 +84,15 @@ class PythonCompiler {
 	def dispatch compileExpansionAddressBinding(SimpleExpansion m) '''
 			self.«m.name».bind({
 				«FOR b:m.bindings SEPARATOR ","»
-				'«b.name»': [«FOR x:b.addresses SEPARATOR ","»«x»«ENDFOR»]
+				'«b.name.providedOrDefaultName»': [«FOR x:b.addresses SEPARATOR ","»«x»«ENDFOR»]
 				«ENDFOR»
 			})
 	'''
+	
+	def providedOrDefaultName(String name) {
+		if(name==null) "_" else name
+	}
+
 
 	def dispatch compileExpansionAddressBinding(AddressExpansion m) '''
 			self.«m.name».bind({
@@ -98,7 +107,7 @@ class PythonCompiler {
 	}
 	
 	def dispatch compileMember(Instantiation m) '''
-			# initialization for «m.address.name»
+			# initialization for instantiation «m.address.name»
 			ul_address = «m.address.getAddressFromSpec»
 			self.«m.address.name» = ul_data_proxy(self.ul_hwp,ul_address, «m.properties.getInstantiationID», «m.kind.getKind», 0«FOR p:m.properties»«IF !(p instanceof IDProperty)»,«p.getNamedProperty»«ENDIF»«ENDFOR»)
 	'''
@@ -129,6 +138,6 @@ class PythonCompiler {
 	}
 	
 	def dispatch compileMember(Grouping m) '''
-			# initialization for «m.name»
+			# initialization for grouping a«m.name»
 	'''
 }

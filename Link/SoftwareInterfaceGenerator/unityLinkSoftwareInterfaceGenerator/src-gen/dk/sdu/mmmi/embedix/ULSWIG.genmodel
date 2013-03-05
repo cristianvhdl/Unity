@@ -18,9 +18,12 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//Constructor/addresses"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//Constructor/members"/>
     </genClasses>
-    <genClasses ecoreClass="ULSWIG.ecore#//Address">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//Address/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//Address/elements"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//ConstructorAddressParameters"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//NamedAddresses">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//NamedAddresses/addressNames"/>
+    </genClasses>
+    <genClasses ecoreClass="ULSWIG.ecore#//AddressTuple">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//AddressTuple/elements"/>
     </genClasses>
     <genClasses ecoreClass="ULSWIG.ecore#//Member"/>
     <genClasses ecoreClass="ULSWIG.ecore#//LinkBinding"/>
