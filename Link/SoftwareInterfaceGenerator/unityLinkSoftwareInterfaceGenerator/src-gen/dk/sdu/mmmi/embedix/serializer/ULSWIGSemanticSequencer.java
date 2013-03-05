@@ -5,23 +5,22 @@ import com.google.inject.Provider;
 import dk.sdu.mmmi.embedix.services.ULSWIGGrammarAccess;
 import dk.sdu.mmmi.embedix.ulswig.Address;
 import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
-import dk.sdu.mmmi.embedix.ulswig.AddressExpansionName;
+import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
 import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
-import dk.sdu.mmmi.embedix.ulswig.Expansion;
 import dk.sdu.mmmi.embedix.ulswig.GroupElement;
 import dk.sdu.mmmi.embedix.ulswig.Grouping;
 import dk.sdu.mmmi.embedix.ulswig.IDProperty;
 import dk.sdu.mmmi.embedix.ulswig.Instantiation;
-import dk.sdu.mmmi.embedix.ulswig.LinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
+import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.PathElement;
 import dk.sdu.mmmi.embedix.ulswig.PublishPoperty;
-import dk.sdu.mmmi.embedix.ulswig.Robot;
-import dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName;
+import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
+import dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.serializer.acceptor.ISemanticSequenceAcceptor;
@@ -55,10 +54,11 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 					return; 
 				}
 				else break;
-			case UlswigPackage.ADDRESS_EXPANSION_NAME:
-				if(context == grammarAccess.getAddressExpansionNameRule() ||
-				   context == grammarAccess.getExpansionNameRule()) {
-					sequence_AddressExpansionName(context, (AddressExpansionName) semanticObject); 
+			case UlswigPackage.ADDRESS_EXPANSION:
+				if(context == grammarAccess.getAddressExpansionRule() ||
+				   context == grammarAccess.getExpansionRule() ||
+				   context == grammarAccess.getMemberRule()) {
+					sequence_AddressExpansion(context, (AddressExpansion) semanticObject); 
 					return; 
 				}
 				else break;
@@ -84,13 +84,6 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 				if(context == grammarAccess.getAddressSpecRule() ||
 				   context == grammarAccess.getDirectAddressSpecRule()) {
 					sequence_DirectAddressSpec(context, (DirectAddressSpec) semanticObject); 
-					return; 
-				}
-				else break;
-			case UlswigPackage.EXPANSION:
-				if(context == grammarAccess.getExpansionRule() ||
-				   context == grammarAccess.getMemberRule()) {
-					sequence_Expansion(context, (Expansion) semanticObject); 
 					return; 
 				}
 				else break;
@@ -120,16 +113,15 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 					return; 
 				}
 				else break;
-			case UlswigPackage.LINK_BINDING:
-				if(context == grammarAccess.getLinkBindingRule() ||
-				   context == grammarAccess.getMemberRule()) {
-					sequence_LinkBinding(context, (LinkBinding) semanticObject); 
-					return; 
-				}
-				else break;
 			case UlswigPackage.LINK_PROPERTY:
 				if(context == grammarAccess.getLinkPropertyRule()) {
 					sequence_LinkProperty(context, (LinkProperty) semanticObject); 
+					return; 
+				}
+				else break;
+			case UlswigPackage.LINK_SPEC:
+				if(context == grammarAccess.getLinkSpecRule()) {
+					sequence_LinkSpec(context, (LinkSpec) semanticObject); 
 					return; 
 				}
 				else break;
@@ -152,16 +144,19 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 					return; 
 				}
 				else break;
-			case UlswigPackage.ROBOT:
-				if(context == grammarAccess.getRobotRule()) {
-					sequence_Robot(context, (Robot) semanticObject); 
+			case UlswigPackage.SIMPLE_EXPANSION:
+				if(context == grammarAccess.getExpansionRule() ||
+				   context == grammarAccess.getMemberRule() ||
+				   context == grammarAccess.getSimpleExpansionRule()) {
+					sequence_SimpleExpansion(context, (SimpleExpansion) semanticObject); 
 					return; 
 				}
 				else break;
-			case UlswigPackage.SIMPLE_EXPANSION_NAME:
-				if(context == grammarAccess.getExpansionNameRule() ||
-				   context == grammarAccess.getSimpleExpansionNameRule()) {
-					sequence_SimpleExpansionName(context, (SimpleExpansionName) semanticObject); 
+			case UlswigPackage.TOS_NET_LINK_BINDING:
+				if(context == grammarAccess.getLinkBindingRule() ||
+				   context == grammarAccess.getMemberRule() ||
+				   context == grammarAccess.getTosNetLinkBindingRule()) {
+					sequence_TosNetLinkBinding(context, (TosNetLinkBinding) semanticObject); 
 					return; 
 				}
 				else break;
@@ -180,17 +175,10 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     name=ID
+	 *     (name=ID constructor=[Constructor|ID] (arguments+=Argument arguments+=Argument*)?)
 	 */
-	protected void sequence_AddressExpansionName(EObject context, AddressExpansionName semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.EXPANSION_NAME__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.EXPANSION_NAME__NAME));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getAddressExpansionNameAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
-		feeder.finish();
+	protected void sequence_AddressExpansion(EObject context, AddressExpansion semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
@@ -237,20 +225,6 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 		feeder.accept(grammarAccess.getDirectAddressSpecAccess().getNameIDTerminalRuleCall_0_0(), semanticObject.getName());
 		feeder.accept(grammarAccess.getDirectAddressSpecAccess().getAddressHEX_NUMTerminalRuleCall_2_0(), semanticObject.getAddress());
 		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (
-	 *         identifier=ExpansionName 
-	 *         constructor=[Constructor|ID] 
-	 *         (arguments+=Argument arguments+=Argument*)? 
-	 *         (bindings+=AddressBinding bindings+=AddressBinding*)?
-	 *     )
-	 */
-	protected void sequence_Expansion(EObject context, Expansion semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
@@ -327,18 +301,18 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (properties+=LinkProperty properties+=LinkProperty)
+	 *     (ctrlName=ID | baseValue=INT | uartName=ID)
 	 */
-	protected void sequence_LinkBinding(EObject context, LinkBinding semanticObject) {
+	protected void sequence_LinkProperty(EObject context, LinkProperty semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     (linkName=ID | baseValue=INT)
+	 *     (name=ID constructors+=Constructor*)
 	 */
-	protected void sequence_LinkProperty(EObject context, LinkProperty semanticObject) {
+	protected void sequence_LinkSpec(EObject context, LinkSpec semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -370,25 +344,18 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     constructors+=Constructor*
+	 *     (name=ID constructor=[Constructor|ID] (arguments+=Argument arguments+=Argument*)? (bindings+=AddressBinding bindings+=AddressBinding*)?)
 	 */
-	protected void sequence_Robot(EObject context, Robot semanticObject) {
+	protected void sequence_SimpleExpansion(EObject context, SimpleExpansion semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     name=ID
+	 *     (properties+=LinkProperty properties+=LinkProperty)
 	 */
-	protected void sequence_SimpleExpansionName(EObject context, SimpleExpansionName semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, UlswigPackage.Literals.EXPANSION_NAME__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UlswigPackage.Literals.EXPANSION_NAME__NAME));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getSimpleExpansionNameAccess().getNameIDTerminalRuleCall_0(), semanticObject.getName());
-		feeder.finish();
+	protected void sequence_TosNetLinkBinding(EObject context, TosNetLinkBinding semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
 	}
 }

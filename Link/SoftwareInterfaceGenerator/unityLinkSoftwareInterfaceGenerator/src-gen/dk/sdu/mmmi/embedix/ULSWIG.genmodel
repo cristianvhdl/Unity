@@ -7,8 +7,9 @@
     editorPluginID="unityLinkSoftwareInterfaceGenerator.editor" runtimeVersion="2.8">
   <genPackages prefix="Ulswig" basePackage="dk.sdu.mmmi.embedix" disposableProviderFactory="true"
       ecorePackage="ULSWIG.ecore#/">
-    <genClasses ecoreClass="ULSWIG.ecore#//Robot">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//Robot/constructors"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//LinkSpec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//LinkSpec/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//LinkSpec/constructors"/>
     </genClasses>
     <genClasses ecoreClass="ULSWIG.ecore#//Constructor">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//Constructor/isPublic"/>
@@ -22,24 +23,24 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//Address/elements"/>
     </genClasses>
     <genClasses ecoreClass="ULSWIG.ecore#//Member"/>
-    <genClasses ecoreClass="ULSWIG.ecore#//LinkBinding">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//LinkBinding/properties"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//LinkBinding"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//TosNetLinkBinding">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//TosNetLinkBinding/properties"/>
     </genClasses>
     <genClasses ecoreClass="ULSWIG.ecore#//LinkProperty">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//LinkProperty/linkName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//LinkProperty/ctrlName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//LinkProperty/baseValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//LinkProperty/uartName"/>
     </genClasses>
     <genClasses ecoreClass="ULSWIG.ecore#//Expansion">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//Expansion/identifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//Expansion/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//Expansion/constructor"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//Expansion/arguments"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//Expansion/bindings"/>
     </genClasses>
-    <genClasses ecoreClass="ULSWIG.ecore#//ExpansionName">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//ExpansionName/name"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//SimpleExpansion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//SimpleExpansion/bindings"/>
     </genClasses>
-    <genClasses ecoreClass="ULSWIG.ecore#//SimpleExpansionName"/>
-    <genClasses ecoreClass="ULSWIG.ecore#//AddressExpansionName"/>
+    <genClasses ecoreClass="ULSWIG.ecore#//AddressExpansion"/>
     <genClasses ecoreClass="ULSWIG.ecore#//Argument">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//Argument/simple"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//Argument/lhs"/>

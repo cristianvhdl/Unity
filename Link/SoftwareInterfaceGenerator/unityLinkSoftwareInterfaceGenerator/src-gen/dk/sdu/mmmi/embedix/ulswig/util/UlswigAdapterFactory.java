@@ -75,9 +75,9 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
     new UlswigSwitch<Adapter>()
     {
       @Override
-      public Adapter caseRobot(Robot object)
+      public Adapter caseLinkSpec(LinkSpec object)
       {
-        return createRobotAdapter();
+        return createLinkSpecAdapter();
       }
       @Override
       public Adapter caseConstructor(Constructor object)
@@ -100,6 +100,11 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
         return createLinkBindingAdapter();
       }
       @Override
+      public Adapter caseTosNetLinkBinding(TosNetLinkBinding object)
+      {
+        return createTosNetLinkBindingAdapter();
+      }
+      @Override
       public Adapter caseLinkProperty(LinkProperty object)
       {
         return createLinkPropertyAdapter();
@@ -110,19 +115,14 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
         return createExpansionAdapter();
       }
       @Override
-      public Adapter caseExpansionName(ExpansionName object)
+      public Adapter caseSimpleExpansion(SimpleExpansion object)
       {
-        return createExpansionNameAdapter();
+        return createSimpleExpansionAdapter();
       }
       @Override
-      public Adapter caseSimpleExpansionName(SimpleExpansionName object)
+      public Adapter caseAddressExpansion(AddressExpansion object)
       {
-        return createSimpleExpansionNameAdapter();
-      }
-      @Override
-      public Adapter caseAddressExpansionName(AddressExpansionName object)
-      {
-        return createAddressExpansionNameAdapter();
+        return createAddressExpansionAdapter();
       }
       @Override
       public Adapter caseArgument(Argument object)
@@ -212,16 +212,16 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
 
 
   /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.Robot <em>Robot</em>}'.
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec <em>Link Spec</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.Robot
+   * @see dk.sdu.mmmi.embedix.ulswig.LinkSpec
    * @generated
    */
-  public Adapter createRobotAdapter()
+  public Adapter createLinkSpecAdapter()
   {
     return null;
   }
@@ -287,6 +287,21 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding <em>Tos Net Link Binding</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding
+   * @generated
+   */
+  public Adapter createTosNetLinkBindingAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty <em>Link Property</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -317,46 +332,31 @@ public class UlswigAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.ExpansionName <em>Expansion Name</em>}'.
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.SimpleExpansion <em>Simple Expansion</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.ExpansionName
+   * @see dk.sdu.mmmi.embedix.ulswig.SimpleExpansion
    * @generated
    */
-  public Adapter createExpansionNameAdapter()
+  public Adapter createSimpleExpansionAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName <em>Simple Expansion Name</em>}'.
+   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansion <em>Address Expansion</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansion
    * @generated
    */
-  public Adapter createSimpleExpansionNameAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansionName <em>Address Expansion Name</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansionName
-   * @generated
-   */
-  public Adapter createAddressExpansionNameAdapter()
+  public Adapter createAddressExpansionAdapter()
   {
     return null;
   }

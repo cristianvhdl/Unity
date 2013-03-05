@@ -57,14 +57,23 @@ public interface UlswigPackage extends EPackage
   UlswigPackage eINSTANCE = dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl.init();
 
   /**
-   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.RobotImpl <em>Robot</em>}' class.
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkSpecImpl <em>Link Spec</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.RobotImpl
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getRobot()
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.LinkSpecImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getLinkSpec()
    * @generated
    */
-  int ROBOT = 0;
+  int LINK_SPEC = 0;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LINK_SPEC__NAME = 0;
 
   /**
    * The feature id for the '<em><b>Constructors</b></em>' containment reference list.
@@ -73,16 +82,16 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ROBOT__CONSTRUCTORS = 0;
+  int LINK_SPEC__CONSTRUCTORS = 1;
 
   /**
-   * The number of structural features of the '<em>Robot</em>' class.
+   * The number of structural features of the '<em>Link Spec</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ROBOT_FEATURE_COUNT = 1;
+  int LINK_SPEC_FEATURE_COUNT = 2;
 
   /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ConstructorImpl <em>Constructor</em>}' class.
@@ -215,22 +224,41 @@ public interface UlswigPackage extends EPackage
   int LINK_BINDING = 4;
 
   /**
-   * The feature id for the '<em><b>Properties</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int LINK_BINDING__PROPERTIES = MEMBER_FEATURE_COUNT + 0;
-
-  /**
    * The number of structural features of the '<em>Link Binding</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int LINK_BINDING_FEATURE_COUNT = MEMBER_FEATURE_COUNT + 1;
+  int LINK_BINDING_FEATURE_COUNT = MEMBER_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.TosNetLinkBindingImpl <em>Tos Net Link Binding</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.TosNetLinkBindingImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getTosNetLinkBinding()
+   * @generated
+   */
+  int TOS_NET_LINK_BINDING = 5;
+
+  /**
+   * The feature id for the '<em><b>Properties</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TOS_NET_LINK_BINDING__PROPERTIES = LINK_BINDING_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>Tos Net Link Binding</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int TOS_NET_LINK_BINDING_FEATURE_COUNT = LINK_BINDING_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkPropertyImpl <em>Link Property</em>}' class.
@@ -240,16 +268,16 @@ public interface UlswigPackage extends EPackage
    * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getLinkProperty()
    * @generated
    */
-  int LINK_PROPERTY = 5;
+  int LINK_PROPERTY = 6;
 
   /**
-   * The feature id for the '<em><b>Link Name</b></em>' attribute.
+   * The feature id for the '<em><b>Ctrl Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int LINK_PROPERTY__LINK_NAME = 0;
+  int LINK_PROPERTY__CTRL_NAME = 0;
 
   /**
    * The feature id for the '<em><b>Base Value</b></em>' attribute.
@@ -261,13 +289,22 @@ public interface UlswigPackage extends EPackage
   int LINK_PROPERTY__BASE_VALUE = 1;
 
   /**
+   * The feature id for the '<em><b>Uart Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LINK_PROPERTY__UART_NAME = 2;
+
+  /**
    * The number of structural features of the '<em>Link Property</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int LINK_PROPERTY_FEATURE_COUNT = 2;
+  int LINK_PROPERTY_FEATURE_COUNT = 3;
 
   /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ExpansionImpl <em>Expansion</em>}' class.
@@ -277,16 +314,16 @@ public interface UlswigPackage extends EPackage
    * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getExpansion()
    * @generated
    */
-  int EXPANSION = 6;
+  int EXPANSION = 7;
 
   /**
-   * The feature id for the '<em><b>Identifier</b></em>' containment reference.
+   * The feature id for the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int EXPANSION__IDENTIFIER = MEMBER_FEATURE_COUNT + 0;
+  int EXPANSION__NAME = MEMBER_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Constructor</b></em>' reference.
@@ -307,60 +344,23 @@ public interface UlswigPackage extends EPackage
   int EXPANSION__ARGUMENTS = MEMBER_FEATURE_COUNT + 2;
 
   /**
-   * The feature id for the '<em><b>Bindings</b></em>' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int EXPANSION__BINDINGS = MEMBER_FEATURE_COUNT + 3;
-
-  /**
    * The number of structural features of the '<em>Expansion</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int EXPANSION_FEATURE_COUNT = MEMBER_FEATURE_COUNT + 4;
+  int EXPANSION_FEATURE_COUNT = MEMBER_FEATURE_COUNT + 3;
 
   /**
-   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ExpansionNameImpl <em>Expansion Name</em>}' class.
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionImpl <em>Simple Expansion</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.ExpansionNameImpl
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getExpansionName()
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getSimpleExpansion()
    * @generated
    */
-  int EXPANSION_NAME = 7;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int EXPANSION_NAME__NAME = 0;
-
-  /**
-   * The number of structural features of the '<em>Expansion Name</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int EXPANSION_NAME_FEATURE_COUNT = 1;
-
-  /**
-   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionNameImpl <em>Simple Expansion Name</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionNameImpl
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getSimpleExpansionName()
-   * @generated
-   */
-  int SIMPLE_EXPANSION_NAME = 8;
+  int SIMPLE_EXPANSION = 8;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -369,26 +369,53 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SIMPLE_EXPANSION_NAME__NAME = EXPANSION_NAME__NAME;
+  int SIMPLE_EXPANSION__NAME = EXPANSION__NAME;
 
   /**
-   * The number of structural features of the '<em>Simple Expansion Name</em>' class.
+   * The feature id for the '<em><b>Constructor</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SIMPLE_EXPANSION_NAME_FEATURE_COUNT = EXPANSION_NAME_FEATURE_COUNT + 0;
+  int SIMPLE_EXPANSION__CONSTRUCTOR = EXPANSION__CONSTRUCTOR;
 
   /**
-   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl <em>Address Expansion Name</em>}' class.
+   * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl
-   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansionName()
+   * @generated
+   * @ordered
+   */
+  int SIMPLE_EXPANSION__ARGUMENTS = EXPANSION__ARGUMENTS;
+
+  /**
+   * The feature id for the '<em><b>Bindings</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SIMPLE_EXPANSION__BINDINGS = EXPANSION_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>Simple Expansion</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SIMPLE_EXPANSION_FEATURE_COUNT = EXPANSION_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionImpl <em>Address Expansion</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionImpl
+   * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansion()
    * @generated
    */
-  int ADDRESS_EXPANSION_NAME = 9;
+  int ADDRESS_EXPANSION = 9;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -397,16 +424,34 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ADDRESS_EXPANSION_NAME__NAME = EXPANSION_NAME__NAME;
+  int ADDRESS_EXPANSION__NAME = EXPANSION__NAME;
 
   /**
-   * The number of structural features of the '<em>Address Expansion Name</em>' class.
+   * The feature id for the '<em><b>Constructor</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ADDRESS_EXPANSION_NAME_FEATURE_COUNT = EXPANSION_NAME_FEATURE_COUNT + 0;
+  int ADDRESS_EXPANSION__CONSTRUCTOR = EXPANSION__CONSTRUCTOR;
+
+  /**
+   * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADDRESS_EXPANSION__ARGUMENTS = EXPANSION__ARGUMENTS;
+
+  /**
+   * The number of structural features of the '<em>Address Expansion</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ADDRESS_EXPANSION_FEATURE_COUNT = EXPANSION_FEATURE_COUNT + 0;
 
   /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ArgumentImpl <em>Argument</em>}' class.
@@ -846,25 +891,36 @@ public interface UlswigPackage extends EPackage
 
 
   /**
-   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.Robot <em>Robot</em>}'.
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec <em>Link Spec</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Robot</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.Robot
+   * @return the meta object for class '<em>Link Spec</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.LinkSpec
    * @generated
    */
-  EClass getRobot();
+  EClass getLinkSpec();
 
   /**
-   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.Robot#getConstructors <em>Constructors</em>}'.
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.LinkSpec#getName()
+   * @see #getLinkSpec()
+   * @generated
+   */
+  EAttribute getLinkSpec_Name();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getConstructors <em>Constructors</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Constructors</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.Robot#getConstructors()
-   * @see #getRobot()
+   * @see dk.sdu.mmmi.embedix.ulswig.LinkSpec#getConstructors()
+   * @see #getLinkSpec()
    * @generated
    */
-  EReference getRobot_Constructors();
+  EReference getLinkSpec_Constructors();
 
   /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.Constructor <em>Constructor</em>}'.
@@ -984,15 +1040,25 @@ public interface UlswigPackage extends EPackage
   EClass getLinkBinding();
 
   /**
-   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.LinkBinding#getProperties <em>Properties</em>}'.
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding <em>Tos Net Link Binding</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Tos Net Link Binding</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding
+   * @generated
+   */
+  EClass getTosNetLinkBinding();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding#getProperties <em>Properties</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Properties</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.LinkBinding#getProperties()
-   * @see #getLinkBinding()
+   * @see dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding#getProperties()
+   * @see #getTosNetLinkBinding()
    * @generated
    */
-  EReference getLinkBinding_Properties();
+  EReference getTosNetLinkBinding_Properties();
 
   /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty <em>Link Property</em>}'.
@@ -1005,15 +1071,15 @@ public interface UlswigPackage extends EPackage
   EClass getLinkProperty();
 
   /**
-   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getLinkName <em>Link Name</em>}'.
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getCtrlName <em>Ctrl Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Link Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.LinkProperty#getLinkName()
+   * @return the meta object for the attribute '<em>Ctrl Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.LinkProperty#getCtrlName()
    * @see #getLinkProperty()
    * @generated
    */
-  EAttribute getLinkProperty_LinkName();
+  EAttribute getLinkProperty_CtrlName();
 
   /**
    * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getBaseValue <em>Base Value</em>}'.
@@ -1027,6 +1093,17 @@ public interface UlswigPackage extends EPackage
   EAttribute getLinkProperty_BaseValue();
 
   /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getUartName <em>Uart Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Uart Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.LinkProperty#getUartName()
+   * @see #getLinkProperty()
+   * @generated
+   */
+  EAttribute getLinkProperty_UartName();
+
+  /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.Expansion <em>Expansion</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1037,15 +1114,15 @@ public interface UlswigPackage extends EPackage
   EClass getExpansion();
 
   /**
-   * Returns the meta object for the containment reference '{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getIdentifier <em>Identifier</em>}'.
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Identifier</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.Expansion#getIdentifier()
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.Expansion#getName()
    * @see #getExpansion()
    * @generated
    */
-  EReference getExpansion_Identifier();
+  EAttribute getExpansion_Name();
 
   /**
    * Returns the meta object for the reference '{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getConstructor <em>Constructor</em>}'.
@@ -1070,56 +1147,35 @@ public interface UlswigPackage extends EPackage
   EReference getExpansion_Arguments();
 
   /**
-   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getBindings <em>Bindings</em>}'.
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.SimpleExpansion <em>Simple Expansion</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Simple Expansion</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.SimpleExpansion
+   * @generated
+   */
+  EClass getSimpleExpansion();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link dk.sdu.mmmi.embedix.ulswig.SimpleExpansion#getBindings <em>Bindings</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Bindings</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.Expansion#getBindings()
-   * @see #getExpansion()
+   * @see dk.sdu.mmmi.embedix.ulswig.SimpleExpansion#getBindings()
+   * @see #getSimpleExpansion()
    * @generated
    */
-  EReference getExpansion_Bindings();
+  EReference getSimpleExpansion_Bindings();
 
   /**
-   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.ExpansionName <em>Expansion Name</em>}'.
+   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansion <em>Address Expansion</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Expansion Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.ExpansionName
+   * @return the meta object for class '<em>Address Expansion</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansion
    * @generated
    */
-  EClass getExpansionName();
-
-  /**
-   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.ExpansionName#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.ExpansionName#getName()
-   * @see #getExpansionName()
-   * @generated
-   */
-  EAttribute getExpansionName_Name();
-
-  /**
-   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName <em>Simple Expansion Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Simple Expansion Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName
-   * @generated
-   */
-  EClass getSimpleExpansionName();
-
-  /**
-   * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.AddressExpansionName <em>Address Expansion Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Address Expansion Name</em>'.
-   * @see dk.sdu.mmmi.embedix.ulswig.AddressExpansionName
-   * @generated
-   */
-  EClass getAddressExpansionName();
+  EClass getAddressExpansion();
 
   /**
    * Returns the meta object for class '{@link dk.sdu.mmmi.embedix.ulswig.Argument <em>Argument</em>}'.
@@ -1484,14 +1540,22 @@ public interface UlswigPackage extends EPackage
   interface Literals
   {
     /**
-     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.RobotImpl <em>Robot</em>}' class.
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkSpecImpl <em>Link Spec</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.RobotImpl
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getRobot()
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.LinkSpecImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getLinkSpec()
      * @generated
      */
-    EClass ROBOT = eINSTANCE.getRobot();
+    EClass LINK_SPEC = eINSTANCE.getLinkSpec();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute LINK_SPEC__NAME = eINSTANCE.getLinkSpec_Name();
 
     /**
      * The meta object literal for the '<em><b>Constructors</b></em>' containment reference list feature.
@@ -1499,7 +1563,7 @@ public interface UlswigPackage extends EPackage
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference ROBOT__CONSTRUCTORS = eINSTANCE.getRobot_Constructors();
+    EReference LINK_SPEC__CONSTRUCTORS = eINSTANCE.getLinkSpec_Constructors();
 
     /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ConstructorImpl <em>Constructor</em>}' class.
@@ -1598,12 +1662,22 @@ public interface UlswigPackage extends EPackage
     EClass LINK_BINDING = eINSTANCE.getLinkBinding();
 
     /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.TosNetLinkBindingImpl <em>Tos Net Link Binding</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.TosNetLinkBindingImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getTosNetLinkBinding()
+     * @generated
+     */
+    EClass TOS_NET_LINK_BINDING = eINSTANCE.getTosNetLinkBinding();
+
+    /**
      * The meta object literal for the '<em><b>Properties</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference LINK_BINDING__PROPERTIES = eINSTANCE.getLinkBinding_Properties();
+    EReference TOS_NET_LINK_BINDING__PROPERTIES = eINSTANCE.getTosNetLinkBinding_Properties();
 
     /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkPropertyImpl <em>Link Property</em>}' class.
@@ -1616,12 +1690,12 @@ public interface UlswigPackage extends EPackage
     EClass LINK_PROPERTY = eINSTANCE.getLinkProperty();
 
     /**
-     * The meta object literal for the '<em><b>Link Name</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Ctrl Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute LINK_PROPERTY__LINK_NAME = eINSTANCE.getLinkProperty_LinkName();
+    EAttribute LINK_PROPERTY__CTRL_NAME = eINSTANCE.getLinkProperty_CtrlName();
 
     /**
      * The meta object literal for the '<em><b>Base Value</b></em>' attribute feature.
@@ -1630,6 +1704,14 @@ public interface UlswigPackage extends EPackage
      * @generated
      */
     EAttribute LINK_PROPERTY__BASE_VALUE = eINSTANCE.getLinkProperty_BaseValue();
+
+    /**
+     * The meta object literal for the '<em><b>Uart Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute LINK_PROPERTY__UART_NAME = eINSTANCE.getLinkProperty_UartName();
 
     /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ExpansionImpl <em>Expansion</em>}' class.
@@ -1642,12 +1724,12 @@ public interface UlswigPackage extends EPackage
     EClass EXPANSION = eINSTANCE.getExpansion();
 
     /**
-     * The meta object literal for the '<em><b>Identifier</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference EXPANSION__IDENTIFIER = eINSTANCE.getExpansion_Identifier();
+    EAttribute EXPANSION__NAME = eINSTANCE.getExpansion_Name();
 
     /**
      * The meta object literal for the '<em><b>Constructor</b></em>' reference feature.
@@ -1666,50 +1748,32 @@ public interface UlswigPackage extends EPackage
     EReference EXPANSION__ARGUMENTS = eINSTANCE.getExpansion_Arguments();
 
     /**
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionImpl <em>Simple Expansion</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getSimpleExpansion()
+     * @generated
+     */
+    EClass SIMPLE_EXPANSION = eINSTANCE.getSimpleExpansion();
+
+    /**
      * The meta object literal for the '<em><b>Bindings</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference EXPANSION__BINDINGS = eINSTANCE.getExpansion_Bindings();
+    EReference SIMPLE_EXPANSION__BINDINGS = eINSTANCE.getSimpleExpansion_Bindings();
 
     /**
-     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ExpansionNameImpl <em>Expansion Name</em>}' class.
+     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionImpl <em>Address Expansion</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.ExpansionNameImpl
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getExpansionName()
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionImpl
+     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansion()
      * @generated
      */
-    EClass EXPANSION_NAME = eINSTANCE.getExpansionName();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute EXPANSION_NAME__NAME = eINSTANCE.getExpansionName_Name();
-
-    /**
-     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionNameImpl <em>Simple Expansion Name</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionNameImpl
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getSimpleExpansionName()
-     * @generated
-     */
-    EClass SIMPLE_EXPANSION_NAME = eINSTANCE.getSimpleExpansionName();
-
-    /**
-     * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl <em>Address Expansion Name</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.AddressExpansionNameImpl
-     * @see dk.sdu.mmmi.embedix.ulswig.impl.UlswigPackageImpl#getAddressExpansionName()
-     * @generated
-     */
-    EClass ADDRESS_EXPANSION_NAME = eINSTANCE.getAddressExpansionName();
+    EClass ADDRESS_EXPANSION = eINSTANCE.getAddressExpansion();
 
     /**
      * The meta object literal for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ArgumentImpl <em>Argument</em>}' class.

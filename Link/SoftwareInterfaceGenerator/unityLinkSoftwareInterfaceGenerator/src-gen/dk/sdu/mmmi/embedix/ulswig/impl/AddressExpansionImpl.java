@@ -2,28 +2,28 @@
  */
 package dk.sdu.mmmi.embedix.ulswig.impl;
 
-import dk.sdu.mmmi.embedix.ulswig.AddressExpansionName;
+import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
 
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Address Expansion Name</b></em>'.
+ * An implementation of the model object '<em><b>Address Expansion</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class AddressExpansionNameImpl extends ExpansionNameImpl implements AddressExpansionName
+public class AddressExpansionImpl extends ExpansionImpl implements AddressExpansion
 {
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected AddressExpansionNameImpl()
+  protected AddressExpansionImpl()
   {
     super();
   }
@@ -36,7 +36,7 @@ public class AddressExpansionNameImpl extends ExpansionNameImpl implements Addre
   @Override
   protected EClass eStaticClass()
   {
-    return UlswigPackage.Literals.ADDRESS_EXPANSION_NAME;
+    return UlswigPackage.Literals.ADDRESS_EXPANSION;
   }
 
-} //AddressExpansionNameImpl
+} //AddressExpansionImpl

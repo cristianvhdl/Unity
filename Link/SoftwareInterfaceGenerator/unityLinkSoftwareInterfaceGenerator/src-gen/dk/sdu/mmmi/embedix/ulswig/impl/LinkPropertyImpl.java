@@ -19,8 +19,9 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkPropertyImpl#getLinkName <em>Link Name</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkPropertyImpl#getCtrlName <em>Ctrl Name</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkPropertyImpl#getBaseValue <em>Base Value</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkPropertyImpl#getUartName <em>Uart Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -29,24 +30,24 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements LinkProperty
 {
   /**
-   * The default value of the '{@link #getLinkName() <em>Link Name</em>}' attribute.
+   * The default value of the '{@link #getCtrlName() <em>Ctrl Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getLinkName()
+   * @see #getCtrlName()
    * @generated
    * @ordered
    */
-  protected static final String LINK_NAME_EDEFAULT = null;
+  protected static final String CTRL_NAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getLinkName() <em>Link Name</em>}' attribute.
+   * The cached value of the '{@link #getCtrlName() <em>Ctrl Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getLinkName()
+   * @see #getCtrlName()
    * @generated
    * @ordered
    */
-  protected String linkName = LINK_NAME_EDEFAULT;
+  protected String ctrlName = CTRL_NAME_EDEFAULT;
 
   /**
    * The default value of the '{@link #getBaseValue() <em>Base Value</em>}' attribute.
@@ -67,6 +68,26 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
    * @ordered
    */
   protected int baseValue = BASE_VALUE_EDEFAULT;
+
+  /**
+   * The default value of the '{@link #getUartName() <em>Uart Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getUartName()
+   * @generated
+   * @ordered
+   */
+  protected static final String UART_NAME_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getUartName() <em>Uart Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getUartName()
+   * @generated
+   * @ordered
+   */
+  protected String uartName = UART_NAME_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -94,9 +115,9 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getLinkName()
+  public String getCtrlName()
   {
-    return linkName;
+    return ctrlName;
   }
 
   /**
@@ -104,12 +125,12 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setLinkName(String newLinkName)
+  public void setCtrlName(String newCtrlName)
   {
-    String oldLinkName = linkName;
-    linkName = newLinkName;
+    String oldCtrlName = ctrlName;
+    ctrlName = newCtrlName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.LINK_PROPERTY__LINK_NAME, oldLinkName, linkName));
+      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.LINK_PROPERTY__CTRL_NAME, oldCtrlName, ctrlName));
   }
 
   /**
@@ -140,15 +161,40 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
    * <!-- end-user-doc -->
    * @generated
    */
+  public String getUartName()
+  {
+    return uartName;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setUartName(String newUartName)
+  {
+    String oldUartName = uartName;
+    uartName = newUartName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.LINK_PROPERTY__UART_NAME, oldUartName, uartName));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
     switch (featureID)
     {
-      case UlswigPackage.LINK_PROPERTY__LINK_NAME:
-        return getLinkName();
+      case UlswigPackage.LINK_PROPERTY__CTRL_NAME:
+        return getCtrlName();
       case UlswigPackage.LINK_PROPERTY__BASE_VALUE:
         return getBaseValue();
+      case UlswigPackage.LINK_PROPERTY__UART_NAME:
+        return getUartName();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -163,11 +209,14 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
   {
     switch (featureID)
     {
-      case UlswigPackage.LINK_PROPERTY__LINK_NAME:
-        setLinkName((String)newValue);
+      case UlswigPackage.LINK_PROPERTY__CTRL_NAME:
+        setCtrlName((String)newValue);
         return;
       case UlswigPackage.LINK_PROPERTY__BASE_VALUE:
         setBaseValue((Integer)newValue);
+        return;
+      case UlswigPackage.LINK_PROPERTY__UART_NAME:
+        setUartName((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -183,11 +232,14 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
   {
     switch (featureID)
     {
-      case UlswigPackage.LINK_PROPERTY__LINK_NAME:
-        setLinkName(LINK_NAME_EDEFAULT);
+      case UlswigPackage.LINK_PROPERTY__CTRL_NAME:
+        setCtrlName(CTRL_NAME_EDEFAULT);
         return;
       case UlswigPackage.LINK_PROPERTY__BASE_VALUE:
         setBaseValue(BASE_VALUE_EDEFAULT);
+        return;
+      case UlswigPackage.LINK_PROPERTY__UART_NAME:
+        setUartName(UART_NAME_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -203,10 +255,12 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
   {
     switch (featureID)
     {
-      case UlswigPackage.LINK_PROPERTY__LINK_NAME:
-        return LINK_NAME_EDEFAULT == null ? linkName != null : !LINK_NAME_EDEFAULT.equals(linkName);
+      case UlswigPackage.LINK_PROPERTY__CTRL_NAME:
+        return CTRL_NAME_EDEFAULT == null ? ctrlName != null : !CTRL_NAME_EDEFAULT.equals(ctrlName);
       case UlswigPackage.LINK_PROPERTY__BASE_VALUE:
         return baseValue != BASE_VALUE_EDEFAULT;
+      case UlswigPackage.LINK_PROPERTY__UART_NAME:
+        return UART_NAME_EDEFAULT == null ? uartName != null : !UART_NAME_EDEFAULT.equals(uartName);
     }
     return super.eIsSet(featureID);
   }
@@ -222,10 +276,12 @@ public class LinkPropertyImpl extends MinimalEObjectImpl.Container implements Li
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (linkName: ");
-    result.append(linkName);
+    result.append(" (ctrlName: ");
+    result.append(ctrlName);
     result.append(", baseValue: ");
     result.append(baseValue);
+    result.append(", uartName: ");
+    result.append(uartName);
     result.append(')');
     return result.toString();
   }

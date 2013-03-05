@@ -2,8 +2,8 @@
  */
 package dk.sdu.mmmi.embedix.ulswig.impl;
 
-import dk.sdu.mmmi.embedix.ulswig.Constructor;
-import dk.sdu.mmmi.embedix.ulswig.Robot;
+import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
+import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
 
 import java.util.Collection;
@@ -15,42 +15,40 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Robot</b></em>'.
+ * An implementation of the model object '<em><b>Simple Expansion</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.RobotImpl#getConstructors <em>Constructors</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.SimpleExpansionImpl#getBindings <em>Bindings</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
+public class SimpleExpansionImpl extends ExpansionImpl implements SimpleExpansion
 {
   /**
-   * The cached value of the '{@link #getConstructors() <em>Constructors</em>}' containment reference list.
+   * The cached value of the '{@link #getBindings() <em>Bindings</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getConstructors()
+   * @see #getBindings()
    * @generated
    * @ordered
    */
-  protected EList<Constructor> constructors;
+  protected EList<AddressBinding> bindings;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected RobotImpl()
+  protected SimpleExpansionImpl()
   {
     super();
   }
@@ -63,7 +61,7 @@ public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
   @Override
   protected EClass eStaticClass()
   {
-    return UlswigPackage.Literals.ROBOT;
+    return UlswigPackage.Literals.SIMPLE_EXPANSION;
   }
 
   /**
@@ -71,13 +69,13 @@ public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Constructor> getConstructors()
+  public EList<AddressBinding> getBindings()
   {
-    if (constructors == null)
+    if (bindings == null)
     {
-      constructors = new EObjectContainmentEList<Constructor>(Constructor.class, this, UlswigPackage.ROBOT__CONSTRUCTORS);
+      bindings = new EObjectContainmentEList<AddressBinding>(AddressBinding.class, this, UlswigPackage.SIMPLE_EXPANSION__BINDINGS);
     }
-    return constructors;
+    return bindings;
   }
 
   /**
@@ -90,8 +88,8 @@ public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
   {
     switch (featureID)
     {
-      case UlswigPackage.ROBOT__CONSTRUCTORS:
-        return ((InternalEList<?>)getConstructors()).basicRemove(otherEnd, msgs);
+      case UlswigPackage.SIMPLE_EXPANSION__BINDINGS:
+        return ((InternalEList<?>)getBindings()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -106,8 +104,8 @@ public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
   {
     switch (featureID)
     {
-      case UlswigPackage.ROBOT__CONSTRUCTORS:
-        return getConstructors();
+      case UlswigPackage.SIMPLE_EXPANSION__BINDINGS:
+        return getBindings();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -123,9 +121,9 @@ public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
   {
     switch (featureID)
     {
-      case UlswigPackage.ROBOT__CONSTRUCTORS:
-        getConstructors().clear();
-        getConstructors().addAll((Collection<? extends Constructor>)newValue);
+      case UlswigPackage.SIMPLE_EXPANSION__BINDINGS:
+        getBindings().clear();
+        getBindings().addAll((Collection<? extends AddressBinding>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -141,8 +139,8 @@ public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
   {
     switch (featureID)
     {
-      case UlswigPackage.ROBOT__CONSTRUCTORS:
-        getConstructors().clear();
+      case UlswigPackage.SIMPLE_EXPANSION__BINDINGS:
+        getBindings().clear();
         return;
     }
     super.eUnset(featureID);
@@ -158,10 +156,10 @@ public class RobotImpl extends MinimalEObjectImpl.Container implements Robot
   {
     switch (featureID)
     {
-      case UlswigPackage.ROBOT__CONSTRUCTORS:
-        return constructors != null && !constructors.isEmpty();
+      case UlswigPackage.SIMPLE_EXPANSION__BINDINGS:
+        return bindings != null && !bindings.isEmpty();
     }
     return super.eIsSet(featureID);
   }
 
-} //RobotImpl
+} //SimpleExpansionImpl

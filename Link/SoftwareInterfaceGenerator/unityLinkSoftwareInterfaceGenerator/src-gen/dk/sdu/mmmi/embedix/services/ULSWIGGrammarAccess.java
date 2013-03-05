@@ -19,20 +19,40 @@ import org.eclipse.xtext.common.services.TerminalsGrammarAccess;
 public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
-	public class RobotElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Robot");
-		private final Assignment cConstructorsAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cConstructorsConstructorParserRuleCall_0 = (RuleCall)cConstructorsAssignment.eContents().get(0);
+	public class LinkSpecElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LinkSpec");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLinkKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cSemicolonKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cConstructorsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cConstructorsConstructorParserRuleCall_3_0 = (RuleCall)cConstructorsAssignment_3.eContents().get(0);
 		
-		//Robot:
-		//	constructors+=Constructor*;
+		//LinkSpec:
+		//	"link" name=ID ";" constructors+=Constructor*;
 		public ParserRule getRule() { return rule; }
 
+		//"link" name=ID ";" constructors+=Constructor*
+		public Group getGroup() { return cGroup; }
+
+		//"link"
+		public Keyword getLinkKeyword_0() { return cLinkKeyword_0; }
+
+		//name=ID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+
+		//";"
+		public Keyword getSemicolonKeyword_2() { return cSemicolonKeyword_2; }
+
 		//constructors+=Constructor*
-		public Assignment getConstructorsAssignment() { return cConstructorsAssignment; }
+		public Assignment getConstructorsAssignment_3() { return cConstructorsAssignment_3; }
 
 		//Constructor
-		public RuleCall getConstructorsConstructorParserRuleCall_0() { return cConstructorsConstructorParserRuleCall_0; }
+		public RuleCall getConstructorsConstructorParserRuleCall_3_0() { return cConstructorsConstructorParserRuleCall_3_0; }
 	}
 
 	public class ConstructorElements extends AbstractParserRuleElementFinder {
@@ -255,6 +275,19 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 
 	public class LinkBindingElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LinkBinding");
+		private final RuleCall cTosNetLinkBindingParserRuleCall = (RuleCall)rule.eContents().get(1);
+		
+		//// Link binding
+		//LinkBinding:
+		//	TosNetLinkBinding;
+		public ParserRule getRule() { return rule; }
+
+		//TosNetLinkBinding
+		public RuleCall getTosNetLinkBindingParserRuleCall() { return cTosNetLinkBindingParserRuleCall; }
+	}
+
+	public class TosNetLinkBindingElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TosNetLinkBinding");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cTOSNETKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftParenthesisKeyword_1 = (Keyword)cGroup.eContents().get(1);
@@ -267,8 +300,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cPropertiesLinkPropertyParserRuleCall_2_1_1_0 = (RuleCall)cPropertiesAssignment_2_1_1.eContents().get(0);
 		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
-		//// Link binding
-		//LinkBinding:
+		//TosNetLinkBinding:
 		//	"TOSNET" "(" (properties+=LinkProperty ("," properties+=LinkProperty)) ")";
 		public ParserRule getRule() { return rule; }
 
@@ -310,37 +342,42 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LinkProperty");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
 		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
-		private final Keyword cLINKKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
+		private final Keyword cCTRLKeyword_0_0 = (Keyword)cGroup_0.eContents().get(0);
 		private final Keyword cEqualsSignKeyword_0_1 = (Keyword)cGroup_0.eContents().get(1);
-		private final Assignment cLinkNameAssignment_0_2 = (Assignment)cGroup_0.eContents().get(2);
-		private final RuleCall cLinkNameIDTerminalRuleCall_0_2_0 = (RuleCall)cLinkNameAssignment_0_2.eContents().get(0);
+		private final Assignment cCtrlNameAssignment_0_2 = (Assignment)cGroup_0.eContents().get(2);
+		private final RuleCall cCtrlNameIDTerminalRuleCall_0_2_0 = (RuleCall)cCtrlNameAssignment_0_2.eContents().get(0);
 		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
 		private final Keyword cBASEKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
 		private final Keyword cEqualsSignKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
 		private final Assignment cBaseValueAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
 		private final RuleCall cBaseValueINTTerminalRuleCall_1_2_0 = (RuleCall)cBaseValueAssignment_1_2.eContents().get(0);
+		private final Group cGroup_2 = (Group)cAlternatives.eContents().get(2);
+		private final Keyword cUARTKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Keyword cEqualsSignKeyword_2_1 = (Keyword)cGroup_2.eContents().get(1);
+		private final Assignment cUartNameAssignment_2_2 = (Assignment)cGroup_2.eContents().get(2);
+		private final RuleCall cUartNameIDTerminalRuleCall_2_2_0 = (RuleCall)cUartNameAssignment_2_2.eContents().get(0);
 		
 		//LinkProperty:
-		//	"LINK" "=" linkName=ID | "BASE" "=" baseValue=INT;
+		//	"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "UART" "=" uartName=ID;
 		public ParserRule getRule() { return rule; }
 
-		//"LINK" "=" linkName=ID | "BASE" "=" baseValue=INT
+		//"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "UART" "=" uartName=ID
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//"LINK" "=" linkName=ID
+		//"CTRL" "=" ctrlName=ID
 		public Group getGroup_0() { return cGroup_0; }
 
-		//"LINK"
-		public Keyword getLINKKeyword_0_0() { return cLINKKeyword_0_0; }
+		//"CTRL"
+		public Keyword getCTRLKeyword_0_0() { return cCTRLKeyword_0_0; }
 
 		//"="
 		public Keyword getEqualsSignKeyword_0_1() { return cEqualsSignKeyword_0_1; }
 
-		//linkName=ID
-		public Assignment getLinkNameAssignment_0_2() { return cLinkNameAssignment_0_2; }
+		//ctrlName=ID
+		public Assignment getCtrlNameAssignment_0_2() { return cCtrlNameAssignment_0_2; }
 
 		//ID
-		public RuleCall getLinkNameIDTerminalRuleCall_0_2_0() { return cLinkNameIDTerminalRuleCall_0_2_0; }
+		public RuleCall getCtrlNameIDTerminalRuleCall_0_2_0() { return cCtrlNameIDTerminalRuleCall_0_2_0; }
 
 		//"BASE" "=" baseValue=INT
 		public Group getGroup_1() { return cGroup_1; }
@@ -356,13 +393,49 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 
 		//INT
 		public RuleCall getBaseValueINTTerminalRuleCall_1_2_0() { return cBaseValueINTTerminalRuleCall_1_2_0; }
+
+		//"UART" "=" uartName=ID
+		public Group getGroup_2() { return cGroup_2; }
+
+		//"UART"
+		public Keyword getUARTKeyword_2_0() { return cUARTKeyword_2_0; }
+
+		//"="
+		public Keyword getEqualsSignKeyword_2_1() { return cEqualsSignKeyword_2_1; }
+
+		//uartName=ID
+		public Assignment getUartNameAssignment_2_2() { return cUartNameAssignment_2_2; }
+
+		//ID
+		public RuleCall getUartNameIDTerminalRuleCall_2_2_0() { return cUartNameIDTerminalRuleCall_2_2_0; }
 	}
 
 	public class ExpansionElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Expansion");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cSimpleExpansionParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cAddressExpansionParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//// Expansion (application of a constructor)
+		//Expansion:
+		//	SimpleExpansion | AddressExpansion;
+		public ParserRule getRule() { return rule; }
+
+		//SimpleExpansion | AddressExpansion
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//SimpleExpansion
+		public RuleCall getSimpleExpansionParserRuleCall_0() { return cSimpleExpansionParserRuleCall_0; }
+
+		//AddressExpansion
+		public RuleCall getAddressExpansionParserRuleCall_1() { return cAddressExpansionParserRuleCall_1; }
+	}
+
+	public class SimpleExpansionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SimpleExpansion");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cIdentifierAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cIdentifierExpansionNameParserRuleCall_0_0 = (RuleCall)cIdentifierAssignment_0.eContents().get(0);
+		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
 		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cConstructorAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final CrossReference cConstructorConstructorCrossReference_2_0 = (CrossReference)cConstructorAssignment_2.eContents().get(0);
@@ -384,21 +457,20 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cBindingsAssignment_6_1_1 = (Assignment)cGroup_6_1.eContents().get(1);
 		private final RuleCall cBindingsAddressBindingParserRuleCall_6_1_1_0 = (RuleCall)cBindingsAssignment_6_1_1.eContents().get(0);
 		
-		//// Expansion (application of a constructor)
-		//Expansion:
-		//	identifier=ExpansionName ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")"
+		//SimpleExpansion:
+		//	name=ID ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")"
 		//	(bindings+=AddressBinding ("," bindings+=AddressBinding)*)?;
 		public ParserRule getRule() { return rule; }
 
-		//identifier=ExpansionName ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")"
+		//name=ID ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")"
 		//(bindings+=AddressBinding ("," bindings+=AddressBinding)*)?
 		public Group getGroup() { return cGroup; }
 
-		//identifier=ExpansionName
-		public Assignment getIdentifierAssignment_0() { return cIdentifierAssignment_0; }
+		//name=ID
+		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
 
-		//ExpansionName
-		public RuleCall getIdentifierExpansionNameParserRuleCall_0_0() { return cIdentifierExpansionNameParserRuleCall_0_0; }
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_0_0() { return cNameIDTerminalRuleCall_0_0; }
 
 		//":"
 		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
@@ -461,54 +533,31 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		public RuleCall getBindingsAddressBindingParserRuleCall_6_1_1_0() { return cBindingsAddressBindingParserRuleCall_6_1_1_0; }
 	}
 
-	public class ExpansionNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ExpansionName");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cSimpleExpansionNameParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cAddressExpansionNameParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//ExpansionName:
-		//	SimpleExpansionName | AddressExpansionName;
-		public ParserRule getRule() { return rule; }
-
-		//SimpleExpansionName | AddressExpansionName
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//SimpleExpansionName
-		public RuleCall getSimpleExpansionNameParserRuleCall_0() { return cSimpleExpansionNameParserRuleCall_0; }
-
-		//AddressExpansionName
-		public RuleCall getAddressExpansionNameParserRuleCall_1() { return cAddressExpansionNameParserRuleCall_1; }
-	}
-
-	public class SimpleExpansionNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "SimpleExpansionName");
-		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_0 = (RuleCall)cNameAssignment.eContents().get(0);
-		
-		//SimpleExpansionName:
-		//	name=ID;
-		public ParserRule getRule() { return rule; }
-
-		//name=ID
-		public Assignment getNameAssignment() { return cNameAssignment; }
-
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_0() { return cNameIDTerminalRuleCall_0; }
-	}
-
-	public class AddressExpansionNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AddressExpansionName");
+	public class AddressExpansionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "AddressExpansion");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cCommercialAtKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cColonKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cConstructorAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final CrossReference cConstructorConstructorCrossReference_3_0 = (CrossReference)cConstructorAssignment_3.eContents().get(0);
+		private final RuleCall cConstructorConstructorIDTerminalRuleCall_3_0_1 = (RuleCall)cConstructorConstructorCrossReference_3_0.eContents().get(1);
+		private final Keyword cLeftParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Group cGroup_5 = (Group)cGroup.eContents().get(5);
+		private final Assignment cArgumentsAssignment_5_0 = (Assignment)cGroup_5.eContents().get(0);
+		private final RuleCall cArgumentsArgumentParserRuleCall_5_0_0 = (RuleCall)cArgumentsAssignment_5_0.eContents().get(0);
+		private final Group cGroup_5_1 = (Group)cGroup_5.eContents().get(1);
+		private final Keyword cCommaKeyword_5_1_0 = (Keyword)cGroup_5_1.eContents().get(0);
+		private final Assignment cArgumentsAssignment_5_1_1 = (Assignment)cGroup_5_1.eContents().get(1);
+		private final RuleCall cArgumentsArgumentParserRuleCall_5_1_1_0 = (RuleCall)cArgumentsAssignment_5_1_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
-		//AddressExpansionName:
-		//	"@" name=ID;
+		//AddressExpansion:
+		//	"@" name=ID ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")";
 		public ParserRule getRule() { return rule; }
 
-		//"@" name=ID
+		//"@" name=ID ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")"
 		public Group getGroup() { return cGroup; }
 
 		//"@"
@@ -519,6 +568,45 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+
+		//":"
+		public Keyword getColonKeyword_2() { return cColonKeyword_2; }
+
+		//constructor=[Constructor]
+		public Assignment getConstructorAssignment_3() { return cConstructorAssignment_3; }
+
+		//[Constructor]
+		public CrossReference getConstructorConstructorCrossReference_3_0() { return cConstructorConstructorCrossReference_3_0; }
+
+		//ID
+		public RuleCall getConstructorConstructorIDTerminalRuleCall_3_0_1() { return cConstructorConstructorIDTerminalRuleCall_3_0_1; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_4() { return cLeftParenthesisKeyword_4; }
+
+		//(arguments+=Argument ("," arguments+=Argument)*)?
+		public Group getGroup_5() { return cGroup_5; }
+
+		//arguments+=Argument
+		public Assignment getArgumentsAssignment_5_0() { return cArgumentsAssignment_5_0; }
+
+		//Argument
+		public RuleCall getArgumentsArgumentParserRuleCall_5_0_0() { return cArgumentsArgumentParserRuleCall_5_0_0; }
+
+		//("," arguments+=Argument)*
+		public Group getGroup_5_1() { return cGroup_5_1; }
+
+		//","
+		public Keyword getCommaKeyword_5_1_0() { return cCommaKeyword_5_1_0; }
+
+		//arguments+=Argument
+		public Assignment getArgumentsAssignment_5_1_1() { return cArgumentsAssignment_5_1_1; }
+
+		//Argument
+		public RuleCall getArgumentsArgumentParserRuleCall_5_1_1_0() { return cArgumentsArgumentParserRuleCall_5_1_1_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_6() { return cRightParenthesisKeyword_6; }
 	}
 
 	public class ArgumentElements extends AbstractParserRuleElementFinder {
@@ -1018,16 +1106,16 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	}
 	
 	
-	private RobotElements pRobot;
+	private LinkSpecElements pLinkSpec;
 	private ConstructorElements pConstructor;
 	private AddressElements pAddress;
 	private MemberElements pMember;
 	private LinkBindingElements pLinkBinding;
+	private TosNetLinkBindingElements pTosNetLinkBinding;
 	private LinkPropertyElements pLinkProperty;
 	private ExpansionElements pExpansion;
-	private ExpansionNameElements pExpansionName;
-	private SimpleExpansionNameElements pSimpleExpansionName;
-	private AddressExpansionNameElements pAddressExpansionName;
+	private SimpleExpansionElements pSimpleExpansion;
+	private AddressExpansionElements pAddressExpansion;
 	private ArgumentElements pArgument;
 	private AddressBindingElements pAddressBinding;
 	private InstantiationElements pInstantiation;
@@ -1079,14 +1167,14 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	//Robot:
-	//	constructors+=Constructor*;
-	public RobotElements getRobotAccess() {
-		return (pRobot != null) ? pRobot : (pRobot = new RobotElements());
+	//LinkSpec:
+	//	"link" name=ID ";" constructors+=Constructor*;
+	public LinkSpecElements getLinkSpecAccess() {
+		return (pLinkSpec != null) ? pLinkSpec : (pLinkSpec = new LinkSpecElements());
 	}
 	
-	public ParserRule getRobotRule() {
-		return getRobotAccess().getRule();
+	public ParserRule getLinkSpecRule() {
+		return getLinkSpecAccess().getRule();
 	}
 
 	//Constructor:
@@ -1122,7 +1210,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 
 	//// Link binding
 	//LinkBinding:
-	//	"TOSNET" "(" (properties+=LinkProperty ("," properties+=LinkProperty)) ")";
+	//	TosNetLinkBinding;
 	public LinkBindingElements getLinkBindingAccess() {
 		return (pLinkBinding != null) ? pLinkBinding : (pLinkBinding = new LinkBindingElements());
 	}
@@ -1131,8 +1219,18 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		return getLinkBindingAccess().getRule();
 	}
 
+	//TosNetLinkBinding:
+	//	"TOSNET" "(" (properties+=LinkProperty ("," properties+=LinkProperty)) ")";
+	public TosNetLinkBindingElements getTosNetLinkBindingAccess() {
+		return (pTosNetLinkBinding != null) ? pTosNetLinkBinding : (pTosNetLinkBinding = new TosNetLinkBindingElements());
+	}
+	
+	public ParserRule getTosNetLinkBindingRule() {
+		return getTosNetLinkBindingAccess().getRule();
+	}
+
 	//LinkProperty:
-	//	"LINK" "=" linkName=ID | "BASE" "=" baseValue=INT;
+	//	"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "UART" "=" uartName=ID;
 	public LinkPropertyElements getLinkPropertyAccess() {
 		return (pLinkProperty != null) ? pLinkProperty : (pLinkProperty = new LinkPropertyElements());
 	}
@@ -1143,8 +1241,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 
 	//// Expansion (application of a constructor)
 	//Expansion:
-	//	identifier=ExpansionName ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")"
-	//	(bindings+=AddressBinding ("," bindings+=AddressBinding)*)?;
+	//	SimpleExpansion | AddressExpansion;
 	public ExpansionElements getExpansionAccess() {
 		return (pExpansion != null) ? pExpansion : (pExpansion = new ExpansionElements());
 	}
@@ -1153,34 +1250,25 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		return getExpansionAccess().getRule();
 	}
 
-	//ExpansionName:
-	//	SimpleExpansionName | AddressExpansionName;
-	public ExpansionNameElements getExpansionNameAccess() {
-		return (pExpansionName != null) ? pExpansionName : (pExpansionName = new ExpansionNameElements());
+	//SimpleExpansion:
+	//	name=ID ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")"
+	//	(bindings+=AddressBinding ("," bindings+=AddressBinding)*)?;
+	public SimpleExpansionElements getSimpleExpansionAccess() {
+		return (pSimpleExpansion != null) ? pSimpleExpansion : (pSimpleExpansion = new SimpleExpansionElements());
 	}
 	
-	public ParserRule getExpansionNameRule() {
-		return getExpansionNameAccess().getRule();
+	public ParserRule getSimpleExpansionRule() {
+		return getSimpleExpansionAccess().getRule();
 	}
 
-	//SimpleExpansionName:
-	//	name=ID;
-	public SimpleExpansionNameElements getSimpleExpansionNameAccess() {
-		return (pSimpleExpansionName != null) ? pSimpleExpansionName : (pSimpleExpansionName = new SimpleExpansionNameElements());
+	//AddressExpansion:
+	//	"@" name=ID ":" constructor=[Constructor] "(" (arguments+=Argument ("," arguments+=Argument)*)? ")";
+	public AddressExpansionElements getAddressExpansionAccess() {
+		return (pAddressExpansion != null) ? pAddressExpansion : (pAddressExpansion = new AddressExpansionElements());
 	}
 	
-	public ParserRule getSimpleExpansionNameRule() {
-		return getSimpleExpansionNameAccess().getRule();
-	}
-
-	//AddressExpansionName:
-	//	"@" name=ID;
-	public AddressExpansionNameElements getAddressExpansionNameAccess() {
-		return (pAddressExpansionName != null) ? pAddressExpansionName : (pAddressExpansionName = new AddressExpansionNameElements());
-	}
-	
-	public ParserRule getAddressExpansionNameRule() {
-		return getAddressExpansionNameAccess().getRule();
+	public ParserRule getAddressExpansionRule() {
+		return getAddressExpansionAccess().getRule();
 	}
 
 	//Argument:

@@ -72,10 +72,10 @@ public class UlswigSwitch<T> extends Switch<T>
   {
     switch (classifierID)
     {
-      case UlswigPackage.ROBOT:
+      case UlswigPackage.LINK_SPEC:
       {
-        Robot robot = (Robot)theEObject;
-        T result = caseRobot(robot);
+        LinkSpec linkSpec = (LinkSpec)theEObject;
+        T result = caseLinkSpec(linkSpec);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -108,6 +108,15 @@ public class UlswigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case UlswigPackage.TOS_NET_LINK_BINDING:
+      {
+        TosNetLinkBinding tosNetLinkBinding = (TosNetLinkBinding)theEObject;
+        T result = caseTosNetLinkBinding(tosNetLinkBinding);
+        if (result == null) result = caseLinkBinding(tosNetLinkBinding);
+        if (result == null) result = caseMember(tosNetLinkBinding);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case UlswigPackage.LINK_PROPERTY:
       {
         LinkProperty linkProperty = (LinkProperty)theEObject;
@@ -123,26 +132,21 @@ public class UlswigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case UlswigPackage.EXPANSION_NAME:
+      case UlswigPackage.SIMPLE_EXPANSION:
       {
-        ExpansionName expansionName = (ExpansionName)theEObject;
-        T result = caseExpansionName(expansionName);
+        SimpleExpansion simpleExpansion = (SimpleExpansion)theEObject;
+        T result = caseSimpleExpansion(simpleExpansion);
+        if (result == null) result = caseExpansion(simpleExpansion);
+        if (result == null) result = caseMember(simpleExpansion);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case UlswigPackage.SIMPLE_EXPANSION_NAME:
+      case UlswigPackage.ADDRESS_EXPANSION:
       {
-        SimpleExpansionName simpleExpansionName = (SimpleExpansionName)theEObject;
-        T result = caseSimpleExpansionName(simpleExpansionName);
-        if (result == null) result = caseExpansionName(simpleExpansionName);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case UlswigPackage.ADDRESS_EXPANSION_NAME:
-      {
-        AddressExpansionName addressExpansionName = (AddressExpansionName)theEObject;
-        T result = caseAddressExpansionName(addressExpansionName);
-        if (result == null) result = caseExpansionName(addressExpansionName);
+        AddressExpansion addressExpansion = (AddressExpansion)theEObject;
+        T result = caseAddressExpansion(addressExpansion);
+        if (result == null) result = caseExpansion(addressExpansion);
+        if (result == null) result = caseMember(addressExpansion);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -249,17 +253,17 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Robot</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Link Spec</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Robot</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Link Spec</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseRobot(Robot object)
+  public T caseLinkSpec(LinkSpec object)
   {
     return null;
   }
@@ -329,6 +333,22 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Tos Net Link Binding</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Tos Net Link Binding</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseTosNetLinkBinding(TosNetLinkBinding object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Link Property</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -361,49 +381,33 @@ public class UlswigSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Expansion Name</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Simple Expansion</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Expansion Name</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Simple Expansion</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseExpansionName(ExpansionName object)
+  public T caseSimpleExpansion(SimpleExpansion object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Simple Expansion Name</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Address Expansion</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Simple Expansion Name</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Address Expansion</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseSimpleExpansionName(SimpleExpansionName object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Address Expansion Name</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Address Expansion Name</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseAddressExpansionName(AddressExpansionName object)
+  public T caseAddressExpansion(AddressExpansion object)
   {
     return null;
   }

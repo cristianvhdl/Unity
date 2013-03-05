@@ -64,16 +64,16 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
   {
     switch (eClass.getClassifierID())
     {
-      case UlswigPackage.ROBOT: return createRobot();
+      case UlswigPackage.LINK_SPEC: return createLinkSpec();
       case UlswigPackage.CONSTRUCTOR: return createConstructor();
       case UlswigPackage.ADDRESS: return createAddress();
       case UlswigPackage.MEMBER: return createMember();
       case UlswigPackage.LINK_BINDING: return createLinkBinding();
+      case UlswigPackage.TOS_NET_LINK_BINDING: return createTosNetLinkBinding();
       case UlswigPackage.LINK_PROPERTY: return createLinkProperty();
       case UlswigPackage.EXPANSION: return createExpansion();
-      case UlswigPackage.EXPANSION_NAME: return createExpansionName();
-      case UlswigPackage.SIMPLE_EXPANSION_NAME: return createSimpleExpansionName();
-      case UlswigPackage.ADDRESS_EXPANSION_NAME: return createAddressExpansionName();
+      case UlswigPackage.SIMPLE_EXPANSION: return createSimpleExpansion();
+      case UlswigPackage.ADDRESS_EXPANSION: return createAddressExpansion();
       case UlswigPackage.ARGUMENT: return createArgument();
       case UlswigPackage.ADDRESS_BINDING: return createAddressBinding();
       case UlswigPackage.INSTANTIATION: return createInstantiation();
@@ -97,10 +97,10 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Robot createRobot()
+  public LinkSpec createLinkSpec()
   {
-    RobotImpl robot = new RobotImpl();
-    return robot;
+    LinkSpecImpl linkSpec = new LinkSpecImpl();
+    return linkSpec;
   }
 
   /**
@@ -152,6 +152,17 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
+  public TosNetLinkBinding createTosNetLinkBinding()
+  {
+    TosNetLinkBindingImpl tosNetLinkBinding = new TosNetLinkBindingImpl();
+    return tosNetLinkBinding;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public LinkProperty createLinkProperty()
   {
     LinkPropertyImpl linkProperty = new LinkPropertyImpl();
@@ -174,10 +185,10 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public ExpansionName createExpansionName()
+  public SimpleExpansion createSimpleExpansion()
   {
-    ExpansionNameImpl expansionName = new ExpansionNameImpl();
-    return expansionName;
+    SimpleExpansionImpl simpleExpansion = new SimpleExpansionImpl();
+    return simpleExpansion;
   }
 
   /**
@@ -185,21 +196,10 @@ public class UlswigFactoryImpl extends EFactoryImpl implements UlswigFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public SimpleExpansionName createSimpleExpansionName()
+  public AddressExpansion createAddressExpansion()
   {
-    SimpleExpansionNameImpl simpleExpansionName = new SimpleExpansionNameImpl();
-    return simpleExpansionName;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public AddressExpansionName createAddressExpansionName()
-  {
-    AddressExpansionNameImpl addressExpansionName = new AddressExpansionNameImpl();
-    return addressExpansionName;
+    AddressExpansionImpl addressExpansion = new AddressExpansionImpl();
+    return addressExpansion;
   }
 
   /**

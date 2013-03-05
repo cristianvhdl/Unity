@@ -2,8 +2,8 @@ grammar dk.sdu.mmmi.embedix.ULSWIG with org.eclipse.xtext.common.Terminals
 
 generate ulswig "http://www.sdu.dk/mmmi/embedix/ULSWIG"
 
-Robot:
-	constructors+=Constructor*;
+LinkSpec:
+	'link' name=ID ';' constructors+=Constructor*;
 	
 Constructor:
 	(isPublic?="public")? name=ID '(' (parameters+=ID (',' parameters += ID)*)? ')' 
@@ -22,32 +22,32 @@ Member:
 // Link binding
 
 LinkBinding:
-	'TOSNET' '(' (properties+=LinkProperty (',' properties+=LinkProperty)) ')'
+	TosNetLinkBinding
+;
+
+TosNetLinkBinding:
+	'TOSNET' '(' properties+=LinkProperty (',' properties+=LinkProperty)* ')'
 ;
 
 LinkProperty:
-	'LINK' '=' linkName=ID |
-	'BASE' '=' baseValue=INT
+	'CTRL' '=' ctrlName=ID |
+	'BASE' '=' baseValue=INT |
+	'UART' '=' uartName=ID
 ;
 
 // Expansion (application of a constructor)
 
 Expansion:
-	identifier=ExpansionName ':' constructor=[Constructor] '(' (arguments+=Argument (',' arguments+=Argument)*)? ')'
+	SimpleExpansion | AddressExpansion
+;
+
+SimpleExpansion:
+	name=ID ':' constructor=[Constructor] '(' (arguments+=Argument (',' arguments+=Argument)*)? ')'
 	(bindings+=AddressBinding (',' bindings+=AddressBinding)*)?
 ;
 
-ExpansionName:
-	SimpleExpansionName |
-	AddressExpansionName 
-;
-
-SimpleExpansionName:
-	name=ID
-;
-
-AddressExpansionName:
-	'@' name=ID
+AddressExpansion:
+	'@' name=ID ':' constructor=[Constructor] '(' (arguments+=Argument (',' arguments+=Argument)*)? ')'
 ;
 
 Argument:

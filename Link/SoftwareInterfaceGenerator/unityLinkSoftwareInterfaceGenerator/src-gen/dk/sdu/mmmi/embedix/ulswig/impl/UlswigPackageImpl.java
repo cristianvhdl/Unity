@@ -4,14 +4,13 @@ package dk.sdu.mmmi.embedix.ulswig.impl;
 
 import dk.sdu.mmmi.embedix.ulswig.Address;
 import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
-import dk.sdu.mmmi.embedix.ulswig.AddressExpansionName;
+import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
 import dk.sdu.mmmi.embedix.ulswig.AddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
 import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Expansion;
-import dk.sdu.mmmi.embedix.ulswig.ExpansionName;
 import dk.sdu.mmmi.embedix.ulswig.GroupElement;
 import dk.sdu.mmmi.embedix.ulswig.Grouping;
 import dk.sdu.mmmi.embedix.ulswig.IDProperty;
@@ -19,12 +18,13 @@ import dk.sdu.mmmi.embedix.ulswig.Instantiation;
 import dk.sdu.mmmi.embedix.ulswig.InstantiationProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
+import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.Member;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.PathElement;
 import dk.sdu.mmmi.embedix.ulswig.PublishPoperty;
-import dk.sdu.mmmi.embedix.ulswig.Robot;
-import dk.sdu.mmmi.embedix.ulswig.SimpleExpansionName;
+import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
+import dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.UlswigFactory;
 import dk.sdu.mmmi.embedix.ulswig.UlswigPackage;
 
@@ -48,7 +48,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass robotEClass = null;
+  private EClass linkSpecEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -83,6 +83,13 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass tosNetLinkBindingEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass linkPropertyEClass = null;
 
   /**
@@ -97,21 +104,14 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass expansionNameEClass = null;
+  private EClass simpleExpansionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass simpleExpansionNameEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass addressExpansionNameEClass = null;
+  private EClass addressExpansionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -272,9 +272,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getRobot()
+  public EClass getLinkSpec()
   {
-    return robotEClass;
+    return linkSpecEClass;
   }
 
   /**
@@ -282,9 +282,19 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getRobot_Constructors()
+  public EAttribute getLinkSpec_Name()
   {
-    return (EReference)robotEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)linkSpecEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getLinkSpec_Constructors()
+  {
+    return (EReference)linkSpecEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -402,9 +412,19 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getLinkBinding_Properties()
+  public EClass getTosNetLinkBinding()
   {
-    return (EReference)linkBindingEClass.getEStructuralFeatures().get(0);
+    return tosNetLinkBindingEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getTosNetLinkBinding_Properties()
+  {
+    return (EReference)tosNetLinkBindingEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -422,7 +442,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getLinkProperty_LinkName()
+  public EAttribute getLinkProperty_CtrlName()
   {
     return (EAttribute)linkPropertyEClass.getEStructuralFeatures().get(0);
   }
@@ -442,6 +462,16 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getLinkProperty_UartName()
+  {
+    return (EAttribute)linkPropertyEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getExpansion()
   {
     return expansionEClass;
@@ -452,9 +482,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getExpansion_Identifier()
+  public EAttribute getExpansion_Name()
   {
-    return (EReference)expansionEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)expansionEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -482,9 +512,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getExpansion_Bindings()
+  public EClass getSimpleExpansion()
   {
-    return (EReference)expansionEClass.getEStructuralFeatures().get(3);
+    return simpleExpansionEClass;
   }
 
   /**
@@ -492,9 +522,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getExpansionName()
+  public EReference getSimpleExpansion_Bindings()
   {
-    return expansionNameEClass;
+    return (EReference)simpleExpansionEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -502,29 +532,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getExpansionName_Name()
+  public EClass getAddressExpansion()
   {
-    return (EAttribute)expansionNameEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getSimpleExpansionName()
-  {
-    return simpleExpansionNameEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getAddressExpansionName()
-  {
-    return addressExpansionNameEClass;
+    return addressExpansionEClass;
   }
 
   /**
@@ -877,8 +887,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     isCreated = true;
 
     // Create classes and their features
-    robotEClass = createEClass(ROBOT);
-    createEReference(robotEClass, ROBOT__CONSTRUCTORS);
+    linkSpecEClass = createEClass(LINK_SPEC);
+    createEAttribute(linkSpecEClass, LINK_SPEC__NAME);
+    createEReference(linkSpecEClass, LINK_SPEC__CONSTRUCTORS);
 
     constructorEClass = createEClass(CONSTRUCTOR);
     createEAttribute(constructorEClass, CONSTRUCTOR__IS_PUBLIC);
@@ -894,24 +905,24 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     memberEClass = createEClass(MEMBER);
 
     linkBindingEClass = createEClass(LINK_BINDING);
-    createEReference(linkBindingEClass, LINK_BINDING__PROPERTIES);
+
+    tosNetLinkBindingEClass = createEClass(TOS_NET_LINK_BINDING);
+    createEReference(tosNetLinkBindingEClass, TOS_NET_LINK_BINDING__PROPERTIES);
 
     linkPropertyEClass = createEClass(LINK_PROPERTY);
-    createEAttribute(linkPropertyEClass, LINK_PROPERTY__LINK_NAME);
+    createEAttribute(linkPropertyEClass, LINK_PROPERTY__CTRL_NAME);
     createEAttribute(linkPropertyEClass, LINK_PROPERTY__BASE_VALUE);
+    createEAttribute(linkPropertyEClass, LINK_PROPERTY__UART_NAME);
 
     expansionEClass = createEClass(EXPANSION);
-    createEReference(expansionEClass, EXPANSION__IDENTIFIER);
+    createEAttribute(expansionEClass, EXPANSION__NAME);
     createEReference(expansionEClass, EXPANSION__CONSTRUCTOR);
     createEReference(expansionEClass, EXPANSION__ARGUMENTS);
-    createEReference(expansionEClass, EXPANSION__BINDINGS);
 
-    expansionNameEClass = createEClass(EXPANSION_NAME);
-    createEAttribute(expansionNameEClass, EXPANSION_NAME__NAME);
+    simpleExpansionEClass = createEClass(SIMPLE_EXPANSION);
+    createEReference(simpleExpansionEClass, SIMPLE_EXPANSION__BINDINGS);
 
-    simpleExpansionNameEClass = createEClass(SIMPLE_EXPANSION_NAME);
-
-    addressExpansionNameEClass = createEClass(ADDRESS_EXPANSION_NAME);
+    addressExpansionEClass = createEClass(ADDRESS_EXPANSION);
 
     argumentEClass = createEClass(ARGUMENT);
     createEAttribute(argumentEClass, ARGUMENT__SIMPLE);
@@ -989,9 +1000,10 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
 
     // Add supertypes to classes
     linkBindingEClass.getESuperTypes().add(this.getMember());
+    tosNetLinkBindingEClass.getESuperTypes().add(this.getLinkBinding());
     expansionEClass.getESuperTypes().add(this.getMember());
-    simpleExpansionNameEClass.getESuperTypes().add(this.getExpansionName());
-    addressExpansionNameEClass.getESuperTypes().add(this.getExpansionName());
+    simpleExpansionEClass.getESuperTypes().add(this.getExpansion());
+    addressExpansionEClass.getESuperTypes().add(this.getExpansion());
     instantiationEClass.getESuperTypes().add(this.getMember());
     directAddressSpecEClass.getESuperTypes().add(this.getAddressSpec());
     namedAddressSpecEClass.getESuperTypes().add(this.getAddressSpec());
@@ -1001,8 +1013,9 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     publishPopertyEClass.getESuperTypes().add(this.getInstantiationProperty());
 
     // Initialize classes and features; add operations and parameters
-    initEClass(robotEClass, Robot.class, "Robot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getRobot_Constructors(), this.getConstructor(), null, "constructors", null, 0, -1, Robot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(linkSpecEClass, LinkSpec.class, "LinkSpec", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getLinkSpec_Name(), ecorePackage.getEString(), "name", null, 0, 1, LinkSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getLinkSpec_Constructors(), this.getConstructor(), null, "constructors", null, 0, -1, LinkSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(constructorEClass, Constructor.class, "Constructor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getConstructor_IsPublic(), ecorePackage.getEBoolean(), "isPublic", null, 0, 1, Constructor.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1018,24 +1031,24 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
     initEClass(memberEClass, Member.class, "Member", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(linkBindingEClass, LinkBinding.class, "LinkBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getLinkBinding_Properties(), this.getLinkProperty(), null, "properties", null, 0, -1, LinkBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(tosNetLinkBindingEClass, TosNetLinkBinding.class, "TosNetLinkBinding", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getTosNetLinkBinding_Properties(), this.getLinkProperty(), null, "properties", null, 0, -1, TosNetLinkBinding.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(linkPropertyEClass, LinkProperty.class, "LinkProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getLinkProperty_LinkName(), ecorePackage.getEString(), "linkName", null, 0, 1, LinkProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getLinkProperty_CtrlName(), ecorePackage.getEString(), "ctrlName", null, 0, 1, LinkProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getLinkProperty_BaseValue(), ecorePackage.getEInt(), "baseValue", null, 0, 1, LinkProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getLinkProperty_UartName(), ecorePackage.getEString(), "uartName", null, 0, 1, LinkProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(expansionEClass, Expansion.class, "Expansion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpansion_Identifier(), this.getExpansionName(), null, "identifier", null, 0, 1, Expansion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getExpansion_Name(), ecorePackage.getEString(), "name", null, 0, 1, Expansion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getExpansion_Constructor(), this.getConstructor(), null, "constructor", null, 0, 1, Expansion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getExpansion_Arguments(), this.getArgument(), null, "arguments", null, 0, -1, Expansion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpansion_Bindings(), this.getAddressBinding(), null, "bindings", null, 0, -1, Expansion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(expansionNameEClass, ExpansionName.class, "ExpansionName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getExpansionName_Name(), ecorePackage.getEString(), "name", null, 0, 1, ExpansionName.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(simpleExpansionEClass, SimpleExpansion.class, "SimpleExpansion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getSimpleExpansion_Bindings(), this.getAddressBinding(), null, "bindings", null, 0, -1, SimpleExpansion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(simpleExpansionNameEClass, SimpleExpansionName.class, "SimpleExpansionName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    initEClass(addressExpansionNameEClass, AddressExpansionName.class, "AddressExpansionName", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(addressExpansionEClass, AddressExpansion.class, "AddressExpansion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(argumentEClass, Argument.class, "Argument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getArgument_Simple(), ecorePackage.getEString(), "simple", null, 0, 1, Argument.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

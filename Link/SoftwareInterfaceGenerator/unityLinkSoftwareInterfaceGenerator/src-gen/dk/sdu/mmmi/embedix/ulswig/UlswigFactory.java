@@ -23,13 +23,13 @@ public interface UlswigFactory extends EFactory
   UlswigFactory eINSTANCE = dk.sdu.mmmi.embedix.ulswig.impl.UlswigFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>Robot</em>'.
+   * Returns a new object of class '<em>Link Spec</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Robot</em>'.
+   * @return a new object of class '<em>Link Spec</em>'.
    * @generated
    */
-  Robot createRobot();
+  LinkSpec createLinkSpec();
 
   /**
    * Returns a new object of class '<em>Constructor</em>'.
@@ -68,6 +68,15 @@ public interface UlswigFactory extends EFactory
   LinkBinding createLinkBinding();
 
   /**
+   * Returns a new object of class '<em>Tos Net Link Binding</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Tos Net Link Binding</em>'.
+   * @generated
+   */
+  TosNetLinkBinding createTosNetLinkBinding();
+
+  /**
    * Returns a new object of class '<em>Link Property</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -86,31 +95,22 @@ public interface UlswigFactory extends EFactory
   Expansion createExpansion();
 
   /**
-   * Returns a new object of class '<em>Expansion Name</em>'.
+   * Returns a new object of class '<em>Simple Expansion</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Expansion Name</em>'.
+   * @return a new object of class '<em>Simple Expansion</em>'.
    * @generated
    */
-  ExpansionName createExpansionName();
+  SimpleExpansion createSimpleExpansion();
 
   /**
-   * Returns a new object of class '<em>Simple Expansion Name</em>'.
+   * Returns a new object of class '<em>Address Expansion</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Simple Expansion Name</em>'.
+   * @return a new object of class '<em>Address Expansion</em>'.
    * @generated
    */
-  SimpleExpansionName createSimpleExpansionName();
-
-  /**
-   * Returns a new object of class '<em>Address Expansion Name</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Address Expansion Name</em>'.
-   * @generated
-   */
-  AddressExpansionName createAddressExpansionName();
+  AddressExpansion createAddressExpansion();
 
   /**
    * Returns a new object of class '<em>Argument</em>'.

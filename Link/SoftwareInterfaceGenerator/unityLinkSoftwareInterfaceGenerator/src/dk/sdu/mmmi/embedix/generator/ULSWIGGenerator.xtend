@@ -6,10 +6,16 @@ package dk.sdu.mmmi.embedix.generator
 import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.IGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess
+import dk.sdu.mmmi.embedix.ulswig.LinkSpec
 
 class ULSWIGGenerator implements IGenerator {
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-		//TODO implement me
+		for(e: resource.getAllContents().toIterable().filter(typeof(LinkSpec))) {
+			fsa.generateFile("unitylink/python/"+e.name + ".py",e.compile)
+		}
 	}
+	
+	def compile(LinkSpec spec) { return new PythonCompiler().generate(spec) }
+
 }

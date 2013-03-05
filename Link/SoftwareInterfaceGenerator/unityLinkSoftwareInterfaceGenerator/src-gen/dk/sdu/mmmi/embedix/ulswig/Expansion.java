@@ -12,10 +12,9 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getIdentifier <em>Identifier</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getName <em>Name</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getConstructor <em>Constructor</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getArguments <em>Arguments</em>}</li>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getBindings <em>Bindings</em>}</li>
  * </ul>
  * </p>
  *
@@ -26,30 +25,30 @@ import org.eclipse.emf.common.util.EList;
 public interface Expansion extends Member
 {
   /**
-   * Returns the value of the '<em><b>Identifier</b></em>' containment reference.
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Identifier</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Name</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Identifier</em>' containment reference.
-   * @see #setIdentifier(ExpansionName)
-   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getExpansion_Identifier()
-   * @model containment="true"
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getExpansion_Name()
+   * @model
    * @generated
    */
-  ExpansionName getIdentifier();
+  String getName();
 
   /**
-   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getIdentifier <em>Identifier</em>}' containment reference.
+   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.Expansion#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Identifier</em>' containment reference.
-   * @see #getIdentifier()
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
    * @generated
    */
-  void setIdentifier(ExpansionName value);
+  void setName(String value);
 
   /**
    * Returns the value of the '<em><b>Constructor</b></em>' reference.
@@ -92,21 +91,5 @@ public interface Expansion extends Member
    * @generated
    */
   EList<Argument> getArguments();
-
-  /**
-   * Returns the value of the '<em><b>Bindings</b></em>' containment reference list.
-   * The list contents are of type {@link dk.sdu.mmmi.embedix.ulswig.AddressBinding}.
-   * <!-- begin-user-doc -->
-   * <p>
-   * If the meaning of the '<em>Bindings</em>' containment reference list isn't clear,
-   * there really should be more of a description here...
-   * </p>
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Bindings</em>' containment reference list.
-   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getExpansion_Bindings()
-   * @model containment="true"
-   * @generated
-   */
-  EList<AddressBinding> getBindings();
 
 } // Expansion

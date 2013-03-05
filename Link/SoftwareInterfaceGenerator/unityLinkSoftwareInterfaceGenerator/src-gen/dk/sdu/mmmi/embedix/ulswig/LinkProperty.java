@@ -12,8 +12,9 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getLinkName <em>Link Name</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getCtrlName <em>Ctrl Name</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getBaseValue <em>Base Value</em>}</li>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getUartName <em>Uart Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -24,30 +25,30 @@ import org.eclipse.emf.ecore.EObject;
 public interface LinkProperty extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Link Name</b></em>' attribute.
+   * Returns the value of the '<em><b>Ctrl Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Link Name</em>' attribute isn't clear,
+   * If the meaning of the '<em>Ctrl Name</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Link Name</em>' attribute.
-   * @see #setLinkName(String)
-   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getLinkProperty_LinkName()
+   * @return the value of the '<em>Ctrl Name</em>' attribute.
+   * @see #setCtrlName(String)
+   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getLinkProperty_CtrlName()
    * @model
    * @generated
    */
-  String getLinkName();
+  String getCtrlName();
 
   /**
-   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getLinkName <em>Link Name</em>}' attribute.
+   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getCtrlName <em>Ctrl Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Link Name</em>' attribute.
-   * @see #getLinkName()
+   * @param value the new value of the '<em>Ctrl Name</em>' attribute.
+   * @see #getCtrlName()
    * @generated
    */
-  void setLinkName(String value);
+  void setCtrlName(String value);
 
   /**
    * Returns the value of the '<em><b>Base Value</b></em>' attribute.
@@ -74,5 +75,31 @@ public interface LinkProperty extends EObject
    * @generated
    */
   void setBaseValue(int value);
+
+  /**
+   * Returns the value of the '<em><b>Uart Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Uart Name</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Uart Name</em>' attribute.
+   * @see #setUartName(String)
+   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getLinkProperty_UartName()
+   * @model
+   * @generated
+   */
+  String getUartName();
+
+  /**
+   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.LinkProperty#getUartName <em>Uart Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Uart Name</em>' attribute.
+   * @see #getUartName()
+   * @generated
+   */
+  void setUartName(String value);
 
 } // LinkProperty

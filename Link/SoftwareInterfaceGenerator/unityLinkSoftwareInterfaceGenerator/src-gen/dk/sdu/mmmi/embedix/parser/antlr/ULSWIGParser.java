@@ -25,7 +25,7 @@ public class ULSWIGParser extends org.eclipse.xtext.parser.antlr.AbstractAntlrPa
 	
 	@Override 
 	protected String getDefaultRuleName() {
-		return "Robot";
+		return "LinkSpec";
 	}
 	
 	public ULSWIGGrammarAccess getGrammarAccess() {
