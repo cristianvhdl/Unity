@@ -5,14 +5,20 @@ import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
 import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
 import dk.sdu.mmmi.embedix.ulswig.AddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Argument;
+import dk.sdu.mmmi.embedix.ulswig.CRCProperty;
 import dk.sdu.mmmi.embedix.ulswig.Constructor;
+import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Expansion;
 import dk.sdu.mmmi.embedix.ulswig.Grouping;
+import dk.sdu.mmmi.embedix.ulswig.IDProperty;
 import dk.sdu.mmmi.embedix.ulswig.Instantiation;
+import dk.sdu.mmmi.embedix.ulswig.InstantiationProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkBinding;
 import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.Member;
+import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.PublishProperty;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
 import dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding;
 import java.util.Arrays;
@@ -297,7 +303,87 @@ public class PythonCompiler {
     String _name = _address.getName();
     _builder.append(_name, "");
     _builder.newLineIfNotEmpty();
+    _builder.append("ul_address = ");
+    AddressSpec _address_1 = m.getAddress();
+    String _addressFromSpec = this.getAddressFromSpec(_address_1);
+    _builder.append(_addressFromSpec, "");
+    _builder.newLineIfNotEmpty();
+    _builder.append("self.");
+    AddressSpec _address_2 = m.getAddress();
+    String _name_1 = _address_2.getName();
+    _builder.append(_name_1, "");
+    _builder.append(" = ul_data_proxy(self.ul_hwp,ul_address, ");
+    EList<InstantiationProperty> _properties = m.getProperties();
+    String _instantiationID = this.getInstantiationID(_properties);
+    _builder.append(_instantiationID, "");
+    _builder.append(", ");
+    String _kind = m.getKind();
+    String _kind_1 = this.getKind(_kind);
+    _builder.append(_kind_1, "");
+    _builder.append(", 0");
+    {
+      EList<InstantiationProperty> _properties_1 = m.getProperties();
+      for(final InstantiationProperty p : _properties_1) {
+        {
+          boolean _not = (!(p instanceof IDProperty));
+          if (_not) {
+            _builder.append(",");
+            String _namedProperty = this.getNamedProperty(p);
+            _builder.append(_namedProperty, "");
+          }
+        }
+      }
+    }
+    _builder.append(")");
+    _builder.newLineIfNotEmpty();
     return _builder;
+  }
+  
+  protected String _getNamedProperty(final CRCProperty p) {
+    return "crc=True";
+  }
+  
+  protected String _getNamedProperty(final PublishProperty p) {
+    int _mode = p.getMode();
+    String _plus = ("publish_config=[" + Integer.valueOf(_mode));
+    String _plus_1 = (_plus + ",");
+    int _rate = p.getRate();
+    String _plus_2 = (_plus_1 + Integer.valueOf(_rate));
+    String _plus_3 = (_plus_2 + "]");
+    return _plus_3;
+  }
+  
+  public String getKind(final String string) {
+    String _xifexpression = null;
+    boolean _equals = string.equals("READ");
+    if (_equals) {
+      _xifexpression = "ACCESS_RIGHT.R";
+    } else {
+      _xifexpression = "ACCESS_RIGHT.W";
+    }
+    return _xifexpression;
+  }
+  
+  public String getInstantiationID(final EList<InstantiationProperty> list) {
+    for (final InstantiationProperty p : list) {
+      if ((p instanceof IDProperty)) {
+        Argument _id = ((IDProperty) p).getId();
+        return this.compileArgument(_id);
+      }
+    }
+    return "(no name)";
+  }
+  
+  protected String _getAddressFromSpec(final DirectAddressSpec spec) {
+    String _address = spec.getAddress();
+    return _address;
+  }
+  
+  protected String _getAddressFromSpec(final NamedAddressSpec spec) {
+    String _name = spec.getName();
+    String _plus = ("ul_addresses[\'" + _name);
+    String _plus_1 = (_plus + "\']");
+    return _plus_1;
   }
   
   protected CharSequence _compileMember(final Grouping m) {
@@ -332,6 +418,28 @@ public class PythonCompiler {
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
         Arrays.<Object>asList(m).toString());
+    }
+  }
+  
+  public String getNamedProperty(final InstantiationProperty p) {
+    if (p instanceof CRCProperty) {
+      return _getNamedProperty((CRCProperty)p);
+    } else if (p instanceof PublishProperty) {
+      return _getNamedProperty((PublishProperty)p);
+    } else {
+      throw new IllegalArgumentException("Unhandled parameter types: " +
+        Arrays.<Object>asList(p).toString());
+    }
+  }
+  
+  public String getAddressFromSpec(final AddressSpec spec) {
+    if (spec instanceof DirectAddressSpec) {
+      return _getAddressFromSpec((DirectAddressSpec)spec);
+    } else if (spec instanceof NamedAddressSpec) {
+      return _getAddressFromSpec((NamedAddressSpec)spec);
+    } else {
+      throw new IllegalArgumentException("Unhandled parameter types: " +
+        Arrays.<Object>asList(spec).toString());
     }
   }
 }
