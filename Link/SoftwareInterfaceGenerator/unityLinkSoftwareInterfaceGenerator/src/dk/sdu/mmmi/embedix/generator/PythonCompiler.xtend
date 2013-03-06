@@ -19,14 +19,25 @@ import dk.sdu.mmmi.embedix.ulswig.IDProperty
 import dk.sdu.mmmi.embedix.ulswig.CRCProperty
 import dk.sdu.mmmi.embedix.ulswig.PublishProperty
 import dk.sdu.mmmi.embedix.ulswig.AddressTuple
+import dk.sdu.mmmi.embedix.ulswig.GroupElement
+import java.util.List
+import java.util.ArrayList
+import java.util.HashMap
 
 class PythonCompiler {
+
+	var LinkSpec link
+	val groupingMembers = new HashMap<String,List<String>>
+
+	new(LinkSpec _link) {
+		link = _link
+	}
 
 	/**
 	 * Header and overall file structure
 	 */
 
-	def generate(LinkSpec link) '''
+	def generate() '''
 	# Automatically generated code
 	from unity_link import * #@UnusedWildImport
 	from unity_link_hw import * #@UnusedWildImport
@@ -36,6 +47,10 @@ class PythonCompiler {
 	
 	«FOR c: link.constructors»
 	«c.compile»
+
+	«ENDFOR»
+	«FOR g:groupingMembers.keySet»
+	«g.generateGroupingClass(groupingMembers.get(g).map([s|s.replace('.','_')]))»
 
 	«ENDFOR»
 	'''
@@ -56,7 +71,7 @@ class PythonCompiler {
 			ul_addresses = dict(zip([«FOR n:(c.addresses as AddressTuple).elements SEPARATOR ","»'«n»'«ENDFOR»],ul_addresses["_"]))
 			«ENDIF»
 			«FOR m: c.members»
-			«m.compileMember»
+			«m.compileMember(c)»
 			«ENDFOR»
 	'''
 
@@ -78,7 +93,7 @@ class PythonCompiler {
 	 * Link bindings
 	 */
 
-	def dispatch compileMember(LinkBinding m) {
+	def dispatch compileMember(LinkBinding m, Constructor c) {
 		return (m as TosNetLinkBinding).compileBinding // TODO: rewrite for multidispatch
 	}
 	
@@ -101,7 +116,7 @@ class PythonCompiler {
 	 * Expansion member
 	 */
 	
-	def dispatch compileMember(Expansion m) '''
+	def dispatch compileMember(Expansion m, Constructor c) '''
 			# initialization for expansion «m.name»
 			self.«m.name» = «m.constructor.name.constructorName(m.constructor)»(«FOR a:m.arguments SEPARATOR ","»«a.compileArgument»«ENDFOR»)
 			«m.compileExpansionAddressBinding»
@@ -130,7 +145,7 @@ class PythonCompiler {
 	 * Instantiation member
 	 */
 
-	def dispatch compileMember(Instantiation m) '''
+	def dispatch compileMember(Instantiation m, Constructor c) '''
 			# initialization for instantiation «m.address.name»
 			ul_address = «m.address.getAddressFromSpec»
 			self.«m.address.name» = ul_data_proxy(self.ul_hwp,ul_address, «m.properties.getInstantiationID», «m.kind.getKind», 0«FOR p:m.properties»«IF !(p instanceof IDProperty)»,«p.getNamedProperty»«ENDIF»«ENDFOR»)
@@ -165,7 +180,67 @@ class PythonCompiler {
 	 * Grouping member
 	 */
 	
-	def dispatch compileMember(Grouping m) '''
-			# initialization for grouping a«m.name»
+	def dispatch compileMember(Grouping m, Constructor c) '''
+			# initialization for grouping «m.name»
+			ul_group_«m.name» = []
+			«FOR e:m.elements»
+			ul_group_«m.name».append(«e.generateGroupAccess("UL_private_group_"+m.name,c)»)
+			«ENDFOR»
+			self.«m.name» = UL_private_group_«m.name»(self.ul_hwp,ul_group_«m.name»)
 	'''
+	
+	def generateGroupAccess(GroupElement element, String groupingName, Constructor context) { 
+		// Compute proxies
+		val expansion = new ArrayList<StringBuffer>
+		for(segment: element.path) {
+			if(segment.simple!=null) {
+				val List<String> x = new ArrayList
+				x.add(segment.simple)
+				addGroupAccessSegment(expansion,x)
+			} else {
+				val name = context.findAllDeclarations(segment.type)
+				addGroupAccessSegment(expansion,name)
+			}
+		}
+		// Store for subsequent proxy class generation
+		if(groupingMembers.get(groupingName)==null) groupingMembers.put(groupingName,new ArrayList<String>)
+		for(e:expansion) groupingMembers.get(groupingName).add(e.toString)
+		// Construct result string
+		val result = new StringBuffer
+		for(b: expansion) {
+			if(result.length>0) result.append(",")
+			result.append(b.toString)
+		}
+		return result
+	}
+
+	def findAllDeclarations(Constructor context, Constructor target) { 
+		val result = new ArrayList<String>
+		for(m: context.members) switch m {
+			Expansion case m: if(m.constructor==target) result.add(m.name)
+		}
+		return result
+	}
+
+
+	def addGroupAccessSegment(List<StringBuffer> list, List<String> strings) {
+		if(list.size==0) for(s:strings) list.add(new StringBuffer("self."+s))
+		else for(ref: list) for(s:strings) ref.append("."+s)
+	}
+
+	def generateGroupingClass(String className, List<String> proxyFlatNames) '''
+	class «className»(ul_data_proxy_group):
+		def __init__(self,ul_hwp,ul_proxies):
+			self.ul_hwp = ul_hwp
+			int ul_index = 0
+			«FOR n:proxyFlatNames»
+			self.ul_proxy_«n» = ul_proxies[ul_index]
+			ul_index += 1
+			«ENDFOR»
+			ul_data_proxy_group.__init__(self, ul_data_proxy_group, 'Group «className»')
+		
+		def write(self«FOR n:proxyFlatNames»,ul_val_«n»«ENDFOR»):
+			self._hwp_data_map[self.ul_hwp.getID()].write(addr=[«FOR n:proxyFlatNames SEPARATOR ","»self.ul_proxy_«n».addr«ENDFOR»], data=[«FOR n:proxyFlatNames»,ul_val_«n»«ENDFOR»], timestamp=None, quiet=True)
+	'''
+
 }

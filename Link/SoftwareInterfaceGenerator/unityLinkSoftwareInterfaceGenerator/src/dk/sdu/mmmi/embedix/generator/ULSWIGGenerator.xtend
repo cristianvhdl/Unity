@@ -16,6 +16,6 @@ class ULSWIGGenerator implements IGenerator {
 		}
 	}
 	
-	def compile(LinkSpec spec) { return new PythonCompiler().generate(spec) }
+	def compile(LinkSpec spec) { return new PythonCompiler(spec).generate() }
 
 }

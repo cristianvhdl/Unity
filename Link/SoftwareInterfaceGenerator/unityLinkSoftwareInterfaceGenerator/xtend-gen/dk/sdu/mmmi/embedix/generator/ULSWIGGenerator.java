@@ -26,7 +26,7 @@ public class ULSWIGGenerator implements IGenerator {
   }
   
   public CharSequence compile(final LinkSpec spec) {
-    PythonCompiler _pythonCompiler = new PythonCompiler();
-    return _pythonCompiler.generate(spec);
+    PythonCompiler _pythonCompiler = new PythonCompiler(spec);
+    return _pythonCompiler.generate();
   }
 }

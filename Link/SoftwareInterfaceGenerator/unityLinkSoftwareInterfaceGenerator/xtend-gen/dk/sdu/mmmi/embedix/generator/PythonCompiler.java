@@ -11,6 +11,7 @@ import dk.sdu.mmmi.embedix.ulswig.Constructor;
 import dk.sdu.mmmi.embedix.ulswig.ConstructorAddressParameters;
 import dk.sdu.mmmi.embedix.ulswig.DirectAddressSpec;
 import dk.sdu.mmmi.embedix.ulswig.Expansion;
+import dk.sdu.mmmi.embedix.ulswig.GroupElement;
 import dk.sdu.mmmi.embedix.ulswig.Grouping;
 import dk.sdu.mmmi.embedix.ulswig.IDProperty;
 import dk.sdu.mmmi.embedix.ulswig.Instantiation;
@@ -20,19 +21,40 @@ import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.Member;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
+import dk.sdu.mmmi.embedix.ulswig.PathElement;
 import dk.sdu.mmmi.embedix.ulswig.PublishProperty;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
 import dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtend2.lib.StringConcatenation;
+import org.eclipse.xtext.xbase.lib.Functions.Function0;
+import org.eclipse.xtext.xbase.lib.Functions.Function1;
+import org.eclipse.xtext.xbase.lib.ListExtensions;
 
 @SuppressWarnings("all")
 public class PythonCompiler {
+  private LinkSpec link;
+  
+  private final HashMap<String,List<String>> groupingMembers = new Function0<HashMap<String,List<String>>>() {
+    public HashMap<String,List<String>> apply() {
+      HashMap<String,List<String>> _hashMap = new HashMap<String,List<String>>();
+      return _hashMap;
+    }
+  }.apply();
+  
+  public PythonCompiler(final LinkSpec _link) {
+    this.link = _link;
+  }
+  
   /**
    * Header and overall file structure
    */
-  public CharSequence generate(final LinkSpec link) {
+  public CharSequence generate() {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("# Automatically generated code");
     _builder.newLine();
@@ -48,10 +70,27 @@ public class PythonCompiler {
     _builder.newLine();
     _builder.newLine();
     {
-      EList<Constructor> _constructors = link.getConstructors();
+      EList<Constructor> _constructors = this.link.getConstructors();
       for(final Constructor c : _constructors) {
         CharSequence _compile = this.compile(c);
         _builder.append(_compile, "");
+        _builder.newLineIfNotEmpty();
+        _builder.newLine();
+      }
+    }
+    {
+      Set<String> _keySet = this.groupingMembers.keySet();
+      for(final String g : _keySet) {
+        List<String> _get = this.groupingMembers.get(g);
+        final Function1<String,String> _function = new Function1<String,String>() {
+            public String apply(final String s) {
+              String _replace = s.replace(".", "_");
+              return _replace;
+            }
+          };
+        List<String> _map = ListExtensions.<String, String>map(_get, _function);
+        CharSequence _generateGroupingClass = this.generateGroupingClass(g, _map);
+        _builder.append(_generateGroupingClass, "");
         _builder.newLineIfNotEmpty();
         _builder.newLine();
       }
@@ -125,7 +164,7 @@ public class PythonCompiler {
       EList<Member> _members = c.getMembers();
       for(final Member m : _members) {
         _builder.append("\t\t");
-        CharSequence _compileMember = this.compileMember(m);
+        CharSequence _compileMember = this.compileMember(m, c);
         _builder.append(_compileMember, "		");
         _builder.newLineIfNotEmpty();
       }
@@ -182,7 +221,7 @@ public class PythonCompiler {
   /**
    * Link bindings
    */
-  protected CharSequence _compileMember(final LinkBinding m) {
+  protected CharSequence _compileMember(final LinkBinding m, final Constructor c) {
     return this.compileBinding(((TosNetLinkBinding) m));
   }
   
@@ -240,7 +279,7 @@ public class PythonCompiler {
   /**
    * Expansion member
    */
-  protected CharSequence _compileMember(final Expansion m) {
+  protected CharSequence _compileMember(final Expansion m, final Constructor c) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("# initialization for expansion ");
     String _name = m.getName();
@@ -352,7 +391,7 @@ public class PythonCompiler {
   /**
    * Instantiation member
    */
-  protected CharSequence _compileMember(final Instantiation m) {
+  protected CharSequence _compileMember(final Instantiation m, final Constructor c) {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("# initialization for instantiation ");
     AddressSpec _address = m.getAddress();
@@ -445,27 +484,218 @@ public class PythonCompiler {
   /**
    * Grouping member
    */
-  protected CharSequence _compileMember(final Grouping m) {
+  protected CharSequence _compileMember(final Grouping m, final Constructor c) {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("# initialization for grouping a");
+    _builder.append("# initialization for grouping ");
     String _name = m.getName();
     _builder.append(_name, "");
+    _builder.newLineIfNotEmpty();
+    _builder.append("ul_group_");
+    String _name_1 = m.getName();
+    _builder.append(_name_1, "");
+    _builder.append(" = []");
+    _builder.newLineIfNotEmpty();
+    {
+      EList<GroupElement> _elements = m.getElements();
+      for(final GroupElement e : _elements) {
+        _builder.append("ul_group_");
+        String _name_2 = m.getName();
+        _builder.append(_name_2, "");
+        _builder.append(".append(");
+        String _name_3 = m.getName();
+        String _plus = ("UL_private_group_" + _name_3);
+        StringBuffer _generateGroupAccess = this.generateGroupAccess(e, _plus, c);
+        _builder.append(_generateGroupAccess, "");
+        _builder.append(")");
+        _builder.newLineIfNotEmpty();
+      }
+    }
+    _builder.append("self.");
+    String _name_4 = m.getName();
+    _builder.append(_name_4, "");
+    _builder.append(" = UL_private_group_");
+    String _name_5 = m.getName();
+    _builder.append(_name_5, "");
+    _builder.append("(self.ul_hwp,ul_group_");
+    String _name_6 = m.getName();
+    _builder.append(_name_6, "");
+    _builder.append(")");
     _builder.newLineIfNotEmpty();
     return _builder;
   }
   
-  public CharSequence compileMember(final Member m) {
+  public StringBuffer generateGroupAccess(final GroupElement element, final String groupingName, final Constructor context) {
+    ArrayList<StringBuffer> _arrayList = new ArrayList<StringBuffer>();
+    final ArrayList<StringBuffer> expansion = _arrayList;
+    EList<PathElement> _path = element.getPath();
+    for (final PathElement segment : _path) {
+      String _simple = segment.getSimple();
+      boolean _notEquals = (!Objects.equal(_simple, null));
+      if (_notEquals) {
+        ArrayList<String> _arrayList_1 = new ArrayList<String>();
+        final List<String> x = _arrayList_1;
+        String _simple_1 = segment.getSimple();
+        x.add(_simple_1);
+        this.addGroupAccessSegment(expansion, x);
+      } else {
+        Constructor _type = segment.getType();
+        final ArrayList<String> name = this.findAllDeclarations(context, _type);
+        this.addGroupAccessSegment(expansion, name);
+      }
+    }
+    List<String> _get = this.groupingMembers.get(groupingName);
+    boolean _equals = Objects.equal(_get, null);
+    if (_equals) {
+      ArrayList<String> _arrayList_2 = new ArrayList<String>();
+      this.groupingMembers.put(groupingName, _arrayList_2);
+    }
+    for (final StringBuffer e : expansion) {
+      List<String> _get_1 = this.groupingMembers.get(groupingName);
+      String _string = e.toString();
+      _get_1.add(_string);
+    }
+    StringBuffer _stringBuffer = new StringBuffer();
+    final StringBuffer result = _stringBuffer;
+    for (final StringBuffer b : expansion) {
+      {
+        int _length = result.length();
+        boolean _greaterThan = (_length > 0);
+        if (_greaterThan) {
+          result.append(",");
+        }
+        String _string_1 = b.toString();
+        result.append(_string_1);
+      }
+    }
+    return result;
+  }
+  
+  public ArrayList<String> findAllDeclarations(final Constructor context, final Constructor target) {
+    ArrayList<String> _arrayList = new ArrayList<String>();
+    final ArrayList<String> result = _arrayList;
+    EList<Member> _members = context.getMembers();
+    for (final Member m : _members) {
+      boolean _matched = false;
+      if (!_matched) {
+        if (m instanceof Expansion) {
+          final Expansion _expansion = (Expansion)m;
+          if (Objects.equal(m,_expansion)) {
+            _matched=true;
+            Constructor _constructor = _expansion.getConstructor();
+            boolean _equals = Objects.equal(_constructor, target);
+            if (_equals) {
+              String _name = _expansion.getName();
+              result.add(_name);
+            }
+          }
+        }
+      }
+    }
+    return result;
+  }
+  
+  public void addGroupAccessSegment(final List<StringBuffer> list, final List<String> strings) {
+    int _size = list.size();
+    boolean _equals = (_size == 0);
+    if (_equals) {
+      for (final String s : strings) {
+        String _plus = ("self." + s);
+        StringBuffer _stringBuffer = new StringBuffer(_plus);
+        list.add(_stringBuffer);
+      }
+    } else {
+      for (final StringBuffer ref : list) {
+        for (final String s_1 : strings) {
+          String _plus_1 = ("." + s_1);
+          ref.append(_plus_1);
+        }
+      }
+    }
+  }
+  
+  public CharSequence generateGroupingClass(final String className, final List<String> proxyFlatNames) {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("class ");
+    _builder.append(className, "");
+    _builder.append("(ul_data_proxy_group):");
+    _builder.newLineIfNotEmpty();
+    _builder.append("\t");
+    _builder.append("def __init__(self,ul_hwp,ul_proxies):");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("self.ul_hwp = ul_hwp");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("int ul_index = 0");
+    _builder.newLine();
+    {
+      for(final String n : proxyFlatNames) {
+        _builder.append("\t\t");
+        _builder.append("self.ul_proxy_");
+        _builder.append(n, "		");
+        _builder.append(" = ul_proxies[ul_index]");
+        _builder.newLineIfNotEmpty();
+        _builder.append("\t\t");
+        _builder.append("ul_index += 1");
+        _builder.newLine();
+      }
+    }
+    _builder.append("\t\t");
+    _builder.append("ul_data_proxy_group.__init__(self, ul_data_proxy_group, \'Group ");
+    _builder.append(className, "		");
+    _builder.append("\')");
+    _builder.newLineIfNotEmpty();
+    _builder.append("\t");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("def write(self");
+    {
+      for(final String n_1 : proxyFlatNames) {
+        _builder.append(",ul_val_");
+        _builder.append(n_1, "	");
+      }
+    }
+    _builder.append("):");
+    _builder.newLineIfNotEmpty();
+    _builder.append("\t\t");
+    _builder.append("self._hwp_data_map[self.ul_hwp.getID()].write(addr=[");
+    {
+      boolean _hasElements = false;
+      for(final String n_2 : proxyFlatNames) {
+        if (!_hasElements) {
+          _hasElements = true;
+        } else {
+          _builder.appendImmediate(",", "		");
+        }
+        _builder.append("self.ul_proxy_");
+        _builder.append(n_2, "		");
+        _builder.append(".addr");
+      }
+    }
+    _builder.append("], data=[");
+    {
+      for(final String n_3 : proxyFlatNames) {
+        _builder.append(",ul_val_");
+        _builder.append(n_3, "		");
+      }
+    }
+    _builder.append("], timestamp=None, quiet=True)");
+    _builder.newLineIfNotEmpty();
+    return _builder;
+  }
+  
+  public CharSequence compileMember(final Member m, final Constructor c) {
     if (m instanceof Expansion) {
-      return _compileMember((Expansion)m);
+      return _compileMember((Expansion)m, c);
     } else if (m instanceof Grouping) {
-      return _compileMember((Grouping)m);
+      return _compileMember((Grouping)m, c);
     } else if (m instanceof Instantiation) {
-      return _compileMember((Instantiation)m);
+      return _compileMember((Instantiation)m, c);
     } else if (m instanceof LinkBinding) {
-      return _compileMember((LinkBinding)m);
+      return _compileMember((LinkBinding)m, c);
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
-        Arrays.<Object>asList(m).toString());
+        Arrays.<Object>asList(m, c).toString());
     }
   }
   
