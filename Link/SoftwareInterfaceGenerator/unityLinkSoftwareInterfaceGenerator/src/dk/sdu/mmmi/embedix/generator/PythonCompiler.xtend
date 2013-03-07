@@ -61,10 +61,11 @@ class PythonCompiler {
 	
 	def compile(Constructor c) '''
 	class «c.name.constructorName(c)»:
-		def __init__(self«FOR p:c.parameters»,«p»«ENDFOR»):
+		def __init__(self«FOR p:c.parameters»,«p»«ENDFOR»,ul_hwp=None):
 			«FOR p:c.parameters»
 			self.ul_parameter_«p» = «p»
 			«ENDFOR»
+			self.ul_hwp = ul_hwp
 		
 		def bind(self,ul_addresses):
 			«IF c.addresses instanceof AddressTuple»
@@ -86,7 +87,7 @@ class PythonCompiler {
 	def compileArgument(Argument a) {
 		return if(a.simple!=null) "self.ul_parameter_"+a.simple
 				else if(a.text!=null) "\""+a.text+"\""
-				else a.lhs+"+"+a.rhs.compileArgument
+				else "self.ul_parameter_"+a.lhs+"+"+a.rhs.compileArgument
 	}
 	
 	/**
@@ -118,7 +119,7 @@ class PythonCompiler {
 	
 	def dispatch compileMember(Expansion m, Constructor c) '''
 			# initialization for expansion «m.name»
-			self.«m.name» = «m.constructor.name.constructorName(m.constructor)»(«FOR a:m.arguments SEPARATOR ","»«a.compileArgument»«ENDFOR»)
+			self.«m.name» = «m.constructor.name.constructorName(m.constructor)»(«FOR a:m.arguments SEPARATOR ","»«a.compileArgument»«ENDFOR»,ul_hwp=self.ul_hwp)
 			«m.compileExpansionAddressBinding»
 	'''
 

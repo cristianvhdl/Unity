@@ -118,7 +118,7 @@ public class PythonCompiler {
         _builder.append(p, "	");
       }
     }
-    _builder.append("):");
+    _builder.append(",ul_hwp=None):");
     _builder.newLineIfNotEmpty();
     {
       EList<String> _parameters_1 = c.getParameters();
@@ -131,6 +131,9 @@ public class PythonCompiler {
         _builder.newLineIfNotEmpty();
       }
     }
+    _builder.append("\t\t");
+    _builder.append("self.ul_hwp = ul_hwp");
+    _builder.newLine();
     _builder.append("\t");
     _builder.newLine();
     _builder.append("\t");
@@ -207,11 +210,12 @@ public class PythonCompiler {
         _xifexpression_1 = _plus_2;
       } else {
         String _lhs = a.getLhs();
-        String _plus_3 = (_lhs + "+");
+        String _plus_3 = ("self.ul_parameter_" + _lhs);
+        String _plus_4 = (_plus_3 + "+");
         Argument _rhs = a.getRhs();
         String _compileArgument = this.compileArgument(_rhs);
-        String _plus_4 = (_plus_3 + _compileArgument);
-        _xifexpression_1 = _plus_4;
+        String _plus_5 = (_plus_4 + _compileArgument);
+        _xifexpression_1 = _plus_5;
       }
       _xifexpression = _xifexpression_1;
     }
@@ -308,7 +312,7 @@ public class PythonCompiler {
         _builder.append(_compileArgument, "");
       }
     }
-    _builder.append(")");
+    _builder.append(",ul_hwp=self.ul_hwp)");
     _builder.newLineIfNotEmpty();
     CharSequence _compileExpansionAddressBinding = this.compileExpansionAddressBinding(m);
     _builder.append(_compileExpansionAddressBinding, "");
