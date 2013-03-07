@@ -24,7 +24,7 @@ import java.util.List
 import java.util.ArrayList
 import java.util.HashMap
 
-class PythonCompiler {
+class PythonULSWCompiler {
 
 	var LinkSpec link
 	val groupingMembers = new HashMap<String,List<String>>

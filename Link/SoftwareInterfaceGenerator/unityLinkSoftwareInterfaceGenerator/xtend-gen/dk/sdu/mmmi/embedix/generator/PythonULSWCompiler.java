@@ -37,7 +37,7 @@ import org.eclipse.xtext.xbase.lib.Functions.Function1;
 import org.eclipse.xtext.xbase.lib.ListExtensions;
 
 @SuppressWarnings("all")
-public class PythonCompiler {
+public class PythonULSWCompiler {
   private LinkSpec link;
   
   private final HashMap<String,List<String>> groupingMembers = new Function0<HashMap<String,List<String>>>() {
@@ -47,7 +47,7 @@ public class PythonCompiler {
     }
   }.apply();
   
-  public PythonCompiler(final LinkSpec _link) {
+  public PythonULSWCompiler(final LinkSpec _link) {
     this.link = _link;
   }
   

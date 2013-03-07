@@ -1,7 +1,7 @@
 package dk.sdu.mmmi.embedix.generator;
 
 import com.google.common.collect.Iterables;
-import dk.sdu.mmmi.embedix.generator.PythonCompiler;
+import dk.sdu.mmmi.embedix.generator.PythonULSWCompiler;
 import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
@@ -20,13 +20,13 @@ public class ULSWIGGenerator implements IGenerator {
       String _name = e.getName();
       String _plus = ("unitylink/python/" + _name);
       String _plus_1 = (_plus + ".py");
-      CharSequence _compile = this.compile(e);
-      fsa.generateFile(_plus_1, _compile);
+      CharSequence _compilePythonUnity = this.compilePythonUnity(e);
+      fsa.generateFile(_plus_1, _compilePythonUnity);
     }
   }
   
-  public CharSequence compile(final LinkSpec spec) {
-    PythonCompiler _pythonCompiler = new PythonCompiler(spec);
-    return _pythonCompiler.generate();
+  public CharSequence compilePythonUnity(final LinkSpec spec) {
+    PythonULSWCompiler _pythonULSWCompiler = new PythonULSWCompiler(spec);
+    return _pythonULSWCompiler.generate();
   }
 }

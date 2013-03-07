@@ -12,10 +12,10 @@ class ULSWIGGenerator implements IGenerator {
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
 		for(e: resource.getAllContents().toIterable().filter(typeof(LinkSpec))) {
-			fsa.generateFile("unitylink/python/"+e.name + ".py",e.compile)
+			fsa.generateFile("unitylink/python/"+e.name + ".py",e.compilePythonUnity)
 		}
 	}
 	
-	def compile(LinkSpec spec) { return new PythonCompiler(spec).generate() }
+	def compilePythonUnity(LinkSpec spec) { return new PythonULSWCompiler(spec).generate() }
 
 }
