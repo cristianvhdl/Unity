@@ -77,6 +77,7 @@ class ROSmsgCompiler {
 		«FOR e:writeTopics.entrySet»
 		rospy.Subscriber("«e.key.rosName»","W«e.key.rosName»",ros_callback_«e.key.rosName»)
 		«ENDFOR»
+	
 	# Publications
 	'''
 

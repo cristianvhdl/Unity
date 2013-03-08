@@ -189,6 +189,7 @@ public class ROSmsgCompiler {
         _builder.newLineIfNotEmpty();
       }
     }
+    _builder.newLine();
     _builder.append("# Publications");
     _builder.newLine();
     return _builder;

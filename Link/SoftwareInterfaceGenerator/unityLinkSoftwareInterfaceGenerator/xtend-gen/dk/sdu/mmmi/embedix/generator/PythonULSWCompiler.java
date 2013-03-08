@@ -172,7 +172,72 @@ public class PythonULSWCompiler {
         _builder.newLineIfNotEmpty();
       }
     }
+    _builder.newLine();
+    {
+      EList<Member> _members_1 = c.getMembers();
+      List<String> _instantiationNames = this.instantiationNames(_members_1, "WRITE");
+      int _size = _instantiationNames.size();
+      boolean _greaterThan = (_size > 0);
+      if (_greaterThan) {
+        _builder.append("\t");
+        _builder.append("def write(");
+        {
+          EList<Member> _members_2 = c.getMembers();
+          List<String> _instantiationNames_1 = this.instantiationNames(_members_2, "WRITE");
+          boolean _hasElements_1 = false;
+          for(final String n_1 : _instantiationNames_1) {
+            if (!_hasElements_1) {
+              _hasElements_1 = true;
+            } else {
+              _builder.appendImmediate(",", "	");
+            }
+            _builder.append("ul_p_");
+            _builder.append(n_1, "	");
+          }
+        }
+        _builder.append("):");
+        _builder.newLineIfNotEmpty();
+        {
+          EList<Member> _members_3 = c.getMembers();
+          List<String> _instantiationNames_2 = this.instantiationNames(_members_3, "WRITE");
+          for(final String n_2 : _instantiationNames_2) {
+            _builder.append("\t");
+            _builder.append("\t");
+            _builder.append("self.");
+            _builder.append(n_2, "		");
+            _builder.append(".write(ul_p_");
+            _builder.append(n_2, "		");
+            _builder.append(")");
+            _builder.newLineIfNotEmpty();
+          }
+        }
+      }
+    }
     return _builder;
+  }
+  
+  public List<String> instantiationNames(final EList<Member> list, final String kind) {
+    ArrayList<String> _arrayList = new ArrayList<String>();
+    final List<String> names = _arrayList;
+    for (final Member n : list) {
+      boolean _matched = false;
+      if (!_matched) {
+        if (n instanceof Instantiation) {
+          final Instantiation _instantiation = (Instantiation)n;
+          if (Objects.equal(n,_instantiation)) {
+            _matched=true;
+            String _kind = _instantiation.getKind();
+            boolean _equals = _kind.equals(kind);
+            if (_equals) {
+              AddressSpec _address = _instantiation.getAddress();
+              String _name = _address.getName();
+              names.add(_name);
+            }
+          }
+        }
+      }
+    }
+    return names;
   }
   
   public String constructorName(final String name, final Constructor constructor) {

@@ -25,6 +25,7 @@ import java.util.ArrayList
 import java.util.HashMap
 
 import static extension dk.sdu.mmmi.embedix.generator.Utilities.*
+import dk.sdu.mmmi.embedix.ulswig.Member
 
 class PythonULSWCompiler {
 
@@ -76,7 +77,21 @@ class PythonULSWCompiler {
 			«FOR m: c.members»
 			«m.compileMember(c)»
 			«ENDFOR»
+
+		«IF c.members.instantiationNames("WRITE").size>0»
+		def write(«FOR n:c.members.instantiationNames("WRITE") SEPARATOR ","»ul_p_«n»«ENDFOR»):
+			«FOR n:c.members.instantiationNames("WRITE")»
+			self.«n».write(ul_p_«n»)
+			«ENDFOR»
+		«ENDIF»
 	'''
+
+	def instantiationNames(EList<Member> list, String kind) {
+		val List<String> names = new ArrayList
+		for(n:list) switch(n) { Instantiation case n: if(n.kind.equals(kind)) names.add(n.address.name) }
+		return names
+	}
+
 
 	def constructorName(String name, Constructor constructor) { 
 		"UL_"+if(constructor.isPublic) name else "private_"+name
