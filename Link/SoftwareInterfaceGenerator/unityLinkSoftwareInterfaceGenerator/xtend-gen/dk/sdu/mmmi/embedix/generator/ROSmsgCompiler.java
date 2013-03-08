@@ -113,8 +113,81 @@ public class ROSmsgCompiler {
     _builder.append("import rospy");
     _builder.newLine();
     _builder.newLine();
+    _builder.append("ul_instance_");
+    String _name = this.spec.getName();
+    _builder.append(_name, "");
+    _builder.append(" = None");
+    _builder.newLineIfNotEmpty();
+    _builder.newLine();
+    _builder.append("# Helper functions for stand-alone ROS");
+    _builder.newLine();
+    _builder.append("def ros_standalone_init():");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("rospy.init_node(\'unity listener\', anonymous=True)");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("def ros_standalone_serve():");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("rospy.spin()");
+    _builder.newLine();
+    _builder.newLine();
     _builder.append("# Subscriptions");
     _builder.newLine();
+    {
+      Set<Entry<TopicHolder,List<String>>> _entrySet = this.writeTopics.entrySet();
+      for(final Entry<TopicHolder,List<String>> e : _entrySet) {
+        _builder.append("def ros_callback_");
+        TopicHolder _key = e.getKey();
+        String _rosName = _key.getRosName();
+        _builder.append(_rosName, "");
+        _builder.append("(data):");
+        _builder.newLineIfNotEmpty();
+        {
+          List<String> _value = e.getValue();
+          for(final String n : _value) {
+            _builder.append("\t");
+            _builder.append("ul_instance_");
+            TopicHolder _key_1 = e.getKey();
+            String _pythonName = _key_1.getPythonName();
+            _builder.append(_pythonName, "	");
+            _builder.append(".");
+            _builder.append(n, "	");
+            _builder.append(".write(data.");
+            _builder.append(n, "	");
+            _builder.append(")");
+            _builder.newLineIfNotEmpty();
+          }
+        }
+      }
+    }
+    _builder.append("def init_subscriptions():");
+    _builder.newLine();
+    {
+      Set<Entry<TopicHolder,List<String>>> _entrySet_1 = this.writeTopics.entrySet();
+      for(final Entry<TopicHolder,List<String>> e_1 : _entrySet_1) {
+        _builder.append("\t");
+        _builder.append("rospy.Subscriber(\"");
+        TopicHolder _key_2 = e_1.getKey();
+        String _baseName = _key_2.getBaseName();
+        _builder.append(_baseName, "	");
+        _builder.append("/");
+        TopicHolder _key_3 = e_1.getKey();
+        String _rosName_1 = _key_3.getRosName();
+        _builder.append(_rosName_1, "	");
+        _builder.append("\",\"W");
+        TopicHolder _key_4 = e_1.getKey();
+        String _rosName_2 = _key_4.getRosName();
+        _builder.append(_rosName_2, "	");
+        _builder.append("\",ros_callback_");
+        TopicHolder _key_5 = e_1.getKey();
+        String _rosName_3 = _key_5.getRosName();
+        _builder.append(_rosName_3, "	");
+        _builder.append(")");
+        _builder.newLineIfNotEmpty();
+      }
+    }
     _builder.append("# Publications");
     _builder.newLine();
     return _builder;
@@ -206,9 +279,7 @@ public class ROSmsgCompiler {
   }
   
   public TopicHolder join(final String base, final String extend) {
-    String _plus = (base + ".");
-    String _plus_1 = (_plus + extend);
-    TopicHolder _topicHolder = new TopicHolder(base, extend, _plus_1);
+    TopicHolder _topicHolder = new TopicHolder(base, extend, extend);
     return _topicHolder;
   }
   
@@ -218,7 +289,7 @@ public class ROSmsgCompiler {
     String _plus = (_rosName + "_");
     String _plus_1 = (_plus + extend);
     String _pythonName = holder.getPythonName();
-    String _plus_2 = (_pythonName + "_");
+    String _plus_2 = (_pythonName + ".");
     String _plus_3 = (_plus_2 + extend);
     TopicHolder _topicHolder = new TopicHolder(_baseName, _plus_1, _plus_3);
     return _topicHolder;

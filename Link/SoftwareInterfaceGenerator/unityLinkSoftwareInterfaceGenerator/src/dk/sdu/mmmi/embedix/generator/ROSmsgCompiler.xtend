@@ -59,10 +59,28 @@ class ROSmsgCompiler {
 	import roslib
 	import rospy
 	
+	ul_instance_«spec.name» = None
+	
+	# Helper functions for stand-alone ROS
+	def ros_standalone_init():
+		rospy.init_node('unity listener', anonymous=True)
+	
+	def ros_standalone_serve():
+		rospy.spin()
+	
 	# Subscriptions
+	«FOR e:writeTopics.entrySet»
+	def ros_callback_«e.key.rosName»(data):
+		«FOR n:e.value»
+		ul_instance_«e.key.pythonName».«n».write(data.«n»)
+		«ENDFOR»
+	«ENDFOR»
+	def init_subscriptions():
+		«FOR e:writeTopics.entrySet»
+		rospy.Subscriber("«e.key.baseName»/«e.key.rosName»","W«e.key.rosName»",ros_callback_«e.key.rosName»)
+		«ENDFOR»
 	# Publications
 	'''
-
 
 	// Expansion of all topic paths
 	
@@ -102,11 +120,11 @@ class ROSmsgCompiler {
 
 
 	def TopicHolder join(String base, String extend) { 
-		new TopicHolder(base,extend,base+"."+extend)
+		new TopicHolder(base,extend,extend)
 	}
 
 	def TopicHolder join(TopicHolder holder, String extend) { 
-		new TopicHolder(holder.baseName,holder.rosName+"_"+extend,holder.pythonName+"_"+extend)
+		new TopicHolder(holder.baseName,holder.rosName+"_"+extend,holder.pythonName+"."+extend)
 	}
 
 }
