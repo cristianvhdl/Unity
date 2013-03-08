@@ -71,13 +71,11 @@ class ROSmsgCompiler {
 	# Subscriptions
 	«FOR e:writeTopics.entrySet»
 	def ros_callback_«e.key.rosName»(data):
-		«FOR n:e.value»
-		ul_instance_«e.key.pythonName».«n».write(data.«n»)
-		«ENDFOR»
+		ul_instance_«e.key.pythonName».write(«FOR n:e.value SEPARATOR ","»data.«n»«ENDFOR»)
 	«ENDFOR»
 	def init_subscriptions():
 		«FOR e:writeTopics.entrySet»
-		rospy.Subscriber("«e.key.baseName»/«e.key.rosName»","W«e.key.rosName»",ros_callback_«e.key.rosName»)
+		rospy.Subscriber("«e.key.rosName»","W«e.key.rosName»",ros_callback_«e.key.rosName»)
 		«ENDFOR»
 	# Publications
 	'''

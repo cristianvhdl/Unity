@@ -144,22 +144,27 @@ public class ROSmsgCompiler {
         _builder.append(_rosName, "");
         _builder.append("(data):");
         _builder.newLineIfNotEmpty();
+        _builder.append("\t");
+        _builder.append("ul_instance_");
+        TopicHolder _key_1 = e.getKey();
+        String _pythonName = _key_1.getPythonName();
+        _builder.append(_pythonName, "	");
+        _builder.append(".write(");
         {
           List<String> _value = e.getValue();
+          boolean _hasElements = false;
           for(final String n : _value) {
-            _builder.append("\t");
-            _builder.append("ul_instance_");
-            TopicHolder _key_1 = e.getKey();
-            String _pythonName = _key_1.getPythonName();
-            _builder.append(_pythonName, "	");
-            _builder.append(".");
+            if (!_hasElements) {
+              _hasElements = true;
+            } else {
+              _builder.appendImmediate(",", "	");
+            }
+            _builder.append("data.");
             _builder.append(n, "	");
-            _builder.append(".write(data.");
-            _builder.append(n, "	");
-            _builder.append(")");
-            _builder.newLineIfNotEmpty();
           }
         }
+        _builder.append(")");
+        _builder.newLineIfNotEmpty();
       }
     }
     _builder.append("def init_subscriptions():");
@@ -170,19 +175,15 @@ public class ROSmsgCompiler {
         _builder.append("\t");
         _builder.append("rospy.Subscriber(\"");
         TopicHolder _key_2 = e_1.getKey();
-        String _baseName = _key_2.getBaseName();
-        _builder.append(_baseName, "	");
-        _builder.append("/");
-        TopicHolder _key_3 = e_1.getKey();
-        String _rosName_1 = _key_3.getRosName();
+        String _rosName_1 = _key_2.getRosName();
         _builder.append(_rosName_1, "	");
         _builder.append("\",\"W");
-        TopicHolder _key_4 = e_1.getKey();
-        String _rosName_2 = _key_4.getRosName();
+        TopicHolder _key_3 = e_1.getKey();
+        String _rosName_2 = _key_3.getRosName();
         _builder.append(_rosName_2, "	");
         _builder.append("\",ros_callback_");
-        TopicHolder _key_5 = e_1.getKey();
-        String _rosName_3 = _key_5.getRosName();
+        TopicHolder _key_4 = e_1.getKey();
+        String _rosName_3 = _key_4.getRosName();
         _builder.append(_rosName_3, "	");
         _builder.append(")");
         _builder.newLineIfNotEmpty();
