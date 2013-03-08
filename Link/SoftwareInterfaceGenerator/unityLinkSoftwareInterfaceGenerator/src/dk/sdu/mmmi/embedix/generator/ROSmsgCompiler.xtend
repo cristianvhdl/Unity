@@ -29,16 +29,18 @@ class ROSmsgCompiler {
 			if(c.isPublic) for(m:c.members) expandTopicPath(spec.name.join(c.name),m,c)
 	}
 	
-	def void generate(String directory, IFileSystemAccess access) {
+	def void generate(String basedirectory, IFileSystemAccess access) {
+		val directory = basedirectory+"/"+spec.name
 		writeTopics.generateMSG("W", directory, access)
 		readTopics.generateMSG("R",directory,access)
+		generateBridgeFile(directory,access)
 	}
 
 	// ROS msg files generation
 	
 	def void generateMSG(Map<TopicHolder,List<String>> map, String prefix, String directory, IFileSystemAccess access) {
 		for(e:map.entrySet)
-			access.generateFile(directory+"/"+e.key.baseName+"/msg/"+prefix+e.key.rosName+".msg",generateMSGelements(e.value))
+			access.generateFile(directory+"/msg/"+prefix+e.key.rosName+".msg",generateMSGelements(e.value))
 	}
 	
 	def generateMSGelements(List<String> names) '''
@@ -47,8 +49,20 @@ class ROSmsgCompiler {
 		ÇENDFORÈ
 	'''
 
-	// Python server and client generation
+	// Python - ROS bridge
 	
+	def generateBridgeFile(String directory, IFileSystemAccess access) { 
+		access.generateFile(directory+"/ros-"+spec.name+".py", generateBridge)
+	}
+	
+	def generateBridge() '''
+	import roslib
+	import rospy
+	
+	# Subscriptions
+	# Publications
+	'''
+
 
 	// Expansion of all topic paths
 	

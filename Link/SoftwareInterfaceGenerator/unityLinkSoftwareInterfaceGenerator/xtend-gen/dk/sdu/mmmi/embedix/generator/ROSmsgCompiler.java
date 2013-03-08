@@ -61,27 +61,27 @@ public class ROSmsgCompiler {
     }
   }
   
-  public void generate(final String directory, final IFileSystemAccess access) {
+  public void generate(final String basedirectory, final IFileSystemAccess access) {
+    String _plus = (basedirectory + "/");
+    String _name = this.spec.getName();
+    final String directory = (_plus + _name);
     this.generateMSG(this.writeTopics, "W", directory, access);
     this.generateMSG(this.readTopics, "R", directory, access);
+    this.generateBridgeFile(directory, access);
   }
   
   public void generateMSG(final Map<TopicHolder,List<String>> map, final String prefix, final String directory, final IFileSystemAccess access) {
     Set<Entry<TopicHolder,List<String>>> _entrySet = map.entrySet();
     for (final Entry<TopicHolder,List<String>> e : _entrySet) {
-      String _plus = (directory + "/");
+      String _plus = (directory + "/msg/");
+      String _plus_1 = (_plus + prefix);
       TopicHolder _key = e.getKey();
-      String _baseName = _key.getBaseName();
-      String _plus_1 = (_plus + _baseName);
-      String _plus_2 = (_plus_1 + "/msg/");
-      String _plus_3 = (_plus_2 + prefix);
-      TopicHolder _key_1 = e.getKey();
-      String _rosName = _key_1.getRosName();
-      String _plus_4 = (_plus_3 + _rosName);
-      String _plus_5 = (_plus_4 + ".msg");
+      String _rosName = _key.getRosName();
+      String _plus_2 = (_plus_1 + _rosName);
+      String _plus_3 = (_plus_2 + ".msg");
       List<String> _value = e.getValue();
       CharSequence _generateMSGelements = this.generateMSGelements(_value);
-      access.generateFile(_plus_5, _generateMSGelements);
+      access.generateFile(_plus_3, _generateMSGelements);
     }
   }
   
@@ -94,6 +94,29 @@ public class ROSmsgCompiler {
         _builder.newLineIfNotEmpty();
       }
     }
+    return _builder;
+  }
+  
+  public void generateBridgeFile(final String directory, final IFileSystemAccess access) {
+    String _plus = (directory + "/ros-");
+    String _name = this.spec.getName();
+    String _plus_1 = (_plus + _name);
+    String _plus_2 = (_plus_1 + ".py");
+    CharSequence _generateBridge = this.generateBridge();
+    access.generateFile(_plus_2, _generateBridge);
+  }
+  
+  public CharSequence generateBridge() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("import roslib");
+    _builder.newLine();
+    _builder.append("import rospy");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("# Subscriptions");
+    _builder.newLine();
+    _builder.append("# Publications");
+    _builder.newLine();
     return _builder;
   }
   
