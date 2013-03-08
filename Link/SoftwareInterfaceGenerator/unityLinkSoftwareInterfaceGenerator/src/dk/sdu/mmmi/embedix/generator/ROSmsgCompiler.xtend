@@ -36,12 +36,12 @@ class ROSmsgCompiler {
 	
 	def void generateMSG(Map<String,List<String>> map, String prefix, String directory, IFileSystemAccess access) {
 		for(e:map.entrySet)
-			access.generateFile(directory+"/"+prefix+e.key,generateMSGelements(e.value))
+			access.generateFile(directory+"/"+prefix+e.key+".msg",generateMSGelements(e.value))
 	}
 	
 	def generateMSGelements(List<String> names) '''
 		«FOR n:names»
-		int64 «n»
+		int32 «n»
 		«ENDFOR»
 	'''
 

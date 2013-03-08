@@ -72,9 +72,10 @@ public class ROSmsgCompiler {
       String _plus_1 = (_plus + prefix);
       String _key = e.getKey();
       String _plus_2 = (_plus_1 + _key);
+      String _plus_3 = (_plus_2 + ".msg");
       List<String> _value = e.getValue();
       CharSequence _generateMSGelements = this.generateMSGelements(_value);
-      access.generateFile(_plus_2, _generateMSGelements);
+      access.generateFile(_plus_3, _generateMSGelements);
     }
   }
   
@@ -82,7 +83,7 @@ public class ROSmsgCompiler {
     StringConcatenation _builder = new StringConcatenation();
     {
       for(final String n : names) {
-        _builder.append("int64 ");
+        _builder.append("int32 ");
         _builder.append(n, "");
         _builder.newLineIfNotEmpty();
       }
