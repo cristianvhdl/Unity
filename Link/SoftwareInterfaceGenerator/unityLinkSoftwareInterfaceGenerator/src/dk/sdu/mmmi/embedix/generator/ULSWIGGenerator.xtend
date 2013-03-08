@@ -13,7 +13,7 @@ class ULSWIGGenerator implements IGenerator {
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
 		for(e: resource.getAllContents().toIterable().filter(typeof(LinkSpec))) {
 			fsa.generateFile("unitylink/python/"+e.name + ".py",e.compilePythonUnity)
-			compileROSmsgs("unitylink/ros/msg/",fsa,e)
+			compileROSmsgs("unitylink/ros",fsa,e)
 		}
 	}
 	

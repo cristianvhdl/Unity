@@ -24,7 +24,7 @@ public class ULSWIGGenerator implements IGenerator {
         String _plus_1 = (_plus + ".py");
         CharSequence _compilePythonUnity = this.compilePythonUnity(e);
         fsa.generateFile(_plus_1, _compilePythonUnity);
-        this.compileROSmsgs("unitylink/ros/msg/", fsa, e);
+        this.compileROSmsgs("unitylink/ros", fsa, e);
       }
     }
   }

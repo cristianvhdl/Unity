@@ -20,8 +20,8 @@ import static extension dk.sdu.mmmi.embedix.generator.Utilities.*
 class ROSmsgCompiler {
 	
 	var LinkSpec spec
-	val Map<String,List<String>> writeTopics = new HashMap()
-	val Map<String,List<String>> readTopics = new HashMap()
+	val Map<TopicHolder,List<String>> writeTopics = new HashMap()
+	val Map<TopicHolder,List<String>> readTopics = new HashMap()
 	
 	public new(LinkSpec spec) {
 		this.spec = spec
@@ -33,10 +33,12 @@ class ROSmsgCompiler {
 		writeTopics.generateMSG("W", directory, access)
 		readTopics.generateMSG("R",directory,access)
 	}
+
+	// ROS msg files generation
 	
-	def void generateMSG(Map<String,List<String>> map, String prefix, String directory, IFileSystemAccess access) {
+	def void generateMSG(Map<TopicHolder,List<String>> map, String prefix, String directory, IFileSystemAccess access) {
 		for(e:map.entrySet)
-			access.generateFile(directory+"/"+prefix+e.key+".msg",generateMSGelements(e.value))
+			access.generateFile(directory+"/"+e.key.baseName+"/msg/"+prefix+e.key.rosName+".msg",generateMSGelements(e.value))
 	}
 	
 	def generateMSGelements(List<String> names) '''
@@ -45,16 +47,19 @@ class ROSmsgCompiler {
 		ÇENDFORÈ
 	'''
 
+	// Python server and client generation
+	
+
 	// Expansion of all topic paths
 	
-	def dispatch void expandTopicPath(String base, Member member, Constructor context) { }
+	def dispatch void expandTopicPath(TopicHolder base, Member member, Constructor context) { }
 	
-	def dispatch void expandTopicPath(String base, Expansion expansion, Constructor context) {
+	def dispatch void expandTopicPath(TopicHolder base, Expansion expansion, Constructor context) {
 		for(m:expansion.constructor.members)
 			expandTopicPath(base.join(expansion.name),m,expansion.constructor)
 	}
 
-	def dispatch void expandTopicPath(String base, Instantiation instant, Constructor context) {
+	def dispatch void expandTopicPath(TopicHolder base, Instantiation instant, Constructor context) {
 		if(instant.kind.equals("READ")) {
 			if(instant.properties.containsPublish) readTopics.putIntoList(base,instant.address.name)
 		} else if(instant.kind.equals("WRITE"))
@@ -68,7 +73,7 @@ class ROSmsgCompiler {
 		return false
 	}
 
-	def dispatch void expandTopicPath(String base, Grouping group, Constructor context) {
+	def dispatch void expandTopicPath(TopicHolder base, Grouping group, Constructor context) {
 		val List<String> expansion = new ArrayList
 		for(e:group.elements) expansion.addAll(computeGroupComponents(e,context,"","_"))
 		for(e:expansion) writeTopics.putIntoList(base.join(group.name),e)
@@ -76,12 +81,24 @@ class ROSmsgCompiler {
 
 	// Generally useful stuff
 
-	def putIntoList(Map<String,List<String>> map, String base, String name) {
+	def putIntoList(Map<TopicHolder,List<String>> map, TopicHolder base, String name) {
 		if(map.get(base)==null) map.put(base,new ArrayList)
 		map.get(base).add(name)
 	}
 
 
-	def String join(String base, String extend) { base+"_"+extend }
+	def TopicHolder join(String base, String extend) { 
+		new TopicHolder(base,extend,base+"."+extend)
+	}
+
+	def TopicHolder join(TopicHolder holder, String extend) { 
+		new TopicHolder(holder.baseName,holder.rosName+"_"+extend,holder.pythonName+"_"+extend)
+	}
+
 }
 
+@Data class TopicHolder {
+	String baseName
+	String rosName
+	String pythonName 
+}
