@@ -24,6 +24,8 @@ import java.util.List
 import java.util.ArrayList
 import java.util.HashMap
 
+import static extension dk.sdu.mmmi.embedix.generator.Utilities.*
+
 class PythonULSWCompiler {
 
 	var LinkSpec link
@@ -192,41 +194,17 @@ class PythonULSWCompiler {
 	
 	def generateGroupAccess(GroupElement element, String groupingName, Constructor context) { 
 		// Compute proxies
-		val expansion = new ArrayList<StringBuffer>
-		for(segment: element.path) {
-			if(segment.simple!=null) {
-				val List<String> x = new ArrayList
-				x.add(segment.simple)
-				addGroupAccessSegment(expansion,x)
-			} else {
-				val name = context.findAllDeclarations(segment.type)
-				addGroupAccessSegment(expansion,name)
-			}
-		}
+		val expansion = computeGroupComponents(element,context,"self.",".")
 		// Store for subsequent proxy class generation
 		if(groupingMembers.get(groupingName)==null) groupingMembers.put(groupingName,new ArrayList<String>)
-		for(e:expansion) groupingMembers.get(groupingName).add(e.toString)
+		for(e:expansion) groupingMembers.get(groupingName).add(e)
 		// Construct result string
 		val result = new StringBuffer
 		for(b: expansion) {
 			if(result.length>0) result.append(",")
-			result.append(b.toString)
+			result.append(b)
 		}
 		return result
-	}
-
-	def findAllDeclarations(Constructor context, Constructor target) { 
-		val result = new ArrayList<String>
-		for(m: context.members) switch m {
-			Expansion case m: if(m.constructor==target) result.add(m.name)
-		}
-		return result
-	}
-
-
-	def addGroupAccessSegment(List<StringBuffer> list, List<String> strings) {
-		if(list.size==0) for(s:strings) list.add(new StringBuffer("self."+s))
-		else for(ref: list) for(s:strings) ref.append("."+s)
 	}
 
 	def generateGroupingClass(String className, List<String> proxyFlatNames) '''

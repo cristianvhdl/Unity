@@ -13,9 +13,17 @@ class ULSWIGGenerator implements IGenerator {
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
 		for(e: resource.getAllContents().toIterable().filter(typeof(LinkSpec))) {
 			fsa.generateFile("unitylink/python/"+e.name + ".py",e.compilePythonUnity)
+			compileROSmsgs("unitylink/ros/msg/",fsa,e)
 		}
 	}
 	
-	def compilePythonUnity(LinkSpec spec) { return new PythonULSWCompiler(spec).generate() }
+	def compilePythonUnity(LinkSpec spec) { 
+		return new PythonULSWCompiler(spec).generate()
+	}
+
+	def void compileROSmsgs(String directory, IFileSystemAccess access, LinkSpec spec) {
+		new ROSmsgCompiler(spec).generate(directory,access)
+	}
 
 }
+

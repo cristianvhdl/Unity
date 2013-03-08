@@ -1,6 +1,7 @@
 package dk.sdu.mmmi.embedix.generator;
 
 import com.google.common.base.Objects;
+import dk.sdu.mmmi.embedix.generator.Utilities;
 import dk.sdu.mmmi.embedix.ulswig.AddressBinding;
 import dk.sdu.mmmi.embedix.ulswig.AddressExpansion;
 import dk.sdu.mmmi.embedix.ulswig.AddressSpec;
@@ -21,7 +22,6 @@ import dk.sdu.mmmi.embedix.ulswig.LinkProperty;
 import dk.sdu.mmmi.embedix.ulswig.LinkSpec;
 import dk.sdu.mmmi.embedix.ulswig.Member;
 import dk.sdu.mmmi.embedix.ulswig.NamedAddressSpec;
-import dk.sdu.mmmi.embedix.ulswig.PathElement;
 import dk.sdu.mmmi.embedix.ulswig.PublishProperty;
 import dk.sdu.mmmi.embedix.ulswig.SimpleExpansion;
 import dk.sdu.mmmi.embedix.ulswig.TosNetLinkBinding;
@@ -529,92 +529,30 @@ public class PythonULSWCompiler {
   }
   
   public StringBuffer generateGroupAccess(final GroupElement element, final String groupingName, final Constructor context) {
-    ArrayList<StringBuffer> _arrayList = new ArrayList<StringBuffer>();
-    final ArrayList<StringBuffer> expansion = _arrayList;
-    EList<PathElement> _path = element.getPath();
-    for (final PathElement segment : _path) {
-      String _simple = segment.getSimple();
-      boolean _notEquals = (!Objects.equal(_simple, null));
-      if (_notEquals) {
-        ArrayList<String> _arrayList_1 = new ArrayList<String>();
-        final List<String> x = _arrayList_1;
-        String _simple_1 = segment.getSimple();
-        x.add(_simple_1);
-        this.addGroupAccessSegment(expansion, x);
-      } else {
-        Constructor _type = segment.getType();
-        final ArrayList<String> name = this.findAllDeclarations(context, _type);
-        this.addGroupAccessSegment(expansion, name);
-      }
-    }
+    final List<String> expansion = Utilities.computeGroupComponents(element, context, "self.", ".");
     List<String> _get = this.groupingMembers.get(groupingName);
     boolean _equals = Objects.equal(_get, null);
     if (_equals) {
-      ArrayList<String> _arrayList_2 = new ArrayList<String>();
-      this.groupingMembers.put(groupingName, _arrayList_2);
+      ArrayList<String> _arrayList = new ArrayList<String>();
+      this.groupingMembers.put(groupingName, _arrayList);
     }
-    for (final StringBuffer e : expansion) {
+    for (final String e : expansion) {
       List<String> _get_1 = this.groupingMembers.get(groupingName);
-      String _string = e.toString();
-      _get_1.add(_string);
+      _get_1.add(e);
     }
     StringBuffer _stringBuffer = new StringBuffer();
     final StringBuffer result = _stringBuffer;
-    for (final StringBuffer b : expansion) {
+    for (final String b : expansion) {
       {
         int _length = result.length();
         boolean _greaterThan = (_length > 0);
         if (_greaterThan) {
           result.append(",");
         }
-        String _string_1 = b.toString();
-        result.append(_string_1);
+        result.append(b);
       }
     }
     return result;
-  }
-  
-  public ArrayList<String> findAllDeclarations(final Constructor context, final Constructor target) {
-    ArrayList<String> _arrayList = new ArrayList<String>();
-    final ArrayList<String> result = _arrayList;
-    EList<Member> _members = context.getMembers();
-    for (final Member m : _members) {
-      boolean _matched = false;
-      if (!_matched) {
-        if (m instanceof Expansion) {
-          final Expansion _expansion = (Expansion)m;
-          if (Objects.equal(m,_expansion)) {
-            _matched=true;
-            Constructor _constructor = _expansion.getConstructor();
-            boolean _equals = Objects.equal(_constructor, target);
-            if (_equals) {
-              String _name = _expansion.getName();
-              result.add(_name);
-            }
-          }
-        }
-      }
-    }
-    return result;
-  }
-  
-  public void addGroupAccessSegment(final List<StringBuffer> list, final List<String> strings) {
-    int _size = list.size();
-    boolean _equals = (_size == 0);
-    if (_equals) {
-      for (final String s : strings) {
-        String _plus = ("self." + s);
-        StringBuffer _stringBuffer = new StringBuffer(_plus);
-        list.add(_stringBuffer);
-      }
-    } else {
-      for (final StringBuffer ref : list) {
-        for (final String s_1 : strings) {
-          String _plus_1 = ("." + s_1);
-          ref.append(_plus_1);
-        }
-      }
-    }
   }
   
   public CharSequence generateGroupingClass(final String className, final List<String> proxyFlatNames) {
