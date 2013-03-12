@@ -24,11 +24,18 @@ public class TopicHolder {
     return this._pythonName;
   }
   
-  public TopicHolder(final String baseName, final String rosName, final String pythonName) {
+  private final boolean _group;
+  
+  public boolean isGroup() {
+    return this._group;
+  }
+  
+  public TopicHolder(final String baseName, final String rosName, final String pythonName, final boolean group) {
     super();
     this._baseName = baseName;
     this._rosName = rosName;
     this._pythonName = pythonName;
+    this._group = group;
   }
   
   @Override
@@ -38,6 +45,7 @@ public class TopicHolder {
     result = prime * result + ((_baseName== null) ? 0 : _baseName.hashCode());
     result = prime * result + ((_rosName== null) ? 0 : _rosName.hashCode());
     result = prime * result + ((_pythonName== null) ? 0 : _pythonName.hashCode());
+    result = prime * result + (_group ? 1231 : 1237);
     return result;
   }
   
@@ -64,6 +72,8 @@ public class TopicHolder {
       if (other._pythonName != null)
         return false;
     } else if (!_pythonName.equals(other._pythonName))
+      return false;
+    if (other._group != _group)
       return false;
     return true;
   }
