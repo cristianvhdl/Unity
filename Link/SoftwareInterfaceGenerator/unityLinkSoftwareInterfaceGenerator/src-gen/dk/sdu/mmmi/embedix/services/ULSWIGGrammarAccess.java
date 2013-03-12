@@ -23,36 +23,52 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "LinkSpec");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLinkKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Keyword cSemicolonKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cConstructorsAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cConstructorsConstructorParserRuleCall_3_0 = (RuleCall)cConstructorsAssignment_3.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Assignment cPackagenameAssignment_1_0 = (Assignment)cGroup_1.eContents().get(0);
+		private final RuleCall cPackagenameIDTerminalRuleCall_1_0_0 = (RuleCall)cPackagenameAssignment_1_0.eContents().get(0);
+		private final Keyword cFullStopKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
+		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cNameIDTerminalRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
+		private final Keyword cSemicolonKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cConstructorsAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cConstructorsConstructorParserRuleCall_4_0 = (RuleCall)cConstructorsAssignment_4.eContents().get(0);
 		
 		//LinkSpec:
-		//	"link" name=ID ";" constructors+=Constructor*;
+		//	"link" (packagename=ID ".")? name=ID ";" constructors+=Constructor*;
 		public ParserRule getRule() { return rule; }
 
-		//"link" name=ID ";" constructors+=Constructor*
+		//"link" (packagename=ID ".")? name=ID ";" constructors+=Constructor*
 		public Group getGroup() { return cGroup; }
 
 		//"link"
 		public Keyword getLinkKeyword_0() { return cLinkKeyword_0; }
 
-		//name=ID
-		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+		//(packagename=ID ".")?
+		public Group getGroup_1() { return cGroup_1; }
+
+		//packagename=ID
+		public Assignment getPackagenameAssignment_1_0() { return cPackagenameAssignment_1_0; }
 
 		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		public RuleCall getPackagenameIDTerminalRuleCall_1_0_0() { return cPackagenameIDTerminalRuleCall_1_0_0; }
+
+		//"."
+		public Keyword getFullStopKeyword_1_1() { return cFullStopKeyword_1_1; }
+
+		//name=ID
+		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
+
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_2_0() { return cNameIDTerminalRuleCall_2_0; }
 
 		//";"
-		public Keyword getSemicolonKeyword_2() { return cSemicolonKeyword_2; }
+		public Keyword getSemicolonKeyword_3() { return cSemicolonKeyword_3; }
 
 		//constructors+=Constructor*
-		public Assignment getConstructorsAssignment_3() { return cConstructorsAssignment_3; }
+		public Assignment getConstructorsAssignment_4() { return cConstructorsAssignment_4; }
 
 		//Constructor
-		public RuleCall getConstructorsConstructorParserRuleCall_3_0() { return cConstructorsConstructorParserRuleCall_3_0; }
+		public RuleCall getConstructorsConstructorParserRuleCall_4_0() { return cConstructorsConstructorParserRuleCall_4_0; }
 	}
 
 	public class ConstructorElements extends AbstractParserRuleElementFinder {
@@ -1198,7 +1214,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//LinkSpec:
-	//	"link" name=ID ";" constructors+=Constructor*;
+	//	"link" (packagename=ID ".")? name=ID ";" constructors+=Constructor*;
 	public LinkSpecElements getLinkSpecAccess() {
 		return (pLinkSpec != null) ? pLinkSpec : (pLinkSpec = new LinkSpecElements());
 	}

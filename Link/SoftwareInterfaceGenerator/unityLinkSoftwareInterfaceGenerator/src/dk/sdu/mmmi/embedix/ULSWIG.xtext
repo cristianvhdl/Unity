@@ -3,7 +3,7 @@ grammar dk.sdu.mmmi.embedix.ULSWIG with org.eclipse.xtext.common.Terminals
 generate ulswig "http://www.sdu.dk/mmmi/embedix/ULSWIG"
 
 LinkSpec:
-	'link' name=ID ';' constructors+=Constructor*;
+	'link' (packagename=ID '.')? name=ID ';' constructors+=Constructor*;
 	
 Constructor:
 	(isPublic?="public")? name=ID '(' (parameters+=ID (',' parameters += ID)*)? ')' 

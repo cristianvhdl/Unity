@@ -14,6 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getPackagename <em>Packagename</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getName <em>Name</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getConstructors <em>Constructors</em>}</li>
  * </ul>
@@ -25,6 +26,32 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface LinkSpec extends EObject
 {
+  /**
+   * Returns the value of the '<em><b>Packagename</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Packagename</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Packagename</em>' attribute.
+   * @see #setPackagename(String)
+   * @see dk.sdu.mmmi.embedix.ulswig.UlswigPackage#getLinkSpec_Packagename()
+   * @model
+   * @generated
+   */
+  String getPackagename();
+
+  /**
+   * Sets the value of the '{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getPackagename <em>Packagename</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Packagename</em>' attribute.
+   * @see #getPackagename()
+   * @generated
+   */
+  void setPackagename(String value);
+
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->

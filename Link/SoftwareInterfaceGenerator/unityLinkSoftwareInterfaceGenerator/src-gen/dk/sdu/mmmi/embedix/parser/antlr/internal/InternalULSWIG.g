@@ -81,11 +81,33 @@ ruleLinkSpec returns [EObject current=null]
     {
     	newLeafNode(otherlv_0, grammarAccess.getLinkSpecAccess().getLinkKeyword_0());
     }
+((
 (
-(
-		lv_name_1_0=RULE_ID
+		lv_packagename_1_0=RULE_ID
 		{
-			newLeafNode(lv_name_1_0, grammarAccess.getLinkSpecAccess().getNameIDTerminalRuleCall_1_0()); 
+			newLeafNode(lv_packagename_1_0, grammarAccess.getLinkSpecAccess().getPackagenameIDTerminalRuleCall_1_0_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getLinkSpecRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"packagename",
+        		lv_packagename_1_0, 
+        		"ID");
+	    }
+
+)
+)	otherlv_2='.' 
+    {
+    	newLeafNode(otherlv_2, grammarAccess.getLinkSpecAccess().getFullStopKeyword_1_1());
+    }
+)?(
+(
+		lv_name_3_0=RULE_ID
+		{
+			newLeafNode(lv_name_3_0, grammarAccess.getLinkSpecAccess().getNameIDTerminalRuleCall_2_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -94,28 +116,28 @@ ruleLinkSpec returns [EObject current=null]
        		setWithLastConsumed(
        			$current, 
        			"name",
-        		lv_name_1_0, 
+        		lv_name_3_0, 
         		"ID");
 	    }
 
 )
-)	otherlv_2=';' 
+)	otherlv_4=';' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getLinkSpecAccess().getSemicolonKeyword_2());
+    	newLeafNode(otherlv_4, grammarAccess.getLinkSpecAccess().getSemicolonKeyword_3());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getLinkSpecAccess().getConstructorsConstructorParserRuleCall_3_0()); 
+	        newCompositeNode(grammarAccess.getLinkSpecAccess().getConstructorsConstructorParserRuleCall_4_0()); 
 	    }
-		lv_constructors_3_0=ruleConstructor		{
+		lv_constructors_5_0=ruleConstructor		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getLinkSpecRule());
 	        }
        		add(
        			$current, 
        			"constructors",
-        		lv_constructors_3_0, 
+        		lv_constructors_5_0, 
         		"Constructor");
 	        afterParserOrEnumRuleCall();
 	    }

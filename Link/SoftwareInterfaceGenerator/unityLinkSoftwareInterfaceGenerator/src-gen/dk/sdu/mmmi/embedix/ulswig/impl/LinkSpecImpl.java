@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkSpecImpl#getPackagename <em>Packagename</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkSpecImpl#getName <em>Name</em>}</li>
  *   <li>{@link dk.sdu.mmmi.embedix.ulswig.impl.LinkSpecImpl#getConstructors <em>Constructors</em>}</li>
  * </ul>
@@ -38,6 +39,26 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class LinkSpecImpl extends MinimalEObjectImpl.Container implements LinkSpec
 {
+  /**
+   * The default value of the '{@link #getPackagename() <em>Packagename</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPackagename()
+   * @generated
+   * @ordered
+   */
+  protected static final String PACKAGENAME_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getPackagename() <em>Packagename</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getPackagename()
+   * @generated
+   * @ordered
+   */
+  protected String packagename = PACKAGENAME_EDEFAULT;
+
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -87,6 +108,29 @@ public class LinkSpecImpl extends MinimalEObjectImpl.Container implements LinkSp
   protected EClass eStaticClass()
   {
     return UlswigPackage.Literals.LINK_SPEC;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getPackagename()
+  {
+    return packagename;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setPackagename(String newPackagename)
+  {
+    String oldPackagename = packagename;
+    packagename = newPackagename;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, UlswigPackage.LINK_SPEC__PACKAGENAME, oldPackagename, packagename));
   }
 
   /**
@@ -152,6 +196,8 @@ public class LinkSpecImpl extends MinimalEObjectImpl.Container implements LinkSp
   {
     switch (featureID)
     {
+      case UlswigPackage.LINK_SPEC__PACKAGENAME:
+        return getPackagename();
       case UlswigPackage.LINK_SPEC__NAME:
         return getName();
       case UlswigPackage.LINK_SPEC__CONSTRUCTORS:
@@ -171,6 +217,9 @@ public class LinkSpecImpl extends MinimalEObjectImpl.Container implements LinkSp
   {
     switch (featureID)
     {
+      case UlswigPackage.LINK_SPEC__PACKAGENAME:
+        setPackagename((String)newValue);
+        return;
       case UlswigPackage.LINK_SPEC__NAME:
         setName((String)newValue);
         return;
@@ -192,6 +241,9 @@ public class LinkSpecImpl extends MinimalEObjectImpl.Container implements LinkSp
   {
     switch (featureID)
     {
+      case UlswigPackage.LINK_SPEC__PACKAGENAME:
+        setPackagename(PACKAGENAME_EDEFAULT);
+        return;
       case UlswigPackage.LINK_SPEC__NAME:
         setName(NAME_EDEFAULT);
         return;
@@ -212,6 +264,8 @@ public class LinkSpecImpl extends MinimalEObjectImpl.Container implements LinkSp
   {
     switch (featureID)
     {
+      case UlswigPackage.LINK_SPEC__PACKAGENAME:
+        return PACKAGENAME_EDEFAULT == null ? packagename != null : !PACKAGENAME_EDEFAULT.equals(packagename);
       case UlswigPackage.LINK_SPEC__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case UlswigPackage.LINK_SPEC__CONSTRUCTORS:
@@ -231,7 +285,9 @@ public class LinkSpecImpl extends MinimalEObjectImpl.Container implements LinkSp
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
+    result.append(" (packagename: ");
+    result.append(packagename);
+    result.append(", name: ");
     result.append(name);
     result.append(')');
     return result.toString();

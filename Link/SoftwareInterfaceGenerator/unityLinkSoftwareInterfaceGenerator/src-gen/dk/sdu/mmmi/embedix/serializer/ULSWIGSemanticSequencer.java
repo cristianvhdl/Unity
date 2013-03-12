@@ -319,7 +319,7 @@ public class ULSWIGSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (name=ID constructors+=Constructor*)
+	 *     (packagename=ID? name=ID constructors+=Constructor*)
 	 */
 	protected void sequence_LinkSpec(EObject context, LinkSpec semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

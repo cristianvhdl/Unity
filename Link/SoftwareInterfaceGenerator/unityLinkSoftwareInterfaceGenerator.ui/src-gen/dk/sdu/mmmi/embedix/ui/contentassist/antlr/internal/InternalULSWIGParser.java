@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_HEX_NUM", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'READ'", "'WRITE'", "'link'", "';'", "'('", "')'", "'{'", "'}'", "','", "':'", "'@'", "'TOSNET'", "'CTRL'", "'='", "'BASE'", "'UART'", "'+'", "'ID'", "'CRC'", "'PUBLISH'", "'.'", "'ALL'", "'public'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_HEX_NUM", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'READ'", "'WRITE'", "'link'", "';'", "'.'", "'('", "')'", "'{'", "'}'", "','", "':'", "'@'", "'TOSNET'", "'CTRL'", "'='", "'BASE'", "'UART'", "'+'", "'ID'", "'CRC'", "'PUBLISH'", "'ALL'", "'public'"
     };
     public static final int RULE_ID=4;
     public static final int RULE_HEX_NUM=7;
@@ -1870,13 +1870,13 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             int alt1=2;
             int LA1_0 = input.LA(1);
 
-            if ( (LA1_0==22) ) {
+            if ( (LA1_0==23) ) {
                 int LA1_1 = input.LA(2);
 
                 if ( (LA1_1==RULE_ID) ) {
                     alt1=1;
                 }
-                else if ( (LA1_1==16) ) {
+                else if ( (LA1_1==17) ) {
                     alt1=2;
                 }
                 else {
@@ -1958,7 +1958,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:730:1: ( ( ruleLinkBinding ) | ( ruleExpansion ) | ( ruleInstantiation ) | ( ruleGrouping ) )
             int alt2=4;
             switch ( input.LA(1) ) {
-            case 23:
+            case 24:
                 {
                 alt2=1;
                 }
@@ -1967,10 +1967,10 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
                 {
                 int LA2_2 = input.LA(2);
 
-                if ( (LA2_2==25) ) {
+                if ( (LA2_2==26) ) {
                     alt2=4;
                 }
-                else if ( (LA2_2==21) ) {
+                else if ( (LA2_2==22) ) {
                     alt2=2;
                 }
                 else {
@@ -1981,14 +1981,14 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
                 }
                 }
                 break;
-            case 22:
+            case 23:
                 {
                 int LA2_3 = input.LA(2);
 
                 if ( (LA2_3==RULE_ID) ) {
                     int LA2_6 = input.LA(3);
 
-                    if ( (LA2_6==21) ) {
+                    if ( (LA2_6==22) ) {
                         int LA2_7 = input.LA(4);
 
                         if ( ((LA2_7>=12 && LA2_7<=13)) ) {
@@ -2004,7 +2004,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
                             throw nvae;
                         }
                     }
-                    else if ( (LA2_6==25) ) {
+                    else if ( (LA2_6==26) ) {
                         alt2=3;
                     }
                     else {
@@ -2133,17 +2133,17 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:764:1: ( ( ( rule__LinkProperty__Group_0__0 ) ) | ( ( rule__LinkProperty__Group_1__0 ) ) | ( ( rule__LinkProperty__Group_2__0 ) ) )
             int alt3=3;
             switch ( input.LA(1) ) {
-            case 24:
+            case 25:
                 {
                 alt3=1;
                 }
                 break;
-            case 26:
+            case 27:
                 {
                 alt3=2;
                 }
                 break;
-            case 27:
+            case 28:
                 {
                 alt3=3;
                 }
@@ -2262,7 +2262,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             if ( (LA4_0==RULE_ID) ) {
                 alt4=1;
             }
-            else if ( (LA4_0==22) ) {
+            else if ( (LA4_0==23) ) {
                 alt4=2;
             }
             else {
@@ -2341,10 +2341,10 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             if ( (LA5_0==RULE_ID) ) {
                 int LA5_1 = input.LA(2);
 
-                if ( (LA5_1==28) ) {
+                if ( (LA5_1==29) ) {
                     alt5=2;
                 }
-                else if ( (LA5_1==EOF||LA5_1==17||LA5_1==20) ) {
+                else if ( (LA5_1==EOF||LA5_1==18||LA5_1==21) ) {
                     alt5=1;
                 }
                 else {
@@ -2470,10 +2470,10 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             if ( (LA6_0==RULE_ID) ) {
                 int LA6_1 = input.LA(2);
 
-                if ( (LA6_1==25) ) {
+                if ( (LA6_1==26) ) {
                     alt6=1;
                 }
-                else if ( (LA6_1==EOF||LA6_1==21) ) {
+                else if ( (LA6_1==EOF||LA6_1==22) ) {
                     alt6=2;
                 }
                 else {
@@ -2626,17 +2626,17 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:890:1: ( ( ( rule__InstantiationProperty__Group_0__0 ) ) | ( ( rule__InstantiationProperty__Group_1__0 ) ) | ( ( rule__InstantiationProperty__Group_2__0 ) ) )
             int alt8=3;
             switch ( input.LA(1) ) {
-            case 29:
+            case 30:
                 {
                 alt8=1;
                 }
                 break;
-            case 30:
+            case 31:
                 {
                 alt8=2;
                 }
                 break;
-            case 31:
+            case 32:
                 {
                 alt8=3;
                 }
@@ -2946,31 +2946,46 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkSpec__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:981:1: rule__LinkSpec__Group__1__Impl : ( ( rule__LinkSpec__NameAssignment_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:981:1: rule__LinkSpec__Group__1__Impl : ( ( rule__LinkSpec__Group_1__0 )? ) ;
     public final void rule__LinkSpec__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:985:1: ( ( ( rule__LinkSpec__NameAssignment_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:986:1: ( ( rule__LinkSpec__NameAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:985:1: ( ( ( rule__LinkSpec__Group_1__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:986:1: ( ( rule__LinkSpec__Group_1__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:986:1: ( ( rule__LinkSpec__NameAssignment_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:987:1: ( rule__LinkSpec__NameAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:986:1: ( ( rule__LinkSpec__Group_1__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:987:1: ( rule__LinkSpec__Group_1__0 )?
             {
-             before(grammarAccess.getLinkSpecAccess().getNameAssignment_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:988:1: ( rule__LinkSpec__NameAssignment_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:988:2: rule__LinkSpec__NameAssignment_1
-            {
-            pushFollow(FOLLOW_rule__LinkSpec__NameAssignment_1_in_rule__LinkSpec__Group__1__Impl2082);
-            rule__LinkSpec__NameAssignment_1();
+             before(grammarAccess.getLinkSpecAccess().getGroup_1()); 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:988:1: ( rule__LinkSpec__Group_1__0 )?
+            int alt10=2;
+            int LA10_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA10_0==RULE_ID) ) {
+                int LA10_1 = input.LA(2);
 
+                if ( (LA10_1==16) ) {
+                    alt10=1;
+                }
+            }
+            switch (alt10) {
+                case 1 :
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:988:2: rule__LinkSpec__Group_1__0
+                    {
+                    pushFollow(FOLLOW_rule__LinkSpec__Group_1__0_in_rule__LinkSpec__Group__1__Impl2082);
+                    rule__LinkSpec__Group_1__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
-             after(grammarAccess.getLinkSpecAccess().getNameAssignment_1()); 
+             after(grammarAccess.getLinkSpecAccess().getGroup_1()); 
 
             }
 
@@ -3002,12 +3017,12 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1002:1: ( rule__LinkSpec__Group__2__Impl rule__LinkSpec__Group__3 )
             // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1003:2: rule__LinkSpec__Group__2__Impl rule__LinkSpec__Group__3
             {
-            pushFollow(FOLLOW_rule__LinkSpec__Group__2__Impl_in_rule__LinkSpec__Group__22112);
+            pushFollow(FOLLOW_rule__LinkSpec__Group__2__Impl_in_rule__LinkSpec__Group__22113);
             rule__LinkSpec__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__LinkSpec__Group__3_in_rule__LinkSpec__Group__22115);
+            pushFollow(FOLLOW_rule__LinkSpec__Group__3_in_rule__LinkSpec__Group__22116);
             rule__LinkSpec__Group__3();
 
             state._fsp--;
@@ -3031,21 +3046,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkSpec__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1010:1: rule__LinkSpec__Group__2__Impl : ( ';' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1010:1: rule__LinkSpec__Group__2__Impl : ( ( rule__LinkSpec__NameAssignment_2 ) ) ;
     public final void rule__LinkSpec__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1014:1: ( ( ';' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1015:1: ( ';' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1014:1: ( ( ( rule__LinkSpec__NameAssignment_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1015:1: ( ( rule__LinkSpec__NameAssignment_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1015:1: ( ';' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1016:1: ';'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1015:1: ( ( rule__LinkSpec__NameAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1016:1: ( rule__LinkSpec__NameAssignment_2 )
             {
-             before(grammarAccess.getLinkSpecAccess().getSemicolonKeyword_2()); 
-            match(input,15,FOLLOW_15_in_rule__LinkSpec__Group__2__Impl2143); 
-             after(grammarAccess.getLinkSpecAccess().getSemicolonKeyword_2()); 
+             before(grammarAccess.getLinkSpecAccess().getNameAssignment_2()); 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1017:1: ( rule__LinkSpec__NameAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1017:2: rule__LinkSpec__NameAssignment_2
+            {
+            pushFollow(FOLLOW_rule__LinkSpec__NameAssignment_2_in_rule__LinkSpec__Group__2__Impl2143);
+            rule__LinkSpec__NameAssignment_2();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getLinkSpecAccess().getNameAssignment_2()); 
 
             }
 
@@ -3068,17 +3093,22 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkSpec__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1029:1: rule__LinkSpec__Group__3 : rule__LinkSpec__Group__3__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1027:1: rule__LinkSpec__Group__3 : rule__LinkSpec__Group__3__Impl rule__LinkSpec__Group__4 ;
     public final void rule__LinkSpec__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1033:1: ( rule__LinkSpec__Group__3__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1034:2: rule__LinkSpec__Group__3__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1031:1: ( rule__LinkSpec__Group__3__Impl rule__LinkSpec__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1032:2: rule__LinkSpec__Group__3__Impl rule__LinkSpec__Group__4
             {
-            pushFollow(FOLLOW_rule__LinkSpec__Group__3__Impl_in_rule__LinkSpec__Group__32174);
+            pushFollow(FOLLOW_rule__LinkSpec__Group__3__Impl_in_rule__LinkSpec__Group__32173);
             rule__LinkSpec__Group__3__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__LinkSpec__Group__4_in_rule__LinkSpec__Group__32176);
+            rule__LinkSpec__Group__4();
 
             state._fsp--;
 
@@ -3101,49 +3131,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkSpec__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1040:1: rule__LinkSpec__Group__3__Impl : ( ( rule__LinkSpec__ConstructorsAssignment_3 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1039:1: rule__LinkSpec__Group__3__Impl : ( ';' ) ;
     public final void rule__LinkSpec__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1044:1: ( ( ( rule__LinkSpec__ConstructorsAssignment_3 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1045:1: ( ( rule__LinkSpec__ConstructorsAssignment_3 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1043:1: ( ( ';' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1044:1: ( ';' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1045:1: ( ( rule__LinkSpec__ConstructorsAssignment_3 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1046:1: ( rule__LinkSpec__ConstructorsAssignment_3 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1044:1: ( ';' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1045:1: ';'
             {
-             before(grammarAccess.getLinkSpecAccess().getConstructorsAssignment_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1047:1: ( rule__LinkSpec__ConstructorsAssignment_3 )*
-            loop10:
-            do {
-                int alt10=2;
-                int LA10_0 = input.LA(1);
-
-                if ( (LA10_0==RULE_ID||LA10_0==34) ) {
-                    alt10=1;
-                }
-
-
-                switch (alt10) {
-            	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1047:2: rule__LinkSpec__ConstructorsAssignment_3
-            	    {
-            	    pushFollow(FOLLOW_rule__LinkSpec__ConstructorsAssignment_3_in_rule__LinkSpec__Group__3__Impl2201);
-            	    rule__LinkSpec__ConstructorsAssignment_3();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop10;
-                }
-            } while (true);
-
-             after(grammarAccess.getLinkSpecAccess().getConstructorsAssignment_3()); 
+             before(grammarAccess.getLinkSpecAccess().getSemicolonKeyword_3()); 
+            match(input,15,FOLLOW_15_in_rule__LinkSpec__Group__3__Impl2204); 
+             after(grammarAccess.getLinkSpecAccess().getSemicolonKeyword_3()); 
 
             }
 
@@ -3165,22 +3167,275 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__LinkSpec__Group__3__Impl"
 
 
+    // $ANTLR start "rule__LinkSpec__Group__4"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1058:1: rule__LinkSpec__Group__4 : rule__LinkSpec__Group__4__Impl ;
+    public final void rule__LinkSpec__Group__4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1062:1: ( rule__LinkSpec__Group__4__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1063:2: rule__LinkSpec__Group__4__Impl
+            {
+            pushFollow(FOLLOW_rule__LinkSpec__Group__4__Impl_in_rule__LinkSpec__Group__42235);
+            rule__LinkSpec__Group__4__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LinkSpec__Group__4"
+
+
+    // $ANTLR start "rule__LinkSpec__Group__4__Impl"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1069:1: rule__LinkSpec__Group__4__Impl : ( ( rule__LinkSpec__ConstructorsAssignment_4 )* ) ;
+    public final void rule__LinkSpec__Group__4__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1073:1: ( ( ( rule__LinkSpec__ConstructorsAssignment_4 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1074:1: ( ( rule__LinkSpec__ConstructorsAssignment_4 )* )
+            {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1074:1: ( ( rule__LinkSpec__ConstructorsAssignment_4 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1075:1: ( rule__LinkSpec__ConstructorsAssignment_4 )*
+            {
+             before(grammarAccess.getLinkSpecAccess().getConstructorsAssignment_4()); 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1076:1: ( rule__LinkSpec__ConstructorsAssignment_4 )*
+            loop11:
+            do {
+                int alt11=2;
+                int LA11_0 = input.LA(1);
+
+                if ( (LA11_0==RULE_ID||LA11_0==34) ) {
+                    alt11=1;
+                }
+
+
+                switch (alt11) {
+            	case 1 :
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1076:2: rule__LinkSpec__ConstructorsAssignment_4
+            	    {
+            	    pushFollow(FOLLOW_rule__LinkSpec__ConstructorsAssignment_4_in_rule__LinkSpec__Group__4__Impl2262);
+            	    rule__LinkSpec__ConstructorsAssignment_4();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop11;
+                }
+            } while (true);
+
+             after(grammarAccess.getLinkSpecAccess().getConstructorsAssignment_4()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LinkSpec__Group__4__Impl"
+
+
+    // $ANTLR start "rule__LinkSpec__Group_1__0"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1096:1: rule__LinkSpec__Group_1__0 : rule__LinkSpec__Group_1__0__Impl rule__LinkSpec__Group_1__1 ;
+    public final void rule__LinkSpec__Group_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1100:1: ( rule__LinkSpec__Group_1__0__Impl rule__LinkSpec__Group_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1101:2: rule__LinkSpec__Group_1__0__Impl rule__LinkSpec__Group_1__1
+            {
+            pushFollow(FOLLOW_rule__LinkSpec__Group_1__0__Impl_in_rule__LinkSpec__Group_1__02303);
+            rule__LinkSpec__Group_1__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__LinkSpec__Group_1__1_in_rule__LinkSpec__Group_1__02306);
+            rule__LinkSpec__Group_1__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LinkSpec__Group_1__0"
+
+
+    // $ANTLR start "rule__LinkSpec__Group_1__0__Impl"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1108:1: rule__LinkSpec__Group_1__0__Impl : ( ( rule__LinkSpec__PackagenameAssignment_1_0 ) ) ;
+    public final void rule__LinkSpec__Group_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1112:1: ( ( ( rule__LinkSpec__PackagenameAssignment_1_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1113:1: ( ( rule__LinkSpec__PackagenameAssignment_1_0 ) )
+            {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1113:1: ( ( rule__LinkSpec__PackagenameAssignment_1_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1114:1: ( rule__LinkSpec__PackagenameAssignment_1_0 )
+            {
+             before(grammarAccess.getLinkSpecAccess().getPackagenameAssignment_1_0()); 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1115:1: ( rule__LinkSpec__PackagenameAssignment_1_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1115:2: rule__LinkSpec__PackagenameAssignment_1_0
+            {
+            pushFollow(FOLLOW_rule__LinkSpec__PackagenameAssignment_1_0_in_rule__LinkSpec__Group_1__0__Impl2333);
+            rule__LinkSpec__PackagenameAssignment_1_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getLinkSpecAccess().getPackagenameAssignment_1_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LinkSpec__Group_1__0__Impl"
+
+
+    // $ANTLR start "rule__LinkSpec__Group_1__1"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1125:1: rule__LinkSpec__Group_1__1 : rule__LinkSpec__Group_1__1__Impl ;
+    public final void rule__LinkSpec__Group_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1129:1: ( rule__LinkSpec__Group_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1130:2: rule__LinkSpec__Group_1__1__Impl
+            {
+            pushFollow(FOLLOW_rule__LinkSpec__Group_1__1__Impl_in_rule__LinkSpec__Group_1__12363);
+            rule__LinkSpec__Group_1__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LinkSpec__Group_1__1"
+
+
+    // $ANTLR start "rule__LinkSpec__Group_1__1__Impl"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1136:1: rule__LinkSpec__Group_1__1__Impl : ( '.' ) ;
+    public final void rule__LinkSpec__Group_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1140:1: ( ( '.' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1141:1: ( '.' )
+            {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1141:1: ( '.' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1142:1: '.'
+            {
+             before(grammarAccess.getLinkSpecAccess().getFullStopKeyword_1_1()); 
+            match(input,16,FOLLOW_16_in_rule__LinkSpec__Group_1__1__Impl2391); 
+             after(grammarAccess.getLinkSpecAccess().getFullStopKeyword_1_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LinkSpec__Group_1__1__Impl"
+
+
     // $ANTLR start "rule__Constructor__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1065:1: rule__Constructor__Group__0 : rule__Constructor__Group__0__Impl rule__Constructor__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1159:1: rule__Constructor__Group__0 : rule__Constructor__Group__0__Impl rule__Constructor__Group__1 ;
     public final void rule__Constructor__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1069:1: ( rule__Constructor__Group__0__Impl rule__Constructor__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1070:2: rule__Constructor__Group__0__Impl rule__Constructor__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1163:1: ( rule__Constructor__Group__0__Impl rule__Constructor__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1164:2: rule__Constructor__Group__0__Impl rule__Constructor__Group__1
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__0__Impl_in_rule__Constructor__Group__02240);
+            pushFollow(FOLLOW_rule__Constructor__Group__0__Impl_in_rule__Constructor__Group__02426);
             rule__Constructor__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__1_in_rule__Constructor__Group__02243);
+            pushFollow(FOLLOW_rule__Constructor__Group__1_in_rule__Constructor__Group__02429);
             rule__Constructor__Group__1();
 
             state._fsp--;
@@ -3204,31 +3459,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1077:1: rule__Constructor__Group__0__Impl : ( ( rule__Constructor__IsPublicAssignment_0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1171:1: rule__Constructor__Group__0__Impl : ( ( rule__Constructor__IsPublicAssignment_0 )? ) ;
     public final void rule__Constructor__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1081:1: ( ( ( rule__Constructor__IsPublicAssignment_0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1082:1: ( ( rule__Constructor__IsPublicAssignment_0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1175:1: ( ( ( rule__Constructor__IsPublicAssignment_0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1176:1: ( ( rule__Constructor__IsPublicAssignment_0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1082:1: ( ( rule__Constructor__IsPublicAssignment_0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1083:1: ( rule__Constructor__IsPublicAssignment_0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1176:1: ( ( rule__Constructor__IsPublicAssignment_0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1177:1: ( rule__Constructor__IsPublicAssignment_0 )?
             {
              before(grammarAccess.getConstructorAccess().getIsPublicAssignment_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1084:1: ( rule__Constructor__IsPublicAssignment_0 )?
-            int alt11=2;
-            int LA11_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1178:1: ( rule__Constructor__IsPublicAssignment_0 )?
+            int alt12=2;
+            int LA12_0 = input.LA(1);
 
-            if ( (LA11_0==34) ) {
-                alt11=1;
+            if ( (LA12_0==34) ) {
+                alt12=1;
             }
-            switch (alt11) {
+            switch (alt12) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1084:2: rule__Constructor__IsPublicAssignment_0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1178:2: rule__Constructor__IsPublicAssignment_0
                     {
-                    pushFollow(FOLLOW_rule__Constructor__IsPublicAssignment_0_in_rule__Constructor__Group__0__Impl2270);
+                    pushFollow(FOLLOW_rule__Constructor__IsPublicAssignment_0_in_rule__Constructor__Group__0__Impl2456);
                     rule__Constructor__IsPublicAssignment_0();
 
                     state._fsp--;
@@ -3262,21 +3517,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1094:1: rule__Constructor__Group__1 : rule__Constructor__Group__1__Impl rule__Constructor__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1188:1: rule__Constructor__Group__1 : rule__Constructor__Group__1__Impl rule__Constructor__Group__2 ;
     public final void rule__Constructor__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1098:1: ( rule__Constructor__Group__1__Impl rule__Constructor__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1099:2: rule__Constructor__Group__1__Impl rule__Constructor__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1192:1: ( rule__Constructor__Group__1__Impl rule__Constructor__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1193:2: rule__Constructor__Group__1__Impl rule__Constructor__Group__2
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__1__Impl_in_rule__Constructor__Group__12301);
+            pushFollow(FOLLOW_rule__Constructor__Group__1__Impl_in_rule__Constructor__Group__12487);
             rule__Constructor__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__2_in_rule__Constructor__Group__12304);
+            pushFollow(FOLLOW_rule__Constructor__Group__2_in_rule__Constructor__Group__12490);
             rule__Constructor__Group__2();
 
             state._fsp--;
@@ -3300,23 +3555,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1106:1: rule__Constructor__Group__1__Impl : ( ( rule__Constructor__NameAssignment_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1200:1: rule__Constructor__Group__1__Impl : ( ( rule__Constructor__NameAssignment_1 ) ) ;
     public final void rule__Constructor__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1110:1: ( ( ( rule__Constructor__NameAssignment_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1111:1: ( ( rule__Constructor__NameAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1204:1: ( ( ( rule__Constructor__NameAssignment_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1205:1: ( ( rule__Constructor__NameAssignment_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1111:1: ( ( rule__Constructor__NameAssignment_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1112:1: ( rule__Constructor__NameAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1205:1: ( ( rule__Constructor__NameAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1206:1: ( rule__Constructor__NameAssignment_1 )
             {
              before(grammarAccess.getConstructorAccess().getNameAssignment_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1113:1: ( rule__Constructor__NameAssignment_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1113:2: rule__Constructor__NameAssignment_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1207:1: ( rule__Constructor__NameAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1207:2: rule__Constructor__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Constructor__NameAssignment_1_in_rule__Constructor__Group__1__Impl2331);
+            pushFollow(FOLLOW_rule__Constructor__NameAssignment_1_in_rule__Constructor__Group__1__Impl2517);
             rule__Constructor__NameAssignment_1();
 
             state._fsp--;
@@ -3347,21 +3602,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1123:1: rule__Constructor__Group__2 : rule__Constructor__Group__2__Impl rule__Constructor__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1217:1: rule__Constructor__Group__2 : rule__Constructor__Group__2__Impl rule__Constructor__Group__3 ;
     public final void rule__Constructor__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1127:1: ( rule__Constructor__Group__2__Impl rule__Constructor__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1128:2: rule__Constructor__Group__2__Impl rule__Constructor__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1221:1: ( rule__Constructor__Group__2__Impl rule__Constructor__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1222:2: rule__Constructor__Group__2__Impl rule__Constructor__Group__3
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__2__Impl_in_rule__Constructor__Group__22361);
+            pushFollow(FOLLOW_rule__Constructor__Group__2__Impl_in_rule__Constructor__Group__22547);
             rule__Constructor__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__3_in_rule__Constructor__Group__22364);
+            pushFollow(FOLLOW_rule__Constructor__Group__3_in_rule__Constructor__Group__22550);
             rule__Constructor__Group__3();
 
             state._fsp--;
@@ -3385,20 +3640,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1135:1: rule__Constructor__Group__2__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1229:1: rule__Constructor__Group__2__Impl : ( '(' ) ;
     public final void rule__Constructor__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1139:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1140:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1233:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1234:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1140:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1141:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1234:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1235:1: '('
             {
              before(grammarAccess.getConstructorAccess().getLeftParenthesisKeyword_2()); 
-            match(input,16,FOLLOW_16_in_rule__Constructor__Group__2__Impl2392); 
+            match(input,17,FOLLOW_17_in_rule__Constructor__Group__2__Impl2578); 
              after(grammarAccess.getConstructorAccess().getLeftParenthesisKeyword_2()); 
 
             }
@@ -3422,21 +3677,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1154:1: rule__Constructor__Group__3 : rule__Constructor__Group__3__Impl rule__Constructor__Group__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1248:1: rule__Constructor__Group__3 : rule__Constructor__Group__3__Impl rule__Constructor__Group__4 ;
     public final void rule__Constructor__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1158:1: ( rule__Constructor__Group__3__Impl rule__Constructor__Group__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1159:2: rule__Constructor__Group__3__Impl rule__Constructor__Group__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1252:1: ( rule__Constructor__Group__3__Impl rule__Constructor__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1253:2: rule__Constructor__Group__3__Impl rule__Constructor__Group__4
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__3__Impl_in_rule__Constructor__Group__32423);
+            pushFollow(FOLLOW_rule__Constructor__Group__3__Impl_in_rule__Constructor__Group__32609);
             rule__Constructor__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__4_in_rule__Constructor__Group__32426);
+            pushFollow(FOLLOW_rule__Constructor__Group__4_in_rule__Constructor__Group__32612);
             rule__Constructor__Group__4();
 
             state._fsp--;
@@ -3460,31 +3715,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1166:1: rule__Constructor__Group__3__Impl : ( ( rule__Constructor__Group_3__0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1260:1: rule__Constructor__Group__3__Impl : ( ( rule__Constructor__Group_3__0 )? ) ;
     public final void rule__Constructor__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1170:1: ( ( ( rule__Constructor__Group_3__0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1171:1: ( ( rule__Constructor__Group_3__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1264:1: ( ( ( rule__Constructor__Group_3__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1265:1: ( ( rule__Constructor__Group_3__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1171:1: ( ( rule__Constructor__Group_3__0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1172:1: ( rule__Constructor__Group_3__0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1265:1: ( ( rule__Constructor__Group_3__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1266:1: ( rule__Constructor__Group_3__0 )?
             {
              before(grammarAccess.getConstructorAccess().getGroup_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1173:1: ( rule__Constructor__Group_3__0 )?
-            int alt12=2;
-            int LA12_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1267:1: ( rule__Constructor__Group_3__0 )?
+            int alt13=2;
+            int LA13_0 = input.LA(1);
 
-            if ( (LA12_0==RULE_ID) ) {
-                alt12=1;
+            if ( (LA13_0==RULE_ID) ) {
+                alt13=1;
             }
-            switch (alt12) {
+            switch (alt13) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1173:2: rule__Constructor__Group_3__0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1267:2: rule__Constructor__Group_3__0
                     {
-                    pushFollow(FOLLOW_rule__Constructor__Group_3__0_in_rule__Constructor__Group__3__Impl2453);
+                    pushFollow(FOLLOW_rule__Constructor__Group_3__0_in_rule__Constructor__Group__3__Impl2639);
                     rule__Constructor__Group_3__0();
 
                     state._fsp--;
@@ -3518,21 +3773,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1183:1: rule__Constructor__Group__4 : rule__Constructor__Group__4__Impl rule__Constructor__Group__5 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1277:1: rule__Constructor__Group__4 : rule__Constructor__Group__4__Impl rule__Constructor__Group__5 ;
     public final void rule__Constructor__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1187:1: ( rule__Constructor__Group__4__Impl rule__Constructor__Group__5 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1188:2: rule__Constructor__Group__4__Impl rule__Constructor__Group__5
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1281:1: ( rule__Constructor__Group__4__Impl rule__Constructor__Group__5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1282:2: rule__Constructor__Group__4__Impl rule__Constructor__Group__5
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__4__Impl_in_rule__Constructor__Group__42484);
+            pushFollow(FOLLOW_rule__Constructor__Group__4__Impl_in_rule__Constructor__Group__42670);
             rule__Constructor__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__5_in_rule__Constructor__Group__42487);
+            pushFollow(FOLLOW_rule__Constructor__Group__5_in_rule__Constructor__Group__42673);
             rule__Constructor__Group__5();
 
             state._fsp--;
@@ -3556,20 +3811,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1195:1: rule__Constructor__Group__4__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1289:1: rule__Constructor__Group__4__Impl : ( ')' ) ;
     public final void rule__Constructor__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1199:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1200:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1293:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1294:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1200:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1201:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1294:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1295:1: ')'
             {
              before(grammarAccess.getConstructorAccess().getRightParenthesisKeyword_4()); 
-            match(input,17,FOLLOW_17_in_rule__Constructor__Group__4__Impl2515); 
+            match(input,18,FOLLOW_18_in_rule__Constructor__Group__4__Impl2701); 
              after(grammarAccess.getConstructorAccess().getRightParenthesisKeyword_4()); 
 
             }
@@ -3593,21 +3848,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__5"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1214:1: rule__Constructor__Group__5 : rule__Constructor__Group__5__Impl rule__Constructor__Group__6 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1308:1: rule__Constructor__Group__5 : rule__Constructor__Group__5__Impl rule__Constructor__Group__6 ;
     public final void rule__Constructor__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1218:1: ( rule__Constructor__Group__5__Impl rule__Constructor__Group__6 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1219:2: rule__Constructor__Group__5__Impl rule__Constructor__Group__6
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1312:1: ( rule__Constructor__Group__5__Impl rule__Constructor__Group__6 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1313:2: rule__Constructor__Group__5__Impl rule__Constructor__Group__6
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__5__Impl_in_rule__Constructor__Group__52546);
+            pushFollow(FOLLOW_rule__Constructor__Group__5__Impl_in_rule__Constructor__Group__52732);
             rule__Constructor__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__6_in_rule__Constructor__Group__52549);
+            pushFollow(FOLLOW_rule__Constructor__Group__6_in_rule__Constructor__Group__52735);
             rule__Constructor__Group__6();
 
             state._fsp--;
@@ -3631,31 +3886,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__5__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1226:1: rule__Constructor__Group__5__Impl : ( ( rule__Constructor__Group_5__0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1320:1: rule__Constructor__Group__5__Impl : ( ( rule__Constructor__Group_5__0 )? ) ;
     public final void rule__Constructor__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1230:1: ( ( ( rule__Constructor__Group_5__0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1231:1: ( ( rule__Constructor__Group_5__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1324:1: ( ( ( rule__Constructor__Group_5__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1325:1: ( ( rule__Constructor__Group_5__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1231:1: ( ( rule__Constructor__Group_5__0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1232:1: ( rule__Constructor__Group_5__0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1325:1: ( ( rule__Constructor__Group_5__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1326:1: ( rule__Constructor__Group_5__0 )?
             {
              before(grammarAccess.getConstructorAccess().getGroup_5()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1233:1: ( rule__Constructor__Group_5__0 )?
-            int alt13=2;
-            int LA13_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1327:1: ( rule__Constructor__Group_5__0 )?
+            int alt14=2;
+            int LA14_0 = input.LA(1);
 
-            if ( (LA13_0==21) ) {
-                alt13=1;
+            if ( (LA14_0==22) ) {
+                alt14=1;
             }
-            switch (alt13) {
+            switch (alt14) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1233:2: rule__Constructor__Group_5__0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1327:2: rule__Constructor__Group_5__0
                     {
-                    pushFollow(FOLLOW_rule__Constructor__Group_5__0_in_rule__Constructor__Group__5__Impl2576);
+                    pushFollow(FOLLOW_rule__Constructor__Group_5__0_in_rule__Constructor__Group__5__Impl2762);
                     rule__Constructor__Group_5__0();
 
                     state._fsp--;
@@ -3689,21 +3944,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__6"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1243:1: rule__Constructor__Group__6 : rule__Constructor__Group__6__Impl rule__Constructor__Group__7 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1337:1: rule__Constructor__Group__6 : rule__Constructor__Group__6__Impl rule__Constructor__Group__7 ;
     public final void rule__Constructor__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1247:1: ( rule__Constructor__Group__6__Impl rule__Constructor__Group__7 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1248:2: rule__Constructor__Group__6__Impl rule__Constructor__Group__7
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1341:1: ( rule__Constructor__Group__6__Impl rule__Constructor__Group__7 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1342:2: rule__Constructor__Group__6__Impl rule__Constructor__Group__7
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__6__Impl_in_rule__Constructor__Group__62607);
+            pushFollow(FOLLOW_rule__Constructor__Group__6__Impl_in_rule__Constructor__Group__62793);
             rule__Constructor__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__7_in_rule__Constructor__Group__62610);
+            pushFollow(FOLLOW_rule__Constructor__Group__7_in_rule__Constructor__Group__62796);
             rule__Constructor__Group__7();
 
             state._fsp--;
@@ -3727,20 +3982,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__6__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1255:1: rule__Constructor__Group__6__Impl : ( '{' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1349:1: rule__Constructor__Group__6__Impl : ( '{' ) ;
     public final void rule__Constructor__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1259:1: ( ( '{' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1260:1: ( '{' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1353:1: ( ( '{' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1354:1: ( '{' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1260:1: ( '{' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1261:1: '{'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1354:1: ( '{' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1355:1: '{'
             {
              before(grammarAccess.getConstructorAccess().getLeftCurlyBracketKeyword_6()); 
-            match(input,18,FOLLOW_18_in_rule__Constructor__Group__6__Impl2638); 
+            match(input,19,FOLLOW_19_in_rule__Constructor__Group__6__Impl2824); 
              after(grammarAccess.getConstructorAccess().getLeftCurlyBracketKeyword_6()); 
 
             }
@@ -3764,21 +4019,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__7"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1274:1: rule__Constructor__Group__7 : rule__Constructor__Group__7__Impl rule__Constructor__Group__8 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1368:1: rule__Constructor__Group__7 : rule__Constructor__Group__7__Impl rule__Constructor__Group__8 ;
     public final void rule__Constructor__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1278:1: ( rule__Constructor__Group__7__Impl rule__Constructor__Group__8 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1279:2: rule__Constructor__Group__7__Impl rule__Constructor__Group__8
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1372:1: ( rule__Constructor__Group__7__Impl rule__Constructor__Group__8 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1373:2: rule__Constructor__Group__7__Impl rule__Constructor__Group__8
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__7__Impl_in_rule__Constructor__Group__72669);
+            pushFollow(FOLLOW_rule__Constructor__Group__7__Impl_in_rule__Constructor__Group__72855);
             rule__Constructor__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group__8_in_rule__Constructor__Group__72672);
+            pushFollow(FOLLOW_rule__Constructor__Group__8_in_rule__Constructor__Group__72858);
             rule__Constructor__Group__8();
 
             state._fsp--;
@@ -3802,35 +4057,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__7__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1286:1: rule__Constructor__Group__7__Impl : ( ( rule__Constructor__Group_7__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1380:1: rule__Constructor__Group__7__Impl : ( ( rule__Constructor__Group_7__0 )* ) ;
     public final void rule__Constructor__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1290:1: ( ( ( rule__Constructor__Group_7__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1291:1: ( ( rule__Constructor__Group_7__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1384:1: ( ( ( rule__Constructor__Group_7__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1385:1: ( ( rule__Constructor__Group_7__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1291:1: ( ( rule__Constructor__Group_7__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1292:1: ( rule__Constructor__Group_7__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1385:1: ( ( rule__Constructor__Group_7__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1386:1: ( rule__Constructor__Group_7__0 )*
             {
              before(grammarAccess.getConstructorAccess().getGroup_7()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1293:1: ( rule__Constructor__Group_7__0 )*
-            loop14:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1387:1: ( rule__Constructor__Group_7__0 )*
+            loop15:
             do {
-                int alt14=2;
-                int LA14_0 = input.LA(1);
+                int alt15=2;
+                int LA15_0 = input.LA(1);
 
-                if ( (LA14_0==RULE_ID||(LA14_0>=22 && LA14_0<=23)) ) {
-                    alt14=1;
+                if ( (LA15_0==RULE_ID||(LA15_0>=23 && LA15_0<=24)) ) {
+                    alt15=1;
                 }
 
 
-                switch (alt14) {
+                switch (alt15) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1293:2: rule__Constructor__Group_7__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1387:2: rule__Constructor__Group_7__0
             	    {
-            	    pushFollow(FOLLOW_rule__Constructor__Group_7__0_in_rule__Constructor__Group__7__Impl2699);
+            	    pushFollow(FOLLOW_rule__Constructor__Group_7__0_in_rule__Constructor__Group__7__Impl2885);
             	    rule__Constructor__Group_7__0();
 
             	    state._fsp--;
@@ -3840,7 +4095,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop14;
+            	    break loop15;
                 }
             } while (true);
 
@@ -3867,16 +4122,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__8"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1303:1: rule__Constructor__Group__8 : rule__Constructor__Group__8__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1397:1: rule__Constructor__Group__8 : rule__Constructor__Group__8__Impl ;
     public final void rule__Constructor__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1307:1: ( rule__Constructor__Group__8__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1308:2: rule__Constructor__Group__8__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1401:1: ( rule__Constructor__Group__8__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1402:2: rule__Constructor__Group__8__Impl
             {
-            pushFollow(FOLLOW_rule__Constructor__Group__8__Impl_in_rule__Constructor__Group__82730);
+            pushFollow(FOLLOW_rule__Constructor__Group__8__Impl_in_rule__Constructor__Group__82916);
             rule__Constructor__Group__8__Impl();
 
             state._fsp--;
@@ -3900,20 +4155,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group__8__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1314:1: rule__Constructor__Group__8__Impl : ( '}' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1408:1: rule__Constructor__Group__8__Impl : ( '}' ) ;
     public final void rule__Constructor__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1318:1: ( ( '}' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1319:1: ( '}' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1412:1: ( ( '}' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1413:1: ( '}' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1319:1: ( '}' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1320:1: '}'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1413:1: ( '}' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1414:1: '}'
             {
              before(grammarAccess.getConstructorAccess().getRightCurlyBracketKeyword_8()); 
-            match(input,19,FOLLOW_19_in_rule__Constructor__Group__8__Impl2758); 
+            match(input,20,FOLLOW_20_in_rule__Constructor__Group__8__Impl2944); 
              after(grammarAccess.getConstructorAccess().getRightCurlyBracketKeyword_8()); 
 
             }
@@ -3937,21 +4192,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1351:1: rule__Constructor__Group_3__0 : rule__Constructor__Group_3__0__Impl rule__Constructor__Group_3__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1445:1: rule__Constructor__Group_3__0 : rule__Constructor__Group_3__0__Impl rule__Constructor__Group_3__1 ;
     public final void rule__Constructor__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1355:1: ( rule__Constructor__Group_3__0__Impl rule__Constructor__Group_3__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1356:2: rule__Constructor__Group_3__0__Impl rule__Constructor__Group_3__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1449:1: ( rule__Constructor__Group_3__0__Impl rule__Constructor__Group_3__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1450:2: rule__Constructor__Group_3__0__Impl rule__Constructor__Group_3__1
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_3__0__Impl_in_rule__Constructor__Group_3__02807);
+            pushFollow(FOLLOW_rule__Constructor__Group_3__0__Impl_in_rule__Constructor__Group_3__02993);
             rule__Constructor__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group_3__1_in_rule__Constructor__Group_3__02810);
+            pushFollow(FOLLOW_rule__Constructor__Group_3__1_in_rule__Constructor__Group_3__02996);
             rule__Constructor__Group_3__1();
 
             state._fsp--;
@@ -3975,23 +4230,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1363:1: rule__Constructor__Group_3__0__Impl : ( ( rule__Constructor__ParametersAssignment_3_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1457:1: rule__Constructor__Group_3__0__Impl : ( ( rule__Constructor__ParametersAssignment_3_0 ) ) ;
     public final void rule__Constructor__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1367:1: ( ( ( rule__Constructor__ParametersAssignment_3_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1368:1: ( ( rule__Constructor__ParametersAssignment_3_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1461:1: ( ( ( rule__Constructor__ParametersAssignment_3_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1462:1: ( ( rule__Constructor__ParametersAssignment_3_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1368:1: ( ( rule__Constructor__ParametersAssignment_3_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1369:1: ( rule__Constructor__ParametersAssignment_3_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1462:1: ( ( rule__Constructor__ParametersAssignment_3_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1463:1: ( rule__Constructor__ParametersAssignment_3_0 )
             {
              before(grammarAccess.getConstructorAccess().getParametersAssignment_3_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1370:1: ( rule__Constructor__ParametersAssignment_3_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1370:2: rule__Constructor__ParametersAssignment_3_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1464:1: ( rule__Constructor__ParametersAssignment_3_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1464:2: rule__Constructor__ParametersAssignment_3_0
             {
-            pushFollow(FOLLOW_rule__Constructor__ParametersAssignment_3_0_in_rule__Constructor__Group_3__0__Impl2837);
+            pushFollow(FOLLOW_rule__Constructor__ParametersAssignment_3_0_in_rule__Constructor__Group_3__0__Impl3023);
             rule__Constructor__ParametersAssignment_3_0();
 
             state._fsp--;
@@ -4022,16 +4277,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1380:1: rule__Constructor__Group_3__1 : rule__Constructor__Group_3__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1474:1: rule__Constructor__Group_3__1 : rule__Constructor__Group_3__1__Impl ;
     public final void rule__Constructor__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1384:1: ( rule__Constructor__Group_3__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1385:2: rule__Constructor__Group_3__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1478:1: ( rule__Constructor__Group_3__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1479:2: rule__Constructor__Group_3__1__Impl
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_3__1__Impl_in_rule__Constructor__Group_3__12867);
+            pushFollow(FOLLOW_rule__Constructor__Group_3__1__Impl_in_rule__Constructor__Group_3__13053);
             rule__Constructor__Group_3__1__Impl();
 
             state._fsp--;
@@ -4055,35 +4310,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1391:1: rule__Constructor__Group_3__1__Impl : ( ( rule__Constructor__Group_3_1__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1485:1: rule__Constructor__Group_3__1__Impl : ( ( rule__Constructor__Group_3_1__0 )* ) ;
     public final void rule__Constructor__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1395:1: ( ( ( rule__Constructor__Group_3_1__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1396:1: ( ( rule__Constructor__Group_3_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1489:1: ( ( ( rule__Constructor__Group_3_1__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1490:1: ( ( rule__Constructor__Group_3_1__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1396:1: ( ( rule__Constructor__Group_3_1__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1397:1: ( rule__Constructor__Group_3_1__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1490:1: ( ( rule__Constructor__Group_3_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1491:1: ( rule__Constructor__Group_3_1__0 )*
             {
              before(grammarAccess.getConstructorAccess().getGroup_3_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1398:1: ( rule__Constructor__Group_3_1__0 )*
-            loop15:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1492:1: ( rule__Constructor__Group_3_1__0 )*
+            loop16:
             do {
-                int alt15=2;
-                int LA15_0 = input.LA(1);
+                int alt16=2;
+                int LA16_0 = input.LA(1);
 
-                if ( (LA15_0==20) ) {
-                    alt15=1;
+                if ( (LA16_0==21) ) {
+                    alt16=1;
                 }
 
 
-                switch (alt15) {
+                switch (alt16) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1398:2: rule__Constructor__Group_3_1__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1492:2: rule__Constructor__Group_3_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__Constructor__Group_3_1__0_in_rule__Constructor__Group_3__1__Impl2894);
+            	    pushFollow(FOLLOW_rule__Constructor__Group_3_1__0_in_rule__Constructor__Group_3__1__Impl3080);
             	    rule__Constructor__Group_3_1__0();
 
             	    state._fsp--;
@@ -4093,7 +4348,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop15;
+            	    break loop16;
                 }
             } while (true);
 
@@ -4120,21 +4375,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1412:1: rule__Constructor__Group_3_1__0 : rule__Constructor__Group_3_1__0__Impl rule__Constructor__Group_3_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1506:1: rule__Constructor__Group_3_1__0 : rule__Constructor__Group_3_1__0__Impl rule__Constructor__Group_3_1__1 ;
     public final void rule__Constructor__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1416:1: ( rule__Constructor__Group_3_1__0__Impl rule__Constructor__Group_3_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1417:2: rule__Constructor__Group_3_1__0__Impl rule__Constructor__Group_3_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1510:1: ( rule__Constructor__Group_3_1__0__Impl rule__Constructor__Group_3_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1511:2: rule__Constructor__Group_3_1__0__Impl rule__Constructor__Group_3_1__1
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_3_1__0__Impl_in_rule__Constructor__Group_3_1__02929);
+            pushFollow(FOLLOW_rule__Constructor__Group_3_1__0__Impl_in_rule__Constructor__Group_3_1__03115);
             rule__Constructor__Group_3_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group_3_1__1_in_rule__Constructor__Group_3_1__02932);
+            pushFollow(FOLLOW_rule__Constructor__Group_3_1__1_in_rule__Constructor__Group_3_1__03118);
             rule__Constructor__Group_3_1__1();
 
             state._fsp--;
@@ -4158,20 +4413,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1424:1: rule__Constructor__Group_3_1__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1518:1: rule__Constructor__Group_3_1__0__Impl : ( ',' ) ;
     public final void rule__Constructor__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1428:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1429:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1522:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1523:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1429:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1430:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1523:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1524:1: ','
             {
              before(grammarAccess.getConstructorAccess().getCommaKeyword_3_1_0()); 
-            match(input,20,FOLLOW_20_in_rule__Constructor__Group_3_1__0__Impl2960); 
+            match(input,21,FOLLOW_21_in_rule__Constructor__Group_3_1__0__Impl3146); 
              after(grammarAccess.getConstructorAccess().getCommaKeyword_3_1_0()); 
 
             }
@@ -4195,16 +4450,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1443:1: rule__Constructor__Group_3_1__1 : rule__Constructor__Group_3_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1537:1: rule__Constructor__Group_3_1__1 : rule__Constructor__Group_3_1__1__Impl ;
     public final void rule__Constructor__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1447:1: ( rule__Constructor__Group_3_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1448:2: rule__Constructor__Group_3_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1541:1: ( rule__Constructor__Group_3_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1542:2: rule__Constructor__Group_3_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_3_1__1__Impl_in_rule__Constructor__Group_3_1__12991);
+            pushFollow(FOLLOW_rule__Constructor__Group_3_1__1__Impl_in_rule__Constructor__Group_3_1__13177);
             rule__Constructor__Group_3_1__1__Impl();
 
             state._fsp--;
@@ -4228,23 +4483,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_3_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1454:1: rule__Constructor__Group_3_1__1__Impl : ( ( rule__Constructor__ParametersAssignment_3_1_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1548:1: rule__Constructor__Group_3_1__1__Impl : ( ( rule__Constructor__ParametersAssignment_3_1_1 ) ) ;
     public final void rule__Constructor__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1458:1: ( ( ( rule__Constructor__ParametersAssignment_3_1_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1459:1: ( ( rule__Constructor__ParametersAssignment_3_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1552:1: ( ( ( rule__Constructor__ParametersAssignment_3_1_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1553:1: ( ( rule__Constructor__ParametersAssignment_3_1_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1459:1: ( ( rule__Constructor__ParametersAssignment_3_1_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1460:1: ( rule__Constructor__ParametersAssignment_3_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1553:1: ( ( rule__Constructor__ParametersAssignment_3_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1554:1: ( rule__Constructor__ParametersAssignment_3_1_1 )
             {
              before(grammarAccess.getConstructorAccess().getParametersAssignment_3_1_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1461:1: ( rule__Constructor__ParametersAssignment_3_1_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1461:2: rule__Constructor__ParametersAssignment_3_1_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1555:1: ( rule__Constructor__ParametersAssignment_3_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1555:2: rule__Constructor__ParametersAssignment_3_1_1
             {
-            pushFollow(FOLLOW_rule__Constructor__ParametersAssignment_3_1_1_in_rule__Constructor__Group_3_1__1__Impl3018);
+            pushFollow(FOLLOW_rule__Constructor__ParametersAssignment_3_1_1_in_rule__Constructor__Group_3_1__1__Impl3204);
             rule__Constructor__ParametersAssignment_3_1_1();
 
             state._fsp--;
@@ -4275,21 +4530,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_5__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1475:1: rule__Constructor__Group_5__0 : rule__Constructor__Group_5__0__Impl rule__Constructor__Group_5__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1569:1: rule__Constructor__Group_5__0 : rule__Constructor__Group_5__0__Impl rule__Constructor__Group_5__1 ;
     public final void rule__Constructor__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1479:1: ( rule__Constructor__Group_5__0__Impl rule__Constructor__Group_5__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1480:2: rule__Constructor__Group_5__0__Impl rule__Constructor__Group_5__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1573:1: ( rule__Constructor__Group_5__0__Impl rule__Constructor__Group_5__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1574:2: rule__Constructor__Group_5__0__Impl rule__Constructor__Group_5__1
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_5__0__Impl_in_rule__Constructor__Group_5__03052);
+            pushFollow(FOLLOW_rule__Constructor__Group_5__0__Impl_in_rule__Constructor__Group_5__03238);
             rule__Constructor__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group_5__1_in_rule__Constructor__Group_5__03055);
+            pushFollow(FOLLOW_rule__Constructor__Group_5__1_in_rule__Constructor__Group_5__03241);
             rule__Constructor__Group_5__1();
 
             state._fsp--;
@@ -4313,20 +4568,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_5__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1487:1: rule__Constructor__Group_5__0__Impl : ( ':' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1581:1: rule__Constructor__Group_5__0__Impl : ( ':' ) ;
     public final void rule__Constructor__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1491:1: ( ( ':' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1492:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1585:1: ( ( ':' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1586:1: ( ':' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1492:1: ( ':' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1493:1: ':'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1586:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1587:1: ':'
             {
              before(grammarAccess.getConstructorAccess().getColonKeyword_5_0()); 
-            match(input,21,FOLLOW_21_in_rule__Constructor__Group_5__0__Impl3083); 
+            match(input,22,FOLLOW_22_in_rule__Constructor__Group_5__0__Impl3269); 
              after(grammarAccess.getConstructorAccess().getColonKeyword_5_0()); 
 
             }
@@ -4350,16 +4605,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_5__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1506:1: rule__Constructor__Group_5__1 : rule__Constructor__Group_5__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1600:1: rule__Constructor__Group_5__1 : rule__Constructor__Group_5__1__Impl ;
     public final void rule__Constructor__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1510:1: ( rule__Constructor__Group_5__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1511:2: rule__Constructor__Group_5__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1604:1: ( rule__Constructor__Group_5__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1605:2: rule__Constructor__Group_5__1__Impl
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_5__1__Impl_in_rule__Constructor__Group_5__13114);
+            pushFollow(FOLLOW_rule__Constructor__Group_5__1__Impl_in_rule__Constructor__Group_5__13300);
             rule__Constructor__Group_5__1__Impl();
 
             state._fsp--;
@@ -4383,23 +4638,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_5__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1517:1: rule__Constructor__Group_5__1__Impl : ( ( rule__Constructor__AddressesAssignment_5_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1611:1: rule__Constructor__Group_5__1__Impl : ( ( rule__Constructor__AddressesAssignment_5_1 ) ) ;
     public final void rule__Constructor__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1521:1: ( ( ( rule__Constructor__AddressesAssignment_5_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1522:1: ( ( rule__Constructor__AddressesAssignment_5_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1615:1: ( ( ( rule__Constructor__AddressesAssignment_5_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1616:1: ( ( rule__Constructor__AddressesAssignment_5_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1522:1: ( ( rule__Constructor__AddressesAssignment_5_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1523:1: ( rule__Constructor__AddressesAssignment_5_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1616:1: ( ( rule__Constructor__AddressesAssignment_5_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1617:1: ( rule__Constructor__AddressesAssignment_5_1 )
             {
              before(grammarAccess.getConstructorAccess().getAddressesAssignment_5_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1524:1: ( rule__Constructor__AddressesAssignment_5_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1524:2: rule__Constructor__AddressesAssignment_5_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1618:1: ( rule__Constructor__AddressesAssignment_5_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1618:2: rule__Constructor__AddressesAssignment_5_1
             {
-            pushFollow(FOLLOW_rule__Constructor__AddressesAssignment_5_1_in_rule__Constructor__Group_5__1__Impl3141);
+            pushFollow(FOLLOW_rule__Constructor__AddressesAssignment_5_1_in_rule__Constructor__Group_5__1__Impl3327);
             rule__Constructor__AddressesAssignment_5_1();
 
             state._fsp--;
@@ -4430,21 +4685,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_7__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1538:1: rule__Constructor__Group_7__0 : rule__Constructor__Group_7__0__Impl rule__Constructor__Group_7__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1632:1: rule__Constructor__Group_7__0 : rule__Constructor__Group_7__0__Impl rule__Constructor__Group_7__1 ;
     public final void rule__Constructor__Group_7__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1542:1: ( rule__Constructor__Group_7__0__Impl rule__Constructor__Group_7__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1543:2: rule__Constructor__Group_7__0__Impl rule__Constructor__Group_7__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1636:1: ( rule__Constructor__Group_7__0__Impl rule__Constructor__Group_7__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1637:2: rule__Constructor__Group_7__0__Impl rule__Constructor__Group_7__1
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_7__0__Impl_in_rule__Constructor__Group_7__03175);
+            pushFollow(FOLLOW_rule__Constructor__Group_7__0__Impl_in_rule__Constructor__Group_7__03361);
             rule__Constructor__Group_7__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Constructor__Group_7__1_in_rule__Constructor__Group_7__03178);
+            pushFollow(FOLLOW_rule__Constructor__Group_7__1_in_rule__Constructor__Group_7__03364);
             rule__Constructor__Group_7__1();
 
             state._fsp--;
@@ -4468,23 +4723,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_7__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1550:1: rule__Constructor__Group_7__0__Impl : ( ( rule__Constructor__MembersAssignment_7_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1644:1: rule__Constructor__Group_7__0__Impl : ( ( rule__Constructor__MembersAssignment_7_0 ) ) ;
     public final void rule__Constructor__Group_7__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1554:1: ( ( ( rule__Constructor__MembersAssignment_7_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1555:1: ( ( rule__Constructor__MembersAssignment_7_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1648:1: ( ( ( rule__Constructor__MembersAssignment_7_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1649:1: ( ( rule__Constructor__MembersAssignment_7_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1555:1: ( ( rule__Constructor__MembersAssignment_7_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1556:1: ( rule__Constructor__MembersAssignment_7_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1649:1: ( ( rule__Constructor__MembersAssignment_7_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1650:1: ( rule__Constructor__MembersAssignment_7_0 )
             {
              before(grammarAccess.getConstructorAccess().getMembersAssignment_7_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1557:1: ( rule__Constructor__MembersAssignment_7_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1557:2: rule__Constructor__MembersAssignment_7_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1651:1: ( rule__Constructor__MembersAssignment_7_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1651:2: rule__Constructor__MembersAssignment_7_0
             {
-            pushFollow(FOLLOW_rule__Constructor__MembersAssignment_7_0_in_rule__Constructor__Group_7__0__Impl3205);
+            pushFollow(FOLLOW_rule__Constructor__MembersAssignment_7_0_in_rule__Constructor__Group_7__0__Impl3391);
             rule__Constructor__MembersAssignment_7_0();
 
             state._fsp--;
@@ -4515,16 +4770,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_7__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1567:1: rule__Constructor__Group_7__1 : rule__Constructor__Group_7__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1661:1: rule__Constructor__Group_7__1 : rule__Constructor__Group_7__1__Impl ;
     public final void rule__Constructor__Group_7__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1571:1: ( rule__Constructor__Group_7__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1572:2: rule__Constructor__Group_7__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1665:1: ( rule__Constructor__Group_7__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1666:2: rule__Constructor__Group_7__1__Impl
             {
-            pushFollow(FOLLOW_rule__Constructor__Group_7__1__Impl_in_rule__Constructor__Group_7__13235);
+            pushFollow(FOLLOW_rule__Constructor__Group_7__1__Impl_in_rule__Constructor__Group_7__13421);
             rule__Constructor__Group_7__1__Impl();
 
             state._fsp--;
@@ -4548,20 +4803,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__Group_7__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1578:1: rule__Constructor__Group_7__1__Impl : ( ';' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1672:1: rule__Constructor__Group_7__1__Impl : ( ';' ) ;
     public final void rule__Constructor__Group_7__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1582:1: ( ( ';' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1583:1: ( ';' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1676:1: ( ( ';' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1677:1: ( ';' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1583:1: ( ';' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1584:1: ';'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1677:1: ( ';' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1678:1: ';'
             {
              before(grammarAccess.getConstructorAccess().getSemicolonKeyword_7_1()); 
-            match(input,15,FOLLOW_15_in_rule__Constructor__Group_7__1__Impl3263); 
+            match(input,15,FOLLOW_15_in_rule__Constructor__Group_7__1__Impl3449); 
              after(grammarAccess.getConstructorAccess().getSemicolonKeyword_7_1()); 
 
             }
@@ -4585,21 +4840,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1601:1: rule__NamedAddresses__Group__0 : rule__NamedAddresses__Group__0__Impl rule__NamedAddresses__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1695:1: rule__NamedAddresses__Group__0 : rule__NamedAddresses__Group__0__Impl rule__NamedAddresses__Group__1 ;
     public final void rule__NamedAddresses__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1605:1: ( rule__NamedAddresses__Group__0__Impl rule__NamedAddresses__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1606:2: rule__NamedAddresses__Group__0__Impl rule__NamedAddresses__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1699:1: ( rule__NamedAddresses__Group__0__Impl rule__NamedAddresses__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1700:2: rule__NamedAddresses__Group__0__Impl rule__NamedAddresses__Group__1
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__Group__0__Impl_in_rule__NamedAddresses__Group__03298);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group__0__Impl_in_rule__NamedAddresses__Group__03484);
             rule__NamedAddresses__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NamedAddresses__Group__1_in_rule__NamedAddresses__Group__03301);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group__1_in_rule__NamedAddresses__Group__03487);
             rule__NamedAddresses__Group__1();
 
             state._fsp--;
@@ -4623,20 +4878,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1613:1: rule__NamedAddresses__Group__0__Impl : ( '@' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1707:1: rule__NamedAddresses__Group__0__Impl : ( '@' ) ;
     public final void rule__NamedAddresses__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1617:1: ( ( '@' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1618:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1711:1: ( ( '@' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1712:1: ( '@' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1618:1: ( '@' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1619:1: '@'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1712:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1713:1: '@'
             {
              before(grammarAccess.getNamedAddressesAccess().getCommercialAtKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__NamedAddresses__Group__0__Impl3329); 
+            match(input,23,FOLLOW_23_in_rule__NamedAddresses__Group__0__Impl3515); 
              after(grammarAccess.getNamedAddressesAccess().getCommercialAtKeyword_0()); 
 
             }
@@ -4660,21 +4915,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1632:1: rule__NamedAddresses__Group__1 : rule__NamedAddresses__Group__1__Impl rule__NamedAddresses__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1726:1: rule__NamedAddresses__Group__1 : rule__NamedAddresses__Group__1__Impl rule__NamedAddresses__Group__2 ;
     public final void rule__NamedAddresses__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1636:1: ( rule__NamedAddresses__Group__1__Impl rule__NamedAddresses__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1637:2: rule__NamedAddresses__Group__1__Impl rule__NamedAddresses__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1730:1: ( rule__NamedAddresses__Group__1__Impl rule__NamedAddresses__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1731:2: rule__NamedAddresses__Group__1__Impl rule__NamedAddresses__Group__2
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__Group__1__Impl_in_rule__NamedAddresses__Group__13360);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group__1__Impl_in_rule__NamedAddresses__Group__13546);
             rule__NamedAddresses__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NamedAddresses__Group__2_in_rule__NamedAddresses__Group__13363);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group__2_in_rule__NamedAddresses__Group__13549);
             rule__NamedAddresses__Group__2();
 
             state._fsp--;
@@ -4698,23 +4953,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1644:1: rule__NamedAddresses__Group__1__Impl : ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1738:1: rule__NamedAddresses__Group__1__Impl : ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) ) ;
     public final void rule__NamedAddresses__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1648:1: ( ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1649:1: ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1742:1: ( ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1743:1: ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1649:1: ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1650:1: ( rule__NamedAddresses__AddressNamesAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1743:1: ( ( rule__NamedAddresses__AddressNamesAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1744:1: ( rule__NamedAddresses__AddressNamesAssignment_1 )
             {
              before(grammarAccess.getNamedAddressesAccess().getAddressNamesAssignment_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1651:1: ( rule__NamedAddresses__AddressNamesAssignment_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1651:2: rule__NamedAddresses__AddressNamesAssignment_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1745:1: ( rule__NamedAddresses__AddressNamesAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1745:2: rule__NamedAddresses__AddressNamesAssignment_1
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__AddressNamesAssignment_1_in_rule__NamedAddresses__Group__1__Impl3390);
+            pushFollow(FOLLOW_rule__NamedAddresses__AddressNamesAssignment_1_in_rule__NamedAddresses__Group__1__Impl3576);
             rule__NamedAddresses__AddressNamesAssignment_1();
 
             state._fsp--;
@@ -4745,16 +5000,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1661:1: rule__NamedAddresses__Group__2 : rule__NamedAddresses__Group__2__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1755:1: rule__NamedAddresses__Group__2 : rule__NamedAddresses__Group__2__Impl ;
     public final void rule__NamedAddresses__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1665:1: ( rule__NamedAddresses__Group__2__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1666:2: rule__NamedAddresses__Group__2__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1759:1: ( rule__NamedAddresses__Group__2__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1760:2: rule__NamedAddresses__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__Group__2__Impl_in_rule__NamedAddresses__Group__23420);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group__2__Impl_in_rule__NamedAddresses__Group__23606);
             rule__NamedAddresses__Group__2__Impl();
 
             state._fsp--;
@@ -4778,35 +5033,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1672:1: rule__NamedAddresses__Group__2__Impl : ( ( rule__NamedAddresses__Group_2__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1766:1: rule__NamedAddresses__Group__2__Impl : ( ( rule__NamedAddresses__Group_2__0 )* ) ;
     public final void rule__NamedAddresses__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1676:1: ( ( ( rule__NamedAddresses__Group_2__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1677:1: ( ( rule__NamedAddresses__Group_2__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1770:1: ( ( ( rule__NamedAddresses__Group_2__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1771:1: ( ( rule__NamedAddresses__Group_2__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1677:1: ( ( rule__NamedAddresses__Group_2__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1678:1: ( rule__NamedAddresses__Group_2__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1771:1: ( ( rule__NamedAddresses__Group_2__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1772:1: ( rule__NamedAddresses__Group_2__0 )*
             {
              before(grammarAccess.getNamedAddressesAccess().getGroup_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1679:1: ( rule__NamedAddresses__Group_2__0 )*
-            loop16:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1773:1: ( rule__NamedAddresses__Group_2__0 )*
+            loop17:
             do {
-                int alt16=2;
-                int LA16_0 = input.LA(1);
+                int alt17=2;
+                int LA17_0 = input.LA(1);
 
-                if ( (LA16_0==20) ) {
-                    alt16=1;
+                if ( (LA17_0==21) ) {
+                    alt17=1;
                 }
 
 
-                switch (alt16) {
+                switch (alt17) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1679:2: rule__NamedAddresses__Group_2__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1773:2: rule__NamedAddresses__Group_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__NamedAddresses__Group_2__0_in_rule__NamedAddresses__Group__2__Impl3447);
+            	    pushFollow(FOLLOW_rule__NamedAddresses__Group_2__0_in_rule__NamedAddresses__Group__2__Impl3633);
             	    rule__NamedAddresses__Group_2__0();
 
             	    state._fsp--;
@@ -4816,7 +5071,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop16;
+            	    break loop17;
                 }
             } while (true);
 
@@ -4843,21 +5098,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group_2__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1695:1: rule__NamedAddresses__Group_2__0 : rule__NamedAddresses__Group_2__0__Impl rule__NamedAddresses__Group_2__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1789:1: rule__NamedAddresses__Group_2__0 : rule__NamedAddresses__Group_2__0__Impl rule__NamedAddresses__Group_2__1 ;
     public final void rule__NamedAddresses__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1699:1: ( rule__NamedAddresses__Group_2__0__Impl rule__NamedAddresses__Group_2__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1700:2: rule__NamedAddresses__Group_2__0__Impl rule__NamedAddresses__Group_2__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1793:1: ( rule__NamedAddresses__Group_2__0__Impl rule__NamedAddresses__Group_2__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1794:2: rule__NamedAddresses__Group_2__0__Impl rule__NamedAddresses__Group_2__1
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__0__Impl_in_rule__NamedAddresses__Group_2__03484);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__0__Impl_in_rule__NamedAddresses__Group_2__03670);
             rule__NamedAddresses__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__1_in_rule__NamedAddresses__Group_2__03487);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__1_in_rule__NamedAddresses__Group_2__03673);
             rule__NamedAddresses__Group_2__1();
 
             state._fsp--;
@@ -4881,20 +5136,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group_2__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1707:1: rule__NamedAddresses__Group_2__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1801:1: rule__NamedAddresses__Group_2__0__Impl : ( ',' ) ;
     public final void rule__NamedAddresses__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1711:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1712:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1805:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1806:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1712:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1713:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1806:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1807:1: ','
             {
              before(grammarAccess.getNamedAddressesAccess().getCommaKeyword_2_0()); 
-            match(input,20,FOLLOW_20_in_rule__NamedAddresses__Group_2__0__Impl3515); 
+            match(input,21,FOLLOW_21_in_rule__NamedAddresses__Group_2__0__Impl3701); 
              after(grammarAccess.getNamedAddressesAccess().getCommaKeyword_2_0()); 
 
             }
@@ -4918,21 +5173,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group_2__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1726:1: rule__NamedAddresses__Group_2__1 : rule__NamedAddresses__Group_2__1__Impl rule__NamedAddresses__Group_2__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1820:1: rule__NamedAddresses__Group_2__1 : rule__NamedAddresses__Group_2__1__Impl rule__NamedAddresses__Group_2__2 ;
     public final void rule__NamedAddresses__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1730:1: ( rule__NamedAddresses__Group_2__1__Impl rule__NamedAddresses__Group_2__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1731:2: rule__NamedAddresses__Group_2__1__Impl rule__NamedAddresses__Group_2__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1824:1: ( rule__NamedAddresses__Group_2__1__Impl rule__NamedAddresses__Group_2__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1825:2: rule__NamedAddresses__Group_2__1__Impl rule__NamedAddresses__Group_2__2
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__1__Impl_in_rule__NamedAddresses__Group_2__13546);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__1__Impl_in_rule__NamedAddresses__Group_2__13732);
             rule__NamedAddresses__Group_2__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__2_in_rule__NamedAddresses__Group_2__13549);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__2_in_rule__NamedAddresses__Group_2__13735);
             rule__NamedAddresses__Group_2__2();
 
             state._fsp--;
@@ -4956,20 +5211,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group_2__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1738:1: rule__NamedAddresses__Group_2__1__Impl : ( '@' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1832:1: rule__NamedAddresses__Group_2__1__Impl : ( '@' ) ;
     public final void rule__NamedAddresses__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1742:1: ( ( '@' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1743:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1836:1: ( ( '@' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1837:1: ( '@' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1743:1: ( '@' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1744:1: '@'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1837:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1838:1: '@'
             {
              before(grammarAccess.getNamedAddressesAccess().getCommercialAtKeyword_2_1()); 
-            match(input,22,FOLLOW_22_in_rule__NamedAddresses__Group_2__1__Impl3577); 
+            match(input,23,FOLLOW_23_in_rule__NamedAddresses__Group_2__1__Impl3763); 
              after(grammarAccess.getNamedAddressesAccess().getCommercialAtKeyword_2_1()); 
 
             }
@@ -4993,16 +5248,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group_2__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1757:1: rule__NamedAddresses__Group_2__2 : rule__NamedAddresses__Group_2__2__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1851:1: rule__NamedAddresses__Group_2__2 : rule__NamedAddresses__Group_2__2__Impl ;
     public final void rule__NamedAddresses__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1761:1: ( rule__NamedAddresses__Group_2__2__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1762:2: rule__NamedAddresses__Group_2__2__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1855:1: ( rule__NamedAddresses__Group_2__2__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1856:2: rule__NamedAddresses__Group_2__2__Impl
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__2__Impl_in_rule__NamedAddresses__Group_2__23608);
+            pushFollow(FOLLOW_rule__NamedAddresses__Group_2__2__Impl_in_rule__NamedAddresses__Group_2__23794);
             rule__NamedAddresses__Group_2__2__Impl();
 
             state._fsp--;
@@ -5026,23 +5281,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__Group_2__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1768:1: rule__NamedAddresses__Group_2__2__Impl : ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1862:1: rule__NamedAddresses__Group_2__2__Impl : ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) ) ;
     public final void rule__NamedAddresses__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1772:1: ( ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1773:1: ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1866:1: ( ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1867:1: ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1773:1: ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1774:1: ( rule__NamedAddresses__AddressNamesAssignment_2_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1867:1: ( ( rule__NamedAddresses__AddressNamesAssignment_2_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1868:1: ( rule__NamedAddresses__AddressNamesAssignment_2_2 )
             {
              before(grammarAccess.getNamedAddressesAccess().getAddressNamesAssignment_2_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1775:1: ( rule__NamedAddresses__AddressNamesAssignment_2_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1775:2: rule__NamedAddresses__AddressNamesAssignment_2_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1869:1: ( rule__NamedAddresses__AddressNamesAssignment_2_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1869:2: rule__NamedAddresses__AddressNamesAssignment_2_2
             {
-            pushFollow(FOLLOW_rule__NamedAddresses__AddressNamesAssignment_2_2_in_rule__NamedAddresses__Group_2__2__Impl3635);
+            pushFollow(FOLLOW_rule__NamedAddresses__AddressNamesAssignment_2_2_in_rule__NamedAddresses__Group_2__2__Impl3821);
             rule__NamedAddresses__AddressNamesAssignment_2_2();
 
             state._fsp--;
@@ -5073,21 +5328,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1791:1: rule__AddressTuple__Group__0 : rule__AddressTuple__Group__0__Impl rule__AddressTuple__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1885:1: rule__AddressTuple__Group__0 : rule__AddressTuple__Group__0__Impl rule__AddressTuple__Group__1 ;
     public final void rule__AddressTuple__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1795:1: ( rule__AddressTuple__Group__0__Impl rule__AddressTuple__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1796:2: rule__AddressTuple__Group__0__Impl rule__AddressTuple__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1889:1: ( rule__AddressTuple__Group__0__Impl rule__AddressTuple__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1890:2: rule__AddressTuple__Group__0__Impl rule__AddressTuple__Group__1
             {
-            pushFollow(FOLLOW_rule__AddressTuple__Group__0__Impl_in_rule__AddressTuple__Group__03671);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__0__Impl_in_rule__AddressTuple__Group__03857);
             rule__AddressTuple__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressTuple__Group__1_in_rule__AddressTuple__Group__03674);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__1_in_rule__AddressTuple__Group__03860);
             rule__AddressTuple__Group__1();
 
             state._fsp--;
@@ -5111,20 +5366,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1803:1: rule__AddressTuple__Group__0__Impl : ( '@' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1897:1: rule__AddressTuple__Group__0__Impl : ( '@' ) ;
     public final void rule__AddressTuple__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1807:1: ( ( '@' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1808:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1901:1: ( ( '@' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1902:1: ( '@' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1808:1: ( '@' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1809:1: '@'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1902:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1903:1: '@'
             {
              before(grammarAccess.getAddressTupleAccess().getCommercialAtKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__AddressTuple__Group__0__Impl3702); 
+            match(input,23,FOLLOW_23_in_rule__AddressTuple__Group__0__Impl3888); 
              after(grammarAccess.getAddressTupleAccess().getCommercialAtKeyword_0()); 
 
             }
@@ -5148,21 +5403,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1822:1: rule__AddressTuple__Group__1 : rule__AddressTuple__Group__1__Impl rule__AddressTuple__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1916:1: rule__AddressTuple__Group__1 : rule__AddressTuple__Group__1__Impl rule__AddressTuple__Group__2 ;
     public final void rule__AddressTuple__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1826:1: ( rule__AddressTuple__Group__1__Impl rule__AddressTuple__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1827:2: rule__AddressTuple__Group__1__Impl rule__AddressTuple__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1920:1: ( rule__AddressTuple__Group__1__Impl rule__AddressTuple__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1921:2: rule__AddressTuple__Group__1__Impl rule__AddressTuple__Group__2
             {
-            pushFollow(FOLLOW_rule__AddressTuple__Group__1__Impl_in_rule__AddressTuple__Group__13733);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__1__Impl_in_rule__AddressTuple__Group__13919);
             rule__AddressTuple__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressTuple__Group__2_in_rule__AddressTuple__Group__13736);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__2_in_rule__AddressTuple__Group__13922);
             rule__AddressTuple__Group__2();
 
             state._fsp--;
@@ -5186,20 +5441,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1834:1: rule__AddressTuple__Group__1__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1928:1: rule__AddressTuple__Group__1__Impl : ( '(' ) ;
     public final void rule__AddressTuple__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1838:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1839:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1932:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1933:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1839:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1840:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1933:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1934:1: '('
             {
              before(grammarAccess.getAddressTupleAccess().getLeftParenthesisKeyword_1()); 
-            match(input,16,FOLLOW_16_in_rule__AddressTuple__Group__1__Impl3764); 
+            match(input,17,FOLLOW_17_in_rule__AddressTuple__Group__1__Impl3950); 
              after(grammarAccess.getAddressTupleAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -5223,21 +5478,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1853:1: rule__AddressTuple__Group__2 : rule__AddressTuple__Group__2__Impl rule__AddressTuple__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1947:1: rule__AddressTuple__Group__2 : rule__AddressTuple__Group__2__Impl rule__AddressTuple__Group__3 ;
     public final void rule__AddressTuple__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1857:1: ( rule__AddressTuple__Group__2__Impl rule__AddressTuple__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1858:2: rule__AddressTuple__Group__2__Impl rule__AddressTuple__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1951:1: ( rule__AddressTuple__Group__2__Impl rule__AddressTuple__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1952:2: rule__AddressTuple__Group__2__Impl rule__AddressTuple__Group__3
             {
-            pushFollow(FOLLOW_rule__AddressTuple__Group__2__Impl_in_rule__AddressTuple__Group__23795);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__2__Impl_in_rule__AddressTuple__Group__23981);
             rule__AddressTuple__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressTuple__Group__3_in_rule__AddressTuple__Group__23798);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__3_in_rule__AddressTuple__Group__23984);
             rule__AddressTuple__Group__3();
 
             state._fsp--;
@@ -5261,23 +5516,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1865:1: rule__AddressTuple__Group__2__Impl : ( ( rule__AddressTuple__ElementsAssignment_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1959:1: rule__AddressTuple__Group__2__Impl : ( ( rule__AddressTuple__ElementsAssignment_2 ) ) ;
     public final void rule__AddressTuple__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1869:1: ( ( ( rule__AddressTuple__ElementsAssignment_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1870:1: ( ( rule__AddressTuple__ElementsAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1963:1: ( ( ( rule__AddressTuple__ElementsAssignment_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1964:1: ( ( rule__AddressTuple__ElementsAssignment_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1870:1: ( ( rule__AddressTuple__ElementsAssignment_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1871:1: ( rule__AddressTuple__ElementsAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1964:1: ( ( rule__AddressTuple__ElementsAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1965:1: ( rule__AddressTuple__ElementsAssignment_2 )
             {
              before(grammarAccess.getAddressTupleAccess().getElementsAssignment_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1872:1: ( rule__AddressTuple__ElementsAssignment_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1872:2: rule__AddressTuple__ElementsAssignment_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1966:1: ( rule__AddressTuple__ElementsAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1966:2: rule__AddressTuple__ElementsAssignment_2
             {
-            pushFollow(FOLLOW_rule__AddressTuple__ElementsAssignment_2_in_rule__AddressTuple__Group__2__Impl3825);
+            pushFollow(FOLLOW_rule__AddressTuple__ElementsAssignment_2_in_rule__AddressTuple__Group__2__Impl4011);
             rule__AddressTuple__ElementsAssignment_2();
 
             state._fsp--;
@@ -5308,21 +5563,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1882:1: rule__AddressTuple__Group__3 : rule__AddressTuple__Group__3__Impl rule__AddressTuple__Group__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1976:1: rule__AddressTuple__Group__3 : rule__AddressTuple__Group__3__Impl rule__AddressTuple__Group__4 ;
     public final void rule__AddressTuple__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1886:1: ( rule__AddressTuple__Group__3__Impl rule__AddressTuple__Group__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1887:2: rule__AddressTuple__Group__3__Impl rule__AddressTuple__Group__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1980:1: ( rule__AddressTuple__Group__3__Impl rule__AddressTuple__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1981:2: rule__AddressTuple__Group__3__Impl rule__AddressTuple__Group__4
             {
-            pushFollow(FOLLOW_rule__AddressTuple__Group__3__Impl_in_rule__AddressTuple__Group__33855);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__3__Impl_in_rule__AddressTuple__Group__34041);
             rule__AddressTuple__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressTuple__Group__4_in_rule__AddressTuple__Group__33858);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__4_in_rule__AddressTuple__Group__34044);
             rule__AddressTuple__Group__4();
 
             state._fsp--;
@@ -5346,35 +5601,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1894:1: rule__AddressTuple__Group__3__Impl : ( ( rule__AddressTuple__Group_3__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1988:1: rule__AddressTuple__Group__3__Impl : ( ( rule__AddressTuple__Group_3__0 )* ) ;
     public final void rule__AddressTuple__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1898:1: ( ( ( rule__AddressTuple__Group_3__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1899:1: ( ( rule__AddressTuple__Group_3__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1992:1: ( ( ( rule__AddressTuple__Group_3__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1993:1: ( ( rule__AddressTuple__Group_3__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1899:1: ( ( rule__AddressTuple__Group_3__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1900:1: ( rule__AddressTuple__Group_3__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1993:1: ( ( rule__AddressTuple__Group_3__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1994:1: ( rule__AddressTuple__Group_3__0 )*
             {
              before(grammarAccess.getAddressTupleAccess().getGroup_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1901:1: ( rule__AddressTuple__Group_3__0 )*
-            loop17:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1995:1: ( rule__AddressTuple__Group_3__0 )*
+            loop18:
             do {
-                int alt17=2;
-                int LA17_0 = input.LA(1);
+                int alt18=2;
+                int LA18_0 = input.LA(1);
 
-                if ( (LA17_0==20) ) {
-                    alt17=1;
+                if ( (LA18_0==21) ) {
+                    alt18=1;
                 }
 
 
-                switch (alt17) {
+                switch (alt18) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1901:2: rule__AddressTuple__Group_3__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1995:2: rule__AddressTuple__Group_3__0
             	    {
-            	    pushFollow(FOLLOW_rule__AddressTuple__Group_3__0_in_rule__AddressTuple__Group__3__Impl3885);
+            	    pushFollow(FOLLOW_rule__AddressTuple__Group_3__0_in_rule__AddressTuple__Group__3__Impl4071);
             	    rule__AddressTuple__Group_3__0();
 
             	    state._fsp--;
@@ -5384,7 +5639,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop17;
+            	    break loop18;
                 }
             } while (true);
 
@@ -5411,16 +5666,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1911:1: rule__AddressTuple__Group__4 : rule__AddressTuple__Group__4__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2005:1: rule__AddressTuple__Group__4 : rule__AddressTuple__Group__4__Impl ;
     public final void rule__AddressTuple__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1915:1: ( rule__AddressTuple__Group__4__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1916:2: rule__AddressTuple__Group__4__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2009:1: ( rule__AddressTuple__Group__4__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2010:2: rule__AddressTuple__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__AddressTuple__Group__4__Impl_in_rule__AddressTuple__Group__43916);
+            pushFollow(FOLLOW_rule__AddressTuple__Group__4__Impl_in_rule__AddressTuple__Group__44102);
             rule__AddressTuple__Group__4__Impl();
 
             state._fsp--;
@@ -5444,20 +5699,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1922:1: rule__AddressTuple__Group__4__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2016:1: rule__AddressTuple__Group__4__Impl : ( ')' ) ;
     public final void rule__AddressTuple__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1926:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1927:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2020:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2021:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1927:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1928:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2021:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2022:1: ')'
             {
              before(grammarAccess.getAddressTupleAccess().getRightParenthesisKeyword_4()); 
-            match(input,17,FOLLOW_17_in_rule__AddressTuple__Group__4__Impl3944); 
+            match(input,18,FOLLOW_18_in_rule__AddressTuple__Group__4__Impl4130); 
              after(grammarAccess.getAddressTupleAccess().getRightParenthesisKeyword_4()); 
 
             }
@@ -5481,21 +5736,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group_3__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1951:1: rule__AddressTuple__Group_3__0 : rule__AddressTuple__Group_3__0__Impl rule__AddressTuple__Group_3__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2045:1: rule__AddressTuple__Group_3__0 : rule__AddressTuple__Group_3__0__Impl rule__AddressTuple__Group_3__1 ;
     public final void rule__AddressTuple__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1955:1: ( rule__AddressTuple__Group_3__0__Impl rule__AddressTuple__Group_3__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1956:2: rule__AddressTuple__Group_3__0__Impl rule__AddressTuple__Group_3__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2049:1: ( rule__AddressTuple__Group_3__0__Impl rule__AddressTuple__Group_3__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2050:2: rule__AddressTuple__Group_3__0__Impl rule__AddressTuple__Group_3__1
             {
-            pushFollow(FOLLOW_rule__AddressTuple__Group_3__0__Impl_in_rule__AddressTuple__Group_3__03985);
+            pushFollow(FOLLOW_rule__AddressTuple__Group_3__0__Impl_in_rule__AddressTuple__Group_3__04171);
             rule__AddressTuple__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressTuple__Group_3__1_in_rule__AddressTuple__Group_3__03988);
+            pushFollow(FOLLOW_rule__AddressTuple__Group_3__1_in_rule__AddressTuple__Group_3__04174);
             rule__AddressTuple__Group_3__1();
 
             state._fsp--;
@@ -5519,20 +5774,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group_3__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1963:1: rule__AddressTuple__Group_3__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2057:1: rule__AddressTuple__Group_3__0__Impl : ( ',' ) ;
     public final void rule__AddressTuple__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1967:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1968:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2061:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2062:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1968:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1969:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2062:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2063:1: ','
             {
              before(grammarAccess.getAddressTupleAccess().getCommaKeyword_3_0()); 
-            match(input,20,FOLLOW_20_in_rule__AddressTuple__Group_3__0__Impl4016); 
+            match(input,21,FOLLOW_21_in_rule__AddressTuple__Group_3__0__Impl4202); 
              after(grammarAccess.getAddressTupleAccess().getCommaKeyword_3_0()); 
 
             }
@@ -5556,16 +5811,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group_3__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1982:1: rule__AddressTuple__Group_3__1 : rule__AddressTuple__Group_3__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2076:1: rule__AddressTuple__Group_3__1 : rule__AddressTuple__Group_3__1__Impl ;
     public final void rule__AddressTuple__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1986:1: ( rule__AddressTuple__Group_3__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1987:2: rule__AddressTuple__Group_3__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2080:1: ( rule__AddressTuple__Group_3__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2081:2: rule__AddressTuple__Group_3__1__Impl
             {
-            pushFollow(FOLLOW_rule__AddressTuple__Group_3__1__Impl_in_rule__AddressTuple__Group_3__14047);
+            pushFollow(FOLLOW_rule__AddressTuple__Group_3__1__Impl_in_rule__AddressTuple__Group_3__14233);
             rule__AddressTuple__Group_3__1__Impl();
 
             state._fsp--;
@@ -5589,23 +5844,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__Group_3__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1993:1: rule__AddressTuple__Group_3__1__Impl : ( ( rule__AddressTuple__ElementsAssignment_3_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2087:1: rule__AddressTuple__Group_3__1__Impl : ( ( rule__AddressTuple__ElementsAssignment_3_1 ) ) ;
     public final void rule__AddressTuple__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1997:1: ( ( ( rule__AddressTuple__ElementsAssignment_3_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1998:1: ( ( rule__AddressTuple__ElementsAssignment_3_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2091:1: ( ( ( rule__AddressTuple__ElementsAssignment_3_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2092:1: ( ( rule__AddressTuple__ElementsAssignment_3_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1998:1: ( ( rule__AddressTuple__ElementsAssignment_3_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:1999:1: ( rule__AddressTuple__ElementsAssignment_3_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2092:1: ( ( rule__AddressTuple__ElementsAssignment_3_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2093:1: ( rule__AddressTuple__ElementsAssignment_3_1 )
             {
              before(grammarAccess.getAddressTupleAccess().getElementsAssignment_3_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2000:1: ( rule__AddressTuple__ElementsAssignment_3_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2000:2: rule__AddressTuple__ElementsAssignment_3_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2094:1: ( rule__AddressTuple__ElementsAssignment_3_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2094:2: rule__AddressTuple__ElementsAssignment_3_1
             {
-            pushFollow(FOLLOW_rule__AddressTuple__ElementsAssignment_3_1_in_rule__AddressTuple__Group_3__1__Impl4074);
+            pushFollow(FOLLOW_rule__AddressTuple__ElementsAssignment_3_1_in_rule__AddressTuple__Group_3__1__Impl4260);
             rule__AddressTuple__ElementsAssignment_3_1();
 
             state._fsp--;
@@ -5636,21 +5891,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2014:1: rule__TosNetLinkBinding__Group__0 : rule__TosNetLinkBinding__Group__0__Impl rule__TosNetLinkBinding__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2108:1: rule__TosNetLinkBinding__Group__0 : rule__TosNetLinkBinding__Group__0__Impl rule__TosNetLinkBinding__Group__1 ;
     public final void rule__TosNetLinkBinding__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2018:1: ( rule__TosNetLinkBinding__Group__0__Impl rule__TosNetLinkBinding__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2019:2: rule__TosNetLinkBinding__Group__0__Impl rule__TosNetLinkBinding__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2112:1: ( rule__TosNetLinkBinding__Group__0__Impl rule__TosNetLinkBinding__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2113:2: rule__TosNetLinkBinding__Group__0__Impl rule__TosNetLinkBinding__Group__1
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__0__Impl_in_rule__TosNetLinkBinding__Group__04108);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__0__Impl_in_rule__TosNetLinkBinding__Group__04294);
             rule__TosNetLinkBinding__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__1_in_rule__TosNetLinkBinding__Group__04111);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__1_in_rule__TosNetLinkBinding__Group__04297);
             rule__TosNetLinkBinding__Group__1();
 
             state._fsp--;
@@ -5674,20 +5929,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2026:1: rule__TosNetLinkBinding__Group__0__Impl : ( 'TOSNET' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2120:1: rule__TosNetLinkBinding__Group__0__Impl : ( 'TOSNET' ) ;
     public final void rule__TosNetLinkBinding__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2030:1: ( ( 'TOSNET' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2031:1: ( 'TOSNET' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2124:1: ( ( 'TOSNET' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2125:1: ( 'TOSNET' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2031:1: ( 'TOSNET' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2032:1: 'TOSNET'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2125:1: ( 'TOSNET' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2126:1: 'TOSNET'
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getTOSNETKeyword_0()); 
-            match(input,23,FOLLOW_23_in_rule__TosNetLinkBinding__Group__0__Impl4139); 
+            match(input,24,FOLLOW_24_in_rule__TosNetLinkBinding__Group__0__Impl4325); 
              after(grammarAccess.getTosNetLinkBindingAccess().getTOSNETKeyword_0()); 
 
             }
@@ -5711,21 +5966,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2045:1: rule__TosNetLinkBinding__Group__1 : rule__TosNetLinkBinding__Group__1__Impl rule__TosNetLinkBinding__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2139:1: rule__TosNetLinkBinding__Group__1 : rule__TosNetLinkBinding__Group__1__Impl rule__TosNetLinkBinding__Group__2 ;
     public final void rule__TosNetLinkBinding__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2049:1: ( rule__TosNetLinkBinding__Group__1__Impl rule__TosNetLinkBinding__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2050:2: rule__TosNetLinkBinding__Group__1__Impl rule__TosNetLinkBinding__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2143:1: ( rule__TosNetLinkBinding__Group__1__Impl rule__TosNetLinkBinding__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2144:2: rule__TosNetLinkBinding__Group__1__Impl rule__TosNetLinkBinding__Group__2
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__1__Impl_in_rule__TosNetLinkBinding__Group__14170);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__1__Impl_in_rule__TosNetLinkBinding__Group__14356);
             rule__TosNetLinkBinding__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__2_in_rule__TosNetLinkBinding__Group__14173);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__2_in_rule__TosNetLinkBinding__Group__14359);
             rule__TosNetLinkBinding__Group__2();
 
             state._fsp--;
@@ -5749,20 +6004,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2057:1: rule__TosNetLinkBinding__Group__1__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2151:1: rule__TosNetLinkBinding__Group__1__Impl : ( '(' ) ;
     public final void rule__TosNetLinkBinding__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2061:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2062:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2155:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2156:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2062:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2063:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2156:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2157:1: '('
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getLeftParenthesisKeyword_1()); 
-            match(input,16,FOLLOW_16_in_rule__TosNetLinkBinding__Group__1__Impl4201); 
+            match(input,17,FOLLOW_17_in_rule__TosNetLinkBinding__Group__1__Impl4387); 
              after(grammarAccess.getTosNetLinkBindingAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -5786,21 +6041,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2076:1: rule__TosNetLinkBinding__Group__2 : rule__TosNetLinkBinding__Group__2__Impl rule__TosNetLinkBinding__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2170:1: rule__TosNetLinkBinding__Group__2 : rule__TosNetLinkBinding__Group__2__Impl rule__TosNetLinkBinding__Group__3 ;
     public final void rule__TosNetLinkBinding__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2080:1: ( rule__TosNetLinkBinding__Group__2__Impl rule__TosNetLinkBinding__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2081:2: rule__TosNetLinkBinding__Group__2__Impl rule__TosNetLinkBinding__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2174:1: ( rule__TosNetLinkBinding__Group__2__Impl rule__TosNetLinkBinding__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2175:2: rule__TosNetLinkBinding__Group__2__Impl rule__TosNetLinkBinding__Group__3
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__2__Impl_in_rule__TosNetLinkBinding__Group__24232);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__2__Impl_in_rule__TosNetLinkBinding__Group__24418);
             rule__TosNetLinkBinding__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__3_in_rule__TosNetLinkBinding__Group__24235);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__3_in_rule__TosNetLinkBinding__Group__24421);
             rule__TosNetLinkBinding__Group__3();
 
             state._fsp--;
@@ -5824,23 +6079,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2088:1: rule__TosNetLinkBinding__Group__2__Impl : ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2182:1: rule__TosNetLinkBinding__Group__2__Impl : ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) ) ;
     public final void rule__TosNetLinkBinding__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2092:1: ( ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2093:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2186:1: ( ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2187:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2093:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2094:1: ( rule__TosNetLinkBinding__PropertiesAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2187:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2188:1: ( rule__TosNetLinkBinding__PropertiesAssignment_2 )
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2095:1: ( rule__TosNetLinkBinding__PropertiesAssignment_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2095:2: rule__TosNetLinkBinding__PropertiesAssignment_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2189:1: ( rule__TosNetLinkBinding__PropertiesAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2189:2: rule__TosNetLinkBinding__PropertiesAssignment_2
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_2_in_rule__TosNetLinkBinding__Group__2__Impl4262);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_2_in_rule__TosNetLinkBinding__Group__2__Impl4448);
             rule__TosNetLinkBinding__PropertiesAssignment_2();
 
             state._fsp--;
@@ -5871,21 +6126,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2105:1: rule__TosNetLinkBinding__Group__3 : rule__TosNetLinkBinding__Group__3__Impl rule__TosNetLinkBinding__Group__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2199:1: rule__TosNetLinkBinding__Group__3 : rule__TosNetLinkBinding__Group__3__Impl rule__TosNetLinkBinding__Group__4 ;
     public final void rule__TosNetLinkBinding__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2109:1: ( rule__TosNetLinkBinding__Group__3__Impl rule__TosNetLinkBinding__Group__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2110:2: rule__TosNetLinkBinding__Group__3__Impl rule__TosNetLinkBinding__Group__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2203:1: ( rule__TosNetLinkBinding__Group__3__Impl rule__TosNetLinkBinding__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2204:2: rule__TosNetLinkBinding__Group__3__Impl rule__TosNetLinkBinding__Group__4
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__3__Impl_in_rule__TosNetLinkBinding__Group__34292);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__3__Impl_in_rule__TosNetLinkBinding__Group__34478);
             rule__TosNetLinkBinding__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__4_in_rule__TosNetLinkBinding__Group__34295);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__4_in_rule__TosNetLinkBinding__Group__34481);
             rule__TosNetLinkBinding__Group__4();
 
             state._fsp--;
@@ -5909,35 +6164,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2117:1: rule__TosNetLinkBinding__Group__3__Impl : ( ( rule__TosNetLinkBinding__Group_3__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2211:1: rule__TosNetLinkBinding__Group__3__Impl : ( ( rule__TosNetLinkBinding__Group_3__0 )* ) ;
     public final void rule__TosNetLinkBinding__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2121:1: ( ( ( rule__TosNetLinkBinding__Group_3__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2122:1: ( ( rule__TosNetLinkBinding__Group_3__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2215:1: ( ( ( rule__TosNetLinkBinding__Group_3__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2216:1: ( ( rule__TosNetLinkBinding__Group_3__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2122:1: ( ( rule__TosNetLinkBinding__Group_3__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2123:1: ( rule__TosNetLinkBinding__Group_3__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2216:1: ( ( rule__TosNetLinkBinding__Group_3__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2217:1: ( rule__TosNetLinkBinding__Group_3__0 )*
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getGroup_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2124:1: ( rule__TosNetLinkBinding__Group_3__0 )*
-            loop18:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2218:1: ( rule__TosNetLinkBinding__Group_3__0 )*
+            loop19:
             do {
-                int alt18=2;
-                int LA18_0 = input.LA(1);
+                int alt19=2;
+                int LA19_0 = input.LA(1);
 
-                if ( (LA18_0==20) ) {
-                    alt18=1;
+                if ( (LA19_0==21) ) {
+                    alt19=1;
                 }
 
 
-                switch (alt18) {
+                switch (alt19) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2124:2: rule__TosNetLinkBinding__Group_3__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2218:2: rule__TosNetLinkBinding__Group_3__0
             	    {
-            	    pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__0_in_rule__TosNetLinkBinding__Group__3__Impl4322);
+            	    pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__0_in_rule__TosNetLinkBinding__Group__3__Impl4508);
             	    rule__TosNetLinkBinding__Group_3__0();
 
             	    state._fsp--;
@@ -5947,7 +6202,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop18;
+            	    break loop19;
                 }
             } while (true);
 
@@ -5974,16 +6229,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2134:1: rule__TosNetLinkBinding__Group__4 : rule__TosNetLinkBinding__Group__4__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2228:1: rule__TosNetLinkBinding__Group__4 : rule__TosNetLinkBinding__Group__4__Impl ;
     public final void rule__TosNetLinkBinding__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2138:1: ( rule__TosNetLinkBinding__Group__4__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2139:2: rule__TosNetLinkBinding__Group__4__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2232:1: ( rule__TosNetLinkBinding__Group__4__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2233:2: rule__TosNetLinkBinding__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__4__Impl_in_rule__TosNetLinkBinding__Group__44353);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group__4__Impl_in_rule__TosNetLinkBinding__Group__44539);
             rule__TosNetLinkBinding__Group__4__Impl();
 
             state._fsp--;
@@ -6007,20 +6262,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2145:1: rule__TosNetLinkBinding__Group__4__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2239:1: rule__TosNetLinkBinding__Group__4__Impl : ( ')' ) ;
     public final void rule__TosNetLinkBinding__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2149:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2150:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2243:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2244:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2150:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2151:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2244:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2245:1: ')'
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_4()); 
-            match(input,17,FOLLOW_17_in_rule__TosNetLinkBinding__Group__4__Impl4381); 
+            match(input,18,FOLLOW_18_in_rule__TosNetLinkBinding__Group__4__Impl4567); 
              after(grammarAccess.getTosNetLinkBindingAccess().getRightParenthesisKeyword_4()); 
 
             }
@@ -6044,21 +6299,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group_3__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2174:1: rule__TosNetLinkBinding__Group_3__0 : rule__TosNetLinkBinding__Group_3__0__Impl rule__TosNetLinkBinding__Group_3__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2268:1: rule__TosNetLinkBinding__Group_3__0 : rule__TosNetLinkBinding__Group_3__0__Impl rule__TosNetLinkBinding__Group_3__1 ;
     public final void rule__TosNetLinkBinding__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2178:1: ( rule__TosNetLinkBinding__Group_3__0__Impl rule__TosNetLinkBinding__Group_3__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2179:2: rule__TosNetLinkBinding__Group_3__0__Impl rule__TosNetLinkBinding__Group_3__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2272:1: ( rule__TosNetLinkBinding__Group_3__0__Impl rule__TosNetLinkBinding__Group_3__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2273:2: rule__TosNetLinkBinding__Group_3__0__Impl rule__TosNetLinkBinding__Group_3__1
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__0__Impl_in_rule__TosNetLinkBinding__Group_3__04422);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__0__Impl_in_rule__TosNetLinkBinding__Group_3__04608);
             rule__TosNetLinkBinding__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__1_in_rule__TosNetLinkBinding__Group_3__04425);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__1_in_rule__TosNetLinkBinding__Group_3__04611);
             rule__TosNetLinkBinding__Group_3__1();
 
             state._fsp--;
@@ -6082,20 +6337,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group_3__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2186:1: rule__TosNetLinkBinding__Group_3__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2280:1: rule__TosNetLinkBinding__Group_3__0__Impl : ( ',' ) ;
     public final void rule__TosNetLinkBinding__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2190:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2191:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2284:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2285:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2191:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2192:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2285:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2286:1: ','
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_3_0()); 
-            match(input,20,FOLLOW_20_in_rule__TosNetLinkBinding__Group_3__0__Impl4453); 
+            match(input,21,FOLLOW_21_in_rule__TosNetLinkBinding__Group_3__0__Impl4639); 
              after(grammarAccess.getTosNetLinkBindingAccess().getCommaKeyword_3_0()); 
 
             }
@@ -6119,16 +6374,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group_3__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2205:1: rule__TosNetLinkBinding__Group_3__1 : rule__TosNetLinkBinding__Group_3__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2299:1: rule__TosNetLinkBinding__Group_3__1 : rule__TosNetLinkBinding__Group_3__1__Impl ;
     public final void rule__TosNetLinkBinding__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2209:1: ( rule__TosNetLinkBinding__Group_3__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2210:2: rule__TosNetLinkBinding__Group_3__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2303:1: ( rule__TosNetLinkBinding__Group_3__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2304:2: rule__TosNetLinkBinding__Group_3__1__Impl
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__1__Impl_in_rule__TosNetLinkBinding__Group_3__14484);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__Group_3__1__Impl_in_rule__TosNetLinkBinding__Group_3__14670);
             rule__TosNetLinkBinding__Group_3__1__Impl();
 
             state._fsp--;
@@ -6152,23 +6407,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__Group_3__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2216:1: rule__TosNetLinkBinding__Group_3__1__Impl : ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2310:1: rule__TosNetLinkBinding__Group_3__1__Impl : ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) ) ;
     public final void rule__TosNetLinkBinding__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2220:1: ( ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2221:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2314:1: ( ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2315:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2221:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2222:1: ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2315:1: ( ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2316:1: ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 )
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesAssignment_3_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2223:1: ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2223:2: rule__TosNetLinkBinding__PropertiesAssignment_3_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2317:1: ( rule__TosNetLinkBinding__PropertiesAssignment_3_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2317:2: rule__TosNetLinkBinding__PropertiesAssignment_3_1
             {
-            pushFollow(FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_3_1_in_rule__TosNetLinkBinding__Group_3__1__Impl4511);
+            pushFollow(FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_3_1_in_rule__TosNetLinkBinding__Group_3__1__Impl4697);
             rule__TosNetLinkBinding__PropertiesAssignment_3_1();
 
             state._fsp--;
@@ -6199,21 +6454,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_0__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2237:1: rule__LinkProperty__Group_0__0 : rule__LinkProperty__Group_0__0__Impl rule__LinkProperty__Group_0__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2331:1: rule__LinkProperty__Group_0__0 : rule__LinkProperty__Group_0__0__Impl rule__LinkProperty__Group_0__1 ;
     public final void rule__LinkProperty__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2241:1: ( rule__LinkProperty__Group_0__0__Impl rule__LinkProperty__Group_0__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2242:2: rule__LinkProperty__Group_0__0__Impl rule__LinkProperty__Group_0__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2335:1: ( rule__LinkProperty__Group_0__0__Impl rule__LinkProperty__Group_0__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2336:2: rule__LinkProperty__Group_0__0__Impl rule__LinkProperty__Group_0__1
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_0__0__Impl_in_rule__LinkProperty__Group_0__04545);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_0__0__Impl_in_rule__LinkProperty__Group_0__04731);
             rule__LinkProperty__Group_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__LinkProperty__Group_0__1_in_rule__LinkProperty__Group_0__04548);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_0__1_in_rule__LinkProperty__Group_0__04734);
             rule__LinkProperty__Group_0__1();
 
             state._fsp--;
@@ -6237,20 +6492,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_0__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2249:1: rule__LinkProperty__Group_0__0__Impl : ( 'CTRL' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2343:1: rule__LinkProperty__Group_0__0__Impl : ( 'CTRL' ) ;
     public final void rule__LinkProperty__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2253:1: ( ( 'CTRL' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2254:1: ( 'CTRL' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2347:1: ( ( 'CTRL' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2348:1: ( 'CTRL' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2254:1: ( 'CTRL' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2255:1: 'CTRL'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2348:1: ( 'CTRL' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2349:1: 'CTRL'
             {
              before(grammarAccess.getLinkPropertyAccess().getCTRLKeyword_0_0()); 
-            match(input,24,FOLLOW_24_in_rule__LinkProperty__Group_0__0__Impl4576); 
+            match(input,25,FOLLOW_25_in_rule__LinkProperty__Group_0__0__Impl4762); 
              after(grammarAccess.getLinkPropertyAccess().getCTRLKeyword_0_0()); 
 
             }
@@ -6274,21 +6529,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_0__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2268:1: rule__LinkProperty__Group_0__1 : rule__LinkProperty__Group_0__1__Impl rule__LinkProperty__Group_0__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2362:1: rule__LinkProperty__Group_0__1 : rule__LinkProperty__Group_0__1__Impl rule__LinkProperty__Group_0__2 ;
     public final void rule__LinkProperty__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2272:1: ( rule__LinkProperty__Group_0__1__Impl rule__LinkProperty__Group_0__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2273:2: rule__LinkProperty__Group_0__1__Impl rule__LinkProperty__Group_0__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2366:1: ( rule__LinkProperty__Group_0__1__Impl rule__LinkProperty__Group_0__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2367:2: rule__LinkProperty__Group_0__1__Impl rule__LinkProperty__Group_0__2
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_0__1__Impl_in_rule__LinkProperty__Group_0__14607);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_0__1__Impl_in_rule__LinkProperty__Group_0__14793);
             rule__LinkProperty__Group_0__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__LinkProperty__Group_0__2_in_rule__LinkProperty__Group_0__14610);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_0__2_in_rule__LinkProperty__Group_0__14796);
             rule__LinkProperty__Group_0__2();
 
             state._fsp--;
@@ -6312,20 +6567,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_0__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2280:1: rule__LinkProperty__Group_0__1__Impl : ( '=' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2374:1: rule__LinkProperty__Group_0__1__Impl : ( '=' ) ;
     public final void rule__LinkProperty__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2284:1: ( ( '=' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2285:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2378:1: ( ( '=' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2379:1: ( '=' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2285:1: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2286:1: '='
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2379:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2380:1: '='
             {
              before(grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_0_1()); 
-            match(input,25,FOLLOW_25_in_rule__LinkProperty__Group_0__1__Impl4638); 
+            match(input,26,FOLLOW_26_in_rule__LinkProperty__Group_0__1__Impl4824); 
              after(grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_0_1()); 
 
             }
@@ -6349,16 +6604,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_0__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2299:1: rule__LinkProperty__Group_0__2 : rule__LinkProperty__Group_0__2__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2393:1: rule__LinkProperty__Group_0__2 : rule__LinkProperty__Group_0__2__Impl ;
     public final void rule__LinkProperty__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2303:1: ( rule__LinkProperty__Group_0__2__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2304:2: rule__LinkProperty__Group_0__2__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2397:1: ( rule__LinkProperty__Group_0__2__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2398:2: rule__LinkProperty__Group_0__2__Impl
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_0__2__Impl_in_rule__LinkProperty__Group_0__24669);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_0__2__Impl_in_rule__LinkProperty__Group_0__24855);
             rule__LinkProperty__Group_0__2__Impl();
 
             state._fsp--;
@@ -6382,23 +6637,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_0__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2310:1: rule__LinkProperty__Group_0__2__Impl : ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2404:1: rule__LinkProperty__Group_0__2__Impl : ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) ) ;
     public final void rule__LinkProperty__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2314:1: ( ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2315:1: ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2408:1: ( ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2409:1: ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2315:1: ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2316:1: ( rule__LinkProperty__CtrlNameAssignment_0_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2409:1: ( ( rule__LinkProperty__CtrlNameAssignment_0_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2410:1: ( rule__LinkProperty__CtrlNameAssignment_0_2 )
             {
              before(grammarAccess.getLinkPropertyAccess().getCtrlNameAssignment_0_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2317:1: ( rule__LinkProperty__CtrlNameAssignment_0_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2317:2: rule__LinkProperty__CtrlNameAssignment_0_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2411:1: ( rule__LinkProperty__CtrlNameAssignment_0_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2411:2: rule__LinkProperty__CtrlNameAssignment_0_2
             {
-            pushFollow(FOLLOW_rule__LinkProperty__CtrlNameAssignment_0_2_in_rule__LinkProperty__Group_0__2__Impl4696);
+            pushFollow(FOLLOW_rule__LinkProperty__CtrlNameAssignment_0_2_in_rule__LinkProperty__Group_0__2__Impl4882);
             rule__LinkProperty__CtrlNameAssignment_0_2();
 
             state._fsp--;
@@ -6429,21 +6684,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2333:1: rule__LinkProperty__Group_1__0 : rule__LinkProperty__Group_1__0__Impl rule__LinkProperty__Group_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2427:1: rule__LinkProperty__Group_1__0 : rule__LinkProperty__Group_1__0__Impl rule__LinkProperty__Group_1__1 ;
     public final void rule__LinkProperty__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2337:1: ( rule__LinkProperty__Group_1__0__Impl rule__LinkProperty__Group_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2338:2: rule__LinkProperty__Group_1__0__Impl rule__LinkProperty__Group_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2431:1: ( rule__LinkProperty__Group_1__0__Impl rule__LinkProperty__Group_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2432:2: rule__LinkProperty__Group_1__0__Impl rule__LinkProperty__Group_1__1
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_1__0__Impl_in_rule__LinkProperty__Group_1__04732);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_1__0__Impl_in_rule__LinkProperty__Group_1__04918);
             rule__LinkProperty__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__LinkProperty__Group_1__1_in_rule__LinkProperty__Group_1__04735);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_1__1_in_rule__LinkProperty__Group_1__04921);
             rule__LinkProperty__Group_1__1();
 
             state._fsp--;
@@ -6467,20 +6722,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2345:1: rule__LinkProperty__Group_1__0__Impl : ( 'BASE' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2439:1: rule__LinkProperty__Group_1__0__Impl : ( 'BASE' ) ;
     public final void rule__LinkProperty__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2349:1: ( ( 'BASE' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2350:1: ( 'BASE' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2443:1: ( ( 'BASE' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2444:1: ( 'BASE' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2350:1: ( 'BASE' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2351:1: 'BASE'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2444:1: ( 'BASE' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2445:1: 'BASE'
             {
              before(grammarAccess.getLinkPropertyAccess().getBASEKeyword_1_0()); 
-            match(input,26,FOLLOW_26_in_rule__LinkProperty__Group_1__0__Impl4763); 
+            match(input,27,FOLLOW_27_in_rule__LinkProperty__Group_1__0__Impl4949); 
              after(grammarAccess.getLinkPropertyAccess().getBASEKeyword_1_0()); 
 
             }
@@ -6504,21 +6759,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2364:1: rule__LinkProperty__Group_1__1 : rule__LinkProperty__Group_1__1__Impl rule__LinkProperty__Group_1__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2458:1: rule__LinkProperty__Group_1__1 : rule__LinkProperty__Group_1__1__Impl rule__LinkProperty__Group_1__2 ;
     public final void rule__LinkProperty__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2368:1: ( rule__LinkProperty__Group_1__1__Impl rule__LinkProperty__Group_1__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2369:2: rule__LinkProperty__Group_1__1__Impl rule__LinkProperty__Group_1__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2462:1: ( rule__LinkProperty__Group_1__1__Impl rule__LinkProperty__Group_1__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2463:2: rule__LinkProperty__Group_1__1__Impl rule__LinkProperty__Group_1__2
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_1__1__Impl_in_rule__LinkProperty__Group_1__14794);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_1__1__Impl_in_rule__LinkProperty__Group_1__14980);
             rule__LinkProperty__Group_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__LinkProperty__Group_1__2_in_rule__LinkProperty__Group_1__14797);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_1__2_in_rule__LinkProperty__Group_1__14983);
             rule__LinkProperty__Group_1__2();
 
             state._fsp--;
@@ -6542,20 +6797,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2376:1: rule__LinkProperty__Group_1__1__Impl : ( '=' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2470:1: rule__LinkProperty__Group_1__1__Impl : ( '=' ) ;
     public final void rule__LinkProperty__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2380:1: ( ( '=' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2381:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2474:1: ( ( '=' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2475:1: ( '=' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2381:1: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2382:1: '='
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2475:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2476:1: '='
             {
              before(grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_1_1()); 
-            match(input,25,FOLLOW_25_in_rule__LinkProperty__Group_1__1__Impl4825); 
+            match(input,26,FOLLOW_26_in_rule__LinkProperty__Group_1__1__Impl5011); 
              after(grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_1_1()); 
 
             }
@@ -6579,16 +6834,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_1__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2395:1: rule__LinkProperty__Group_1__2 : rule__LinkProperty__Group_1__2__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2489:1: rule__LinkProperty__Group_1__2 : rule__LinkProperty__Group_1__2__Impl ;
     public final void rule__LinkProperty__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2399:1: ( rule__LinkProperty__Group_1__2__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2400:2: rule__LinkProperty__Group_1__2__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2493:1: ( rule__LinkProperty__Group_1__2__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2494:2: rule__LinkProperty__Group_1__2__Impl
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_1__2__Impl_in_rule__LinkProperty__Group_1__24856);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_1__2__Impl_in_rule__LinkProperty__Group_1__25042);
             rule__LinkProperty__Group_1__2__Impl();
 
             state._fsp--;
@@ -6612,23 +6867,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_1__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2406:1: rule__LinkProperty__Group_1__2__Impl : ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2500:1: rule__LinkProperty__Group_1__2__Impl : ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) ) ;
     public final void rule__LinkProperty__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2410:1: ( ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2411:1: ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2504:1: ( ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2505:1: ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2411:1: ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2412:1: ( rule__LinkProperty__BaseValueAssignment_1_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2505:1: ( ( rule__LinkProperty__BaseValueAssignment_1_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2506:1: ( rule__LinkProperty__BaseValueAssignment_1_2 )
             {
              before(grammarAccess.getLinkPropertyAccess().getBaseValueAssignment_1_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2413:1: ( rule__LinkProperty__BaseValueAssignment_1_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2413:2: rule__LinkProperty__BaseValueAssignment_1_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2507:1: ( rule__LinkProperty__BaseValueAssignment_1_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2507:2: rule__LinkProperty__BaseValueAssignment_1_2
             {
-            pushFollow(FOLLOW_rule__LinkProperty__BaseValueAssignment_1_2_in_rule__LinkProperty__Group_1__2__Impl4883);
+            pushFollow(FOLLOW_rule__LinkProperty__BaseValueAssignment_1_2_in_rule__LinkProperty__Group_1__2__Impl5069);
             rule__LinkProperty__BaseValueAssignment_1_2();
 
             state._fsp--;
@@ -6659,21 +6914,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_2__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2429:1: rule__LinkProperty__Group_2__0 : rule__LinkProperty__Group_2__0__Impl rule__LinkProperty__Group_2__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2523:1: rule__LinkProperty__Group_2__0 : rule__LinkProperty__Group_2__0__Impl rule__LinkProperty__Group_2__1 ;
     public final void rule__LinkProperty__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2433:1: ( rule__LinkProperty__Group_2__0__Impl rule__LinkProperty__Group_2__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2434:2: rule__LinkProperty__Group_2__0__Impl rule__LinkProperty__Group_2__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2527:1: ( rule__LinkProperty__Group_2__0__Impl rule__LinkProperty__Group_2__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2528:2: rule__LinkProperty__Group_2__0__Impl rule__LinkProperty__Group_2__1
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_2__0__Impl_in_rule__LinkProperty__Group_2__04919);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_2__0__Impl_in_rule__LinkProperty__Group_2__05105);
             rule__LinkProperty__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__LinkProperty__Group_2__1_in_rule__LinkProperty__Group_2__04922);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_2__1_in_rule__LinkProperty__Group_2__05108);
             rule__LinkProperty__Group_2__1();
 
             state._fsp--;
@@ -6697,20 +6952,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_2__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2441:1: rule__LinkProperty__Group_2__0__Impl : ( 'UART' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2535:1: rule__LinkProperty__Group_2__0__Impl : ( 'UART' ) ;
     public final void rule__LinkProperty__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2445:1: ( ( 'UART' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2446:1: ( 'UART' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2539:1: ( ( 'UART' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2540:1: ( 'UART' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2446:1: ( 'UART' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2447:1: 'UART'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2540:1: ( 'UART' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2541:1: 'UART'
             {
              before(grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0()); 
-            match(input,27,FOLLOW_27_in_rule__LinkProperty__Group_2__0__Impl4950); 
+            match(input,28,FOLLOW_28_in_rule__LinkProperty__Group_2__0__Impl5136); 
              after(grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0()); 
 
             }
@@ -6734,21 +6989,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_2__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2460:1: rule__LinkProperty__Group_2__1 : rule__LinkProperty__Group_2__1__Impl rule__LinkProperty__Group_2__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2554:1: rule__LinkProperty__Group_2__1 : rule__LinkProperty__Group_2__1__Impl rule__LinkProperty__Group_2__2 ;
     public final void rule__LinkProperty__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2464:1: ( rule__LinkProperty__Group_2__1__Impl rule__LinkProperty__Group_2__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2465:2: rule__LinkProperty__Group_2__1__Impl rule__LinkProperty__Group_2__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2558:1: ( rule__LinkProperty__Group_2__1__Impl rule__LinkProperty__Group_2__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2559:2: rule__LinkProperty__Group_2__1__Impl rule__LinkProperty__Group_2__2
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_2__1__Impl_in_rule__LinkProperty__Group_2__14981);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_2__1__Impl_in_rule__LinkProperty__Group_2__15167);
             rule__LinkProperty__Group_2__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__LinkProperty__Group_2__2_in_rule__LinkProperty__Group_2__14984);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_2__2_in_rule__LinkProperty__Group_2__15170);
             rule__LinkProperty__Group_2__2();
 
             state._fsp--;
@@ -6772,20 +7027,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_2__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2472:1: rule__LinkProperty__Group_2__1__Impl : ( '=' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2566:1: rule__LinkProperty__Group_2__1__Impl : ( '=' ) ;
     public final void rule__LinkProperty__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2476:1: ( ( '=' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2477:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2570:1: ( ( '=' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2571:1: ( '=' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2477:1: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2478:1: '='
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2571:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2572:1: '='
             {
              before(grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_2_1()); 
-            match(input,25,FOLLOW_25_in_rule__LinkProperty__Group_2__1__Impl5012); 
+            match(input,26,FOLLOW_26_in_rule__LinkProperty__Group_2__1__Impl5198); 
              after(grammarAccess.getLinkPropertyAccess().getEqualsSignKeyword_2_1()); 
 
             }
@@ -6809,16 +7064,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_2__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2491:1: rule__LinkProperty__Group_2__2 : rule__LinkProperty__Group_2__2__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2585:1: rule__LinkProperty__Group_2__2 : rule__LinkProperty__Group_2__2__Impl ;
     public final void rule__LinkProperty__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2495:1: ( rule__LinkProperty__Group_2__2__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2496:2: rule__LinkProperty__Group_2__2__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2589:1: ( rule__LinkProperty__Group_2__2__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2590:2: rule__LinkProperty__Group_2__2__Impl
             {
-            pushFollow(FOLLOW_rule__LinkProperty__Group_2__2__Impl_in_rule__LinkProperty__Group_2__25043);
+            pushFollow(FOLLOW_rule__LinkProperty__Group_2__2__Impl_in_rule__LinkProperty__Group_2__25229);
             rule__LinkProperty__Group_2__2__Impl();
 
             state._fsp--;
@@ -6842,23 +7097,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_2__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2502:1: rule__LinkProperty__Group_2__2__Impl : ( ( rule__LinkProperty__UartNameAssignment_2_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2596:1: rule__LinkProperty__Group_2__2__Impl : ( ( rule__LinkProperty__UartNameAssignment_2_2 ) ) ;
     public final void rule__LinkProperty__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2506:1: ( ( ( rule__LinkProperty__UartNameAssignment_2_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2507:1: ( ( rule__LinkProperty__UartNameAssignment_2_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2600:1: ( ( ( rule__LinkProperty__UartNameAssignment_2_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2601:1: ( ( rule__LinkProperty__UartNameAssignment_2_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2507:1: ( ( rule__LinkProperty__UartNameAssignment_2_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2508:1: ( rule__LinkProperty__UartNameAssignment_2_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2601:1: ( ( rule__LinkProperty__UartNameAssignment_2_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2602:1: ( rule__LinkProperty__UartNameAssignment_2_2 )
             {
              before(grammarAccess.getLinkPropertyAccess().getUartNameAssignment_2_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2509:1: ( rule__LinkProperty__UartNameAssignment_2_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2509:2: rule__LinkProperty__UartNameAssignment_2_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2603:1: ( rule__LinkProperty__UartNameAssignment_2_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2603:2: rule__LinkProperty__UartNameAssignment_2_2
             {
-            pushFollow(FOLLOW_rule__LinkProperty__UartNameAssignment_2_2_in_rule__LinkProperty__Group_2__2__Impl5070);
+            pushFollow(FOLLOW_rule__LinkProperty__UartNameAssignment_2_2_in_rule__LinkProperty__Group_2__2__Impl5256);
             rule__LinkProperty__UartNameAssignment_2_2();
 
             state._fsp--;
@@ -6889,21 +7144,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2525:1: rule__SimpleExpansion__Group__0 : rule__SimpleExpansion__Group__0__Impl rule__SimpleExpansion__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2619:1: rule__SimpleExpansion__Group__0 : rule__SimpleExpansion__Group__0__Impl rule__SimpleExpansion__Group__1 ;
     public final void rule__SimpleExpansion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2529:1: ( rule__SimpleExpansion__Group__0__Impl rule__SimpleExpansion__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2530:2: rule__SimpleExpansion__Group__0__Impl rule__SimpleExpansion__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2623:1: ( rule__SimpleExpansion__Group__0__Impl rule__SimpleExpansion__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2624:2: rule__SimpleExpansion__Group__0__Impl rule__SimpleExpansion__Group__1
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__0__Impl_in_rule__SimpleExpansion__Group__05106);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__0__Impl_in_rule__SimpleExpansion__Group__05292);
             rule__SimpleExpansion__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__1_in_rule__SimpleExpansion__Group__05109);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__1_in_rule__SimpleExpansion__Group__05295);
             rule__SimpleExpansion__Group__1();
 
             state._fsp--;
@@ -6927,23 +7182,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2537:1: rule__SimpleExpansion__Group__0__Impl : ( ( rule__SimpleExpansion__NameAssignment_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2631:1: rule__SimpleExpansion__Group__0__Impl : ( ( rule__SimpleExpansion__NameAssignment_0 ) ) ;
     public final void rule__SimpleExpansion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2541:1: ( ( ( rule__SimpleExpansion__NameAssignment_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2542:1: ( ( rule__SimpleExpansion__NameAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2635:1: ( ( ( rule__SimpleExpansion__NameAssignment_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2636:1: ( ( rule__SimpleExpansion__NameAssignment_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2542:1: ( ( rule__SimpleExpansion__NameAssignment_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2543:1: ( rule__SimpleExpansion__NameAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2636:1: ( ( rule__SimpleExpansion__NameAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2637:1: ( rule__SimpleExpansion__NameAssignment_0 )
             {
              before(grammarAccess.getSimpleExpansionAccess().getNameAssignment_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2544:1: ( rule__SimpleExpansion__NameAssignment_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2544:2: rule__SimpleExpansion__NameAssignment_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2638:1: ( rule__SimpleExpansion__NameAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2638:2: rule__SimpleExpansion__NameAssignment_0
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__NameAssignment_0_in_rule__SimpleExpansion__Group__0__Impl5136);
+            pushFollow(FOLLOW_rule__SimpleExpansion__NameAssignment_0_in_rule__SimpleExpansion__Group__0__Impl5322);
             rule__SimpleExpansion__NameAssignment_0();
 
             state._fsp--;
@@ -6974,21 +7229,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2554:1: rule__SimpleExpansion__Group__1 : rule__SimpleExpansion__Group__1__Impl rule__SimpleExpansion__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2648:1: rule__SimpleExpansion__Group__1 : rule__SimpleExpansion__Group__1__Impl rule__SimpleExpansion__Group__2 ;
     public final void rule__SimpleExpansion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2558:1: ( rule__SimpleExpansion__Group__1__Impl rule__SimpleExpansion__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2559:2: rule__SimpleExpansion__Group__1__Impl rule__SimpleExpansion__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2652:1: ( rule__SimpleExpansion__Group__1__Impl rule__SimpleExpansion__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2653:2: rule__SimpleExpansion__Group__1__Impl rule__SimpleExpansion__Group__2
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__1__Impl_in_rule__SimpleExpansion__Group__15166);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__1__Impl_in_rule__SimpleExpansion__Group__15352);
             rule__SimpleExpansion__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__2_in_rule__SimpleExpansion__Group__15169);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__2_in_rule__SimpleExpansion__Group__15355);
             rule__SimpleExpansion__Group__2();
 
             state._fsp--;
@@ -7012,20 +7267,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2566:1: rule__SimpleExpansion__Group__1__Impl : ( ':' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2660:1: rule__SimpleExpansion__Group__1__Impl : ( ':' ) ;
     public final void rule__SimpleExpansion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2570:1: ( ( ':' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2571:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2664:1: ( ( ':' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2665:1: ( ':' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2571:1: ( ':' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2572:1: ':'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2665:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2666:1: ':'
             {
              before(grammarAccess.getSimpleExpansionAccess().getColonKeyword_1()); 
-            match(input,21,FOLLOW_21_in_rule__SimpleExpansion__Group__1__Impl5197); 
+            match(input,22,FOLLOW_22_in_rule__SimpleExpansion__Group__1__Impl5383); 
              after(grammarAccess.getSimpleExpansionAccess().getColonKeyword_1()); 
 
             }
@@ -7049,21 +7304,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2585:1: rule__SimpleExpansion__Group__2 : rule__SimpleExpansion__Group__2__Impl rule__SimpleExpansion__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2679:1: rule__SimpleExpansion__Group__2 : rule__SimpleExpansion__Group__2__Impl rule__SimpleExpansion__Group__3 ;
     public final void rule__SimpleExpansion__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2589:1: ( rule__SimpleExpansion__Group__2__Impl rule__SimpleExpansion__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2590:2: rule__SimpleExpansion__Group__2__Impl rule__SimpleExpansion__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2683:1: ( rule__SimpleExpansion__Group__2__Impl rule__SimpleExpansion__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2684:2: rule__SimpleExpansion__Group__2__Impl rule__SimpleExpansion__Group__3
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__2__Impl_in_rule__SimpleExpansion__Group__25228);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__2__Impl_in_rule__SimpleExpansion__Group__25414);
             rule__SimpleExpansion__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__3_in_rule__SimpleExpansion__Group__25231);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__3_in_rule__SimpleExpansion__Group__25417);
             rule__SimpleExpansion__Group__3();
 
             state._fsp--;
@@ -7087,23 +7342,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2597:1: rule__SimpleExpansion__Group__2__Impl : ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2691:1: rule__SimpleExpansion__Group__2__Impl : ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) ) ;
     public final void rule__SimpleExpansion__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2601:1: ( ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2602:1: ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2695:1: ( ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2696:1: ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2602:1: ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2603:1: ( rule__SimpleExpansion__ConstructorAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2696:1: ( ( rule__SimpleExpansion__ConstructorAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2697:1: ( rule__SimpleExpansion__ConstructorAssignment_2 )
             {
              before(grammarAccess.getSimpleExpansionAccess().getConstructorAssignment_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2604:1: ( rule__SimpleExpansion__ConstructorAssignment_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2604:2: rule__SimpleExpansion__ConstructorAssignment_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2698:1: ( rule__SimpleExpansion__ConstructorAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2698:2: rule__SimpleExpansion__ConstructorAssignment_2
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__ConstructorAssignment_2_in_rule__SimpleExpansion__Group__2__Impl5258);
+            pushFollow(FOLLOW_rule__SimpleExpansion__ConstructorAssignment_2_in_rule__SimpleExpansion__Group__2__Impl5444);
             rule__SimpleExpansion__ConstructorAssignment_2();
 
             state._fsp--;
@@ -7134,21 +7389,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2614:1: rule__SimpleExpansion__Group__3 : rule__SimpleExpansion__Group__3__Impl rule__SimpleExpansion__Group__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2708:1: rule__SimpleExpansion__Group__3 : rule__SimpleExpansion__Group__3__Impl rule__SimpleExpansion__Group__4 ;
     public final void rule__SimpleExpansion__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2618:1: ( rule__SimpleExpansion__Group__3__Impl rule__SimpleExpansion__Group__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2619:2: rule__SimpleExpansion__Group__3__Impl rule__SimpleExpansion__Group__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2712:1: ( rule__SimpleExpansion__Group__3__Impl rule__SimpleExpansion__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2713:2: rule__SimpleExpansion__Group__3__Impl rule__SimpleExpansion__Group__4
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__3__Impl_in_rule__SimpleExpansion__Group__35288);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__3__Impl_in_rule__SimpleExpansion__Group__35474);
             rule__SimpleExpansion__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__4_in_rule__SimpleExpansion__Group__35291);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__4_in_rule__SimpleExpansion__Group__35477);
             rule__SimpleExpansion__Group__4();
 
             state._fsp--;
@@ -7172,20 +7427,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2626:1: rule__SimpleExpansion__Group__3__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2720:1: rule__SimpleExpansion__Group__3__Impl : ( '(' ) ;
     public final void rule__SimpleExpansion__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2630:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2631:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2724:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2725:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2631:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2632:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2725:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2726:1: '('
             {
              before(grammarAccess.getSimpleExpansionAccess().getLeftParenthesisKeyword_3()); 
-            match(input,16,FOLLOW_16_in_rule__SimpleExpansion__Group__3__Impl5319); 
+            match(input,17,FOLLOW_17_in_rule__SimpleExpansion__Group__3__Impl5505); 
              after(grammarAccess.getSimpleExpansionAccess().getLeftParenthesisKeyword_3()); 
 
             }
@@ -7209,21 +7464,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2645:1: rule__SimpleExpansion__Group__4 : rule__SimpleExpansion__Group__4__Impl rule__SimpleExpansion__Group__5 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2739:1: rule__SimpleExpansion__Group__4 : rule__SimpleExpansion__Group__4__Impl rule__SimpleExpansion__Group__5 ;
     public final void rule__SimpleExpansion__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2649:1: ( rule__SimpleExpansion__Group__4__Impl rule__SimpleExpansion__Group__5 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2650:2: rule__SimpleExpansion__Group__4__Impl rule__SimpleExpansion__Group__5
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2743:1: ( rule__SimpleExpansion__Group__4__Impl rule__SimpleExpansion__Group__5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2744:2: rule__SimpleExpansion__Group__4__Impl rule__SimpleExpansion__Group__5
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__4__Impl_in_rule__SimpleExpansion__Group__45350);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__4__Impl_in_rule__SimpleExpansion__Group__45536);
             rule__SimpleExpansion__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__5_in_rule__SimpleExpansion__Group__45353);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__5_in_rule__SimpleExpansion__Group__45539);
             rule__SimpleExpansion__Group__5();
 
             state._fsp--;
@@ -7247,31 +7502,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2657:1: rule__SimpleExpansion__Group__4__Impl : ( ( rule__SimpleExpansion__Group_4__0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2751:1: rule__SimpleExpansion__Group__4__Impl : ( ( rule__SimpleExpansion__Group_4__0 )? ) ;
     public final void rule__SimpleExpansion__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2661:1: ( ( ( rule__SimpleExpansion__Group_4__0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2662:1: ( ( rule__SimpleExpansion__Group_4__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2755:1: ( ( ( rule__SimpleExpansion__Group_4__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2756:1: ( ( rule__SimpleExpansion__Group_4__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2662:1: ( ( rule__SimpleExpansion__Group_4__0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2663:1: ( rule__SimpleExpansion__Group_4__0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2756:1: ( ( rule__SimpleExpansion__Group_4__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2757:1: ( rule__SimpleExpansion__Group_4__0 )?
             {
              before(grammarAccess.getSimpleExpansionAccess().getGroup_4()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2664:1: ( rule__SimpleExpansion__Group_4__0 )?
-            int alt19=2;
-            int LA19_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2758:1: ( rule__SimpleExpansion__Group_4__0 )?
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA19_0==RULE_ID||LA19_0==RULE_STRING) ) {
-                alt19=1;
+            if ( (LA20_0==RULE_ID||LA20_0==RULE_STRING) ) {
+                alt20=1;
             }
-            switch (alt19) {
+            switch (alt20) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2664:2: rule__SimpleExpansion__Group_4__0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2758:2: rule__SimpleExpansion__Group_4__0
                     {
-                    pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__0_in_rule__SimpleExpansion__Group__4__Impl5380);
+                    pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__0_in_rule__SimpleExpansion__Group__4__Impl5566);
                     rule__SimpleExpansion__Group_4__0();
 
                     state._fsp--;
@@ -7305,21 +7560,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__5"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2674:1: rule__SimpleExpansion__Group__5 : rule__SimpleExpansion__Group__5__Impl rule__SimpleExpansion__Group__6 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2768:1: rule__SimpleExpansion__Group__5 : rule__SimpleExpansion__Group__5__Impl rule__SimpleExpansion__Group__6 ;
     public final void rule__SimpleExpansion__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2678:1: ( rule__SimpleExpansion__Group__5__Impl rule__SimpleExpansion__Group__6 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2679:2: rule__SimpleExpansion__Group__5__Impl rule__SimpleExpansion__Group__6
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2772:1: ( rule__SimpleExpansion__Group__5__Impl rule__SimpleExpansion__Group__6 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2773:2: rule__SimpleExpansion__Group__5__Impl rule__SimpleExpansion__Group__6
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__5__Impl_in_rule__SimpleExpansion__Group__55411);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__5__Impl_in_rule__SimpleExpansion__Group__55597);
             rule__SimpleExpansion__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__6_in_rule__SimpleExpansion__Group__55414);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__6_in_rule__SimpleExpansion__Group__55600);
             rule__SimpleExpansion__Group__6();
 
             state._fsp--;
@@ -7343,20 +7598,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__5__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2686:1: rule__SimpleExpansion__Group__5__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2780:1: rule__SimpleExpansion__Group__5__Impl : ( ')' ) ;
     public final void rule__SimpleExpansion__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2690:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2691:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2784:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2785:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2691:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2692:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2785:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2786:1: ')'
             {
              before(grammarAccess.getSimpleExpansionAccess().getRightParenthesisKeyword_5()); 
-            match(input,17,FOLLOW_17_in_rule__SimpleExpansion__Group__5__Impl5442); 
+            match(input,18,FOLLOW_18_in_rule__SimpleExpansion__Group__5__Impl5628); 
              after(grammarAccess.getSimpleExpansionAccess().getRightParenthesisKeyword_5()); 
 
             }
@@ -7380,16 +7635,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__6"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2705:1: rule__SimpleExpansion__Group__6 : rule__SimpleExpansion__Group__6__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2799:1: rule__SimpleExpansion__Group__6 : rule__SimpleExpansion__Group__6__Impl ;
     public final void rule__SimpleExpansion__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2709:1: ( rule__SimpleExpansion__Group__6__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2710:2: rule__SimpleExpansion__Group__6__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2803:1: ( rule__SimpleExpansion__Group__6__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2804:2: rule__SimpleExpansion__Group__6__Impl
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group__6__Impl_in_rule__SimpleExpansion__Group__65473);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group__6__Impl_in_rule__SimpleExpansion__Group__65659);
             rule__SimpleExpansion__Group__6__Impl();
 
             state._fsp--;
@@ -7413,31 +7668,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group__6__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2716:1: rule__SimpleExpansion__Group__6__Impl : ( ( rule__SimpleExpansion__Group_6__0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2810:1: rule__SimpleExpansion__Group__6__Impl : ( ( rule__SimpleExpansion__Group_6__0 )? ) ;
     public final void rule__SimpleExpansion__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2720:1: ( ( ( rule__SimpleExpansion__Group_6__0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2721:1: ( ( rule__SimpleExpansion__Group_6__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2814:1: ( ( ( rule__SimpleExpansion__Group_6__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2815:1: ( ( rule__SimpleExpansion__Group_6__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2721:1: ( ( rule__SimpleExpansion__Group_6__0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2722:1: ( rule__SimpleExpansion__Group_6__0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2815:1: ( ( rule__SimpleExpansion__Group_6__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2816:1: ( rule__SimpleExpansion__Group_6__0 )?
             {
              before(grammarAccess.getSimpleExpansionAccess().getGroup_6()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2723:1: ( rule__SimpleExpansion__Group_6__0 )?
-            int alt20=2;
-            int LA20_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2817:1: ( rule__SimpleExpansion__Group_6__0 )?
+            int alt21=2;
+            int LA21_0 = input.LA(1);
 
-            if ( (LA20_0==22) ) {
-                alt20=1;
+            if ( (LA21_0==23) ) {
+                alt21=1;
             }
-            switch (alt20) {
+            switch (alt21) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2723:2: rule__SimpleExpansion__Group_6__0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2817:2: rule__SimpleExpansion__Group_6__0
                     {
-                    pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__0_in_rule__SimpleExpansion__Group__6__Impl5500);
+                    pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__0_in_rule__SimpleExpansion__Group__6__Impl5686);
                     rule__SimpleExpansion__Group_6__0();
 
                     state._fsp--;
@@ -7471,21 +7726,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2747:1: rule__SimpleExpansion__Group_4__0 : rule__SimpleExpansion__Group_4__0__Impl rule__SimpleExpansion__Group_4__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2841:1: rule__SimpleExpansion__Group_4__0 : rule__SimpleExpansion__Group_4__0__Impl rule__SimpleExpansion__Group_4__1 ;
     public final void rule__SimpleExpansion__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2751:1: ( rule__SimpleExpansion__Group_4__0__Impl rule__SimpleExpansion__Group_4__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2752:2: rule__SimpleExpansion__Group_4__0__Impl rule__SimpleExpansion__Group_4__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2845:1: ( rule__SimpleExpansion__Group_4__0__Impl rule__SimpleExpansion__Group_4__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2846:2: rule__SimpleExpansion__Group_4__0__Impl rule__SimpleExpansion__Group_4__1
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__0__Impl_in_rule__SimpleExpansion__Group_4__05545);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__0__Impl_in_rule__SimpleExpansion__Group_4__05731);
             rule__SimpleExpansion__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__1_in_rule__SimpleExpansion__Group_4__05548);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__1_in_rule__SimpleExpansion__Group_4__05734);
             rule__SimpleExpansion__Group_4__1();
 
             state._fsp--;
@@ -7509,23 +7764,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2759:1: rule__SimpleExpansion__Group_4__0__Impl : ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2853:1: rule__SimpleExpansion__Group_4__0__Impl : ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) ) ;
     public final void rule__SimpleExpansion__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2763:1: ( ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2764:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2857:1: ( ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2858:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2764:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2765:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2858:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2859:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_0 )
             {
              before(grammarAccess.getSimpleExpansionAccess().getArgumentsAssignment_4_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2766:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2766:2: rule__SimpleExpansion__ArgumentsAssignment_4_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2860:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2860:2: rule__SimpleExpansion__ArgumentsAssignment_4_0
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_0_in_rule__SimpleExpansion__Group_4__0__Impl5575);
+            pushFollow(FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_0_in_rule__SimpleExpansion__Group_4__0__Impl5761);
             rule__SimpleExpansion__ArgumentsAssignment_4_0();
 
             state._fsp--;
@@ -7556,16 +7811,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2776:1: rule__SimpleExpansion__Group_4__1 : rule__SimpleExpansion__Group_4__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2870:1: rule__SimpleExpansion__Group_4__1 : rule__SimpleExpansion__Group_4__1__Impl ;
     public final void rule__SimpleExpansion__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2780:1: ( rule__SimpleExpansion__Group_4__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2781:2: rule__SimpleExpansion__Group_4__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2874:1: ( rule__SimpleExpansion__Group_4__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2875:2: rule__SimpleExpansion__Group_4__1__Impl
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__1__Impl_in_rule__SimpleExpansion__Group_4__15605);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4__1__Impl_in_rule__SimpleExpansion__Group_4__15791);
             rule__SimpleExpansion__Group_4__1__Impl();
 
             state._fsp--;
@@ -7589,35 +7844,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2787:1: rule__SimpleExpansion__Group_4__1__Impl : ( ( rule__SimpleExpansion__Group_4_1__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2881:1: rule__SimpleExpansion__Group_4__1__Impl : ( ( rule__SimpleExpansion__Group_4_1__0 )* ) ;
     public final void rule__SimpleExpansion__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2791:1: ( ( ( rule__SimpleExpansion__Group_4_1__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2792:1: ( ( rule__SimpleExpansion__Group_4_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2885:1: ( ( ( rule__SimpleExpansion__Group_4_1__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2886:1: ( ( rule__SimpleExpansion__Group_4_1__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2792:1: ( ( rule__SimpleExpansion__Group_4_1__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2793:1: ( rule__SimpleExpansion__Group_4_1__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2886:1: ( ( rule__SimpleExpansion__Group_4_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2887:1: ( rule__SimpleExpansion__Group_4_1__0 )*
             {
              before(grammarAccess.getSimpleExpansionAccess().getGroup_4_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2794:1: ( rule__SimpleExpansion__Group_4_1__0 )*
-            loop21:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2888:1: ( rule__SimpleExpansion__Group_4_1__0 )*
+            loop22:
             do {
-                int alt21=2;
-                int LA21_0 = input.LA(1);
+                int alt22=2;
+                int LA22_0 = input.LA(1);
 
-                if ( (LA21_0==20) ) {
-                    alt21=1;
+                if ( (LA22_0==21) ) {
+                    alt22=1;
                 }
 
 
-                switch (alt21) {
+                switch (alt22) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2794:2: rule__SimpleExpansion__Group_4_1__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2888:2: rule__SimpleExpansion__Group_4_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__0_in_rule__SimpleExpansion__Group_4__1__Impl5632);
+            	    pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__0_in_rule__SimpleExpansion__Group_4__1__Impl5818);
             	    rule__SimpleExpansion__Group_4_1__0();
 
             	    state._fsp--;
@@ -7627,7 +7882,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop21;
+            	    break loop22;
                 }
             } while (true);
 
@@ -7654,21 +7909,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2808:1: rule__SimpleExpansion__Group_4_1__0 : rule__SimpleExpansion__Group_4_1__0__Impl rule__SimpleExpansion__Group_4_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2902:1: rule__SimpleExpansion__Group_4_1__0 : rule__SimpleExpansion__Group_4_1__0__Impl rule__SimpleExpansion__Group_4_1__1 ;
     public final void rule__SimpleExpansion__Group_4_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2812:1: ( rule__SimpleExpansion__Group_4_1__0__Impl rule__SimpleExpansion__Group_4_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2813:2: rule__SimpleExpansion__Group_4_1__0__Impl rule__SimpleExpansion__Group_4_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2906:1: ( rule__SimpleExpansion__Group_4_1__0__Impl rule__SimpleExpansion__Group_4_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2907:2: rule__SimpleExpansion__Group_4_1__0__Impl rule__SimpleExpansion__Group_4_1__1
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__0__Impl_in_rule__SimpleExpansion__Group_4_1__05667);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__0__Impl_in_rule__SimpleExpansion__Group_4_1__05853);
             rule__SimpleExpansion__Group_4_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__1_in_rule__SimpleExpansion__Group_4_1__05670);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__1_in_rule__SimpleExpansion__Group_4_1__05856);
             rule__SimpleExpansion__Group_4_1__1();
 
             state._fsp--;
@@ -7692,20 +7947,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2820:1: rule__SimpleExpansion__Group_4_1__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2914:1: rule__SimpleExpansion__Group_4_1__0__Impl : ( ',' ) ;
     public final void rule__SimpleExpansion__Group_4_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2824:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2825:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2918:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2919:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2825:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2826:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2919:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2920:1: ','
             {
              before(grammarAccess.getSimpleExpansionAccess().getCommaKeyword_4_1_0()); 
-            match(input,20,FOLLOW_20_in_rule__SimpleExpansion__Group_4_1__0__Impl5698); 
+            match(input,21,FOLLOW_21_in_rule__SimpleExpansion__Group_4_1__0__Impl5884); 
              after(grammarAccess.getSimpleExpansionAccess().getCommaKeyword_4_1_0()); 
 
             }
@@ -7729,16 +7984,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2839:1: rule__SimpleExpansion__Group_4_1__1 : rule__SimpleExpansion__Group_4_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2933:1: rule__SimpleExpansion__Group_4_1__1 : rule__SimpleExpansion__Group_4_1__1__Impl ;
     public final void rule__SimpleExpansion__Group_4_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2843:1: ( rule__SimpleExpansion__Group_4_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2844:2: rule__SimpleExpansion__Group_4_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2937:1: ( rule__SimpleExpansion__Group_4_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2938:2: rule__SimpleExpansion__Group_4_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__1__Impl_in_rule__SimpleExpansion__Group_4_1__15729);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_4_1__1__Impl_in_rule__SimpleExpansion__Group_4_1__15915);
             rule__SimpleExpansion__Group_4_1__1__Impl();
 
             state._fsp--;
@@ -7762,23 +8017,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_4_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2850:1: rule__SimpleExpansion__Group_4_1__1__Impl : ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2944:1: rule__SimpleExpansion__Group_4_1__1__Impl : ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) ) ;
     public final void rule__SimpleExpansion__Group_4_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2854:1: ( ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2855:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2948:1: ( ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2949:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2855:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2856:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2949:1: ( ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2950:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 )
             {
              before(grammarAccess.getSimpleExpansionAccess().getArgumentsAssignment_4_1_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2857:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2857:2: rule__SimpleExpansion__ArgumentsAssignment_4_1_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2951:1: ( rule__SimpleExpansion__ArgumentsAssignment_4_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2951:2: rule__SimpleExpansion__ArgumentsAssignment_4_1_1
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_1_1_in_rule__SimpleExpansion__Group_4_1__1__Impl5756);
+            pushFollow(FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_1_1_in_rule__SimpleExpansion__Group_4_1__1__Impl5942);
             rule__SimpleExpansion__ArgumentsAssignment_4_1_1();
 
             state._fsp--;
@@ -7809,21 +8064,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2871:1: rule__SimpleExpansion__Group_6__0 : rule__SimpleExpansion__Group_6__0__Impl rule__SimpleExpansion__Group_6__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2965:1: rule__SimpleExpansion__Group_6__0 : rule__SimpleExpansion__Group_6__0__Impl rule__SimpleExpansion__Group_6__1 ;
     public final void rule__SimpleExpansion__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2875:1: ( rule__SimpleExpansion__Group_6__0__Impl rule__SimpleExpansion__Group_6__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2876:2: rule__SimpleExpansion__Group_6__0__Impl rule__SimpleExpansion__Group_6__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2969:1: ( rule__SimpleExpansion__Group_6__0__Impl rule__SimpleExpansion__Group_6__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2970:2: rule__SimpleExpansion__Group_6__0__Impl rule__SimpleExpansion__Group_6__1
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__0__Impl_in_rule__SimpleExpansion__Group_6__05790);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__0__Impl_in_rule__SimpleExpansion__Group_6__05976);
             rule__SimpleExpansion__Group_6__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__1_in_rule__SimpleExpansion__Group_6__05793);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__1_in_rule__SimpleExpansion__Group_6__05979);
             rule__SimpleExpansion__Group_6__1();
 
             state._fsp--;
@@ -7847,23 +8102,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2883:1: rule__SimpleExpansion__Group_6__0__Impl : ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2977:1: rule__SimpleExpansion__Group_6__0__Impl : ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) ) ;
     public final void rule__SimpleExpansion__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2887:1: ( ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2888:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2981:1: ( ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2982:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2888:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2889:1: ( rule__SimpleExpansion__BindingsAssignment_6_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2982:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2983:1: ( rule__SimpleExpansion__BindingsAssignment_6_0 )
             {
              before(grammarAccess.getSimpleExpansionAccess().getBindingsAssignment_6_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2890:1: ( rule__SimpleExpansion__BindingsAssignment_6_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2890:2: rule__SimpleExpansion__BindingsAssignment_6_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2984:1: ( rule__SimpleExpansion__BindingsAssignment_6_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2984:2: rule__SimpleExpansion__BindingsAssignment_6_0
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_0_in_rule__SimpleExpansion__Group_6__0__Impl5820);
+            pushFollow(FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_0_in_rule__SimpleExpansion__Group_6__0__Impl6006);
             rule__SimpleExpansion__BindingsAssignment_6_0();
 
             state._fsp--;
@@ -7894,16 +8149,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2900:1: rule__SimpleExpansion__Group_6__1 : rule__SimpleExpansion__Group_6__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2994:1: rule__SimpleExpansion__Group_6__1 : rule__SimpleExpansion__Group_6__1__Impl ;
     public final void rule__SimpleExpansion__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2904:1: ( rule__SimpleExpansion__Group_6__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2905:2: rule__SimpleExpansion__Group_6__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2998:1: ( rule__SimpleExpansion__Group_6__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2999:2: rule__SimpleExpansion__Group_6__1__Impl
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__1__Impl_in_rule__SimpleExpansion__Group_6__15850);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6__1__Impl_in_rule__SimpleExpansion__Group_6__16036);
             rule__SimpleExpansion__Group_6__1__Impl();
 
             state._fsp--;
@@ -7927,35 +8182,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2911:1: rule__SimpleExpansion__Group_6__1__Impl : ( ( rule__SimpleExpansion__Group_6_1__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3005:1: rule__SimpleExpansion__Group_6__1__Impl : ( ( rule__SimpleExpansion__Group_6_1__0 )* ) ;
     public final void rule__SimpleExpansion__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2915:1: ( ( ( rule__SimpleExpansion__Group_6_1__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2916:1: ( ( rule__SimpleExpansion__Group_6_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3009:1: ( ( ( rule__SimpleExpansion__Group_6_1__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3010:1: ( ( rule__SimpleExpansion__Group_6_1__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2916:1: ( ( rule__SimpleExpansion__Group_6_1__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2917:1: ( rule__SimpleExpansion__Group_6_1__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3010:1: ( ( rule__SimpleExpansion__Group_6_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3011:1: ( rule__SimpleExpansion__Group_6_1__0 )*
             {
              before(grammarAccess.getSimpleExpansionAccess().getGroup_6_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2918:1: ( rule__SimpleExpansion__Group_6_1__0 )*
-            loop22:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3012:1: ( rule__SimpleExpansion__Group_6_1__0 )*
+            loop23:
             do {
-                int alt22=2;
-                int LA22_0 = input.LA(1);
+                int alt23=2;
+                int LA23_0 = input.LA(1);
 
-                if ( (LA22_0==20) ) {
-                    alt22=1;
+                if ( (LA23_0==21) ) {
+                    alt23=1;
                 }
 
 
-                switch (alt22) {
+                switch (alt23) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2918:2: rule__SimpleExpansion__Group_6_1__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3012:2: rule__SimpleExpansion__Group_6_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__0_in_rule__SimpleExpansion__Group_6__1__Impl5877);
+            	    pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__0_in_rule__SimpleExpansion__Group_6__1__Impl6063);
             	    rule__SimpleExpansion__Group_6_1__0();
 
             	    state._fsp--;
@@ -7965,7 +8220,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop22;
+            	    break loop23;
                 }
             } while (true);
 
@@ -7992,21 +8247,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2932:1: rule__SimpleExpansion__Group_6_1__0 : rule__SimpleExpansion__Group_6_1__0__Impl rule__SimpleExpansion__Group_6_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3026:1: rule__SimpleExpansion__Group_6_1__0 : rule__SimpleExpansion__Group_6_1__0__Impl rule__SimpleExpansion__Group_6_1__1 ;
     public final void rule__SimpleExpansion__Group_6_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2936:1: ( rule__SimpleExpansion__Group_6_1__0__Impl rule__SimpleExpansion__Group_6_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2937:2: rule__SimpleExpansion__Group_6_1__0__Impl rule__SimpleExpansion__Group_6_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3030:1: ( rule__SimpleExpansion__Group_6_1__0__Impl rule__SimpleExpansion__Group_6_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3031:2: rule__SimpleExpansion__Group_6_1__0__Impl rule__SimpleExpansion__Group_6_1__1
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__0__Impl_in_rule__SimpleExpansion__Group_6_1__05912);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__0__Impl_in_rule__SimpleExpansion__Group_6_1__06098);
             rule__SimpleExpansion__Group_6_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__1_in_rule__SimpleExpansion__Group_6_1__05915);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__1_in_rule__SimpleExpansion__Group_6_1__06101);
             rule__SimpleExpansion__Group_6_1__1();
 
             state._fsp--;
@@ -8030,20 +8285,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2944:1: rule__SimpleExpansion__Group_6_1__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3038:1: rule__SimpleExpansion__Group_6_1__0__Impl : ( ',' ) ;
     public final void rule__SimpleExpansion__Group_6_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2948:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2949:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3042:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3043:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2949:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2950:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3043:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3044:1: ','
             {
              before(grammarAccess.getSimpleExpansionAccess().getCommaKeyword_6_1_0()); 
-            match(input,20,FOLLOW_20_in_rule__SimpleExpansion__Group_6_1__0__Impl5943); 
+            match(input,21,FOLLOW_21_in_rule__SimpleExpansion__Group_6_1__0__Impl6129); 
              after(grammarAccess.getSimpleExpansionAccess().getCommaKeyword_6_1_0()); 
 
             }
@@ -8067,16 +8322,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2963:1: rule__SimpleExpansion__Group_6_1__1 : rule__SimpleExpansion__Group_6_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3057:1: rule__SimpleExpansion__Group_6_1__1 : rule__SimpleExpansion__Group_6_1__1__Impl ;
     public final void rule__SimpleExpansion__Group_6_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2967:1: ( rule__SimpleExpansion__Group_6_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2968:2: rule__SimpleExpansion__Group_6_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3061:1: ( rule__SimpleExpansion__Group_6_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3062:2: rule__SimpleExpansion__Group_6_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__1__Impl_in_rule__SimpleExpansion__Group_6_1__15974);
+            pushFollow(FOLLOW_rule__SimpleExpansion__Group_6_1__1__Impl_in_rule__SimpleExpansion__Group_6_1__16160);
             rule__SimpleExpansion__Group_6_1__1__Impl();
 
             state._fsp--;
@@ -8100,23 +8355,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__Group_6_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2974:1: rule__SimpleExpansion__Group_6_1__1__Impl : ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3068:1: rule__SimpleExpansion__Group_6_1__1__Impl : ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) ) ;
     public final void rule__SimpleExpansion__Group_6_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2978:1: ( ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2979:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3072:1: ( ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3073:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2979:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2980:1: ( rule__SimpleExpansion__BindingsAssignment_6_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3073:1: ( ( rule__SimpleExpansion__BindingsAssignment_6_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3074:1: ( rule__SimpleExpansion__BindingsAssignment_6_1_1 )
             {
              before(grammarAccess.getSimpleExpansionAccess().getBindingsAssignment_6_1_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2981:1: ( rule__SimpleExpansion__BindingsAssignment_6_1_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2981:2: rule__SimpleExpansion__BindingsAssignment_6_1_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3075:1: ( rule__SimpleExpansion__BindingsAssignment_6_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3075:2: rule__SimpleExpansion__BindingsAssignment_6_1_1
             {
-            pushFollow(FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_1_1_in_rule__SimpleExpansion__Group_6_1__1__Impl6001);
+            pushFollow(FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_1_1_in_rule__SimpleExpansion__Group_6_1__1__Impl6187);
             rule__SimpleExpansion__BindingsAssignment_6_1_1();
 
             state._fsp--;
@@ -8147,21 +8402,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2995:1: rule__AddressExpansion__Group__0 : rule__AddressExpansion__Group__0__Impl rule__AddressExpansion__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3089:1: rule__AddressExpansion__Group__0 : rule__AddressExpansion__Group__0__Impl rule__AddressExpansion__Group__1 ;
     public final void rule__AddressExpansion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2999:1: ( rule__AddressExpansion__Group__0__Impl rule__AddressExpansion__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3000:2: rule__AddressExpansion__Group__0__Impl rule__AddressExpansion__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3093:1: ( rule__AddressExpansion__Group__0__Impl rule__AddressExpansion__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3094:2: rule__AddressExpansion__Group__0__Impl rule__AddressExpansion__Group__1
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__0__Impl_in_rule__AddressExpansion__Group__06035);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__0__Impl_in_rule__AddressExpansion__Group__06221);
             rule__AddressExpansion__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__1_in_rule__AddressExpansion__Group__06038);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__1_in_rule__AddressExpansion__Group__06224);
             rule__AddressExpansion__Group__1();
 
             state._fsp--;
@@ -8185,20 +8440,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3007:1: rule__AddressExpansion__Group__0__Impl : ( '@' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3101:1: rule__AddressExpansion__Group__0__Impl : ( '@' ) ;
     public final void rule__AddressExpansion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3011:1: ( ( '@' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3012:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3105:1: ( ( '@' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3106:1: ( '@' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3012:1: ( '@' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3013:1: '@'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3106:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3107:1: '@'
             {
              before(grammarAccess.getAddressExpansionAccess().getCommercialAtKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__AddressExpansion__Group__0__Impl6066); 
+            match(input,23,FOLLOW_23_in_rule__AddressExpansion__Group__0__Impl6252); 
              after(grammarAccess.getAddressExpansionAccess().getCommercialAtKeyword_0()); 
 
             }
@@ -8222,21 +8477,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3026:1: rule__AddressExpansion__Group__1 : rule__AddressExpansion__Group__1__Impl rule__AddressExpansion__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3120:1: rule__AddressExpansion__Group__1 : rule__AddressExpansion__Group__1__Impl rule__AddressExpansion__Group__2 ;
     public final void rule__AddressExpansion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3030:1: ( rule__AddressExpansion__Group__1__Impl rule__AddressExpansion__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3031:2: rule__AddressExpansion__Group__1__Impl rule__AddressExpansion__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3124:1: ( rule__AddressExpansion__Group__1__Impl rule__AddressExpansion__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3125:2: rule__AddressExpansion__Group__1__Impl rule__AddressExpansion__Group__2
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__1__Impl_in_rule__AddressExpansion__Group__16097);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__1__Impl_in_rule__AddressExpansion__Group__16283);
             rule__AddressExpansion__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__2_in_rule__AddressExpansion__Group__16100);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__2_in_rule__AddressExpansion__Group__16286);
             rule__AddressExpansion__Group__2();
 
             state._fsp--;
@@ -8260,23 +8515,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3038:1: rule__AddressExpansion__Group__1__Impl : ( ( rule__AddressExpansion__NameAssignment_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3132:1: rule__AddressExpansion__Group__1__Impl : ( ( rule__AddressExpansion__NameAssignment_1 ) ) ;
     public final void rule__AddressExpansion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3042:1: ( ( ( rule__AddressExpansion__NameAssignment_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3043:1: ( ( rule__AddressExpansion__NameAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3136:1: ( ( ( rule__AddressExpansion__NameAssignment_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3137:1: ( ( rule__AddressExpansion__NameAssignment_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3043:1: ( ( rule__AddressExpansion__NameAssignment_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3044:1: ( rule__AddressExpansion__NameAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3137:1: ( ( rule__AddressExpansion__NameAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3138:1: ( rule__AddressExpansion__NameAssignment_1 )
             {
              before(grammarAccess.getAddressExpansionAccess().getNameAssignment_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3045:1: ( rule__AddressExpansion__NameAssignment_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3045:2: rule__AddressExpansion__NameAssignment_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3139:1: ( rule__AddressExpansion__NameAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3139:2: rule__AddressExpansion__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__NameAssignment_1_in_rule__AddressExpansion__Group__1__Impl6127);
+            pushFollow(FOLLOW_rule__AddressExpansion__NameAssignment_1_in_rule__AddressExpansion__Group__1__Impl6313);
             rule__AddressExpansion__NameAssignment_1();
 
             state._fsp--;
@@ -8307,21 +8562,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3055:1: rule__AddressExpansion__Group__2 : rule__AddressExpansion__Group__2__Impl rule__AddressExpansion__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3149:1: rule__AddressExpansion__Group__2 : rule__AddressExpansion__Group__2__Impl rule__AddressExpansion__Group__3 ;
     public final void rule__AddressExpansion__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3059:1: ( rule__AddressExpansion__Group__2__Impl rule__AddressExpansion__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3060:2: rule__AddressExpansion__Group__2__Impl rule__AddressExpansion__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3153:1: ( rule__AddressExpansion__Group__2__Impl rule__AddressExpansion__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3154:2: rule__AddressExpansion__Group__2__Impl rule__AddressExpansion__Group__3
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__2__Impl_in_rule__AddressExpansion__Group__26157);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__2__Impl_in_rule__AddressExpansion__Group__26343);
             rule__AddressExpansion__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__3_in_rule__AddressExpansion__Group__26160);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__3_in_rule__AddressExpansion__Group__26346);
             rule__AddressExpansion__Group__3();
 
             state._fsp--;
@@ -8345,20 +8600,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3067:1: rule__AddressExpansion__Group__2__Impl : ( ':' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3161:1: rule__AddressExpansion__Group__2__Impl : ( ':' ) ;
     public final void rule__AddressExpansion__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3071:1: ( ( ':' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3072:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3165:1: ( ( ':' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3166:1: ( ':' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3072:1: ( ':' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3073:1: ':'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3166:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3167:1: ':'
             {
              before(grammarAccess.getAddressExpansionAccess().getColonKeyword_2()); 
-            match(input,21,FOLLOW_21_in_rule__AddressExpansion__Group__2__Impl6188); 
+            match(input,22,FOLLOW_22_in_rule__AddressExpansion__Group__2__Impl6374); 
              after(grammarAccess.getAddressExpansionAccess().getColonKeyword_2()); 
 
             }
@@ -8382,21 +8637,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3086:1: rule__AddressExpansion__Group__3 : rule__AddressExpansion__Group__3__Impl rule__AddressExpansion__Group__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3180:1: rule__AddressExpansion__Group__3 : rule__AddressExpansion__Group__3__Impl rule__AddressExpansion__Group__4 ;
     public final void rule__AddressExpansion__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3090:1: ( rule__AddressExpansion__Group__3__Impl rule__AddressExpansion__Group__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3091:2: rule__AddressExpansion__Group__3__Impl rule__AddressExpansion__Group__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3184:1: ( rule__AddressExpansion__Group__3__Impl rule__AddressExpansion__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3185:2: rule__AddressExpansion__Group__3__Impl rule__AddressExpansion__Group__4
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__3__Impl_in_rule__AddressExpansion__Group__36219);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__3__Impl_in_rule__AddressExpansion__Group__36405);
             rule__AddressExpansion__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__4_in_rule__AddressExpansion__Group__36222);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__4_in_rule__AddressExpansion__Group__36408);
             rule__AddressExpansion__Group__4();
 
             state._fsp--;
@@ -8420,23 +8675,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3098:1: rule__AddressExpansion__Group__3__Impl : ( ( rule__AddressExpansion__ConstructorAssignment_3 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3192:1: rule__AddressExpansion__Group__3__Impl : ( ( rule__AddressExpansion__ConstructorAssignment_3 ) ) ;
     public final void rule__AddressExpansion__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3102:1: ( ( ( rule__AddressExpansion__ConstructorAssignment_3 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3103:1: ( ( rule__AddressExpansion__ConstructorAssignment_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3196:1: ( ( ( rule__AddressExpansion__ConstructorAssignment_3 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3197:1: ( ( rule__AddressExpansion__ConstructorAssignment_3 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3103:1: ( ( rule__AddressExpansion__ConstructorAssignment_3 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3104:1: ( rule__AddressExpansion__ConstructorAssignment_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3197:1: ( ( rule__AddressExpansion__ConstructorAssignment_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3198:1: ( rule__AddressExpansion__ConstructorAssignment_3 )
             {
              before(grammarAccess.getAddressExpansionAccess().getConstructorAssignment_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3105:1: ( rule__AddressExpansion__ConstructorAssignment_3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3105:2: rule__AddressExpansion__ConstructorAssignment_3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3199:1: ( rule__AddressExpansion__ConstructorAssignment_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3199:2: rule__AddressExpansion__ConstructorAssignment_3
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__ConstructorAssignment_3_in_rule__AddressExpansion__Group__3__Impl6249);
+            pushFollow(FOLLOW_rule__AddressExpansion__ConstructorAssignment_3_in_rule__AddressExpansion__Group__3__Impl6435);
             rule__AddressExpansion__ConstructorAssignment_3();
 
             state._fsp--;
@@ -8467,21 +8722,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3115:1: rule__AddressExpansion__Group__4 : rule__AddressExpansion__Group__4__Impl rule__AddressExpansion__Group__5 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3209:1: rule__AddressExpansion__Group__4 : rule__AddressExpansion__Group__4__Impl rule__AddressExpansion__Group__5 ;
     public final void rule__AddressExpansion__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3119:1: ( rule__AddressExpansion__Group__4__Impl rule__AddressExpansion__Group__5 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3120:2: rule__AddressExpansion__Group__4__Impl rule__AddressExpansion__Group__5
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3213:1: ( rule__AddressExpansion__Group__4__Impl rule__AddressExpansion__Group__5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3214:2: rule__AddressExpansion__Group__4__Impl rule__AddressExpansion__Group__5
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__4__Impl_in_rule__AddressExpansion__Group__46279);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__4__Impl_in_rule__AddressExpansion__Group__46465);
             rule__AddressExpansion__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__5_in_rule__AddressExpansion__Group__46282);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__5_in_rule__AddressExpansion__Group__46468);
             rule__AddressExpansion__Group__5();
 
             state._fsp--;
@@ -8505,20 +8760,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3127:1: rule__AddressExpansion__Group__4__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3221:1: rule__AddressExpansion__Group__4__Impl : ( '(' ) ;
     public final void rule__AddressExpansion__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3131:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3132:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3225:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3226:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3132:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3133:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3226:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3227:1: '('
             {
              before(grammarAccess.getAddressExpansionAccess().getLeftParenthesisKeyword_4()); 
-            match(input,16,FOLLOW_16_in_rule__AddressExpansion__Group__4__Impl6310); 
+            match(input,17,FOLLOW_17_in_rule__AddressExpansion__Group__4__Impl6496); 
              after(grammarAccess.getAddressExpansionAccess().getLeftParenthesisKeyword_4()); 
 
             }
@@ -8542,21 +8797,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__5"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3146:1: rule__AddressExpansion__Group__5 : rule__AddressExpansion__Group__5__Impl rule__AddressExpansion__Group__6 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3240:1: rule__AddressExpansion__Group__5 : rule__AddressExpansion__Group__5__Impl rule__AddressExpansion__Group__6 ;
     public final void rule__AddressExpansion__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3150:1: ( rule__AddressExpansion__Group__5__Impl rule__AddressExpansion__Group__6 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3151:2: rule__AddressExpansion__Group__5__Impl rule__AddressExpansion__Group__6
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3244:1: ( rule__AddressExpansion__Group__5__Impl rule__AddressExpansion__Group__6 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3245:2: rule__AddressExpansion__Group__5__Impl rule__AddressExpansion__Group__6
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__5__Impl_in_rule__AddressExpansion__Group__56341);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__5__Impl_in_rule__AddressExpansion__Group__56527);
             rule__AddressExpansion__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__6_in_rule__AddressExpansion__Group__56344);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__6_in_rule__AddressExpansion__Group__56530);
             rule__AddressExpansion__Group__6();
 
             state._fsp--;
@@ -8580,31 +8835,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__5__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3158:1: rule__AddressExpansion__Group__5__Impl : ( ( rule__AddressExpansion__Group_5__0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3252:1: rule__AddressExpansion__Group__5__Impl : ( ( rule__AddressExpansion__Group_5__0 )? ) ;
     public final void rule__AddressExpansion__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3162:1: ( ( ( rule__AddressExpansion__Group_5__0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3163:1: ( ( rule__AddressExpansion__Group_5__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3256:1: ( ( ( rule__AddressExpansion__Group_5__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3257:1: ( ( rule__AddressExpansion__Group_5__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3163:1: ( ( rule__AddressExpansion__Group_5__0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3164:1: ( rule__AddressExpansion__Group_5__0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3257:1: ( ( rule__AddressExpansion__Group_5__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3258:1: ( rule__AddressExpansion__Group_5__0 )?
             {
              before(grammarAccess.getAddressExpansionAccess().getGroup_5()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3165:1: ( rule__AddressExpansion__Group_5__0 )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3259:1: ( rule__AddressExpansion__Group_5__0 )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA23_0==RULE_ID||LA23_0==RULE_STRING) ) {
-                alt23=1;
+            if ( (LA24_0==RULE_ID||LA24_0==RULE_STRING) ) {
+                alt24=1;
             }
-            switch (alt23) {
+            switch (alt24) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3165:2: rule__AddressExpansion__Group_5__0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3259:2: rule__AddressExpansion__Group_5__0
                     {
-                    pushFollow(FOLLOW_rule__AddressExpansion__Group_5__0_in_rule__AddressExpansion__Group__5__Impl6371);
+                    pushFollow(FOLLOW_rule__AddressExpansion__Group_5__0_in_rule__AddressExpansion__Group__5__Impl6557);
                     rule__AddressExpansion__Group_5__0();
 
                     state._fsp--;
@@ -8638,16 +8893,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__6"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3175:1: rule__AddressExpansion__Group__6 : rule__AddressExpansion__Group__6__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3269:1: rule__AddressExpansion__Group__6 : rule__AddressExpansion__Group__6__Impl ;
     public final void rule__AddressExpansion__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3179:1: ( rule__AddressExpansion__Group__6__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3180:2: rule__AddressExpansion__Group__6__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3273:1: ( rule__AddressExpansion__Group__6__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3274:2: rule__AddressExpansion__Group__6__Impl
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group__6__Impl_in_rule__AddressExpansion__Group__66402);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group__6__Impl_in_rule__AddressExpansion__Group__66588);
             rule__AddressExpansion__Group__6__Impl();
 
             state._fsp--;
@@ -8671,20 +8926,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group__6__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3186:1: rule__AddressExpansion__Group__6__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3280:1: rule__AddressExpansion__Group__6__Impl : ( ')' ) ;
     public final void rule__AddressExpansion__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3190:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3191:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3284:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3285:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3191:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3192:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3285:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3286:1: ')'
             {
              before(grammarAccess.getAddressExpansionAccess().getRightParenthesisKeyword_6()); 
-            match(input,17,FOLLOW_17_in_rule__AddressExpansion__Group__6__Impl6430); 
+            match(input,18,FOLLOW_18_in_rule__AddressExpansion__Group__6__Impl6616); 
              after(grammarAccess.getAddressExpansionAccess().getRightParenthesisKeyword_6()); 
 
             }
@@ -8708,21 +8963,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3219:1: rule__AddressExpansion__Group_5__0 : rule__AddressExpansion__Group_5__0__Impl rule__AddressExpansion__Group_5__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3313:1: rule__AddressExpansion__Group_5__0 : rule__AddressExpansion__Group_5__0__Impl rule__AddressExpansion__Group_5__1 ;
     public final void rule__AddressExpansion__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3223:1: ( rule__AddressExpansion__Group_5__0__Impl rule__AddressExpansion__Group_5__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3224:2: rule__AddressExpansion__Group_5__0__Impl rule__AddressExpansion__Group_5__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3317:1: ( rule__AddressExpansion__Group_5__0__Impl rule__AddressExpansion__Group_5__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3318:2: rule__AddressExpansion__Group_5__0__Impl rule__AddressExpansion__Group_5__1
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group_5__0__Impl_in_rule__AddressExpansion__Group_5__06475);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group_5__0__Impl_in_rule__AddressExpansion__Group_5__06661);
             rule__AddressExpansion__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group_5__1_in_rule__AddressExpansion__Group_5__06478);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group_5__1_in_rule__AddressExpansion__Group_5__06664);
             rule__AddressExpansion__Group_5__1();
 
             state._fsp--;
@@ -8746,23 +9001,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3231:1: rule__AddressExpansion__Group_5__0__Impl : ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3325:1: rule__AddressExpansion__Group_5__0__Impl : ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) ) ;
     public final void rule__AddressExpansion__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3235:1: ( ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3236:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3329:1: ( ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3330:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3236:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3237:1: ( rule__AddressExpansion__ArgumentsAssignment_5_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3330:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3331:1: ( rule__AddressExpansion__ArgumentsAssignment_5_0 )
             {
              before(grammarAccess.getAddressExpansionAccess().getArgumentsAssignment_5_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3238:1: ( rule__AddressExpansion__ArgumentsAssignment_5_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3238:2: rule__AddressExpansion__ArgumentsAssignment_5_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3332:1: ( rule__AddressExpansion__ArgumentsAssignment_5_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3332:2: rule__AddressExpansion__ArgumentsAssignment_5_0
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_0_in_rule__AddressExpansion__Group_5__0__Impl6505);
+            pushFollow(FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_0_in_rule__AddressExpansion__Group_5__0__Impl6691);
             rule__AddressExpansion__ArgumentsAssignment_5_0();
 
             state._fsp--;
@@ -8793,16 +9048,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3248:1: rule__AddressExpansion__Group_5__1 : rule__AddressExpansion__Group_5__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3342:1: rule__AddressExpansion__Group_5__1 : rule__AddressExpansion__Group_5__1__Impl ;
     public final void rule__AddressExpansion__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3252:1: ( rule__AddressExpansion__Group_5__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3253:2: rule__AddressExpansion__Group_5__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3346:1: ( rule__AddressExpansion__Group_5__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3347:2: rule__AddressExpansion__Group_5__1__Impl
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group_5__1__Impl_in_rule__AddressExpansion__Group_5__16535);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group_5__1__Impl_in_rule__AddressExpansion__Group_5__16721);
             rule__AddressExpansion__Group_5__1__Impl();
 
             state._fsp--;
@@ -8826,35 +9081,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3259:1: rule__AddressExpansion__Group_5__1__Impl : ( ( rule__AddressExpansion__Group_5_1__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3353:1: rule__AddressExpansion__Group_5__1__Impl : ( ( rule__AddressExpansion__Group_5_1__0 )* ) ;
     public final void rule__AddressExpansion__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3263:1: ( ( ( rule__AddressExpansion__Group_5_1__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3264:1: ( ( rule__AddressExpansion__Group_5_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3357:1: ( ( ( rule__AddressExpansion__Group_5_1__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3358:1: ( ( rule__AddressExpansion__Group_5_1__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3264:1: ( ( rule__AddressExpansion__Group_5_1__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3265:1: ( rule__AddressExpansion__Group_5_1__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3358:1: ( ( rule__AddressExpansion__Group_5_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3359:1: ( rule__AddressExpansion__Group_5_1__0 )*
             {
              before(grammarAccess.getAddressExpansionAccess().getGroup_5_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3266:1: ( rule__AddressExpansion__Group_5_1__0 )*
-            loop24:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3360:1: ( rule__AddressExpansion__Group_5_1__0 )*
+            loop25:
             do {
-                int alt24=2;
-                int LA24_0 = input.LA(1);
+                int alt25=2;
+                int LA25_0 = input.LA(1);
 
-                if ( (LA24_0==20) ) {
-                    alt24=1;
+                if ( (LA25_0==21) ) {
+                    alt25=1;
                 }
 
 
-                switch (alt24) {
+                switch (alt25) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3266:2: rule__AddressExpansion__Group_5_1__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3360:2: rule__AddressExpansion__Group_5_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__0_in_rule__AddressExpansion__Group_5__1__Impl6562);
+            	    pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__0_in_rule__AddressExpansion__Group_5__1__Impl6748);
             	    rule__AddressExpansion__Group_5_1__0();
 
             	    state._fsp--;
@@ -8864,7 +9119,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop24;
+            	    break loop25;
                 }
             } while (true);
 
@@ -8891,21 +9146,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3280:1: rule__AddressExpansion__Group_5_1__0 : rule__AddressExpansion__Group_5_1__0__Impl rule__AddressExpansion__Group_5_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3374:1: rule__AddressExpansion__Group_5_1__0 : rule__AddressExpansion__Group_5_1__0__Impl rule__AddressExpansion__Group_5_1__1 ;
     public final void rule__AddressExpansion__Group_5_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3284:1: ( rule__AddressExpansion__Group_5_1__0__Impl rule__AddressExpansion__Group_5_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3285:2: rule__AddressExpansion__Group_5_1__0__Impl rule__AddressExpansion__Group_5_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3378:1: ( rule__AddressExpansion__Group_5_1__0__Impl rule__AddressExpansion__Group_5_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3379:2: rule__AddressExpansion__Group_5_1__0__Impl rule__AddressExpansion__Group_5_1__1
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__0__Impl_in_rule__AddressExpansion__Group_5_1__06597);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__0__Impl_in_rule__AddressExpansion__Group_5_1__06783);
             rule__AddressExpansion__Group_5_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__1_in_rule__AddressExpansion__Group_5_1__06600);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__1_in_rule__AddressExpansion__Group_5_1__06786);
             rule__AddressExpansion__Group_5_1__1();
 
             state._fsp--;
@@ -8929,20 +9184,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3292:1: rule__AddressExpansion__Group_5_1__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3386:1: rule__AddressExpansion__Group_5_1__0__Impl : ( ',' ) ;
     public final void rule__AddressExpansion__Group_5_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3296:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3297:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3390:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3391:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3297:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3298:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3391:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3392:1: ','
             {
              before(grammarAccess.getAddressExpansionAccess().getCommaKeyword_5_1_0()); 
-            match(input,20,FOLLOW_20_in_rule__AddressExpansion__Group_5_1__0__Impl6628); 
+            match(input,21,FOLLOW_21_in_rule__AddressExpansion__Group_5_1__0__Impl6814); 
              after(grammarAccess.getAddressExpansionAccess().getCommaKeyword_5_1_0()); 
 
             }
@@ -8966,16 +9221,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3311:1: rule__AddressExpansion__Group_5_1__1 : rule__AddressExpansion__Group_5_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3405:1: rule__AddressExpansion__Group_5_1__1 : rule__AddressExpansion__Group_5_1__1__Impl ;
     public final void rule__AddressExpansion__Group_5_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3315:1: ( rule__AddressExpansion__Group_5_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3316:2: rule__AddressExpansion__Group_5_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3409:1: ( rule__AddressExpansion__Group_5_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3410:2: rule__AddressExpansion__Group_5_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__1__Impl_in_rule__AddressExpansion__Group_5_1__16659);
+            pushFollow(FOLLOW_rule__AddressExpansion__Group_5_1__1__Impl_in_rule__AddressExpansion__Group_5_1__16845);
             rule__AddressExpansion__Group_5_1__1__Impl();
 
             state._fsp--;
@@ -8999,23 +9254,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__Group_5_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3322:1: rule__AddressExpansion__Group_5_1__1__Impl : ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3416:1: rule__AddressExpansion__Group_5_1__1__Impl : ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) ) ;
     public final void rule__AddressExpansion__Group_5_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3326:1: ( ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3327:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3420:1: ( ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3421:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3327:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3328:1: ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3421:1: ( ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3422:1: ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 )
             {
              before(grammarAccess.getAddressExpansionAccess().getArgumentsAssignment_5_1_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3329:1: ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3329:2: rule__AddressExpansion__ArgumentsAssignment_5_1_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3423:1: ( rule__AddressExpansion__ArgumentsAssignment_5_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3423:2: rule__AddressExpansion__ArgumentsAssignment_5_1_1
             {
-            pushFollow(FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_1_1_in_rule__AddressExpansion__Group_5_1__1__Impl6686);
+            pushFollow(FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_1_1_in_rule__AddressExpansion__Group_5_1__1__Impl6872);
             rule__AddressExpansion__ArgumentsAssignment_5_1_1();
 
             state._fsp--;
@@ -9046,21 +9301,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__Group_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3343:1: rule__Argument__Group_1__0 : rule__Argument__Group_1__0__Impl rule__Argument__Group_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3437:1: rule__Argument__Group_1__0 : rule__Argument__Group_1__0__Impl rule__Argument__Group_1__1 ;
     public final void rule__Argument__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3347:1: ( rule__Argument__Group_1__0__Impl rule__Argument__Group_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3348:2: rule__Argument__Group_1__0__Impl rule__Argument__Group_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3441:1: ( rule__Argument__Group_1__0__Impl rule__Argument__Group_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3442:2: rule__Argument__Group_1__0__Impl rule__Argument__Group_1__1
             {
-            pushFollow(FOLLOW_rule__Argument__Group_1__0__Impl_in_rule__Argument__Group_1__06720);
+            pushFollow(FOLLOW_rule__Argument__Group_1__0__Impl_in_rule__Argument__Group_1__06906);
             rule__Argument__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Argument__Group_1__1_in_rule__Argument__Group_1__06723);
+            pushFollow(FOLLOW_rule__Argument__Group_1__1_in_rule__Argument__Group_1__06909);
             rule__Argument__Group_1__1();
 
             state._fsp--;
@@ -9084,23 +9339,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__Group_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3355:1: rule__Argument__Group_1__0__Impl : ( ( rule__Argument__LhsAssignment_1_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3449:1: rule__Argument__Group_1__0__Impl : ( ( rule__Argument__LhsAssignment_1_0 ) ) ;
     public final void rule__Argument__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3359:1: ( ( ( rule__Argument__LhsAssignment_1_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3360:1: ( ( rule__Argument__LhsAssignment_1_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3453:1: ( ( ( rule__Argument__LhsAssignment_1_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3454:1: ( ( rule__Argument__LhsAssignment_1_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3360:1: ( ( rule__Argument__LhsAssignment_1_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3361:1: ( rule__Argument__LhsAssignment_1_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3454:1: ( ( rule__Argument__LhsAssignment_1_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3455:1: ( rule__Argument__LhsAssignment_1_0 )
             {
              before(grammarAccess.getArgumentAccess().getLhsAssignment_1_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3362:1: ( rule__Argument__LhsAssignment_1_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3362:2: rule__Argument__LhsAssignment_1_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3456:1: ( rule__Argument__LhsAssignment_1_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3456:2: rule__Argument__LhsAssignment_1_0
             {
-            pushFollow(FOLLOW_rule__Argument__LhsAssignment_1_0_in_rule__Argument__Group_1__0__Impl6750);
+            pushFollow(FOLLOW_rule__Argument__LhsAssignment_1_0_in_rule__Argument__Group_1__0__Impl6936);
             rule__Argument__LhsAssignment_1_0();
 
             state._fsp--;
@@ -9131,21 +9386,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__Group_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3372:1: rule__Argument__Group_1__1 : rule__Argument__Group_1__1__Impl rule__Argument__Group_1__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3466:1: rule__Argument__Group_1__1 : rule__Argument__Group_1__1__Impl rule__Argument__Group_1__2 ;
     public final void rule__Argument__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3376:1: ( rule__Argument__Group_1__1__Impl rule__Argument__Group_1__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3377:2: rule__Argument__Group_1__1__Impl rule__Argument__Group_1__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3470:1: ( rule__Argument__Group_1__1__Impl rule__Argument__Group_1__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3471:2: rule__Argument__Group_1__1__Impl rule__Argument__Group_1__2
             {
-            pushFollow(FOLLOW_rule__Argument__Group_1__1__Impl_in_rule__Argument__Group_1__16780);
+            pushFollow(FOLLOW_rule__Argument__Group_1__1__Impl_in_rule__Argument__Group_1__16966);
             rule__Argument__Group_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Argument__Group_1__2_in_rule__Argument__Group_1__16783);
+            pushFollow(FOLLOW_rule__Argument__Group_1__2_in_rule__Argument__Group_1__16969);
             rule__Argument__Group_1__2();
 
             state._fsp--;
@@ -9169,20 +9424,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__Group_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3384:1: rule__Argument__Group_1__1__Impl : ( '+' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3478:1: rule__Argument__Group_1__1__Impl : ( '+' ) ;
     public final void rule__Argument__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3388:1: ( ( '+' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3389:1: ( '+' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3482:1: ( ( '+' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3483:1: ( '+' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3389:1: ( '+' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3390:1: '+'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3483:1: ( '+' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3484:1: '+'
             {
              before(grammarAccess.getArgumentAccess().getPlusSignKeyword_1_1()); 
-            match(input,28,FOLLOW_28_in_rule__Argument__Group_1__1__Impl6811); 
+            match(input,29,FOLLOW_29_in_rule__Argument__Group_1__1__Impl6997); 
              after(grammarAccess.getArgumentAccess().getPlusSignKeyword_1_1()); 
 
             }
@@ -9206,16 +9461,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__Group_1__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3403:1: rule__Argument__Group_1__2 : rule__Argument__Group_1__2__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3497:1: rule__Argument__Group_1__2 : rule__Argument__Group_1__2__Impl ;
     public final void rule__Argument__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3407:1: ( rule__Argument__Group_1__2__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3408:2: rule__Argument__Group_1__2__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3501:1: ( rule__Argument__Group_1__2__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3502:2: rule__Argument__Group_1__2__Impl
             {
-            pushFollow(FOLLOW_rule__Argument__Group_1__2__Impl_in_rule__Argument__Group_1__26842);
+            pushFollow(FOLLOW_rule__Argument__Group_1__2__Impl_in_rule__Argument__Group_1__27028);
             rule__Argument__Group_1__2__Impl();
 
             state._fsp--;
@@ -9239,23 +9494,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__Group_1__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3414:1: rule__Argument__Group_1__2__Impl : ( ( rule__Argument__RhsAssignment_1_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3508:1: rule__Argument__Group_1__2__Impl : ( ( rule__Argument__RhsAssignment_1_2 ) ) ;
     public final void rule__Argument__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3418:1: ( ( ( rule__Argument__RhsAssignment_1_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3419:1: ( ( rule__Argument__RhsAssignment_1_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3512:1: ( ( ( rule__Argument__RhsAssignment_1_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3513:1: ( ( rule__Argument__RhsAssignment_1_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3419:1: ( ( rule__Argument__RhsAssignment_1_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3420:1: ( rule__Argument__RhsAssignment_1_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3513:1: ( ( rule__Argument__RhsAssignment_1_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3514:1: ( rule__Argument__RhsAssignment_1_2 )
             {
              before(grammarAccess.getArgumentAccess().getRhsAssignment_1_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3421:1: ( rule__Argument__RhsAssignment_1_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3421:2: rule__Argument__RhsAssignment_1_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3515:1: ( rule__Argument__RhsAssignment_1_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3515:2: rule__Argument__RhsAssignment_1_2
             {
-            pushFollow(FOLLOW_rule__Argument__RhsAssignment_1_2_in_rule__Argument__Group_1__2__Impl6869);
+            pushFollow(FOLLOW_rule__Argument__RhsAssignment_1_2_in_rule__Argument__Group_1__2__Impl7055);
             rule__Argument__RhsAssignment_1_2();
 
             state._fsp--;
@@ -9286,21 +9541,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3437:1: rule__AddressBinding__Group__0 : rule__AddressBinding__Group__0__Impl rule__AddressBinding__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3531:1: rule__AddressBinding__Group__0 : rule__AddressBinding__Group__0__Impl rule__AddressBinding__Group__1 ;
     public final void rule__AddressBinding__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3441:1: ( rule__AddressBinding__Group__0__Impl rule__AddressBinding__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3442:2: rule__AddressBinding__Group__0__Impl rule__AddressBinding__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3535:1: ( rule__AddressBinding__Group__0__Impl rule__AddressBinding__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3536:2: rule__AddressBinding__Group__0__Impl rule__AddressBinding__Group__1
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group__0__Impl_in_rule__AddressBinding__Group__06905);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__0__Impl_in_rule__AddressBinding__Group__07091);
             rule__AddressBinding__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressBinding__Group__1_in_rule__AddressBinding__Group__06908);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__1_in_rule__AddressBinding__Group__07094);
             rule__AddressBinding__Group__1();
 
             state._fsp--;
@@ -9324,20 +9579,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3449:1: rule__AddressBinding__Group__0__Impl : ( '@' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3543:1: rule__AddressBinding__Group__0__Impl : ( '@' ) ;
     public final void rule__AddressBinding__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3453:1: ( ( '@' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3454:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3547:1: ( ( '@' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3548:1: ( '@' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3454:1: ( '@' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3455:1: '@'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3548:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3549:1: '@'
             {
              before(grammarAccess.getAddressBindingAccess().getCommercialAtKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__AddressBinding__Group__0__Impl6936); 
+            match(input,23,FOLLOW_23_in_rule__AddressBinding__Group__0__Impl7122); 
              after(grammarAccess.getAddressBindingAccess().getCommercialAtKeyword_0()); 
 
             }
@@ -9361,21 +9616,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3468:1: rule__AddressBinding__Group__1 : rule__AddressBinding__Group__1__Impl rule__AddressBinding__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3562:1: rule__AddressBinding__Group__1 : rule__AddressBinding__Group__1__Impl rule__AddressBinding__Group__2 ;
     public final void rule__AddressBinding__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3472:1: ( rule__AddressBinding__Group__1__Impl rule__AddressBinding__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3473:2: rule__AddressBinding__Group__1__Impl rule__AddressBinding__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3566:1: ( rule__AddressBinding__Group__1__Impl rule__AddressBinding__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3567:2: rule__AddressBinding__Group__1__Impl rule__AddressBinding__Group__2
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group__1__Impl_in_rule__AddressBinding__Group__16967);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__1__Impl_in_rule__AddressBinding__Group__17153);
             rule__AddressBinding__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressBinding__Group__2_in_rule__AddressBinding__Group__16970);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__2_in_rule__AddressBinding__Group__17156);
             rule__AddressBinding__Group__2();
 
             state._fsp--;
@@ -9399,31 +9654,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3480:1: rule__AddressBinding__Group__1__Impl : ( ( rule__AddressBinding__Group_1__0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3574:1: rule__AddressBinding__Group__1__Impl : ( ( rule__AddressBinding__Group_1__0 )? ) ;
     public final void rule__AddressBinding__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3484:1: ( ( ( rule__AddressBinding__Group_1__0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3485:1: ( ( rule__AddressBinding__Group_1__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3578:1: ( ( ( rule__AddressBinding__Group_1__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3579:1: ( ( rule__AddressBinding__Group_1__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3485:1: ( ( rule__AddressBinding__Group_1__0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3486:1: ( rule__AddressBinding__Group_1__0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3579:1: ( ( rule__AddressBinding__Group_1__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3580:1: ( rule__AddressBinding__Group_1__0 )?
             {
              before(grammarAccess.getAddressBindingAccess().getGroup_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3487:1: ( rule__AddressBinding__Group_1__0 )?
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3581:1: ( rule__AddressBinding__Group_1__0 )?
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( (LA25_0==RULE_ID) ) {
-                alt25=1;
+            if ( (LA26_0==RULE_ID) ) {
+                alt26=1;
             }
-            switch (alt25) {
+            switch (alt26) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3487:2: rule__AddressBinding__Group_1__0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3581:2: rule__AddressBinding__Group_1__0
                     {
-                    pushFollow(FOLLOW_rule__AddressBinding__Group_1__0_in_rule__AddressBinding__Group__1__Impl6997);
+                    pushFollow(FOLLOW_rule__AddressBinding__Group_1__0_in_rule__AddressBinding__Group__1__Impl7183);
                     rule__AddressBinding__Group_1__0();
 
                     state._fsp--;
@@ -9457,21 +9712,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3497:1: rule__AddressBinding__Group__2 : rule__AddressBinding__Group__2__Impl rule__AddressBinding__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3591:1: rule__AddressBinding__Group__2 : rule__AddressBinding__Group__2__Impl rule__AddressBinding__Group__3 ;
     public final void rule__AddressBinding__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3501:1: ( rule__AddressBinding__Group__2__Impl rule__AddressBinding__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3502:2: rule__AddressBinding__Group__2__Impl rule__AddressBinding__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3595:1: ( rule__AddressBinding__Group__2__Impl rule__AddressBinding__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3596:2: rule__AddressBinding__Group__2__Impl rule__AddressBinding__Group__3
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group__2__Impl_in_rule__AddressBinding__Group__27028);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__2__Impl_in_rule__AddressBinding__Group__27214);
             rule__AddressBinding__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressBinding__Group__3_in_rule__AddressBinding__Group__27031);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__3_in_rule__AddressBinding__Group__27217);
             rule__AddressBinding__Group__3();
 
             state._fsp--;
@@ -9495,20 +9750,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3509:1: rule__AddressBinding__Group__2__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3603:1: rule__AddressBinding__Group__2__Impl : ( '(' ) ;
     public final void rule__AddressBinding__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3513:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3514:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3607:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3608:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3514:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3515:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3608:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3609:1: '('
             {
              before(grammarAccess.getAddressBindingAccess().getLeftParenthesisKeyword_2()); 
-            match(input,16,FOLLOW_16_in_rule__AddressBinding__Group__2__Impl7059); 
+            match(input,17,FOLLOW_17_in_rule__AddressBinding__Group__2__Impl7245); 
              after(grammarAccess.getAddressBindingAccess().getLeftParenthesisKeyword_2()); 
 
             }
@@ -9532,21 +9787,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3528:1: rule__AddressBinding__Group__3 : rule__AddressBinding__Group__3__Impl rule__AddressBinding__Group__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3622:1: rule__AddressBinding__Group__3 : rule__AddressBinding__Group__3__Impl rule__AddressBinding__Group__4 ;
     public final void rule__AddressBinding__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3532:1: ( rule__AddressBinding__Group__3__Impl rule__AddressBinding__Group__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3533:2: rule__AddressBinding__Group__3__Impl rule__AddressBinding__Group__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3626:1: ( rule__AddressBinding__Group__3__Impl rule__AddressBinding__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3627:2: rule__AddressBinding__Group__3__Impl rule__AddressBinding__Group__4
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group__3__Impl_in_rule__AddressBinding__Group__37090);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__3__Impl_in_rule__AddressBinding__Group__37276);
             rule__AddressBinding__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressBinding__Group__4_in_rule__AddressBinding__Group__37093);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__4_in_rule__AddressBinding__Group__37279);
             rule__AddressBinding__Group__4();
 
             state._fsp--;
@@ -9570,23 +9825,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3540:1: rule__AddressBinding__Group__3__Impl : ( ( rule__AddressBinding__AddressesAssignment_3 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3634:1: rule__AddressBinding__Group__3__Impl : ( ( rule__AddressBinding__AddressesAssignment_3 ) ) ;
     public final void rule__AddressBinding__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3544:1: ( ( ( rule__AddressBinding__AddressesAssignment_3 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3545:1: ( ( rule__AddressBinding__AddressesAssignment_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3638:1: ( ( ( rule__AddressBinding__AddressesAssignment_3 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3639:1: ( ( rule__AddressBinding__AddressesAssignment_3 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3545:1: ( ( rule__AddressBinding__AddressesAssignment_3 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3546:1: ( rule__AddressBinding__AddressesAssignment_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3639:1: ( ( rule__AddressBinding__AddressesAssignment_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3640:1: ( rule__AddressBinding__AddressesAssignment_3 )
             {
              before(grammarAccess.getAddressBindingAccess().getAddressesAssignment_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3547:1: ( rule__AddressBinding__AddressesAssignment_3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3547:2: rule__AddressBinding__AddressesAssignment_3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3641:1: ( rule__AddressBinding__AddressesAssignment_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3641:2: rule__AddressBinding__AddressesAssignment_3
             {
-            pushFollow(FOLLOW_rule__AddressBinding__AddressesAssignment_3_in_rule__AddressBinding__Group__3__Impl7120);
+            pushFollow(FOLLOW_rule__AddressBinding__AddressesAssignment_3_in_rule__AddressBinding__Group__3__Impl7306);
             rule__AddressBinding__AddressesAssignment_3();
 
             state._fsp--;
@@ -9617,21 +9872,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3557:1: rule__AddressBinding__Group__4 : rule__AddressBinding__Group__4__Impl rule__AddressBinding__Group__5 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3651:1: rule__AddressBinding__Group__4 : rule__AddressBinding__Group__4__Impl rule__AddressBinding__Group__5 ;
     public final void rule__AddressBinding__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3561:1: ( rule__AddressBinding__Group__4__Impl rule__AddressBinding__Group__5 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3562:2: rule__AddressBinding__Group__4__Impl rule__AddressBinding__Group__5
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3655:1: ( rule__AddressBinding__Group__4__Impl rule__AddressBinding__Group__5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3656:2: rule__AddressBinding__Group__4__Impl rule__AddressBinding__Group__5
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group__4__Impl_in_rule__AddressBinding__Group__47150);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__4__Impl_in_rule__AddressBinding__Group__47336);
             rule__AddressBinding__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressBinding__Group__5_in_rule__AddressBinding__Group__47153);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__5_in_rule__AddressBinding__Group__47339);
             rule__AddressBinding__Group__5();
 
             state._fsp--;
@@ -9655,35 +9910,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3569:1: rule__AddressBinding__Group__4__Impl : ( ( rule__AddressBinding__Group_4__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3663:1: rule__AddressBinding__Group__4__Impl : ( ( rule__AddressBinding__Group_4__0 )* ) ;
     public final void rule__AddressBinding__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3573:1: ( ( ( rule__AddressBinding__Group_4__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3574:1: ( ( rule__AddressBinding__Group_4__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3667:1: ( ( ( rule__AddressBinding__Group_4__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3668:1: ( ( rule__AddressBinding__Group_4__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3574:1: ( ( rule__AddressBinding__Group_4__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3575:1: ( rule__AddressBinding__Group_4__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3668:1: ( ( rule__AddressBinding__Group_4__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3669:1: ( rule__AddressBinding__Group_4__0 )*
             {
              before(grammarAccess.getAddressBindingAccess().getGroup_4()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3576:1: ( rule__AddressBinding__Group_4__0 )*
-            loop26:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3670:1: ( rule__AddressBinding__Group_4__0 )*
+            loop27:
             do {
-                int alt26=2;
-                int LA26_0 = input.LA(1);
+                int alt27=2;
+                int LA27_0 = input.LA(1);
 
-                if ( (LA26_0==20) ) {
-                    alt26=1;
+                if ( (LA27_0==21) ) {
+                    alt27=1;
                 }
 
 
-                switch (alt26) {
+                switch (alt27) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3576:2: rule__AddressBinding__Group_4__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3670:2: rule__AddressBinding__Group_4__0
             	    {
-            	    pushFollow(FOLLOW_rule__AddressBinding__Group_4__0_in_rule__AddressBinding__Group__4__Impl7180);
+            	    pushFollow(FOLLOW_rule__AddressBinding__Group_4__0_in_rule__AddressBinding__Group__4__Impl7366);
             	    rule__AddressBinding__Group_4__0();
 
             	    state._fsp--;
@@ -9693,7 +9948,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop27;
                 }
             } while (true);
 
@@ -9720,16 +9975,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__5"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3586:1: rule__AddressBinding__Group__5 : rule__AddressBinding__Group__5__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3680:1: rule__AddressBinding__Group__5 : rule__AddressBinding__Group__5__Impl ;
     public final void rule__AddressBinding__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3590:1: ( rule__AddressBinding__Group__5__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3591:2: rule__AddressBinding__Group__5__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3684:1: ( rule__AddressBinding__Group__5__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3685:2: rule__AddressBinding__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group__5__Impl_in_rule__AddressBinding__Group__57211);
+            pushFollow(FOLLOW_rule__AddressBinding__Group__5__Impl_in_rule__AddressBinding__Group__57397);
             rule__AddressBinding__Group__5__Impl();
 
             state._fsp--;
@@ -9753,20 +10008,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group__5__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3597:1: rule__AddressBinding__Group__5__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3691:1: rule__AddressBinding__Group__5__Impl : ( ')' ) ;
     public final void rule__AddressBinding__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3601:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3602:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3695:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3696:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3602:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3603:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3696:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3697:1: ')'
             {
              before(grammarAccess.getAddressBindingAccess().getRightParenthesisKeyword_5()); 
-            match(input,17,FOLLOW_17_in_rule__AddressBinding__Group__5__Impl7239); 
+            match(input,18,FOLLOW_18_in_rule__AddressBinding__Group__5__Impl7425); 
              after(grammarAccess.getAddressBindingAccess().getRightParenthesisKeyword_5()); 
 
             }
@@ -9790,21 +10045,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3628:1: rule__AddressBinding__Group_1__0 : rule__AddressBinding__Group_1__0__Impl rule__AddressBinding__Group_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3722:1: rule__AddressBinding__Group_1__0 : rule__AddressBinding__Group_1__0__Impl rule__AddressBinding__Group_1__1 ;
     public final void rule__AddressBinding__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3632:1: ( rule__AddressBinding__Group_1__0__Impl rule__AddressBinding__Group_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3633:2: rule__AddressBinding__Group_1__0__Impl rule__AddressBinding__Group_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3726:1: ( rule__AddressBinding__Group_1__0__Impl rule__AddressBinding__Group_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3727:2: rule__AddressBinding__Group_1__0__Impl rule__AddressBinding__Group_1__1
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group_1__0__Impl_in_rule__AddressBinding__Group_1__07282);
+            pushFollow(FOLLOW_rule__AddressBinding__Group_1__0__Impl_in_rule__AddressBinding__Group_1__07468);
             rule__AddressBinding__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressBinding__Group_1__1_in_rule__AddressBinding__Group_1__07285);
+            pushFollow(FOLLOW_rule__AddressBinding__Group_1__1_in_rule__AddressBinding__Group_1__07471);
             rule__AddressBinding__Group_1__1();
 
             state._fsp--;
@@ -9828,23 +10083,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3640:1: rule__AddressBinding__Group_1__0__Impl : ( ( rule__AddressBinding__NameAssignment_1_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3734:1: rule__AddressBinding__Group_1__0__Impl : ( ( rule__AddressBinding__NameAssignment_1_0 ) ) ;
     public final void rule__AddressBinding__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3644:1: ( ( ( rule__AddressBinding__NameAssignment_1_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3645:1: ( ( rule__AddressBinding__NameAssignment_1_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3738:1: ( ( ( rule__AddressBinding__NameAssignment_1_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3739:1: ( ( rule__AddressBinding__NameAssignment_1_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3645:1: ( ( rule__AddressBinding__NameAssignment_1_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3646:1: ( rule__AddressBinding__NameAssignment_1_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3739:1: ( ( rule__AddressBinding__NameAssignment_1_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3740:1: ( rule__AddressBinding__NameAssignment_1_0 )
             {
              before(grammarAccess.getAddressBindingAccess().getNameAssignment_1_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3647:1: ( rule__AddressBinding__NameAssignment_1_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3647:2: rule__AddressBinding__NameAssignment_1_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3741:1: ( rule__AddressBinding__NameAssignment_1_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3741:2: rule__AddressBinding__NameAssignment_1_0
             {
-            pushFollow(FOLLOW_rule__AddressBinding__NameAssignment_1_0_in_rule__AddressBinding__Group_1__0__Impl7312);
+            pushFollow(FOLLOW_rule__AddressBinding__NameAssignment_1_0_in_rule__AddressBinding__Group_1__0__Impl7498);
             rule__AddressBinding__NameAssignment_1_0();
 
             state._fsp--;
@@ -9875,16 +10130,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3657:1: rule__AddressBinding__Group_1__1 : rule__AddressBinding__Group_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3751:1: rule__AddressBinding__Group_1__1 : rule__AddressBinding__Group_1__1__Impl ;
     public final void rule__AddressBinding__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3661:1: ( rule__AddressBinding__Group_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3662:2: rule__AddressBinding__Group_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3755:1: ( rule__AddressBinding__Group_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3756:2: rule__AddressBinding__Group_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group_1__1__Impl_in_rule__AddressBinding__Group_1__17342);
+            pushFollow(FOLLOW_rule__AddressBinding__Group_1__1__Impl_in_rule__AddressBinding__Group_1__17528);
             rule__AddressBinding__Group_1__1__Impl();
 
             state._fsp--;
@@ -9908,20 +10163,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3668:1: rule__AddressBinding__Group_1__1__Impl : ( '=' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3762:1: rule__AddressBinding__Group_1__1__Impl : ( '=' ) ;
     public final void rule__AddressBinding__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3672:1: ( ( '=' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3673:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3766:1: ( ( '=' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3767:1: ( '=' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3673:1: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3674:1: '='
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3767:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3768:1: '='
             {
              before(grammarAccess.getAddressBindingAccess().getEqualsSignKeyword_1_1()); 
-            match(input,25,FOLLOW_25_in_rule__AddressBinding__Group_1__1__Impl7370); 
+            match(input,26,FOLLOW_26_in_rule__AddressBinding__Group_1__1__Impl7556); 
              after(grammarAccess.getAddressBindingAccess().getEqualsSignKeyword_1_1()); 
 
             }
@@ -9945,21 +10200,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_4__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3691:1: rule__AddressBinding__Group_4__0 : rule__AddressBinding__Group_4__0__Impl rule__AddressBinding__Group_4__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3785:1: rule__AddressBinding__Group_4__0 : rule__AddressBinding__Group_4__0__Impl rule__AddressBinding__Group_4__1 ;
     public final void rule__AddressBinding__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3695:1: ( rule__AddressBinding__Group_4__0__Impl rule__AddressBinding__Group_4__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3696:2: rule__AddressBinding__Group_4__0__Impl rule__AddressBinding__Group_4__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3789:1: ( rule__AddressBinding__Group_4__0__Impl rule__AddressBinding__Group_4__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3790:2: rule__AddressBinding__Group_4__0__Impl rule__AddressBinding__Group_4__1
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group_4__0__Impl_in_rule__AddressBinding__Group_4__07405);
+            pushFollow(FOLLOW_rule__AddressBinding__Group_4__0__Impl_in_rule__AddressBinding__Group_4__07591);
             rule__AddressBinding__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__AddressBinding__Group_4__1_in_rule__AddressBinding__Group_4__07408);
+            pushFollow(FOLLOW_rule__AddressBinding__Group_4__1_in_rule__AddressBinding__Group_4__07594);
             rule__AddressBinding__Group_4__1();
 
             state._fsp--;
@@ -9983,20 +10238,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_4__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3703:1: rule__AddressBinding__Group_4__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3797:1: rule__AddressBinding__Group_4__0__Impl : ( ',' ) ;
     public final void rule__AddressBinding__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3707:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3708:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3801:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3802:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3708:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3709:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3802:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3803:1: ','
             {
              before(grammarAccess.getAddressBindingAccess().getCommaKeyword_4_0()); 
-            match(input,20,FOLLOW_20_in_rule__AddressBinding__Group_4__0__Impl7436); 
+            match(input,21,FOLLOW_21_in_rule__AddressBinding__Group_4__0__Impl7622); 
              after(grammarAccess.getAddressBindingAccess().getCommaKeyword_4_0()); 
 
             }
@@ -10020,16 +10275,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_4__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3722:1: rule__AddressBinding__Group_4__1 : rule__AddressBinding__Group_4__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3816:1: rule__AddressBinding__Group_4__1 : rule__AddressBinding__Group_4__1__Impl ;
     public final void rule__AddressBinding__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3726:1: ( rule__AddressBinding__Group_4__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3727:2: rule__AddressBinding__Group_4__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3820:1: ( rule__AddressBinding__Group_4__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3821:2: rule__AddressBinding__Group_4__1__Impl
             {
-            pushFollow(FOLLOW_rule__AddressBinding__Group_4__1__Impl_in_rule__AddressBinding__Group_4__17467);
+            pushFollow(FOLLOW_rule__AddressBinding__Group_4__1__Impl_in_rule__AddressBinding__Group_4__17653);
             rule__AddressBinding__Group_4__1__Impl();
 
             state._fsp--;
@@ -10053,23 +10308,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__Group_4__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3733:1: rule__AddressBinding__Group_4__1__Impl : ( ( rule__AddressBinding__AddressesAssignment_4_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3827:1: rule__AddressBinding__Group_4__1__Impl : ( ( rule__AddressBinding__AddressesAssignment_4_1 ) ) ;
     public final void rule__AddressBinding__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3737:1: ( ( ( rule__AddressBinding__AddressesAssignment_4_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3738:1: ( ( rule__AddressBinding__AddressesAssignment_4_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3831:1: ( ( ( rule__AddressBinding__AddressesAssignment_4_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3832:1: ( ( rule__AddressBinding__AddressesAssignment_4_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3738:1: ( ( rule__AddressBinding__AddressesAssignment_4_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3739:1: ( rule__AddressBinding__AddressesAssignment_4_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3832:1: ( ( rule__AddressBinding__AddressesAssignment_4_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3833:1: ( rule__AddressBinding__AddressesAssignment_4_1 )
             {
              before(grammarAccess.getAddressBindingAccess().getAddressesAssignment_4_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3740:1: ( rule__AddressBinding__AddressesAssignment_4_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3740:2: rule__AddressBinding__AddressesAssignment_4_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3834:1: ( rule__AddressBinding__AddressesAssignment_4_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3834:2: rule__AddressBinding__AddressesAssignment_4_1
             {
-            pushFollow(FOLLOW_rule__AddressBinding__AddressesAssignment_4_1_in_rule__AddressBinding__Group_4__1__Impl7494);
+            pushFollow(FOLLOW_rule__AddressBinding__AddressesAssignment_4_1_in_rule__AddressBinding__Group_4__1__Impl7680);
             rule__AddressBinding__AddressesAssignment_4_1();
 
             state._fsp--;
@@ -10100,21 +10355,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3754:1: rule__Instantiation__Group__0 : rule__Instantiation__Group__0__Impl rule__Instantiation__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3848:1: rule__Instantiation__Group__0 : rule__Instantiation__Group__0__Impl rule__Instantiation__Group__1 ;
     public final void rule__Instantiation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3758:1: ( rule__Instantiation__Group__0__Impl rule__Instantiation__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3759:2: rule__Instantiation__Group__0__Impl rule__Instantiation__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3852:1: ( rule__Instantiation__Group__0__Impl rule__Instantiation__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3853:2: rule__Instantiation__Group__0__Impl rule__Instantiation__Group__1
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group__0__Impl_in_rule__Instantiation__Group__07528);
+            pushFollow(FOLLOW_rule__Instantiation__Group__0__Impl_in_rule__Instantiation__Group__07714);
             rule__Instantiation__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group__1_in_rule__Instantiation__Group__07531);
+            pushFollow(FOLLOW_rule__Instantiation__Group__1_in_rule__Instantiation__Group__07717);
             rule__Instantiation__Group__1();
 
             state._fsp--;
@@ -10138,20 +10393,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3766:1: rule__Instantiation__Group__0__Impl : ( '@' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3860:1: rule__Instantiation__Group__0__Impl : ( '@' ) ;
     public final void rule__Instantiation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3770:1: ( ( '@' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3771:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3864:1: ( ( '@' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3865:1: ( '@' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3771:1: ( '@' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3772:1: '@'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3865:1: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3866:1: '@'
             {
              before(grammarAccess.getInstantiationAccess().getCommercialAtKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__Instantiation__Group__0__Impl7559); 
+            match(input,23,FOLLOW_23_in_rule__Instantiation__Group__0__Impl7745); 
              after(grammarAccess.getInstantiationAccess().getCommercialAtKeyword_0()); 
 
             }
@@ -10175,21 +10430,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3785:1: rule__Instantiation__Group__1 : rule__Instantiation__Group__1__Impl rule__Instantiation__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3879:1: rule__Instantiation__Group__1 : rule__Instantiation__Group__1__Impl rule__Instantiation__Group__2 ;
     public final void rule__Instantiation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3789:1: ( rule__Instantiation__Group__1__Impl rule__Instantiation__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3790:2: rule__Instantiation__Group__1__Impl rule__Instantiation__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3883:1: ( rule__Instantiation__Group__1__Impl rule__Instantiation__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3884:2: rule__Instantiation__Group__1__Impl rule__Instantiation__Group__2
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group__1__Impl_in_rule__Instantiation__Group__17590);
+            pushFollow(FOLLOW_rule__Instantiation__Group__1__Impl_in_rule__Instantiation__Group__17776);
             rule__Instantiation__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group__2_in_rule__Instantiation__Group__17593);
+            pushFollow(FOLLOW_rule__Instantiation__Group__2_in_rule__Instantiation__Group__17779);
             rule__Instantiation__Group__2();
 
             state._fsp--;
@@ -10213,23 +10468,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3797:1: rule__Instantiation__Group__1__Impl : ( ( rule__Instantiation__AddressAssignment_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3891:1: rule__Instantiation__Group__1__Impl : ( ( rule__Instantiation__AddressAssignment_1 ) ) ;
     public final void rule__Instantiation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3801:1: ( ( ( rule__Instantiation__AddressAssignment_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3802:1: ( ( rule__Instantiation__AddressAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3895:1: ( ( ( rule__Instantiation__AddressAssignment_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3896:1: ( ( rule__Instantiation__AddressAssignment_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3802:1: ( ( rule__Instantiation__AddressAssignment_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3803:1: ( rule__Instantiation__AddressAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3896:1: ( ( rule__Instantiation__AddressAssignment_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3897:1: ( rule__Instantiation__AddressAssignment_1 )
             {
              before(grammarAccess.getInstantiationAccess().getAddressAssignment_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3804:1: ( rule__Instantiation__AddressAssignment_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3804:2: rule__Instantiation__AddressAssignment_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3898:1: ( rule__Instantiation__AddressAssignment_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3898:2: rule__Instantiation__AddressAssignment_1
             {
-            pushFollow(FOLLOW_rule__Instantiation__AddressAssignment_1_in_rule__Instantiation__Group__1__Impl7620);
+            pushFollow(FOLLOW_rule__Instantiation__AddressAssignment_1_in_rule__Instantiation__Group__1__Impl7806);
             rule__Instantiation__AddressAssignment_1();
 
             state._fsp--;
@@ -10260,21 +10515,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3814:1: rule__Instantiation__Group__2 : rule__Instantiation__Group__2__Impl rule__Instantiation__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3908:1: rule__Instantiation__Group__2 : rule__Instantiation__Group__2__Impl rule__Instantiation__Group__3 ;
     public final void rule__Instantiation__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3818:1: ( rule__Instantiation__Group__2__Impl rule__Instantiation__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3819:2: rule__Instantiation__Group__2__Impl rule__Instantiation__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3912:1: ( rule__Instantiation__Group__2__Impl rule__Instantiation__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3913:2: rule__Instantiation__Group__2__Impl rule__Instantiation__Group__3
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group__2__Impl_in_rule__Instantiation__Group__27650);
+            pushFollow(FOLLOW_rule__Instantiation__Group__2__Impl_in_rule__Instantiation__Group__27836);
             rule__Instantiation__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group__3_in_rule__Instantiation__Group__27653);
+            pushFollow(FOLLOW_rule__Instantiation__Group__3_in_rule__Instantiation__Group__27839);
             rule__Instantiation__Group__3();
 
             state._fsp--;
@@ -10298,20 +10553,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3826:1: rule__Instantiation__Group__2__Impl : ( ':' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3920:1: rule__Instantiation__Group__2__Impl : ( ':' ) ;
     public final void rule__Instantiation__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3830:1: ( ( ':' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3831:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3924:1: ( ( ':' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3925:1: ( ':' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3831:1: ( ':' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3832:1: ':'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3925:1: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3926:1: ':'
             {
              before(grammarAccess.getInstantiationAccess().getColonKeyword_2()); 
-            match(input,21,FOLLOW_21_in_rule__Instantiation__Group__2__Impl7681); 
+            match(input,22,FOLLOW_22_in_rule__Instantiation__Group__2__Impl7867); 
              after(grammarAccess.getInstantiationAccess().getColonKeyword_2()); 
 
             }
@@ -10335,21 +10590,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3845:1: rule__Instantiation__Group__3 : rule__Instantiation__Group__3__Impl rule__Instantiation__Group__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3939:1: rule__Instantiation__Group__3 : rule__Instantiation__Group__3__Impl rule__Instantiation__Group__4 ;
     public final void rule__Instantiation__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3849:1: ( rule__Instantiation__Group__3__Impl rule__Instantiation__Group__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3850:2: rule__Instantiation__Group__3__Impl rule__Instantiation__Group__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3943:1: ( rule__Instantiation__Group__3__Impl rule__Instantiation__Group__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3944:2: rule__Instantiation__Group__3__Impl rule__Instantiation__Group__4
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group__3__Impl_in_rule__Instantiation__Group__37712);
+            pushFollow(FOLLOW_rule__Instantiation__Group__3__Impl_in_rule__Instantiation__Group__37898);
             rule__Instantiation__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group__4_in_rule__Instantiation__Group__37715);
+            pushFollow(FOLLOW_rule__Instantiation__Group__4_in_rule__Instantiation__Group__37901);
             rule__Instantiation__Group__4();
 
             state._fsp--;
@@ -10373,23 +10628,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3857:1: rule__Instantiation__Group__3__Impl : ( ( rule__Instantiation__KindAssignment_3 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3951:1: rule__Instantiation__Group__3__Impl : ( ( rule__Instantiation__KindAssignment_3 ) ) ;
     public final void rule__Instantiation__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3861:1: ( ( ( rule__Instantiation__KindAssignment_3 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3862:1: ( ( rule__Instantiation__KindAssignment_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3955:1: ( ( ( rule__Instantiation__KindAssignment_3 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3956:1: ( ( rule__Instantiation__KindAssignment_3 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3862:1: ( ( rule__Instantiation__KindAssignment_3 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3863:1: ( rule__Instantiation__KindAssignment_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3956:1: ( ( rule__Instantiation__KindAssignment_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3957:1: ( rule__Instantiation__KindAssignment_3 )
             {
              before(grammarAccess.getInstantiationAccess().getKindAssignment_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3864:1: ( rule__Instantiation__KindAssignment_3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3864:2: rule__Instantiation__KindAssignment_3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3958:1: ( rule__Instantiation__KindAssignment_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3958:2: rule__Instantiation__KindAssignment_3
             {
-            pushFollow(FOLLOW_rule__Instantiation__KindAssignment_3_in_rule__Instantiation__Group__3__Impl7742);
+            pushFollow(FOLLOW_rule__Instantiation__KindAssignment_3_in_rule__Instantiation__Group__3__Impl7928);
             rule__Instantiation__KindAssignment_3();
 
             state._fsp--;
@@ -10420,21 +10675,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3874:1: rule__Instantiation__Group__4 : rule__Instantiation__Group__4__Impl rule__Instantiation__Group__5 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3968:1: rule__Instantiation__Group__4 : rule__Instantiation__Group__4__Impl rule__Instantiation__Group__5 ;
     public final void rule__Instantiation__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3878:1: ( rule__Instantiation__Group__4__Impl rule__Instantiation__Group__5 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3879:2: rule__Instantiation__Group__4__Impl rule__Instantiation__Group__5
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3972:1: ( rule__Instantiation__Group__4__Impl rule__Instantiation__Group__5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3973:2: rule__Instantiation__Group__4__Impl rule__Instantiation__Group__5
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group__4__Impl_in_rule__Instantiation__Group__47772);
+            pushFollow(FOLLOW_rule__Instantiation__Group__4__Impl_in_rule__Instantiation__Group__47958);
             rule__Instantiation__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group__5_in_rule__Instantiation__Group__47775);
+            pushFollow(FOLLOW_rule__Instantiation__Group__5_in_rule__Instantiation__Group__47961);
             rule__Instantiation__Group__5();
 
             state._fsp--;
@@ -10458,20 +10713,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3886:1: rule__Instantiation__Group__4__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3980:1: rule__Instantiation__Group__4__Impl : ( '(' ) ;
     public final void rule__Instantiation__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3890:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3891:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3984:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3985:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3891:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3892:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3985:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3986:1: '('
             {
              before(grammarAccess.getInstantiationAccess().getLeftParenthesisKeyword_4()); 
-            match(input,16,FOLLOW_16_in_rule__Instantiation__Group__4__Impl7803); 
+            match(input,17,FOLLOW_17_in_rule__Instantiation__Group__4__Impl7989); 
              after(grammarAccess.getInstantiationAccess().getLeftParenthesisKeyword_4()); 
 
             }
@@ -10495,21 +10750,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__5"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3905:1: rule__Instantiation__Group__5 : rule__Instantiation__Group__5__Impl rule__Instantiation__Group__6 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3999:1: rule__Instantiation__Group__5 : rule__Instantiation__Group__5__Impl rule__Instantiation__Group__6 ;
     public final void rule__Instantiation__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3909:1: ( rule__Instantiation__Group__5__Impl rule__Instantiation__Group__6 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3910:2: rule__Instantiation__Group__5__Impl rule__Instantiation__Group__6
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4003:1: ( rule__Instantiation__Group__5__Impl rule__Instantiation__Group__6 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4004:2: rule__Instantiation__Group__5__Impl rule__Instantiation__Group__6
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group__5__Impl_in_rule__Instantiation__Group__57834);
+            pushFollow(FOLLOW_rule__Instantiation__Group__5__Impl_in_rule__Instantiation__Group__58020);
             rule__Instantiation__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group__6_in_rule__Instantiation__Group__57837);
+            pushFollow(FOLLOW_rule__Instantiation__Group__6_in_rule__Instantiation__Group__58023);
             rule__Instantiation__Group__6();
 
             state._fsp--;
@@ -10533,31 +10788,31 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__5__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3917:1: rule__Instantiation__Group__5__Impl : ( ( rule__Instantiation__Group_5__0 )? ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4011:1: rule__Instantiation__Group__5__Impl : ( ( rule__Instantiation__Group_5__0 )? ) ;
     public final void rule__Instantiation__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3921:1: ( ( ( rule__Instantiation__Group_5__0 )? ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3922:1: ( ( rule__Instantiation__Group_5__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4015:1: ( ( ( rule__Instantiation__Group_5__0 )? ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4016:1: ( ( rule__Instantiation__Group_5__0 )? )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3922:1: ( ( rule__Instantiation__Group_5__0 )? )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3923:1: ( rule__Instantiation__Group_5__0 )?
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4016:1: ( ( rule__Instantiation__Group_5__0 )? )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4017:1: ( rule__Instantiation__Group_5__0 )?
             {
              before(grammarAccess.getInstantiationAccess().getGroup_5()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3924:1: ( rule__Instantiation__Group_5__0 )?
-            int alt27=2;
-            int LA27_0 = input.LA(1);
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4018:1: ( rule__Instantiation__Group_5__0 )?
+            int alt28=2;
+            int LA28_0 = input.LA(1);
 
-            if ( ((LA27_0>=29 && LA27_0<=31)) ) {
-                alt27=1;
+            if ( ((LA28_0>=30 && LA28_0<=32)) ) {
+                alt28=1;
             }
-            switch (alt27) {
+            switch (alt28) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3924:2: rule__Instantiation__Group_5__0
+                    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4018:2: rule__Instantiation__Group_5__0
                     {
-                    pushFollow(FOLLOW_rule__Instantiation__Group_5__0_in_rule__Instantiation__Group__5__Impl7864);
+                    pushFollow(FOLLOW_rule__Instantiation__Group_5__0_in_rule__Instantiation__Group__5__Impl8050);
                     rule__Instantiation__Group_5__0();
 
                     state._fsp--;
@@ -10591,16 +10846,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__6"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3934:1: rule__Instantiation__Group__6 : rule__Instantiation__Group__6__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4028:1: rule__Instantiation__Group__6 : rule__Instantiation__Group__6__Impl ;
     public final void rule__Instantiation__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3938:1: ( rule__Instantiation__Group__6__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3939:2: rule__Instantiation__Group__6__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4032:1: ( rule__Instantiation__Group__6__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4033:2: rule__Instantiation__Group__6__Impl
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group__6__Impl_in_rule__Instantiation__Group__67895);
+            pushFollow(FOLLOW_rule__Instantiation__Group__6__Impl_in_rule__Instantiation__Group__68081);
             rule__Instantiation__Group__6__Impl();
 
             state._fsp--;
@@ -10624,20 +10879,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group__6__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3945:1: rule__Instantiation__Group__6__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4039:1: rule__Instantiation__Group__6__Impl : ( ')' ) ;
     public final void rule__Instantiation__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3949:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3950:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4043:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4044:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3950:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3951:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4044:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4045:1: ')'
             {
              before(grammarAccess.getInstantiationAccess().getRightParenthesisKeyword_6()); 
-            match(input,17,FOLLOW_17_in_rule__Instantiation__Group__6__Impl7923); 
+            match(input,18,FOLLOW_18_in_rule__Instantiation__Group__6__Impl8109); 
              after(grammarAccess.getInstantiationAccess().getRightParenthesisKeyword_6()); 
 
             }
@@ -10661,21 +10916,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3978:1: rule__Instantiation__Group_5__0 : rule__Instantiation__Group_5__0__Impl rule__Instantiation__Group_5__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4072:1: rule__Instantiation__Group_5__0 : rule__Instantiation__Group_5__0__Impl rule__Instantiation__Group_5__1 ;
     public final void rule__Instantiation__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3982:1: ( rule__Instantiation__Group_5__0__Impl rule__Instantiation__Group_5__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3983:2: rule__Instantiation__Group_5__0__Impl rule__Instantiation__Group_5__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4076:1: ( rule__Instantiation__Group_5__0__Impl rule__Instantiation__Group_5__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4077:2: rule__Instantiation__Group_5__0__Impl rule__Instantiation__Group_5__1
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group_5__0__Impl_in_rule__Instantiation__Group_5__07968);
+            pushFollow(FOLLOW_rule__Instantiation__Group_5__0__Impl_in_rule__Instantiation__Group_5__08154);
             rule__Instantiation__Group_5__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group_5__1_in_rule__Instantiation__Group_5__07971);
+            pushFollow(FOLLOW_rule__Instantiation__Group_5__1_in_rule__Instantiation__Group_5__08157);
             rule__Instantiation__Group_5__1();
 
             state._fsp--;
@@ -10699,23 +10954,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3990:1: rule__Instantiation__Group_5__0__Impl : ( ( rule__Instantiation__PropertiesAssignment_5_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4084:1: rule__Instantiation__Group_5__0__Impl : ( ( rule__Instantiation__PropertiesAssignment_5_0 ) ) ;
     public final void rule__Instantiation__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3994:1: ( ( ( rule__Instantiation__PropertiesAssignment_5_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3995:1: ( ( rule__Instantiation__PropertiesAssignment_5_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4088:1: ( ( ( rule__Instantiation__PropertiesAssignment_5_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4089:1: ( ( rule__Instantiation__PropertiesAssignment_5_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3995:1: ( ( rule__Instantiation__PropertiesAssignment_5_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3996:1: ( rule__Instantiation__PropertiesAssignment_5_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4089:1: ( ( rule__Instantiation__PropertiesAssignment_5_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4090:1: ( rule__Instantiation__PropertiesAssignment_5_0 )
             {
              before(grammarAccess.getInstantiationAccess().getPropertiesAssignment_5_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3997:1: ( rule__Instantiation__PropertiesAssignment_5_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:3997:2: rule__Instantiation__PropertiesAssignment_5_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4091:1: ( rule__Instantiation__PropertiesAssignment_5_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4091:2: rule__Instantiation__PropertiesAssignment_5_0
             {
-            pushFollow(FOLLOW_rule__Instantiation__PropertiesAssignment_5_0_in_rule__Instantiation__Group_5__0__Impl7998);
+            pushFollow(FOLLOW_rule__Instantiation__PropertiesAssignment_5_0_in_rule__Instantiation__Group_5__0__Impl8184);
             rule__Instantiation__PropertiesAssignment_5_0();
 
             state._fsp--;
@@ -10746,16 +11001,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4007:1: rule__Instantiation__Group_5__1 : rule__Instantiation__Group_5__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4101:1: rule__Instantiation__Group_5__1 : rule__Instantiation__Group_5__1__Impl ;
     public final void rule__Instantiation__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4011:1: ( rule__Instantiation__Group_5__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4012:2: rule__Instantiation__Group_5__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4105:1: ( rule__Instantiation__Group_5__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4106:2: rule__Instantiation__Group_5__1__Impl
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group_5__1__Impl_in_rule__Instantiation__Group_5__18028);
+            pushFollow(FOLLOW_rule__Instantiation__Group_5__1__Impl_in_rule__Instantiation__Group_5__18214);
             rule__Instantiation__Group_5__1__Impl();
 
             state._fsp--;
@@ -10779,35 +11034,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4018:1: rule__Instantiation__Group_5__1__Impl : ( ( rule__Instantiation__Group_5_1__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4112:1: rule__Instantiation__Group_5__1__Impl : ( ( rule__Instantiation__Group_5_1__0 )* ) ;
     public final void rule__Instantiation__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4022:1: ( ( ( rule__Instantiation__Group_5_1__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4023:1: ( ( rule__Instantiation__Group_5_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4116:1: ( ( ( rule__Instantiation__Group_5_1__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4117:1: ( ( rule__Instantiation__Group_5_1__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4023:1: ( ( rule__Instantiation__Group_5_1__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4024:1: ( rule__Instantiation__Group_5_1__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4117:1: ( ( rule__Instantiation__Group_5_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4118:1: ( rule__Instantiation__Group_5_1__0 )*
             {
              before(grammarAccess.getInstantiationAccess().getGroup_5_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4025:1: ( rule__Instantiation__Group_5_1__0 )*
-            loop28:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4119:1: ( rule__Instantiation__Group_5_1__0 )*
+            loop29:
             do {
-                int alt28=2;
-                int LA28_0 = input.LA(1);
+                int alt29=2;
+                int LA29_0 = input.LA(1);
 
-                if ( (LA28_0==20) ) {
-                    alt28=1;
+                if ( (LA29_0==21) ) {
+                    alt29=1;
                 }
 
 
-                switch (alt28) {
+                switch (alt29) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4025:2: rule__Instantiation__Group_5_1__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4119:2: rule__Instantiation__Group_5_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__Instantiation__Group_5_1__0_in_rule__Instantiation__Group_5__1__Impl8055);
+            	    pushFollow(FOLLOW_rule__Instantiation__Group_5_1__0_in_rule__Instantiation__Group_5__1__Impl8241);
             	    rule__Instantiation__Group_5_1__0();
 
             	    state._fsp--;
@@ -10817,7 +11072,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop28;
+            	    break loop29;
                 }
             } while (true);
 
@@ -10844,21 +11099,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4039:1: rule__Instantiation__Group_5_1__0 : rule__Instantiation__Group_5_1__0__Impl rule__Instantiation__Group_5_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4133:1: rule__Instantiation__Group_5_1__0 : rule__Instantiation__Group_5_1__0__Impl rule__Instantiation__Group_5_1__1 ;
     public final void rule__Instantiation__Group_5_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4043:1: ( rule__Instantiation__Group_5_1__0__Impl rule__Instantiation__Group_5_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4044:2: rule__Instantiation__Group_5_1__0__Impl rule__Instantiation__Group_5_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4137:1: ( rule__Instantiation__Group_5_1__0__Impl rule__Instantiation__Group_5_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4138:2: rule__Instantiation__Group_5_1__0__Impl rule__Instantiation__Group_5_1__1
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group_5_1__0__Impl_in_rule__Instantiation__Group_5_1__08090);
+            pushFollow(FOLLOW_rule__Instantiation__Group_5_1__0__Impl_in_rule__Instantiation__Group_5_1__08276);
             rule__Instantiation__Group_5_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Instantiation__Group_5_1__1_in_rule__Instantiation__Group_5_1__08093);
+            pushFollow(FOLLOW_rule__Instantiation__Group_5_1__1_in_rule__Instantiation__Group_5_1__08279);
             rule__Instantiation__Group_5_1__1();
 
             state._fsp--;
@@ -10882,20 +11137,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4051:1: rule__Instantiation__Group_5_1__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4145:1: rule__Instantiation__Group_5_1__0__Impl : ( ',' ) ;
     public final void rule__Instantiation__Group_5_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4055:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4056:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4149:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4150:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4056:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4057:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4150:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4151:1: ','
             {
              before(grammarAccess.getInstantiationAccess().getCommaKeyword_5_1_0()); 
-            match(input,20,FOLLOW_20_in_rule__Instantiation__Group_5_1__0__Impl8121); 
+            match(input,21,FOLLOW_21_in_rule__Instantiation__Group_5_1__0__Impl8307); 
              after(grammarAccess.getInstantiationAccess().getCommaKeyword_5_1_0()); 
 
             }
@@ -10919,16 +11174,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4070:1: rule__Instantiation__Group_5_1__1 : rule__Instantiation__Group_5_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4164:1: rule__Instantiation__Group_5_1__1 : rule__Instantiation__Group_5_1__1__Impl ;
     public final void rule__Instantiation__Group_5_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4074:1: ( rule__Instantiation__Group_5_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4075:2: rule__Instantiation__Group_5_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4168:1: ( rule__Instantiation__Group_5_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4169:2: rule__Instantiation__Group_5_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__Instantiation__Group_5_1__1__Impl_in_rule__Instantiation__Group_5_1__18152);
+            pushFollow(FOLLOW_rule__Instantiation__Group_5_1__1__Impl_in_rule__Instantiation__Group_5_1__18338);
             rule__Instantiation__Group_5_1__1__Impl();
 
             state._fsp--;
@@ -10952,23 +11207,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__Group_5_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4081:1: rule__Instantiation__Group_5_1__1__Impl : ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4175:1: rule__Instantiation__Group_5_1__1__Impl : ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) ) ;
     public final void rule__Instantiation__Group_5_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4085:1: ( ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4086:1: ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4179:1: ( ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4180:1: ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4086:1: ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4087:1: ( rule__Instantiation__PropertiesAssignment_5_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4180:1: ( ( rule__Instantiation__PropertiesAssignment_5_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4181:1: ( rule__Instantiation__PropertiesAssignment_5_1_1 )
             {
              before(grammarAccess.getInstantiationAccess().getPropertiesAssignment_5_1_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4088:1: ( rule__Instantiation__PropertiesAssignment_5_1_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4088:2: rule__Instantiation__PropertiesAssignment_5_1_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4182:1: ( rule__Instantiation__PropertiesAssignment_5_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4182:2: rule__Instantiation__PropertiesAssignment_5_1_1
             {
-            pushFollow(FOLLOW_rule__Instantiation__PropertiesAssignment_5_1_1_in_rule__Instantiation__Group_5_1__1__Impl8179);
+            pushFollow(FOLLOW_rule__Instantiation__PropertiesAssignment_5_1_1_in_rule__Instantiation__Group_5_1__1__Impl8365);
             rule__Instantiation__PropertiesAssignment_5_1_1();
 
             state._fsp--;
@@ -10999,21 +11254,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4102:1: rule__DirectAddressSpec__Group__0 : rule__DirectAddressSpec__Group__0__Impl rule__DirectAddressSpec__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4196:1: rule__DirectAddressSpec__Group__0 : rule__DirectAddressSpec__Group__0__Impl rule__DirectAddressSpec__Group__1 ;
     public final void rule__DirectAddressSpec__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4106:1: ( rule__DirectAddressSpec__Group__0__Impl rule__DirectAddressSpec__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4107:2: rule__DirectAddressSpec__Group__0__Impl rule__DirectAddressSpec__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4200:1: ( rule__DirectAddressSpec__Group__0__Impl rule__DirectAddressSpec__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4201:2: rule__DirectAddressSpec__Group__0__Impl rule__DirectAddressSpec__Group__1
             {
-            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__0__Impl_in_rule__DirectAddressSpec__Group__08213);
+            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__0__Impl_in_rule__DirectAddressSpec__Group__08399);
             rule__DirectAddressSpec__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__1_in_rule__DirectAddressSpec__Group__08216);
+            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__1_in_rule__DirectAddressSpec__Group__08402);
             rule__DirectAddressSpec__Group__1();
 
             state._fsp--;
@@ -11037,23 +11292,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4114:1: rule__DirectAddressSpec__Group__0__Impl : ( ( rule__DirectAddressSpec__NameAssignment_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4208:1: rule__DirectAddressSpec__Group__0__Impl : ( ( rule__DirectAddressSpec__NameAssignment_0 ) ) ;
     public final void rule__DirectAddressSpec__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4118:1: ( ( ( rule__DirectAddressSpec__NameAssignment_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4119:1: ( ( rule__DirectAddressSpec__NameAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4212:1: ( ( ( rule__DirectAddressSpec__NameAssignment_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4213:1: ( ( rule__DirectAddressSpec__NameAssignment_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4119:1: ( ( rule__DirectAddressSpec__NameAssignment_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4120:1: ( rule__DirectAddressSpec__NameAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4213:1: ( ( rule__DirectAddressSpec__NameAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4214:1: ( rule__DirectAddressSpec__NameAssignment_0 )
             {
              before(grammarAccess.getDirectAddressSpecAccess().getNameAssignment_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4121:1: ( rule__DirectAddressSpec__NameAssignment_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4121:2: rule__DirectAddressSpec__NameAssignment_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4215:1: ( rule__DirectAddressSpec__NameAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4215:2: rule__DirectAddressSpec__NameAssignment_0
             {
-            pushFollow(FOLLOW_rule__DirectAddressSpec__NameAssignment_0_in_rule__DirectAddressSpec__Group__0__Impl8243);
+            pushFollow(FOLLOW_rule__DirectAddressSpec__NameAssignment_0_in_rule__DirectAddressSpec__Group__0__Impl8429);
             rule__DirectAddressSpec__NameAssignment_0();
 
             state._fsp--;
@@ -11084,21 +11339,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4131:1: rule__DirectAddressSpec__Group__1 : rule__DirectAddressSpec__Group__1__Impl rule__DirectAddressSpec__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4225:1: rule__DirectAddressSpec__Group__1 : rule__DirectAddressSpec__Group__1__Impl rule__DirectAddressSpec__Group__2 ;
     public final void rule__DirectAddressSpec__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4135:1: ( rule__DirectAddressSpec__Group__1__Impl rule__DirectAddressSpec__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4136:2: rule__DirectAddressSpec__Group__1__Impl rule__DirectAddressSpec__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4229:1: ( rule__DirectAddressSpec__Group__1__Impl rule__DirectAddressSpec__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4230:2: rule__DirectAddressSpec__Group__1__Impl rule__DirectAddressSpec__Group__2
             {
-            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__1__Impl_in_rule__DirectAddressSpec__Group__18273);
+            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__1__Impl_in_rule__DirectAddressSpec__Group__18459);
             rule__DirectAddressSpec__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__2_in_rule__DirectAddressSpec__Group__18276);
+            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__2_in_rule__DirectAddressSpec__Group__18462);
             rule__DirectAddressSpec__Group__2();
 
             state._fsp--;
@@ -11122,20 +11377,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4143:1: rule__DirectAddressSpec__Group__1__Impl : ( '=' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4237:1: rule__DirectAddressSpec__Group__1__Impl : ( '=' ) ;
     public final void rule__DirectAddressSpec__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4147:1: ( ( '=' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4148:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4241:1: ( ( '=' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4242:1: ( '=' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4148:1: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4149:1: '='
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4242:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4243:1: '='
             {
              before(grammarAccess.getDirectAddressSpecAccess().getEqualsSignKeyword_1()); 
-            match(input,25,FOLLOW_25_in_rule__DirectAddressSpec__Group__1__Impl8304); 
+            match(input,26,FOLLOW_26_in_rule__DirectAddressSpec__Group__1__Impl8490); 
              after(grammarAccess.getDirectAddressSpecAccess().getEqualsSignKeyword_1()); 
 
             }
@@ -11159,16 +11414,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4162:1: rule__DirectAddressSpec__Group__2 : rule__DirectAddressSpec__Group__2__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4256:1: rule__DirectAddressSpec__Group__2 : rule__DirectAddressSpec__Group__2__Impl ;
     public final void rule__DirectAddressSpec__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4166:1: ( rule__DirectAddressSpec__Group__2__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4167:2: rule__DirectAddressSpec__Group__2__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4260:1: ( rule__DirectAddressSpec__Group__2__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4261:2: rule__DirectAddressSpec__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__2__Impl_in_rule__DirectAddressSpec__Group__28335);
+            pushFollow(FOLLOW_rule__DirectAddressSpec__Group__2__Impl_in_rule__DirectAddressSpec__Group__28521);
             rule__DirectAddressSpec__Group__2__Impl();
 
             state._fsp--;
@@ -11192,23 +11447,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4173:1: rule__DirectAddressSpec__Group__2__Impl : ( ( rule__DirectAddressSpec__AddressAssignment_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4267:1: rule__DirectAddressSpec__Group__2__Impl : ( ( rule__DirectAddressSpec__AddressAssignment_2 ) ) ;
     public final void rule__DirectAddressSpec__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4177:1: ( ( ( rule__DirectAddressSpec__AddressAssignment_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4178:1: ( ( rule__DirectAddressSpec__AddressAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4271:1: ( ( ( rule__DirectAddressSpec__AddressAssignment_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4272:1: ( ( rule__DirectAddressSpec__AddressAssignment_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4178:1: ( ( rule__DirectAddressSpec__AddressAssignment_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4179:1: ( rule__DirectAddressSpec__AddressAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4272:1: ( ( rule__DirectAddressSpec__AddressAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4273:1: ( rule__DirectAddressSpec__AddressAssignment_2 )
             {
              before(grammarAccess.getDirectAddressSpecAccess().getAddressAssignment_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4180:1: ( rule__DirectAddressSpec__AddressAssignment_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4180:2: rule__DirectAddressSpec__AddressAssignment_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4274:1: ( rule__DirectAddressSpec__AddressAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4274:2: rule__DirectAddressSpec__AddressAssignment_2
             {
-            pushFollow(FOLLOW_rule__DirectAddressSpec__AddressAssignment_2_in_rule__DirectAddressSpec__Group__2__Impl8362);
+            pushFollow(FOLLOW_rule__DirectAddressSpec__AddressAssignment_2_in_rule__DirectAddressSpec__Group__2__Impl8548);
             rule__DirectAddressSpec__AddressAssignment_2();
 
             state._fsp--;
@@ -11239,21 +11494,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4196:1: rule__InstantiationProperty__Group_0__0 : rule__InstantiationProperty__Group_0__0__Impl rule__InstantiationProperty__Group_0__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4290:1: rule__InstantiationProperty__Group_0__0 : rule__InstantiationProperty__Group_0__0__Impl rule__InstantiationProperty__Group_0__1 ;
     public final void rule__InstantiationProperty__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4200:1: ( rule__InstantiationProperty__Group_0__0__Impl rule__InstantiationProperty__Group_0__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4201:2: rule__InstantiationProperty__Group_0__0__Impl rule__InstantiationProperty__Group_0__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4294:1: ( rule__InstantiationProperty__Group_0__0__Impl rule__InstantiationProperty__Group_0__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4295:2: rule__InstantiationProperty__Group_0__0__Impl rule__InstantiationProperty__Group_0__1
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__0__Impl_in_rule__InstantiationProperty__Group_0__08398);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__0__Impl_in_rule__InstantiationProperty__Group_0__08584);
             rule__InstantiationProperty__Group_0__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__1_in_rule__InstantiationProperty__Group_0__08401);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__1_in_rule__InstantiationProperty__Group_0__08587);
             rule__InstantiationProperty__Group_0__1();
 
             state._fsp--;
@@ -11277,21 +11532,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4208:1: rule__InstantiationProperty__Group_0__0__Impl : ( () ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4302:1: rule__InstantiationProperty__Group_0__0__Impl : ( () ) ;
     public final void rule__InstantiationProperty__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4212:1: ( ( () ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4213:1: ( () )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4306:1: ( ( () ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4307:1: ( () )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4213:1: ( () )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4214:1: ()
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4307:1: ( () )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4308:1: ()
             {
              before(grammarAccess.getInstantiationPropertyAccess().getIDPropertyAction_0_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4215:1: ()
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4217:1: 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4309:1: ()
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4311:1: 
             {
             }
 
@@ -11314,21 +11569,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4227:1: rule__InstantiationProperty__Group_0__1 : rule__InstantiationProperty__Group_0__1__Impl rule__InstantiationProperty__Group_0__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4321:1: rule__InstantiationProperty__Group_0__1 : rule__InstantiationProperty__Group_0__1__Impl rule__InstantiationProperty__Group_0__2 ;
     public final void rule__InstantiationProperty__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4231:1: ( rule__InstantiationProperty__Group_0__1__Impl rule__InstantiationProperty__Group_0__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4232:2: rule__InstantiationProperty__Group_0__1__Impl rule__InstantiationProperty__Group_0__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4325:1: ( rule__InstantiationProperty__Group_0__1__Impl rule__InstantiationProperty__Group_0__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4326:2: rule__InstantiationProperty__Group_0__1__Impl rule__InstantiationProperty__Group_0__2
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__1__Impl_in_rule__InstantiationProperty__Group_0__18459);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__1__Impl_in_rule__InstantiationProperty__Group_0__18645);
             rule__InstantiationProperty__Group_0__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__2_in_rule__InstantiationProperty__Group_0__18462);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__2_in_rule__InstantiationProperty__Group_0__18648);
             rule__InstantiationProperty__Group_0__2();
 
             state._fsp--;
@@ -11352,20 +11607,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4239:1: rule__InstantiationProperty__Group_0__1__Impl : ( 'ID' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4333:1: rule__InstantiationProperty__Group_0__1__Impl : ( 'ID' ) ;
     public final void rule__InstantiationProperty__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4243:1: ( ( 'ID' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4244:1: ( 'ID' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4337:1: ( ( 'ID' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4338:1: ( 'ID' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4244:1: ( 'ID' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4245:1: 'ID'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4338:1: ( 'ID' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4339:1: 'ID'
             {
              before(grammarAccess.getInstantiationPropertyAccess().getIDKeyword_0_1()); 
-            match(input,29,FOLLOW_29_in_rule__InstantiationProperty__Group_0__1__Impl8490); 
+            match(input,30,FOLLOW_30_in_rule__InstantiationProperty__Group_0__1__Impl8676); 
              after(grammarAccess.getInstantiationPropertyAccess().getIDKeyword_0_1()); 
 
             }
@@ -11389,21 +11644,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4258:1: rule__InstantiationProperty__Group_0__2 : rule__InstantiationProperty__Group_0__2__Impl rule__InstantiationProperty__Group_0__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4352:1: rule__InstantiationProperty__Group_0__2 : rule__InstantiationProperty__Group_0__2__Impl rule__InstantiationProperty__Group_0__3 ;
     public final void rule__InstantiationProperty__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4262:1: ( rule__InstantiationProperty__Group_0__2__Impl rule__InstantiationProperty__Group_0__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4263:2: rule__InstantiationProperty__Group_0__2__Impl rule__InstantiationProperty__Group_0__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4356:1: ( rule__InstantiationProperty__Group_0__2__Impl rule__InstantiationProperty__Group_0__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4357:2: rule__InstantiationProperty__Group_0__2__Impl rule__InstantiationProperty__Group_0__3
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__2__Impl_in_rule__InstantiationProperty__Group_0__28521);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__2__Impl_in_rule__InstantiationProperty__Group_0__28707);
             rule__InstantiationProperty__Group_0__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__3_in_rule__InstantiationProperty__Group_0__28524);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__3_in_rule__InstantiationProperty__Group_0__28710);
             rule__InstantiationProperty__Group_0__3();
 
             state._fsp--;
@@ -11427,20 +11682,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4270:1: rule__InstantiationProperty__Group_0__2__Impl : ( '=' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4364:1: rule__InstantiationProperty__Group_0__2__Impl : ( '=' ) ;
     public final void rule__InstantiationProperty__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4274:1: ( ( '=' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4275:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4368:1: ( ( '=' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4369:1: ( '=' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4275:1: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4276:1: '='
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4369:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4370:1: '='
             {
              before(grammarAccess.getInstantiationPropertyAccess().getEqualsSignKeyword_0_2()); 
-            match(input,25,FOLLOW_25_in_rule__InstantiationProperty__Group_0__2__Impl8552); 
+            match(input,26,FOLLOW_26_in_rule__InstantiationProperty__Group_0__2__Impl8738); 
              after(grammarAccess.getInstantiationPropertyAccess().getEqualsSignKeyword_0_2()); 
 
             }
@@ -11464,16 +11719,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4289:1: rule__InstantiationProperty__Group_0__3 : rule__InstantiationProperty__Group_0__3__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4383:1: rule__InstantiationProperty__Group_0__3 : rule__InstantiationProperty__Group_0__3__Impl ;
     public final void rule__InstantiationProperty__Group_0__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4293:1: ( rule__InstantiationProperty__Group_0__3__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4294:2: rule__InstantiationProperty__Group_0__3__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4387:1: ( rule__InstantiationProperty__Group_0__3__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4388:2: rule__InstantiationProperty__Group_0__3__Impl
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__3__Impl_in_rule__InstantiationProperty__Group_0__38583);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_0__3__Impl_in_rule__InstantiationProperty__Group_0__38769);
             rule__InstantiationProperty__Group_0__3__Impl();
 
             state._fsp--;
@@ -11497,23 +11752,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_0__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4300:1: rule__InstantiationProperty__Group_0__3__Impl : ( ( rule__InstantiationProperty__IdAssignment_0_3 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4394:1: rule__InstantiationProperty__Group_0__3__Impl : ( ( rule__InstantiationProperty__IdAssignment_0_3 ) ) ;
     public final void rule__InstantiationProperty__Group_0__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4304:1: ( ( ( rule__InstantiationProperty__IdAssignment_0_3 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4305:1: ( ( rule__InstantiationProperty__IdAssignment_0_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4398:1: ( ( ( rule__InstantiationProperty__IdAssignment_0_3 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4399:1: ( ( rule__InstantiationProperty__IdAssignment_0_3 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4305:1: ( ( rule__InstantiationProperty__IdAssignment_0_3 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4306:1: ( rule__InstantiationProperty__IdAssignment_0_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4399:1: ( ( rule__InstantiationProperty__IdAssignment_0_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4400:1: ( rule__InstantiationProperty__IdAssignment_0_3 )
             {
              before(grammarAccess.getInstantiationPropertyAccess().getIdAssignment_0_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4307:1: ( rule__InstantiationProperty__IdAssignment_0_3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4307:2: rule__InstantiationProperty__IdAssignment_0_3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4401:1: ( rule__InstantiationProperty__IdAssignment_0_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4401:2: rule__InstantiationProperty__IdAssignment_0_3
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__IdAssignment_0_3_in_rule__InstantiationProperty__Group_0__3__Impl8610);
+            pushFollow(FOLLOW_rule__InstantiationProperty__IdAssignment_0_3_in_rule__InstantiationProperty__Group_0__3__Impl8796);
             rule__InstantiationProperty__IdAssignment_0_3();
 
             state._fsp--;
@@ -11544,21 +11799,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4325:1: rule__InstantiationProperty__Group_1__0 : rule__InstantiationProperty__Group_1__0__Impl rule__InstantiationProperty__Group_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4419:1: rule__InstantiationProperty__Group_1__0 : rule__InstantiationProperty__Group_1__0__Impl rule__InstantiationProperty__Group_1__1 ;
     public final void rule__InstantiationProperty__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4329:1: ( rule__InstantiationProperty__Group_1__0__Impl rule__InstantiationProperty__Group_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4330:2: rule__InstantiationProperty__Group_1__0__Impl rule__InstantiationProperty__Group_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4423:1: ( rule__InstantiationProperty__Group_1__0__Impl rule__InstantiationProperty__Group_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4424:2: rule__InstantiationProperty__Group_1__0__Impl rule__InstantiationProperty__Group_1__1
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_1__0__Impl_in_rule__InstantiationProperty__Group_1__08648);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_1__0__Impl_in_rule__InstantiationProperty__Group_1__08834);
             rule__InstantiationProperty__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_1__1_in_rule__InstantiationProperty__Group_1__08651);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_1__1_in_rule__InstantiationProperty__Group_1__08837);
             rule__InstantiationProperty__Group_1__1();
 
             state._fsp--;
@@ -11582,21 +11837,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4337:1: rule__InstantiationProperty__Group_1__0__Impl : ( () ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4431:1: rule__InstantiationProperty__Group_1__0__Impl : ( () ) ;
     public final void rule__InstantiationProperty__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4341:1: ( ( () ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4342:1: ( () )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4435:1: ( ( () ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4436:1: ( () )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4342:1: ( () )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4343:1: ()
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4436:1: ( () )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4437:1: ()
             {
              before(grammarAccess.getInstantiationPropertyAccess().getCRCPropertyAction_1_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4344:1: ()
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4346:1: 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4438:1: ()
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4440:1: 
             {
             }
 
@@ -11619,16 +11874,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4356:1: rule__InstantiationProperty__Group_1__1 : rule__InstantiationProperty__Group_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4450:1: rule__InstantiationProperty__Group_1__1 : rule__InstantiationProperty__Group_1__1__Impl ;
     public final void rule__InstantiationProperty__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4360:1: ( rule__InstantiationProperty__Group_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4361:2: rule__InstantiationProperty__Group_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4454:1: ( rule__InstantiationProperty__Group_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4455:2: rule__InstantiationProperty__Group_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_1__1__Impl_in_rule__InstantiationProperty__Group_1__18709);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_1__1__Impl_in_rule__InstantiationProperty__Group_1__18895);
             rule__InstantiationProperty__Group_1__1__Impl();
 
             state._fsp--;
@@ -11652,20 +11907,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4367:1: rule__InstantiationProperty__Group_1__1__Impl : ( 'CRC' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4461:1: rule__InstantiationProperty__Group_1__1__Impl : ( 'CRC' ) ;
     public final void rule__InstantiationProperty__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4371:1: ( ( 'CRC' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4372:1: ( 'CRC' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4465:1: ( ( 'CRC' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4466:1: ( 'CRC' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4372:1: ( 'CRC' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4373:1: 'CRC'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4466:1: ( 'CRC' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4467:1: 'CRC'
             {
              before(grammarAccess.getInstantiationPropertyAccess().getCRCKeyword_1_1()); 
-            match(input,30,FOLLOW_30_in_rule__InstantiationProperty__Group_1__1__Impl8737); 
+            match(input,31,FOLLOW_31_in_rule__InstantiationProperty__Group_1__1__Impl8923); 
              after(grammarAccess.getInstantiationPropertyAccess().getCRCKeyword_1_1()); 
 
             }
@@ -11689,21 +11944,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4390:1: rule__InstantiationProperty__Group_2__0 : rule__InstantiationProperty__Group_2__0__Impl rule__InstantiationProperty__Group_2__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4484:1: rule__InstantiationProperty__Group_2__0 : rule__InstantiationProperty__Group_2__0__Impl rule__InstantiationProperty__Group_2__1 ;
     public final void rule__InstantiationProperty__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4394:1: ( rule__InstantiationProperty__Group_2__0__Impl rule__InstantiationProperty__Group_2__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4395:2: rule__InstantiationProperty__Group_2__0__Impl rule__InstantiationProperty__Group_2__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4488:1: ( rule__InstantiationProperty__Group_2__0__Impl rule__InstantiationProperty__Group_2__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4489:2: rule__InstantiationProperty__Group_2__0__Impl rule__InstantiationProperty__Group_2__1
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__0__Impl_in_rule__InstantiationProperty__Group_2__08772);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__0__Impl_in_rule__InstantiationProperty__Group_2__08958);
             rule__InstantiationProperty__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__1_in_rule__InstantiationProperty__Group_2__08775);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__1_in_rule__InstantiationProperty__Group_2__08961);
             rule__InstantiationProperty__Group_2__1();
 
             state._fsp--;
@@ -11727,21 +11982,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4402:1: rule__InstantiationProperty__Group_2__0__Impl : ( () ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4496:1: rule__InstantiationProperty__Group_2__0__Impl : ( () ) ;
     public final void rule__InstantiationProperty__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4406:1: ( ( () ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4407:1: ( () )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4500:1: ( ( () ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4501:1: ( () )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4407:1: ( () )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4408:1: ()
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4501:1: ( () )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4502:1: ()
             {
              before(grammarAccess.getInstantiationPropertyAccess().getPublishPropertyAction_2_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4409:1: ()
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4411:1: 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4503:1: ()
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4505:1: 
             {
             }
 
@@ -11764,21 +12019,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4421:1: rule__InstantiationProperty__Group_2__1 : rule__InstantiationProperty__Group_2__1__Impl rule__InstantiationProperty__Group_2__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4515:1: rule__InstantiationProperty__Group_2__1 : rule__InstantiationProperty__Group_2__1__Impl rule__InstantiationProperty__Group_2__2 ;
     public final void rule__InstantiationProperty__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4425:1: ( rule__InstantiationProperty__Group_2__1__Impl rule__InstantiationProperty__Group_2__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4426:2: rule__InstantiationProperty__Group_2__1__Impl rule__InstantiationProperty__Group_2__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4519:1: ( rule__InstantiationProperty__Group_2__1__Impl rule__InstantiationProperty__Group_2__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4520:2: rule__InstantiationProperty__Group_2__1__Impl rule__InstantiationProperty__Group_2__2
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__1__Impl_in_rule__InstantiationProperty__Group_2__18833);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__1__Impl_in_rule__InstantiationProperty__Group_2__19019);
             rule__InstantiationProperty__Group_2__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__2_in_rule__InstantiationProperty__Group_2__18836);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__2_in_rule__InstantiationProperty__Group_2__19022);
             rule__InstantiationProperty__Group_2__2();
 
             state._fsp--;
@@ -11802,20 +12057,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4433:1: rule__InstantiationProperty__Group_2__1__Impl : ( 'PUBLISH' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4527:1: rule__InstantiationProperty__Group_2__1__Impl : ( 'PUBLISH' ) ;
     public final void rule__InstantiationProperty__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4437:1: ( ( 'PUBLISH' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4438:1: ( 'PUBLISH' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4531:1: ( ( 'PUBLISH' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4532:1: ( 'PUBLISH' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4438:1: ( 'PUBLISH' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4439:1: 'PUBLISH'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4532:1: ( 'PUBLISH' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4533:1: 'PUBLISH'
             {
              before(grammarAccess.getInstantiationPropertyAccess().getPUBLISHKeyword_2_1()); 
-            match(input,31,FOLLOW_31_in_rule__InstantiationProperty__Group_2__1__Impl8864); 
+            match(input,32,FOLLOW_32_in_rule__InstantiationProperty__Group_2__1__Impl9050); 
              after(grammarAccess.getInstantiationPropertyAccess().getPUBLISHKeyword_2_1()); 
 
             }
@@ -11839,21 +12094,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4452:1: rule__InstantiationProperty__Group_2__2 : rule__InstantiationProperty__Group_2__2__Impl rule__InstantiationProperty__Group_2__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4546:1: rule__InstantiationProperty__Group_2__2 : rule__InstantiationProperty__Group_2__2__Impl rule__InstantiationProperty__Group_2__3 ;
     public final void rule__InstantiationProperty__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4456:1: ( rule__InstantiationProperty__Group_2__2__Impl rule__InstantiationProperty__Group_2__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4457:2: rule__InstantiationProperty__Group_2__2__Impl rule__InstantiationProperty__Group_2__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4550:1: ( rule__InstantiationProperty__Group_2__2__Impl rule__InstantiationProperty__Group_2__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4551:2: rule__InstantiationProperty__Group_2__2__Impl rule__InstantiationProperty__Group_2__3
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__2__Impl_in_rule__InstantiationProperty__Group_2__28895);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__2__Impl_in_rule__InstantiationProperty__Group_2__29081);
             rule__InstantiationProperty__Group_2__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__3_in_rule__InstantiationProperty__Group_2__28898);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__3_in_rule__InstantiationProperty__Group_2__29084);
             rule__InstantiationProperty__Group_2__3();
 
             state._fsp--;
@@ -11877,20 +12132,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4464:1: rule__InstantiationProperty__Group_2__2__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4558:1: rule__InstantiationProperty__Group_2__2__Impl : ( '(' ) ;
     public final void rule__InstantiationProperty__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4468:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4469:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4562:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4563:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4469:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4470:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4563:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4564:1: '('
             {
              before(grammarAccess.getInstantiationPropertyAccess().getLeftParenthesisKeyword_2_2()); 
-            match(input,16,FOLLOW_16_in_rule__InstantiationProperty__Group_2__2__Impl8926); 
+            match(input,17,FOLLOW_17_in_rule__InstantiationProperty__Group_2__2__Impl9112); 
              after(grammarAccess.getInstantiationPropertyAccess().getLeftParenthesisKeyword_2_2()); 
 
             }
@@ -11914,21 +12169,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4483:1: rule__InstantiationProperty__Group_2__3 : rule__InstantiationProperty__Group_2__3__Impl rule__InstantiationProperty__Group_2__4 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4577:1: rule__InstantiationProperty__Group_2__3 : rule__InstantiationProperty__Group_2__3__Impl rule__InstantiationProperty__Group_2__4 ;
     public final void rule__InstantiationProperty__Group_2__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4487:1: ( rule__InstantiationProperty__Group_2__3__Impl rule__InstantiationProperty__Group_2__4 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4488:2: rule__InstantiationProperty__Group_2__3__Impl rule__InstantiationProperty__Group_2__4
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4581:1: ( rule__InstantiationProperty__Group_2__3__Impl rule__InstantiationProperty__Group_2__4 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4582:2: rule__InstantiationProperty__Group_2__3__Impl rule__InstantiationProperty__Group_2__4
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__3__Impl_in_rule__InstantiationProperty__Group_2__38957);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__3__Impl_in_rule__InstantiationProperty__Group_2__39143);
             rule__InstantiationProperty__Group_2__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__4_in_rule__InstantiationProperty__Group_2__38960);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__4_in_rule__InstantiationProperty__Group_2__39146);
             rule__InstantiationProperty__Group_2__4();
 
             state._fsp--;
@@ -11952,23 +12207,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4495:1: rule__InstantiationProperty__Group_2__3__Impl : ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4589:1: rule__InstantiationProperty__Group_2__3__Impl : ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) ) ;
     public final void rule__InstantiationProperty__Group_2__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4499:1: ( ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4500:1: ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4593:1: ( ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4594:1: ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4500:1: ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4501:1: ( rule__InstantiationProperty__ModeAssignment_2_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4594:1: ( ( rule__InstantiationProperty__ModeAssignment_2_3 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4595:1: ( rule__InstantiationProperty__ModeAssignment_2_3 )
             {
              before(grammarAccess.getInstantiationPropertyAccess().getModeAssignment_2_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4502:1: ( rule__InstantiationProperty__ModeAssignment_2_3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4502:2: rule__InstantiationProperty__ModeAssignment_2_3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4596:1: ( rule__InstantiationProperty__ModeAssignment_2_3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4596:2: rule__InstantiationProperty__ModeAssignment_2_3
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__ModeAssignment_2_3_in_rule__InstantiationProperty__Group_2__3__Impl8987);
+            pushFollow(FOLLOW_rule__InstantiationProperty__ModeAssignment_2_3_in_rule__InstantiationProperty__Group_2__3__Impl9173);
             rule__InstantiationProperty__ModeAssignment_2_3();
 
             state._fsp--;
@@ -11999,21 +12254,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__4"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4512:1: rule__InstantiationProperty__Group_2__4 : rule__InstantiationProperty__Group_2__4__Impl rule__InstantiationProperty__Group_2__5 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4606:1: rule__InstantiationProperty__Group_2__4 : rule__InstantiationProperty__Group_2__4__Impl rule__InstantiationProperty__Group_2__5 ;
     public final void rule__InstantiationProperty__Group_2__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4516:1: ( rule__InstantiationProperty__Group_2__4__Impl rule__InstantiationProperty__Group_2__5 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4517:2: rule__InstantiationProperty__Group_2__4__Impl rule__InstantiationProperty__Group_2__5
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4610:1: ( rule__InstantiationProperty__Group_2__4__Impl rule__InstantiationProperty__Group_2__5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4611:2: rule__InstantiationProperty__Group_2__4__Impl rule__InstantiationProperty__Group_2__5
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__4__Impl_in_rule__InstantiationProperty__Group_2__49017);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__4__Impl_in_rule__InstantiationProperty__Group_2__49203);
             rule__InstantiationProperty__Group_2__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__5_in_rule__InstantiationProperty__Group_2__49020);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__5_in_rule__InstantiationProperty__Group_2__49206);
             rule__InstantiationProperty__Group_2__5();
 
             state._fsp--;
@@ -12037,20 +12292,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__4__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4524:1: rule__InstantiationProperty__Group_2__4__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4618:1: rule__InstantiationProperty__Group_2__4__Impl : ( ',' ) ;
     public final void rule__InstantiationProperty__Group_2__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4528:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4529:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4622:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4623:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4529:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4530:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4623:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4624:1: ','
             {
              before(grammarAccess.getInstantiationPropertyAccess().getCommaKeyword_2_4()); 
-            match(input,20,FOLLOW_20_in_rule__InstantiationProperty__Group_2__4__Impl9048); 
+            match(input,21,FOLLOW_21_in_rule__InstantiationProperty__Group_2__4__Impl9234); 
              after(grammarAccess.getInstantiationPropertyAccess().getCommaKeyword_2_4()); 
 
             }
@@ -12074,21 +12329,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__5"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4543:1: rule__InstantiationProperty__Group_2__5 : rule__InstantiationProperty__Group_2__5__Impl rule__InstantiationProperty__Group_2__6 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4637:1: rule__InstantiationProperty__Group_2__5 : rule__InstantiationProperty__Group_2__5__Impl rule__InstantiationProperty__Group_2__6 ;
     public final void rule__InstantiationProperty__Group_2__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4547:1: ( rule__InstantiationProperty__Group_2__5__Impl rule__InstantiationProperty__Group_2__6 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4548:2: rule__InstantiationProperty__Group_2__5__Impl rule__InstantiationProperty__Group_2__6
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4641:1: ( rule__InstantiationProperty__Group_2__5__Impl rule__InstantiationProperty__Group_2__6 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4642:2: rule__InstantiationProperty__Group_2__5__Impl rule__InstantiationProperty__Group_2__6
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__5__Impl_in_rule__InstantiationProperty__Group_2__59079);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__5__Impl_in_rule__InstantiationProperty__Group_2__59265);
             rule__InstantiationProperty__Group_2__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__6_in_rule__InstantiationProperty__Group_2__59082);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__6_in_rule__InstantiationProperty__Group_2__59268);
             rule__InstantiationProperty__Group_2__6();
 
             state._fsp--;
@@ -12112,23 +12367,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__5__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4555:1: rule__InstantiationProperty__Group_2__5__Impl : ( ( rule__InstantiationProperty__RateAssignment_2_5 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4649:1: rule__InstantiationProperty__Group_2__5__Impl : ( ( rule__InstantiationProperty__RateAssignment_2_5 ) ) ;
     public final void rule__InstantiationProperty__Group_2__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4559:1: ( ( ( rule__InstantiationProperty__RateAssignment_2_5 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4560:1: ( ( rule__InstantiationProperty__RateAssignment_2_5 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4653:1: ( ( ( rule__InstantiationProperty__RateAssignment_2_5 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4654:1: ( ( rule__InstantiationProperty__RateAssignment_2_5 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4560:1: ( ( rule__InstantiationProperty__RateAssignment_2_5 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4561:1: ( rule__InstantiationProperty__RateAssignment_2_5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4654:1: ( ( rule__InstantiationProperty__RateAssignment_2_5 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4655:1: ( rule__InstantiationProperty__RateAssignment_2_5 )
             {
              before(grammarAccess.getInstantiationPropertyAccess().getRateAssignment_2_5()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4562:1: ( rule__InstantiationProperty__RateAssignment_2_5 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4562:2: rule__InstantiationProperty__RateAssignment_2_5
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4656:1: ( rule__InstantiationProperty__RateAssignment_2_5 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4656:2: rule__InstantiationProperty__RateAssignment_2_5
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__RateAssignment_2_5_in_rule__InstantiationProperty__Group_2__5__Impl9109);
+            pushFollow(FOLLOW_rule__InstantiationProperty__RateAssignment_2_5_in_rule__InstantiationProperty__Group_2__5__Impl9295);
             rule__InstantiationProperty__RateAssignment_2_5();
 
             state._fsp--;
@@ -12159,16 +12414,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__6"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4572:1: rule__InstantiationProperty__Group_2__6 : rule__InstantiationProperty__Group_2__6__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4666:1: rule__InstantiationProperty__Group_2__6 : rule__InstantiationProperty__Group_2__6__Impl ;
     public final void rule__InstantiationProperty__Group_2__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4576:1: ( rule__InstantiationProperty__Group_2__6__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4577:2: rule__InstantiationProperty__Group_2__6__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4670:1: ( rule__InstantiationProperty__Group_2__6__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4671:2: rule__InstantiationProperty__Group_2__6__Impl
             {
-            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__6__Impl_in_rule__InstantiationProperty__Group_2__69139);
+            pushFollow(FOLLOW_rule__InstantiationProperty__Group_2__6__Impl_in_rule__InstantiationProperty__Group_2__69325);
             rule__InstantiationProperty__Group_2__6__Impl();
 
             state._fsp--;
@@ -12192,20 +12447,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__Group_2__6__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4583:1: rule__InstantiationProperty__Group_2__6__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4677:1: rule__InstantiationProperty__Group_2__6__Impl : ( ')' ) ;
     public final void rule__InstantiationProperty__Group_2__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4587:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4588:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4681:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4682:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4588:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4589:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4682:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4683:1: ')'
             {
              before(grammarAccess.getInstantiationPropertyAccess().getRightParenthesisKeyword_2_6()); 
-            match(input,17,FOLLOW_17_in_rule__InstantiationProperty__Group_2__6__Impl9167); 
+            match(input,18,FOLLOW_18_in_rule__InstantiationProperty__Group_2__6__Impl9353); 
              after(grammarAccess.getInstantiationPropertyAccess().getRightParenthesisKeyword_2_6()); 
 
             }
@@ -12229,21 +12484,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4616:1: rule__Grouping__Group__0 : rule__Grouping__Group__0__Impl rule__Grouping__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4710:1: rule__Grouping__Group__0 : rule__Grouping__Group__0__Impl rule__Grouping__Group__1 ;
     public final void rule__Grouping__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4620:1: ( rule__Grouping__Group__0__Impl rule__Grouping__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4621:2: rule__Grouping__Group__0__Impl rule__Grouping__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4714:1: ( rule__Grouping__Group__0__Impl rule__Grouping__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4715:2: rule__Grouping__Group__0__Impl rule__Grouping__Group__1
             {
-            pushFollow(FOLLOW_rule__Grouping__Group__0__Impl_in_rule__Grouping__Group__09212);
+            pushFollow(FOLLOW_rule__Grouping__Group__0__Impl_in_rule__Grouping__Group__09398);
             rule__Grouping__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Grouping__Group__1_in_rule__Grouping__Group__09215);
+            pushFollow(FOLLOW_rule__Grouping__Group__1_in_rule__Grouping__Group__09401);
             rule__Grouping__Group__1();
 
             state._fsp--;
@@ -12267,23 +12522,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4628:1: rule__Grouping__Group__0__Impl : ( ( rule__Grouping__NameAssignment_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4722:1: rule__Grouping__Group__0__Impl : ( ( rule__Grouping__NameAssignment_0 ) ) ;
     public final void rule__Grouping__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4632:1: ( ( ( rule__Grouping__NameAssignment_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4633:1: ( ( rule__Grouping__NameAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4726:1: ( ( ( rule__Grouping__NameAssignment_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4727:1: ( ( rule__Grouping__NameAssignment_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4633:1: ( ( rule__Grouping__NameAssignment_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4634:1: ( rule__Grouping__NameAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4727:1: ( ( rule__Grouping__NameAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4728:1: ( rule__Grouping__NameAssignment_0 )
             {
              before(grammarAccess.getGroupingAccess().getNameAssignment_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4635:1: ( rule__Grouping__NameAssignment_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4635:2: rule__Grouping__NameAssignment_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4729:1: ( rule__Grouping__NameAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4729:2: rule__Grouping__NameAssignment_0
             {
-            pushFollow(FOLLOW_rule__Grouping__NameAssignment_0_in_rule__Grouping__Group__0__Impl9242);
+            pushFollow(FOLLOW_rule__Grouping__NameAssignment_0_in_rule__Grouping__Group__0__Impl9428);
             rule__Grouping__NameAssignment_0();
 
             state._fsp--;
@@ -12314,21 +12569,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4645:1: rule__Grouping__Group__1 : rule__Grouping__Group__1__Impl rule__Grouping__Group__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4739:1: rule__Grouping__Group__1 : rule__Grouping__Group__1__Impl rule__Grouping__Group__2 ;
     public final void rule__Grouping__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4649:1: ( rule__Grouping__Group__1__Impl rule__Grouping__Group__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4650:2: rule__Grouping__Group__1__Impl rule__Grouping__Group__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4743:1: ( rule__Grouping__Group__1__Impl rule__Grouping__Group__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4744:2: rule__Grouping__Group__1__Impl rule__Grouping__Group__2
             {
-            pushFollow(FOLLOW_rule__Grouping__Group__1__Impl_in_rule__Grouping__Group__19272);
+            pushFollow(FOLLOW_rule__Grouping__Group__1__Impl_in_rule__Grouping__Group__19458);
             rule__Grouping__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Grouping__Group__2_in_rule__Grouping__Group__19275);
+            pushFollow(FOLLOW_rule__Grouping__Group__2_in_rule__Grouping__Group__19461);
             rule__Grouping__Group__2();
 
             state._fsp--;
@@ -12352,20 +12607,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4657:1: rule__Grouping__Group__1__Impl : ( '=' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4751:1: rule__Grouping__Group__1__Impl : ( '=' ) ;
     public final void rule__Grouping__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4661:1: ( ( '=' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4662:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4755:1: ( ( '=' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4756:1: ( '=' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4662:1: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4663:1: '='
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4756:1: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4757:1: '='
             {
              before(grammarAccess.getGroupingAccess().getEqualsSignKeyword_1()); 
-            match(input,25,FOLLOW_25_in_rule__Grouping__Group__1__Impl9303); 
+            match(input,26,FOLLOW_26_in_rule__Grouping__Group__1__Impl9489); 
              after(grammarAccess.getGroupingAccess().getEqualsSignKeyword_1()); 
 
             }
@@ -12389,21 +12644,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4676:1: rule__Grouping__Group__2 : rule__Grouping__Group__2__Impl rule__Grouping__Group__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4770:1: rule__Grouping__Group__2 : rule__Grouping__Group__2__Impl rule__Grouping__Group__3 ;
     public final void rule__Grouping__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4680:1: ( rule__Grouping__Group__2__Impl rule__Grouping__Group__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4681:2: rule__Grouping__Group__2__Impl rule__Grouping__Group__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4774:1: ( rule__Grouping__Group__2__Impl rule__Grouping__Group__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4775:2: rule__Grouping__Group__2__Impl rule__Grouping__Group__3
             {
-            pushFollow(FOLLOW_rule__Grouping__Group__2__Impl_in_rule__Grouping__Group__29334);
+            pushFollow(FOLLOW_rule__Grouping__Group__2__Impl_in_rule__Grouping__Group__29520);
             rule__Grouping__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Grouping__Group__3_in_rule__Grouping__Group__29337);
+            pushFollow(FOLLOW_rule__Grouping__Group__3_in_rule__Grouping__Group__29523);
             rule__Grouping__Group__3();
 
             state._fsp--;
@@ -12427,23 +12682,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4688:1: rule__Grouping__Group__2__Impl : ( ( rule__Grouping__ElementsAssignment_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4782:1: rule__Grouping__Group__2__Impl : ( ( rule__Grouping__ElementsAssignment_2 ) ) ;
     public final void rule__Grouping__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4692:1: ( ( ( rule__Grouping__ElementsAssignment_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4693:1: ( ( rule__Grouping__ElementsAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4786:1: ( ( ( rule__Grouping__ElementsAssignment_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4787:1: ( ( rule__Grouping__ElementsAssignment_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4693:1: ( ( rule__Grouping__ElementsAssignment_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4694:1: ( rule__Grouping__ElementsAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4787:1: ( ( rule__Grouping__ElementsAssignment_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4788:1: ( rule__Grouping__ElementsAssignment_2 )
             {
              before(grammarAccess.getGroupingAccess().getElementsAssignment_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4695:1: ( rule__Grouping__ElementsAssignment_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4695:2: rule__Grouping__ElementsAssignment_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4789:1: ( rule__Grouping__ElementsAssignment_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4789:2: rule__Grouping__ElementsAssignment_2
             {
-            pushFollow(FOLLOW_rule__Grouping__ElementsAssignment_2_in_rule__Grouping__Group__2__Impl9364);
+            pushFollow(FOLLOW_rule__Grouping__ElementsAssignment_2_in_rule__Grouping__Group__2__Impl9550);
             rule__Grouping__ElementsAssignment_2();
 
             state._fsp--;
@@ -12474,16 +12729,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4705:1: rule__Grouping__Group__3 : rule__Grouping__Group__3__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4799:1: rule__Grouping__Group__3 : rule__Grouping__Group__3__Impl ;
     public final void rule__Grouping__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4709:1: ( rule__Grouping__Group__3__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4710:2: rule__Grouping__Group__3__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4803:1: ( rule__Grouping__Group__3__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4804:2: rule__Grouping__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__Grouping__Group__3__Impl_in_rule__Grouping__Group__39394);
+            pushFollow(FOLLOW_rule__Grouping__Group__3__Impl_in_rule__Grouping__Group__39580);
             rule__Grouping__Group__3__Impl();
 
             state._fsp--;
@@ -12507,35 +12762,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4716:1: rule__Grouping__Group__3__Impl : ( ( rule__Grouping__Group_3__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4810:1: rule__Grouping__Group__3__Impl : ( ( rule__Grouping__Group_3__0 )* ) ;
     public final void rule__Grouping__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4720:1: ( ( ( rule__Grouping__Group_3__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4721:1: ( ( rule__Grouping__Group_3__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4814:1: ( ( ( rule__Grouping__Group_3__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4815:1: ( ( rule__Grouping__Group_3__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4721:1: ( ( rule__Grouping__Group_3__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4722:1: ( rule__Grouping__Group_3__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4815:1: ( ( rule__Grouping__Group_3__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4816:1: ( rule__Grouping__Group_3__0 )*
             {
              before(grammarAccess.getGroupingAccess().getGroup_3()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4723:1: ( rule__Grouping__Group_3__0 )*
-            loop29:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4817:1: ( rule__Grouping__Group_3__0 )*
+            loop30:
             do {
-                int alt29=2;
-                int LA29_0 = input.LA(1);
+                int alt30=2;
+                int LA30_0 = input.LA(1);
 
-                if ( (LA29_0==20) ) {
-                    alt29=1;
+                if ( (LA30_0==21) ) {
+                    alt30=1;
                 }
 
 
-                switch (alt29) {
+                switch (alt30) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4723:2: rule__Grouping__Group_3__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4817:2: rule__Grouping__Group_3__0
             	    {
-            	    pushFollow(FOLLOW_rule__Grouping__Group_3__0_in_rule__Grouping__Group__3__Impl9421);
+            	    pushFollow(FOLLOW_rule__Grouping__Group_3__0_in_rule__Grouping__Group__3__Impl9607);
             	    rule__Grouping__Group_3__0();
 
             	    state._fsp--;
@@ -12545,7 +12800,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop29;
+            	    break loop30;
                 }
             } while (true);
 
@@ -12572,21 +12827,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group_3__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4741:1: rule__Grouping__Group_3__0 : rule__Grouping__Group_3__0__Impl rule__Grouping__Group_3__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4835:1: rule__Grouping__Group_3__0 : rule__Grouping__Group_3__0__Impl rule__Grouping__Group_3__1 ;
     public final void rule__Grouping__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4745:1: ( rule__Grouping__Group_3__0__Impl rule__Grouping__Group_3__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4746:2: rule__Grouping__Group_3__0__Impl rule__Grouping__Group_3__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4839:1: ( rule__Grouping__Group_3__0__Impl rule__Grouping__Group_3__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4840:2: rule__Grouping__Group_3__0__Impl rule__Grouping__Group_3__1
             {
-            pushFollow(FOLLOW_rule__Grouping__Group_3__0__Impl_in_rule__Grouping__Group_3__09460);
+            pushFollow(FOLLOW_rule__Grouping__Group_3__0__Impl_in_rule__Grouping__Group_3__09646);
             rule__Grouping__Group_3__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Grouping__Group_3__1_in_rule__Grouping__Group_3__09463);
+            pushFollow(FOLLOW_rule__Grouping__Group_3__1_in_rule__Grouping__Group_3__09649);
             rule__Grouping__Group_3__1();
 
             state._fsp--;
@@ -12610,20 +12865,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group_3__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4753:1: rule__Grouping__Group_3__0__Impl : ( ',' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4847:1: rule__Grouping__Group_3__0__Impl : ( ',' ) ;
     public final void rule__Grouping__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4757:1: ( ( ',' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4758:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4851:1: ( ( ',' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4852:1: ( ',' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4758:1: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4759:1: ','
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4852:1: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4853:1: ','
             {
              before(grammarAccess.getGroupingAccess().getCommaKeyword_3_0()); 
-            match(input,20,FOLLOW_20_in_rule__Grouping__Group_3__0__Impl9491); 
+            match(input,21,FOLLOW_21_in_rule__Grouping__Group_3__0__Impl9677); 
              after(grammarAccess.getGroupingAccess().getCommaKeyword_3_0()); 
 
             }
@@ -12647,16 +12902,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group_3__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4772:1: rule__Grouping__Group_3__1 : rule__Grouping__Group_3__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4866:1: rule__Grouping__Group_3__1 : rule__Grouping__Group_3__1__Impl ;
     public final void rule__Grouping__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4776:1: ( rule__Grouping__Group_3__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4777:2: rule__Grouping__Group_3__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4870:1: ( rule__Grouping__Group_3__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4871:2: rule__Grouping__Group_3__1__Impl
             {
-            pushFollow(FOLLOW_rule__Grouping__Group_3__1__Impl_in_rule__Grouping__Group_3__19522);
+            pushFollow(FOLLOW_rule__Grouping__Group_3__1__Impl_in_rule__Grouping__Group_3__19708);
             rule__Grouping__Group_3__1__Impl();
 
             state._fsp--;
@@ -12680,23 +12935,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__Group_3__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4783:1: rule__Grouping__Group_3__1__Impl : ( ( rule__Grouping__ElementsAssignment_3_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4877:1: rule__Grouping__Group_3__1__Impl : ( ( rule__Grouping__ElementsAssignment_3_1 ) ) ;
     public final void rule__Grouping__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4787:1: ( ( ( rule__Grouping__ElementsAssignment_3_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4788:1: ( ( rule__Grouping__ElementsAssignment_3_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4881:1: ( ( ( rule__Grouping__ElementsAssignment_3_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4882:1: ( ( rule__Grouping__ElementsAssignment_3_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4788:1: ( ( rule__Grouping__ElementsAssignment_3_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4789:1: ( rule__Grouping__ElementsAssignment_3_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4882:1: ( ( rule__Grouping__ElementsAssignment_3_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4883:1: ( rule__Grouping__ElementsAssignment_3_1 )
             {
              before(grammarAccess.getGroupingAccess().getElementsAssignment_3_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4790:1: ( rule__Grouping__ElementsAssignment_3_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4790:2: rule__Grouping__ElementsAssignment_3_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4884:1: ( rule__Grouping__ElementsAssignment_3_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4884:2: rule__Grouping__ElementsAssignment_3_1
             {
-            pushFollow(FOLLOW_rule__Grouping__ElementsAssignment_3_1_in_rule__Grouping__Group_3__1__Impl9549);
+            pushFollow(FOLLOW_rule__Grouping__ElementsAssignment_3_1_in_rule__Grouping__Group_3__1__Impl9735);
             rule__Grouping__ElementsAssignment_3_1();
 
             state._fsp--;
@@ -12727,21 +12982,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4804:1: rule__GroupElement__Group__0 : rule__GroupElement__Group__0__Impl rule__GroupElement__Group__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4898:1: rule__GroupElement__Group__0 : rule__GroupElement__Group__0__Impl rule__GroupElement__Group__1 ;
     public final void rule__GroupElement__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4808:1: ( rule__GroupElement__Group__0__Impl rule__GroupElement__Group__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4809:2: rule__GroupElement__Group__0__Impl rule__GroupElement__Group__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4902:1: ( rule__GroupElement__Group__0__Impl rule__GroupElement__Group__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4903:2: rule__GroupElement__Group__0__Impl rule__GroupElement__Group__1
             {
-            pushFollow(FOLLOW_rule__GroupElement__Group__0__Impl_in_rule__GroupElement__Group__09583);
+            pushFollow(FOLLOW_rule__GroupElement__Group__0__Impl_in_rule__GroupElement__Group__09769);
             rule__GroupElement__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__GroupElement__Group__1_in_rule__GroupElement__Group__09586);
+            pushFollow(FOLLOW_rule__GroupElement__Group__1_in_rule__GroupElement__Group__09772);
             rule__GroupElement__Group__1();
 
             state._fsp--;
@@ -12765,23 +13020,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4816:1: rule__GroupElement__Group__0__Impl : ( ( rule__GroupElement__PathAssignment_0 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4910:1: rule__GroupElement__Group__0__Impl : ( ( rule__GroupElement__PathAssignment_0 ) ) ;
     public final void rule__GroupElement__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4820:1: ( ( ( rule__GroupElement__PathAssignment_0 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4821:1: ( ( rule__GroupElement__PathAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4914:1: ( ( ( rule__GroupElement__PathAssignment_0 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4915:1: ( ( rule__GroupElement__PathAssignment_0 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4821:1: ( ( rule__GroupElement__PathAssignment_0 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4822:1: ( rule__GroupElement__PathAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4915:1: ( ( rule__GroupElement__PathAssignment_0 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4916:1: ( rule__GroupElement__PathAssignment_0 )
             {
              before(grammarAccess.getGroupElementAccess().getPathAssignment_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4823:1: ( rule__GroupElement__PathAssignment_0 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4823:2: rule__GroupElement__PathAssignment_0
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4917:1: ( rule__GroupElement__PathAssignment_0 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4917:2: rule__GroupElement__PathAssignment_0
             {
-            pushFollow(FOLLOW_rule__GroupElement__PathAssignment_0_in_rule__GroupElement__Group__0__Impl9613);
+            pushFollow(FOLLOW_rule__GroupElement__PathAssignment_0_in_rule__GroupElement__Group__0__Impl9799);
             rule__GroupElement__PathAssignment_0();
 
             state._fsp--;
@@ -12812,16 +13067,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4833:1: rule__GroupElement__Group__1 : rule__GroupElement__Group__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4927:1: rule__GroupElement__Group__1 : rule__GroupElement__Group__1__Impl ;
     public final void rule__GroupElement__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4837:1: ( rule__GroupElement__Group__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4838:2: rule__GroupElement__Group__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4931:1: ( rule__GroupElement__Group__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4932:2: rule__GroupElement__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__GroupElement__Group__1__Impl_in_rule__GroupElement__Group__19643);
+            pushFollow(FOLLOW_rule__GroupElement__Group__1__Impl_in_rule__GroupElement__Group__19829);
             rule__GroupElement__Group__1__Impl();
 
             state._fsp--;
@@ -12845,35 +13100,35 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4844:1: rule__GroupElement__Group__1__Impl : ( ( rule__GroupElement__Group_1__0 )* ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4938:1: rule__GroupElement__Group__1__Impl : ( ( rule__GroupElement__Group_1__0 )* ) ;
     public final void rule__GroupElement__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4848:1: ( ( ( rule__GroupElement__Group_1__0 )* ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4849:1: ( ( rule__GroupElement__Group_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4942:1: ( ( ( rule__GroupElement__Group_1__0 )* ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4943:1: ( ( rule__GroupElement__Group_1__0 )* )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4849:1: ( ( rule__GroupElement__Group_1__0 )* )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4850:1: ( rule__GroupElement__Group_1__0 )*
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4943:1: ( ( rule__GroupElement__Group_1__0 )* )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4944:1: ( rule__GroupElement__Group_1__0 )*
             {
              before(grammarAccess.getGroupElementAccess().getGroup_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4851:1: ( rule__GroupElement__Group_1__0 )*
-            loop30:
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4945:1: ( rule__GroupElement__Group_1__0 )*
+            loop31:
             do {
-                int alt30=2;
-                int LA30_0 = input.LA(1);
+                int alt31=2;
+                int LA31_0 = input.LA(1);
 
-                if ( (LA30_0==32) ) {
-                    alt30=1;
+                if ( (LA31_0==16) ) {
+                    alt31=1;
                 }
 
 
-                switch (alt30) {
+                switch (alt31) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4851:2: rule__GroupElement__Group_1__0
+            	    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4945:2: rule__GroupElement__Group_1__0
             	    {
-            	    pushFollow(FOLLOW_rule__GroupElement__Group_1__0_in_rule__GroupElement__Group__1__Impl9670);
+            	    pushFollow(FOLLOW_rule__GroupElement__Group_1__0_in_rule__GroupElement__Group__1__Impl9856);
             	    rule__GroupElement__Group_1__0();
 
             	    state._fsp--;
@@ -12883,7 +13138,7 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop30;
+            	    break loop31;
                 }
             } while (true);
 
@@ -12910,21 +13165,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4865:1: rule__GroupElement__Group_1__0 : rule__GroupElement__Group_1__0__Impl rule__GroupElement__Group_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4959:1: rule__GroupElement__Group_1__0 : rule__GroupElement__Group_1__0__Impl rule__GroupElement__Group_1__1 ;
     public final void rule__GroupElement__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4869:1: ( rule__GroupElement__Group_1__0__Impl rule__GroupElement__Group_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4870:2: rule__GroupElement__Group_1__0__Impl rule__GroupElement__Group_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4963:1: ( rule__GroupElement__Group_1__0__Impl rule__GroupElement__Group_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4964:2: rule__GroupElement__Group_1__0__Impl rule__GroupElement__Group_1__1
             {
-            pushFollow(FOLLOW_rule__GroupElement__Group_1__0__Impl_in_rule__GroupElement__Group_1__09705);
+            pushFollow(FOLLOW_rule__GroupElement__Group_1__0__Impl_in_rule__GroupElement__Group_1__09891);
             rule__GroupElement__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__GroupElement__Group_1__1_in_rule__GroupElement__Group_1__09708);
+            pushFollow(FOLLOW_rule__GroupElement__Group_1__1_in_rule__GroupElement__Group_1__09894);
             rule__GroupElement__Group_1__1();
 
             state._fsp--;
@@ -12948,20 +13203,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4877:1: rule__GroupElement__Group_1__0__Impl : ( '.' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4971:1: rule__GroupElement__Group_1__0__Impl : ( '.' ) ;
     public final void rule__GroupElement__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4881:1: ( ( '.' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4882:1: ( '.' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4975:1: ( ( '.' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4976:1: ( '.' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4882:1: ( '.' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4883:1: '.'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4976:1: ( '.' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4977:1: '.'
             {
              before(grammarAccess.getGroupElementAccess().getFullStopKeyword_1_0()); 
-            match(input,32,FOLLOW_32_in_rule__GroupElement__Group_1__0__Impl9736); 
+            match(input,16,FOLLOW_16_in_rule__GroupElement__Group_1__0__Impl9922); 
              after(grammarAccess.getGroupElementAccess().getFullStopKeyword_1_0()); 
 
             }
@@ -12985,16 +13240,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4896:1: rule__GroupElement__Group_1__1 : rule__GroupElement__Group_1__1__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4990:1: rule__GroupElement__Group_1__1 : rule__GroupElement__Group_1__1__Impl ;
     public final void rule__GroupElement__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4900:1: ( rule__GroupElement__Group_1__1__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4901:2: rule__GroupElement__Group_1__1__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4994:1: ( rule__GroupElement__Group_1__1__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4995:2: rule__GroupElement__Group_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__GroupElement__Group_1__1__Impl_in_rule__GroupElement__Group_1__19767);
+            pushFollow(FOLLOW_rule__GroupElement__Group_1__1__Impl_in_rule__GroupElement__Group_1__19953);
             rule__GroupElement__Group_1__1__Impl();
 
             state._fsp--;
@@ -13018,23 +13273,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__Group_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4907:1: rule__GroupElement__Group_1__1__Impl : ( ( rule__GroupElement__PathAssignment_1_1 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5001:1: rule__GroupElement__Group_1__1__Impl : ( ( rule__GroupElement__PathAssignment_1_1 ) ) ;
     public final void rule__GroupElement__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4911:1: ( ( ( rule__GroupElement__PathAssignment_1_1 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4912:1: ( ( rule__GroupElement__PathAssignment_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5005:1: ( ( ( rule__GroupElement__PathAssignment_1_1 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5006:1: ( ( rule__GroupElement__PathAssignment_1_1 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4912:1: ( ( rule__GroupElement__PathAssignment_1_1 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4913:1: ( rule__GroupElement__PathAssignment_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5006:1: ( ( rule__GroupElement__PathAssignment_1_1 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5007:1: ( rule__GroupElement__PathAssignment_1_1 )
             {
              before(grammarAccess.getGroupElementAccess().getPathAssignment_1_1()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4914:1: ( rule__GroupElement__PathAssignment_1_1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4914:2: rule__GroupElement__PathAssignment_1_1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5008:1: ( rule__GroupElement__PathAssignment_1_1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5008:2: rule__GroupElement__PathAssignment_1_1
             {
-            pushFollow(FOLLOW_rule__GroupElement__PathAssignment_1_1_in_rule__GroupElement__Group_1__1__Impl9794);
+            pushFollow(FOLLOW_rule__GroupElement__PathAssignment_1_1_in_rule__GroupElement__Group_1__1__Impl9980);
             rule__GroupElement__PathAssignment_1_1();
 
             state._fsp--;
@@ -13065,21 +13320,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4928:1: rule__PathElement__Group_1__0 : rule__PathElement__Group_1__0__Impl rule__PathElement__Group_1__1 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5022:1: rule__PathElement__Group_1__0 : rule__PathElement__Group_1__0__Impl rule__PathElement__Group_1__1 ;
     public final void rule__PathElement__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4932:1: ( rule__PathElement__Group_1__0__Impl rule__PathElement__Group_1__1 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4933:2: rule__PathElement__Group_1__0__Impl rule__PathElement__Group_1__1
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5026:1: ( rule__PathElement__Group_1__0__Impl rule__PathElement__Group_1__1 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5027:2: rule__PathElement__Group_1__0__Impl rule__PathElement__Group_1__1
             {
-            pushFollow(FOLLOW_rule__PathElement__Group_1__0__Impl_in_rule__PathElement__Group_1__09828);
+            pushFollow(FOLLOW_rule__PathElement__Group_1__0__Impl_in_rule__PathElement__Group_1__010014);
             rule__PathElement__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PathElement__Group_1__1_in_rule__PathElement__Group_1__09831);
+            pushFollow(FOLLOW_rule__PathElement__Group_1__1_in_rule__PathElement__Group_1__010017);
             rule__PathElement__Group_1__1();
 
             state._fsp--;
@@ -13103,20 +13358,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4940:1: rule__PathElement__Group_1__0__Impl : ( 'ALL' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5034:1: rule__PathElement__Group_1__0__Impl : ( 'ALL' ) ;
     public final void rule__PathElement__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4944:1: ( ( 'ALL' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4945:1: ( 'ALL' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5038:1: ( ( 'ALL' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5039:1: ( 'ALL' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4945:1: ( 'ALL' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4946:1: 'ALL'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5039:1: ( 'ALL' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5040:1: 'ALL'
             {
              before(grammarAccess.getPathElementAccess().getALLKeyword_1_0()); 
-            match(input,33,FOLLOW_33_in_rule__PathElement__Group_1__0__Impl9859); 
+            match(input,33,FOLLOW_33_in_rule__PathElement__Group_1__0__Impl10045); 
              after(grammarAccess.getPathElementAccess().getALLKeyword_1_0()); 
 
             }
@@ -13140,21 +13395,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4959:1: rule__PathElement__Group_1__1 : rule__PathElement__Group_1__1__Impl rule__PathElement__Group_1__2 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5053:1: rule__PathElement__Group_1__1 : rule__PathElement__Group_1__1__Impl rule__PathElement__Group_1__2 ;
     public final void rule__PathElement__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4963:1: ( rule__PathElement__Group_1__1__Impl rule__PathElement__Group_1__2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4964:2: rule__PathElement__Group_1__1__Impl rule__PathElement__Group_1__2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5057:1: ( rule__PathElement__Group_1__1__Impl rule__PathElement__Group_1__2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5058:2: rule__PathElement__Group_1__1__Impl rule__PathElement__Group_1__2
             {
-            pushFollow(FOLLOW_rule__PathElement__Group_1__1__Impl_in_rule__PathElement__Group_1__19890);
+            pushFollow(FOLLOW_rule__PathElement__Group_1__1__Impl_in_rule__PathElement__Group_1__110076);
             rule__PathElement__Group_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PathElement__Group_1__2_in_rule__PathElement__Group_1__19893);
+            pushFollow(FOLLOW_rule__PathElement__Group_1__2_in_rule__PathElement__Group_1__110079);
             rule__PathElement__Group_1__2();
 
             state._fsp--;
@@ -13178,20 +13433,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__1__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4971:1: rule__PathElement__Group_1__1__Impl : ( '(' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5065:1: rule__PathElement__Group_1__1__Impl : ( '(' ) ;
     public final void rule__PathElement__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4975:1: ( ( '(' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4976:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5069:1: ( ( '(' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5070:1: ( '(' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4976:1: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4977:1: '('
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5070:1: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5071:1: '('
             {
              before(grammarAccess.getPathElementAccess().getLeftParenthesisKeyword_1_1()); 
-            match(input,16,FOLLOW_16_in_rule__PathElement__Group_1__1__Impl9921); 
+            match(input,17,FOLLOW_17_in_rule__PathElement__Group_1__1__Impl10107); 
              after(grammarAccess.getPathElementAccess().getLeftParenthesisKeyword_1_1()); 
 
             }
@@ -13215,21 +13470,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4990:1: rule__PathElement__Group_1__2 : rule__PathElement__Group_1__2__Impl rule__PathElement__Group_1__3 ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5084:1: rule__PathElement__Group_1__2 : rule__PathElement__Group_1__2__Impl rule__PathElement__Group_1__3 ;
     public final void rule__PathElement__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4994:1: ( rule__PathElement__Group_1__2__Impl rule__PathElement__Group_1__3 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:4995:2: rule__PathElement__Group_1__2__Impl rule__PathElement__Group_1__3
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5088:1: ( rule__PathElement__Group_1__2__Impl rule__PathElement__Group_1__3 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5089:2: rule__PathElement__Group_1__2__Impl rule__PathElement__Group_1__3
             {
-            pushFollow(FOLLOW_rule__PathElement__Group_1__2__Impl_in_rule__PathElement__Group_1__29952);
+            pushFollow(FOLLOW_rule__PathElement__Group_1__2__Impl_in_rule__PathElement__Group_1__210138);
             rule__PathElement__Group_1__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PathElement__Group_1__3_in_rule__PathElement__Group_1__29955);
+            pushFollow(FOLLOW_rule__PathElement__Group_1__3_in_rule__PathElement__Group_1__210141);
             rule__PathElement__Group_1__3();
 
             state._fsp--;
@@ -13253,23 +13508,23 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__2__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5002:1: rule__PathElement__Group_1__2__Impl : ( ( rule__PathElement__TypeAssignment_1_2 ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5096:1: rule__PathElement__Group_1__2__Impl : ( ( rule__PathElement__TypeAssignment_1_2 ) ) ;
     public final void rule__PathElement__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5006:1: ( ( ( rule__PathElement__TypeAssignment_1_2 ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5007:1: ( ( rule__PathElement__TypeAssignment_1_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5100:1: ( ( ( rule__PathElement__TypeAssignment_1_2 ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5101:1: ( ( rule__PathElement__TypeAssignment_1_2 ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5007:1: ( ( rule__PathElement__TypeAssignment_1_2 ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5008:1: ( rule__PathElement__TypeAssignment_1_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5101:1: ( ( rule__PathElement__TypeAssignment_1_2 ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5102:1: ( rule__PathElement__TypeAssignment_1_2 )
             {
              before(grammarAccess.getPathElementAccess().getTypeAssignment_1_2()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5009:1: ( rule__PathElement__TypeAssignment_1_2 )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5009:2: rule__PathElement__TypeAssignment_1_2
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5103:1: ( rule__PathElement__TypeAssignment_1_2 )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5103:2: rule__PathElement__TypeAssignment_1_2
             {
-            pushFollow(FOLLOW_rule__PathElement__TypeAssignment_1_2_in_rule__PathElement__Group_1__2__Impl9982);
+            pushFollow(FOLLOW_rule__PathElement__TypeAssignment_1_2_in_rule__PathElement__Group_1__2__Impl10168);
             rule__PathElement__TypeAssignment_1_2();
 
             state._fsp--;
@@ -13300,16 +13555,16 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5019:1: rule__PathElement__Group_1__3 : rule__PathElement__Group_1__3__Impl ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5113:1: rule__PathElement__Group_1__3 : rule__PathElement__Group_1__3__Impl ;
     public final void rule__PathElement__Group_1__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5023:1: ( rule__PathElement__Group_1__3__Impl )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5024:2: rule__PathElement__Group_1__3__Impl
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5117:1: ( rule__PathElement__Group_1__3__Impl )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5118:2: rule__PathElement__Group_1__3__Impl
             {
-            pushFollow(FOLLOW_rule__PathElement__Group_1__3__Impl_in_rule__PathElement__Group_1__310012);
+            pushFollow(FOLLOW_rule__PathElement__Group_1__3__Impl_in_rule__PathElement__Group_1__310198);
             rule__PathElement__Group_1__3__Impl();
 
             state._fsp--;
@@ -13333,20 +13588,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__Group_1__3__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5030:1: rule__PathElement__Group_1__3__Impl : ( ')' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5124:1: rule__PathElement__Group_1__3__Impl : ( ')' ) ;
     public final void rule__PathElement__Group_1__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5034:1: ( ( ')' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5035:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5128:1: ( ( ')' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5129:1: ( ')' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5035:1: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5036:1: ')'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5129:1: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5130:1: ')'
             {
              before(grammarAccess.getPathElementAccess().getRightParenthesisKeyword_1_3()); 
-            match(input,17,FOLLOW_17_in_rule__PathElement__Group_1__3__Impl10040); 
+            match(input,18,FOLLOW_18_in_rule__PathElement__Group_1__3__Impl10226); 
              after(grammarAccess.getPathElementAccess().getRightParenthesisKeyword_1_3()); 
 
             }
@@ -13369,22 +13624,22 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__PathElement__Group_1__3__Impl"
 
 
-    // $ANTLR start "rule__LinkSpec__NameAssignment_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5058:1: rule__LinkSpec__NameAssignment_1 : ( RULE_ID ) ;
-    public final void rule__LinkSpec__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__LinkSpec__PackagenameAssignment_1_0"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5152:1: rule__LinkSpec__PackagenameAssignment_1_0 : ( RULE_ID ) ;
+    public final void rule__LinkSpec__PackagenameAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5062:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5063:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5156:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5157:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5063:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5064:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5157:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5158:1: RULE_ID
             {
-             before(grammarAccess.getLinkSpecAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__LinkSpec__NameAssignment_110084); 
-             after(grammarAccess.getLinkSpecAccess().getNameIDTerminalRuleCall_1_0()); 
+             before(grammarAccess.getLinkSpecAccess().getPackagenameIDTerminalRuleCall_1_0_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__LinkSpec__PackagenameAssignment_1_010270); 
+             after(grammarAccess.getLinkSpecAccess().getPackagenameIDTerminalRuleCall_1_0_0()); 
 
             }
 
@@ -13403,29 +13658,66 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__LinkSpec__NameAssignment_1"
+    // $ANTLR end "rule__LinkSpec__PackagenameAssignment_1_0"
 
 
-    // $ANTLR start "rule__LinkSpec__ConstructorsAssignment_3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5073:1: rule__LinkSpec__ConstructorsAssignment_3 : ( ruleConstructor ) ;
-    public final void rule__LinkSpec__ConstructorsAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__LinkSpec__NameAssignment_2"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5167:1: rule__LinkSpec__NameAssignment_2 : ( RULE_ID ) ;
+    public final void rule__LinkSpec__NameAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5077:1: ( ( ruleConstructor ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5078:1: ( ruleConstructor )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5171:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5172:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5078:1: ( ruleConstructor )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5079:1: ruleConstructor
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5172:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5173:1: RULE_ID
             {
-             before(grammarAccess.getLinkSpecAccess().getConstructorsConstructorParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleConstructor_in_rule__LinkSpec__ConstructorsAssignment_310115);
+             before(grammarAccess.getLinkSpecAccess().getNameIDTerminalRuleCall_2_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__LinkSpec__NameAssignment_210301); 
+             after(grammarAccess.getLinkSpecAccess().getNameIDTerminalRuleCall_2_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__LinkSpec__NameAssignment_2"
+
+
+    // $ANTLR start "rule__LinkSpec__ConstructorsAssignment_4"
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5182:1: rule__LinkSpec__ConstructorsAssignment_4 : ( ruleConstructor ) ;
+    public final void rule__LinkSpec__ConstructorsAssignment_4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5186:1: ( ( ruleConstructor ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5187:1: ( ruleConstructor )
+            {
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5187:1: ( ruleConstructor )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5188:1: ruleConstructor
+            {
+             before(grammarAccess.getLinkSpecAccess().getConstructorsConstructorParserRuleCall_4_0()); 
+            pushFollow(FOLLOW_ruleConstructor_in_rule__LinkSpec__ConstructorsAssignment_410332);
             ruleConstructor();
 
             state._fsp--;
 
-             after(grammarAccess.getLinkSpecAccess().getConstructorsConstructorParserRuleCall_3_0()); 
+             after(grammarAccess.getLinkSpecAccess().getConstructorsConstructorParserRuleCall_4_0()); 
 
             }
 
@@ -13444,28 +13736,28 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__LinkSpec__ConstructorsAssignment_3"
+    // $ANTLR end "rule__LinkSpec__ConstructorsAssignment_4"
 
 
     // $ANTLR start "rule__Constructor__IsPublicAssignment_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5088:1: rule__Constructor__IsPublicAssignment_0 : ( ( 'public' ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5197:1: rule__Constructor__IsPublicAssignment_0 : ( ( 'public' ) ) ;
     public final void rule__Constructor__IsPublicAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5092:1: ( ( ( 'public' ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5093:1: ( ( 'public' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5201:1: ( ( ( 'public' ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5202:1: ( ( 'public' ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5093:1: ( ( 'public' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5094:1: ( 'public' )
-            {
-             before(grammarAccess.getConstructorAccess().getIsPublicPublicKeyword_0_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5095:1: ( 'public' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5096:1: 'public'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5202:1: ( ( 'public' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5203:1: ( 'public' )
             {
              before(grammarAccess.getConstructorAccess().getIsPublicPublicKeyword_0_0()); 
-            match(input,34,FOLLOW_34_in_rule__Constructor__IsPublicAssignment_010151); 
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5204:1: ( 'public' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5205:1: 'public'
+            {
+             before(grammarAccess.getConstructorAccess().getIsPublicPublicKeyword_0_0()); 
+            match(input,34,FOLLOW_34_in_rule__Constructor__IsPublicAssignment_010368); 
              after(grammarAccess.getConstructorAccess().getIsPublicPublicKeyword_0_0()); 
 
             }
@@ -13493,20 +13785,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__NameAssignment_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5111:1: rule__Constructor__NameAssignment_1 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5220:1: rule__Constructor__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Constructor__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5115:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5116:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5224:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5225:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5116:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5117:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5225:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5226:1: RULE_ID
             {
              before(grammarAccess.getConstructorAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Constructor__NameAssignment_110190); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Constructor__NameAssignment_110407); 
              after(grammarAccess.getConstructorAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -13530,20 +13822,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__ParametersAssignment_3_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5126:1: rule__Constructor__ParametersAssignment_3_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5235:1: rule__Constructor__ParametersAssignment_3_0 : ( RULE_ID ) ;
     public final void rule__Constructor__ParametersAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5130:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5131:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5239:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5240:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5131:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5132:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5240:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5241:1: RULE_ID
             {
              before(grammarAccess.getConstructorAccess().getParametersIDTerminalRuleCall_3_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_010221); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_010438); 
              after(grammarAccess.getConstructorAccess().getParametersIDTerminalRuleCall_3_0_0()); 
 
             }
@@ -13567,20 +13859,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__ParametersAssignment_3_1_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5141:1: rule__Constructor__ParametersAssignment_3_1_1 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5250:1: rule__Constructor__ParametersAssignment_3_1_1 : ( RULE_ID ) ;
     public final void rule__Constructor__ParametersAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5145:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5146:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5254:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5255:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5146:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5147:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5255:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5256:1: RULE_ID
             {
              before(grammarAccess.getConstructorAccess().getParametersIDTerminalRuleCall_3_1_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_1_110252); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_1_110469); 
              after(grammarAccess.getConstructorAccess().getParametersIDTerminalRuleCall_3_1_1_0()); 
 
             }
@@ -13604,20 +13896,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__AddressesAssignment_5_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5156:1: rule__Constructor__AddressesAssignment_5_1 : ( ruleConstructorAddressParameters ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5265:1: rule__Constructor__AddressesAssignment_5_1 : ( ruleConstructorAddressParameters ) ;
     public final void rule__Constructor__AddressesAssignment_5_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5160:1: ( ( ruleConstructorAddressParameters ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5161:1: ( ruleConstructorAddressParameters )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5269:1: ( ( ruleConstructorAddressParameters ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5270:1: ( ruleConstructorAddressParameters )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5161:1: ( ruleConstructorAddressParameters )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5162:1: ruleConstructorAddressParameters
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5270:1: ( ruleConstructorAddressParameters )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5271:1: ruleConstructorAddressParameters
             {
              before(grammarAccess.getConstructorAccess().getAddressesConstructorAddressParametersParserRuleCall_5_1_0()); 
-            pushFollow(FOLLOW_ruleConstructorAddressParameters_in_rule__Constructor__AddressesAssignment_5_110283);
+            pushFollow(FOLLOW_ruleConstructorAddressParameters_in_rule__Constructor__AddressesAssignment_5_110500);
             ruleConstructorAddressParameters();
 
             state._fsp--;
@@ -13645,20 +13937,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Constructor__MembersAssignment_7_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5171:1: rule__Constructor__MembersAssignment_7_0 : ( ruleMember ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5280:1: rule__Constructor__MembersAssignment_7_0 : ( ruleMember ) ;
     public final void rule__Constructor__MembersAssignment_7_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5175:1: ( ( ruleMember ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5176:1: ( ruleMember )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5284:1: ( ( ruleMember ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5285:1: ( ruleMember )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5176:1: ( ruleMember )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5177:1: ruleMember
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5285:1: ( ruleMember )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5286:1: ruleMember
             {
              before(grammarAccess.getConstructorAccess().getMembersMemberParserRuleCall_7_0_0()); 
-            pushFollow(FOLLOW_ruleMember_in_rule__Constructor__MembersAssignment_7_010314);
+            pushFollow(FOLLOW_ruleMember_in_rule__Constructor__MembersAssignment_7_010531);
             ruleMember();
 
             state._fsp--;
@@ -13686,20 +13978,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__AddressNamesAssignment_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5186:1: rule__NamedAddresses__AddressNamesAssignment_1 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5295:1: rule__NamedAddresses__AddressNamesAssignment_1 : ( RULE_ID ) ;
     public final void rule__NamedAddresses__AddressNamesAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5190:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5191:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5299:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5300:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5191:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5192:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5300:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5301:1: RULE_ID
             {
              before(grammarAccess.getNamedAddressesAccess().getAddressNamesIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_110345); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_110562); 
              after(grammarAccess.getNamedAddressesAccess().getAddressNamesIDTerminalRuleCall_1_0()); 
 
             }
@@ -13723,20 +14015,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddresses__AddressNamesAssignment_2_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5201:1: rule__NamedAddresses__AddressNamesAssignment_2_2 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5310:1: rule__NamedAddresses__AddressNamesAssignment_2_2 : ( RULE_ID ) ;
     public final void rule__NamedAddresses__AddressNamesAssignment_2_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5205:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5206:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5314:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5315:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5206:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5207:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5315:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5316:1: RULE_ID
             {
              before(grammarAccess.getNamedAddressesAccess().getAddressNamesIDTerminalRuleCall_2_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_2_210376); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_2_210593); 
              after(grammarAccess.getNamedAddressesAccess().getAddressNamesIDTerminalRuleCall_2_2_0()); 
 
             }
@@ -13760,20 +14052,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__ElementsAssignment_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5216:1: rule__AddressTuple__ElementsAssignment_2 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5325:1: rule__AddressTuple__ElementsAssignment_2 : ( RULE_ID ) ;
     public final void rule__AddressTuple__ElementsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5220:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5221:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5329:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5330:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5221:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5222:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5330:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5331:1: RULE_ID
             {
              before(grammarAccess.getAddressTupleAccess().getElementsIDTerminalRuleCall_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_210407); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_210624); 
              after(grammarAccess.getAddressTupleAccess().getElementsIDTerminalRuleCall_2_0()); 
 
             }
@@ -13797,20 +14089,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressTuple__ElementsAssignment_3_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5231:1: rule__AddressTuple__ElementsAssignment_3_1 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5340:1: rule__AddressTuple__ElementsAssignment_3_1 : ( RULE_ID ) ;
     public final void rule__AddressTuple__ElementsAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5235:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5236:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5344:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5345:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5236:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5237:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5345:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5346:1: RULE_ID
             {
              before(grammarAccess.getAddressTupleAccess().getElementsIDTerminalRuleCall_3_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_3_110438); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_3_110655); 
              after(grammarAccess.getAddressTupleAccess().getElementsIDTerminalRuleCall_3_1_0()); 
 
             }
@@ -13834,20 +14126,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__PropertiesAssignment_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5246:1: rule__TosNetLinkBinding__PropertiesAssignment_2 : ( ruleLinkProperty ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5355:1: rule__TosNetLinkBinding__PropertiesAssignment_2 : ( ruleLinkProperty ) ;
     public final void rule__TosNetLinkBinding__PropertiesAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5250:1: ( ( ruleLinkProperty ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5251:1: ( ruleLinkProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5359:1: ( ( ruleLinkProperty ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5360:1: ( ruleLinkProperty )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5251:1: ( ruleLinkProperty )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5252:1: ruleLinkProperty
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5360:1: ( ruleLinkProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5361:1: ruleLinkProperty
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_210469);
+            pushFollow(FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_210686);
             ruleLinkProperty();
 
             state._fsp--;
@@ -13875,20 +14167,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__TosNetLinkBinding__PropertiesAssignment_3_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5261:1: rule__TosNetLinkBinding__PropertiesAssignment_3_1 : ( ruleLinkProperty ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5370:1: rule__TosNetLinkBinding__PropertiesAssignment_3_1 : ( ruleLinkProperty ) ;
     public final void rule__TosNetLinkBinding__PropertiesAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5265:1: ( ( ruleLinkProperty ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5266:1: ( ruleLinkProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5374:1: ( ( ruleLinkProperty ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5375:1: ( ruleLinkProperty )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5266:1: ( ruleLinkProperty )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5267:1: ruleLinkProperty
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5375:1: ( ruleLinkProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5376:1: ruleLinkProperty
             {
              before(grammarAccess.getTosNetLinkBindingAccess().getPropertiesLinkPropertyParserRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_3_110500);
+            pushFollow(FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_3_110717);
             ruleLinkProperty();
 
             state._fsp--;
@@ -13916,20 +14208,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__CtrlNameAssignment_0_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5276:1: rule__LinkProperty__CtrlNameAssignment_0_2 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5385:1: rule__LinkProperty__CtrlNameAssignment_0_2 : ( RULE_ID ) ;
     public final void rule__LinkProperty__CtrlNameAssignment_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5280:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5281:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5389:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5390:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5281:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5282:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5390:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5391:1: RULE_ID
             {
              before(grammarAccess.getLinkPropertyAccess().getCtrlNameIDTerminalRuleCall_0_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__LinkProperty__CtrlNameAssignment_0_210531); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__LinkProperty__CtrlNameAssignment_0_210748); 
              after(grammarAccess.getLinkPropertyAccess().getCtrlNameIDTerminalRuleCall_0_2_0()); 
 
             }
@@ -13953,20 +14245,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__BaseValueAssignment_1_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5291:1: rule__LinkProperty__BaseValueAssignment_1_2 : ( RULE_INT ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5400:1: rule__LinkProperty__BaseValueAssignment_1_2 : ( RULE_INT ) ;
     public final void rule__LinkProperty__BaseValueAssignment_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5295:1: ( ( RULE_INT ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5296:1: ( RULE_INT )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5404:1: ( ( RULE_INT ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5405:1: ( RULE_INT )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5296:1: ( RULE_INT )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5297:1: RULE_INT
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5405:1: ( RULE_INT )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5406:1: RULE_INT
             {
              before(grammarAccess.getLinkPropertyAccess().getBaseValueINTTerminalRuleCall_1_2_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__LinkProperty__BaseValueAssignment_1_210562); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__LinkProperty__BaseValueAssignment_1_210779); 
              after(grammarAccess.getLinkPropertyAccess().getBaseValueINTTerminalRuleCall_1_2_0()); 
 
             }
@@ -13990,20 +14282,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__UartNameAssignment_2_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5306:1: rule__LinkProperty__UartNameAssignment_2_2 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5415:1: rule__LinkProperty__UartNameAssignment_2_2 : ( RULE_ID ) ;
     public final void rule__LinkProperty__UartNameAssignment_2_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5310:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5311:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5419:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5420:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5311:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5312:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5420:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5421:1: RULE_ID
             {
              before(grammarAccess.getLinkPropertyAccess().getUartNameIDTerminalRuleCall_2_2_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__LinkProperty__UartNameAssignment_2_210593); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__LinkProperty__UartNameAssignment_2_210810); 
              after(grammarAccess.getLinkPropertyAccess().getUartNameIDTerminalRuleCall_2_2_0()); 
 
             }
@@ -14027,20 +14319,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__NameAssignment_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5321:1: rule__SimpleExpansion__NameAssignment_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5430:1: rule__SimpleExpansion__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__SimpleExpansion__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5325:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5326:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5434:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5435:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5326:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5327:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5435:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5436:1: RULE_ID
             {
              before(grammarAccess.getSimpleExpansionAccess().getNameIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__SimpleExpansion__NameAssignment_010624); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__SimpleExpansion__NameAssignment_010841); 
              after(grammarAccess.getSimpleExpansionAccess().getNameIDTerminalRuleCall_0_0()); 
 
             }
@@ -14064,24 +14356,24 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__ConstructorAssignment_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5336:1: rule__SimpleExpansion__ConstructorAssignment_2 : ( ( RULE_ID ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5445:1: rule__SimpleExpansion__ConstructorAssignment_2 : ( ( RULE_ID ) ) ;
     public final void rule__SimpleExpansion__ConstructorAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5340:1: ( ( ( RULE_ID ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5341:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5449:1: ( ( ( RULE_ID ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5450:1: ( ( RULE_ID ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5341:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5342:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5450:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5451:1: ( RULE_ID )
             {
              before(grammarAccess.getSimpleExpansionAccess().getConstructorConstructorCrossReference_2_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5343:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5344:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5452:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5453:1: RULE_ID
             {
              before(grammarAccess.getSimpleExpansionAccess().getConstructorConstructorIDTerminalRuleCall_2_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__SimpleExpansion__ConstructorAssignment_210659); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__SimpleExpansion__ConstructorAssignment_210876); 
              after(grammarAccess.getSimpleExpansionAccess().getConstructorConstructorIDTerminalRuleCall_2_0_1()); 
 
             }
@@ -14109,20 +14401,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__ArgumentsAssignment_4_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5355:1: rule__SimpleExpansion__ArgumentsAssignment_4_0 : ( ruleArgument ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5464:1: rule__SimpleExpansion__ArgumentsAssignment_4_0 : ( ruleArgument ) ;
     public final void rule__SimpleExpansion__ArgumentsAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5359:1: ( ( ruleArgument ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5360:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5468:1: ( ( ruleArgument ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5469:1: ( ruleArgument )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5360:1: ( ruleArgument )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5361:1: ruleArgument
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5469:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5470:1: ruleArgument
             {
              before(grammarAccess.getSimpleExpansionAccess().getArgumentsArgumentParserRuleCall_4_0_0()); 
-            pushFollow(FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_010694);
+            pushFollow(FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_010911);
             ruleArgument();
 
             state._fsp--;
@@ -14150,20 +14442,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__ArgumentsAssignment_4_1_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5370:1: rule__SimpleExpansion__ArgumentsAssignment_4_1_1 : ( ruleArgument ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5479:1: rule__SimpleExpansion__ArgumentsAssignment_4_1_1 : ( ruleArgument ) ;
     public final void rule__SimpleExpansion__ArgumentsAssignment_4_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5374:1: ( ( ruleArgument ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5375:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5483:1: ( ( ruleArgument ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5484:1: ( ruleArgument )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5375:1: ( ruleArgument )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5376:1: ruleArgument
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5484:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5485:1: ruleArgument
             {
              before(grammarAccess.getSimpleExpansionAccess().getArgumentsArgumentParserRuleCall_4_1_1_0()); 
-            pushFollow(FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_1_110725);
+            pushFollow(FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_1_110942);
             ruleArgument();
 
             state._fsp--;
@@ -14191,20 +14483,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__BindingsAssignment_6_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5385:1: rule__SimpleExpansion__BindingsAssignment_6_0 : ( ruleAddressBinding ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5494:1: rule__SimpleExpansion__BindingsAssignment_6_0 : ( ruleAddressBinding ) ;
     public final void rule__SimpleExpansion__BindingsAssignment_6_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5389:1: ( ( ruleAddressBinding ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5390:1: ( ruleAddressBinding )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5498:1: ( ( ruleAddressBinding ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5499:1: ( ruleAddressBinding )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5390:1: ( ruleAddressBinding )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5391:1: ruleAddressBinding
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5499:1: ( ruleAddressBinding )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5500:1: ruleAddressBinding
             {
              before(grammarAccess.getSimpleExpansionAccess().getBindingsAddressBindingParserRuleCall_6_0_0()); 
-            pushFollow(FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_010756);
+            pushFollow(FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_010973);
             ruleAddressBinding();
 
             state._fsp--;
@@ -14232,20 +14524,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__SimpleExpansion__BindingsAssignment_6_1_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5400:1: rule__SimpleExpansion__BindingsAssignment_6_1_1 : ( ruleAddressBinding ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5509:1: rule__SimpleExpansion__BindingsAssignment_6_1_1 : ( ruleAddressBinding ) ;
     public final void rule__SimpleExpansion__BindingsAssignment_6_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5404:1: ( ( ruleAddressBinding ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5405:1: ( ruleAddressBinding )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5513:1: ( ( ruleAddressBinding ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5514:1: ( ruleAddressBinding )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5405:1: ( ruleAddressBinding )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5406:1: ruleAddressBinding
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5514:1: ( ruleAddressBinding )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5515:1: ruleAddressBinding
             {
              before(grammarAccess.getSimpleExpansionAccess().getBindingsAddressBindingParserRuleCall_6_1_1_0()); 
-            pushFollow(FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_1_110787);
+            pushFollow(FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_1_111004);
             ruleAddressBinding();
 
             state._fsp--;
@@ -14273,20 +14565,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__NameAssignment_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5415:1: rule__AddressExpansion__NameAssignment_1 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5524:1: rule__AddressExpansion__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__AddressExpansion__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5419:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5420:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5528:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5529:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5420:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5421:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5529:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5530:1: RULE_ID
             {
              before(grammarAccess.getAddressExpansionAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressExpansion__NameAssignment_110818); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressExpansion__NameAssignment_111035); 
              after(grammarAccess.getAddressExpansionAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
@@ -14310,24 +14602,24 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__ConstructorAssignment_3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5430:1: rule__AddressExpansion__ConstructorAssignment_3 : ( ( RULE_ID ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5539:1: rule__AddressExpansion__ConstructorAssignment_3 : ( ( RULE_ID ) ) ;
     public final void rule__AddressExpansion__ConstructorAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5434:1: ( ( ( RULE_ID ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5435:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5543:1: ( ( ( RULE_ID ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5544:1: ( ( RULE_ID ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5435:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5436:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5544:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5545:1: ( RULE_ID )
             {
              before(grammarAccess.getAddressExpansionAccess().getConstructorConstructorCrossReference_3_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5437:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5438:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5546:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5547:1: RULE_ID
             {
              before(grammarAccess.getAddressExpansionAccess().getConstructorConstructorIDTerminalRuleCall_3_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressExpansion__ConstructorAssignment_310853); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressExpansion__ConstructorAssignment_311070); 
              after(grammarAccess.getAddressExpansionAccess().getConstructorConstructorIDTerminalRuleCall_3_0_1()); 
 
             }
@@ -14355,20 +14647,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__ArgumentsAssignment_5_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5449:1: rule__AddressExpansion__ArgumentsAssignment_5_0 : ( ruleArgument ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5558:1: rule__AddressExpansion__ArgumentsAssignment_5_0 : ( ruleArgument ) ;
     public final void rule__AddressExpansion__ArgumentsAssignment_5_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5453:1: ( ( ruleArgument ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5454:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5562:1: ( ( ruleArgument ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5563:1: ( ruleArgument )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5454:1: ( ruleArgument )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5455:1: ruleArgument
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5563:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5564:1: ruleArgument
             {
              before(grammarAccess.getAddressExpansionAccess().getArgumentsArgumentParserRuleCall_5_0_0()); 
-            pushFollow(FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_010888);
+            pushFollow(FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_011105);
             ruleArgument();
 
             state._fsp--;
@@ -14396,20 +14688,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressExpansion__ArgumentsAssignment_5_1_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5464:1: rule__AddressExpansion__ArgumentsAssignment_5_1_1 : ( ruleArgument ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5573:1: rule__AddressExpansion__ArgumentsAssignment_5_1_1 : ( ruleArgument ) ;
     public final void rule__AddressExpansion__ArgumentsAssignment_5_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5468:1: ( ( ruleArgument ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5469:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5577:1: ( ( ruleArgument ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5578:1: ( ruleArgument )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5469:1: ( ruleArgument )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5470:1: ruleArgument
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5578:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5579:1: ruleArgument
             {
              before(grammarAccess.getAddressExpansionAccess().getArgumentsArgumentParserRuleCall_5_1_1_0()); 
-            pushFollow(FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_1_110919);
+            pushFollow(FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_1_111136);
             ruleArgument();
 
             state._fsp--;
@@ -14437,20 +14729,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__SimpleAssignment_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5479:1: rule__Argument__SimpleAssignment_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5588:1: rule__Argument__SimpleAssignment_0 : ( RULE_ID ) ;
     public final void rule__Argument__SimpleAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5483:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5484:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5592:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5593:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5484:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5485:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5593:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5594:1: RULE_ID
             {
              before(grammarAccess.getArgumentAccess().getSimpleIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Argument__SimpleAssignment_010950); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Argument__SimpleAssignment_011167); 
              after(grammarAccess.getArgumentAccess().getSimpleIDTerminalRuleCall_0_0()); 
 
             }
@@ -14474,20 +14766,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__LhsAssignment_1_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5494:1: rule__Argument__LhsAssignment_1_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5603:1: rule__Argument__LhsAssignment_1_0 : ( RULE_ID ) ;
     public final void rule__Argument__LhsAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5498:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5499:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5607:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5608:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5499:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5500:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5608:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5609:1: RULE_ID
             {
              before(grammarAccess.getArgumentAccess().getLhsIDTerminalRuleCall_1_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Argument__LhsAssignment_1_010981); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Argument__LhsAssignment_1_011198); 
              after(grammarAccess.getArgumentAccess().getLhsIDTerminalRuleCall_1_0_0()); 
 
             }
@@ -14511,20 +14803,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__RhsAssignment_1_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5509:1: rule__Argument__RhsAssignment_1_2 : ( ruleArgument ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5618:1: rule__Argument__RhsAssignment_1_2 : ( ruleArgument ) ;
     public final void rule__Argument__RhsAssignment_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5513:1: ( ( ruleArgument ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5514:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5622:1: ( ( ruleArgument ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5623:1: ( ruleArgument )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5514:1: ( ruleArgument )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5515:1: ruleArgument
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5623:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5624:1: ruleArgument
             {
              before(grammarAccess.getArgumentAccess().getRhsArgumentParserRuleCall_1_2_0()); 
-            pushFollow(FOLLOW_ruleArgument_in_rule__Argument__RhsAssignment_1_211012);
+            pushFollow(FOLLOW_ruleArgument_in_rule__Argument__RhsAssignment_1_211229);
             ruleArgument();
 
             state._fsp--;
@@ -14552,20 +14844,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Argument__TextAssignment_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5524:1: rule__Argument__TextAssignment_2 : ( RULE_STRING ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5633:1: rule__Argument__TextAssignment_2 : ( RULE_STRING ) ;
     public final void rule__Argument__TextAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5528:1: ( ( RULE_STRING ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5529:1: ( RULE_STRING )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5637:1: ( ( RULE_STRING ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5638:1: ( RULE_STRING )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5529:1: ( RULE_STRING )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5530:1: RULE_STRING
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5638:1: ( RULE_STRING )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5639:1: RULE_STRING
             {
              before(grammarAccess.getArgumentAccess().getTextSTRINGTerminalRuleCall_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Argument__TextAssignment_211043); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Argument__TextAssignment_211260); 
              after(grammarAccess.getArgumentAccess().getTextSTRINGTerminalRuleCall_2_0()); 
 
             }
@@ -14589,20 +14881,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__NameAssignment_1_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5539:1: rule__AddressBinding__NameAssignment_1_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5648:1: rule__AddressBinding__NameAssignment_1_0 : ( RULE_ID ) ;
     public final void rule__AddressBinding__NameAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5543:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5544:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5652:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5653:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5544:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5545:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5653:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5654:1: RULE_ID
             {
              before(grammarAccess.getAddressBindingAccess().getNameIDTerminalRuleCall_1_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressBinding__NameAssignment_1_011074); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddressBinding__NameAssignment_1_011291); 
              after(grammarAccess.getAddressBindingAccess().getNameIDTerminalRuleCall_1_0_0()); 
 
             }
@@ -14626,20 +14918,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__AddressesAssignment_3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5554:1: rule__AddressBinding__AddressesAssignment_3 : ( RULE_HEX_NUM ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5663:1: rule__AddressBinding__AddressesAssignment_3 : ( RULE_HEX_NUM ) ;
     public final void rule__AddressBinding__AddressesAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5558:1: ( ( RULE_HEX_NUM ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5559:1: ( RULE_HEX_NUM )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5667:1: ( ( RULE_HEX_NUM ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5668:1: ( RULE_HEX_NUM )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5559:1: ( RULE_HEX_NUM )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5560:1: RULE_HEX_NUM
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5668:1: ( RULE_HEX_NUM )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5669:1: RULE_HEX_NUM
             {
              before(grammarAccess.getAddressBindingAccess().getAddressesHEX_NUMTerminalRuleCall_3_0()); 
-            match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_311105); 
+            match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_311322); 
              after(grammarAccess.getAddressBindingAccess().getAddressesHEX_NUMTerminalRuleCall_3_0()); 
 
             }
@@ -14663,20 +14955,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AddressBinding__AddressesAssignment_4_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5569:1: rule__AddressBinding__AddressesAssignment_4_1 : ( RULE_HEX_NUM ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5678:1: rule__AddressBinding__AddressesAssignment_4_1 : ( RULE_HEX_NUM ) ;
     public final void rule__AddressBinding__AddressesAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5573:1: ( ( RULE_HEX_NUM ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5574:1: ( RULE_HEX_NUM )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5682:1: ( ( RULE_HEX_NUM ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5683:1: ( RULE_HEX_NUM )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5574:1: ( RULE_HEX_NUM )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5575:1: RULE_HEX_NUM
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5683:1: ( RULE_HEX_NUM )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5684:1: RULE_HEX_NUM
             {
              before(grammarAccess.getAddressBindingAccess().getAddressesHEX_NUMTerminalRuleCall_4_1_0()); 
-            match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_4_111136); 
+            match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_4_111353); 
              after(grammarAccess.getAddressBindingAccess().getAddressesHEX_NUMTerminalRuleCall_4_1_0()); 
 
             }
@@ -14700,20 +14992,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__AddressAssignment_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5584:1: rule__Instantiation__AddressAssignment_1 : ( ruleAddressSpec ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5693:1: rule__Instantiation__AddressAssignment_1 : ( ruleAddressSpec ) ;
     public final void rule__Instantiation__AddressAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5588:1: ( ( ruleAddressSpec ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5589:1: ( ruleAddressSpec )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5697:1: ( ( ruleAddressSpec ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5698:1: ( ruleAddressSpec )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5589:1: ( ruleAddressSpec )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5590:1: ruleAddressSpec
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5698:1: ( ruleAddressSpec )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5699:1: ruleAddressSpec
             {
              before(grammarAccess.getInstantiationAccess().getAddressAddressSpecParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleAddressSpec_in_rule__Instantiation__AddressAssignment_111167);
+            pushFollow(FOLLOW_ruleAddressSpec_in_rule__Instantiation__AddressAssignment_111384);
             ruleAddressSpec();
 
             state._fsp--;
@@ -14741,20 +15033,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__KindAssignment_3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5599:1: rule__Instantiation__KindAssignment_3 : ( ruleKind ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5708:1: rule__Instantiation__KindAssignment_3 : ( ruleKind ) ;
     public final void rule__Instantiation__KindAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5603:1: ( ( ruleKind ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5604:1: ( ruleKind )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5712:1: ( ( ruleKind ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5713:1: ( ruleKind )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5604:1: ( ruleKind )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5605:1: ruleKind
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5713:1: ( ruleKind )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5714:1: ruleKind
             {
              before(grammarAccess.getInstantiationAccess().getKindKindParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleKind_in_rule__Instantiation__KindAssignment_311198);
+            pushFollow(FOLLOW_ruleKind_in_rule__Instantiation__KindAssignment_311415);
             ruleKind();
 
             state._fsp--;
@@ -14782,20 +15074,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__PropertiesAssignment_5_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5614:1: rule__Instantiation__PropertiesAssignment_5_0 : ( ruleInstantiationProperty ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5723:1: rule__Instantiation__PropertiesAssignment_5_0 : ( ruleInstantiationProperty ) ;
     public final void rule__Instantiation__PropertiesAssignment_5_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5618:1: ( ( ruleInstantiationProperty ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5619:1: ( ruleInstantiationProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5727:1: ( ( ruleInstantiationProperty ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5728:1: ( ruleInstantiationProperty )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5619:1: ( ruleInstantiationProperty )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5620:1: ruleInstantiationProperty
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5728:1: ( ruleInstantiationProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5729:1: ruleInstantiationProperty
             {
              before(grammarAccess.getInstantiationAccess().getPropertiesInstantiationPropertyParserRuleCall_5_0_0()); 
-            pushFollow(FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_011229);
+            pushFollow(FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_011446);
             ruleInstantiationProperty();
 
             state._fsp--;
@@ -14823,20 +15115,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Instantiation__PropertiesAssignment_5_1_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5629:1: rule__Instantiation__PropertiesAssignment_5_1_1 : ( ruleInstantiationProperty ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5738:1: rule__Instantiation__PropertiesAssignment_5_1_1 : ( ruleInstantiationProperty ) ;
     public final void rule__Instantiation__PropertiesAssignment_5_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5633:1: ( ( ruleInstantiationProperty ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5634:1: ( ruleInstantiationProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5742:1: ( ( ruleInstantiationProperty ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5743:1: ( ruleInstantiationProperty )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5634:1: ( ruleInstantiationProperty )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5635:1: ruleInstantiationProperty
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5743:1: ( ruleInstantiationProperty )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5744:1: ruleInstantiationProperty
             {
              before(grammarAccess.getInstantiationAccess().getPropertiesInstantiationPropertyParserRuleCall_5_1_1_0()); 
-            pushFollow(FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_1_111260);
+            pushFollow(FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_1_111477);
             ruleInstantiationProperty();
 
             state._fsp--;
@@ -14864,20 +15156,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__NameAssignment_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5644:1: rule__DirectAddressSpec__NameAssignment_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5753:1: rule__DirectAddressSpec__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__DirectAddressSpec__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5648:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5649:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5757:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5758:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5649:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5650:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5758:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5759:1: RULE_ID
             {
              before(grammarAccess.getDirectAddressSpecAccess().getNameIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DirectAddressSpec__NameAssignment_011291); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DirectAddressSpec__NameAssignment_011508); 
              after(grammarAccess.getDirectAddressSpecAccess().getNameIDTerminalRuleCall_0_0()); 
 
             }
@@ -14901,20 +15193,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__DirectAddressSpec__AddressAssignment_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5659:1: rule__DirectAddressSpec__AddressAssignment_2 : ( RULE_HEX_NUM ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5768:1: rule__DirectAddressSpec__AddressAssignment_2 : ( RULE_HEX_NUM ) ;
     public final void rule__DirectAddressSpec__AddressAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5663:1: ( ( RULE_HEX_NUM ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5664:1: ( RULE_HEX_NUM )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5772:1: ( ( RULE_HEX_NUM ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5773:1: ( RULE_HEX_NUM )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5664:1: ( RULE_HEX_NUM )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5665:1: RULE_HEX_NUM
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5773:1: ( RULE_HEX_NUM )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5774:1: RULE_HEX_NUM
             {
              before(grammarAccess.getDirectAddressSpecAccess().getAddressHEX_NUMTerminalRuleCall_2_0()); 
-            match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_rule__DirectAddressSpec__AddressAssignment_211322); 
+            match(input,RULE_HEX_NUM,FOLLOW_RULE_HEX_NUM_in_rule__DirectAddressSpec__AddressAssignment_211539); 
              after(grammarAccess.getDirectAddressSpecAccess().getAddressHEX_NUMTerminalRuleCall_2_0()); 
 
             }
@@ -14938,20 +15230,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__NamedAddressSpec__NameAssignment"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5674:1: rule__NamedAddressSpec__NameAssignment : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5783:1: rule__NamedAddressSpec__NameAssignment : ( RULE_ID ) ;
     public final void rule__NamedAddressSpec__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5678:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5679:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5787:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5788:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5679:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5680:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5788:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5789:1: RULE_ID
             {
              before(grammarAccess.getNamedAddressSpecAccess().getNameIDTerminalRuleCall_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__NamedAddressSpec__NameAssignment11353); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__NamedAddressSpec__NameAssignment11570); 
              after(grammarAccess.getNamedAddressSpecAccess().getNameIDTerminalRuleCall_0()); 
 
             }
@@ -14975,20 +15267,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__IdAssignment_0_3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5689:1: rule__InstantiationProperty__IdAssignment_0_3 : ( ruleArgument ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5798:1: rule__InstantiationProperty__IdAssignment_0_3 : ( ruleArgument ) ;
     public final void rule__InstantiationProperty__IdAssignment_0_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5693:1: ( ( ruleArgument ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5694:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5802:1: ( ( ruleArgument ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5803:1: ( ruleArgument )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5694:1: ( ruleArgument )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5695:1: ruleArgument
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5803:1: ( ruleArgument )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5804:1: ruleArgument
             {
              before(grammarAccess.getInstantiationPropertyAccess().getIdArgumentParserRuleCall_0_3_0()); 
-            pushFollow(FOLLOW_ruleArgument_in_rule__InstantiationProperty__IdAssignment_0_311384);
+            pushFollow(FOLLOW_ruleArgument_in_rule__InstantiationProperty__IdAssignment_0_311601);
             ruleArgument();
 
             state._fsp--;
@@ -15016,20 +15308,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__ModeAssignment_2_3"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5704:1: rule__InstantiationProperty__ModeAssignment_2_3 : ( RULE_INT ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5813:1: rule__InstantiationProperty__ModeAssignment_2_3 : ( RULE_INT ) ;
     public final void rule__InstantiationProperty__ModeAssignment_2_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5708:1: ( ( RULE_INT ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5709:1: ( RULE_INT )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5817:1: ( ( RULE_INT ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5818:1: ( RULE_INT )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5709:1: ( RULE_INT )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5710:1: RULE_INT
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5818:1: ( RULE_INT )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5819:1: RULE_INT
             {
              before(grammarAccess.getInstantiationPropertyAccess().getModeINTTerminalRuleCall_2_3_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__InstantiationProperty__ModeAssignment_2_311415); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__InstantiationProperty__ModeAssignment_2_311632); 
              after(grammarAccess.getInstantiationPropertyAccess().getModeINTTerminalRuleCall_2_3_0()); 
 
             }
@@ -15053,20 +15345,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__InstantiationProperty__RateAssignment_2_5"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5719:1: rule__InstantiationProperty__RateAssignment_2_5 : ( RULE_INT ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5828:1: rule__InstantiationProperty__RateAssignment_2_5 : ( RULE_INT ) ;
     public final void rule__InstantiationProperty__RateAssignment_2_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5723:1: ( ( RULE_INT ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5724:1: ( RULE_INT )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5832:1: ( ( RULE_INT ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5833:1: ( RULE_INT )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5724:1: ( RULE_INT )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5725:1: RULE_INT
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5833:1: ( RULE_INT )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5834:1: RULE_INT
             {
              before(grammarAccess.getInstantiationPropertyAccess().getRateINTTerminalRuleCall_2_5_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__InstantiationProperty__RateAssignment_2_511446); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__InstantiationProperty__RateAssignment_2_511663); 
              after(grammarAccess.getInstantiationPropertyAccess().getRateINTTerminalRuleCall_2_5_0()); 
 
             }
@@ -15090,20 +15382,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__NameAssignment_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5734:1: rule__Grouping__NameAssignment_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5843:1: rule__Grouping__NameAssignment_0 : ( RULE_ID ) ;
     public final void rule__Grouping__NameAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5738:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5739:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5847:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5848:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5739:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5740:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5848:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5849:1: RULE_ID
             {
              before(grammarAccess.getGroupingAccess().getNameIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Grouping__NameAssignment_011477); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Grouping__NameAssignment_011694); 
              after(grammarAccess.getGroupingAccess().getNameIDTerminalRuleCall_0_0()); 
 
             }
@@ -15127,20 +15419,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__ElementsAssignment_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5749:1: rule__Grouping__ElementsAssignment_2 : ( ruleGroupElement ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5858:1: rule__Grouping__ElementsAssignment_2 : ( ruleGroupElement ) ;
     public final void rule__Grouping__ElementsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5753:1: ( ( ruleGroupElement ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5754:1: ( ruleGroupElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5862:1: ( ( ruleGroupElement ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5863:1: ( ruleGroupElement )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5754:1: ( ruleGroupElement )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5755:1: ruleGroupElement
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5863:1: ( ruleGroupElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5864:1: ruleGroupElement
             {
              before(grammarAccess.getGroupingAccess().getElementsGroupElementParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_211508);
+            pushFollow(FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_211725);
             ruleGroupElement();
 
             state._fsp--;
@@ -15168,20 +15460,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Grouping__ElementsAssignment_3_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5764:1: rule__Grouping__ElementsAssignment_3_1 : ( ruleGroupElement ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5873:1: rule__Grouping__ElementsAssignment_3_1 : ( ruleGroupElement ) ;
     public final void rule__Grouping__ElementsAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5768:1: ( ( ruleGroupElement ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5769:1: ( ruleGroupElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5877:1: ( ( ruleGroupElement ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5878:1: ( ruleGroupElement )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5769:1: ( ruleGroupElement )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5770:1: ruleGroupElement
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5878:1: ( ruleGroupElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5879:1: ruleGroupElement
             {
              before(grammarAccess.getGroupingAccess().getElementsGroupElementParserRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_3_111539);
+            pushFollow(FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_3_111756);
             ruleGroupElement();
 
             state._fsp--;
@@ -15209,20 +15501,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__PathAssignment_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5779:1: rule__GroupElement__PathAssignment_0 : ( rulePathElement ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5888:1: rule__GroupElement__PathAssignment_0 : ( rulePathElement ) ;
     public final void rule__GroupElement__PathAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5783:1: ( ( rulePathElement ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5784:1: ( rulePathElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5892:1: ( ( rulePathElement ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5893:1: ( rulePathElement )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5784:1: ( rulePathElement )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5785:1: rulePathElement
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5893:1: ( rulePathElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5894:1: rulePathElement
             {
              before(grammarAccess.getGroupElementAccess().getPathPathElementParserRuleCall_0_0()); 
-            pushFollow(FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_011570);
+            pushFollow(FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_011787);
             rulePathElement();
 
             state._fsp--;
@@ -15250,20 +15542,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__GroupElement__PathAssignment_1_1"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5794:1: rule__GroupElement__PathAssignment_1_1 : ( rulePathElement ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5903:1: rule__GroupElement__PathAssignment_1_1 : ( rulePathElement ) ;
     public final void rule__GroupElement__PathAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5798:1: ( ( rulePathElement ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5799:1: ( rulePathElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5907:1: ( ( rulePathElement ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5908:1: ( rulePathElement )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5799:1: ( rulePathElement )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5800:1: rulePathElement
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5908:1: ( rulePathElement )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5909:1: rulePathElement
             {
              before(grammarAccess.getGroupElementAccess().getPathPathElementParserRuleCall_1_1_0()); 
-            pushFollow(FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_1_111601);
+            pushFollow(FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_1_111818);
             rulePathElement();
 
             state._fsp--;
@@ -15291,20 +15583,20 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__SimpleAssignment_0"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5809:1: rule__PathElement__SimpleAssignment_0 : ( RULE_ID ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5918:1: rule__PathElement__SimpleAssignment_0 : ( RULE_ID ) ;
     public final void rule__PathElement__SimpleAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5813:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5814:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5922:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5923:1: ( RULE_ID )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5814:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5815:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5923:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5924:1: RULE_ID
             {
              before(grammarAccess.getPathElementAccess().getSimpleIDTerminalRuleCall_0_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PathElement__SimpleAssignment_011632); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PathElement__SimpleAssignment_011849); 
              after(grammarAccess.getPathElementAccess().getSimpleIDTerminalRuleCall_0_0()); 
 
             }
@@ -15328,24 +15620,24 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PathElement__TypeAssignment_1_2"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5824:1: rule__PathElement__TypeAssignment_1_2 : ( ( RULE_ID ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5933:1: rule__PathElement__TypeAssignment_1_2 : ( ( RULE_ID ) ) ;
     public final void rule__PathElement__TypeAssignment_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5828:1: ( ( ( RULE_ID ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5829:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5937:1: ( ( ( RULE_ID ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5938:1: ( ( RULE_ID ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5829:1: ( ( RULE_ID ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5830:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5938:1: ( ( RULE_ID ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5939:1: ( RULE_ID )
             {
              before(grammarAccess.getPathElementAccess().getTypeConstructorCrossReference_1_2_0()); 
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5831:1: ( RULE_ID )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5832:1: RULE_ID
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5940:1: ( RULE_ID )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:5941:1: RULE_ID
             {
              before(grammarAccess.getPathElementAccess().getTypeConstructorIDTerminalRuleCall_1_2_0_1()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PathElement__TypeAssignment_1_211667); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__PathElement__TypeAssignment_1_211884); 
              after(grammarAccess.getPathElementAccess().getTypeConstructorIDTerminalRuleCall_1_2_0_1()); 
 
             }
@@ -15471,401 +15763,410 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__LinkSpec__Group__0__Impl_in_rule__LinkSpec__Group__01990 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__LinkSpec__Group__1_in_rule__LinkSpec__Group__01993 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_14_in_rule__LinkSpec__Group__0__Impl2021 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkSpec__Group__1__Impl_in_rule__LinkSpec__Group__12052 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group__1__Impl_in_rule__LinkSpec__Group__12052 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__LinkSpec__Group__2_in_rule__LinkSpec__Group__12055 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkSpec__NameAssignment_1_in_rule__LinkSpec__Group__1__Impl2082 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkSpec__Group__2__Impl_in_rule__LinkSpec__Group__22112 = new BitSet(new long[]{0x0000000400000010L});
-    public static final BitSet FOLLOW_rule__LinkSpec__Group__3_in_rule__LinkSpec__Group__22115 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__LinkSpec__Group__2__Impl2143 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkSpec__Group__3__Impl_in_rule__LinkSpec__Group__32174 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkSpec__ConstructorsAssignment_3_in_rule__LinkSpec__Group__3__Impl2201 = new BitSet(new long[]{0x0000000400000012L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__0__Impl_in_rule__Constructor__Group__02240 = new BitSet(new long[]{0x0000000400000010L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__1_in_rule__Constructor__Group__02243 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__IsPublicAssignment_0_in_rule__Constructor__Group__0__Impl2270 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__1__Impl_in_rule__Constructor__Group__12301 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__2_in_rule__Constructor__Group__12304 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__NameAssignment_1_in_rule__Constructor__Group__1__Impl2331 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__2__Impl_in_rule__Constructor__Group__22361 = new BitSet(new long[]{0x0000000000020010L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__3_in_rule__Constructor__Group__22364 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__Constructor__Group__2__Impl2392 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__3__Impl_in_rule__Constructor__Group__32423 = new BitSet(new long[]{0x0000000000020010L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__4_in_rule__Constructor__Group__32426 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3__0_in_rule__Constructor__Group__3__Impl2453 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__4__Impl_in_rule__Constructor__Group__42484 = new BitSet(new long[]{0x0000000000240000L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__5_in_rule__Constructor__Group__42487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__Constructor__Group__4__Impl2515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__5__Impl_in_rule__Constructor__Group__52546 = new BitSet(new long[]{0x0000000000240000L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__6_in_rule__Constructor__Group__52549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_5__0_in_rule__Constructor__Group__5__Impl2576 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__6__Impl_in_rule__Constructor__Group__62607 = new BitSet(new long[]{0x0000000000C80010L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__7_in_rule__Constructor__Group__62610 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__Constructor__Group__6__Impl2638 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__7__Impl_in_rule__Constructor__Group__72669 = new BitSet(new long[]{0x0000000000C80010L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__8_in_rule__Constructor__Group__72672 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_7__0_in_rule__Constructor__Group__7__Impl2699 = new BitSet(new long[]{0x0000000000C00012L});
-    public static final BitSet FOLLOW_rule__Constructor__Group__8__Impl_in_rule__Constructor__Group__82730 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__Constructor__Group__8__Impl2758 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3__0__Impl_in_rule__Constructor__Group_3__02807 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3__1_in_rule__Constructor__Group_3__02810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__ParametersAssignment_3_0_in_rule__Constructor__Group_3__0__Impl2837 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3__1__Impl_in_rule__Constructor__Group_3__12867 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__0_in_rule__Constructor__Group_3__1__Impl2894 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__0__Impl_in_rule__Constructor__Group_3_1__02929 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__1_in_rule__Constructor__Group_3_1__02932 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Constructor__Group_3_1__0__Impl2960 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__1__Impl_in_rule__Constructor__Group_3_1__12991 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__ParametersAssignment_3_1_1_in_rule__Constructor__Group_3_1__1__Impl3018 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_5__0__Impl_in_rule__Constructor__Group_5__03052 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_5__1_in_rule__Constructor__Group_5__03055 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Constructor__Group_5__0__Impl3083 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_5__1__Impl_in_rule__Constructor__Group_5__13114 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__AddressesAssignment_5_1_in_rule__Constructor__Group_5__1__Impl3141 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_7__0__Impl_in_rule__Constructor__Group_7__03175 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_7__1_in_rule__Constructor__Group_7__03178 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__MembersAssignment_7_0_in_rule__Constructor__Group_7__0__Impl3205 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Constructor__Group_7__1__Impl_in_rule__Constructor__Group_7__13235 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__Constructor__Group_7__1__Impl3263 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group__0__Impl_in_rule__NamedAddresses__Group__03298 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group__1_in_rule__NamedAddresses__Group__03301 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__NamedAddresses__Group__0__Impl3329 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group__1__Impl_in_rule__NamedAddresses__Group__13360 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group__2_in_rule__NamedAddresses__Group__13363 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__AddressNamesAssignment_1_in_rule__NamedAddresses__Group__1__Impl3390 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group__2__Impl_in_rule__NamedAddresses__Group__23420 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__0_in_rule__NamedAddresses__Group__2__Impl3447 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__0__Impl_in_rule__NamedAddresses__Group_2__03484 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__1_in_rule__NamedAddresses__Group_2__03487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__NamedAddresses__Group_2__0__Impl3515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__1__Impl_in_rule__NamedAddresses__Group_2__13546 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__2_in_rule__NamedAddresses__Group_2__13549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__NamedAddresses__Group_2__1__Impl3577 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__2__Impl_in_rule__NamedAddresses__Group_2__23608 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__NamedAddresses__AddressNamesAssignment_2_2_in_rule__NamedAddresses__Group_2__2__Impl3635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__0__Impl_in_rule__AddressTuple__Group__03671 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__1_in_rule__AddressTuple__Group__03674 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__AddressTuple__Group__0__Impl3702 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__1__Impl_in_rule__AddressTuple__Group__13733 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__2_in_rule__AddressTuple__Group__13736 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__AddressTuple__Group__1__Impl3764 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__2__Impl_in_rule__AddressTuple__Group__23795 = new BitSet(new long[]{0x0000000000120000L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__3_in_rule__AddressTuple__Group__23798 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__ElementsAssignment_2_in_rule__AddressTuple__Group__2__Impl3825 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__3__Impl_in_rule__AddressTuple__Group__33855 = new BitSet(new long[]{0x0000000000120000L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__4_in_rule__AddressTuple__Group__33858 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__0_in_rule__AddressTuple__Group__3__Impl3885 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group__4__Impl_in_rule__AddressTuple__Group__43916 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__AddressTuple__Group__4__Impl3944 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__0__Impl_in_rule__AddressTuple__Group_3__03985 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__1_in_rule__AddressTuple__Group_3__03988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__AddressTuple__Group_3__0__Impl4016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__1__Impl_in_rule__AddressTuple__Group_3__14047 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressTuple__ElementsAssignment_3_1_in_rule__AddressTuple__Group_3__1__Impl4074 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__0__Impl_in_rule__TosNetLinkBinding__Group__04108 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__1_in_rule__TosNetLinkBinding__Group__04111 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__TosNetLinkBinding__Group__0__Impl4139 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__1__Impl_in_rule__TosNetLinkBinding__Group__14170 = new BitSet(new long[]{0x000000000D000000L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__2_in_rule__TosNetLinkBinding__Group__14173 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__TosNetLinkBinding__Group__1__Impl4201 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__2__Impl_in_rule__TosNetLinkBinding__Group__24232 = new BitSet(new long[]{0x0000000000120000L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__3_in_rule__TosNetLinkBinding__Group__24235 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_2_in_rule__TosNetLinkBinding__Group__2__Impl4262 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__3__Impl_in_rule__TosNetLinkBinding__Group__34292 = new BitSet(new long[]{0x0000000000120000L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__4_in_rule__TosNetLinkBinding__Group__34295 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__0_in_rule__TosNetLinkBinding__Group__3__Impl4322 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__4__Impl_in_rule__TosNetLinkBinding__Group__44353 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__TosNetLinkBinding__Group__4__Impl4381 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__0__Impl_in_rule__TosNetLinkBinding__Group_3__04422 = new BitSet(new long[]{0x000000000D000000L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__1_in_rule__TosNetLinkBinding__Group_3__04425 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__TosNetLinkBinding__Group_3__0__Impl4453 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__1__Impl_in_rule__TosNetLinkBinding__Group_3__14484 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_3_1_in_rule__TosNetLinkBinding__Group_3__1__Impl4511 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__0__Impl_in_rule__LinkProperty__Group_0__04545 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__1_in_rule__LinkProperty__Group_0__04548 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__LinkProperty__Group_0__0__Impl4576 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__1__Impl_in_rule__LinkProperty__Group_0__14607 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__2_in_rule__LinkProperty__Group_0__14610 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__LinkProperty__Group_0__1__Impl4638 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__2__Impl_in_rule__LinkProperty__Group_0__24669 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__CtrlNameAssignment_0_2_in_rule__LinkProperty__Group_0__2__Impl4696 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__0__Impl_in_rule__LinkProperty__Group_1__04732 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__1_in_rule__LinkProperty__Group_1__04735 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__LinkProperty__Group_1__0__Impl4763 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__1__Impl_in_rule__LinkProperty__Group_1__14794 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__2_in_rule__LinkProperty__Group_1__14797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__LinkProperty__Group_1__1__Impl4825 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__2__Impl_in_rule__LinkProperty__Group_1__24856 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__BaseValueAssignment_1_2_in_rule__LinkProperty__Group_1__2__Impl4883 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__0__Impl_in_rule__LinkProperty__Group_2__04919 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__1_in_rule__LinkProperty__Group_2__04922 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__LinkProperty__Group_2__0__Impl4950 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__1__Impl_in_rule__LinkProperty__Group_2__14981 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__2_in_rule__LinkProperty__Group_2__14984 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__LinkProperty__Group_2__1__Impl5012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__2__Impl_in_rule__LinkProperty__Group_2__25043 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__LinkProperty__UartNameAssignment_2_2_in_rule__LinkProperty__Group_2__2__Impl5070 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__0__Impl_in_rule__SimpleExpansion__Group__05106 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__1_in_rule__SimpleExpansion__Group__05109 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__NameAssignment_0_in_rule__SimpleExpansion__Group__0__Impl5136 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__1__Impl_in_rule__SimpleExpansion__Group__15166 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__2_in_rule__SimpleExpansion__Group__15169 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__SimpleExpansion__Group__1__Impl5197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__2__Impl_in_rule__SimpleExpansion__Group__25228 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__3_in_rule__SimpleExpansion__Group__25231 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__ConstructorAssignment_2_in_rule__SimpleExpansion__Group__2__Impl5258 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__3__Impl_in_rule__SimpleExpansion__Group__35288 = new BitSet(new long[]{0x0000000000020050L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__4_in_rule__SimpleExpansion__Group__35291 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__SimpleExpansion__Group__3__Impl5319 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__4__Impl_in_rule__SimpleExpansion__Group__45350 = new BitSet(new long[]{0x0000000000020050L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__5_in_rule__SimpleExpansion__Group__45353 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__0_in_rule__SimpleExpansion__Group__4__Impl5380 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__5__Impl_in_rule__SimpleExpansion__Group__55411 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__6_in_rule__SimpleExpansion__Group__55414 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__SimpleExpansion__Group__5__Impl5442 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__6__Impl_in_rule__SimpleExpansion__Group__65473 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__0_in_rule__SimpleExpansion__Group__6__Impl5500 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__0__Impl_in_rule__SimpleExpansion__Group_4__05545 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__1_in_rule__SimpleExpansion__Group_4__05548 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_0_in_rule__SimpleExpansion__Group_4__0__Impl5575 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__1__Impl_in_rule__SimpleExpansion__Group_4__15605 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__0_in_rule__SimpleExpansion__Group_4__1__Impl5632 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__0__Impl_in_rule__SimpleExpansion__Group_4_1__05667 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__1_in_rule__SimpleExpansion__Group_4_1__05670 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__SimpleExpansion__Group_4_1__0__Impl5698 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__1__Impl_in_rule__SimpleExpansion__Group_4_1__15729 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_1_1_in_rule__SimpleExpansion__Group_4_1__1__Impl5756 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__0__Impl_in_rule__SimpleExpansion__Group_6__05790 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__1_in_rule__SimpleExpansion__Group_6__05793 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_0_in_rule__SimpleExpansion__Group_6__0__Impl5820 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__1__Impl_in_rule__SimpleExpansion__Group_6__15850 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__0_in_rule__SimpleExpansion__Group_6__1__Impl5877 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__0__Impl_in_rule__SimpleExpansion__Group_6_1__05912 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__1_in_rule__SimpleExpansion__Group_6_1__05915 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__SimpleExpansion__Group_6_1__0__Impl5943 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__1__Impl_in_rule__SimpleExpansion__Group_6_1__15974 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_1_1_in_rule__SimpleExpansion__Group_6_1__1__Impl6001 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__0__Impl_in_rule__AddressExpansion__Group__06035 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__1_in_rule__AddressExpansion__Group__06038 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__AddressExpansion__Group__0__Impl6066 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__1__Impl_in_rule__AddressExpansion__Group__16097 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__2_in_rule__AddressExpansion__Group__16100 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__NameAssignment_1_in_rule__AddressExpansion__Group__1__Impl6127 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__2__Impl_in_rule__AddressExpansion__Group__26157 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__3_in_rule__AddressExpansion__Group__26160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__AddressExpansion__Group__2__Impl6188 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__3__Impl_in_rule__AddressExpansion__Group__36219 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__4_in_rule__AddressExpansion__Group__36222 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__ConstructorAssignment_3_in_rule__AddressExpansion__Group__3__Impl6249 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__4__Impl_in_rule__AddressExpansion__Group__46279 = new BitSet(new long[]{0x0000000000020050L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__5_in_rule__AddressExpansion__Group__46282 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__AddressExpansion__Group__4__Impl6310 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__5__Impl_in_rule__AddressExpansion__Group__56341 = new BitSet(new long[]{0x0000000000020050L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__6_in_rule__AddressExpansion__Group__56344 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__0_in_rule__AddressExpansion__Group__5__Impl6371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group__6__Impl_in_rule__AddressExpansion__Group__66402 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__AddressExpansion__Group__6__Impl6430 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__0__Impl_in_rule__AddressExpansion__Group_5__06475 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__1_in_rule__AddressExpansion__Group_5__06478 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_0_in_rule__AddressExpansion__Group_5__0__Impl6505 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__1__Impl_in_rule__AddressExpansion__Group_5__16535 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__0_in_rule__AddressExpansion__Group_5__1__Impl6562 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__0__Impl_in_rule__AddressExpansion__Group_5_1__06597 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__1_in_rule__AddressExpansion__Group_5_1__06600 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__AddressExpansion__Group_5_1__0__Impl6628 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__1__Impl_in_rule__AddressExpansion__Group_5_1__16659 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_1_1_in_rule__AddressExpansion__Group_5_1__1__Impl6686 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Argument__Group_1__0__Impl_in_rule__Argument__Group_1__06720 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__Argument__Group_1__1_in_rule__Argument__Group_1__06723 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Argument__LhsAssignment_1_0_in_rule__Argument__Group_1__0__Impl6750 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Argument__Group_1__1__Impl_in_rule__Argument__Group_1__16780 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_rule__Argument__Group_1__2_in_rule__Argument__Group_1__16783 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__Argument__Group_1__1__Impl6811 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Argument__Group_1__2__Impl_in_rule__Argument__Group_1__26842 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Argument__RhsAssignment_1_2_in_rule__Argument__Group_1__2__Impl6869 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__0__Impl_in_rule__AddressBinding__Group__06905 = new BitSet(new long[]{0x0000000000010010L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__1_in_rule__AddressBinding__Group__06908 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__AddressBinding__Group__0__Impl6936 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__1__Impl_in_rule__AddressBinding__Group__16967 = new BitSet(new long[]{0x0000000000010010L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__2_in_rule__AddressBinding__Group__16970 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__0_in_rule__AddressBinding__Group__1__Impl6997 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__2__Impl_in_rule__AddressBinding__Group__27028 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__3_in_rule__AddressBinding__Group__27031 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__AddressBinding__Group__2__Impl7059 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__3__Impl_in_rule__AddressBinding__Group__37090 = new BitSet(new long[]{0x0000000000120000L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__4_in_rule__AddressBinding__Group__37093 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__AddressesAssignment_3_in_rule__AddressBinding__Group__3__Impl7120 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__4__Impl_in_rule__AddressBinding__Group__47150 = new BitSet(new long[]{0x0000000000120000L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__5_in_rule__AddressBinding__Group__47153 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__0_in_rule__AddressBinding__Group__4__Impl7180 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group__5__Impl_in_rule__AddressBinding__Group__57211 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__AddressBinding__Group__5__Impl7239 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__0__Impl_in_rule__AddressBinding__Group_1__07282 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__1_in_rule__AddressBinding__Group_1__07285 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__NameAssignment_1_0_in_rule__AddressBinding__Group_1__0__Impl7312 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__1__Impl_in_rule__AddressBinding__Group_1__17342 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__AddressBinding__Group_1__1__Impl7370 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__0__Impl_in_rule__AddressBinding__Group_4__07405 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__1_in_rule__AddressBinding__Group_4__07408 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__AddressBinding__Group_4__0__Impl7436 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__1__Impl_in_rule__AddressBinding__Group_4__17467 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddressBinding__AddressesAssignment_4_1_in_rule__AddressBinding__Group_4__1__Impl7494 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__0__Impl_in_rule__Instantiation__Group__07528 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__1_in_rule__Instantiation__Group__07531 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__Instantiation__Group__0__Impl7559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__1__Impl_in_rule__Instantiation__Group__17590 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__2_in_rule__Instantiation__Group__17593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__AddressAssignment_1_in_rule__Instantiation__Group__1__Impl7620 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__2__Impl_in_rule__Instantiation__Group__27650 = new BitSet(new long[]{0x0000000000003000L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__3_in_rule__Instantiation__Group__27653 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__Instantiation__Group__2__Impl7681 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__3__Impl_in_rule__Instantiation__Group__37712 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__4_in_rule__Instantiation__Group__37715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__KindAssignment_3_in_rule__Instantiation__Group__3__Impl7742 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__4__Impl_in_rule__Instantiation__Group__47772 = new BitSet(new long[]{0x00000000E0020000L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__5_in_rule__Instantiation__Group__47775 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__Instantiation__Group__4__Impl7803 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__5__Impl_in_rule__Instantiation__Group__57834 = new BitSet(new long[]{0x00000000E0020000L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__6_in_rule__Instantiation__Group__57837 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5__0_in_rule__Instantiation__Group__5__Impl7864 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group__6__Impl_in_rule__Instantiation__Group__67895 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__Instantiation__Group__6__Impl7923 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5__0__Impl_in_rule__Instantiation__Group_5__07968 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5__1_in_rule__Instantiation__Group_5__07971 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__PropertiesAssignment_5_0_in_rule__Instantiation__Group_5__0__Impl7998 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5__1__Impl_in_rule__Instantiation__Group_5__18028 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__0_in_rule__Instantiation__Group_5__1__Impl8055 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__0__Impl_in_rule__Instantiation__Group_5_1__08090 = new BitSet(new long[]{0x00000000E0000000L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__1_in_rule__Instantiation__Group_5_1__08093 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Instantiation__Group_5_1__0__Impl8121 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__1__Impl_in_rule__Instantiation__Group_5_1__18152 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Instantiation__PropertiesAssignment_5_1_1_in_rule__Instantiation__Group_5_1__1__Impl8179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__0__Impl_in_rule__DirectAddressSpec__Group__08213 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__1_in_rule__DirectAddressSpec__Group__08216 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DirectAddressSpec__NameAssignment_0_in_rule__DirectAddressSpec__Group__0__Impl8243 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__1__Impl_in_rule__DirectAddressSpec__Group__18273 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__2_in_rule__DirectAddressSpec__Group__18276 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__DirectAddressSpec__Group__1__Impl8304 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__2__Impl_in_rule__DirectAddressSpec__Group__28335 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DirectAddressSpec__AddressAssignment_2_in_rule__DirectAddressSpec__Group__2__Impl8362 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__0__Impl_in_rule__InstantiationProperty__Group_0__08398 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__1_in_rule__InstantiationProperty__Group_0__08401 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__1__Impl_in_rule__InstantiationProperty__Group_0__18459 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__2_in_rule__InstantiationProperty__Group_0__18462 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__InstantiationProperty__Group_0__1__Impl8490 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__2__Impl_in_rule__InstantiationProperty__Group_0__28521 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__3_in_rule__InstantiationProperty__Group_0__28524 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__InstantiationProperty__Group_0__2__Impl8552 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__3__Impl_in_rule__InstantiationProperty__Group_0__38583 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__IdAssignment_0_3_in_rule__InstantiationProperty__Group_0__3__Impl8610 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_1__0__Impl_in_rule__InstantiationProperty__Group_1__08648 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_1__1_in_rule__InstantiationProperty__Group_1__08651 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_1__1__Impl_in_rule__InstantiationProperty__Group_1__18709 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__InstantiationProperty__Group_1__1__Impl8737 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__0__Impl_in_rule__InstantiationProperty__Group_2__08772 = new BitSet(new long[]{0x00000000E0000000L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__1_in_rule__InstantiationProperty__Group_2__08775 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__1__Impl_in_rule__InstantiationProperty__Group_2__18833 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__2_in_rule__InstantiationProperty__Group_2__18836 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_rule__InstantiationProperty__Group_2__1__Impl8864 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__2__Impl_in_rule__InstantiationProperty__Group_2__28895 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__3_in_rule__InstantiationProperty__Group_2__28898 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__InstantiationProperty__Group_2__2__Impl8926 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__3__Impl_in_rule__InstantiationProperty__Group_2__38957 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__4_in_rule__InstantiationProperty__Group_2__38960 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__ModeAssignment_2_3_in_rule__InstantiationProperty__Group_2__3__Impl8987 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__4__Impl_in_rule__InstantiationProperty__Group_2__49017 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__5_in_rule__InstantiationProperty__Group_2__49020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__InstantiationProperty__Group_2__4__Impl9048 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__5__Impl_in_rule__InstantiationProperty__Group_2__59079 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__6_in_rule__InstantiationProperty__Group_2__59082 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__RateAssignment_2_5_in_rule__InstantiationProperty__Group_2__5__Impl9109 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__6__Impl_in_rule__InstantiationProperty__Group_2__69139 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__InstantiationProperty__Group_2__6__Impl9167 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__Group__0__Impl_in_rule__Grouping__Group__09212 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__Grouping__Group__1_in_rule__Grouping__Group__09215 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__NameAssignment_0_in_rule__Grouping__Group__0__Impl9242 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__Group__1__Impl_in_rule__Grouping__Group__19272 = new BitSet(new long[]{0x0000000200000010L});
-    public static final BitSet FOLLOW_rule__Grouping__Group__2_in_rule__Grouping__Group__19275 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__Grouping__Group__1__Impl9303 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__Group__2__Impl_in_rule__Grouping__Group__29334 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__Grouping__Group__3_in_rule__Grouping__Group__29337 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__ElementsAssignment_2_in_rule__Grouping__Group__2__Impl9364 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__Group__3__Impl_in_rule__Grouping__Group__39394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__Group_3__0_in_rule__Grouping__Group__3__Impl9421 = new BitSet(new long[]{0x0000000000100002L});
-    public static final BitSet FOLLOW_rule__Grouping__Group_3__0__Impl_in_rule__Grouping__Group_3__09460 = new BitSet(new long[]{0x0000000200000010L});
-    public static final BitSet FOLLOW_rule__Grouping__Group_3__1_in_rule__Grouping__Group_3__09463 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__Grouping__Group_3__0__Impl9491 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__Group_3__1__Impl_in_rule__Grouping__Group_3__19522 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Grouping__ElementsAssignment_3_1_in_rule__Grouping__Group_3__1__Impl9549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GroupElement__Group__0__Impl_in_rule__GroupElement__Group__09583 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_rule__GroupElement__Group__1_in_rule__GroupElement__Group__09586 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GroupElement__PathAssignment_0_in_rule__GroupElement__Group__0__Impl9613 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GroupElement__Group__1__Impl_in_rule__GroupElement__Group__19643 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GroupElement__Group_1__0_in_rule__GroupElement__Group__1__Impl9670 = new BitSet(new long[]{0x0000000100000002L});
-    public static final BitSet FOLLOW_rule__GroupElement__Group_1__0__Impl_in_rule__GroupElement__Group_1__09705 = new BitSet(new long[]{0x0000000200000010L});
-    public static final BitSet FOLLOW_rule__GroupElement__Group_1__1_in_rule__GroupElement__Group_1__09708 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__GroupElement__Group_1__0__Impl9736 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GroupElement__Group_1__1__Impl_in_rule__GroupElement__Group_1__19767 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__GroupElement__PathAssignment_1_1_in_rule__GroupElement__Group_1__1__Impl9794 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PathElement__Group_1__0__Impl_in_rule__PathElement__Group_1__09828 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_rule__PathElement__Group_1__1_in_rule__PathElement__Group_1__09831 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__PathElement__Group_1__0__Impl9859 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PathElement__Group_1__1__Impl_in_rule__PathElement__Group_1__19890 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__PathElement__Group_1__2_in_rule__PathElement__Group_1__19893 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__PathElement__Group_1__1__Impl9921 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PathElement__Group_1__2__Impl_in_rule__PathElement__Group_1__29952 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__PathElement__Group_1__3_in_rule__PathElement__Group_1__29955 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PathElement__TypeAssignment_1_2_in_rule__PathElement__Group_1__2__Impl9982 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PathElement__Group_1__3__Impl_in_rule__PathElement__Group_1__310012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__PathElement__Group_1__3__Impl10040 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__LinkSpec__NameAssignment_110084 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleConstructor_in_rule__LinkSpec__ConstructorsAssignment_310115 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__Constructor__IsPublicAssignment_010151 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Constructor__NameAssignment_110190 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_010221 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_1_110252 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleConstructorAddressParameters_in_rule__Constructor__AddressesAssignment_5_110283 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMember_in_rule__Constructor__MembersAssignment_7_010314 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_110345 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_2_210376 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_210407 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_3_110438 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_210469 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_3_110500 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__LinkProperty__CtrlNameAssignment_0_210531 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__LinkProperty__BaseValueAssignment_1_210562 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__LinkProperty__UartNameAssignment_2_210593 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__SimpleExpansion__NameAssignment_010624 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__SimpleExpansion__ConstructorAssignment_210659 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_010694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_1_110725 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_010756 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_1_110787 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressExpansion__NameAssignment_110818 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressExpansion__ConstructorAssignment_310853 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_010888 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_1_110919 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Argument__SimpleAssignment_010950 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Argument__LhsAssignment_1_010981 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArgument_in_rule__Argument__RhsAssignment_1_211012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Argument__TextAssignment_211043 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressBinding__NameAssignment_1_011074 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_311105 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_4_111136 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddressSpec_in_rule__Instantiation__AddressAssignment_111167 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleKind_in_rule__Instantiation__KindAssignment_311198 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_011229 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_1_111260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DirectAddressSpec__NameAssignment_011291 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_HEX_NUM_in_rule__DirectAddressSpec__AddressAssignment_211322 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__NamedAddressSpec__NameAssignment11353 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArgument_in_rule__InstantiationProperty__IdAssignment_0_311384 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__InstantiationProperty__ModeAssignment_2_311415 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__InstantiationProperty__RateAssignment_2_511446 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Grouping__NameAssignment_011477 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_211508 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_3_111539 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_011570 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_1_111601 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__PathElement__SimpleAssignment_011632 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__PathElement__TypeAssignment_1_211667 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group_1__0_in_rule__LinkSpec__Group__1__Impl2082 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group__2__Impl_in_rule__LinkSpec__Group__22113 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group__3_in_rule__LinkSpec__Group__22116 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__NameAssignment_2_in_rule__LinkSpec__Group__2__Impl2143 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group__3__Impl_in_rule__LinkSpec__Group__32173 = new BitSet(new long[]{0x0000000400000010L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group__4_in_rule__LinkSpec__Group__32176 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__LinkSpec__Group__3__Impl2204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group__4__Impl_in_rule__LinkSpec__Group__42235 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__ConstructorsAssignment_4_in_rule__LinkSpec__Group__4__Impl2262 = new BitSet(new long[]{0x0000000400000012L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group_1__0__Impl_in_rule__LinkSpec__Group_1__02303 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group_1__1_in_rule__LinkSpec__Group_1__02306 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__PackagenameAssignment_1_0_in_rule__LinkSpec__Group_1__0__Impl2333 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkSpec__Group_1__1__Impl_in_rule__LinkSpec__Group_1__12363 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__LinkSpec__Group_1__1__Impl2391 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__0__Impl_in_rule__Constructor__Group__02426 = new BitSet(new long[]{0x0000000400000010L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__1_in_rule__Constructor__Group__02429 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__IsPublicAssignment_0_in_rule__Constructor__Group__0__Impl2456 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__1__Impl_in_rule__Constructor__Group__12487 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__2_in_rule__Constructor__Group__12490 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__NameAssignment_1_in_rule__Constructor__Group__1__Impl2517 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__2__Impl_in_rule__Constructor__Group__22547 = new BitSet(new long[]{0x0000000000040010L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__3_in_rule__Constructor__Group__22550 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__Constructor__Group__2__Impl2578 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__3__Impl_in_rule__Constructor__Group__32609 = new BitSet(new long[]{0x0000000000040010L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__4_in_rule__Constructor__Group__32612 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3__0_in_rule__Constructor__Group__3__Impl2639 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__4__Impl_in_rule__Constructor__Group__42670 = new BitSet(new long[]{0x0000000000480000L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__5_in_rule__Constructor__Group__42673 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__Constructor__Group__4__Impl2701 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__5__Impl_in_rule__Constructor__Group__52732 = new BitSet(new long[]{0x0000000000480000L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__6_in_rule__Constructor__Group__52735 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_5__0_in_rule__Constructor__Group__5__Impl2762 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__6__Impl_in_rule__Constructor__Group__62793 = new BitSet(new long[]{0x0000000001900010L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__7_in_rule__Constructor__Group__62796 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__Constructor__Group__6__Impl2824 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__7__Impl_in_rule__Constructor__Group__72855 = new BitSet(new long[]{0x0000000001900010L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__8_in_rule__Constructor__Group__72858 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_7__0_in_rule__Constructor__Group__7__Impl2885 = new BitSet(new long[]{0x0000000001800012L});
+    public static final BitSet FOLLOW_rule__Constructor__Group__8__Impl_in_rule__Constructor__Group__82916 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__Constructor__Group__8__Impl2944 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3__0__Impl_in_rule__Constructor__Group_3__02993 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3__1_in_rule__Constructor__Group_3__02996 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__ParametersAssignment_3_0_in_rule__Constructor__Group_3__0__Impl3023 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3__1__Impl_in_rule__Constructor__Group_3__13053 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__0_in_rule__Constructor__Group_3__1__Impl3080 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__0__Impl_in_rule__Constructor__Group_3_1__03115 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__1_in_rule__Constructor__Group_3_1__03118 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Constructor__Group_3_1__0__Impl3146 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_3_1__1__Impl_in_rule__Constructor__Group_3_1__13177 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__ParametersAssignment_3_1_1_in_rule__Constructor__Group_3_1__1__Impl3204 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_5__0__Impl_in_rule__Constructor__Group_5__03238 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_5__1_in_rule__Constructor__Group_5__03241 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__Constructor__Group_5__0__Impl3269 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_5__1__Impl_in_rule__Constructor__Group_5__13300 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__AddressesAssignment_5_1_in_rule__Constructor__Group_5__1__Impl3327 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_7__0__Impl_in_rule__Constructor__Group_7__03361 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_7__1_in_rule__Constructor__Group_7__03364 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__MembersAssignment_7_0_in_rule__Constructor__Group_7__0__Impl3391 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Constructor__Group_7__1__Impl_in_rule__Constructor__Group_7__13421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__Constructor__Group_7__1__Impl3449 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group__0__Impl_in_rule__NamedAddresses__Group__03484 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group__1_in_rule__NamedAddresses__Group__03487 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__NamedAddresses__Group__0__Impl3515 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group__1__Impl_in_rule__NamedAddresses__Group__13546 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group__2_in_rule__NamedAddresses__Group__13549 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__AddressNamesAssignment_1_in_rule__NamedAddresses__Group__1__Impl3576 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group__2__Impl_in_rule__NamedAddresses__Group__23606 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__0_in_rule__NamedAddresses__Group__2__Impl3633 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__0__Impl_in_rule__NamedAddresses__Group_2__03670 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__1_in_rule__NamedAddresses__Group_2__03673 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__NamedAddresses__Group_2__0__Impl3701 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__1__Impl_in_rule__NamedAddresses__Group_2__13732 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__2_in_rule__NamedAddresses__Group_2__13735 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__NamedAddresses__Group_2__1__Impl3763 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__Group_2__2__Impl_in_rule__NamedAddresses__Group_2__23794 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__NamedAddresses__AddressNamesAssignment_2_2_in_rule__NamedAddresses__Group_2__2__Impl3821 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__0__Impl_in_rule__AddressTuple__Group__03857 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__1_in_rule__AddressTuple__Group__03860 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__AddressTuple__Group__0__Impl3888 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__1__Impl_in_rule__AddressTuple__Group__13919 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__2_in_rule__AddressTuple__Group__13922 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__AddressTuple__Group__1__Impl3950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__2__Impl_in_rule__AddressTuple__Group__23981 = new BitSet(new long[]{0x0000000000240000L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__3_in_rule__AddressTuple__Group__23984 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__ElementsAssignment_2_in_rule__AddressTuple__Group__2__Impl4011 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__3__Impl_in_rule__AddressTuple__Group__34041 = new BitSet(new long[]{0x0000000000240000L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__4_in_rule__AddressTuple__Group__34044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__0_in_rule__AddressTuple__Group__3__Impl4071 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group__4__Impl_in_rule__AddressTuple__Group__44102 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__AddressTuple__Group__4__Impl4130 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__0__Impl_in_rule__AddressTuple__Group_3__04171 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__1_in_rule__AddressTuple__Group_3__04174 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__AddressTuple__Group_3__0__Impl4202 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__Group_3__1__Impl_in_rule__AddressTuple__Group_3__14233 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressTuple__ElementsAssignment_3_1_in_rule__AddressTuple__Group_3__1__Impl4260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__0__Impl_in_rule__TosNetLinkBinding__Group__04294 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__1_in_rule__TosNetLinkBinding__Group__04297 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__TosNetLinkBinding__Group__0__Impl4325 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__1__Impl_in_rule__TosNetLinkBinding__Group__14356 = new BitSet(new long[]{0x000000001A000000L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__2_in_rule__TosNetLinkBinding__Group__14359 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__TosNetLinkBinding__Group__1__Impl4387 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__2__Impl_in_rule__TosNetLinkBinding__Group__24418 = new BitSet(new long[]{0x0000000000240000L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__3_in_rule__TosNetLinkBinding__Group__24421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_2_in_rule__TosNetLinkBinding__Group__2__Impl4448 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__3__Impl_in_rule__TosNetLinkBinding__Group__34478 = new BitSet(new long[]{0x0000000000240000L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__4_in_rule__TosNetLinkBinding__Group__34481 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__0_in_rule__TosNetLinkBinding__Group__3__Impl4508 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group__4__Impl_in_rule__TosNetLinkBinding__Group__44539 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__TosNetLinkBinding__Group__4__Impl4567 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__0__Impl_in_rule__TosNetLinkBinding__Group_3__04608 = new BitSet(new long[]{0x000000001A000000L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__1_in_rule__TosNetLinkBinding__Group_3__04611 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__TosNetLinkBinding__Group_3__0__Impl4639 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__Group_3__1__Impl_in_rule__TosNetLinkBinding__Group_3__14670 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__TosNetLinkBinding__PropertiesAssignment_3_1_in_rule__TosNetLinkBinding__Group_3__1__Impl4697 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__0__Impl_in_rule__LinkProperty__Group_0__04731 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__1_in_rule__LinkProperty__Group_0__04734 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__LinkProperty__Group_0__0__Impl4762 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__1__Impl_in_rule__LinkProperty__Group_0__14793 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__2_in_rule__LinkProperty__Group_0__14796 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__LinkProperty__Group_0__1__Impl4824 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_0__2__Impl_in_rule__LinkProperty__Group_0__24855 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__CtrlNameAssignment_0_2_in_rule__LinkProperty__Group_0__2__Impl4882 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__0__Impl_in_rule__LinkProperty__Group_1__04918 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__1_in_rule__LinkProperty__Group_1__04921 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__LinkProperty__Group_1__0__Impl4949 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__1__Impl_in_rule__LinkProperty__Group_1__14980 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__2_in_rule__LinkProperty__Group_1__14983 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__LinkProperty__Group_1__1__Impl5011 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_1__2__Impl_in_rule__LinkProperty__Group_1__25042 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__BaseValueAssignment_1_2_in_rule__LinkProperty__Group_1__2__Impl5069 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__0__Impl_in_rule__LinkProperty__Group_2__05105 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__1_in_rule__LinkProperty__Group_2__05108 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__LinkProperty__Group_2__0__Impl5136 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__1__Impl_in_rule__LinkProperty__Group_2__15167 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__2_in_rule__LinkProperty__Group_2__15170 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__LinkProperty__Group_2__1__Impl5198 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__Group_2__2__Impl_in_rule__LinkProperty__Group_2__25229 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__LinkProperty__UartNameAssignment_2_2_in_rule__LinkProperty__Group_2__2__Impl5256 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__0__Impl_in_rule__SimpleExpansion__Group__05292 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__1_in_rule__SimpleExpansion__Group__05295 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__NameAssignment_0_in_rule__SimpleExpansion__Group__0__Impl5322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__1__Impl_in_rule__SimpleExpansion__Group__15352 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__2_in_rule__SimpleExpansion__Group__15355 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__SimpleExpansion__Group__1__Impl5383 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__2__Impl_in_rule__SimpleExpansion__Group__25414 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__3_in_rule__SimpleExpansion__Group__25417 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__ConstructorAssignment_2_in_rule__SimpleExpansion__Group__2__Impl5444 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__3__Impl_in_rule__SimpleExpansion__Group__35474 = new BitSet(new long[]{0x0000000000040050L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__4_in_rule__SimpleExpansion__Group__35477 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__SimpleExpansion__Group__3__Impl5505 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__4__Impl_in_rule__SimpleExpansion__Group__45536 = new BitSet(new long[]{0x0000000000040050L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__5_in_rule__SimpleExpansion__Group__45539 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__0_in_rule__SimpleExpansion__Group__4__Impl5566 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__5__Impl_in_rule__SimpleExpansion__Group__55597 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__6_in_rule__SimpleExpansion__Group__55600 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__SimpleExpansion__Group__5__Impl5628 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group__6__Impl_in_rule__SimpleExpansion__Group__65659 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__0_in_rule__SimpleExpansion__Group__6__Impl5686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__0__Impl_in_rule__SimpleExpansion__Group_4__05731 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__1_in_rule__SimpleExpansion__Group_4__05734 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_0_in_rule__SimpleExpansion__Group_4__0__Impl5761 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4__1__Impl_in_rule__SimpleExpansion__Group_4__15791 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__0_in_rule__SimpleExpansion__Group_4__1__Impl5818 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__0__Impl_in_rule__SimpleExpansion__Group_4_1__05853 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__1_in_rule__SimpleExpansion__Group_4_1__05856 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__SimpleExpansion__Group_4_1__0__Impl5884 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_4_1__1__Impl_in_rule__SimpleExpansion__Group_4_1__15915 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__ArgumentsAssignment_4_1_1_in_rule__SimpleExpansion__Group_4_1__1__Impl5942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__0__Impl_in_rule__SimpleExpansion__Group_6__05976 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__1_in_rule__SimpleExpansion__Group_6__05979 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_0_in_rule__SimpleExpansion__Group_6__0__Impl6006 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6__1__Impl_in_rule__SimpleExpansion__Group_6__16036 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__0_in_rule__SimpleExpansion__Group_6__1__Impl6063 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__0__Impl_in_rule__SimpleExpansion__Group_6_1__06098 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__1_in_rule__SimpleExpansion__Group_6_1__06101 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__SimpleExpansion__Group_6_1__0__Impl6129 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__Group_6_1__1__Impl_in_rule__SimpleExpansion__Group_6_1__16160 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__SimpleExpansion__BindingsAssignment_6_1_1_in_rule__SimpleExpansion__Group_6_1__1__Impl6187 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__0__Impl_in_rule__AddressExpansion__Group__06221 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__1_in_rule__AddressExpansion__Group__06224 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__AddressExpansion__Group__0__Impl6252 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__1__Impl_in_rule__AddressExpansion__Group__16283 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__2_in_rule__AddressExpansion__Group__16286 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__NameAssignment_1_in_rule__AddressExpansion__Group__1__Impl6313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__2__Impl_in_rule__AddressExpansion__Group__26343 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__3_in_rule__AddressExpansion__Group__26346 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__AddressExpansion__Group__2__Impl6374 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__3__Impl_in_rule__AddressExpansion__Group__36405 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__4_in_rule__AddressExpansion__Group__36408 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__ConstructorAssignment_3_in_rule__AddressExpansion__Group__3__Impl6435 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__4__Impl_in_rule__AddressExpansion__Group__46465 = new BitSet(new long[]{0x0000000000040050L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__5_in_rule__AddressExpansion__Group__46468 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__AddressExpansion__Group__4__Impl6496 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__5__Impl_in_rule__AddressExpansion__Group__56527 = new BitSet(new long[]{0x0000000000040050L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__6_in_rule__AddressExpansion__Group__56530 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__0_in_rule__AddressExpansion__Group__5__Impl6557 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group__6__Impl_in_rule__AddressExpansion__Group__66588 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__AddressExpansion__Group__6__Impl6616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__0__Impl_in_rule__AddressExpansion__Group_5__06661 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__1_in_rule__AddressExpansion__Group_5__06664 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_0_in_rule__AddressExpansion__Group_5__0__Impl6691 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5__1__Impl_in_rule__AddressExpansion__Group_5__16721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__0_in_rule__AddressExpansion__Group_5__1__Impl6748 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__0__Impl_in_rule__AddressExpansion__Group_5_1__06783 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__1_in_rule__AddressExpansion__Group_5_1__06786 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__AddressExpansion__Group_5_1__0__Impl6814 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__Group_5_1__1__Impl_in_rule__AddressExpansion__Group_5_1__16845 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressExpansion__ArgumentsAssignment_5_1_1_in_rule__AddressExpansion__Group_5_1__1__Impl6872 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Argument__Group_1__0__Impl_in_rule__Argument__Group_1__06906 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Argument__Group_1__1_in_rule__Argument__Group_1__06909 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Argument__LhsAssignment_1_0_in_rule__Argument__Group_1__0__Impl6936 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Argument__Group_1__1__Impl_in_rule__Argument__Group_1__16966 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_rule__Argument__Group_1__2_in_rule__Argument__Group_1__16969 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Argument__Group_1__1__Impl6997 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Argument__Group_1__2__Impl_in_rule__Argument__Group_1__27028 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Argument__RhsAssignment_1_2_in_rule__Argument__Group_1__2__Impl7055 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__0__Impl_in_rule__AddressBinding__Group__07091 = new BitSet(new long[]{0x0000000000020010L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__1_in_rule__AddressBinding__Group__07094 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__AddressBinding__Group__0__Impl7122 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__1__Impl_in_rule__AddressBinding__Group__17153 = new BitSet(new long[]{0x0000000000020010L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__2_in_rule__AddressBinding__Group__17156 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__0_in_rule__AddressBinding__Group__1__Impl7183 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__2__Impl_in_rule__AddressBinding__Group__27214 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__3_in_rule__AddressBinding__Group__27217 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__AddressBinding__Group__2__Impl7245 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__3__Impl_in_rule__AddressBinding__Group__37276 = new BitSet(new long[]{0x0000000000240000L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__4_in_rule__AddressBinding__Group__37279 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__AddressesAssignment_3_in_rule__AddressBinding__Group__3__Impl7306 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__4__Impl_in_rule__AddressBinding__Group__47336 = new BitSet(new long[]{0x0000000000240000L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__5_in_rule__AddressBinding__Group__47339 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__0_in_rule__AddressBinding__Group__4__Impl7366 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group__5__Impl_in_rule__AddressBinding__Group__57397 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__AddressBinding__Group__5__Impl7425 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__0__Impl_in_rule__AddressBinding__Group_1__07468 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__1_in_rule__AddressBinding__Group_1__07471 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__NameAssignment_1_0_in_rule__AddressBinding__Group_1__0__Impl7498 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_1__1__Impl_in_rule__AddressBinding__Group_1__17528 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__AddressBinding__Group_1__1__Impl7556 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__0__Impl_in_rule__AddressBinding__Group_4__07591 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__1_in_rule__AddressBinding__Group_4__07594 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__AddressBinding__Group_4__0__Impl7622 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__Group_4__1__Impl_in_rule__AddressBinding__Group_4__17653 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddressBinding__AddressesAssignment_4_1_in_rule__AddressBinding__Group_4__1__Impl7680 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__0__Impl_in_rule__Instantiation__Group__07714 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__1_in_rule__Instantiation__Group__07717 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__Instantiation__Group__0__Impl7745 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__1__Impl_in_rule__Instantiation__Group__17776 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__2_in_rule__Instantiation__Group__17779 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__AddressAssignment_1_in_rule__Instantiation__Group__1__Impl7806 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__2__Impl_in_rule__Instantiation__Group__27836 = new BitSet(new long[]{0x0000000000003000L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__3_in_rule__Instantiation__Group__27839 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__Instantiation__Group__2__Impl7867 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__3__Impl_in_rule__Instantiation__Group__37898 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__4_in_rule__Instantiation__Group__37901 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__KindAssignment_3_in_rule__Instantiation__Group__3__Impl7928 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__4__Impl_in_rule__Instantiation__Group__47958 = new BitSet(new long[]{0x00000001C0040000L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__5_in_rule__Instantiation__Group__47961 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__Instantiation__Group__4__Impl7989 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__5__Impl_in_rule__Instantiation__Group__58020 = new BitSet(new long[]{0x00000001C0040000L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__6_in_rule__Instantiation__Group__58023 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5__0_in_rule__Instantiation__Group__5__Impl8050 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group__6__Impl_in_rule__Instantiation__Group__68081 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__Instantiation__Group__6__Impl8109 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5__0__Impl_in_rule__Instantiation__Group_5__08154 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5__1_in_rule__Instantiation__Group_5__08157 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__PropertiesAssignment_5_0_in_rule__Instantiation__Group_5__0__Impl8184 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5__1__Impl_in_rule__Instantiation__Group_5__18214 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__0_in_rule__Instantiation__Group_5__1__Impl8241 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__0__Impl_in_rule__Instantiation__Group_5_1__08276 = new BitSet(new long[]{0x00000001C0000000L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__1_in_rule__Instantiation__Group_5_1__08279 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Instantiation__Group_5_1__0__Impl8307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__Group_5_1__1__Impl_in_rule__Instantiation__Group_5_1__18338 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Instantiation__PropertiesAssignment_5_1_1_in_rule__Instantiation__Group_5_1__1__Impl8365 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__0__Impl_in_rule__DirectAddressSpec__Group__08399 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__1_in_rule__DirectAddressSpec__Group__08402 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DirectAddressSpec__NameAssignment_0_in_rule__DirectAddressSpec__Group__0__Impl8429 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__1__Impl_in_rule__DirectAddressSpec__Group__18459 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__2_in_rule__DirectAddressSpec__Group__18462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__DirectAddressSpec__Group__1__Impl8490 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DirectAddressSpec__Group__2__Impl_in_rule__DirectAddressSpec__Group__28521 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DirectAddressSpec__AddressAssignment_2_in_rule__DirectAddressSpec__Group__2__Impl8548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__0__Impl_in_rule__InstantiationProperty__Group_0__08584 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__1_in_rule__InstantiationProperty__Group_0__08587 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__1__Impl_in_rule__InstantiationProperty__Group_0__18645 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__2_in_rule__InstantiationProperty__Group_0__18648 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__InstantiationProperty__Group_0__1__Impl8676 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__2__Impl_in_rule__InstantiationProperty__Group_0__28707 = new BitSet(new long[]{0x0000000000000050L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__3_in_rule__InstantiationProperty__Group_0__28710 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__InstantiationProperty__Group_0__2__Impl8738 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_0__3__Impl_in_rule__InstantiationProperty__Group_0__38769 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__IdAssignment_0_3_in_rule__InstantiationProperty__Group_0__3__Impl8796 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_1__0__Impl_in_rule__InstantiationProperty__Group_1__08834 = new BitSet(new long[]{0x0000000080000000L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_1__1_in_rule__InstantiationProperty__Group_1__08837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_1__1__Impl_in_rule__InstantiationProperty__Group_1__18895 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_rule__InstantiationProperty__Group_1__1__Impl8923 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__0__Impl_in_rule__InstantiationProperty__Group_2__08958 = new BitSet(new long[]{0x00000001C0000000L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__1_in_rule__InstantiationProperty__Group_2__08961 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__1__Impl_in_rule__InstantiationProperty__Group_2__19019 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__2_in_rule__InstantiationProperty__Group_2__19022 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__InstantiationProperty__Group_2__1__Impl9050 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__2__Impl_in_rule__InstantiationProperty__Group_2__29081 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__3_in_rule__InstantiationProperty__Group_2__29084 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__InstantiationProperty__Group_2__2__Impl9112 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__3__Impl_in_rule__InstantiationProperty__Group_2__39143 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__4_in_rule__InstantiationProperty__Group_2__39146 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__ModeAssignment_2_3_in_rule__InstantiationProperty__Group_2__3__Impl9173 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__4__Impl_in_rule__InstantiationProperty__Group_2__49203 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__5_in_rule__InstantiationProperty__Group_2__49206 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__InstantiationProperty__Group_2__4__Impl9234 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__5__Impl_in_rule__InstantiationProperty__Group_2__59265 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__6_in_rule__InstantiationProperty__Group_2__59268 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__RateAssignment_2_5_in_rule__InstantiationProperty__Group_2__5__Impl9295 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__InstantiationProperty__Group_2__6__Impl_in_rule__InstantiationProperty__Group_2__69325 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__InstantiationProperty__Group_2__6__Impl9353 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__Group__0__Impl_in_rule__Grouping__Group__09398 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Grouping__Group__1_in_rule__Grouping__Group__09401 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__NameAssignment_0_in_rule__Grouping__Group__0__Impl9428 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__Group__1__Impl_in_rule__Grouping__Group__19458 = new BitSet(new long[]{0x0000000200000010L});
+    public static final BitSet FOLLOW_rule__Grouping__Group__2_in_rule__Grouping__Group__19461 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Grouping__Group__1__Impl9489 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__Group__2__Impl_in_rule__Grouping__Group__29520 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__Grouping__Group__3_in_rule__Grouping__Group__29523 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__ElementsAssignment_2_in_rule__Grouping__Group__2__Impl9550 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__Group__3__Impl_in_rule__Grouping__Group__39580 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__Group_3__0_in_rule__Grouping__Group__3__Impl9607 = new BitSet(new long[]{0x0000000000200002L});
+    public static final BitSet FOLLOW_rule__Grouping__Group_3__0__Impl_in_rule__Grouping__Group_3__09646 = new BitSet(new long[]{0x0000000200000010L});
+    public static final BitSet FOLLOW_rule__Grouping__Group_3__1_in_rule__Grouping__Group_3__09649 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__Grouping__Group_3__0__Impl9677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__Group_3__1__Impl_in_rule__Grouping__Group_3__19708 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Grouping__ElementsAssignment_3_1_in_rule__Grouping__Group_3__1__Impl9735 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GroupElement__Group__0__Impl_in_rule__GroupElement__Group__09769 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_rule__GroupElement__Group__1_in_rule__GroupElement__Group__09772 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GroupElement__PathAssignment_0_in_rule__GroupElement__Group__0__Impl9799 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GroupElement__Group__1__Impl_in_rule__GroupElement__Group__19829 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GroupElement__Group_1__0_in_rule__GroupElement__Group__1__Impl9856 = new BitSet(new long[]{0x0000000000010002L});
+    public static final BitSet FOLLOW_rule__GroupElement__Group_1__0__Impl_in_rule__GroupElement__Group_1__09891 = new BitSet(new long[]{0x0000000200000010L});
+    public static final BitSet FOLLOW_rule__GroupElement__Group_1__1_in_rule__GroupElement__Group_1__09894 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__GroupElement__Group_1__0__Impl9922 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GroupElement__Group_1__1__Impl_in_rule__GroupElement__Group_1__19953 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__GroupElement__PathAssignment_1_1_in_rule__GroupElement__Group_1__1__Impl9980 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PathElement__Group_1__0__Impl_in_rule__PathElement__Group_1__010014 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__PathElement__Group_1__1_in_rule__PathElement__Group_1__010017 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__PathElement__Group_1__0__Impl10045 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PathElement__Group_1__1__Impl_in_rule__PathElement__Group_1__110076 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__PathElement__Group_1__2_in_rule__PathElement__Group_1__110079 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__PathElement__Group_1__1__Impl10107 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PathElement__Group_1__2__Impl_in_rule__PathElement__Group_1__210138 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__PathElement__Group_1__3_in_rule__PathElement__Group_1__210141 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PathElement__TypeAssignment_1_2_in_rule__PathElement__Group_1__2__Impl10168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__PathElement__Group_1__3__Impl_in_rule__PathElement__Group_1__310198 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__PathElement__Group_1__3__Impl10226 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__LinkSpec__PackagenameAssignment_1_010270 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__LinkSpec__NameAssignment_210301 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleConstructor_in_rule__LinkSpec__ConstructorsAssignment_410332 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__Constructor__IsPublicAssignment_010368 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Constructor__NameAssignment_110407 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_010438 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Constructor__ParametersAssignment_3_1_110469 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleConstructorAddressParameters_in_rule__Constructor__AddressesAssignment_5_110500 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMember_in_rule__Constructor__MembersAssignment_7_010531 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_110562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__NamedAddresses__AddressNamesAssignment_2_210593 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_210624 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressTuple__ElementsAssignment_3_110655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_210686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleLinkProperty_in_rule__TosNetLinkBinding__PropertiesAssignment_3_110717 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__LinkProperty__CtrlNameAssignment_0_210748 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__LinkProperty__BaseValueAssignment_1_210779 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__LinkProperty__UartNameAssignment_2_210810 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__SimpleExpansion__NameAssignment_010841 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__SimpleExpansion__ConstructorAssignment_210876 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_010911 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArgument_in_rule__SimpleExpansion__ArgumentsAssignment_4_1_110942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_010973 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddressBinding_in_rule__SimpleExpansion__BindingsAssignment_6_1_111004 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressExpansion__NameAssignment_111035 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressExpansion__ConstructorAssignment_311070 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_011105 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArgument_in_rule__AddressExpansion__ArgumentsAssignment_5_1_111136 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Argument__SimpleAssignment_011167 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Argument__LhsAssignment_1_011198 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArgument_in_rule__Argument__RhsAssignment_1_211229 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Argument__TextAssignment_211260 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddressBinding__NameAssignment_1_011291 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_311322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_HEX_NUM_in_rule__AddressBinding__AddressesAssignment_4_111353 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddressSpec_in_rule__Instantiation__AddressAssignment_111384 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleKind_in_rule__Instantiation__KindAssignment_311415 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_011446 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleInstantiationProperty_in_rule__Instantiation__PropertiesAssignment_5_1_111477 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DirectAddressSpec__NameAssignment_011508 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_HEX_NUM_in_rule__DirectAddressSpec__AddressAssignment_211539 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__NamedAddressSpec__NameAssignment11570 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArgument_in_rule__InstantiationProperty__IdAssignment_0_311601 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__InstantiationProperty__ModeAssignment_2_311632 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__InstantiationProperty__RateAssignment_2_511663 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Grouping__NameAssignment_011694 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_211725 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleGroupElement_in_rule__Grouping__ElementsAssignment_3_111756 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_011787 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePathElement_in_rule__GroupElement__PathAssignment_1_111818 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__PathElement__SimpleAssignment_011849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__PathElement__TypeAssignment_1_211884 = new BitSet(new long[]{0x0000000000000002L});
 
 }

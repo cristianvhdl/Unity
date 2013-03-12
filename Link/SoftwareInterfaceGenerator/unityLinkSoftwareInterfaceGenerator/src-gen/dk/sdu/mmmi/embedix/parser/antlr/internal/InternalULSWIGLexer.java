@@ -84,10 +84,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:12:7: ( ';' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:12:9: ';'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:12:7: ( '.' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:12:9: '.'
             {
-            match(';'); 
+            match('.'); 
 
             }
 
@@ -104,11 +104,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:13:7: ( 'public' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:13:9: 'public'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:13:7: ( ';' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:13:9: ';'
             {
-            match("public"); 
-
+            match(';'); 
 
             }
 
@@ -125,10 +124,11 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:14:7: ( '(' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:14:9: '('
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:14:7: ( 'public' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:14:9: 'public'
             {
-            match('('); 
+            match("public"); 
+
 
             }
 
@@ -145,10 +145,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:15:7: ( ',' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:15:9: ','
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:15:7: ( '(' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:15:9: '('
             {
-            match(','); 
+            match('('); 
 
             }
 
@@ -165,10 +165,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:16:7: ( ')' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:16:9: ')'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:16:7: ( ',' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:16:9: ','
             {
-            match(')'); 
+            match(','); 
 
             }
 
@@ -185,10 +185,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:17:7: ( ':' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:17:9: ':'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:17:7: ( ')' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:17:9: ')'
             {
-            match(':'); 
+            match(')'); 
 
             }
 
@@ -205,10 +205,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:18:7: ( '{' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:18:9: '{'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:18:7: ( ':' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:18:9: ':'
             {
-            match('{'); 
+            match(':'); 
 
             }
 
@@ -225,10 +225,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:19:7: ( '}' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:19:9: '}'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:19:7: ( '{' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:19:9: '{'
             {
-            match('}'); 
+            match('{'); 
 
             }
 
@@ -245,10 +245,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:20:7: ( '@' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:20:9: '@'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:20:7: ( '}' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:20:9: '}'
             {
-            match('@'); 
+            match('}'); 
 
             }
 
@@ -265,11 +265,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:21:7: ( 'TOSNET' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:21:9: 'TOSNET'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:21:7: ( '@' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:21:9: '@'
             {
-            match("TOSNET"); 
-
+            match('@'); 
 
             }
 
@@ -286,10 +285,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:22:7: ( 'CTRL' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:22:9: 'CTRL'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:22:7: ( 'TOSNET' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:22:9: 'TOSNET'
             {
-            match("CTRL"); 
+            match("TOSNET"); 
 
 
             }
@@ -307,10 +306,11 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:23:7: ( '=' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:23:9: '='
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:23:7: ( 'CTRL' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:23:9: 'CTRL'
             {
-            match('='); 
+            match("CTRL"); 
+
 
             }
 
@@ -327,11 +327,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:24:7: ( 'BASE' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:24:9: 'BASE'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:24:7: ( '=' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:24:9: '='
             {
-            match("BASE"); 
-
+            match('='); 
 
             }
 
@@ -348,10 +347,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:25:7: ( 'UART' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:25:9: 'UART'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:25:7: ( 'BASE' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:25:9: 'BASE'
             {
-            match("UART"); 
+            match("BASE"); 
 
 
             }
@@ -369,10 +368,11 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:26:7: ( '+' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:26:9: '+'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:26:7: ( 'UART' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:26:9: 'UART'
             {
-            match('+'); 
+            match("UART"); 
+
 
             }
 
@@ -389,11 +389,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:27:7: ( 'READ' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:27:9: 'READ'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:27:7: ( '+' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:27:9: '+'
             {
-            match("READ"); 
-
+            match('+'); 
 
             }
 
@@ -410,10 +409,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:28:7: ( 'WRITE' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:28:9: 'WRITE'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:28:7: ( 'READ' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:28:9: 'READ'
             {
-            match("WRITE"); 
+            match("READ"); 
 
 
             }
@@ -431,10 +430,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:29:7: ( 'ID' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:29:9: 'ID'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:29:7: ( 'WRITE' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:29:9: 'WRITE'
             {
-            match("ID"); 
+            match("WRITE"); 
 
 
             }
@@ -452,10 +451,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:30:7: ( 'CRC' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:30:9: 'CRC'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:30:7: ( 'ID' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:30:9: 'ID'
             {
-            match("CRC"); 
+            match("ID"); 
 
 
             }
@@ -473,10 +472,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:31:7: ( 'PUBLISH' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:31:9: 'PUBLISH'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:31:7: ( 'CRC' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:31:9: 'CRC'
             {
-            match("PUBLISH"); 
+            match("CRC"); 
 
 
             }
@@ -494,10 +493,11 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:32:7: ( '.' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:32:9: '.'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:32:7: ( 'PUBLISH' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:32:9: 'PUBLISH'
             {
-            match('.'); 
+            match("PUBLISH"); 
+
 
             }
 
@@ -535,12 +535,12 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_HEX_NUM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1836:14: ( '0' 'x' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+ )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1836:16: '0' 'x' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1858:14: ( '0' 'x' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+ )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1858:16: '0' 'x' ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+
             {
             match('0'); 
             match('x'); 
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1836:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1858:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' )+
             int cnt1=0;
             loop1:
             do {
@@ -594,10 +594,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1838:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1838:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1860:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1860:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1838:11: ( '^' )?
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1860:11: ( '^' )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -606,7 +606,7 @@ public class InternalULSWIGLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1838:11: '^'
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1860:11: '^'
                     {
                     match('^'); 
 
@@ -624,7 +624,7 @@ public class InternalULSWIGLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1838:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1860:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop3:
             do {
                 int alt3=2;
@@ -673,10 +673,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1840:10: ( ( '0' .. '9' )+ )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1840:12: ( '0' .. '9' )+
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1862:10: ( ( '0' .. '9' )+ )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1862:12: ( '0' .. '9' )+
             {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1840:12: ( '0' .. '9' )+
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1862:12: ( '0' .. '9' )+
             int cnt4=0;
             loop4:
             do {
@@ -690,7 +690,7 @@ public class InternalULSWIGLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1840:13: '0' .. '9'
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1862:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -722,10 +722,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -743,10 +743,10 @@ public class InternalULSWIGLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -762,7 +762,7 @@ public class InternalULSWIGLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -778,7 +778,7 @@ public class InternalULSWIGLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -803,10 +803,10 @@ public class InternalULSWIGLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop6:
                     do {
                         int alt6=3;
@@ -822,7 +822,7 @@ public class InternalULSWIGLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -838,7 +838,7 @@ public class InternalULSWIGLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1842:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1864:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -881,12 +881,12 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1844:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1844:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1866:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1866:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1844:24: ( options {greedy=false; } : . )*
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1866:24: ( options {greedy=false; } : . )*
             loop8:
             do {
                 int alt8=2;
@@ -911,7 +911,7 @@ public class InternalULSWIGLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1844:52: .
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1866:52: .
             	    {
             	    matchAny(); 
 
@@ -941,12 +941,12 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop9:
             do {
                 int alt9=2;
@@ -959,7 +959,7 @@ public class InternalULSWIGLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -979,7 +979,7 @@ public class InternalULSWIGLexer extends Lexer {
                 }
             } while (true);
 
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:40: ( ( '\\r' )? '\\n' )?
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:40: ( ( '\\r' )? '\\n' )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -988,9 +988,9 @@ public class InternalULSWIGLexer extends Lexer {
             }
             switch (alt11) {
                 case 1 :
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:41: ( '\\r' )? '\\n'
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:41: ( '\\r' )? '\\n'
                     {
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:41: ( '\\r' )?
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:41: ( '\\r' )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -999,7 +999,7 @@ public class InternalULSWIGLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1846:41: '\\r'
+                            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1868:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1031,10 +1031,10 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1848:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1848:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1870:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1870:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1848:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1870:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt12=0;
             loop12:
             do {
@@ -1088,8 +1088,8 @@ public class InternalULSWIGLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1850:16: ( . )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1850:18: .
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1872:16: ( . )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:1872:18: .
             {
             matchAny(); 
 
@@ -1333,49 +1333,49 @@ public class InternalULSWIGLexer extends Lexer {
 
     protected DFA13 dfa13 = new DFA13(this);
     static final String DFA13_eotS =
-        "\1\uffff\1\41\1\uffff\1\41\7\uffff\2\41\1\uffff\2\41\1\uffff\4\41"+
-        "\1\uffff\1\41\1\71\1\37\2\uffff\3\37\2\uffff\1\41\2\uffff\1\41\7"+
-        "\uffff\3\41\1\uffff\2\41\1\uffff\2\41\1\107\1\41\1\uffff\1\41\6"+
-        "\uffff\4\41\1\116\4\41\1\uffff\1\41\1\124\1\125\2\41\1\130\1\uffff"+
-        "\1\131\1\132\1\133\2\41\2\uffff\2\41\4\uffff\1\140\1\41\1\142\1"+
-        "\143\1\uffff\1\41\2\uffff\1\145\1\uffff";
+        "\1\uffff\1\41\2\uffff\1\41\7\uffff\2\41\1\uffff\2\41\1\uffff\5\41"+
+        "\1\71\1\37\2\uffff\3\37\2\uffff\1\41\3\uffff\1\41\7\uffff\3\41\1"+
+        "\uffff\2\41\1\uffff\2\41\1\107\2\41\6\uffff\4\41\1\116\4\41\1\uffff"+
+        "\1\41\1\124\1\125\2\41\1\130\1\uffff\1\131\1\132\1\133\2\41\2\uffff"+
+        "\2\41\4\uffff\1\140\1\41\1\142\1\143\1\uffff\1\41\2\uffff\1\145"+
+        "\1\uffff";
     static final String DFA13_eofS =
         "\146\uffff";
     static final String DFA13_minS =
-        "\1\0\1\151\1\uffff\1\165\7\uffff\1\117\1\122\1\uffff\2\101\1\uffff"+
-        "\1\105\1\122\1\104\1\125\1\uffff\1\114\1\170\1\101\2\uffff\2\0\1"+
-        "\52\2\uffff\1\156\2\uffff\1\142\7\uffff\1\123\1\122\1\103\1\uffff"+
-        "\1\123\1\122\1\uffff\1\101\1\111\1\60\1\102\1\uffff\1\114\6\uffff"+
-        "\1\153\1\154\1\116\1\114\1\60\1\105\1\124\1\104\1\124\1\uffff\1"+
-        "\114\2\60\1\151\1\105\1\60\1\uffff\3\60\1\105\1\111\2\uffff\1\143"+
-        "\1\124\4\uffff\1\60\1\123\2\60\1\uffff\1\110\2\uffff\1\60\1\uffff";
+        "\1\0\1\151\2\uffff\1\165\7\uffff\1\117\1\122\1\uffff\2\101\1\uffff"+
+        "\1\105\1\122\1\104\1\125\1\114\1\170\1\101\2\uffff\2\0\1\52\2\uffff"+
+        "\1\156\3\uffff\1\142\7\uffff\1\123\1\122\1\103\1\uffff\1\123\1\122"+
+        "\1\uffff\1\101\1\111\1\60\1\102\1\114\6\uffff\1\153\1\154\1\116"+
+        "\1\114\1\60\1\105\1\124\1\104\1\124\1\uffff\1\114\2\60\1\151\1\105"+
+        "\1\60\1\uffff\3\60\1\105\1\111\2\uffff\1\143\1\124\4\uffff\1\60"+
+        "\1\123\2\60\1\uffff\1\110\2\uffff\1\60\1\uffff";
     static final String DFA13_maxS =
-        "\1\uffff\1\151\1\uffff\1\165\7\uffff\1\117\1\124\1\uffff\2\101\1"+
-        "\uffff\1\105\1\122\1\104\1\125\1\uffff\1\114\1\170\1\172\2\uffff"+
-        "\2\uffff\1\57\2\uffff\1\156\2\uffff\1\142\7\uffff\1\123\1\122\1"+
-        "\103\1\uffff\1\123\1\122\1\uffff\1\101\1\111\1\172\1\102\1\uffff"+
-        "\1\114\6\uffff\1\153\1\154\1\116\1\114\1\172\1\105\1\124\1\104\1"+
-        "\124\1\uffff\1\114\2\172\1\151\1\105\1\172\1\uffff\3\172\1\105\1"+
-        "\111\2\uffff\1\143\1\124\4\uffff\1\172\1\123\2\172\1\uffff\1\110"+
-        "\2\uffff\1\172\1\uffff";
+        "\1\uffff\1\151\2\uffff\1\165\7\uffff\1\117\1\124\1\uffff\2\101\1"+
+        "\uffff\1\105\1\122\1\104\1\125\1\114\1\170\1\172\2\uffff\2\uffff"+
+        "\1\57\2\uffff\1\156\3\uffff\1\142\7\uffff\1\123\1\122\1\103\1\uffff"+
+        "\1\123\1\122\1\uffff\1\101\1\111\1\172\1\102\1\114\6\uffff\1\153"+
+        "\1\154\1\116\1\114\1\172\1\105\1\124\1\104\1\124\1\uffff\1\114\2"+
+        "\172\1\151\1\105\1\172\1\uffff\3\172\1\105\1\111\2\uffff\1\143\1"+
+        "\124\4\uffff\1\172\1\123\2\172\1\uffff\1\110\2\uffff\1\172\1\uffff";
     static final String DFA13_acceptS =
-        "\2\uffff\1\2\1\uffff\1\4\1\5\1\6\1\7\1\10\1\11\1\12\2\uffff\1\15"+
-        "\2\uffff\1\20\4\uffff\1\26\3\uffff\1\31\1\32\3\uffff\1\36\1\37\1"+
-        "\uffff\1\31\1\2\1\uffff\1\4\1\5\1\6\1\7\1\10\1\11\1\12\3\uffff\1"+
-        "\15\2\uffff\1\20\4\uffff\1\26\1\uffff\1\30\1\32\1\33\1\34\1\35\1"+
-        "\36\11\uffff\1\23\6\uffff\1\24\5\uffff\1\27\1\1\2\uffff\1\14\1\16"+
-        "\1\17\1\21\4\uffff\1\22\1\uffff\1\3\1\13\1\uffff\1\25";
+        "\2\uffff\1\2\1\3\1\uffff\1\5\1\6\1\7\1\10\1\11\1\12\1\13\2\uffff"+
+        "\1\16\2\uffff\1\21\7\uffff\1\31\1\32\3\uffff\1\36\1\37\1\uffff\1"+
+        "\31\1\2\1\3\1\uffff\1\5\1\6\1\7\1\10\1\11\1\12\1\13\3\uffff\1\16"+
+        "\2\uffff\1\21\5\uffff\1\30\1\32\1\33\1\34\1\35\1\36\11\uffff\1\24"+
+        "\6\uffff\1\25\5\uffff\1\27\1\1\2\uffff\1\15\1\17\1\20\1\22\4\uffff"+
+        "\1\23\1\uffff\1\4\1\14\1\uffff\1\26";
     static final String DFA13_specialS =
-        "\1\2\32\uffff\1\0\1\1\111\uffff}>";
+        "\1\0\32\uffff\1\1\1\2\111\uffff}>";
     static final String[] DFA13_transitionS = {
-            "\11\37\2\36\2\37\1\36\22\37\1\36\1\37\1\33\4\37\1\34\1\4\1\6"+
-            "\1\37\1\20\1\5\1\37\1\25\1\35\1\27\11\32\1\7\1\2\1\37\1\15\2"+
-            "\37\1\12\1\26\1\16\1\14\5\31\1\23\6\31\1\24\1\31\1\21\1\31\1"+
-            "\13\1\17\1\31\1\22\3\31\3\37\1\30\1\31\1\37\13\31\1\1\3\31\1"+
-            "\3\12\31\1\10\1\37\1\11\uff82\37",
+            "\11\37\2\36\2\37\1\36\22\37\1\36\1\37\1\33\4\37\1\34\1\5\1\7"+
+            "\1\37\1\21\1\6\1\37\1\2\1\35\1\27\11\32\1\10\1\3\1\37\1\16\2"+
+            "\37\1\13\1\26\1\17\1\15\5\31\1\24\6\31\1\25\1\31\1\22\1\31\1"+
+            "\14\1\20\1\31\1\23\3\31\3\37\1\30\1\31\1\37\13\31\1\1\3\31\1"+
+            "\4\12\31\1\11\1\37\1\12\uff82\37",
             "\1\40",
             "",
-            "\1\43",
+            "",
+            "\1\44",
             "",
             "",
             "",
@@ -1383,17 +1383,16 @@ public class InternalULSWIGLexer extends Lexer {
             "",
             "",
             "",
-            "\1\53",
-            "\1\55\1\uffff\1\54",
+            "\1\54",
+            "\1\56\1\uffff\1\55",
             "",
-            "\1\57",
             "\1\60",
+            "\1\61",
             "",
-            "\1\62",
             "\1\63",
             "\1\64",
             "\1\65",
-            "",
+            "\1\66",
             "\1\67",
             "\1\70",
             "\32\41\4\uffff\1\41\1\uffff\32\41",
@@ -1405,6 +1404,7 @@ public class InternalULSWIGLexer extends Lexer {
             "",
             "",
             "\1\76",
+            "",
             "",
             "",
             "\1\77",
@@ -1426,7 +1426,6 @@ public class InternalULSWIGLexer extends Lexer {
             "\1\106",
             "\12\41\7\uffff\32\41\4\uffff\1\41\1\uffff\32\41",
             "\1\110",
-            "",
             "\1\111",
             "",
             "",
@@ -1513,70 +1512,50 @@ public class InternalULSWIGLexer extends Lexer {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA13_27 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA13_27>='\u0000' && LA13_27<='\uFFFF')) ) {s = 58;}
-
-                        else s = 31;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA13_28 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA13_28>='\u0000' && LA13_28<='\uFFFF')) ) {s = 58;}
-
-                        else s = 31;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
                         int LA13_0 = input.LA(1);
 
                         s = -1;
                         if ( (LA13_0=='l') ) {s = 1;}
 
-                        else if ( (LA13_0==';') ) {s = 2;}
+                        else if ( (LA13_0=='.') ) {s = 2;}
 
-                        else if ( (LA13_0=='p') ) {s = 3;}
+                        else if ( (LA13_0==';') ) {s = 3;}
 
-                        else if ( (LA13_0=='(') ) {s = 4;}
+                        else if ( (LA13_0=='p') ) {s = 4;}
 
-                        else if ( (LA13_0==',') ) {s = 5;}
+                        else if ( (LA13_0=='(') ) {s = 5;}
 
-                        else if ( (LA13_0==')') ) {s = 6;}
+                        else if ( (LA13_0==',') ) {s = 6;}
 
-                        else if ( (LA13_0==':') ) {s = 7;}
+                        else if ( (LA13_0==')') ) {s = 7;}
 
-                        else if ( (LA13_0=='{') ) {s = 8;}
+                        else if ( (LA13_0==':') ) {s = 8;}
 
-                        else if ( (LA13_0=='}') ) {s = 9;}
+                        else if ( (LA13_0=='{') ) {s = 9;}
 
-                        else if ( (LA13_0=='@') ) {s = 10;}
+                        else if ( (LA13_0=='}') ) {s = 10;}
 
-                        else if ( (LA13_0=='T') ) {s = 11;}
+                        else if ( (LA13_0=='@') ) {s = 11;}
 
-                        else if ( (LA13_0=='C') ) {s = 12;}
+                        else if ( (LA13_0=='T') ) {s = 12;}
 
-                        else if ( (LA13_0=='=') ) {s = 13;}
+                        else if ( (LA13_0=='C') ) {s = 13;}
 
-                        else if ( (LA13_0=='B') ) {s = 14;}
+                        else if ( (LA13_0=='=') ) {s = 14;}
 
-                        else if ( (LA13_0=='U') ) {s = 15;}
+                        else if ( (LA13_0=='B') ) {s = 15;}
 
-                        else if ( (LA13_0=='+') ) {s = 16;}
+                        else if ( (LA13_0=='U') ) {s = 16;}
 
-                        else if ( (LA13_0=='R') ) {s = 17;}
+                        else if ( (LA13_0=='+') ) {s = 17;}
 
-                        else if ( (LA13_0=='W') ) {s = 18;}
+                        else if ( (LA13_0=='R') ) {s = 18;}
 
-                        else if ( (LA13_0=='I') ) {s = 19;}
+                        else if ( (LA13_0=='W') ) {s = 19;}
 
-                        else if ( (LA13_0=='P') ) {s = 20;}
+                        else if ( (LA13_0=='I') ) {s = 20;}
 
-                        else if ( (LA13_0=='.') ) {s = 21;}
+                        else if ( (LA13_0=='P') ) {s = 21;}
 
                         else if ( (LA13_0=='A') ) {s = 22;}
 
@@ -1597,6 +1576,26 @@ public class InternalULSWIGLexer extends Lexer {
                         else if ( ((LA13_0>='\t' && LA13_0<='\n')||LA13_0=='\r'||LA13_0==' ') ) {s = 30;}
 
                         else if ( ((LA13_0>='\u0000' && LA13_0<='\b')||(LA13_0>='\u000B' && LA13_0<='\f')||(LA13_0>='\u000E' && LA13_0<='\u001F')||LA13_0=='!'||(LA13_0>='#' && LA13_0<='&')||LA13_0=='*'||LA13_0=='-'||LA13_0=='<'||(LA13_0>='>' && LA13_0<='?')||(LA13_0>='[' && LA13_0<=']')||LA13_0=='`'||LA13_0=='|'||(LA13_0>='~' && LA13_0<='\uFFFF')) ) {s = 31;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA13_27 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA13_27>='\u0000' && LA13_27<='\uFFFF')) ) {s = 58;}
+
+                        else s = 31;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA13_28 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA13_28>='\u0000' && LA13_28<='\uFFFF')) ) {s = 58;}
+
+                        else s = 31;
 
                         if ( s>=0 ) return s;
                         break;

@@ -47,6 +47,7 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getInstantiationPropertyAccess().getAlternatives(), "rule__InstantiationProperty__Alternatives");
 					put(grammarAccess.getPathElementAccess().getAlternatives(), "rule__PathElement__Alternatives");
 					put(grammarAccess.getLinkSpecAccess().getGroup(), "rule__LinkSpec__Group__0");
+					put(grammarAccess.getLinkSpecAccess().getGroup_1(), "rule__LinkSpec__Group_1__0");
 					put(grammarAccess.getConstructorAccess().getGroup(), "rule__Constructor__Group__0");
 					put(grammarAccess.getConstructorAccess().getGroup_3(), "rule__Constructor__Group_3__0");
 					put(grammarAccess.getConstructorAccess().getGroup_3_1(), "rule__Constructor__Group_3_1__0");
@@ -85,8 +86,9 @@ public class ULSWIGParser extends AbstractContentAssistParser {
 					put(grammarAccess.getGroupElementAccess().getGroup(), "rule__GroupElement__Group__0");
 					put(grammarAccess.getGroupElementAccess().getGroup_1(), "rule__GroupElement__Group_1__0");
 					put(grammarAccess.getPathElementAccess().getGroup_1(), "rule__PathElement__Group_1__0");
-					put(grammarAccess.getLinkSpecAccess().getNameAssignment_1(), "rule__LinkSpec__NameAssignment_1");
-					put(grammarAccess.getLinkSpecAccess().getConstructorsAssignment_3(), "rule__LinkSpec__ConstructorsAssignment_3");
+					put(grammarAccess.getLinkSpecAccess().getPackagenameAssignment_1_0(), "rule__LinkSpec__PackagenameAssignment_1_0");
+					put(grammarAccess.getLinkSpecAccess().getNameAssignment_2(), "rule__LinkSpec__NameAssignment_2");
+					put(grammarAccess.getLinkSpecAccess().getConstructorsAssignment_4(), "rule__LinkSpec__ConstructorsAssignment_4");
 					put(grammarAccess.getConstructorAccess().getIsPublicAssignment_0(), "rule__Constructor__IsPublicAssignment_0");
 					put(grammarAccess.getConstructorAccess().getNameAssignment_1(), "rule__Constructor__NameAssignment_1");
 					put(grammarAccess.getConstructorAccess().getParametersAssignment_3_0(), "rule__Constructor__ParametersAssignment_3_0");

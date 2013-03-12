@@ -8,6 +8,7 @@
   <genPackages prefix="Ulswig" basePackage="dk.sdu.mmmi.embedix" disposableProviderFactory="true"
       ecorePackage="ULSWIG.ecore#/">
     <genClasses ecoreClass="ULSWIG.ecore#//LinkSpec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//LinkSpec/packagename"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ULSWIG.ecore#//LinkSpec/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ULSWIG.ecore#//LinkSpec/constructors"/>
     </genClasses>

@@ -298,7 +298,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getLinkSpec_Name()
+  public EAttribute getLinkSpec_Packagename()
   {
     return (EAttribute)linkSpecEClass.getEStructuralFeatures().get(0);
   }
@@ -308,9 +308,19 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getLinkSpec_Name()
+  {
+    return (EAttribute)linkSpecEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EReference getLinkSpec_Constructors()
   {
-    return (EReference)linkSpecEClass.getEStructuralFeatures().get(1);
+    return (EReference)linkSpecEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -924,6 +934,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
 
     // Create classes and their features
     linkSpecEClass = createEClass(LINK_SPEC);
+    createEAttribute(linkSpecEClass, LINK_SPEC__PACKAGENAME);
     createEAttribute(linkSpecEClass, LINK_SPEC__NAME);
     createEReference(linkSpecEClass, LINK_SPEC__CONSTRUCTORS);
 
@@ -1056,6 +1067,7 @@ public class UlswigPackageImpl extends EPackageImpl implements UlswigPackage
 
     // Initialize classes and features; add operations and parameters
     initEClass(linkSpecEClass, LinkSpec.class, "LinkSpec", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getLinkSpec_Packagename(), ecorePackage.getEString(), "packagename", null, 0, 1, LinkSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getLinkSpec_Name(), ecorePackage.getEString(), "name", null, 0, 1, LinkSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getLinkSpec_Constructors(), this.getConstructor(), null, "constructors", null, 0, -1, LinkSpec.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 

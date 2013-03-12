@@ -67,13 +67,22 @@ public interface UlswigPackage extends EPackage
   int LINK_SPEC = 0;
 
   /**
+   * The feature id for the '<em><b>Packagename</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LINK_SPEC__PACKAGENAME = 0;
+
+  /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int LINK_SPEC__NAME = 0;
+  int LINK_SPEC__NAME = 1;
 
   /**
    * The feature id for the '<em><b>Constructors</b></em>' containment reference list.
@@ -82,7 +91,7 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int LINK_SPEC__CONSTRUCTORS = 1;
+  int LINK_SPEC__CONSTRUCTORS = 2;
 
   /**
    * The number of structural features of the '<em>Link Spec</em>' class.
@@ -91,7 +100,7 @@ public interface UlswigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int LINK_SPEC_FEATURE_COUNT = 2;
+  int LINK_SPEC_FEATURE_COUNT = 3;
 
   /**
    * The meta object id for the '{@link dk.sdu.mmmi.embedix.ulswig.impl.ConstructorImpl <em>Constructor</em>}' class.
@@ -939,6 +948,17 @@ public interface UlswigPackage extends EPackage
   EClass getLinkSpec();
 
   /**
+   * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getPackagename <em>Packagename</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Packagename</em>'.
+   * @see dk.sdu.mmmi.embedix.ulswig.LinkSpec#getPackagename()
+   * @see #getLinkSpec()
+   * @generated
+   */
+  EAttribute getLinkSpec_Packagename();
+
+  /**
    * Returns the meta object for the attribute '{@link dk.sdu.mmmi.embedix.ulswig.LinkSpec#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1606,6 +1626,14 @@ public interface UlswigPackage extends EPackage
      * @generated
      */
     EClass LINK_SPEC = eINSTANCE.getLinkSpec();
+
+    /**
+     * The meta object literal for the '<em><b>Packagename</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute LINK_SPEC__PACKAGENAME = eINSTANCE.getLinkSpec_Packagename();
 
     /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.

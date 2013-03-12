@@ -26,11 +26,11 @@ class ROSmsgCompiler {
 	public new(LinkSpec spec) {
 		this.spec = spec
 		for(c:spec.constructors)
-			if(c.isPublic) for(m:c.members) expandTopicPath(spec.name.join(c.name),m,c)
+			if(c.isPublic) for(m:c.members) expandTopicPath(spec.name.join(c.name,false),m,c)
 	}
 	
 	def void generate(String basedirectory, IFileSystemAccess access) {
-		val directory = basedirectory+"/"+spec.name
+		val directory = basedirectory+"/"+(if(spec.packagename==null) spec.name else spec.packagename)
 		writeTopics.generateMSG("W", directory, access)
 		readTopics.generateMSG("R",directory,access)
 		generateBridgeFile(directory,access)
@@ -52,18 +52,29 @@ class ROSmsgCompiler {
 	// Python - ROS bridge
 	
 	def generateBridgeFile(String directory, IFileSystemAccess access) { 
-		access.generateFile(directory+"/ros-"+spec.name+".py", generateBridge)
+		access.generateFile(directory+"/src/ros_"+spec.name+".py", generateBridge)
 	}
 	
 	def generateBridge() '''
 	import roslib
 	import rospy
+	«FOR e:writeTopics.entrySet»
+	from «if(spec.packagename!=null) spec.packagename else spec.name».msg import W«e.key.rosName»
+	«ENDFOR»
+	«FOR e:readTopics.entrySet»
+	from «if(spec.packagename!=null) spec.packagename else spec.name».msg import R«e.key.rosName»
+	«ENDFOR»
 	
 	ul_instance_«spec.name» = None
+
+	def unity_set_link(link):
+		ul_instance_«spec.name» = link
+		ul_attach_callbacks()
+		link.activate_publishing(True)
 	
 	# Helper functions for stand-alone ROS
 	def ros_standalone_init():
-		rospy.init_node('unity listener', anonymous=True)
+		rospy.init_node('unity link', anonymous=True)
 	
 	def ros_standalone_serve():
 		rospy.spin()
@@ -75,11 +86,42 @@ class ROSmsgCompiler {
 	«ENDFOR»
 	def init_subscriptions():
 		«FOR e:writeTopics.entrySet»
-		rospy.Subscriber("«e.key.rosName»","W«e.key.rosName»",ros_callback_«e.key.rosName»)
+		rospy.Subscriber("«e.key.rosName»",W«e.key.rosName»,ros_callback_«e.key.rosName»)
 		«ENDFOR»
 	
 	# Publications
+	«FOR e:readTopics.entrySet»
+	ul_publisher_«e.key.rosName» = rospy.Publisher("«e.key.rosName»",R«e.key.rosName»)
+	«IF e.key.group»
+	def unity_callcack_«e.key.rosName»(data):
+		ul_publisher_«e.key.rosName».publish(R«e.key.rosName»(«FOR i:e.value.indices SEPARATOR ","»data[1][«i»]«ENDFOR»))
+	«ELSE»
+	ul_publisher_cache_«e.key.rosName» = {}
+	«FOR f:e.value»
+	def unity_callcack_«e.key.rosName»_«f»(data):
+		ul_publisher_cache_«e.key.rosName»["«f»"] = data[0]
+		ul_publisher_«e.key.rosName».publish(R«e.key.rosName»(«FOR n:e.value SEPARATOR ","»ul_publisher_cache_«e.key.rosName»["«n»"]«ENDFOR»))
+	«ENDFOR»
+	«ENDIF»
+	«ENDFOR»
+	def ul_attach_callbacks():
+		«FOR e:readTopics.entrySet»
+		«IF e.key.group»
+		ul_instance_«e.key.pythonName».register_callback(unity_callback_«e.key.rosName»)
+		«ELSE»
+		«FOR f:e.value»
+		ul_instance_«e.key.pythonName».«f».register_callback(unity_callback_«e.key.rosName»_«f»)
+		«ENDFOR»
+		«ENDIF»
+		«ENDFOR»
 	'''
+	
+	def indices(List<String> strings) {
+		val result = new ArrayList<Integer>
+		for(s: strings) result.add(result.size())
+		return result
+	}
+
 
 	// Expansion of all topic paths
 	
@@ -87,7 +129,7 @@ class ROSmsgCompiler {
 	
 	def dispatch void expandTopicPath(TopicHolder base, Expansion expansion, Constructor context) {
 		for(m:expansion.constructor.members)
-			expandTopicPath(base.join(expansion.name),m,expansion.constructor)
+			expandTopicPath(base.join(expansion.name,false),m,expansion.constructor)
 	}
 
 	def dispatch void expandTopicPath(TopicHolder base, Instantiation instant, Constructor context) {
@@ -107,7 +149,7 @@ class ROSmsgCompiler {
 	def dispatch void expandTopicPath(TopicHolder base, Grouping group, Constructor context) {
 		val List<String> expansion = new ArrayList
 		for(e:group.elements) expansion.addAll(computeGroupComponents(e,context,"","_"))
-		for(e:expansion) writeTopics.putIntoList(base.join(group.name),e)
+		for(e:expansion) writeTopics.putIntoList(base.join(group.name,true),e)
 	}
 
 	// Generally useful stuff
@@ -118,12 +160,12 @@ class ROSmsgCompiler {
 	}
 
 
-	def TopicHolder join(String base, String extend) { 
-		new TopicHolder(base,extend,extend)
+	def TopicHolder join(String base, String extend, boolean group) { 
+		new TopicHolder(base,extend,extend,group)
 	}
 
-	def TopicHolder join(TopicHolder holder, String extend) { 
-		new TopicHolder(holder.baseName,holder.rosName+"_"+extend,holder.pythonName+"."+extend)
+	def TopicHolder join(TopicHolder holder, String extend, boolean group) { 
+		new TopicHolder(holder.baseName,holder.rosName+"_"+extend,holder.pythonName+"."+extend,group)
 	}
 
 }
@@ -132,4 +174,5 @@ class ROSmsgCompiler {
 	String baseName
 	String rosName
 	String pythonName 
+	boolean group
 }
