@@ -717,9 +717,9 @@ ruleLinkProperty returns [EObject current=null]
 
 )
 ))
-    |(	otherlv_6='UART' 
+    |(	otherlv_6='COMM' 
     {
-    	newLeafNode(otherlv_6, grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0());
+    	newLeafNode(otherlv_6, grammarAccess.getLinkPropertyAccess().getCOMMKeyword_2_0());
     }
 	otherlv_7='=' 
     {

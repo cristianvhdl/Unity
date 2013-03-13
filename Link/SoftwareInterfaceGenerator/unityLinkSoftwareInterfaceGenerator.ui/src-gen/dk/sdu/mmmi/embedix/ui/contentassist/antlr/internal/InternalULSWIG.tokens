@@ -31,6 +31,7 @@ RULE_INT=5
 RULE_WS=10
 '}'=20
 'PUBLISH'=32
+'COMM'=28
 'link'=14
 '{'=19
 'CTRL'=25
@@ -38,7 +39,6 @@ RULE_WS=10
 ';'=15
 '='=26
 'READ'=12
-'UART'=28
 'CRC'=31
 '('=17
 ':'=22

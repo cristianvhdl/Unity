@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_HEX_NUM", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'READ'", "'WRITE'", "'link'", "';'", "'.'", "'('", "')'", "'{'", "'}'", "','", "':'", "'@'", "'TOSNET'", "'CTRL'", "'='", "'BASE'", "'UART'", "'+'", "'ID'", "'CRC'", "'PUBLISH'", "'ALL'", "'public'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_HEX_NUM", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'READ'", "'WRITE'", "'link'", "';'", "'.'", "'('", "')'", "'{'", "'}'", "','", "':'", "'@'", "'TOSNET'", "'CTRL'", "'='", "'BASE'", "'COMM'", "'+'", "'ID'", "'CRC'", "'PUBLISH'", "'ALL'", "'public'"
     };
     public static final int RULE_ID=4;
     public static final int RULE_HEX_NUM=7;
@@ -6952,21 +6952,21 @@ public class InternalULSWIGParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__LinkProperty__Group_2__0__Impl"
-    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2535:1: rule__LinkProperty__Group_2__0__Impl : ( 'UART' ) ;
+    // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2535:1: rule__LinkProperty__Group_2__0__Impl : ( 'COMM' ) ;
     public final void rule__LinkProperty__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2539:1: ( ( 'UART' ) )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2540:1: ( 'UART' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2539:1: ( ( 'COMM' ) )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2540:1: ( 'COMM' )
             {
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2540:1: ( 'UART' )
-            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2541:1: 'UART'
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2540:1: ( 'COMM' )
+            // ../unityLinkSoftwareInterfaceGenerator.ui/src-gen/dk/sdu/mmmi/embedix/ui/contentassist/antlr/internal/InternalULSWIG.g:2541:1: 'COMM'
             {
-             before(grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0()); 
+             before(grammarAccess.getLinkPropertyAccess().getCOMMKeyword_2_0()); 
             match(input,28,FOLLOW_28_in_rule__LinkProperty__Group_2__0__Impl5136); 
-             after(grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0()); 
+             after(grammarAccess.getLinkPropertyAccess().getCOMMKeyword_2_0()); 
 
             }
 

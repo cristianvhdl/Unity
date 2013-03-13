@@ -137,7 +137,7 @@ public class PythonULSWCompiler {
     _builder.append("\t");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("def bind(self,ul_addresses):");
+    _builder.append("def bind(self,ul_addresses=None):");
     _builder.newLine();
     {
       ConstructorAddressParameters _addresses = c.getAddresses();

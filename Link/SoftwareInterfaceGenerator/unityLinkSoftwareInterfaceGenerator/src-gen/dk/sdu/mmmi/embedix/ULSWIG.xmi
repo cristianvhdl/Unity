@@ -167,7 +167,7 @@
           </elements>
         </elements>
         <elements xsi:type="xtext:Group">
-          <elements xsi:type="xtext:Keyword" value="UART"/>
+          <elements xsi:type="xtext:Keyword" value="COMM"/>
           <elements xsi:type="xtext:Keyword" value="="/>
           <elements xsi:type="xtext:Assignment" feature="uartName" operator="=">
             <terminal xsi:type="xtext:RuleCall" rule="/1/@rules.0"/>

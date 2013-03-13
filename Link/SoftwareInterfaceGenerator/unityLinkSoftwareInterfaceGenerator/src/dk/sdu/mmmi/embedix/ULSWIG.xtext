@@ -39,7 +39,7 @@ TosNetLinkBinding:
 LinkProperty:
 	'CTRL' '=' ctrlName=ID |
 	'BASE' '=' baseValue=INT |
-	'UART' '=' uartName=ID
+	'COMM' '=' uartName=ID
 ;
 
 // Expansion (application of a constructor)

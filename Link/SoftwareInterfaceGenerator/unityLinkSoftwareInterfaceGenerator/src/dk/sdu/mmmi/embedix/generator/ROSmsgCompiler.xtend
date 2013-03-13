@@ -34,6 +34,7 @@ class ROSmsgCompiler {
 		writeTopics.generateMSG("W", directory, access)
 		readTopics.generateMSG("R",directory,access)
 		generateBridgeFile(directory,access)
+		generateMainFile(directory,access)
 	}
 
 	// ROS msg files generation
@@ -67,14 +68,15 @@ class ROSmsgCompiler {
 	
 	ul_instance_«spec.name» = None
 
-	def unity_set_link(link):
+	def unity_set_link(link,controller):
+		global ul_instance_mini
 		ul_instance_«spec.name» = link
 		ul_attach_callbacks()
-		link.activate_publishing(True)
+		controller.activate_publishing(True)
 	
 	# Helper functions for stand-alone ROS
-	def ros_standalone_init():
-		rospy.init_node('unity link', anonymous=True)
+	def ros_standalone_init(is_anonymous=False):
+		rospy.init_node('«if(spec.packagename==null) spec.name else spec.packagename»', anonymous=is_anonymous)
 	
 	def ros_standalone_serve():
 		rospy.spin()
@@ -93,13 +95,13 @@ class ROSmsgCompiler {
 	«FOR e:readTopics.entrySet»
 	ul_publisher_«e.key.rosName» = rospy.Publisher("«e.key.rosName»",R«e.key.rosName»)
 	«IF e.key.group»
-	def unity_callcack_«e.key.rosName»(data):
+	def unity_callback_«e.key.rosName»(data):
 		ul_publisher_«e.key.rosName».publish(R«e.key.rosName»(«FOR i:e.value.indices SEPARATOR ","»data[1][«i»]«ENDFOR»))
 	«ELSE»
 	ul_publisher_cache_«e.key.rosName» = {}
 	«FOR f:e.value»
-	def unity_callcack_«e.key.rosName»_«f»(data):
-		ul_publisher_cache_«e.key.rosName»["«f»"] = data[0]
+	def unity_callcack_«e.key.rosName»_«f»(data,description,address):
+		ul_publisher_cache_«e.key.rosName»["«f»"] = data
 		ul_publisher_«e.key.rosName».publish(R«e.key.rosName»(«FOR n:e.value SEPARATOR ","»ul_publisher_cache_«e.key.rosName»["«n»"]«ENDFOR»))
 	«ENDFOR»
 	«ENDIF»
@@ -122,7 +124,32 @@ class ROSmsgCompiler {
 		return result
 	}
 
-
+	// Python - Default ROS main file
+	
+	def generateMainFile(String directory, IFileSystemAccess access) { 
+		access.generateFile(directory+"/src/ros_"+spec.name+"_main.py", generateMain)
+	}
+	
+	def generateMain() '''
+	# Default main file, connects unity link to ROS
+	# Relies on definitions in config.py (not generated):
+	#
+	# # config.connection: the connection, e.g.
+	# connection = unity_link.ul_rs232('/dev/ttyS1', 3000000, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0.1)
+	# # config.controller: the controller, e.g.
+	# controller = unity_link.ul_link_controller([connection])
+	#
+	import config
+	# Link ROS to Unity-Link
+	import unity_link
+	import «spec.name»
+	import ros_«spec.name»
+	link_proxy=«spec.name».UL_«spec.name»(config.controller,config.connection)
+	link_proxy.bind(None)
+	ros_«spec.name».ros_standalone_init()
+	ros_«spec.name».unity_set_link(link_proxy,config.controller)
+	'''
+	
 	// Expansion of all topic paths
 	
 	def dispatch void expandTopicPath(TopicHolder base, Member member, Constructor context) { }

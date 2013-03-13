@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalULSWIGParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_HEX_NUM", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'link'", "'.'", "';'", "'public'", "'('", "','", "')'", "':'", "'{'", "'}'", "'@'", "'TOSNET'", "'CTRL'", "'='", "'BASE'", "'UART'", "'+'", "'READ'", "'WRITE'", "'ID'", "'CRC'", "'PUBLISH'", "'ALL'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_HEX_NUM", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'link'", "'.'", "';'", "'public'", "'('", "','", "')'", "':'", "'{'", "'}'", "'@'", "'TOSNET'", "'CTRL'", "'='", "'BASE'", "'COMM'", "'+'", "'READ'", "'WRITE'", "'ID'", "'CRC'", "'PUBLISH'", "'ALL'"
     };
     public static final int RULE_ID=4;
     public static final int RULE_HEX_NUM=7;
@@ -1663,7 +1663,7 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleLinkProperty"
-    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:662:1: ruleLinkProperty returns [EObject current=null] : ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) ) ;
+    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:662:1: ruleLinkProperty returns [EObject current=null] : ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'COMM' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) ) ;
     public final EObject ruleLinkProperty() throws RecognitionException {
         EObject current = null;
 
@@ -1680,10 +1680,10 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:665:28: ( ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) ) )
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:666:1: ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:665:28: ( ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'COMM' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:666:1: ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'COMM' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) )
             {
-            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:666:1: ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) )
+            // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:666:1: ( (otherlv_0= 'CTRL' otherlv_1= '=' ( (lv_ctrlName_2_0= RULE_ID ) ) ) | (otherlv_3= 'BASE' otherlv_4= '=' ( (lv_baseValue_5_0= RULE_INT ) ) ) | (otherlv_6= 'COMM' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) ) )
             int alt13=3;
             switch ( input.LA(1) ) {
             case 24:
@@ -1802,14 +1802,14 @@ public class InternalULSWIGParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:720:6: (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) )
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:720:6: (otherlv_6= 'COMM' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) )
                     {
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:720:6: (otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) )
-                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:720:8: otherlv_6= 'UART' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) )
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:720:6: (otherlv_6= 'COMM' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) ) )
+                    // ../unityLinkSoftwareInterfaceGenerator/src-gen/dk/sdu/mmmi/embedix/parser/antlr/internal/InternalULSWIG.g:720:8: otherlv_6= 'COMM' otherlv_7= '=' ( (lv_uartName_8_0= RULE_ID ) )
                     {
                     otherlv_6=(Token)match(input,27,FOLLOW_27_in_ruleLinkProperty1580); 
 
-                        	newLeafNode(otherlv_6, grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0());
+                        	newLeafNode(otherlv_6, grammarAccess.getLinkPropertyAccess().getCOMMKeyword_2_0());
                         
                     otherlv_7=(Token)match(input,25,FOLLOW_25_in_ruleLinkProperty1592); 
 

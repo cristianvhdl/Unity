@@ -392,16 +392,16 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cBaseValueAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
 		private final RuleCall cBaseValueINTTerminalRuleCall_1_2_0 = (RuleCall)cBaseValueAssignment_1_2.eContents().get(0);
 		private final Group cGroup_2 = (Group)cAlternatives.eContents().get(2);
-		private final Keyword cUARTKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Keyword cCOMMKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
 		private final Keyword cEqualsSignKeyword_2_1 = (Keyword)cGroup_2.eContents().get(1);
 		private final Assignment cUartNameAssignment_2_2 = (Assignment)cGroup_2.eContents().get(2);
 		private final RuleCall cUartNameIDTerminalRuleCall_2_2_0 = (RuleCall)cUartNameAssignment_2_2.eContents().get(0);
 		
 		//LinkProperty:
-		//	"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "UART" "=" uartName=ID;
+		//	"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "COMM" "=" uartName=ID;
 		public ParserRule getRule() { return rule; }
 
-		//"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "UART" "=" uartName=ID
+		//"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "COMM" "=" uartName=ID
 		public Alternatives getAlternatives() { return cAlternatives; }
 
 		//"CTRL" "=" ctrlName=ID
@@ -434,11 +434,11 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getBaseValueINTTerminalRuleCall_1_2_0() { return cBaseValueINTTerminalRuleCall_1_2_0; }
 
-		//"UART" "=" uartName=ID
+		//"COMM" "=" uartName=ID
 		public Group getGroup_2() { return cGroup_2; }
 
-		//"UART"
-		public Keyword getUARTKeyword_2_0() { return cUARTKeyword_2_0; }
+		//"COMM"
+		public Keyword getCOMMKeyword_2_0() { return cCOMMKeyword_2_0; }
 
 		//"="
 		public Keyword getEqualsSignKeyword_2_1() { return cEqualsSignKeyword_2_1; }
@@ -1296,7 +1296,7 @@ public class ULSWIGGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//LinkProperty:
-	//	"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "UART" "=" uartName=ID;
+	//	"CTRL" "=" ctrlName=ID | "BASE" "=" baseValue=INT | "COMM" "=" uartName=ID;
 	public LinkPropertyElements getLinkPropertyAccess() {
 		return (pLinkProperty != null) ? pLinkProperty : (pLinkProperty = new LinkPropertyElements());
 	}

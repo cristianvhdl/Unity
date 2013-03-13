@@ -70,7 +70,7 @@ class PythonULSWCompiler {
 			«ENDFOR»
 			self.ul_hwp = ul_hwp
 		
-		def bind(self,ul_addresses):
+		def bind(self,ul_addresses=None):
 			«IF c.addresses instanceof AddressTuple»
 			ul_addresses = dict(zip([«FOR n:(c.addresses as AddressTuple).elements SEPARATOR ","»'«n»'«ENDFOR»],ul_addresses["_"]))
 			«ENDIF»

@@ -77,6 +77,7 @@ public class ROSmsgCompiler {
     this.generateMSG(this.writeTopics, "W", directory, access);
     this.generateMSG(this.readTopics, "R", directory, access);
     this.generateBridgeFile(directory, access);
+    this.generateMainFile(directory, access);
   }
   
   public void generateMSG(final Map<TopicHolder,List<String>> map, final String prefix, final String directory, final IFileSystemAccess access) {
@@ -172,7 +173,10 @@ public class ROSmsgCompiler {
     _builder.append(" = None");
     _builder.newLineIfNotEmpty();
     _builder.newLine();
-    _builder.append("def unity_set_link(link):");
+    _builder.append("def unity_set_link(link,controller):");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("global ul_instance_mini");
     _builder.newLine();
     _builder.append("\t");
     _builder.append("ul_instance_");
@@ -184,16 +188,28 @@ public class ROSmsgCompiler {
     _builder.append("ul_attach_callbacks()");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("link.activate_publishing(True)");
+    _builder.append("controller.activate_publishing(True)");
     _builder.newLine();
     _builder.newLine();
     _builder.append("# Helper functions for stand-alone ROS");
     _builder.newLine();
-    _builder.append("def ros_standalone_init():");
+    _builder.append("def ros_standalone_init(is_anonymous=False):");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("rospy.init_node(\'unity link\', anonymous=True)");
-    _builder.newLine();
+    _builder.append("rospy.init_node(\'");
+    String _xifexpression_2 = null;
+    String _packagename_4 = this.spec.getPackagename();
+    boolean _equals = Objects.equal(_packagename_4, null);
+    if (_equals) {
+      String _name_4 = this.spec.getName();
+      _xifexpression_2 = _name_4;
+    } else {
+      String _packagename_5 = this.spec.getPackagename();
+      _xifexpression_2 = _packagename_5;
+    }
+    _builder.append(_xifexpression_2, "	");
+    _builder.append("\', anonymous=is_anonymous)");
+    _builder.newLineIfNotEmpty();
     _builder.newLine();
     _builder.append("def ros_standalone_serve():");
     _builder.newLine();
@@ -281,7 +297,7 @@ public class ROSmsgCompiler {
           TopicHolder _key_10 = e_4.getKey();
           boolean _isGroup = _key_10.isGroup();
           if (_isGroup) {
-            _builder.append("def unity_callcack_");
+            _builder.append("def unity_callback_");
             TopicHolder _key_11 = e_4.getKey();
             String _rosName_9 = _key_11.getRosName();
             _builder.append(_rosName_9, "");
@@ -330,7 +346,7 @@ public class ROSmsgCompiler {
                 _builder.append(_rosName_13, "");
                 _builder.append("_");
                 _builder.append(f, "");
-                _builder.append("(data):");
+                _builder.append("(data,description,address):");
                 _builder.newLineIfNotEmpty();
                 _builder.append("\t");
                 _builder.append("ul_publisher_cache_");
@@ -339,7 +355,7 @@ public class ROSmsgCompiler {
                 _builder.append(_rosName_14, "	");
                 _builder.append("[\"");
                 _builder.append(f, "	");
-                _builder.append("\"] = data[0]");
+                _builder.append("\"] = data");
                 _builder.newLineIfNotEmpty();
                 _builder.append("\t");
                 _builder.append("ul_publisher_");
@@ -433,6 +449,70 @@ public class ROSmsgCompiler {
       result.add(Integer.valueOf(_size));
     }
     return result;
+  }
+  
+  public void generateMainFile(final String directory, final IFileSystemAccess access) {
+    String _plus = (directory + "/src/ros_");
+    String _name = this.spec.getName();
+    String _plus_1 = (_plus + _name);
+    String _plus_2 = (_plus_1 + "_main.py");
+    CharSequence _generateMain = this.generateMain();
+    access.generateFile(_plus_2, _generateMain);
+  }
+  
+  public CharSequence generateMain() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("# Default main file, connects unity link to ROS");
+    _builder.newLine();
+    _builder.append("# Relies on definitions in config.py (not generated):");
+    _builder.newLine();
+    _builder.append("#");
+    _builder.newLine();
+    _builder.append("# # config.connection: the connection, e.g.");
+    _builder.newLine();
+    _builder.append("# connection = unity_link.ul_rs232(\'/dev/ttyS1\', 3000000, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0.1)");
+    _builder.newLine();
+    _builder.append("# # config.controller: the controller, e.g.");
+    _builder.newLine();
+    _builder.append("# controller = unity_link.ul_link_controller([connection])");
+    _builder.newLine();
+    _builder.append("#");
+    _builder.newLine();
+    _builder.append("import config");
+    _builder.newLine();
+    _builder.append("# Link ROS to Unity-Link");
+    _builder.newLine();
+    _builder.append("import unity_link");
+    _builder.newLine();
+    _builder.append("import ");
+    String _name = this.spec.getName();
+    _builder.append(_name, "");
+    _builder.newLineIfNotEmpty();
+    _builder.append("import ros_");
+    String _name_1 = this.spec.getName();
+    _builder.append(_name_1, "");
+    _builder.newLineIfNotEmpty();
+    _builder.append("link_proxy=");
+    String _name_2 = this.spec.getName();
+    _builder.append(_name_2, "");
+    _builder.append(".UL_");
+    String _name_3 = this.spec.getName();
+    _builder.append(_name_3, "");
+    _builder.append("(config.controller,config.connection)");
+    _builder.newLineIfNotEmpty();
+    _builder.append("link_proxy.bind(None)");
+    _builder.newLine();
+    _builder.append("ros_");
+    String _name_4 = this.spec.getName();
+    _builder.append(_name_4, "");
+    _builder.append(".ros_standalone_init()");
+    _builder.newLineIfNotEmpty();
+    _builder.append("ros_");
+    String _name_5 = this.spec.getName();
+    _builder.append(_name_5, "");
+    _builder.append(".unity_set_link(link_proxy,config.controller)");
+    _builder.newLineIfNotEmpty();
+    return _builder;
   }
   
   protected void _expandTopicPath(final TopicHolder base, final Member member, final Constructor context) {

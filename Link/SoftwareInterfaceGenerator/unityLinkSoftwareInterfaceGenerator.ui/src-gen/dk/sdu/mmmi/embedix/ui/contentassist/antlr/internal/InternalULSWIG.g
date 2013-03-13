@@ -2538,11 +2538,11 @@ rule__LinkProperty__Group_2__0__Impl
     }
 :
 (
-{ before(grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0()); }
+{ before(grammarAccess.getLinkPropertyAccess().getCOMMKeyword_2_0()); }
 
-	'UART' 
+	'COMM' 
 
-{ after(grammarAccess.getLinkPropertyAccess().getUARTKeyword_2_0()); }
+{ after(grammarAccess.getLinkPropertyAccess().getCOMMKeyword_2_0()); }
 )
 
 ;
