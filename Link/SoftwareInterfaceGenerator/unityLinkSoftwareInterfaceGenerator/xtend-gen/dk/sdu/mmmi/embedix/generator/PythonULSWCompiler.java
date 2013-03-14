@@ -570,24 +570,27 @@ public class PythonULSWCompiler {
         _builder.append("ul_group_");
         String _name_2 = m.getName();
         _builder.append(_name_2, "");
-        _builder.append(".append(");
+        _builder.append(" = ul_group_");
         String _name_3 = m.getName();
-        String _plus = ("UL_private_group_" + _name_3);
+        _builder.append(_name_3, "");
+        _builder.append(" + [");
+        String _name_4 = m.getName();
+        String _plus = ("UL_private_group_" + _name_4);
         StringBuffer _generateGroupAccess = this.generateGroupAccess(e, _plus, c);
         _builder.append(_generateGroupAccess, "");
-        _builder.append(")");
+        _builder.append("]");
         _builder.newLineIfNotEmpty();
       }
     }
     _builder.append("self.");
-    String _name_4 = m.getName();
-    _builder.append(_name_4, "");
-    _builder.append(" = UL_private_group_");
     String _name_5 = m.getName();
     _builder.append(_name_5, "");
-    _builder.append("(self.ul_hwp,ul_group_");
+    _builder.append(" = UL_private_group_");
     String _name_6 = m.getName();
     _builder.append(_name_6, "");
+    _builder.append("(self.ul_hwp,ul_group_");
+    String _name_7 = m.getName();
+    _builder.append(_name_7, "");
     _builder.append(")");
     _builder.newLineIfNotEmpty();
     return _builder;
@@ -633,7 +636,7 @@ public class PythonULSWCompiler {
     _builder.append("self.ul_hwp = ul_hwp");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("int ul_index = 0");
+    _builder.append("ul_index = 0");
     _builder.newLine();
     {
       for(final String n : proxyFlatNames) {
@@ -648,7 +651,7 @@ public class PythonULSWCompiler {
       }
     }
     _builder.append("\t\t");
-    _builder.append("ul_data_proxy_group.__init__(self, ul_data_proxy_group, \'Group ");
+    _builder.append("ul_data_proxy_group.__init__(self, ul_proxies, \'Group ");
     _builder.append(className, "		");
     _builder.append("\')");
     _builder.newLineIfNotEmpty();
@@ -681,8 +684,14 @@ public class PythonULSWCompiler {
     }
     _builder.append("], data=[");
     {
+      boolean _hasElements_1 = false;
       for(final String n_3 : proxyFlatNames) {
-        _builder.append(",ul_val_");
+        if (!_hasElements_1) {
+          _hasElements_1 = true;
+        } else {
+          _builder.appendImmediate(",", "		");
+        }
+        _builder.append("ul_val_");
         _builder.append(n_3, "		");
       }
     }

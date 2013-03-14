@@ -176,12 +176,14 @@ public class ROSmsgCompiler {
     _builder.append("def unity_set_link(link,controller):");
     _builder.newLine();
     _builder.append("\t");
-    _builder.append("global ul_instance_mini");
-    _builder.newLine();
-    _builder.append("\t");
-    _builder.append("ul_instance_");
+    _builder.append("global ul_instance_");
     String _name_3 = this.spec.getName();
     _builder.append(_name_3, "	");
+    _builder.newLineIfNotEmpty();
+    _builder.append("\t");
+    _builder.append("ul_instance_");
+    String _name_4 = this.spec.getName();
+    _builder.append(_name_4, "	");
     _builder.append(" = link");
     _builder.newLineIfNotEmpty();
     _builder.append("\t");
@@ -201,8 +203,8 @@ public class ROSmsgCompiler {
     String _packagename_4 = this.spec.getPackagename();
     boolean _equals = Objects.equal(_packagename_4, null);
     if (_equals) {
-      String _name_4 = this.spec.getName();
-      _xifexpression_2 = _name_4;
+      String _name_5 = this.spec.getName();
+      _xifexpression_2 = _name_5;
     } else {
       String _packagename_5 = this.spec.getPackagename();
       _xifexpression_2 = _packagename_5;
@@ -257,7 +259,7 @@ public class ROSmsgCompiler {
       Set<Entry<TopicHolder,List<String>>> _entrySet_3 = this.writeTopics.entrySet();
       for(final Entry<TopicHolder,List<String>> e_3 : _entrySet_3) {
         _builder.append("\t");
-        _builder.append("rospy.Subscriber(\"");
+        _builder.append("rospy.Subscriber(\"W");
         TopicHolder _key_4 = e_3.getKey();
         String _rosName_3 = _key_4.getRosName();
         _builder.append(_rosName_3, "	");
@@ -283,7 +285,7 @@ public class ROSmsgCompiler {
         TopicHolder _key_7 = e_4.getKey();
         String _rosName_6 = _key_7.getRosName();
         _builder.append(_rosName_6, "");
-        _builder.append(" = rospy.Publisher(\"");
+        _builder.append(" = rospy.Publisher(\"R");
         TopicHolder _key_8 = e_4.getKey();
         String _rosName_7 = _key_8.getRosName();
         _builder.append(_rosName_7, "");
@@ -335,17 +337,32 @@ public class ROSmsgCompiler {
             TopicHolder _key_14 = e_4.getKey();
             String _rosName_12 = _key_14.getRosName();
             _builder.append(_rosName_12, "");
-            _builder.append(" = {}");
-            _builder.newLineIfNotEmpty();
+            _builder.append(" = {");
             {
               List<String> _value_2 = e_4.getValue();
+              boolean _hasElements_2 = false;
               for(final String f : _value_2) {
+                if (!_hasElements_2) {
+                  _hasElements_2 = true;
+                } else {
+                  _builder.appendImmediate(",", "");
+                }
+                _builder.append("\'");
+                _builder.append(f, "");
+                _builder.append("\':0");
+              }
+            }
+            _builder.append("}");
+            _builder.newLineIfNotEmpty();
+            {
+              List<String> _value_3 = e_4.getValue();
+              for(final String f_1 : _value_3) {
                 _builder.append("def unity_callback_");
                 TopicHolder _key_15 = e_4.getKey();
                 String _rosName_13 = _key_15.getRosName();
                 _builder.append(_rosName_13, "");
                 _builder.append("_");
-                _builder.append(f, "");
+                _builder.append(f_1, "");
                 _builder.append("(data,description,address):");
                 _builder.newLineIfNotEmpty();
                 _builder.append("\t");
@@ -354,7 +371,7 @@ public class ROSmsgCompiler {
                 String _rosName_14 = _key_16.getRosName();
                 _builder.append(_rosName_14, "	");
                 _builder.append("[\"");
-                _builder.append(f, "	");
+                _builder.append(f_1, "	");
                 _builder.append("\"] = data");
                 _builder.newLineIfNotEmpty();
                 _builder.append("\t");
@@ -368,11 +385,11 @@ public class ROSmsgCompiler {
                 _builder.append(_rosName_16, "	");
                 _builder.append("(");
                 {
-                  List<String> _value_3 = e_4.getValue();
-                  boolean _hasElements_2 = false;
-                  for(final String n_1 : _value_3) {
-                    if (!_hasElements_2) {
-                      _hasElements_2 = true;
+                  List<String> _value_4 = e_4.getValue();
+                  boolean _hasElements_3 = false;
+                  for(final String n_1 : _value_4) {
+                    if (!_hasElements_3) {
+                      _hasElements_3 = true;
                     } else {
                       _builder.appendImmediate(",", "	");
                     }
@@ -415,21 +432,21 @@ public class ROSmsgCompiler {
             _builder.newLineIfNotEmpty();
           } else {
             {
-              List<String> _value_4 = e_5.getValue();
-              for(final String f_1 : _value_4) {
+              List<String> _value_5 = e_5.getValue();
+              for(final String f_2 : _value_5) {
                 _builder.append("\t");
                 _builder.append("ul_instance_");
                 TopicHolder _key_23 = e_5.getKey();
                 String _pythonName_2 = _key_23.getPythonName();
                 _builder.append(_pythonName_2, "	");
                 _builder.append(".");
-                _builder.append(f_1, "	");
+                _builder.append(f_2, "	");
                 _builder.append(".register_callback(unity_callback_");
                 TopicHolder _key_24 = e_5.getKey();
                 String _rosName_19 = _key_24.getRosName();
                 _builder.append(_rosName_19, "	");
                 _builder.append("_");
-                _builder.append(f_1, "	");
+                _builder.append(f_2, "	");
                 _builder.append(")");
                 _builder.newLineIfNotEmpty();
               }

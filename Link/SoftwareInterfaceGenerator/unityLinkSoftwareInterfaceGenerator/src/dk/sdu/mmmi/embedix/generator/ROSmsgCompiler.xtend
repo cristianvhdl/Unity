@@ -69,7 +69,7 @@ class ROSmsgCompiler {
 	ul_instance_«spec.name» = None
 
 	def unity_set_link(link,controller):
-		global ul_instance_mini
+		global ul_instance_«spec.name»
 		ul_instance_«spec.name» = link
 		ul_attach_callbacks()
 		controller.activate_publishing(True)
@@ -88,17 +88,17 @@ class ROSmsgCompiler {
 	«ENDFOR»
 	def init_subscriptions():
 		«FOR e:writeTopics.entrySet»
-		rospy.Subscriber("«e.key.rosName»",W«e.key.rosName»,ros_callback_«e.key.rosName»)
+		rospy.Subscriber("W«e.key.rosName»",W«e.key.rosName»,ros_callback_«e.key.rosName»)
 		«ENDFOR»
 	
 	# Publications
 	«FOR e:readTopics.entrySet»
-	ul_publisher_«e.key.rosName» = rospy.Publisher("«e.key.rosName»",R«e.key.rosName»)
+	ul_publisher_«e.key.rosName» = rospy.Publisher("R«e.key.rosName»",R«e.key.rosName»)
 	«IF e.key.group»
 	def unity_callback_«e.key.rosName»(data):
 		ul_publisher_«e.key.rosName».publish(R«e.key.rosName»(«FOR i:e.value.indices SEPARATOR ","»data[1][«i»]«ENDFOR»))
 	«ELSE»
-	ul_publisher_cache_«e.key.rosName» = {}
+	ul_publisher_cache_«e.key.rosName» = {«FOR f:e.value SEPARATOR ","»'«f»':0«ENDFOR»}
 	«FOR f:e.value»
 	def unity_callback_«e.key.rosName»_«f»(data,description,address):
 		ul_publisher_cache_«e.key.rosName»["«f»"] = data

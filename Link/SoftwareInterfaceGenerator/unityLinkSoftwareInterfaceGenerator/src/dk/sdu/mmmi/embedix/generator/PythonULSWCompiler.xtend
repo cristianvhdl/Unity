@@ -202,7 +202,7 @@ class PythonULSWCompiler {
 			# initialization for grouping «m.name»
 			ul_group_«m.name» = []
 			«FOR e:m.elements»
-			ul_group_«m.name».append(«e.generateGroupAccess("UL_private_group_"+m.name,c)»)
+			ul_group_«m.name» = ul_group_«m.name» + [«e.generateGroupAccess("UL_private_group_"+m.name,c)»]
 			«ENDFOR»
 			self.«m.name» = UL_private_group_«m.name»(self.ul_hwp,ul_group_«m.name»)
 	'''
@@ -226,15 +226,15 @@ class PythonULSWCompiler {
 	class «className»(ul_data_proxy_group):
 		def __init__(self,ul_hwp,ul_proxies):
 			self.ul_hwp = ul_hwp
-			int ul_index = 0
+			ul_index = 0
 			«FOR n:proxyFlatNames»
 			self.ul_proxy_«n» = ul_proxies[ul_index]
 			ul_index += 1
 			«ENDFOR»
-			ul_data_proxy_group.__init__(self, ul_data_proxy_group, 'Group «className»')
+			ul_data_proxy_group.__init__(self, ul_proxies, 'Group «className»')
 		
 		def write(self«FOR n:proxyFlatNames»,ul_val_«n»«ENDFOR»):
-			self._hwp_data_map[self.ul_hwp.getID()].write(addr=[«FOR n:proxyFlatNames SEPARATOR ","»self.ul_proxy_«n».addr«ENDFOR»], data=[«FOR n:proxyFlatNames»,ul_val_«n»«ENDFOR»], timestamp=None, quiet=True)
+			self._hwp_data_map[self.ul_hwp.getID()].write(addr=[«FOR n:proxyFlatNames SEPARATOR ","»self.ul_proxy_«n».addr«ENDFOR»], data=[«FOR n:proxyFlatNames SEPARATOR ","»ul_val_«n»«ENDFOR»], timestamp=None, quiet=True)
 	'''
 
 }
