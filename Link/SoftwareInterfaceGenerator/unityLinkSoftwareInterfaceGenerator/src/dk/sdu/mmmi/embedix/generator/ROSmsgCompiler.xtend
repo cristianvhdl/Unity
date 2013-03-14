@@ -100,7 +100,7 @@ class ROSmsgCompiler {
 	«ELSE»
 	ul_publisher_cache_«e.key.rosName» = {}
 	«FOR f:e.value»
-	def unity_callcack_«e.key.rosName»_«f»(data,description,address):
+	def unity_callback_«e.key.rosName»_«f»(data,description,address):
 		ul_publisher_cache_«e.key.rosName»["«f»"] = data
 		ul_publisher_«e.key.rosName».publish(R«e.key.rosName»(«FOR n:e.value SEPARATOR ","»ul_publisher_cache_«e.key.rosName»["«n»"]«ENDFOR»))
 	«ENDFOR»
