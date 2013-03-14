@@ -79,7 +79,7 @@ class PythonULSWCompiler {
 			«ENDFOR»
 
 		«IF c.members.instantiationNames("WRITE").size>0»
-		def write(«FOR n:c.members.instantiationNames("WRITE") SEPARATOR ","»ul_p_«n»«ENDFOR»):
+		def write(self,«FOR n:c.members.instantiationNames("WRITE") SEPARATOR ","»ul_p_«n»«ENDFOR»):
 			«FOR n:c.members.instantiationNames("WRITE")»
 			self.«n».write(ul_p_«n»)
 			«ENDFOR»

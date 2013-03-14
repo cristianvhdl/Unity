@@ -99,7 +99,7 @@ public class ROSmsgCompiler {
     StringConcatenation _builder = new StringConcatenation();
     {
       for(final String n : names) {
-        _builder.append("int32 ");
+        _builder.append("uint32 ");
         _builder.append(n, "");
         _builder.newLineIfNotEmpty();
       }
@@ -470,7 +470,7 @@ public class ROSmsgCompiler {
     _builder.newLine();
     _builder.append("# # config.connection: the connection, e.g.");
     _builder.newLine();
-    _builder.append("# connection = unity_link.ul_rs232(\'/dev/ttyS1\', 3000000, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0.1)");
+    _builder.append("# connection = unity_link.ul_rs232(\'/dev/ttyUSB0\', 3000000, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0.1)");
     _builder.newLine();
     _builder.append("# # config.controller: the controller, e.g.");
     _builder.newLine();
@@ -511,6 +511,16 @@ public class ROSmsgCompiler {
     String _name_5 = this.spec.getName();
     _builder.append(_name_5, "");
     _builder.append(".unity_set_link(link_proxy,config.controller)");
+    _builder.newLineIfNotEmpty();
+    _builder.append("ros_");
+    String _name_6 = this.spec.getName();
+    _builder.append(_name_6, "");
+    _builder.append(".init_subscriptions()");
+    _builder.newLineIfNotEmpty();
+    _builder.append("ros_");
+    String _name_7 = this.spec.getName();
+    _builder.append(_name_7, "");
+    _builder.append(".ros_standalone_serve()");
     _builder.newLineIfNotEmpty();
     return _builder;
   }

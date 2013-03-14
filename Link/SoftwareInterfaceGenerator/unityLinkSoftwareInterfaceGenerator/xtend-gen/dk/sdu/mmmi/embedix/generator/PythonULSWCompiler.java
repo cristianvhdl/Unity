@@ -180,7 +180,7 @@ public class PythonULSWCompiler {
       boolean _greaterThan = (_size > 0);
       if (_greaterThan) {
         _builder.append("\t");
-        _builder.append("def write(");
+        _builder.append("def write(self,");
         {
           EList<Member> _members_2 = c.getMembers();
           List<String> _instantiationNames_1 = this.instantiationNames(_members_2, "WRITE");

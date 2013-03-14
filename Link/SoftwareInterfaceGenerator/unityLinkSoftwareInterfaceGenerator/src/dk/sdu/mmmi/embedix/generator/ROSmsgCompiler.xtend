@@ -46,7 +46,7 @@ class ROSmsgCompiler {
 	
 	def generateMSGelements(List<String> names) '''
 		«FOR n:names»
-		int32 «n»
+		uint32 «n»
 		«ENDFOR»
 	'''
 
@@ -135,7 +135,7 @@ class ROSmsgCompiler {
 	# Relies on definitions in config.py (not generated):
 	#
 	# # config.connection: the connection, e.g.
-	# connection = unity_link.ul_rs232('/dev/ttyS1', 3000000, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0.1)
+	# connection = unity_link.ul_rs232('/dev/ttyUSB0', 3000000, serial.PARITY_NONE, serial.STOPBITS_ONE, serial.EIGHTBITS, 0.1)
 	# # config.controller: the controller, e.g.
 	# controller = unity_link.ul_link_controller([connection])
 	#
@@ -148,6 +148,8 @@ class ROSmsgCompiler {
 	link_proxy.bind(None)
 	ros_«spec.name».ros_standalone_init()
 	ros_«spec.name».unity_set_link(link_proxy,config.controller)
+	ros_«spec.name».init_subscriptions()
+	ros_«spec.name».ros_standalone_serve()
 	'''
 	
 	// Expansion of all topic paths
